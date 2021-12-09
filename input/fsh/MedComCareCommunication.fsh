@@ -136,6 +136,8 @@ Usage: #inline
 * payload[0].extension[date].valueDateTime = 2020-01-01
 * payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
+Alias: $bcp13 = urn:ietf:bcp:13
+
 // CareCommunication with attachment example
 Instance: 487e2238-527b-11ec-bf63-0242ac130002
 InstanceOf: MedComCareCommunication
