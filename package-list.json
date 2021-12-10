@@ -2,20 +2,20 @@
   "package-id": "dk.fhir.ig.medcom-carecommunication",
   "title": "DK MedCom carecommunication",
   "introduction": "carecommunication MedCom FHIR profiles for Denmark",
-  "canonical": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-carecommunication",
+  "canonical": "http://medcomfhir.dk/fhir/ig/medcom-carecommunication",
   "list": [
     {
       "version": "dev",
       "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/hl7dk/medcom-carecommunication",
+      "path": "http://build.fhir.org/ig/hl7dk/dk-medcom-carecommunication",
       "status": "ci-build",
       "fhirVersion": "4.0.1"
     },
     {
       "version": "1.0.0",
       "date": "2021-03-23",
-      "desc": "MedCom Core",
-      "path": "http://medcomfhir.dk/fhir/core/1.0/ig/medcom-carecommunication",
+      "desc": "MedCom Carecommunication",
+      "path": "http://medcomfhir.dk/fhir/ig/medcom-carecommunication",
       "status": "trial-use",
       "sequence": "STU",
       "fhirVersion": "4.0.1",
