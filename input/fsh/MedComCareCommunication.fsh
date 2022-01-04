@@ -23,6 +23,7 @@ Description:    "Care related communication between two or more parties in Danis
 * recipient ^slicing.discriminator.path = "$this"
 * recipient ^slicing.rules = #open
 * recipient contains organization 0.. and practitionerRole 0.. MS
+* recipient ^short = "Is more specific than the MessageHeader.destination.reciever. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * recipient[organization] 0.. MS
 * recipient[organization] only Reference(Organization)
 * recipient[organization] ^definition = "The recipient of the message shall be present in case the recipient is given as more specific organization than the recipient of the message. E.g. a unit in a hospital or a home care group in a municipality."
@@ -35,7 +36,8 @@ Description:    "Care related communication between two or more parties in Danis
 * sender 0.. MS
 * sender only Reference(Organization or MedComCorePractitionerRole)
 * sender ^type.aggregation = #bundled
-* sender ^definition = "The sender of the message shall be present in case the recipient is given as a practioner role or a more specific organization than the sender of the message. E.g. a unit in a hospital, a named general practitioner or a home care group in a municipality."
+* sender ^definition = "The sender of the message shall be present in case the sender is given as a practitioner role or an organization"
+* sender ^short = "Is more specific than the MessageHeader.sender. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * payload 1..
 * payload.extension contains medcom-core-datetime-extension named date 1..1 MS
 * payload.extension contains medcom-core-author-extension named author 1..1 MS only Reference(MedComCorePractitioner)
