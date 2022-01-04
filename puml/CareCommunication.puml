@@ -5,13 +5,13 @@ hide empty members
 class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
 class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessaingProvenance" as provenance
-class "MedComMessagingOrganization" as messagingOrganization 
+class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
 class "MedComCoreEncounter" as encounter
-class "Organization" as recipientOrganization <<MedComMessagingOrganization>>
-class "PractitionerRole" as recipientRole
-class "Practitioner" as author
+class "Organization" as recipientOrganization 
+class "MedComCorePractitionerRole" as recipientRole
+class "MedComCorePractitioner" as author
 
 message -- messageheader : "entry"
 message -- provenance : "entry"
