@@ -28,17 +28,17 @@ Description:    "Care related communication between two or more parties in Danis
 * recipient[organization] ^definition = "The recipient of the message shall be present in case the recipient is given as more specific organization than the recipient of the message. E.g. a unit in a hospital or a home care group in a municipality."
 * recipient[organization] ^type.aggregation = #bundled
 * recipient[practitionerRole] 0.. MS
-* recipient[practitionerRole] only Reference(PractitionerRole)
+* recipient[practitionerRole] only Reference(MedComCorePractitionerRole)
 * recipient[practitionerRole] ^definition = "The recipient of the message shall be present in case the recipient is given as a practitioner role. E.g. a named general practitioner."
 * recipient[practitionerRole] ^type.aggregation = #bundled
 * recipient ^type.aggregation = #bundled
 * sender 0.. MS
-* sender only Reference(Organization or PractitionerRole)
+* sender only Reference(Organization or MedComCorePractitionerRole)
 * sender ^type.aggregation = #bundled
 * sender ^definition = "The sender of the message shall be present in case the recipient is given as a practioner role or a more specific organization than the sender of the message. E.g. a unit in a hospital, a named general practitioner or a home care group in a municipality."
 * payload 1..
 * payload.extension contains medcom-core-datetime-extension named date 1..1 MS
-* payload.extension contains medcom-core-author-extension named author 1..1 MS
+* payload.extension contains medcom-core-author-extension named author 1..1 MS only Reference(MedComCorePractitioner)
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
