@@ -14,17 +14,17 @@ Severity: #error
 Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader'))"
 
 Invariant: medcom-careCommunication-2
-Description: "Entry shall contain exactly one Patient profile"
+Description: "Entry shall contain exactly one Patient resource"
 Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
 
 Invariant: medcom-careCommunication-3
-Description: "All Provenance profiles shall contain activities from medcom-careCommunication-messagingActivities valueset"
+Description: "All Provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
 Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-careCommunication-messagingActivities'))"
 
 Invariant: medcom-careCommunication-4
-Description: "The status in the Communication profile shall always be 'unknown'"
+Description: "The status in the Communication resource shall always be 'unknown'"
 Severity: #error
 Expression: "entry.ofType(Communication).status = 'unknown'"
 
