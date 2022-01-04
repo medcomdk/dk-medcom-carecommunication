@@ -39,6 +39,7 @@ Description:    "Care related communication between two or more parties in Danis
 * sender ^definition = "The sender of the message shall be present in case the sender is given as a practitioner role or an organization"
 * sender ^short = "Is more specific than the MessageHeader.sender. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * payload 1..
+* payload ^definition = "The content of a message including text and attachments must maximum be 50 MB"
 * payload.extension contains medcom-core-datetime-extension named date 1..1 MS
 * payload.extension contains medcom-core-author-extension named author 1..1 MS only Reference(MedComCorePractitioner)
 * payload ^slicing.discriminator.type = #type

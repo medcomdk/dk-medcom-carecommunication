@@ -4,7 +4,7 @@
 
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR &reg;&copy; Care Communication in  message based exchange of data in Danish healthcare.
 
-This IG contains profiles for the MedCom standard called CareCommunication, which involves exchange of various information about a patient between health organizations, similar to an email, with or without attachments.
+This IG contains profiles for the MedCom standard called CareCommunication, which involves exchange of various information about a patient between health organizations, similar to an email, with or without attachments. The maximum size of a MedCom CareCommunication message must not be above 50 MB, including all text and attachments. 
 
 CareCommunication obeys to the general MedCom messaging model, and the structure of a CareCommunication message is depicted on the following diagram:
 
