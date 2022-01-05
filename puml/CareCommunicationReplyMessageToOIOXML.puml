@@ -19,6 +19,7 @@ title Simplified example: New message (answer to OIOXML)
 package "Message 1: New message" as new <<Frame>>{
     class "Bundle 1" as newB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-03T14:00:10Z
         ...
     }
     class "MessageHeader 1" as newMH{
@@ -34,8 +35,9 @@ package "Message 1: New message" as new <<Frame>>{
     class "Communication 1" as newCom{
         Communication.status = "unknown"
         Communication.class = "regaring-referal"
+        Communication.sent = 2021-12-03T14:00:00Z
         Communication.payload.contentString = "Question regarding a referal"
-        Communication.payload.payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload.payloadDateTimeExtension = 2021-12-03T12:34:56Z
         Communication.payload.payloadAuthorExtension = Practitioner/Prac1
         ...
     }
@@ -57,9 +59,9 @@ package "Message 1: New message" as new <<Frame>>{
     class "Provenance 1" as newPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         Provenance.entity.role = "source"
-        Provenance.entity.reference = "B300720181623#5790000121526"
+        Provenance.entity.what.identifier = "B300720181623#5790000121526"
         ...
     }
 

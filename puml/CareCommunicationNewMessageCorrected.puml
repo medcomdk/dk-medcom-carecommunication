@@ -18,6 +18,7 @@ title Simplified example: New message Corrected
 package "Message 1: New message" as new <<Frame>>{
     class "Bundle 1" as newB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-03T14:00:10Z
         ...
     }
     class "MessageHeader 1" as newMH{
@@ -33,8 +34,9 @@ package "Message 1: New message" as new <<Frame>>{
     class "Communication 1" as newCom{
         Communication.status = "unknown"
         Communication.category = "medicine"
+        Communication.sent = 2021-12-03T14:00:00Z
         Communication.payload.contentString = "Question regarding medicine..."
-        Communication.payload.payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload.payloadDateTimeExtension = 2021-12-03T12:34:56Z
         Communication.payload.payloadAuthorExtension = Practitioner/Prac1
         ...
     }
@@ -56,9 +58,7 @@ package "Message 1: New message" as new <<Frame>>{
     class "Provenance 1" as newPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Oragnization 1"
         ...
     }
 
@@ -80,6 +80,7 @@ newPracR-[hidden]-newPRO
 package "Message 2: Corrected message" as error <<Frame>>{
     class "Bundle 2" as errorB {
         Bundle.id = BUN2
+        Bundle.timestamp = 2021-12-03T16:00:10Z
         ...
     }
     class "MessageHeader 2" as errorMH{
@@ -95,8 +96,9 @@ package "Message 2: Corrected message" as error <<Frame>>{
     class "Communication 2" as newerrorCom{
         Communication.status = "unknown"
         Communication.category = "medicine"
+        Communication.sent = 2021-12-03T16:00:00Z
         Communication.payload[1].contentString = "Corrected question regarding medicine.."
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-01T12:45:01Z
+        Communication.payload[1].payloadDateTimeExtension = 2021-12-03T15:45:01Z
         Communication.payload[1].payloadAuthorExtension = Practitioner/Prac1
         ...
     }
@@ -118,15 +120,13 @@ package "Message 2: Corrected message" as error <<Frame>>{
     class "Provenance 1" as newerrorPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
     class "Provenance 2" as errorPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "revision"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 1"
         Provenance.entity.role = "modified-message"
         Provenance.entity.what.reference = MessageHeader/MHID1
         ...
