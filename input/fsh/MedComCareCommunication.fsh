@@ -18,6 +18,7 @@ Description:    "Care related communication between two or more parties in Danis
 * encounter ^type.aggregation = #bundled
 * encounter ^definition = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
 * sent 1.. MS
+* sent ^definition = "Shall contain date, time and timezone for when the sender press 'send'."
 * recipient 0..
 * recipient ^slicing.discriminator.type = #type
 * recipient ^slicing.discriminator.path = "$this"
@@ -68,9 +69,9 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^definition = "Shall be present if the creation time of the attachment will be relevant to a recipient"
 * status ^short = "The MedComCareCommunication message status may be unknown. status is required because of basic FHIR profile requirement"
-* category ^short = "The MedComCareCommunication category (danish:Kategori) describes the content of the message."
+* category ^short = "The MedComCareCommunication category (danish: kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
-* topic ^short = "The MedComCareCommunication topic (danish:emne) may be added as a supplement to the category"
+* topic ^short = "The MedComCareCommunication topic (danish: emne) may be added as a supplement to the category"
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
 Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes
