@@ -41,7 +41,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload 1..
 * payload ^definition = "The content of a message including text and attachments must maximum be 50 MB"
 * payload.extension contains medcom-core-datetime-extension named date 1..1 MS
-* payload.extension contains medcom-core-author-extension named author 1..1 MS only Reference(MedComCorePractitioner)
+* payload.extension contains medcom-core-author-extension named author 1..1 MS 
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
@@ -71,6 +71,12 @@ Description:    "Care related communication between two or more parties in Danis
 * category ^short = "The MedComCareCommunication category (danish:Kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
 * topic ^short = "The MedComCareCommunication topic (danish:emne) may be added as a supplement to the category"
+* priority obeys medcom-careCommunication-5
+
+Invariant: medcom-careCommunication-5
+Description: "Priority is only allowed if the Communication.category = 'regarding-referral'"
+Severity: #error
+Expression: "entry.resource.ofType(Communication).category.coding.code = 'regarding-referral'"
 
 Alias: $EventStatus = http://hl7.org/fhir/event-status
 Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes
