@@ -18,6 +18,7 @@ title Simplified example: New message with Attachment
 package "Message 1: New message" as new <<Frame>>{
     class "Bundle 1" as newB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-03T14:00:10Z
         ...
     }
     class "MessageHeader 1" as newMH{
@@ -33,13 +34,14 @@ package "Message 1: New message" as new <<Frame>>{
     class "Communication 1" as newCom{
         Communication.status = "unknown"
         Communication.class = "medicine"
+        Communication.sent = 2021-12-03T14:00:00Z
         Communication.payload[0].contentString = "Question regarding medicine"
-        Communication.payload[0].payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload[0].payloadDateTimeExtension = 2021-12-03T13:34:00Z
         Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
-        Communication.payload[1].contentAttachment.data = "TWVkaWNpbmUgcmVjZWlwdA==" 
-        Communication.payload[1].contentAttachment.title = "Medicin Receipt"
+        Communication.payload[1].contentAttachment.data = "IlBERi1kb2N1bWVudCBvZiBNZWRpY2F0aW9uIFJlY2llcHQi" 
+        Communication.payload[1].contentAttachment.title = "Medication Receipt"
         Communication.payload[1].contentAttachment.contentType = "application/pdf"
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload[1].payloadDateTimeExtension = 2021-12-02T12:34:56Z
         Communication.payload[1].payloadAuthorExtension = Practitioner/Prac1
         ...
     }
@@ -61,9 +63,7 @@ package "Message 1: New message" as new <<Frame>>{
     class "Provenance 1" as newPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
 

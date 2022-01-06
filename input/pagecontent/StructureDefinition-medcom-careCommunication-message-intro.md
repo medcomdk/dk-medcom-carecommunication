@@ -14,11 +14,12 @@ Please notice, that in the following examples is the Provenance resources listed
 Not all information that is required in a CareCommunication message are displayed in the examples. 
 
 
-#### Message sent with an image as an attachment
+#### Message sent with an pdf as an attachment
 When MedCom FHIR CareCommunication message is sent it is possible to include an attachment e.g., an image or a pdf-document. This type of attachment shall be base64-encoded and added to the data element, as illustrated in the example. It is also allowed to include an URL as an attachment and in this case shall the url element be used. In both cases, there must be included a title, a time and date for applying the attachment and an author responsible for the attachment. 
 As there is no previous message is there no data in the Provenance.entity element. The Provenance.activity shall be *new-message*. 
 
-* [Simplified example of a CareCommunication message with an image attachment](./carecommunication/CCNewMessageAttachment.png)
+* [Simplified example of a CareCommunication message with an pdf attachment](./carecommunication/CCNewMessageAttachment.png)
+_Note:_ The attachment is not an actual pdf-document, as the base64-code would be extremely long. Instead, is a short text.
 
 #### How to reply a MedCom FHIR CareCommunication message 
 This section describes how a MedCom FHIR CareCommunication message reply flow shall be handled.

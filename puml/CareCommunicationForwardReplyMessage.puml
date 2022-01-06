@@ -19,6 +19,7 @@ title Simplified example: Forward a Reply message
 package "Message 1: New message" as new <<Frame>>{
     class "Bundle 1" as newB {
         Bundle.id = BUN1
+        Bundle.timestamp = 2021-12-03T14:00:10Z
         ...
     }
     class "MessageHeader 1" as newMH{
@@ -34,8 +35,9 @@ package "Message 1: New message" as new <<Frame>>{
     class "Communication 1" as newCom{
         Communication.status = "unknown"
         Communication.class = "medicine"
+        Communication.sent = 2021-12-03T14:00:00Z
         Communication.payload.contentString = "Question regarding medicine"
-        Communication.payload.payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload.payloadDateTimeExtension = 2021-12-03T12:34:56Z
         Communication.payload.payloadAuthorExtension = Practitioner/Prac1
         ...
     }
@@ -57,9 +59,7 @@ package "Message 1: New message" as new <<Frame>>{
     class "Provenance 1" as newPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
 
@@ -81,6 +81,7 @@ newPracR-[hidden]-newPRO
 package "Message 2: Reply message" as reply <<Frame>>{
     class "Bundle 2" as replyB {
         Bundle.id = BUN2
+        Bundle.timestamp = 2021-12-04T16:00:10Z
         ...
     }
     class "MessageHeader 2" as replyMH{
@@ -96,11 +97,12 @@ package "Message 2: Reply message" as reply <<Frame>>{
     class "Communication 2" as newreplyCom{
         Communication.status = "unknown"
         Communication.class = "medicine"
+        Communication.sent = 2021-12-04T16:00:00Z
         Communication.payload[0].contentString = "Question regarding medicine..."
-        Communication.payload[0].payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload[0].payloadDateTimeExtension = 2021-12-03T12:34:56Z
         Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
         Communication.payload[1].contentString = "Answer to medicine question..."
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-02T10:10:01Z
+        Communication.payload[1].payloadDateTimeExtension = 2021-12-04T15:10:01Z
         Communication.payload[1].payloadAuthorExtension = Practitioner/Prac2
         ...
     }
@@ -122,9 +124,7 @@ package "Message 2: Reply message" as reply <<Frame>>{
     class "Provenance 1" as newreplyPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
     class "Practitioner 2" as replyPrac{
@@ -137,7 +137,7 @@ package "Message 2: Reply message" as reply <<Frame>>{
     class "Provenance 2" as replyPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "reply-messsage"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 2"
         Provenance.entity.role = "derivation"
         Provenance.entity.what.reference = MessageHeader/MHID1
         ...
@@ -164,6 +164,7 @@ replyPracR-[hidden]-replyPRO
 package "Message 3: Forward message" as forward <<Frame>>{
     class "Bundle 3" as forwardB {
         Bundle.id = BUN3
+        Bundle.timestamp = 2021-12-06T14:00:10Z
         ...
     }
     class "MessageHeader 3" as forwardMH{
@@ -179,14 +180,15 @@ package "Message 3: Forward message" as forward <<Frame>>{
     class "Communication 3" as newforwardCom{
         Communication.status = "unknown"
         Communication.class = "medicine"
+        Communication.sent = 2021-12-06T14:00:00Z
         Communication.payload[0].contentString = "Question regarding medicine..."
-        Communication.payload[0].payloadDateTimeExtension = 2021-12-01T12:34:56Z
+        Communication.payload[0].payloadDateTimeExtension = 2021-12-03T12:34:56Z
         Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
         Communication.payload[1].contentString = "Answer to medicine question..."
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-02T10:10:01Z
+        Communication.payload[1].payloadDateTimeExtension = 2021-12-04T15:10:01Z
         Communication.payload[1].payloadAuthorExtension = Practitioner/Prac2
         Communication.payload[2].contentString = "Forward answer to medicine question..."
-        Communication.payload[2].payloadDateTimeExtension = 2021-12-04T11:11:11Z
+        Communication.payload[2].payloadDateTimeExtension = 2021-12-06T13:50:11Z
         Communication.payload[2].payloadAuthorExtension = Practitioner/Prac3
         ...
     }
@@ -208,9 +210,7 @@ package "Message 3: Forward message" as forward <<Frame>>{
     class "Provenance 1" as newforwardPRO{
         Provenance.target = MessageHeader/MHID1
         Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Regional Organization"
-        Provenance.entity.role = "source"
-        Provenance.entity.what = NA
+        Provenance.agent.who = "Sender Organization 1"
         ...
     }
     class "Practitioner 2" as replyforwardPrac{
@@ -223,7 +223,7 @@ package "Message 3: Forward message" as forward <<Frame>>{
     class "Provenance 2" as replyforwardPRO{
         Provenance.target = MessageHeader/MHID2
         Provenance.activity = "reply-messsage"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 2"
         Provenance.entity.role = "derivation"
         Provenance.entity.what.reference = MessageHeader/MHID1
         ...
@@ -238,7 +238,7 @@ package "Message 3: Forward message" as forward <<Frame>>{
     class "Provenance 3" as forwardPRO{
         Provenance.target = MessageHeader/MHID3
         Provenance.activity = "forward-messsage"
-        Provenance.agent.who = "Regional Organization"
+        Provenance.agent.who = "Sender Organization 2"
         Provenance.entity.role = "quotation"
         Provenance.entity.what.reference = MessageHeader/MHID2
         ...
