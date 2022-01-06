@@ -52,6 +52,8 @@ Description:    "Care related communication between two or more parties in Danis
     attachment 0.. MS
 * payload[string].content[x] only string
 * payload[string].content[x] MS
+* payload[string] ^short = "xhtml or plain content of the message"
+* payload[string] ^definition = "xhtml shall be used to markup a text. The xhtml shall be compliant with the narrative text format. Otherwise, it is allowed to use plain text."
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
 * payload[attachment] ^definition = "The payload of the message shall contain all links or content attached to the message."
