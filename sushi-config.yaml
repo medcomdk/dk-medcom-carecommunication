@@ -1,5 +1,5 @@
-id: dk.fhir.ig.medcom-carecommunication
-canonical: http://medcomfhir.dk/fhir/carecommunication/1.0
+id: dk.fhir.ig.dk-medcom-carecommunication
+canonical: http://medcomfhir.dk/fhir/carecommunication/
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG

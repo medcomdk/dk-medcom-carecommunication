@@ -1,5 +1,3 @@
-### Implementation guide for MedCom FHIR Care Communication
-
 ### Introduction
 
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR &reg;&copy; Care Communication in  message based exchange of data in Danish healthcare.
