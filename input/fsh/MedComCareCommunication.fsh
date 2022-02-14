@@ -81,8 +81,6 @@ Description: "Priority is only allowed if the Communication.category = 'regardin
 Severity: #error
 Expression: "entry.resource.ofType(Communication).category.coding.code = 'regarding-referral'"
 
-Alias: $EventStatus = http://hl7.org/fhir/event-status
-Alias: $CategoryCodes = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-careCommunication-categoryCodes
 
 
 // CareCommunication example
@@ -148,8 +146,6 @@ Usage: #inline
 * payload[0].extension[date].valueDateTime = 2020-01-01
 * payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
-Alias: $bcp13 = urn:ietf:bcp:13
-
 // CareCommunication with attachment example
 Instance: 487e2238-527b-11ec-bf63-0242ac130002
 InstanceOf: MedComCareCommunication
@@ -159,7 +155,7 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2021-11-30T12:34:56Z
 * payload[0].contentString = "The burns are quite severe, see picture."
 * payload[0].extension[date].valueDateTime = 2021-11-30
@@ -179,7 +175,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 * category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* encounter = Reference(09437365-821a-4a94-b32b-8916db1d5f62)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
 * sent = 2021-11-30T12:34:56Z
 * payload.contentString = "We have a question regarding the referal you sent and it is very urgent..."
 * payload.extension[date].valueDateTime = 2021-11-29

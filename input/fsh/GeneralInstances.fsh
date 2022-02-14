@@ -46,8 +46,6 @@ Description: "A core organization with a SOR identifier."
 * name = "Aros Burn Center"
 
 // MedComCoreEncounter instance
-Alias: $StatusCodes = http://hl7.org/fhir/encounter-status
-Alias: $ActCodes = http://terminology.hl7.org/CodeSystem/v3-ActCode 
 
 Instance: 6220b42d-c4fd-4c77-bae7-78e7d890dc8d
 InstanceOf: MedComCoreEncounter
@@ -58,7 +56,6 @@ Description: "Example of a simple MedCom Core Encounter"
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 
 // MedComMessagingMessage instance
-Alias: $BundleType = http://hl7.org/fhir/bundle-type
 
 Instance: eb26be85-fdb7-454d-a980-95cba6d1745b
 InstanceOf: MedComMessagingMessage
@@ -73,8 +70,6 @@ Description: "Example of an emty message."
 * entry[=].resource = 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 
 // MedComMessagingMessageHeader og MedComMessagingDestinationUseExtension instance
-Alias: $MessageEvents = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-eventCodes
-Alias: $Use = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-destinationUse
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
@@ -99,8 +94,10 @@ Instance: 74cdf292-abf3-4f5f-80ea-60a48013ff6d
 InstanceOf: MedComMessagingOrganization
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "543210987654321"
-* identifier[eanIdentifier].value = "5790000121526"
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "5790000121526"
+* identifier[eanIdentifier].system = "urn:oid:1.3.88"
+* identifier[eanIdentifier].value = "543210987654321"
 * name = "Receiver Organization"
 
 // Sender instance
@@ -108,8 +105,10 @@ Instance: d7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 InstanceOf: MedComMessagingOrganization
 Title: "Example of a sender organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[sorIdentifier].value = "123456789012345"
-* identifier[eanIdentifier].value = "5790001382445"
+* identifier[sorIdentifier].system = "urn:oid:1.2.208.176.1.1"
+* identifier[sorIdentifier].value = "5790001382445"
+* identifier[eanIdentifier].system = "urn:oid:1.3.88"
+* identifier[eanIdentifier].value = "123456789012345"
 * name = "Sender Organization"
 
 // Service provider instance
@@ -121,7 +120,6 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[eanIdentifier].value = "5790000121530"
 
 // MedComMessagingProvenance instance 
-Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
 
 // Acknowledgement example
 Instance: 21ec3323-3e3b-43d9-8a53-e1155ef29f99

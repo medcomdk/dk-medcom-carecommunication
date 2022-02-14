@@ -1,4 +1,4 @@
-Alias: $bcp13 = urn:ietf:bcp:13
+
 
 ValueSet: MedComCoreAttachmentMimeTypes
 Id: medcom-core-attachmentMimeTypes

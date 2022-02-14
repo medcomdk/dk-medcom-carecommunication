@@ -1,10 +1,10 @@
 id: dk.fhir.ig.dk-medcom-carecommunication
-canonical: http://medcomfhir.dk/fhir/carecommunication/
+canonical: http://medcomfhir.dk/fhir/carecommunication
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
 status: active
-version: "1.0.0"
+version: "2.0.0"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Build CI

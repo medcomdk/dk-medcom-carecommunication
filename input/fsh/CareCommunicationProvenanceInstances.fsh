@@ -1,5 +1,3 @@
-Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
-
 // CareCommunication example
 
 Instance: 4c284936-5454-4116-95fc-3c8eeeed2400

@@ -21,15 +21,12 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('medcom-careCommunication-messagingActivities'))"
+Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/fhir/carecommunication/ValueSet/medcom-careCommunication-messagingActivities'))"
 
 Invariant: medcom-careCommunication-4
 Description: "The status in the Communication resource shall always be 'unknown'"
 Severity: #error
-Expression: "entry.ofType(Communication).status = 'unknown'"
-
-Alias: $BundleType = http://hl7.org/fhir/bundle-type
-Alias: $ActivityCode = http://medcomfhir.dk/fhir/core/1.0/CodeSystem/medcom-messaging-activityCodes
+Expression: "entry.resource.ofType(Communication).status = 'unknown'"
 
 
 Instance: 0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
