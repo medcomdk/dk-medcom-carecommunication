@@ -11,7 +11,7 @@ Description: "Message for communication care related information between parties
 Invariant: medcom-careCommunication-1
 Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
 Severity: #error
-Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/core/1.0/StructureDefinition/medcom-careCommunication-messageHeader'))"
+Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader'))"
 
 Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one Patient resource"
