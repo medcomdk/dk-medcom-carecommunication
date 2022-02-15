@@ -74,7 +74,7 @@ Description: "Example of an emty message."
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
-* valueCoding = $Use#primary
+* valueCoding.code = $Use#primary
 
 Instance: 3881874e-2042-4a00-aee8-23512799f512
 InstanceOf: MedComMessagingMessageHeader
@@ -130,7 +130,7 @@ Usage: #example
 * target = Reference(6b027613-c442-406d-bc53-3d913f73e0a8)
 * occurredDateTime = 2021-09-21T07:15:43Z
 * recorded = 2021-09-21T07:15:43Z
-* activity = $ActivityCode#reply-message
+* activity.coding.code = $ActivityCode#reply-message
 * agent.who = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* entity.role = #derivation
+* entity.role = #revision
 * entity.what = Reference(51b27813-8aa8-4fa1-846b-aeabf5afb7d4)
