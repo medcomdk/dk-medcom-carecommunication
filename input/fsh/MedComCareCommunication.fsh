@@ -80,6 +80,10 @@ Description: "Priority is only allowed if the Communication.category = 'regardin
 Severity: #error
 Expression: "entry.resource.ofType(Communication).category.coding.code = 'regarding-referral'"
 
+Invariant: medcom-careCommunication-6
+Description: "There shall be a Communication.topic if Communication.category = 'Other"
+Severity: #error
+Expression: "entry.resource.ofType(Communication).topic.where(%resource.entry.resource.ofType(Communication).category.coding.code = 'other').exists()"
 
 
 // CareCommunication example
@@ -168,8 +172,9 @@ Usage: #example
 // CareCommunication regarding referal example
 Instance: 4ec35384-527b-11ec-bf63-0242ac130002
 InstanceOf: MedComCareCommunication
-Title: "Example of Care Communication Content - new message with priority"
-Description: "Content of care communication message. Valid only if used in a bundle (message) - new message  with priority"
+Title: "Example of Care Communication message - new message with priority"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - new message with priority"
+Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
