@@ -73,17 +73,8 @@ Description:    "Care related communication between two or more parties in Danis
 * category ^short = "The MedComCareCommunication category (danish: kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
 * topic ^short = "The MedComCareCommunication topic (danish:emne) may be added as a supplement to the category"
-* priority obeys medcom-careCommunication-5
 
-Invariant: medcom-careCommunication-5
-Description: "Priority is only allowed if the Communication.category = 'regarding-referral'"
-Severity: #error
-Expression: "entry.resource.ofType(Communication).category.coding.code = 'regarding-referral'"
 
-Invariant: medcom-careCommunication-6
-Description: "There shall be a Communication.topic if Communication.category = 'Other"
-Severity: #error
-Expression: "entry.resource.ofType(Communication).topic.where(%resource.entry.resource.ofType(Communication).category.coding.code = 'other').exists()"
 
 
 // CareCommunication example
@@ -163,7 +154,7 @@ Usage: #example
 * payload[0].contentString = "The burns are quite severe, see picture."
 * payload[0].extension[date].valueDateTime = 2021-11-30
 * payload[0].extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
-* payload[1].contentAttachment.contentType = $bcp13#application/png 
+* payload[1].contentAttachment.contentType = $bcp13#image/png
 * payload[1].contentAttachment.data = "iVBORw0KGgoAAAANSUhEUgAAARQAAAChCAMAAAAx3rA5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA8UExURf////8gIP8AAP/f3/+AgP/+/v/Pz/8BAf8wMP8hIf+Pj/9zc/87O//Nzf9XV/+srP8dHf8QEP8xMQAAACKcjjEAAAAUdFJOU/////////////////////////8AT0/nEQAAAAlwSFlzAAAOwwAADsMBx2+oZAAABFRJREFUeF7tnFtzozwQRCnyBMR24f//Y3dmpDETp1cVX75L7Z7zEC4RILUaTScPTAA/ZZmNZfrYpvXv3tunj7VrMp36Foytb6Ew9+3St2CkKLkFA1EEiCLY+xZRBFShwkffQiEdglMEOKaAQwRZdUi0BXKKAFEEiCIg0Q6gChXIJwIS7QAcU8Ahgqw6JNoCOUWAKAJEEZBoB1CFCuQTAYl2AI4p4BBBVh0SbYGcIkAUAaIISLQDqEIF8omARDsAxxRwiCCrDom2QE4RIIoAUQQk2gFUoQL5RECiHYBjCjhEkFWHRFsgpwgQRYAoAhLtAKpQgXwiINEOwDEFHCLIqkOiLbySU9Z5m66z+MjI/IYCP8/zue9+4aRPC6xrp/naDx7iNVHWIsrVP8liMhlfRdnmS997gOvvOvSIKNb4XxflbBcdT41hrKIXT4ny29H8XBRr6NP2BC8k2pM9cTuua3N7/q7AfySKd23/qYCaJ6rQ2Z5YxvsZosTc7CF1fOLIBhHkybO/bmaxPUa92W9yWpzdjv38Oa7pL2bc4fhO0nz2EzHaplzMxnW3l/Y8XebVH+utrWvrk+XjffmkOSVEWbwzYZDNut2dEidTlD0GGZfscZ1ziUG2BelwyurH55sqrsjJmroqVZQlnnIJUYVdH+J9ibaJEgvvYrN/2DxFqU759P21jyOf3Vq040OU4LibieIOivtUUVqDpuvP150xrzsm+rbFiHYzRRux00XxkzdRfFy28Z++IAY5lGjYZDu4idRbhSNboy6K76bCd5I+yusOST791W+j9Snf2q6hnBK/a0X8lkdsPYjtpze8H9a9KNG4nYzFrK1obxKl3cu63LfP0+fK8bn+Jsp3p1y/PjRFidNlWLZOGOmc76Iop9z57EFyJMeInqWI0pxy9/oop/jPG7m4LD7UQ5T2Rt6Ob6+P3bSd/Oec8rV/z1BFsblu9cHposTv2zLZRbmPVs1LzTDHXFuxNYoocXHcLS4wI+Xx/0+UPldOmCLq4mq96x31v5T8L5pDFKvGvr1ZanUdezI/hhX3Waoo9qC4mcm99uP3OiWmwXhdlOKUXD5af63vkdA8qV1iqUlRWpPUpA24jaquCr4er9djTdl8kWke8+tPUcTunPLampK0rkDAf9wE6RCcIsAxBRwiyJIR9QIaKUpuwUAUAaII3pdo/0CoQgXyiYBEOwDHFHCIIKsOibZAThEgigBRBCTaAVShAvlEQKIdgGMKOESQVYdEWyCnCBBFgCgCEu0AqlCBfCIg0Q7AMQUcIsiqQ6ItkFMEiCJAFAGJdgBVqEA+EZBoB+CYAg4RZNUh0RbIKQJEESCKgEQ7gCpUIJ8ISLQDcEwBhwiy6pBoC+QUAaIIEEVAoh1AFSqQTwQk2gE4poBDBFl1SLQFcooAUQSIIiDRDqAKFcgnAhLtABxTwCGCrDok2gI5RXATxT/vuZ2mxXb+7r2P/t12AHiSafoFEaQnJeAruVEAAAAASUVORK5CYII=" 
 * payload[1].contentAttachment.title = "Picture of Patient's burn. Taken at arrival on 2021-11-29" 
 * payload[1].extension[date].valueDateTime = 2021-11-29
@@ -185,20 +176,16 @@ Usage: #example
 * payload.extension[date].valueDateTime = 2021-11-29
 * payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 
-
-
-// Practitioners
-Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
-InstanceOf: Practitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
-
-Instance: ad055a3d-16b6-41f9-891a-7dd73eecaf03
-InstanceOf: Practitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-Usage: #inline
-* name.given = "Emma"
-* name.family = "Waters"
+// CareCommunication modify example
+Instance: 273bc02c-9000-11ec-b909-0242ac120002
+InstanceOf: MedComCareCommunication
+Title: "Example of Care Communication Content - modify message"
+Description: "Content of care communication message. Valid only if used in a bundle (message) - modify message"
+* status = $EventStatus#unknown
+* category = $CategoryCodes#carecoordination
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* encounter = Reference(6220b42d-c4fd-4c77-bae7-78e7d890dc8d)
+* sent = 2020-09-28T12:34:56Z
+* payload.contentString = "The burns are not severe"
+* payload.extension[date].valueDateTime = 2020-09-28
+* payload.extension[author].valueReference = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
