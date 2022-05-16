@@ -1,0 +1,31 @@
+@startuml testSimpleDiagram
+
+left to right direction
+'title
+title CareCommunication Message
+
+'Message 1: New message
+
+rectangle Bundle as "Bundle" #LightBlue{
+    rectangle messageHeader as "MessageHeader" #LightBlue{
+        rectangle communication as "Communication" #LightBlue{
+            rectangle patient as "Patient" #LightCoral{
+            }
+            rectangle encounter as "Encounter" #LightCoral{
+            }
+            rectangle specific as "Specific sender/receiver" #LightCoral{
+            }
+            rectangle practitioner as "Practitioner" #LightCoral{
+            }
+            rectangle practitionerrole as "PractitionerRole" #LightCoral{
+            }
+        }
+        rectangle sender as "Sender Organization" #LightGoldenRodYellow{
+        }
+        rectangle receiver as "Receiver Organization" #LightGoldenRodYellow{
+        }
+    }
+    rectangle provenance as "Provenance" #LightGoldenRodYellow{
+    }
+}
+@enduml
