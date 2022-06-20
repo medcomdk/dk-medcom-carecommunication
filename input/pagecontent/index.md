@@ -57,5 +57,5 @@ This document presents MedCom messaging concepts defined via FHIR processable ar
 
 FHIR profiles are managed under MedCom:
 
-* [Source](https://github.com/hl7dk/dk-medcom)
-* [Wiki](https://github.com/hl7dk/dk-medcom)
+* [Source](https://github.com/medcomdk/dk-medcom)
+* [Wiki](https://github.com/medcomdk/dk-medcom)
