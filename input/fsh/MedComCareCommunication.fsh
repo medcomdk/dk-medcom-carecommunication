@@ -4,9 +4,9 @@ Id:             medcom-careCommunication-communication
 Description:    "Care related communication between two or more parties in Danish healthcare"
 * status MS
 * category 1..1 MS
-* category from MedComCareCommunicationCategories
+* category from $CCCategoryCodes
 * priority MS
-* priority from MedComCareCommunicationRequestPriority
+* priority from $RequestPriority
 * priority ^definition = "Shall be present if the message priority is known to be ASAP"
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
@@ -41,8 +41,8 @@ Description:    "Care related communication between two or more parties in Danis
 * sender ^short = "Is more specific than the MessageHeader.sender. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * payload 1..
 * payload ^definition = "The content of a message including text and attachments must maximum be 50 MB"
-* payload.extension contains medcom-core-datetime-extension named date 1..1 MS
-* payload.extension contains medcom-core-author-extension named author 1..1 MS 
+* payload.extension contains medcom-core-datetime-extension named date 1..1 MS SU
+* payload.extension contains medcom-core-author-extension named author 1..1 MS SU
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
@@ -61,7 +61,7 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
 * payload[attachment].contentAttachment.contentType ^definition = "The content type shall be present in case the content is provided as an attached document (data) or links to a document."
-* payload[attachment].contentAttachment.contentType from MedComCoreAttachmentMimeTypes
+* payload[attachment].contentAttachment.contentType from $Mimetypes
 * payload[attachment].contentAttachment.data MS
 * payload[attachment].contentAttachment.data ^definition = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
 * payload[attachment].contentAttachment.url MS

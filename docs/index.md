@@ -1,4 +1,4 @@
-# MedCom GitHub Pages 
+# MedCom CareCommunication - WORK IN PROGRESS!
 <!-- HomePage -->
 This FHIR&reg;&copy; standard is developed by [MedCom](https://www.medcom.dk/). 
 

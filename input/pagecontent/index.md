@@ -51,7 +51,7 @@ This document presents MedCom messaging concepts defined via FHIR processable ar
 
 * [Profiles](profiles.html) - contain the constraints to core FHIR resources and datatype for use in MedCom messages
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts for the messaging
-* [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the messaging context
+* [Terminologies](https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/) - are defined or referenced code systems and value sets for the messaging context
 
 #### Governance
 
