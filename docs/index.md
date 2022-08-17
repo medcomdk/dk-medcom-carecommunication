@@ -7,7 +7,7 @@
   * [1.3 Implementation Guide](#13-implementation-guide)
 * [2 Test and Certification](#2-test-and-certification)
 * [3 Release Notes](#3-release-notes)
-
+<p>&nbsp;</p>
 
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
@@ -17,6 +17,7 @@ The Care Communication IG contains the following profiles:
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
+<p>&nbsp;</p>
 
 ## 1 Standard Documentation 
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the CareCommunication message, what to implement and how to get a MedCom certificate. The standard documentation for CareCommunication message includes:
@@ -30,7 +31,6 @@ The standard documentation below provides the necessary content to understand th
 The clinical guidelines is the foundation for the CareCommunication standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
 
 Below can the clinical guidelines in Danish and English be found:
-
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
 
