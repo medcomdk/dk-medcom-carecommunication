@@ -1,6 +1,17 @@
 # Non-Technical Guidelines
 
 **Table of Content**
+* [1 Introduktion](#1-introduktion)
+* [2 Formål](#2-formål)
+* [3 Baggrund](#3-baggrund)
+* [4 Illustration af FHIR korrespondancemeddelelse](#4-illustration-af-fhir-korrespondancemeddelelse)
+* [5 Krav og anbefalinger til FHIR Korrespondancemeddelelse](#5-krav-og-anbefalinger-til-fhir-korrespondancemeddelelse)
+* [6 Kategori og Emne](#6-kategori-og-emne)
+* [7 Prioritet- krav om afgrænset brug](#7-prioritet-krav-om-afgrænset-brug)
+* [8 Bilag](#8-bilag)
+* [9 Forsendelsesmuligheder](#9-forsendelsesmuligheder)
+* [10 Use Cases](#10-use-cases)
+* [11 Overgangsperiode med samtidig drift af korrespondancemeddelelse DIS91/XDIS91 og FHIR-Korrespondancemeddelelse](#11-overgangsperiode-med-samtidig-drift-af-korrespondancemeddelelse-dis91xdis91-og-fhir-korrespondancemeddelelse)
 
 ## 1 Introduktion
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser, fremover refereret til som FHIR-KM. Den indeholder formål, baggrund, en illustration af FHIR-KM og krav og anbefalinger til FHIR-KM, herunder funktionaliteter, samt information om en overgangsperiode med samtidig drift af korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> og FHIR-KM.
@@ -41,6 +52,7 @@ På baggrund af ovenstående behov, bliver FHIR-KM udarbejdet
 <img src="../images/IllustrationAfKorrespondanceMed.png" alt="Eksempel på, en korrespondancemeddelese" style="width:50%" id="Fig1">
 <figcaption text-align = "center"><b>Figur 1: Eksempel på, indhold i FHIR korresponcencemeddelese </b></figcaption>
 </figure>
+<p>&nbsp;</p>
 
 ## 5 Krav og anbefalinger til FHIR-Korrespondancemeddelelse
 FHIR-KM <b>skal</b> indeholde information om:
