@@ -28,3 +28,14 @@ Det er bl.a. blevet efterspurgt:
 * at det bliver muligt at indlejre bilag i kommunikationen mellem bl.a. kommuner, hospitaler og prakti-serende læger
 * at der bruges unikke ID’er i meddelelsen, så den teknisk kan kædes sammen med andre meddelel-ser i en tråd, og derved øge læseoverblikket for det kliniske personale
 * at brug af ”prioritet” overvejes, herunder fælles anvendelsesregler for brug af prioritet
+
+I 2018 nedsatte MedCom <a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/operationel-styregruppe-for-social-og-sundhedsomraadet" target="_blank">en operationel styregruppe for social- og sundhedsområdet</a> med henblik på at følge, og understøtte, udviklingen på social- og sundhedsområdet. Den operationelle styregruppe efterspør-ger mulighed for at kunne udveksle bilag digitalt, herunder bl.a.: koordinationsplaner/indsatsplaner, behand-lingsplaner samt kliniske dokumenter, eller skemaer til teammøder.
+På baggrund af ovenstående behov, bliver FHIR-KM udarbejdet
+
+## Illustration af FHIR-Korrespondancemeddelelse
+Nedenstående er en illustration af indhold i FHIR-KM. Illustrationen er et eksempel og indeholder ikke alle data, som er i standarden, og afspejler ikke det enkelte systems brugergrænseflade.
+
+<figure>
+<img src="../images/IllustrationAfKorrespondanceMed.png" alt="Eksempel på, en korrespondancemeddelese" style="width:50%" id="Fig1">
+<figcaption text-align = "center"><b>Figur 1: Eksempel på, indhold i FHIR korresponcencemeddelese </b></figcaption>
+</figure>
