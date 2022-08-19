@@ -1,11 +1,13 @@
 # MedCom CareCommunication
-<!-- HomePage -->
+<hr/>
+
 **Table of Content**
 * [1 Standard Documentation](#1-standard-documentation)
   * [1.1 Clinical Guidelines](#11-clinical-guidelines)
   * [1.2 Use Cases](#12-use-cases)
   * [1.3 Implementation Guide](#13-implementation-guide)
 * [2 Test and Certification](#2-test-and-certification)
+<hr/>
 <p>&nbsp;</p>
 
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
@@ -39,7 +41,7 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for CareCommunication are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-<b>Uses Cases in Danish and English are under development as soon as the uses cases are ready, they will be presented below.</b> 
+<b>Uses Cases in Danish and English are currently in preparation, as soon as the uses cases are ready, they will be presented below.</b> 
 
 <!-- Below can the use cases in Danish and English be found:<br> 
 
@@ -63,7 +65,7 @@ Certification of a system implies both an approved testprotocol and runtrough of
 
 [Find a general description of MedCom test and certification here](https://tmsmedcom.github.io/GitHubPagesTest/#test-and-certification). 
 
-The testprotocols and testscripts are currently in preparation. As soon as the tesprotocols and testscripts are ready, they will be presented below.
+<b>The testprotocols and testscripts are currently in preparation. As soon as the tesprotocols and testscripts are ready, they will be presented below.</b>
 
 **Sending a HospitalNotification message**
   * Testprotocol

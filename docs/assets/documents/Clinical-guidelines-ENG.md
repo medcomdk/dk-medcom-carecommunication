@@ -1,6 +1,7 @@
 [Return](../../index.md)
 
 # Non-Technical Guidelines
+<hr/>
 
 **Table of content**
 * [1 Introduction](#1-introduction)
@@ -15,7 +16,7 @@
 * [10 Use Cases](#10-use-cases)
 * [11 Transition period with simultaneous operation of CareCommunication DIS91/XDIS91 and FHIR-CareCommunication](#11-transition-period-with-simultaneous-operation-of-carecommunication-dis91xdis91-og-fhir-carecommunication)
 <hr/>
-<p>&nbsp;</p>
+
 
 ## 1 Introduction
 This is the textual part of the documentation for MedCom's FHIR standard for care communication, henceforward referred to as FHIR-CC. It contains purpose, background, an illustration of FHIR-CC, and requirements and recommendations for FHIR-CC, including functionalities, as well as information about a transition period with simultaneous operation of the care communication standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> and FHIR-CC. 
