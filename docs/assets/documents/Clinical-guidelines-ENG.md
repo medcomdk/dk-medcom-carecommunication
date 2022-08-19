@@ -52,10 +52,10 @@ Based on the above needs, FHIR-CC was developed.
 
 
 ## 4 Illustration of FHIR CareCommunication 
-<a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/operationel-styregruppe-for-social-og-sundhedsomraadet" target="_blank"> Figure 1 </a> Illustrates an example of the content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
+<a href="Fig1"> Figure 1 </a> Illustrates an example of the content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
 
 <figure>
-<img src="../images/IllustrationAfKorrespondanceMed_ENG.png" alt="" style="width:50%" id="Fig1">
+<img src="../images/IllustrationAfKorrespondanceMed_ENG.png" alt="" style="width:40%" id="Fig1">
 <figcaption text-align = "center"><b>Figure 1: Illustration of content in FHIR CareCommunication message </b></figcaption>
 </figure>
 <p>&nbsp;</p>
