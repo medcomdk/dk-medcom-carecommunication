@@ -50,10 +50,10 @@ I 2018 nedsatte MedCom <a href="https://www.medcom.dk/projekter/psykiatri-og-soc
 På baggrund af ovenstående behov, bliver FHIR-KM udarbejdet
 
 ## 4 Illustration af FHIR-Korrespondancemeddelelse
-<a href="Fig1">Figur 1</a> er en illustration af indhold i FHIR-KM. Illustrationen er et eksempel og indeholder ikke alle data, som er i standarden, og afspejler ikke det enkelte systems brugergrænseflade.
+<a href="#Fig1">Figur 1</a> er en illustration af indhold i FHIR-KM. Illustrationen er et eksempel og indeholder ikke alle data, som er i standarden, og afspejler ikke det enkelte systems brugergrænseflade.
 
 <figure>
-<img src="../images/IllustrationAfKorrespondanceMed.png" alt="Eksempel på, en korrespondancemeddelese" style="width:40%" id="#Fig1">
+<img src="../images/IllustrationAfKorrespondanceMed.png" alt="Eksempel på, en korrespondancemeddelese" style="width:40%" id="Fig1">
 <figcaption text-align = "center"><b>Figur 1: Eksempel på, indhold i FHIR korresponcencemeddelese </b></figcaption>
 </figure>
 

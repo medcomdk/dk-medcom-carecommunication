@@ -52,7 +52,7 @@ Based on the above needs, FHIR-CC was developed.
 
 
 ## 4 Illustration of FHIR CareCommunication 
-<a href="Fig1"> Figure 1 </a> Illustrates an example of the content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
+<a href="#Fig1"> Figure 1 </a> Illustrates an example of the content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
 
 <figure>
 <img src="../images/IllustrationAfKorrespondanceMed_ENG.png" alt="" style="width:40%" id="Fig1">
