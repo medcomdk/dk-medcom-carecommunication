@@ -1,4 +1,4 @@
-# MedCom CareCommunication - WORK IN PROGRESS!
+# MedCom CareCommunication
 <!-- HomePage -->
 **Table of Content**
 * [1 Standard Documentation](#1-standard-documentation)
