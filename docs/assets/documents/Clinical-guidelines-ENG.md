@@ -1,8 +1,21 @@
+[Return](../../index.md)
+
 # Non-Technical Guidelines
 
 **Table of content**
-
+* [1 Introduction](#1-introduction)
+* [2 Purpose](#2-purpose)
+* [3 Background](#3-background)
+* [4 Illustration of FHIR CareCommunication Message](#4-illustration-of-fhir-carecommunication)
+* [5 Requirements and recommendations for FHIR CareCommunication](#5-requirements-and-recommendations-for-fhir-carecommunication)
+* [6 Category and Subject](#6-category-and-subject)
+* [7 Priority-Limited use requirements](#7-priority-liited-use-requirements)
+* [8 Attachments]( #8-attachments)
+* [9 Mode of transfer](#9-mode-of-transfer)
+* [10 Use Cases](#10-use-cases)
+* [11 Transition period with simultaneous operation of CareCommunication DIS91/XDIS91 and FHIR-CareCommunication](#11-transition-period-with-simultaneous-operation-of-carecommunication-dis91xdis91-og-fhir-carecommunication)
 <hr/>
+<p>&nbsp;</p>
 
 ## 1 Introduction
 This is the textual part of the documentation for MedCom's FHIR standard for care communication, henceforward referred to as FHIR-CC. It contains purpose, background, an illustration of FHIR-CC, and requirements and recommendations for FHIR-CC, including functionalities, as well as information about a transition period with simultaneous operation of the care communication standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> and FHIR-CC. 
@@ -10,7 +23,6 @@ The target group for this text is IT system vendors and persons responsible for 
 Requirements and recommendations for content, including functionalities, have been completed in collaboration with  <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank"> a national working group </a> with representatives from regions, municipalities, and general practitioners (GPs). In addition, material describing the content and functionality of FHIR-CC has been sent for consultation to relevant MedCom groups and has been widely available for comments via publication on MedCom's website.
 The technical specifications (the profile) for the FHIR-CC standard can be found via <a href="https://simplifier.net/medcom-fhir-messaging " target="_blank">Simplifier</a>. In the profile, the technical specifications, the Danish language takes precedence over English.
 FHIR-CC will in the long term replace the MedCom standard CareCommunication <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> (also previously referred to as ClinicalEmail), as it will be gradually phased out.
-
 
 
 ## 2 Purpose
@@ -37,7 +49,6 @@ The following has, among other things, been requested:
 
 In 2018, MedCom set up an <a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/operationel-styregruppe-for-social-og-sundhedsomraadet" target="_blank"> operational steering committee for the social care and healthcare sector</a> with the purpose to follow and support developments in the social care and healthcare sector. The operational steering committee requested the opportunity to exchange documents digitally, including, among other things: coordination plans/focus plans, treatment plans and clinical documents, or schedules for team meetings.
 Based on the above needs, FHIR-CC was developed.
-
 
 
 ## 4 Illustration of FHIR CareCommunication 
