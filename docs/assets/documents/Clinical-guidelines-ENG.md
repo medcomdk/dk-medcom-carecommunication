@@ -52,15 +52,14 @@ Based on the above needs, FHIR-CC was developed.
 
 
 ## 4 Illustration of FHIR CareCommunication 
-Below is an illustration of content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
+<a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/operationel-styregruppe-for-social-og-sundhedsomraadet" target="_blank"> Figure 1 </a> Illustrates an example of the content in FHIR-CC. The illustration is an example and does not contain all the data that is in the standard and does not reflect the individual system's user interface.
 
 <figure>
 <img src="../images/IllustrationAfKorrespondanceMed_ENG.png" alt="" style="width:50%" id="Fig1">
-<figcaption text-align = "center"><b>Figure 1: </b></figcaption>
+<figcaption text-align = "center"><b>Figure 1: Illustration of content in FHIR CareCommunication message </b></figcaption>
 </figure>
 <p>&nbsp;</p>
-
-
+ 
 ## 5 Requirements and recommendations for FHIR CareCommunication
 FHIR-CC <b>must</b> contain information about:
 * Citizen/patient to whom the request relates
