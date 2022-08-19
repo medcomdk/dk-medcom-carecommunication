@@ -6,7 +6,6 @@
   * [1.2 Use Cases](#12-use-cases)
   * [1.3 Implementation Guide](#13-implementation-guide)
 * [2 Test and Certification](#2-test-and-certification)
-* [3 Release Notes](#3-release-notes)
 <p>&nbsp;</p>
 
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
@@ -49,8 +48,8 @@ Uses Cases in Danish and English are under development at will be added soon.
 
 ### 1.3 Implementation Guide
 
-The technical specifications for the CareCommunication standard are defined in IGs. As mentioned previously is the CareCommunication standard composed by profiles from *NUMBER* IGs and terminology from one IG. Links to the IG’s are listed below:
-*	<a href="https://medcomdk.github.io/dk-medcom-core/" target="_blank">MedCom Core IG</a>
+The technical specifications for the CareCommunication standard are defined in IGs. As mentioned previously is the CareCommunication standard composed by profiles from two IGs and terminology from one IG. Links to the IG’s are listed below:
+*	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/index.html" target="_blank">MedCom Core IG</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a>
 *	<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
@@ -76,6 +75,6 @@ The testprotocols and testscripts are currently in preparation. As soon as the t
   * TouchStone Testscripts
 <p>&nbsp;</p>
 
-## 3 Release Notes
+<!-- ## 3 Release Notes
 
-[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md)
+[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md) -->
