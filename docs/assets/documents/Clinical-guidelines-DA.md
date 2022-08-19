@@ -14,6 +14,7 @@
 * [9 Forsendelsesmuligheder](#9-forsendelsesmuligheder)
 * [10 Use Cases](#10-use-cases)
 * [11 Overgangsperiode med samtidig drift af korrespondancemeddelelse DIS91/XDIS91 og FHIR-Korrespondancemeddelelse](#11-overgangsperiode-med-samtidig-drift-af-korrespondancemeddelelse-dis91xdis91-og-fhir-korrespondancemeddelelse)
+<hr/>
 <p>&nbsp;</p>
 
 ## 1 Introduktion
