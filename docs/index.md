@@ -8,7 +8,6 @@
   * [1.3 Implementation Guide](#13-implementation-guide)
 * [2 Test and Certification](#2-test-and-certification)
 <hr/>
-<p>&nbsp;</p>
 
 > Clinical guidelines and use cases are in both Danish and English. The remaining documentation will be in English.
 
@@ -70,12 +69,11 @@ Certification of a system implies both an approved testprotocol and runtrough of
 **Sending a HospitalNotification message**
   * Testprotocol
   * TouchStone Testscripts
-<p>&nbsp;</p>
- 
+
 **Receiving a HospitalNotification message**
   * Testprotocol
   * TouchStone Testscripts
-<p>&nbsp;</p>
+
 
 <!-- ## 3 Release Notes
 
