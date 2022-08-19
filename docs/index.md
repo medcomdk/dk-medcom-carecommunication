@@ -30,7 +30,7 @@ The standard documentation below provides the necessary content to understand th
 
 The clinical guidelines is the foundation for the CareCommunication standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines to ensure that the implemented standard supports the requirements.
 
-Below can the clinical guidelines in Danish and English be found:
+Below can the clinical guidelines in Danish and English be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer](assets/documents/Clinical-guidelines-DA.md) <br> 
 [English: Clinical guidelines](assets/documents/Clinical-guidelines-ENG.md) 
 
@@ -40,7 +40,7 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for CareCommunication are qualified in collaboration with EPR- and vendors catering to the municipalities.
 
-Below can the use cases in Danish and English be found:
+Below can the use cases in Danish and English be found:<br> 
 
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 [English: Use cases](assets/documents/UseCases-ENG.md) 

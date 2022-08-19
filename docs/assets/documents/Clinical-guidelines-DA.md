@@ -1,3 +1,5 @@
+[Return](../../index.md)
+
 # Non-Technical Guidelines
 
 **Table of Content**
@@ -12,6 +14,7 @@
 * [9 Forsendelsesmuligheder](#9-forsendelsesmuligheder)
 * [10 Use Cases](#10-use-cases)
 * [11 Overgangsperiode med samtidig drift af korrespondancemeddelelse DIS91/XDIS91 og FHIR-Korrespondancemeddelelse](#11-overgangsperiode-med-samtidig-drift-af-korrespondancemeddelelse-dis91xdis91-og-fhir-korrespondancemeddelelse)
+<p>&nbsp;</p>
 
 ## 1 Introduktion
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser, fremover refereret til som FHIR-KM. Den indeholder formål, baggrund, en illustration af FHIR-KM og krav og anbefalinger til FHIR-KM, herunder funktionaliteter, samt information om en overgangsperiode med samtidig drift af korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> og FHIR-KM.
