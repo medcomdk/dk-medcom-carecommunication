@@ -57,7 +57,7 @@ The technical specifications for the CareCommunication standard are defined in I
 
 IGs might be difficult for people with little or no knowledge about FHIR and how to understand an IG. Therefore has MedCom developed a webpage describing the content of the Care Communication standard. The link below gives an overview of which profiles are included, what their purpose are, and which elements that shall be supported in a system. Further the structure of the standard is described and supported with examples in different degree of technical skills.
 
-[An introduction to the technical specificationscan be found here.]((assets/documents/Intro-Technical-Spec-ENG.md))
+[An introduction to the technical specificationscan be found here.](../docs/assets/documents/Intro-Technical-Spec-ENG.md)
 
 ## 2 Test and Certification
 Certification of a system implies both an approved testprotocol and runtrough of TouchStone testscripts. TouchStone describes an infrastructure that allows for automated test and validation against the IGs developes by MedCom.
