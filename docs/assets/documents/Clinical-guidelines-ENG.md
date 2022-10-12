@@ -1,7 +1,6 @@
 [Return](../../index.md)
 
-# Non-Technical Guidelines
-<hr/>
+<h1>Clinical guidelines for application</h1>
 
 **Table of content**
 * [1 Introduction](#1-introduction)
@@ -15,7 +14,6 @@
 * [9 Mode of transfer](#9-mode-of-transfer)
 * [10 Use Cases](#10-use-cases)
 * [11 Transition period with simultaneous operation of CareCommunication DIS91/XDIS91 and FHIR-CareCommunication](#11-transition-period-with-simultaneous-operation-of-carecommunication-dis91xdis91-og-fhir-carecommunication)
-<hr/>
 
 
 ## 1 Introduction

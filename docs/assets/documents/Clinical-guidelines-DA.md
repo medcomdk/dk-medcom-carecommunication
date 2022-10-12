@@ -1,6 +1,6 @@
 [Return](../../index.md)
 
-# Non-Technical Guidelines
+<h1>Sundhedsfaglige retningslinjer for anvendelse</h1>
 
 **Table of contents**
 * [1 Introduktion](#1-introduktion)
