@@ -7,18 +7,18 @@ Description:    "Care related communication between two or more parties in Danis
 * category from $CCCategoryCodes
 * priority MS
 * priority from $RequestPriority
-* priority ^definition = "Shall be present if the message priority is known to be ASAP"
+* priority ^short = "Shall be present if the message priority is known to be ASAP"
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
 * topic MS
-* topic ^definition = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
+* topic ^short = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
 * encounter MS
 * encounter only Reference(MedComCoreEncounter)
 * encounter ^type.aggregation = #bundled
-* encounter ^definition = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
+* encounter ^short = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
 * sent 1.. MS
-* sent ^definition = "Shall contain date, time and timezone for when the sender press 'send'."
+* sent ^short = "Shall contain date, time and timezone for when the sender press 'send'."
 * recipient 0..
 * recipient ^slicing.discriminator.type = #type
 * recipient ^slicing.discriminator.path = "$this"
@@ -27,11 +27,11 @@ Description:    "Care related communication between two or more parties in Danis
 * recipient ^short = "Is more specific than the MessageHeader.destination.reciever. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * recipient[organization] 0.. MS
 * recipient[organization] only Reference(Organization)
-* recipient[organization] ^definition = "The recipient of the message shall be present in case the recipient is given as more specific organization than the recipient of the message. E.g. a unit in a hospital or a home care group in a municipality."
+* recipient[organization] ^short = "The recipient of the message shall be present in case the recipient is given as more specific organization than the recipient of the message. E.g. a unit in a hospital or a home care group in a municipality."
 * recipient[organization] ^type.aggregation = #bundled
 * recipient[practitionerRole] 0.. MS
 * recipient[practitionerRole] only Reference(MedComCorePractitionerRole)
-* recipient[practitionerRole] ^definition = "The recipient of the message shall be present in case the recipient is given as a practitioner role. E.g. a named general practitioner."
+* recipient[practitionerRole] ^short = "The recipient of the message shall be present in case the recipient is given as a practitioner role. E.g. a named general practitioner."
 * recipient[practitionerRole] ^type.aggregation = #bundled
 * recipient ^type.aggregation = #bundled
 * sender 0.. MS
@@ -40,7 +40,7 @@ Description:    "Care related communication between two or more parties in Danis
 * sender ^definition = "The sender of the message shall be present in case the sender is given as a practitioner role or an organization"
 * sender ^short = "Is more specific than the MessageHeader.sender. It may be an organization e.g. a hospital unit or a homecare group in the municipality without SOR- and EAN-identifier or a named general practitioner."
 * payload 1..
-* payload ^definition = "The content of a message including text and attachments must maximum be 50 MB"
+* payload ^short = "The content of a message including text and attachments must maximum be 50 MB"
 * payload.extension contains medcom-core-datetime-extension named date 1..1 MS SU
 * payload.extension contains medcom-core-author-extension named author 1..1 MS SU
 * payload ^slicing.discriminator.type = #type
@@ -56,19 +56,20 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[string] ^definition = "xhtml shall be used to markup a text. The xhtml shall be compliant with the narrative text format. Otherwise, it is allowed to use plain text."
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
-* payload[attachment] ^definition = "The payload of the message shall contain all links or content attached to the message."
+* payload[attachment] ^short = "The payload of the message shall contain all links or content attached to the message."
 * payload[attachment].content[x] MS
+* payload[attachment].extension contains medcom-carecommunication-attachment-extension named identifier 0..1 MS SU // change cardinality to 1..1
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
-* payload[attachment].contentAttachment.contentType ^definition = "The content type shall be present in case the content is provided as an attached document (data) or links to a document."
+* payload[attachment].contentAttachment.contentType ^short = "The content type shall be present in case the content is provided as an attached document (data) or links to a document."
 * payload[attachment].contentAttachment.contentType from $Mimetypes
 * payload[attachment].contentAttachment.data MS
-* payload[attachment].contentAttachment.data ^definition = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
+* payload[attachment].contentAttachment.data ^short = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
 * payload[attachment].contentAttachment.url MS
-* payload[attachment].contentAttachment.url ^definition = "Shall be present if the attachment is a link to a document or a web page"
+* payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a document or a web page"
 * payload[attachment].contentAttachment.title 1.. MS
 * payload[attachment].contentAttachment.creation MS
-* payload[attachment].contentAttachment.creation ^definition = "Shall be present if the creation time of the attachment will be relevant to a recipient"
+* payload[attachment].contentAttachment.creation ^short = "Shall be present if the creation time of the attachment will be relevant to a recipient"
 * status ^short = "The MedComCareCommunication message status may be unknown. status is required because of basic FHIR profile requirement"
 * category ^short = "The MedComCareCommunication category (danish: kategori) describes the content of the message."
 * priority ^short = "The MedComCareCommunication priority shall be present if the message priority is known to be ASAP"
