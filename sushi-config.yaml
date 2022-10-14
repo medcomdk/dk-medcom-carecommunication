@@ -1,5 +1,5 @@
-id: dk.fhir.ig.dk-medcom-carecommunication
-canonical: http://medcomfhir.dk/fhir/carecommunication
+id: medcom.fhir.dk.carecommunication
+canonical: http://medcomfhir.dk/ig/carecommunication
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
@@ -14,10 +14,10 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 
-    uri: https://hl7.dk/fhir/core/1.1.0/
-    version: 1.1.0
-  dk.fhir.ig.dk-medcom-core: current
-  dk.fhir.ig.dk-medcom-messaging: current
+    uri: https://hl7.dk/fhir/core/2.0.0/
+    version: 2.0.0
+  medcom.fhir.dk.core: current
+  medcom.fhir.dk.messaging: current
 
 menu:
   Table of Contents: toc.html

@@ -13,7 +13,7 @@ Description: "Message for communication care related information between parties
 Invariant: medcom-careCommunication-1
 Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
 Severity: #error
-Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader'))"
+Expression: "entry.ofType(MessageHeader).all(resource.conformsTo('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader'))"
 
 Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one Patient resource"
@@ -23,7 +23,7 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/fhir/carecommunication/ValueSet/medcom-careCommunication-messagingActivities'))"
+Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities'))"
 
 Invariant: medcom-careCommunication-4
 Description: "The status in the Communication resource shall always be 'unknown'"
