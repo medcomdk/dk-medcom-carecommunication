@@ -1,5 +1,6 @@
 # MedCom CareCommunication
-<hr/>
+><b>Pleas be aware that this page is under review. A stable version of the CareCommunicationstandard is expected to be ready at the end of November 2022 </b>
+
 
 **Table of contents**
 * [1 Standard documentation](#1-standard-documentation)
@@ -7,7 +8,6 @@
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
 * [2 Test and certification](#2-test-and-certification)
-<hr/>
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
@@ -42,9 +42,9 @@ The use cases for CareCommunication are qualified in collaboration with EPR and 
 ### 1.3 Technical specification
 
 The technical specifications for the CareCommunication standard is composed by profiles from two IG's and terminology from one IG. Links to the IG’s are listed below:
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-core/index.html" target="_blank">MedCom Core IG</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-messaging/" target="_blank">MedCom Messaging IG</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-terminology/" target="_blank">MedCom Terminology IG</a>
+*	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
+*	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
+*	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
 
 The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom CareCommunication IG</a> are:  
