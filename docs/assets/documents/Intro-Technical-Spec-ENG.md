@@ -2,6 +2,9 @@
 
 **Table of contents**
 * [1 Profiles in the CareCommunication Standard](#1-profiles-in-the-carecommunication-standard)
+* [2 TimeStamps in the CareCommunication standard](#2-timestamps-in-the-carecommunication-standard)
+  * [2.1 Scenario 1-CareCommunication only text](#21-scenario-1--carecommunication-only-text)
+  * [2.2 Scenario 1-CareCommunication text and attachment](#22-scenario-2--carecommunication-text-and-attachment)
 
 ## 1 Profiles in the CareCommunication Standard 
 
