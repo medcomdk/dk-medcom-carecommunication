@@ -47,10 +47,10 @@ The technical specifications for the CareCommunication standard is composed by p
 *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
 
-The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom CareCommunication IG</a> are:  
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
+The profiles that are part of the technical specification for <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
 <p>&nbsp;</p>
 
 The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support.
