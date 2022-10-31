@@ -41,7 +41,7 @@ The use cases for CareCommunication are qualified in collaboration with EPR and 
 
 ### 1.3 Technical specification
 
-The technical specifications for the CareCommunication standard is composed by profiles from two IG's and terminology from one IG. Links to the IG’s are listed below:
+The technical specifications for the CareCommunication standard is composed by profiles from two IG's and from one terminology IG. Links to the IG’s are listed below:
 *	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
 *	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
 *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
