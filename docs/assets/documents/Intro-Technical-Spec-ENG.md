@@ -63,22 +63,22 @@
     <td class="tg-0pky">MedComCoreEncounter</td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare provideres.</td>
-    <td class="tg-0pky"></td>
     <td class="tg-0pky">Status<br>Class<br>Subject<br>Slices for episodeOfCare<br>ServiceProvider</td>
+    <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCorePatient</td>
     <td class="tg-0pky">Patient</td>
     <td class="tg-0pky">Describes a citizen or patient, when exchanging a MedCom message.</td>
     <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCoreOrganizarion</td>
     <td class="tg-0pky">Organisation</td>
     <td class="tg-0pky">Contains information which is useful in order to identify an organization.</td>
     <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Name</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComMessagingProvenance</td>
