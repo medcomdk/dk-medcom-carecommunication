@@ -36,7 +36,7 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-i91a">MedComCareCommunication</td>
+    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/"target="_blank" > MedComCareCommunication</a></td>
     <td class="tg-i91a">Communication</td>
     <td class="tg-i91a">Contains the main content of a message</td>
     <td class="tg-i91a">Status <br>Category <br>Priority<br>Subject <br>Topic<br>Encounter <br>Sent (dateTime) <br>Recipient:Organization <br>Recipient:practitionerRole <br>Sender<br>Payload:All Slices.date<br>Payload:All Slices.author <br>Payload:string.date<br>Payload:string.author<br>Payload:string.content[x] <br>Payload:attachment.date <br>Payload:attachment.author<br>Slices for content[x]</td>
