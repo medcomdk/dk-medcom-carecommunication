@@ -2,30 +2,30 @@
 
 hide empty members
 
+top to bottom direction
+
 class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
 class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCoreEncounter" as encounter
-class "Organization" as recipientOrganization 
-class "MedComCorePractitionerRole" as recipientRole
+class "MedComCorePractitionerRole" as authorRole
+class "Sender or recipient" as senderRec
 class "MedComCorePractitioner" as author
 
-message -- messageheader : "entry"
-message -- provenance : "entry"
-messageheader -- messagingOrganization : "sender"
-messageheader -- messagingOrganization : "receiver"
-messageheader -- messagingOrganization : "carbon copy"
-messageheader -- communication : "focus"
-communication -- encounter : "encounter"
-communication -- patient : "subject"
-communication -- recipientOrganization : "sender"
-communication -- recipientRole : "sender"
-communication -- recipientOrganization : "recipient"
-communication -- recipientRole : "recipient"
-communication -- author : "payload author"
 
-encounter -patient :"subject"
+message -- messageheader : "entry"
+messageheader -- communication : "focus"
+communication -- patient : "subject"
+communication -- authorRole : "payload author"
+message -- provenance : "entry"
+provenance -- messageheader : "target" 
+provenance -- messagingOrganization : "agent.who"
+communication -- senderRec : "sender/recipient"
+authorRole -- author : "author"
+
+
+messageheader -- messagingOrganization : "receiver"
+messageheader -- messagingOrganization : "sender"
 @enduml

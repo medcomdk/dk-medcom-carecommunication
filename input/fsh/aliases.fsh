@@ -11,3 +11,4 @@ Alias: $PriorityCode = http://hl7.org/fhir/request-priority
 Alias: $RequestPriority = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-requestPriority 
 Alias: $CCCategoryCodes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-categories 
 Alias: $Mimetypes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-attachmentMimeTypes
+Alias: $PractitionerRole = http://terminology.hl7.org/CodeSystem/practitioner-role 

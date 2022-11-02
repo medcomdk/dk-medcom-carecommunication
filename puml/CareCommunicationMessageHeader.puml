@@ -2,26 +2,24 @@
 
 hide empty members
 
+top to bottom direction
+
 class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCoreEncounter" as encounter
-class "Organization" as recipientOrganization 
-class "MedComCorePractitionerRole" as recipientRole
+class "MedComCorePractitionerRole" as authorRole
+class "Sender or recipient" as senderRec
 class "MedComCorePractitioner" as author
 
 
-messageheader -- messagingOrganization : "sender"
-messageheader -- messagingOrganization : "reciever"
 messageheader -- communication : "focus"
-communication -- encounter : "encounter"
 communication -- patient : "subject"
-communication -- recipientOrganization : "sender"
-communication -- recipientRole : "sender"
-communication -- recipientOrganization : "recipient"
-communication -- recipientRole : "recipient"
-communication -- author : "payload author"
+communication -- authorRole : "payload author"
+communication -- senderRec : "sender/recipient"
+authorRole -- author : "author"
 
-encounter -patient :"subject"
+
+messageheader -- messagingOrganization : "receiver"
+messageheader -- messagingOrganization : "sender"
 @enduml
