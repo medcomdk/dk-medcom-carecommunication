@@ -61,7 +61,7 @@ Further the structure of the standard is described and supported with examples i
 
 ### 1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Messages 
 Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. are transferred to the CareCommunication, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
-[Click here to see mapping from previous OIOXML standard XDIS91 to the FHIR CareCommunication .](assets/documents/Map_between_OIOXML_FHIR.md )
+[Click here to see mapping from previous OIOXML standard XDIS91 to the FHIR CareCommunication .](assets/documents/Map_between_OIOXML_FHIR.md)
 
 
 ## 2 Test and certification
