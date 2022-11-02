@@ -7,7 +7,7 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping betewwn OIOXML XDIS91 and FHIR CareCommunication Message](#14-mapping-between-oioxml-advis-and-fhir-carecommunication-messages)
+  * [1.4 Mapping betewwn OIOXML XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
@@ -59,7 +59,7 @@ Further the structure of the standard is described and supported with examples i
 
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-### 1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Messages 
+### 1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Messages {#mapping-between-oioxml-and-fhir}
 Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. are transferred to the CareCommunication, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
 [Click here to see mapping from previous OIOXML standard XDIS91 to the FHIR CareCommunication .](assets/documents/Map_between_OIOXML_FHIR.md)
 
