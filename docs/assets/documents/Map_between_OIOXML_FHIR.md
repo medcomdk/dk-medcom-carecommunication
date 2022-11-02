@@ -1,7 +1,7 @@
 
 
 # Map between OIOXML standard XDIS91 and FHIR CareCommunication Messages 
-This document describes mapping between the OIOXML ClinicalEmail (<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>) and the FHIR CareCommunication message. Not all elements from OIOXML ClinicalEmail are relevant in FHIR CareCommunication message, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR CareCommunication message. 
+This document describes mapping between the OIOXML ClinicalEmail (<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>) and the FHIR CareCommunication message. Not all elements from OIOXML ClinicalEmail are relevant in FHIR CareCommunication message, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR CareCommunication message. <br>
  <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">Click here to read the actual implementationsguide which includes all requirements for the CareCommunicationMessage</a> 
 
 
@@ -17,7 +17,7 @@ This document describes mapping between the OIOXML ClinicalEmail (<a href="https
 .tg .tg-c4ko{background-color:#2c415c;text-align:left;vertical-align:top}
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-<div class="tg-wrap"><table class="tg">
+<div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 1795px">
 <thead>
   <tr>
     <th class="tg-c4ko" rowspan="2">    <br><span style="color:white">Data</span>    </th>
