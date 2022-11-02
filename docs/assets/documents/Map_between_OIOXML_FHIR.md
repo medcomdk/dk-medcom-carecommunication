@@ -6,7 +6,8 @@ This document describes mapping between the OIOXML ClinicalEmail (<a href="https
 
 
 >Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app FHIRPath tester. In other applications, will the apostrophe (‘…’) might not be used.
-
+<br>
+<br>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -18,6 +19,7 @@ This document describes mapping between the OIOXML ClinicalEmail (<a href="https
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 1795px">
+<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1:Mpping table between OIOXML XDIS91 and FHIR CareCommunication Message</caption>
 <thead>
   <tr>
     <th class="tg-c4ko" rowspan="2">    <br><span style="color:white">Data</span>    </th>
