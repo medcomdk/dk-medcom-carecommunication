@@ -9,6 +9,8 @@ Description: "Message for communication care related information between parties
 * obeys medcom-careCommunication-4
 * obeys medcom-careCommunication-5
 * obeys medcom-careCommunication-6
+* obeys medcom-careCommunication-7
+* obeys medcom-careCommunication-8
 
 Invariant: medcom-careCommunication-1
 Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
@@ -39,6 +41,17 @@ Invariant: medcom-careCommunication-6
 Description: "There shall exist a Communication.topic when Communication.category = 'other'"
 Severity: #error
 Expression: "Bundle.entry.resource.ofType(Communication).iif(category.coding.code != 'other', true, category.coding.code = 'other' and topic.exists())"
+
+Invariant: medcom-careCommunication-7
+Description: "There shall exist a practitioner job tiltel when using a PractitionerRole."
+Severity: #error
+Expression: "Bundle.entry.where(resource.ofType(PractitionerRole).id = %resource.entry.resource.ofType(Communication).payload.extension.where(url = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-author-extension').value.reference.replace(PractitionerRole/,'')).resource.ofType(PractitionerRole).code.coding.code.exists()
+"
+Invariant: medcom-careCommunication-8
+Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
+Severity: #error
+Expression: " Bundle.entry.where(resource.ofType(Practitioner).id = %resource.entry.resource.ofType(PractitionerRole).practitioner.reference.replace(Practitioner/,'')).resource.ofType(Practitioner).where(name.family and name.given).exists()"
+
 
 
 Instance: 0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
