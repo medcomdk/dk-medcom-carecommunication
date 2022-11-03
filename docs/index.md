@@ -7,18 +7,19 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping betewwn OIOXML XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
-This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). This standard will in time replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general parctitioners, hospitals, physiotherapists and many more. 
+This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). This standard will in time replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the startup of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication message it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general parctitioners, hospitals, physiotherapists and many more. 
 
 ## 1 Standard documentation 
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the CareCommunication message, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication message includes:
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG.
+  * Mapping between OIOXML XDIS91 and FHIR CareCommunication Message
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application 
@@ -48,7 +49,7 @@ The technical specifications for the CareCommunication standard is composed by p
 *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
 
-The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom CareCommunication IG</a> are:  
+The profiles that are part of the technical specification for <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
 *	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
 *	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
 *	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
