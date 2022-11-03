@@ -45,8 +45,7 @@ Expression: "Bundle.entry.resource.ofType(Communication).iif(category.coding.cod
 Invariant: medcom-careCommunication-7
 Description: "There shall exist a practitioner job tiltel when using a PractitionerRole."
 Severity: #error
-Expression: "Bundle.entry.where(resource.ofType(PractitionerRole).id = %resource.entry.resource.ofType(Communication).payload.extension.where(url = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-author-extension').value.reference.replace(PractitionerRole/,'')).resource.ofType(PractitionerRole).code.coding.code.exists()
-"
+Expression: "Bundle.entry.where(resource.ofType(PractitionerRole).id = %resource.entry.resource.ofType(Communication).payload.extension.where(url = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-author-extension').value.reference.replace(PractitionerRole/,'')).resource.ofType(PractitionerRole).code.coding.code.exists()"
 Invariant: medcom-careCommunication-8
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
 Severity: #error
