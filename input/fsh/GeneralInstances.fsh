@@ -41,7 +41,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske
 
 /* 
 Instanser anvent til new message - with attachement, encounter and recipient 
@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(20eac382-551a-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske
 
 /* 
 Instanser anvent til forward message 
@@ -149,7 +149,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske
 
 
 /* 
@@ -195,7 +195,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(7ffff970-5504-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske
 
 
 /* 
@@ -241,7 +241,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(356947dc-551c-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske
 
 
 /* 
@@ -286,4 +286,4 @@ InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(1e2d6388-5520-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#nurse
+* code = $PractitionerRole#sygeplejerske

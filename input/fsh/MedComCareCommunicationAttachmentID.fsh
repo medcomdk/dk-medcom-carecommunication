@@ -2,9 +2,8 @@ Extension:  MedComCareCommunicationAttachmentExtension
 Id: medcom-carecommunication-attachment-identifier-extension
 Title: "AttachmentIdentifierExtension"
 Description: "An extension holding an attachment identifier"
-* value[x] 1..1
-* value[x] only MedComCareCommunicationAttachmentIdentifier
-* value[x] MS
+* valueIdentifier 1.. MS
+* valueIdentifier only MedComCareCommunicationAttachmentIdentifier
 
 
 Profile: MedComCareCommunicationAttachmentIdentifier
