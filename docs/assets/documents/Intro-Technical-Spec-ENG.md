@@ -2,9 +2,15 @@
 
 **Table of contents**
 * [1 Profiles in the CareCommunication Standard](#1-profiles-in-the-carecommunication-standard)
-* [2 TimeStamps in the CareCommunication standard](#2-timestamps-in-the-carecommunication-standard)
-  * [2.1 Scenario 1-CareCommunication only text](#21-scenario-1--carecommunication-only-text)
-  * [2.2 Scenario 1-CareCommunication text and attachment](#22-scenario-2--carecommunication-text-and-attachment)
+  * [1.1 Sender and recipient](#11-sender-and-recipient)
+  * [1.2 Priority and the category 'other'](#12-priority-and-the-category-other)
+  * [1.3 Encounter](#13-encounter)
+  * [1.4 Payloads](#14-payloads)
+* [2 Internal references in a CareCommunication message](#2-internal-references-in-a-carecommunication-message)
+* [3 Examples of a CareCommunication Message](#3-examples-of-a-carecommunication-message)
+* [4 TimeStamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication-standard)
+  * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1--carecommunication-only-text)
+  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2--carecommunication-text-and-attachment)
 
 ## 1 Profiles in the CareCommunication Standard 
 
@@ -91,18 +97,18 @@
 </table>
 </div>
 
-### Sender and recipient
+### 1.1 Sender and recipient
 In a CareCommunication message it is required to include information about a sender and receiver in terms of a reference to a MedComMessagingOrganization. This information are primarily used for transportation matters and will always include an EAN- and SOR-identifier.
 
 When sending a CareCommunication message it is possible to add a more specific receiver of the message, called a recipient, and a more specific sender. This may be used to include a more specific organisation or person related to the care and wellbeing of the patient or citizen can be referenced. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality.
 
-### Priority and the category 'other'
+### 1.2 Priority and the category 'other'
 These is a nationally agreed list of categories that shall be used when sending a CareCommunication message. [The list of categories can be seen here](https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html). When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is choosen a topic shall be included, as this is used to specify the topic of the CareCommunication message.
 
-### Encounter
+### 1.3 Encounter
 An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. An example where this is relevant could be when the communication concerns a hospitalisation of a patient, where an episodeOfCare-identifier is used to connect the communication and hospitalisation. In this case, should a reference to the MedComCoreEncounter and episodeOfCare-identifier be included.
 
-### Payloads
+### 1.4 Payloads
 As mentioned in the clinical guidelines for application both message text and attachments shall include:
 * An author (Danish: forfatter) and role (Danish: stillingsbetegnelse)
 * A relevant telephone
@@ -111,13 +117,13 @@ As mentioned in the clinical guidelines for application both message text and at
 
 The message text and attachments of a CareCommunication message will both be included in the element Communication.payload, however they shall be included in different slices. At least one payload which includes the message text shall be included when sending a CareCommunication message, but zero or more attachments may be included.
 
-## Internal references in a CareCommunication message
+## 2 Internal references in a CareCommunication message
 The HospitalNotification message follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).
 The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader are the sender, and receiver organisations referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient. Additionally, contain the message text and attachment is they are included.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the communication. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
 <figure>
-<img src="../images/CareCommunication.png" alt="Show references between the profiles in an CareCommunication message." style="width:40%" id="Fig1">
+<img src="../images/CareCommunication.svg" alt="Show references between the profiles in an CareCommunication message." style="width:40%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the CareCommunication message </b> </figcaption>
 </figure>
 <br><br>
@@ -144,12 +150,12 @@ More examples for CareCommunication in both XML and JSON format can be found on 
 <br><br>
 
 <figure>
-<img src="../images/CCReplyMessage.svg" alt="Simplified example: Reply message" style="width: 55%" id="Fig4">
+<img src="../images/CCreplyMessage.svg" alt="Simplified example: Reply message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 4: Simplified example: Reply message </b></figcaption>
 </figure>
 <br><br>
 
-## 2 TimeStamps in the CareCommunication Message
+## 4 TimeStamps in the CareCommunication Message
 
 The CareCommunication message contains six important time stamps:
 	· Communication.sent
@@ -162,7 +168,7 @@ The CareCommunication message contains six important time stamps:
 The six time stamps are registered at different times when the CareCommunication is generated. 
  
 
-### 2.1 Scenario 1- CareCommunication only text 
+### 4.1 Scenario 1- CareCommunication only text 
 
 If the CareCommunication only contains a message text, shall the timestamps be registered as follow: 
 The healthcare professional writes the message text, and the text is saved. This is when the first time stamp, Communication.payload:string.extension:date is registered. The healthcare professional then presses "send" button and the Communication.sent time stamp is registered. 
@@ -175,7 +181,7 @@ Immediately after is the CareCommunication message generated and Bundle.timestam
 </figure>
 
 
-### 2.2 Scenario 2- CareCommunication text and attachment 
+### 4.2 Scenario 2- CareCommunication text and attachment 
 
 If the CareCommunication contains a message text and one or more attachments, the timestamps shallbe registered as follow: 
 The healthcare professional writes the message text, and the text is saved. This is when the first time stamp, Communication.payload:string.extension:date is registered. 
