@@ -1,0 +1,115 @@
+@startuml CCcancelMessage
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Cancelled message
+
+'Message 1: error message
+package "CareCommunication message: Cancelled message" as error <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as errorB {
+        id = "ad3e05b2-551d-11ed-bdc3-0242ac120002"
+        type = "message"
+        timestamp = "2022-10-01T12:05:10"
+    }
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as errorMH{
+        id = "b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/282c1fea-551c-11ed-bdc3-0242ac120002"
+        sender.reference = "Organization/2f12cb92-551c-11ed-bdc3-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus.reference = "Communication/1636f3f8-551e-11ed-bdc3-0242ac120002"
+    }
+    class "Patient (MedComCorePatient)" as errorPT{
+        id = "1f697de4-551c-11ed-bdc3-0242ac120002"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Communication (MedComCareCommunication)" as errorCom{
+        id = "1636f3f8-551e-11ed-bdc3-0242ac120002"
+        status = "unknown"
+        class = "carecoordination"
+        subject.reference = "Patient/1f697de4-551c-11ed-bdc3-0242ac120002"
+        sent = "2022-10-01T12:05:10Z"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2022-10-01T12:00:05Z"
+        payload[0].extension:author.reference = "PractitionerRole/39d3af60-551c-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "44527000"
+    }
+    class "PractitionerRole (MedComCorePractitionerRole)" as errorPracR{
+        id = "39d3af60-551c-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/356947dc-551c-11ed-bdc3-0242ac120002"
+        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
+        code.value = "nurse"
+    }
+    class "Practitioner (MedComCorePractitioner)" as errorPrac{
+        id = "356947dc-551c-11ed-bdc3-0242ac120002"
+        name.family = "Michael"
+        name.given = "Burns"
+    }
+    class "Receiver (MedComMessagingOrganization)" as errorROrg{
+        id = "282c1fea-551c-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+    }
+    class "Sender (MedComMessagingOrganization)" as errorSOrg{
+        id = "2f12cb92-551c-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
+    class "Provenance (MedComMessagingProvenance)" as errorPRO{
+        id = "16fac3d8-551d-11ed-bdc3-0242ac120002"
+        target = "MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+        occuredDateTime = "2022-10-01T12:05:10Z"
+        recorded = "2022-10-01T12:05:10"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "retract-message"
+        agent.who.reference = "Organization/2f12cb92-551c-11ed-bdc3-0242ac120002"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "removal"
+        entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+    }
+    class "Provenance (MedComMessagingProvenance)" as newPRO{
+        id = "4c284936-5454-4116-95fc-3c8eeeed2400"
+        target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        occuredDateTime = "2022-10-01T12:00:11Z"
+        recorded = "2022-10-01T12:00:11"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+
+errorB -[hidden]- errorMH
+errorMH -[hidden]-errorPT
+errorPT-[hidden]-errorCom
+errorCom -[hidden]-errorPracR
+errorPracR-[hidden]-errorPrac
+errorPrac-[hidden]-errorROrg
+errorROrg-[hidden]- errorSOrg
+errorSOrg-[hidden]-errorPRO
+errorPRO-[hidden]-newPRO
+
+
+@enduml

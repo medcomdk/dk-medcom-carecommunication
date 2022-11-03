@@ -1,4 +1,4 @@
-@startuml CCNewMessageOIOXML
+@startuml CCreplyOIOXMLMessage
 
 'layout
 skinparam class {
@@ -13,69 +13,92 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: New message (answer to OIOXML)
+title Simplified example: Reply to OIOXML message
 
-'Message 1: New message
-package "Message 1: New message" as new <<Frame>>{
-    class "Bundle 1" as newB {
-        Bundle.id = BUN1
-        Bundle.timestamp = 2021-12-03T14:00:10Z
-        ...
+'Message 1: Reply to OIOXML message
+package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as replyB {
+        id = "37bfbc0c-553d-11ed-bdc3-0242ac120002"
+        type = "message"
+        timestamp = "2022-10-01T12:00:10"
     }
-    class "MessageHeader 1" as newMH{
-        MessageHeader.id = MHID1
-        ...
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as replyMH{
+        id = "3076d9b0-5521-11ed-bdc3-0242ac120002"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/0e0e7f78-5520-11ed-bdc3-0242ac120002"
+        sender.reference = "Organization/fd0666dc-551f-11ed-bdc3-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus.reference = "Communication/f54efd18-5520-11ed-bdc3-0242ac120002"
     }
-    class "Sender Organization 1" as newSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as replyPT{
+        id = "e8dd504e-551f-11ed-bdc3-0242ac120002"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
     }
-    class "Reciver Organization 1" as newROrg{
-        ...
+    class "Communication (MedComCareCommunication)" as replyCom{
+        id = "f54efd18-5520-11ed-bdc3-0242ac120002"
+        status = "unknown"
+        class = "carecoordination"
+        subject.reference = "Patient/e8dd504e-551f-11ed-bdc3-0242ac120002"
+        sent = "2022-10-01T12:00:10Z"
+        payload[0].contentString = "We have a question regarding the report of admission..."
+        payload[0].extension:date = "2022-10-01T12:00:05Z"
+        payload[0].extension:author.reference = "PractitionerRole/2b80d2b8-5520-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
     }
-    class "Communication 1" as newCom{
-        Communication.status = "unknown"
-        Communication.class = "regaring-referal"
-        Communication.sent = 2021-12-03T14:00:00Z
-        Communication.payload.contentString = "Question regarding a referal"
-        Communication.payload.payloadDateTimeExtension = 2021-12-03T12:34:56Z
-        Communication.payload.payloadAuthorExtension = Practitioner/Prac1
-        ...
+    class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
+        id = "2b80d2b8-5520-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/1e2d6388-5520-11ed-bdc3-0242ac120002"
+        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
+        code.value = "nurse"
     }
-    class "Encounter 1" as newENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        ...
+    class "Practitioner (MedComCorePractitioner)" as replyPrac{
+        id = "1e2d6388-5520-11ed-bdc3-0242ac120002"
+        name.family = "Michael"
+        name.given = "Burns"
     }
-    class "Patient 1" as newPT{
-        ...
+    class "Receiver (MedComMessagingOrganization)" as replyROrg{
+        id = "0e0e7f78-5520-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
     }
-    class "Practitioner 1" as newPrac{
-        Practitioner.identifier = Prac1
-        ...
+    class "Sender (MedComMessagingOrganization)" as replySOrg{
+        id = "fd0666dc-551f-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
     }
-    class "PractitionerRole 1" as newPracR{
-        ...
-    }
-    class "Provenance 1" as newPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Sender Organization 1"
-        Provenance.entity.role = "source"
-        Provenance.entity.what.identifier = "B300720181623#5790000121526"
-        ...
+    class "Provenance (MedComMessagingProvenance)" as replyPRO{
+        id = "6de0806d-7050-4db8-8003-0c72aee52948"
+        target.reference = "MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
+        occuredDateTime = "2022-10-01T12:00:11Z"
+        recorded = "2022-10-01T12:00:11"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "reply-message"
+        agent.who.reference = "Organization/fd0666dc-551f-11ed-bdc3-0242ac120002"
+        entity.role.value = "revision"
+        entity.what.identifier = "B300720181623#5790000121526"
     }
 
-newB -[hidden]- newMH
-newMH -[hidden]- newSOrg
-newSOrg-[hidden]-newROrg
-newROrg-[hidden]-newCom
-newCom -[hidden]- newENC
-newENC-[hidden]-newPT
-newPT-[hidden]-newPrac
-newPrac-[hidden]-newPracR
-newPracR-[hidden]-newPRO
+replyB -[hidden]- replyMH
+replyMH -[hidden]-replyPT
+replyPT-[hidden]-replyCom
+replyCom -[hidden]-replyPracR
+replyPracR-[hidden]-replyPrac
+replyPrac-[hidden]-replyROrg
+replyROrg-[hidden]- replySOrg
+replySOrg-[hidden]-replyPRO
 
 
-
-}
 @enduml

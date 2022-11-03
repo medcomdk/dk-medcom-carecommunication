@@ -1,0 +1,102 @@
+@startuml CCNewMessage
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: New message
+
+'Message 1: New message
+package "CareCommunication message: New message" as new <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as newB {
+        id = "0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c"
+        type = "message"
+        timestamp = "2022-10-01T12:00:10"
+    }
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as newMH{
+        id = "42cb9200-f421-4d08-8391-7d51a2503cb4"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus.reference = "Communication/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+    }
+    class "Patient (MedComCorePatient)" as newPT{
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+        status = "unknown"
+        class = "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        sent = "2022-10-01T12:00:10Z"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2022-10-01T12:00:05Z"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+    }
+    class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
+        code.value = "nurse"
+    }
+    class "Practitioner (MedComCorePractitioner)" as newPrac{
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        name.family = "Michael"
+        name.given = "Burns"
+    }
+    class "Receiver (MedComMessagingOrganization)" as newROrg{
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+    }
+    class "Sender (MedComMessagingOrganization)" as newSOrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
+    class "Provenance (MedComMessagingProvenance)" as newPRO{
+        id = "4c284936-5454-4116-95fc-3c8eeeed2400"
+        target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        occuredDateTime = "2022-10-01T12:00:11Z"
+        recorded = "2022-10-01T12:00:11"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+
+newB -[hidden]- newMH
+newMH -[hidden]-newPT
+newPT-[hidden]-newCom
+newCom -[hidden]-newPracR
+newPracR-[hidden]-newPrac
+newPrac-[hidden]-newROrg
+newROrg-[hidden]- newSOrg
+newSOrg-[hidden]-newPRO
+
+
+@enduml

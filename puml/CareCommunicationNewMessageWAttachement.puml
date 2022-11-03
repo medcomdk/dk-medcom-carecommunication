@@ -1,4 +1,5 @@
-@startuml CCNewMessageAttachment
+@startuml CCNewMessageAtt
+
 'layout
 skinparam class {
     BackgroundColor White
@@ -12,69 +13,118 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: New message with Attachment 
+title Simplified example: New message with Attachment, Sender, Recipient and Encounter
 
-'Message 1: New message
-package "Message 1: New message" as new <<Frame>>{
-    class "Bundle 1" as newB {
-        Bundle.id = BUN1
-        Bundle.timestamp = 2021-12-03T14:00:10Z
-        ...
+'Message 1: New message with Attachment, Recipient and Encounter
+package "CareCommunication message: New message with Attachment, Recipient and Encounter" as new <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as newB {
+        id = "6f7e4c80-551a-11ed-bdc3-0242ac120002"
+        type = "message"
+        timestamp = "2022-10-01T12:00:10"
     }
-    class "MessageHeader 1" as newMH{
-        MessageHeader.id = MHID1
-        ...
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as newMH{
+        id = "dc04b8c2-5519-11ed-bdc3-0242ac120002"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/b75abdfa-5519-11ed-bdc3-0242ac120002"
+        sender.reference = "Organization/c5c393ee-5519-11ed-bdc3-0242ac120002"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus.reference = "Communication/487e2238-527b-11ec-bf63-0242ac130002"
     }
-    class "Sender Organization 1" as newSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as newPT{
+        id = "833cef33-3726-433b-855d-e566aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
     }
-    class "Reciver Organization 1" as newROrg{
-        ...
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "487e2238-527b-11ec-bf63-0242ac130002"
+        status = "unknown"
+        class = "carecoordination"
+        subject.reference = "Patient/833cef33-3726-433b-855d-e566aaa65fe1"
+        sent = "2022-10-01T12:00:10Z"
+        recipient.reference = "Organization/f98ed410-54fe-11ed-bdc3-0242ac120002"
+        sender.reference = "Practitioner/20eac382-551a-11ed-bdc3-0242ac120002"
+        encounter.reference = "Encounter/6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2022-10-01T12:00:05Z"
+        payload[0].extension:author.reference = "PractitionerRole/35bb99e4-551a-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+        payload[1].contentAttachment.data = "JVBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC9U..."
+        payload[1].contentAttachment.title = "Rehabilitationplan"
+        payload[1].contentAttachment.contentType = "application/pdf"
+        payload[1].extension:date = "2022-10-01T09:00:00Z"
+        payload[1].extension:author.reference = "PractitionerRole/35bb99e4-551a-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "38683868"
     }
-    class "Communication 1" as newCom{
-        Communication.status = "unknown"
-        Communication.class = "medicine"
-        Communication.sent = 2021-12-03T14:00:00Z
-        Communication.payload[0].contentString = "Question regarding medicine"
-        Communication.payload[0].payloadDateTimeExtension = 2021-12-03T13:34:00Z
-        Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
-        Communication.payload[1].contentAttachment.data = "IlBERi1kb2N1bWVudCBvZiBNZWRpY2F0aW9uIFJlY2llcHQi" 
-        Communication.payload[1].contentAttachment.title = "Medication Receipt"
-        Communication.payload[1].contentAttachment.contentType = "application/pdf"
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-02T12:34:56Z
-        Communication.payload[1].payloadAuthorExtension = Practitioner/Prac1
-        ...
+    class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
+        id = "35bb99e4-551a-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/20eac382-551a-11ed-bdc3-0242ac120002"
+        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
+        code.value = "nurse"
     }
-    class "Encounter 1" as newENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        ...
+    class "Practitioner (MedComCorePractitioner)" as newPrac{
+        id = "20eac382-551a-11ed-bdc3-0242ac120002"
+        name.family = "Michael"
+        name.given = "Burns"
     }
-    class "Patient 1" as newPT{
-        ...
+    class "Recipient (MedComCoreOrganization)" as recipientOrg{
+        id = "048b2ab0-550b-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "1042981000016003"
     }
-    class "Practitioner 1" as newPrac{
-        Practitioner.identifier = Prac1
-        ...
+    class "Encounter (MedComCoreEncounter)" as newEnc{
+        id = "6220b42d-c4fd-4c77-bae7-78e7d890dc8d"
+        status.system = "http://hl7.org/fhir/encounter-status"
+        status.code = "finished"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/833cef33-3726-433b-855d-e566aaa65fe1"
+        episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientsregisteret"
+        episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7"
     }
-    class "PractitionerRole 1" as newPracR{
-        ...
+    class "Receiver (MedComMessagingOrganization)" as newROrg{
+        id = "b75abdfa-5519-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
     }
-    class "Provenance 1" as newPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
+    class "Sender (MedComMessagingOrganization)" as newSOrg{
+        id = "c5c393ee-5519-11ed-bdc3-0242ac120002"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
+    class "Provenance (MedComMessagingProvenance)" as newPRO{
+        id = "ee619a58-5519-11ed-bdc3-0242ac120002"
+        target.reference = "MessageHeader/dc04b8c2-5519-11ed-bdc3-0242ac120002"
+        occuredDateTime = "2022-10-01T12:00:11Z"
+        recorded = "2022-10-01T12:00:11"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/c5c393ee-5519-11ed-bdc3-0242ac120002"
     }
 
 newB -[hidden]- newMH
-newMH -[hidden]- newSOrg
-newSOrg-[hidden]-newROrg
-newROrg-[hidden]-newCom
-newCom -[hidden]- newENC
-newENC-[hidden]-newPT
-newPT-[hidden]-newPrac
-newPrac-[hidden]-newPracR
-newPracR-[hidden]-newPRO
+newMH -[hidden]-newPT
+newPT-[hidden]-newCom
+newCom -[hidden]-newPracR
+newPracR-[hidden]-newPrac
+newPrac-[hidden]-recipientOrg
+recipientOrg-[hidden]-newEnc
+newEnc-[hidden]-newROrg
+newROrg-[hidden]- newSOrg
+newSOrg-[hidden]-newPRO
+
 
 @enduml
