@@ -160,8 +160,14 @@ Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes
 
 
 #### 5.6.1 Ved besvarelse
-Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modta-ger. Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med den nye korrespondance-meddelelse. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager (med SOR-kode og EAN-nummer). Referencer til den forudgående meddelelse skal indgå i besvarelsen, da disse informationer bruges til at kæde meddelelserne sammen.
+Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager. Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med den nye korrespondancemeddelelse. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager (med SOR-kode og EAN-nummer). Referencer til den forudgående meddelelse skal indgå i besvarelsen, da disse informationer bruges til at kæde meddelelserne sammen.De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig1" target="_blank">Figur1.</a>
 
+
+<figure>
+<img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:40%" id="Fig1">
+<figcaption text-align="center"><b>Figur 1: Aktivitetsdiagram for besvarelse af den nye korrespondancemeddelelse  </b> </figcaption>
+</figure>
+<br><br>
 
 #### 5.6.2.Ved videresendelse
 Det er op til brugerne at vurderer, hvornår det er relevant at videresende en modtaget FHIR-KM. Brugerne er derfor ansvarlige for videresendelsen og relevansen ift. det aktuelle behandlingsforløb.
