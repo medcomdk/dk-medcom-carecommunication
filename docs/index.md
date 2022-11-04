@@ -25,9 +25,12 @@ The standard documentation below provides the necessary content to understand th
 ### 1.1 Clinical guidelines for application 
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the modernization, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
-Below, the clinical guidelines for application in both Danish and English can be found:<br> 
+Below, the clinical guidelines for application in  Danish can be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
-[English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md) 
+ 
+ >Note: Clinical guidelines for application  in English are in preparation, as soon as they are ready they will be published her 
+
+<!-- [English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md)  -->
 
 ### 1.2 Use cases
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of CareCommunication. The descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities.
