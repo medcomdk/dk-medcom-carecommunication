@@ -34,7 +34,9 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities.
 
-<b>Use Cases in Danish and English are currently in preparation. As soon as the uses cases are ready, they will be presented below.</b> 
+[Danish: Use cases](CareCommunication_use_cases_2_0_0.pdf) 
+> Please be aware that the Use cases are in danish. 
+
 
 <!-- Below can the use cases in Danish and English be found:<br> 
 
