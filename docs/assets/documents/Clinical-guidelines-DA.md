@@ -18,31 +18,37 @@
 <p>&nbsp;</p>
 
 ## 1 Introduktion
-Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser, fremover refereret til som FHIR-KM. Den indeholder formål, baggrund, en illustration af FHIR-KM og krav og anbefalinger til FHIR-KM, herunder funktionaliteter, samt information om en overgangsperiode med samtidig drift af korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> og FHIR-KM.
-Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af FHIR-KM.
-Krav og anbefalinger til indhold, herunder funktionaliteter, er udarbejdet i samarbejde med en nedsat <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank">national arbejdsgruppe</a>  med repræsentanter fra regioner, kommuner og praktiserende læger. Derudover har materiale med beskrivelse af indhold og funktionalitet i FHIR-KM været sendt i høring ved relevante MedCom-grupper samt været bredt tilgængeligt for kommentering via publicering på MedComs hjemmeside.
-De tekniske specifikationer (profilen) for FHIR-KM standarden findes via <a href="https://simplifier.net/medcom-fhir-messaging " target="_blank">Simplifier</a>. I profilen, de tekniske specifikationer, har dansk sprog forrang for engelsk.
-FHIR-KM skal på sigt erstatte MedCom-standarden korrespondancemeddelelse <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>, som bliver udfaset. 
+Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser (Engelsk:CareCommunication).  Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i den nye korre-spondancemeddelelse (KM) og krav og anbefalinger, herunder funktionaliteter, samt ibrugtagning. 
+Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af KM.
+Krav og anbefalinger til indhold, herunder funktionaliteter, er udarbejdet i samarbejde med en nedsat <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank">national arbejdsgruppe</a>  med repræsentanter fra regioner, kommuner og praktiserende læger. Derudover har materiale med beskrivelse af indhold og funktionalitet i den nye KM været sendt i høring ved relevante MedCom-grupper samt været bredt tilgængeligt for kommentering via publicering på MedComs hjemmeside.
+De tekniske specifikationer (profilen) for den nye korrespondancemeddelelsen findes via <a href="https://medcomdk.github.io/dk-medcom-carecommunication/ " target="_blank">CareCommunication</a> forsiden på Github.
+
+MedCom FHIR korrespondancemeddelelsen skal på sigt erstatte tidligerer korrespondancemeddeleses standarder: <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. 
+
+>Note: I tilfælde af uoverensstemmelser mellem det danske og det engelske dokument, er det danske doku-ment det gældende dokument.
+
+ <!-- samt information om en overgangsperiode med samtidig drift af korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> og FHIR-KM. -->
+
 
 ## 2 Formål
-MedComs styregruppe godkendte d. 3. marts 2019, at MedCom udarbejder en ny forbedret standard for korrespondancemeddelelser (FHIR-KM). 
-Formålet med FHIR-KM er at:
-* Understøtte digital kommunikation mellem sundhedsvæsnets parter
-* Styrke opstarten af digital kommunikation mellem det sociale, psykiatriske og somatiske område  
-* Give mulighed for at vedhæfte og udveksle digitale bilag mellem forskellige aktører
-* Understøtte automatisk sortering ved modtagelse via brug af fælles nationale kategorier (= overordnede overskrifter)
-* Respektere regionale samarbejdsaftaler ved at bevare muligheden for at angive regionalt aftalte emneord (= supplerende overskrifter)
+MedComs styregruppe godkendte d. 3. marts 2019, at MedCom udarbejder en ny forbedret standard for korrespondancemeddelelser i FHIR-format. 
+Formålet med den nye KM er bl.a. at:
+*	Understøtte digital kommunikation mellem sundhedsvæsnets parter
+*	Styrke opstarten af digital kommunikation mellem det sociale-, psykiatriske- og somatiske område  
+*	Give mulighed for at vedhæfte og udveksle digitale filer mellem forskellige aktører
+*	Understøtte automatisk fordeling ved modtagelse via brug af fælles nationale kategorier (=overordnede overskrifter)
+*	Respektere regionale samarbejdsaftaler med kommuner og praksislæger ved at bevare muligheden for at angive aftalte emneord (=supplerende overskrifter)
+
 <p>&nbsp;</p>
 
 ## 3 Baggrund 
-Korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>  bruges af mange af sundhedsvæsnets parter. Standarden er implementeret i mere end 70 it-systemer, og der udveksles årligt ca. 5 mio. korrespondancemeddelelser. Det er i dag mellem de praktiserende læger og hjemmesygeplejen i kommunerne, at der udveksles flest korrespondancemeddelelser. 
-Der er udsigt til øget brug af korrespondancemeddelelsen i takt med implementering af FMK indenfor social- og misbrugsområdet. Samtidig er digital kommunikation mellem socialområdet og sundhedsområdet under opstart, hvor korrespondancemeddelelsen allerede spiller en væsentlig rolle, da den typisk implementeres først.
+Korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>  bruges af mange af sundhedsvæsnets parter. Standarden er implementeret i mere end 70 it-systemer, og der udveksles årligt ca. 5 mio. korrespondancemeddelelser. Det er i dag mellem de praktiserende læger og hjemmesygeplejen i kommunerne, at der udveksles flest korrespondancemeddelelser. Korrespondancemeddelelsen bruges dog også i stigende grad indenfor social- og misbrugsområdet samt i forbindelse med anvendelse af telemedicinske løsninger
 Der er gennem flere år indkommet ønsker til forbedringer og ændringer i korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a>/<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> fra flere forskellige faggrupper. 
 
 Det er bl.a. blevet efterspurgt:
 * at der gennemføres tekniske forbedringer i form af selvstændigt felt til overskrift/kategorisering
 * at det bliver muligt at indlejre bilag i kommunikationen mellem bl.a. kommuner, hospitaler og praktiserende læger
-* at der bruges unikke ID i meddelelsen, så den teknisk kan kædes sammen med andre meddelelser i en tråd, og derved øge læseoverblikket for det kliniske personale
+* at der bruges unikke ID'er i meddelelsen, så den teknisk kan kædes sammen med andre meddelelser i en tråd, og derved øge læseoverblikket for det kliniske personale
 * at brug af ”prioritet” overvejes, herunder fælles anvendelsesregler for brug af prioritet
 <p>&nbsp;</p>
 
