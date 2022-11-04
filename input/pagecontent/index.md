@@ -54,7 +54,7 @@ A CareCommunication message includes several timestamps that represent different
 
 All profiles shall have a global unique id by using an UUID. [Read more about the use of ids here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/052.2_MessageHeader_Identifiers_Timestamps.html).
 
-#### Simplified examples of the HospitalNotification message flow
+#### Simplified examples of the CareCommunication message flow
 The simplified examples contain the required content of a CareCommunication message sent between organisations. 
 
 ##### New Message 
