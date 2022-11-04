@@ -59,7 +59,7 @@
     <td class="tg-i91a">CareCommunication</td>
   </tr>
     <tr>
-    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.htmll" target="_blank">MedComCareCommunication</a></td>
+    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a></td>
     <td class="tg-i91a">Communication</td>
     <td class="tg-i91a">MedComCareCommunication profile contains the main content of the message and it shall include a category code and it may include a topic that supports and elaborates the category. The payload of the message shall include a message text and it may include one or more attachments.</td>
     <td class="tg-i91a">Status <br>Category <br>Priority<br>Subject <br>Topic<br>Encounter <br>Sent (dateTime)<br>Recipient<br>Sender<br>Payload:string.date<br>Payload:string.author<br>Payload:string.authorRole<br>Payload:string.contact<br>Payload:string.content[x] <br>Payload:attachment.date <br>Payload:attachment.author<br>Payload:attachment.authorRole<br>Payload:attachment.contact<br>Payload:attachment.identifier<br>Slices for content[x]</td>
