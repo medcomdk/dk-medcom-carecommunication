@@ -47,16 +47,17 @@ Der er gennem flere år indkommet ønsker til forbedringer og ændringer i korre
 
 Det er bl.a. blevet efterspurgt:
 * at der gennemføres tekniske forbedringer i form af selvstændigt felt til overskrift/kategorisering
-* at det bliver muligt at indlejre bilag i kommunikationen mellem bl.a. kommuner, hospitaler og praktiserende læger
-* at der bruges unikke ID'er i meddelelsen, så den teknisk kan kædes sammen med andre meddelelser i en tråd, og derved øge læseoverblikket for det kliniske personale
+* at det bliver muligt at indlejre filer i kommunikationen mellem bl.a. kommuner, hospitaler og praktise-rende læger
+* at der bruges unikke ID’er i meddelelsen, så den aktuelle meddelelse kan kædes sammen med de forudgående meddelelser i en tråd 
 * at brug af ”prioritet” overvejes, herunder fælles anvendelsesregler for brug af prioritet
 <p>&nbsp;</p>
 
-I 2018 nedsatte MedCom <a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/operationel-styregruppe-for-social-og-sundhedsomraadet" target="_blank">en operationel styregruppe for social- og sundhedsområdet</a> med henblik på at følge, og understøtte, udviklingen på social- og sundhedsområdet. Den operationelle styregruppe efterspørger mulighed for at kunne udveksle bilag digitalt, herunder bl.a.: koordinationsplaner/indsatsplaner, behandlingsplaner samt kliniske dokumenter, eller skemaer til teammøder.
-På baggrund af ovenstående behov, bliver FHIR-KM udarbejdet.
+I 2018 nedsatte MedCom <a href="https://www.medcom.dk/projekter/psykiatri-og-socialomraadet/arbejdsgruppe-for-psykiatri-og-socialomraadet" target="_blank">Arbejdsgruppe for psykiatri- og socialområdett</a> med henblik på at følge, og understøtte, udviklingen på social- og sundhedsområdet. Arbejdsgruppen efter-spørger mulighed for at kunne udveksle filer digitalt via korrespondancemeddelelsen, herunder bl.a. koordi-nationsplaner/indsatsplaner, behandlingsplaner samt kliniske dokumenter, billeder eller skemaer til team-møder.
+På baggrund af ovenstående efterspørgsel og behov, bliver den nye korrespondancemeddelelse udarbejdet
+
 
 ## 4 Illustration af FHIR-Korrespondancemeddelelse
-<a href="#Fig1">Figur 1</a> er en illustration af indhold i FHIR-KM. Illustrationen er et eksempel og indeholder ikke alle data, som er i standarden, og afspejler ikke det enkelte systems brugergrænseflade.
+<a href="#Fig1">Figur 1</a> er en illustrationaf indholdet i den nye KM. Illustrationen er et eksempel og indeholder ikke alle data, som er i standarden, og afspejler ikke det enkelte systems brugergrænseflade
 
 <figure>
 <img src="../images/IllustrationAfKorrespondanceMed.png" alt="Eksempel på, en korrespondancemeddelese" style="width:40%" id="Fig1">
@@ -66,22 +67,40 @@ På baggrund af ovenstående behov, bliver FHIR-KM udarbejdet.
 <p>&nbsp;</p>
 
 ## 5 Krav og anbefalinger til FHIR-Korrespondancemeddelelse
-FHIR-KM <b>skal</b> indeholde information om:
+Den nye KM <b>skal</b> indeholde information om:
 * Borger/patient som henvendelsen vedrører
 * Afsender
 * Modtager
-* Kategori (fortæller på et overordnet niveau, hvad indholdet i FHIR-KM drejer sig om)
-    * Kategorien skal altid være synlig, både for afsender og modtager
+* Kategori (fortæller på et overordnet niveau, hvad indholdet i den nye KM drejer sig om)
+    * Kategorien skal altid være synlig for både  afsender og modtager
 * Meddelelsestekst
 * Forfatter (herunder bl.a. dato og tidspunkt, afsenders navn, stillingbetegnelse og overordnet telefonnummer)
 * Tekniske data på meddelelsen (herunder bl.a. ID)
 <p>&nbsp;</p>
-FHIR-KM <b>kan </b> (=frivilligt) indeholde:
-* Emne (supplerer den valgte kategori med yderligere emneord, som fortæller i yderligere detaljer hvad indholdet i FHIR-KM drejer sig om) Bilag/Vedhæftet filer
+
+Den nye <b>kan</b> (=frivilligt) indeholde:
+* Emne (supplerer den valgte kategori med et emneord, som fortæller i detaljer, hvad indholdet i den nye KM drejer sig om) 
+* Vedhæftede filer
 <p>&nbsp;</p>
 
-## 6 Kategori og Emne
-Kategori består af en national fastlagt liste med aftalte kategorier, som modtager vælger kategori ud fra. Kategorilisten muliggør, at modtager kan fordele (automatisk) indkomne FHIR-KM, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for fordeling efter de nationale kategorier i FHIR-KM er ikke en del af MedComs test og certificering.
+### 5.1 Kategori og Emne
+Kategori består af en national fastlagt liste med aftalte kategorier, som afsender vælger kategori ud fra. Kategorilisten muliggør, at modtager automatisk kan fordele indkomne KM, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for automatisk fordeling ved modtagelse efter de nationale kategorier i den nye KM er ikke en del af MedComs test og certificering.
+<a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-careCommunication-categoryCodes.html" target="_blank"> Klik her for at læse de aftalte nationale kategorier findes.</a> 
+
+I emnefeltet har brugeren mulighed for at supplere den valgte kategori med et emneord. Emnefeltet udfyl-des enten med de regionalt aftalte emneord eller selvskrevet fritekst. Det er valgt at bibeholde emnefeltet netop for at kunne understøtte de eksisterende samarbejdsaftaler med de regionalt aftalte emneord. Der er ikke krav til, eller forventning om, at systemerne kan fordele efter emneord. 
+
+For at understøtte brugeren mest muligt anbefales følgende:
+* Regionalt aftalte emneord mappes til de nationalt aftalte kategorier, hvor de pågældende emneord relateres til de relevante kategorier
+* I de brugssituationer, hvor der er regionalt aftalte emneord:
+    * Brugeren præsenteres for de regionalt aftalte emneord, som de kender, og ved valg af emneord, påsætter systemet automatisk den pågældende relevante kategori (som er valgt ved forudgå-ende mapning mellem kategori og emneord). Brugeren slipper derved for at skulle tage stilling til kategori.
+    * Kategorien skal altid være synlig, både for afsender og modtager – også ved regionalt aftalte emneord. Kategorien kan dog, for at understøtte brugeren, gøres mindre synlig i brugergrænse-fladen, fx ved at ’fade ud’, hvis der er regionalt aftalte emneord. 
+
+* I de brugssituationer, hvor der ikke er regionalt aftalte emneord:
+    * Brugeren vælger kategori og har herefter mulighed for at supplere med selvskrevet emneord som fritekst i emnefeltet.
+<p>&nbsp;</p>
+
+MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filty-per, som kan vedhæftes den nye KM. Governance, herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i Med-Com-regi. Governance for terminologier og serveren findes via forsiden for <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Governance for MedCom FHIR Messaging</a>
+<!-- Kategori består af en national fastlagt liste med aftalte kategorier, som modtager vælger kategori ud fra. Kategorilisten muliggør, at modtager kan fordele (automatisk) indkomne FHIR-KM, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for fordeling efter de nationale kategorier i FHIR-KM er ikke en del af MedComs test og certificering.
 Følgende nationale kategorier er aftalt: 
 * Ambulant
 * Andet
@@ -110,31 +129,41 @@ For at understøtte brugeren mest muligt <b> anbefales følgende</b>:
 * I de brugssituationer, hvor der ikke er regionalt aftalte emneord:
     * Brugeren vælger kategori og har herefter mulighed for at supplere med selvskrevet emneord som fritekst i emnefeltet. 
 <p>&nbsp;</p>
-MedCom stiller en klassifikationsserver til rådighed, som udstiller de nationale kategorier og tilladte bilagstyper/filtyper. Governance, herunder adgang og opdatering, af klassifikationsserveren samt vedligeholdelse af listen over de nationalt aftalte kategorier fastlægges i MedCom-regi i løbet af 2021. 
+MedCom stiller en klassifikationsserver til rådighed, som udstiller de nationale kategorier og tilladte bilagstyper/filtyper. Governance, herunder adgang og opdatering, af klassifikationsserveren samt vedligeholdelse af listen over de nationalt aftalte kategorier fastlægges i MedCom-regi i løbet af 2021.  -->
 
-## 7 Prioritet-krav om afgrænset brug
-Det bliver desuden muligt at markere en FHIR-KM med prioritet. Alle systemer testes for at de kan modtage og vise prioritet. I forhold til anvendelse og afsendelse af prioritet, testes alle systemer for at prioritet kun er synlig og mulig at bruge ved valg af den nationale kategori ”Vedr. henvisning”. Kravet fremgår af use case og tilhørende testprotokol. Dette med baggrund i at behovet for at anvende prioritet er rejst i regi af projektet vedr. forbedring af henvisninger, herunder revidering af henvisningsflowet. Anvendelsen af prioritet skal tilpasses løbende ift. udvikling i overenskomster og på baggrund af nationale krav fra Sundhedsministeriet, Sundhedsstyrelsen og Sundhedsdatastyrelsen.
+### 5.2	Formatering af meddelelsestekst
+I den nye KM er det muligt at formatere meddelelsesteksten. Formateringen af meddelelsesteksten følger XHTML. MedCom definerer et subset af XHTML, som systemerne som minimum skal understøtte. For brugeren skal det derfor være muligt at benytte formatering i meddelelsesteksten i overensstemmelse med det definerede subset.
+
+### 5.3 Prioritet-krav om afgrænset brug
+Det bliver muligt at markere en KM med prioritet. Alle systemer testes for, at de kan modtage og vise prio-ritet. I forhold til anvendelse og afsendelse af prioritet, testes alle systemer for, at prioritet kun er synlig og mulig at bruge ved valg af den nationale kategori ”Vedr. henvisning”. Kravet fremgår af use case og tilhø-rende testprotokol. Dette er besluttet med baggrund i, at behovet for at anvende prioritet er rejst i regi af projektet vedr. forbedring af henvisninger, herunder revidering af henvisningsflowet. Anvendelsen af prioritet skal tilpasses løbende ift. udvikling i overenskomster og på baggrund af nationale krav fra Sundhedsmini-steriet, Sundhedsstyrelsen og Sundhedsdatastyrelsen.
 
 
-## 8 Bilag
-Det er muligt at vedhæfte bilag/filer, som indlejres i FHIR-KM. Der findes en bilagsliste over tilladte bilagstyper på klassifikationsserveren. Følgende filtyper er tilladte og kan medsendes FHIR-KM: PDF, PNG, JPEG, GIF. 
-Det er besluttet, at der ikke må medsendes video i FHIR-KM grundet størrelsen. Det anbefales, at videoer deles via en national delingsservice. 
-Der vil ikke være begrænsning på, hvor mange bilag der kan medsendes i FHIR-KM, men i stedet begrænsning på størrelsen på hele FHIR-KM, inklusive bilag. 50 MB er den maksimale størrelse på hele FHIR-KM, som sendes over VANS. Der kommer ID på bilag.
+### 5.4 Bilag
+Det er muligt at vedhæfte filer, som indlejres i den nye KM. 
+<a href="https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html" target="_blank">Klik her for at finde de tilladte filtyper, som kan vedhæftes den nye KM.</a> <br>
+Liste over de tilladte filtyper udstilles også på terminologiserveren. 
+Det er besluttet, at der ikke må medsendes video i den nye KM grundet størrelsen. Det anbefales, at video-er deles via en national delingsservice. 
+Der vil ikke være begrænsning på, hvor mange bilag der kan medsendes i den nye KM men i stedet be-grænsning på størrelsen på hele meddelelsen, inklusive bilag. 50 MB er den maksimale størrelse på hele meddelelsen – inklusive bilag, som sendes over VANS. Alle bilag tildeles desuden et unikt ID. 
+MedCom tjekker, som en del af test og certificering, at bilag modtages og indlæses på teknisk niveau, mens krav til understøttelse af arbejdsgange samt brugervenlighed skal varetages lokalt i et samarbejde mellem kunde og it-leverandør.
+Afsender, som vælger at oprette, afsende, besvare eller videresende en korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede filer. Forfatter på den vedhæftede fil er den fag-person, som oprindeligt har udarbejdet filen, og derfor er ansvarlig for det faglige indhold. Når man, som afsender, vælger at medsende en fil, er man også ansvarlig for, at filens indhold er relevant for det aktuelle behandlingsforløb.
 
-MedCom tjekker som en del af test og certificering, at bilag sikkert modtages og gemmes på teknisk niveau, mens krav til understøttelse af arbejdsgange samt brugervenlighed skal varetages lokalt i et samarbejde mellem kunde og it-leverandør.
+### 5.5 Signatur
+Signatur skal altid udfyldes, medsendes af afsender og vises af modtager. Formålet med ’signatur’ er at tydeliggøre, hvem forfatteren af den afsendte KM er. Derfor er det et krav, at signatur udfyldes med bl.a. dato og tidspunkt, forfatters navn, stillingsbetegnelse og relevant telefonnummer. Stillingsbetegnelse kan hentes fra en liste, som er sammensat af udtræk fra autorisationsregistret og SKS personaleklassifikation. <br>
+<a href="https://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-PractitionerRoles.html" target="_blank">Klik her for at læse liste over stillingsbetegnelser.</a> <br>
 
-Afsender, som vælger at oprette, afsende, besvare eller videresende en korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede bilag/filer. Forfatter på bilag er den fagperson, som oprindeligt har udarbejdet bilaget, og derfor er ansvarlig for det faglige indhold. Når man som afsender vælger at medsende et bilag, er man dog også ansvarlig for, at bilagets indhold er relevant for det aktuelle behandlingsforløb.
+MedCom anbefaler, at telefonnummer udfyldes med relevant telefonnummer, såsom telefonnummer på afdelingen, afsnittet, enheden som afsender er tilknyttet eller fx relevant vagttelefonnummer. Signatur bør så vidt muligt autoudfyldes af systemet. I tilfælde af elementer som ikke kan autoudfyldes af systemet, skal disse kunne tilføjes manuelt af brugeren, fx relevant telefonnummer.
 
-## 9 Forsendelsesmuligheder
-I FHIR-KM anvendes Unikke ID, således at den teknisk kan kædes sammen med og referere til andre meddelelser.
-Det er muligt både at besvare og videresende en modtaget FHIR-KM. Både ved besvarelse og videresendelse er brugeren ansvarlig for, hvilke dele af den modtaget korrespondancetråd der skal medtages. Det betyder, at brugeren aktivt skal vælge hvilke dele af tekstmeddelelsen, samt hvilke bilag, som skal indgå i besvarelsen/videresendelse. 
-Både ved besvarelse og videresendelse af en FHIR-KM indsættes den samme kategori og det samme emne automatisk. Brugeren har dog herefter mulighed for at ændre det til en anden kategori og et andet emne.
+### 5.6 Forsendelsesmuligheder og overblik 
+I den nye KM anvendes unikke ID’er til at kæde den aktuelle meddelelse sammen med de forudgående meddelelser i en tråd. 
+Det er muligt at besvare og videresende en modtaget KM. 
+Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes den samme kategori og det samme emne automatisk af systemet. Brugeren kan vælge at ændre det til en anden kategori og et andet emne.  
 
-<b>Ved besvarelse</b>
-Ved besvarelsen skal adressen fra den modtaget FHIR-KM indgå som modtager af beskeden. 
-Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med en FHIR-KM. Også her skal adressen fra den modtaget MedCom-meddelelse indgå som modtager af beskeden. Forløbs-ID samt reference til den modtaget MedCom-standard (lokations- samt EAN-nummer) kan anvendes til at kæde meddelelserne sammen. 
 
-<b>Ved videresendelse</b>
+#### 5.6.1 Ved besvarelse
+Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modta-ger. Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med den nye korrespondance-meddelelse. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager (med SOR-kode og EAN-nummer). Referencer til den forudgående meddelelse skal indgå i besvarelsen, da disse informationer bruges til at kæde meddelelserne sammen.
+
+
+#### 5.6.2.Ved videresendelse
 Det er op til brugerne at vurderer, hvornår det er relevant at videresende en modtaget FHIR-KM. Brugerne er derfor ansvarlige for videresendelsen og relevansen ift. det aktuelle behandlingsforløb.
 Det er muligt at tilføje en årsag til videresendelsen. Årsagen kan (optionelt) angives i et særskilt felt, når man vælger at videresende en FHIR-KM.
 Hvis man vælger at besvare en videresendt FHIR-KM, vælger man selv, hvem man vil besvare tilbage til, fx den oprindelige afsender eller anden forudgående part i korrespondancetråden.
