@@ -162,7 +162,7 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 I alle MedComs FHIR-meddelelser er der minimum én Provenance ressource inkluderet af typen Med-ComMessagingProvenance. En Provenance ressource beskriver aktiviteten i den aktuelle meddelelse, fx at der er tale om en ny meddelelse, en besvaret meddelelse eller en videresendt meddelelse. I tilfælde af at der er flere Provenance ressourcer inkluderet, kan disse bruges til at skabe et overblik over aktiviteter i kommunikationshistorikken på brugergrænsefladen. Det betyder, at systemet i brugergrænsefladen dels vil kunne vise, om en modtaget korrespondancemeddelelse er en ny KM, en besvaret KM eller en videresendt KM samt dels vil kunne vise indholdet af den besvarede eller videresendte meddelelse, da systemet enten har meddelelsen lokalt ved besvarelse, eller den er inkluderet i korrespondancemeddelelsen ved videresen-delse. Visningen af de forudgående korrespondancemeddelelser kan lade sig gøre grundet referencer i de medsendte Provenance ressourcer. MedCom <b>anbefaler</b>, at systemerne benytter sig af de beskrevne tekni-ske muligheder for at informere brugeren om meddelelsen er ny, besvaret eller videresendt i brugergrænse-fladen og ved behov vise den samlede historik.  
 
 ## 6 Opsummering af krav og anbefalinger til afsender- og modtagersystemer 
-Nedenstående tabel opsummerer krav og anbefalinger til afsender- og modtagersystemer på baggrund af den tekstuelle del af dokumentationen. For tekniske detaljer henvises til de tekniske specifikationer, som findes<a href="https://medcomdk.github.io/dk-medcom-carecommunication/" target="_blank">via forsiden for den nye korrespondancemeddelelse</a> . For information samt krav og anbefalinger vedr. besvarelse og videresende, herunder muligheder for at skabe overblik i brugergrænsefladen, [se afsnit 5.6](#56-forsendelsesmuligheder-og-overblik) samt underafsnit. 
+I <a href="#Tab1">T table 1</a> opsummeres krav og anbefalinger til afsender- og modtagersystemer på baggrund af den tekstuelle del af dokumentationen. For tekniske detaljer henvises til de tekniske specifikationer, som findes <a href="https://medcomdk.github.io/dk-medcom-carecommunication/" target="_blank">via forsiden for den nye korrespondancemeddelelse</a> . For information samt krav og anbefalinger vedr. besvarelse og videresende, herunder muligheder for at skabe overblik i brugergrænsefladen, [se afsnit 5.6](#56-forsendelsesmuligheder-og-overblik) samt underafsnit. 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -173,7 +173,8 @@ Nedenstående tabel opsummerer krav og anbefalinger til afsender- og modtagersys
 .tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
 .tg .tg-c4ko{background-color:#2c415c;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-<div class="tg-wrap"><table class="tg">
+<div class="tg-wrap"><table class="tg" id="Tab1">
+<caption style="color:#2c415c; font-weight:bold; text-align:center"> Tabel 1: Opsumering af krav og anbefalinger til afsender- og modtagersystemer </caption>
 <thead>
   <tr>
     <th class="tg-c4ko">   <br>    </th>
