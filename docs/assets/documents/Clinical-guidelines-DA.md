@@ -100,36 +100,6 @@ For at understøtte brugeren mest muligt anbefales følgende:
 <p>&nbsp;</p>
 
 MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filty-per, som kan vedhæftes den nye KM. Governance, herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i Med-Com-regi. Governance for terminologier og serveren findes via forsiden for <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Governance for MedCom FHIR Messaging</a>
-<!-- Kategori består af en national fastlagt liste med aftalte kategorier, som modtager vælger kategori ud fra. Kategorilisten muliggør, at modtager kan fordele (automatisk) indkomne FHIR-KM, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for fordeling efter de nationale kategorier i FHIR-KM er ikke en del af MedComs test og certificering.
-Følgende nationale kategorier er aftalt: 
-* Ambulant
-* Andet
-* Dødsfald
-* Forløbskoordinering
-* Hjælpemidler
-* Medicin
-* Psykiatri, social, handicap
-* Rusmiddelbehandling
-* Sundhedspleje
-* Sygepleje
-* Telemedicin
-* Træning
-* Udskrivelse
-* Vedr. henvisning
-* Visitation
-* Undersøgelsessvar
-
-I emnefeltet har man mulighed for at supplere den valgte kategori med yderligere emneord. Emnefeltet udfyldes enten med de regionalt aftalte emneord eller selvskrevet fritekst. Det er valgt at bibeholde emnefeltet netop for at kunne understøtte de eksisterende samarbejdsaftaler med de regionalt aftalte emneord. Der er ikke krav til, eller forventning om, at systemerne kan fordele efter emneord. 
-
-For at understøtte brugeren mest muligt <b> anbefales følgende</b>:
-* Regionalt aftalte emneord mappes op til de nationalt aftalte kategorier, hvor de pågældende emneord relateres til de relevante kategorier
-* I de brugssituationer, hvor der er regionalt aftalte emneord:
-    * Brugeren præsenteres for de regionalt aftalte emneord, som de kender, og ved valg af emneord, påsætter systemet automatisk den pågældende relevante kategori (som er valgt ved forudgående mapning mellem kategori og emneord).  Brugeren slipper derved for at skulle tage stilling til kategori.
-    * Kategorien skal altid være synlig, både for afsender og modtager – også selvom man har regionalt aftalte emneord. Kategorien kan dog, for at understøtte brugeren, gøres mindre synlig i brugergrænsefladen, fx ved at ’fade den ud’, hvis der er regionalt aftalte emneord. 
-* I de brugssituationer, hvor der ikke er regionalt aftalte emneord:
-    * Brugeren vælger kategori og har herefter mulighed for at supplere med selvskrevet emneord som fritekst i emnefeltet. 
-<p>&nbsp;</p>
-MedCom stiller en klassifikationsserver til rådighed, som udstiller de nationale kategorier og tilladte bilagstyper/filtyper. Governance, herunder adgang og opdatering, af klassifikationsserveren samt vedligeholdelse af listen over de nationalt aftalte kategorier fastlægges i MedCom-regi i løbet af 2021.  -->
 
 ### 5.2	Formatering af meddelelsestekst
 I den nye KM er det muligt at formatere meddelelsesteksten. Formateringen af meddelelsesteksten følger XHTML. MedCom definerer et subset af XHTML, som systemerne som minimum skal understøtte. For brugeren skal det derfor være muligt at benytte formatering i meddelelsesteksten i overensstemmelse med det definerede subset.
@@ -160,12 +130,12 @@ Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes
 
 
 #### 5.6.1 Ved besvarelse
-Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager. Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med den nye korrespondancemeddelelse. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager (med SOR-kode og EAN-nummer). Referencer til den forudgående meddelelse skal indgå i besvarelsen, da disse informationer bruges til at kæde meddelelserne sammen.De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig1" target="_blank">Figur1.</a>
+Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager. Det er muligt at besvare en tidligere modtaget MedCom-meddelelse med den nye korrespondancemeddelelse. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager (med SOR-kode og EAN-nummer). Referencer til den forudgående meddelelse skal indgå i besvarelsen, da disse informationer bruges til at kæde meddelelserne sammen.De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig2" target="_blank">Figur 2.</a>
 
 
 <figure>
-<img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:40%" id="Fig1">
-<figcaption text-align="center"><b>Figur 1: Aktivitetsdiagram for besvarelse af den nye korrespondancemeddelelse  </b> </figcaption>
+<img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:40%" id="Fig2">
+<figcaption text-align="center"><b>Figur 2: Aktivitetsdiagram for besvarelse af den nye korrespondancemeddelelse  </b> </figcaption>
 </figure>
 <br><br>
 
@@ -173,6 +143,16 @@ Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse auto
 Det er op til brugerne at vurderer, hvornår det er relevant at videresende en modtaget FHIR-KM. Brugerne er derfor ansvarlige for videresendelsen og relevansen ift. det aktuelle behandlingsforløb.
 Det er muligt at tilføje en årsag til videresendelsen. Årsagen kan (optionelt) angives i et særskilt felt, når man vælger at videresende en FHIR-KM.
 Hvis man vælger at besvare en videresendt FHIR-KM, vælger man selv, hvem man vil besvare tilbage til, fx den oprindelige afsender eller anden forudgående part i korrespondancetråden.
+
+De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig2" target="_blank">Figur 2.</a>
+
+<figure>
+<img src="../images/DK_S3_VideresendCc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for videresendelse af CareCommunication besked." style="width:40%" id="Fig3">
+<figcaption text-align="center"><b>Figur 3: Aktivitetsdiagram for videresendelse af den nye korrespondancemeddelelse  </b> </figcaption>
+</figure>
+<br><br>
+
+
 
 ## 10 Use Cases
 Til brug for den tekniske implementering af FHIR-KM findes use case-beskrivelser på udvalgte use cases, som fokuserer på den digitale kommunikation mellem kommune, region og praktiserende læge, samt på tværs af regioner. Use cases findes via <a href="https://simplifier.net/medcom-fhir-messaging " target="_blank">Simplifier</a> 
