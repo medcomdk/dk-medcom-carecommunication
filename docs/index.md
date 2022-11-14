@@ -7,7 +7,7 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping between OIOXML, XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
@@ -19,7 +19,7 @@ The standard documentation below provides the necessary content to understand th
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG.
-  * Mapping between OIOXML XDIS91 and FHIR CareCommunication Message
+  * Mapping between OIOXML, XDIS91 and FHIR CareCommunication Message
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application 
@@ -28,14 +28,14 @@ The clinical guidelines for application are the foundation for the CareCommunica
 Below, the clinical guidelines for application in  Danish can be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
  
- >Note: Clinical guidelines for application  in English are in preparation, as soon as they are ready they will be published her 
+ >Note: Clinical guidelines for application in English are in preparation, as soon as they are ready they will be published here. 
 
 <!-- [English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md)  -->
 
 ### 1.2 Use cases
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of CareCommunication. The descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities.
 
-The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities.
+<!-- The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities. -->
 
 [Danish: Use cases](assets/CareCommunication_use_cases_v2.0.0.pdf) 
 > Please be aware that the Use cases are in danish. 
@@ -66,7 +66,9 @@ Further the structure of the standard is described and supported with examples i
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 ### 1.4 Mapping between OIOXML XDIS91 and FHIR CareCommunication Messages {#mapping-between-oioxml-and-fhir}
-Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. are transferred to the CareCommunication, as not all elements are represented in the FHIR message. Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
+Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>are transferred to the CareCommunication, as not all elements are represented in the FHIR. 
+
+Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
 [Click here to see mapping from previous OIOXML standard XDIS91 to the FHIR CareCommunication .](assets/documents/Map_between_OIOXML_FHIR.md)
 
 
