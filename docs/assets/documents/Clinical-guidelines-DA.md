@@ -141,7 +141,7 @@ Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse auto
 
 <figure>
 <img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:40%" id="Fig2">
-<figcaption text-align="center"><b>Figur 2: Aktivitetsdiagram for besvarelse af den nye korrespondancemeddelelse  </b> </figcaption>
+<figcaption text-align="center"><b>Figur 2: Aktivitetsdiagram for besvarelse af en modtaget korrespondancemeddelelse</b> </figcaption>
 </figure>
 <br><br>
 
@@ -154,7 +154,7 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 
 <figure>
 <img src="../images/DK_S3_VideresendCc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for videresendelse af CareCommunication besked." style="width:40%" id="Fig3">
-<figcaption text-align="center"><b>Figur 3: Aktivitetsdiagram for videresendelse af den nye korrespondancemeddelelse  </b> </figcaption>
+<figcaption text-align="center"><b>Figur 3: Aktivitetsdiagram for videresendelse af en modtaget korrespondancemeddelelse</b> </figcaption>
 </figure>
 <br><br>
 
