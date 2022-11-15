@@ -12,10 +12,10 @@
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
-This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). This standard will in time replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the startup of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication message it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general parctitioners, hospitals, physiotherapists and many more. 
+This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). This standard will in time replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the startup of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication message it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general practitioners, hospitals, physiotherapists and many more. 
 
 ## 1 Standard documentation 
-The standard documentation below provides the necessary content to understand the needs for modernization, the role of the CareCommunication message, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication message includes:
+The standard documentation below provides the necessary content to understand the needs for CareCommunication, the role of the CareCommunication message, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication message includes:
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG.
@@ -23,7 +23,7 @@ The standard documentation below provides the necessary content to understand th
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application 
-The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the modernization, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
+The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
 Below, the clinical guidelines for application in  Danish can be found:<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
@@ -48,17 +48,17 @@ Use cases describe the different scenarios a standard support. For a certain rea
 
 ### 1.3 Technical specification
 
-The technical specifications for the CareCommunication standard is composed by profiles from two IG's and from one terminology IG. Links to the IG’s are listed below:
+The technical specifications for the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication</a> is composed by profiles from two basis IG's and from one terminology IG. Links to the IG’s are listed below:
 *	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
 *	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
 *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
 
-The profiles that are part of the technical specification for <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
-*	<a href="https://medcomfhir.dk/ig/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
-<p>&nbsp;</p>
+<!-- The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a>
+*	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader </a>
+<p>&nbsp;</p> -->
 
 The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support.
 Further the structure of the standard is described and supported with examples in different degree of technical skills.
