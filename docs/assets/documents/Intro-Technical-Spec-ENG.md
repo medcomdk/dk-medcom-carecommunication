@@ -55,7 +55,7 @@
     <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader</a></td>
     <td class="tg-i91a">MessageHeader</td>
     <td class="tg-i91a">The header of a MedComCareCommunication message, which shall always be the first referenced profile, <br>when the type of the Bundle is 'message'. This profile holds references to the fundamental information <br><br><br> in a message such as sender, receiver, the content of the message in terms of the CareCommunication profile.<br> Inherited form the MedComMessagingMessageHeader</td>
-    <td class="tg-i91a">Id<br>Text <br>Event[x]:eventCoding <br>Sender<br>Source (Receiver)<br>Focus</td>
+    <td class="tg-i91a">Id<br>Text <br>Event[x]:eventCoding <br>Sender<br>Source<br>Focus</td>
     <td class="tg-i91a">CareCommunication</td>
   </tr>
     <tr>
