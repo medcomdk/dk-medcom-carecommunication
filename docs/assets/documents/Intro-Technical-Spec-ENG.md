@@ -15,11 +15,9 @@
 ## 1 Profiles in the CareCommunication Standard 
 
 
-> In case of discrepancies between the <a href="https://medcomfhir.dk/ig/medcomdk/dk-medcom-hospitalnotification/" target="_blank">MedCom CareCommunication IG</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
+> In case of discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
 
 <b>Please be aware that this site is under development and as soon as the side is ready the information will be presented below! </b>
-
-
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -27,75 +25,87 @@
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-p3tq{border-color:inherit;color:#2c415c;text-align:left;vertical-align:top}
-.tg .tg-i91a{border-color:inherit;color:#333333;text-align:left;vertical-align:top}
+.tg .tg-lc33{background-color:#2c415c;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<div style="overflow-x:auto;">
-<table class="tg" id="tab1">
-<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in CareCommunication standard </caption>
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
 <thead>
   <tr>
-    <th class="tg-p3tq"><span style="font-weight:bold">Profile</span></th>
-    <th class="tg-p3tq"><span style="font-weight:bold">Resource</span></th>
-    <th class="tg-p3tq"><span style="font-weight:bold">Description</span></th>
-    <th class="tg-p3tq"><span style="font-weight:bold">MustSupport elements</span></th>
-    <th class="tg-p3tq"><span style="font-weight:bold">Implementation Guide Origin</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">Profile</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">Resource</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">Description</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">MustSupport elements</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">Implementation Guide Origin</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank">MedComCareCommunicationMessage</a></td>
-    <td class="tg-i91a">Bundle</td>
-    <td class="tg-i91a">Acts as a container for the content of the message <br><br><br>Inherited form the  MedComMessagingMessage</td>
-    <td class="tg-i91a">Id<br>Type<br>Timestamp<br>Entry<br></td>
-    <td class="tg-i91a">CareCommunication</td>
+    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessage</span></a></td>
+    <td class="tg-0pky"><span style="color:#333">Bundle</span></td>
+    <td class="tg-0pky"><span style="color:#333">Acts as a container for the content of the message</span><br><br><br><span style="color:#333">Inherited form the MedComMessagingMessage</span></td>
+    <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Type</span><br><span style="color:#333">Timestamp</span><br><span style="color:#333">Entry</span><br></td>
+    <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
-    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank">MedComCareCommunicationMessageHeader</a></td>
-    <td class="tg-i91a">MessageHeader</td>
-    <td class="tg-i91a">The header of a MedComCareCommunication message, which shall always be the first referenced profile, <br>when the type of the Bundle is 'message'. This profile holds references to the fundamental information <br><br><br> in a message such as sender, receiver, the content of the message in terms of the CareCommunication profile.<br> Inherited form the MedComMessagingMessageHeader</td>
-    <td class="tg-i91a">Id<br>Text <br>Event[x]:eventCoding <br>Sender<br>Source<br>Focus</td>
-    <td class="tg-i91a">CareCommunication</td>
-  </tr>
-    <tr>
-    <td class="tg-i91a"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a></td>
-    <td class="tg-i91a">Communication</td>
-    <td class="tg-i91a">MedComCareCommunication profile contains the main content of the message and it shall include a category code and it may include a topic that supports and elaborates the category. The payload of the message shall include a message text and it may include one or more attachments.</td>
-    <td class="tg-i91a">Status <br>Category <br>Priority<br>Subject <br>Topic<br>Encounter <br>Sent (dateTime)<br>Recipient<br>Sender<br>Payload:string.date<br>Payload:string.author<br>Payload:string.authorRole<br>Payload:string.contact<br>Payload:string.content[x] <br>Payload:attachment.date <br>Payload:attachment.author<br>Payload:attachment.authorRole<br>Payload:attachment.contact<br>Payload:attachment.identifier<br>Slices for content[x]</td>
-    <td class="tg-i91a">CareCommunication</td>
+    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessageHeader</span></a></td>
+    <td class="tg-0pky"><span style="color:#333">MessageHeader</span></td>
+    <td class="tg-0pky"><span style="color:#333">The header of a MedComCareCommunication message, which shall always be the first referenced profile,</span><br><span style="color:#333">when the type of the Bundle is 'message'. This profile holds references to the fundamental information</span><br><br><br><span style="color:#333">in a message such as sender, receiver, the content of the message in terms of the CareCommunication profile.</span><br><span style="color:#333">Inherited form the MedComMessagingMessageHeader</span></td>
+    <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Text</span><br><span style="color:#333">Event[x]:eventCoding</span><br><span style="color:#333">destination:All Slices.use</span><br><span style="color:#333">Destination:primary</span><br> <span style="color:#333">Destination:primary.use</span><br> <span style="color:#333">Destination:primary.endpoint</span><br> <span style="color:#333">Destination:primary.receiver</span><br>  <span style="color:#333">Sender</span><br><span style="color:#333">Source</span><br><span style="color:#333">Source.endpoint</span><br><span style="color:#333">Focus</span></td>
+    <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html" target="_blank">MedComCorePatient</a></td>
+    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
+    <td class="tg-0pky"><span style="color:#333">Communication</span></td>
+    <td class="tg-0pky"><span style="color:#333">MedComCareCommunication profile contains the main content of the message and it shall include a category code and it may include a topic that supports and elaborates the category. The payload of the message shall include a message text and it may include one or more attachments.</span></td>
+    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Sender</span><br><span style="color:#333">Slices for payload</span><br>
+    <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html"><span style="text-decoration:none;color:#5093D6">MedComCorePatient</span></a></td>
     <td class="tg-0pky">Patient</td>
     <td class="tg-0pky">Describes a citizen or patient which the communication concerns, when exchanging a CareCommunication message.</td>
     <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
     <td class="tg-0pky">Core</td>
   </tr>
-    <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank">MedComCoreEncounter</a></td>
+  <tr>
+    <td class="tg-0pky">MedComCorePractitioner</td>
+    <td class="tg-0pky">Practitioner</td>
+    <td class="tg-0pky">Describes a healthcare professional or another actor involved in citizen or patient care. <br><br>MedComCorePractitioner is inherited from the DkCorePractitioner, and shall include a name of the practitioner if it is available. <br></td>
+    <td class="tg-0pky">Name </td>
+    <td class="tg-0pky">Core</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">MedComCorePractitionerRole</td>
+    <td class="tg-0pky">PractitionerRole</td>
+    <td class="tg-0pky">Describes the role of a healthcare professional or another actor involved in citizen or patient care. </td>
+    <td class="tg-0pky">Practitioner </td>
+    <td class="tg-0pky">Core</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare provideres.</td>
     <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank">MedComMessagingOrganization</a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html"><span style="text-decoration:none;color:#5093D6">MedComMessagingOrganization</span></a></td>
     <td class="tg-0pky">Organisation</td>
     <td class="tg-0pky">Contains information which is useful in order to identify a sender or receiver organisation. It is primarily used for transportation matters, why it shall contain a SOR- and EAN-identifier. This profile inherits from MedComCoreOrganization.</td>
     <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Identifier(EAN-id)<br>Name</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank">MedComMessagingProvenance</a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html"><span style="text-decoration:none;color:#5093D6">MedComMessagingProvenance</span></a></td>
     <td class="tg-0pky">Provenance</td>
-    <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or modified message <br>In cases of a previously send message the Provenance resource holds a reference to the this message. <br>Thereby it is possible to get an overview of communication about a patient.</td>
-    <td class="tg-0pky">Id<br>Target <br>OccurredDateTime <br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message)</td>
+    <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or modified message<br>In cases of a previously send message the Provenance resource holds a reference to the this message.<br>Thereby it is possible to get an overview of communication about a patient.</td>
+    <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message)</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
 </tbody>
-</table>
-</div>
+</table></div>
+
+
 
 ### 1.1 Sender and recipient
 In a CareCommunication message it is required to include information about a sender and receiver in terms of a reference to a MedComMessagingOrganization. This information are primarily used for transportation matters and will always include an EAN- and SOR-identifier.
