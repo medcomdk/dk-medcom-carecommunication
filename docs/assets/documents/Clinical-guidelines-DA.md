@@ -24,7 +24,7 @@
 <p>&nbsp;</p>
 
 ## 1 Introduktion
-Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser (Engelsk:CareCommunication).  Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i den nye korre-spondancemeddelelse (KM) og krav og anbefalinger, herunder funktionaliteter, samt ibrugtagning. 
+Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser (Engelsk: CareCommunication).  Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i den nye korre-spondancemeddelelse (KM) og krav og anbefalinger, herunder funktionaliteter, samt ibrugtagning. 
 Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af KM.
 Krav og anbefalinger til indhold, herunder funktionaliteter, er udarbejdet i samarbejde med en nedsat <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank">national arbejdsgruppe</a>  med repræsentanter fra regioner, kommuner og praktiserende læger. Derudover har materiale med beskrivelse af indhold og funktionalitet i den nye KM været sendt i høring ved relevante MedCom-grupper samt været bredt tilgængeligt for kommentering via publicering på MedComs hjemmeside.
 De tekniske specifikationer (profilen) for den nye korrespondancemeddelelsen findes via <a href="https://medcomdk.github.io/dk-medcom-carecommunication/ " target="_blank">CareCommunication</a> forsiden på Github.
@@ -235,7 +235,7 @@ Til brug for den tekniske implementering af den nye KM findes use case beskrivel
 
 
 
-## 8 Ibrugtegning
+## 8 Ibrugtagning
 Inden ibrugtagning skal meddelelsestypen for den nye korrespondancemeddelelse ajourføres i Sundheds-væsnets Organisationsregister (SOR) for den enkelte aktør, således at der er valide data om, hvem der har implementeret og anvender den nye KM, og derved hvem der kan afsende og modtage den nye KM.
 
 
