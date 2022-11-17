@@ -8,7 +8,7 @@
   * [1.4 Payloads](#14-payloads)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
-* [4 TimeStamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication-standard)
+* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication-standard)
   * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1--carecommunication-only-text)
   * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2--carecommunication-text-and-attachment)
 
@@ -58,7 +58,7 @@
     <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Communication</span></td>
     <td class="tg-0pky"><span style="color:#333">MedComCareCommunication profile contains the main content of the message, in form of a message segment. A message segment consist of the textual part (payload:string.content[x]) or an attachement (payload:attachment.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp(payload:string.extension:date) and a relevant telephonenumber (payload:string.extension.authorContact). The message shall include a category code (category) and it may include a topic (topic) that supports and elaborates the category. </span></td>
-    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:date</span> <br> <span style="color:#333">payload:attachment</span></td>
+    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> </td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
@@ -130,9 +130,10 @@ The message text and attachments of a CareCommunication will both be included in
 
 ## 2 Internal references in a CareCommunication 
 The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).
-The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader are the sender, and receiver organisations referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient. Additionally, contain the message text and attachment if they are included.<br> 
+The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader are the sender, and receiver organisations referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the communication. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
+ <!-- Additionally, contain the message text and attachment if they are included -->
 <figure>
 <img src="../images/CareCommunication.svg" alt="Show references between the profiles in an CareCommunication message." style="width:40%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the CareCommunication.</b> </figcaption>
@@ -141,11 +142,11 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
 ## 3 Examples of a CareCommunication 
 
-<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplifies example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter, and finally is <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> a simplified example of a reply to the new message.
+<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplified example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter, and finally <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> is a simplified example of a reply to the new message.
 
 <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> both includes the required content, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 
 More examples for CareCommunication in both XML and JSON format can be found on  MedComCareCommunicationMessage profile. 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see examples for MedComCareCommunicationMessage.</a>
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all examples for MedComCareCommunicationMessage.</a>
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
@@ -166,10 +167,9 @@ More examples for CareCommunication in both XML and JSON format can be found on 
 </figure>
 <br><br>
 
-## 4 TimeStamps in the CareCommunication 
+## 4 Timestamps in the CareCommunication 
 
 The CareCommunication contains six important time stamps:
-	· Communication.sent
 	· Bundle.timestamp
 	· Provenance.recorded
 	· Provenance.occuredDateTime[x]
@@ -187,8 +187,8 @@ The healthcare professional writes the message text, and the text is saved. This
 Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded time stamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
 
 <figure>
-<img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig1">
-<figcaption text-align = "center"><b>Figure 1: Simplified example:CareCommunication text only </b></figcaption>
+<img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig5">
+<figcaption text-align = "center"><b>Figure 5: Simplified example:CareCommunication text only </b></figcaption>
 </figure>
 
 
@@ -198,11 +198,11 @@ If the CareCommunication contains a message text and one or more attachments, th
 The healthcare professional writes the message text, and the text is saved. This is when the first time stamp, Communication.payload:string.extension:date is registered. 
 Either before or after writing the message text will the healthcare professional establish the attachment. It is recommended that the timestamp for when the attachment is completed is registered as Communication.payload:attachment.extension:date. But in case this timestamp is not available, shall the timestamp for when the healthcare professional attached the attachment be registered as Communication.payload:attachment.extension:date.
  
-The healthcare professional then presses "send" button and the Communication.sent time stamp is registered. 
+The healthcare professional then presses "send" button and the Communication.sent timestamp is registered. 
  
 Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded time stamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
 
 <figure>
-<img src="../images/cc_textAttachment.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig2">
-<figcaption text-align = "center"><b>Figure 2: Simplified example:CareCommunication text and Attachment </b></figcaption>
+<img src="../images/cc_textAttachment.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
+<figcaption text-align = "center"><b>Figure 6: Simplified example:CareCommunication text and Attachment </b></figcaption>
 </figure>
