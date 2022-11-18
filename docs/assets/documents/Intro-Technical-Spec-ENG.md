@@ -141,12 +141,12 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <br><br>
 
 ## 3 Examples of a CareCommunication 
-
+In this section, some examples of Care Communication (New Message, New message with attachment and Reply message ) are presented. 
 <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplified example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter, and finally <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> is a simplified example of a reply to the new message.
 
 <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> both includes the required content, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 
-More examples for CareCommunication in both XML and JSON format can be found on  MedComCareCommunicationMessage profile. 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all examples for MedComCareCommunicationMessage.</a>
+More examples including forward CareCommunication, for CareCommunication in both XML and JSON format can be found on MedComCareCommunicationMessage profile. 
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all, examples for MedComCareCommunicationMessage.</a>
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
@@ -169,38 +169,37 @@ More examples for CareCommunication in both XML and JSON format can be found on 
 
 ## 4 Timestamps in the CareCommunication 
 
-The CareCommunication contains six important time stamps:
-	· Bundle.timestamp
-	· Provenance.recorded
-	· Provenance.occuredDateTime[x]
-	· Communication.payload:attachment.extension:date
-	· Communication.payload:string.extension:date
+The CareCommunication contains six important timestamps:
+* Bundle.timestamp
+* Provenance.recorded
+* Provenance.occuredDateTime[x]
+* Communication.payload:attachment.extension:date
+* Communication.payload:attachment.creation
+* Communication.payload:string.extension:date
  
-The six time stamps are registered at different times when the CareCommunication is generated. 
+The six timestamps are registered at different times when the CareCommunication is generated. 
  
 
 ### 4.1 Scenario 1- CareCommunication only text 
 
 If the CareCommunication only contains a message text, shall the timestamps be registered as follow: 
-The healthcare professional writes the message text, and the text is saved. This is when the first time stamp, Communication.payload:string.extension:date is registered. The healthcare professional then presses "send" button and the Communication.sent time stamp is registered. 
- 
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded time stamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
+The healthcare professional writes the message text and presses the "send" button.  This is when the first timestamp, Communication.payload:string.extension:date is registered. 
+
+Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
 
 <figure>
 <img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig5">
-<figcaption text-align = "center"><b>Figure 5: Simplified example:CareCommunication text only </b></figcaption>
+<figcaption text-align = "center"><b>Figure 5: Simplified example: CareCommunication text only </b></figcaption>
 </figure>
 
 
 ### 4.2 Scenario 2- CareCommunication text and attachment 
 
-If the CareCommunication contains a message text and one or more attachments, the timestamps shallbe registered as follow: 
-The healthcare professional writes the message text, and the text is saved. This is when the first time stamp, Communication.payload:string.extension:date is registered. 
-Either before or after writing the message text will the healthcare professional establish the attachment. It is recommended that the timestamp for when the attachment is completed is registered as Communication.payload:attachment.extension:date. But in case this timestamp is not available, shall the timestamp for when the healthcare professional attached the attachment be registered as Communication.payload:attachment.extension:date.
- 
-The healthcare professional then presses "send" button and the Communication.sent timestamp is registered. 
- 
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded time stamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
+If the CareCommunication contains a message text and one or more attachments, the timestamps shall be registered as follow: 
+The healthcare professional creates the attachement and the frist timestamp Communication.payload:attachment.creation is registered. The healthcare professional then writtes the message and presses the "send" button.  
+
+The healthcare professional then presses "send" button and timestamps, Communication.payload:string.extension:date and Communication.payload:attachment.extension:date is registered. 
+Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
 
 <figure>
 <img src="../images/cc_textAttachment.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
