@@ -202,6 +202,6 @@ The healthcare professional then presses "send" button and timestamps, Communica
 Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
-<img src="../images/cc_textAttachment.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
+<img src="../images/cc_attachement.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
 <figcaption text-align = "center"><b>Figure 6: Simplified example:CareCommunication text and Attachment </b></figcaption>
 </figure>
