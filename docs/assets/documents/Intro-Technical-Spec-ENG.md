@@ -114,7 +114,7 @@ In a CareCommunication it is required to include information about a sender and 
 When sending a CareCommunication it is possible to add a more specific receiver of the message, called a recipient, and a more specific sender. This may be used to include a more specific organisation or person related to the care and wellbeing of the patient or citizen can be referenced. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality.
 
 ### 1.2 Categories and the use of priority
-These is a nationally agreed list of categories that shall be used when sending a CareCommunication. <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html">The list of categories can be seen here</a>. When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is choosen a topic shall be included, as this is used to specify the topic of the CareCommunication.
+There is a nationally agreed list of categories that shall be used when sending a CareCommunication. <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html">The list of categories can be seen here</a>. When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is choosen a topic shall be included, as this is used to specify the topic of the CareCommunication.
 
 ### 1.3 Encounter
 An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. An example where this is relevant could be when the communication concerns a hospitalisation of a patient, where an episodeOfCare-identifier is used to connect the communication and hospitalisation. In this case, should a reference to the MedComCoreEncounter and episodeOfCare-identifier be included.
@@ -135,7 +135,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 
  <!-- Additionally, contain the message text and attachment if they are included -->
 <figure>
-<img src="../images/CareCommunication.svg" alt="Show references between the profiles in an CareCommunication message." style="width:40%" id="Fig1">
+<img src="../images/CareCommunication.svg" alt="Show references between the profiles in an CareCommunication message." style="width:60%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the CareCommunication.</b> </figcaption>
 </figure>
 <br><br>
@@ -180,12 +180,12 @@ The CareCommunication contains six important timestamps:
 The six timestamps are registered at different times when the CareCommunication is generated. 
  
 
-### 4.1 Scenario 1- CareCommunication only text 
+### 4.1 Scenario 1 - CareCommunication only text 
 
 If the CareCommunication only contains a message text, shall the timestamps be registered as follow: 
 The healthcare professional writes the message text and presses the "send" button.  This is when the first timestamp, Communication.payload:string.extension:date is registered. 
 
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
+Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
 <img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig5">
@@ -193,13 +193,13 @@ Immediately after is the CareCommunication message generated and Bundle.timestam
 </figure>
 
 
-### 4.2 Scenario 2- CareCommunication text and attachment 
+### 4.2 Scenario 2 - CareCommunication text and attachment 
 
-If the CareCommunication contains a message text and one or more attachments, the timestamps shall be registered as follow: 
+If the CareCommunication contains a message text and one or more attachments, the timestamps shall be registered as follows: 
 The healthcare professional creates the attachement and the frist timestamp Communication.payload:attachment.creation is registered. The healthcare professional then writtes the message and presses the "send" button.  
 
 The healthcare professional then presses "send" button and timestamps, Communication.payload:string.extension:date and Communication.payload:attachment.extension:date is registered. 
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is a human readable, where Provenance.recorded is a system readable.
+Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
 <img src="../images/cc_textAttachment.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
