@@ -3,14 +3,14 @@
 **Table of contents**
 * [1 Profiles in the CareCommunication Standard](#1-profiles-in-the-carecommunication-standard)
   * [1.1 Sender and recipient](#11-sender-and-recipient)
-  * [1.2 Ca](#12-categories-and-the-use-of-priority)
+  * [1.2 Categories and the use of priority](#12-categories-and-the-use-of-priority)
   * [1.3 Encounter](#13-encounter)
   * [1.4 Payloads](#14-payloads)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
-* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication-standard)
-  * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1--carecommunication-only-text)
-  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2--carecommunication-text-and-attachment)
+* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
+  * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1---carecommunication-only-text)
+  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment)
 
 ## 1 Profiles in the CareCommunication Standard 
 
