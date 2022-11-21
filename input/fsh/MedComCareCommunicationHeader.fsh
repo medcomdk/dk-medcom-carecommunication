@@ -3,9 +3,23 @@ Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
 Description: "Message header for care communication message"
 * eventCoding = $MessageEvents#care-communication-message
-* focus 1..1 MS
+* focus 1..2 MS
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
+//* obeys medcom-careCommunication-4
+
+/* Anvendt til en regle omkring status-værdien
+Invariant: medcom-careCommunication-4
+Description: "There shall always be a Communication resource with the status 'unknown'"
+Severity: #error
+Expression: "focus.resolve()" */
+
+// (resolve().count() = 1 and (Communication.status = 'unknown').exists()).exists() or (resolve().count() = 2 and (Communication.status = 'unknown').count() = 1 and (Communication.status = 'entered-in-error').count() = 1)).exists()
+
+// iif(count() = 1 and (status = 'unknown').exists(), true, count() = 2 and (status = 'unknown').count() = 1 and (status = 'entered-in-error').count() = 1, true)"
+
+//"resolve().where(count() = 1) and (status = 'unknown').exists() or where(count() = 2) and (status = 'unknown').count() = 1 and (status = 'entered-in-error').count() = 1"
+ 
 
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
@@ -39,21 +53,25 @@ Usage: #example
 * destination[primary].receiver = Reference(282c1fea-551c-11ed-bdc3-0242ac120002)
 * sender = Reference(2f12cb92-551c-11ed-bdc3-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* focus = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
+* focus[0] = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
+* focus[1] = Reference(fe2eb07e-690f-11ed-9022-0242ac120002) 
 
 // CareCommunication modify example
-Instance: 40678166-551d-11ed-bdc3-0242ac120002
+Instance: f8aa0bf0-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a modify message."
 Description: "MessageHeader for CareCommunication modify message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* sender = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(87b881a6-690d-11ed-9022-0242ac120002)
+* sender = Reference(9e183b44-690d-11ed-9022-0242ac120002)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus[0] = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
+* focus[1] = Reference(d63178cc-690f-11ed-9022-0242ac120002) 
+
+
 
 // CareCommunication reply example
 Instance: d5bd2111-2576-48d3-84d4-8be0297a038d

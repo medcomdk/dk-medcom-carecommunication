@@ -48,7 +48,6 @@ package "CareCommunication message: New message" as new <<Frame>>{
         status = "unknown"
         class = "carecoordination"
         subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
-        sent = "2022-10-01T12:00:10Z"
         payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
         payload[0].extension:date = "2022-10-01T12:00:05Z"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
@@ -57,8 +56,8 @@ package "CareCommunication message: New message" as new <<Frame>>{
     class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
         practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
-        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
-        code.value = "nurse"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as newPrac{
         id = "58c811a5-4082-44eb-9d66-ccbb112d4973"

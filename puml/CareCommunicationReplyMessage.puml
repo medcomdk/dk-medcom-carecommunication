@@ -48,22 +48,36 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         status = "unknown"
         class = "carecoordination"
         subject.reference = "Patient/31c90594-54ff-11ed-bdc3-0242ac120002"
-        sent = "2022-10-02T11:30:10Z"
         payload[0].contentString = "Thank you for notifying us, we will take care of it..."
         payload[0].extension:date = "2022-10-02T11:30:05Z"
         payload[0].extension:author.reference = "PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "44527000"
-    }
+        payload[1].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[1].extension:date = "2022-10-01T12:00:05Z"
+        payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "38683868"
+    } 
     class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
         id = "8bf63050-5504-11ed-bdc3-0242ac120002"
         practitioner.reference = "Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
-        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
-        code.value = "nurse"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as replyPrac{
         id = "7ffff970-5504-11ed-bdc3-0242ac120002"
         name.family = "Emma"
         name.given = "Waters"
+    }
+    class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
+    }
+    class "Practitioner (MedComCorePractitioner)" as newPrac{
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        name.family = "Michael"
+        name.given = "Burns"
     }
     class "Receiver (MedComMessagingOrganization)" as replyROrg{
         id = "9eb51090-5503-11ed-bdc3-0242ac120002"
@@ -106,7 +120,9 @@ replyMH -[hidden]-replyPT
 replyPT-[hidden]-replyCom
 replyCom -[hidden]-replyPracR
 replyPracR-[hidden]-replyPrac
-replyPrac-[hidden]-replyROrg
+replyPrac-[hidden]-newPracR
+newPracR-[hidden]-newPrac
+newPrac-[hidden]-replyROrg
 replyROrg-[hidden]- replySOrg
 replySOrg-[hidden]-replyPRO
 replyPRO-[hidden]-newPRO
