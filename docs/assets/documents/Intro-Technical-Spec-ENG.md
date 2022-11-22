@@ -13,11 +13,7 @@
   * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment)
 
 ## 1 Profiles in the CareCommunication Standard 
-
-
-> In case of discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, it is the IG which should be followed. Please contact <fhir@medcom.dk> if you find discrepancies.
-
-<b>Please be aware that this site is under development and as soon as the side is ready the information will be presented below! </b>
+> In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -43,35 +39,35 @@
   <tr>
     <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessage</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Bundle</span></td>
-    <td class="tg-0pky"><span style="color:#333">Acts as a container for the content of the message</span><br><span style="color:#333">Inherited form the MedComMessagingMessage</span></td>
+    <td class="tg-0pky"><span style="color:#333">Acts as a container for the content of the message</span><br><span style="color:#333">Inherited from the MedComMessagingMessage</span></td>
     <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Type</span><br><span style="color:#333">Timestamp</span><br><span style="color:#333">Entry</span><br></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessageHeader</span></a></td>
     <td class="tg-0pky"><span style="color:#333">MessageHeader</span></td>
-    <td class="tg-0pky"><span style="color:#333">The header of a MedComCareCommunication message, which shall always be the first referenced profile,when the type of the Bundle is 'message'.This profile holds references to the fundamental information in a message such as sender, receiver, the content of the message in terms of the CareCommunication profile.</span><br><span style="color:#333">Inherited form the MedComMessagingMessageHeader</span></td>
+    <td class="tg-0pky"><span style="color:#333">The header of a MedComCareCommunication message, which must always be the first referenced profile, when the type of the bundle is 'message'.This profile holds references to the fundamental information in a message, such as sender, receiver, the content of the message in terms of the CareCommunication profile.</span><br><span style="color:#333">Inherited from MedComMessagingMessageHeader</span></td>
     <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Text</span><br><span style="color:#333">Event[x]:eventCoding</span><br><span style="color:#333">destination:All Slices.use</span><br><span style="color:#333">Destination:primary</span><br> <span style="color:#333">Destination:primary.use</span><br> <span style="color:#333">Destination:primary.endpoint</span><br> <span style="color:#333">Destination:primary.receiver</span><br>  <span style="color:#333">Sender</span><br><span style="color:#333">Source</span><br><span style="color:#333">Source.endpoint</span><br><span style="color:#333">Focus</span></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Communication</span></td>
-    <td class="tg-0pky"><span style="color:#333">MedComCareCommunication profile contains the main content of the message, in form of a message segment. A message segment consist of the textual part (payload:string.content[x]) or an attachement (payload:attachment.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp(payload:string.extension:date) and a relevant telephonenumber (payload:string.extension.authorContact). The message shall include a category code (category) and it may include a topic (topic) that supports and elaborates the category. </span></td>
+    <td class="tg-0pky"><span style="color:#333">The MedComCareCommunication profile contains the main content of the message in form of a message segment. A message segment consists of the textual part (payload:string.content[x]) or an attachment (payload:attachment.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp(payload:string.extension:date) and a relevant telephone number (payload:string.extension.authorContact). The message must include a category code (category) and it may include a topic (topic) that supports and elaborates the category. </span></td>
     <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> </td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html"><span style="text-decoration:none;color:#5093D6">MedComCorePatient</span></a></td>
     <td class="tg-0pky">Patient</td>
-    <td class="tg-0pky">Describes a citizen or patient which the communication concerns, when exchanging a CareCommunication.</td>
+    <td class="tg-0pky">Describes a citizen or patient in which the communication concerns when exchanging a CareCommunication.</td>
     <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html"><span style="text-decoration:none;color:#5093D6">MedComCorePractitioner</span></a></td>
     <td class="tg-0pky">Practitioner</td>
-    <td class="tg-0pky">Describes a healthcare professional or another actor involved in citizen or patient care. <br><br>MedComCorePractitioner is inherited from the DkCorePractitioner, and shall include a name of the practitioner if it is available. <br></td>
+    <td class="tg-0pky">Describes a healthcare professional or another actor involved in citizen or patient care. <br><br>MedComCorePractitioner is inherited from the DkCorePractitioner, and must include a name of the practitioner if available. <br></td>
     <td class="tg-0pky">Name </td>
     <td class="tg-0pky">Core</td>
   </tr>
@@ -85,21 +81,21 @@
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
-    <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare provideres.</td>
+    <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare providers.</td>
     <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html"><span style="text-decoration:none;color:#5093D6">MedComMessagingOrganization</span></a></td>
     <td class="tg-0pky">Organisation</td>
-    <td class="tg-0pky">Contains information which is useful in order to identify a sender or receiver organisation. It is primarily used for transportation matters, why it shall contain a SOR- and EAN-identifier. This profile inherits from MedComCoreOrganization.</td>
+    <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organisation. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
     <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Identifier(EAN-id)<br>Name</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html"><span style="text-decoration:none;color:#5093D6">MedComMessagingProvenance</span></a></td>
     <td class="tg-0pky">Provenance</td>
-    <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or modified message<br>In cases of a previously send message the Provenance resource holds a reference to the this message.<br>Thereby it is possible to get an overview of communication about a patient.</td>
+    <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or a modified message.<br>In case of a previously sent message, the Provenance resource holds a reference to this message.<br>Therefore, it is possible to get an overview of the communication about a patient.</td>
     <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message)</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
@@ -109,28 +105,29 @@
 
 
 ### 1.1 Sender and recipient
-In a CareCommunication it is required to include information about a sender and receiver in terms of a reference to a MedComMessagingOrganization. This information are primarily used for transportation matters and will always include an EAN- and SOR-identifier.
+In a CareCommunication, it is required to include information about a sender and receiver in terms of a reference to a MedComMessagingOrganization. This information is primarily used for transportation matters and will always include an EAN and SOR identifier.
 
-When sending a CareCommunication it is possible to add a more specific receiver of the message, called a recipient, and a more specific sender. This may be used to include a more specific organisation or person related to the care and wellbeing of the patient or citizen can be referenced. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality.
+When sending a CareCommunication, it is possible to add a more specific receiver of the message, called a recipient, and a more specific sender. This may be used to include a more specific organisation or person related to the care, and wellbeing of the patient or citizen can be referenced. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality.
 
 ### 1.2 Categories and the use of priority
-There is a nationally agreed list of categories that shall be used when sending a CareCommunication. <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html">The list of categories can be seen here</a>. When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is choosen a topic shall be included, as this is used to specify the topic of the CareCommunication.
+There is a nationally agreed list of categories that must be used when sending a CareCommunication.<br> <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html">The list of categories can be seen here</a>. <br>
+When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is chosen, a topic must be included, as this is used to specify the topic of the CareCommunication.
 
 ### 1.3 Encounter
-An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. An example where this is relevant could be when the communication concerns a hospitalisation of a patient, where an episodeOfCare-identifier is used to connect the communication and hospitalisation. In this case, should a reference to the MedComCoreEncounter and episodeOfCare-identifier be included.
+An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. An example is when the communication concerns a hospitalisation of a patient, where an episodeOfCare identifier is used to connect the communication and hospitalisation. In this case, a reference to the MedComCoreEncounter and episodeOfCare identifier must be included.
 
 ### 1.4 Payloads
-As mentioned in the clinical guidelines for application both message text and attachments shall include:
+As mentioned in the clinical guidelines for application, both the message text and the attachments must include:
 * An author (Danish: forfatter) and role (Danish: stillingsbetegnelse)
 * A relevant telephone number
 * A timestamp
 * An identifier (only relevant for attachments (Danish: Bilag))
 
-The message text and attachments of a CareCommunication will both be included in the element Communication.payload, however they shall be included in different slices. At least one payload which includes the message text shall be included when sending a CareCommunication message, but zero or more attachments may be included.
+The message text and attachments of a CareCommunication will be included in the element Communication.payload, however they must be included in different sub-list (also know as slices). At least one payload, which includes the message text, must be included when sending a CareCommunication message. However, one or more attachments may be included.
 
 ## 2 Internal references in a CareCommunication 
-The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).
-The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1 </a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader are the sender, and receiver organisations referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
+The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).<br>
+The references between the profiles are shown in  <a href="#Fig1" rel="noopener noreferrer"> Figure 1</a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader the sender and receiver organisations are referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
 MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the communication. The provenance both references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganisation. 
 
  <!-- Additionally, contain the message text and attachment if they are included -->
@@ -141,12 +138,12 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <br><br>
 
 ## 3 Examples of a CareCommunication 
-In this section, some examples of Care Communication (New Message, New message with attachment and Reply message) are presented. 
-<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplified example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter, and finally <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> is a simplified example of a reply to the new message.
+In this section, examples of Care Communication (New Message, New message with attachment and Reply message) are presented. 
+<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, whereas <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplified example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter. Finally <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> is a simplified example of a reply to the new message.
 
-<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> both includes the required content, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 
-More examples including forward CareCommunication, for CareCommunication in both XML and JSON format can be found on MedComCareCommunicationMessage profile. 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all, examples for MedComCareCommunicationMessage.</a>
+<a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> both include the required content, whereas <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always must be included in a message. MustSupport elements must be included if they are present in the sender's system, and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 
+More examples, including forward of CareCommunication and, for CareCommunication in both an XML and JSON format can be found on thew MedComCareCommunicationMessage profile. 
+<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all examples for MedComCareCommunicationMessage.</a>
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
@@ -182,10 +179,11 @@ The six timestamps are registered at different times when the CareCommunication 
 
 ### 4.1 Scenario 1 - CareCommunication only text 
 
-If the CareCommunication only contains a message text, shall the timestamps be registered as follow: 
-The healthcare professional writes the message text and presses the "send" button.  This is when the first timestamp, Communication.payload:string.extension:date is registered. 
-
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
+If the CareCommunication only contains a message text, the timestamps must be registered as follows: 
+* The healthcare professional writes the message text and presses the "send" button.  This is when the first timestamp, Communication.payload:string.extension:date, is being registered. 
+* Immediately after,the CareCommunication message is generated, and Bundle.timestamp is registered.
+* When the CareCommunication message has been sent, the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. 
+>Note: that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
 <img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig5">
@@ -195,11 +193,12 @@ Immediately after is the CareCommunication message generated and Bundle.timestam
 
 ### 4.2 Scenario 2 - CareCommunication text and attachment 
 
-If the CareCommunication contains a message text and one or more attachments, the timestamps shall be registered as follows: 
-The healthcare professional creates the attachement and the frist timestamp Communication.payload:attachment.creation is registered. The healthcare professional then writtes the message and presses the "send" button.  
-
-The healthcare professional then presses "send" button and timestamps, Communication.payload:string.extension:date and Communication.payload:attachment.extension:date is registered. 
-Immediately after is the CareCommunication message generated and Bundle.timestamp is registered. When CareCommunication message is sent the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
+If the CareCommunication contains a message text and one or more attachments, the timestamps must be registered as follows: 
+* The healthcare professional creates the attachement and the first timestamp Communication.payload:attachment.creation is registered. 
+* The healthcare professional then writes the message and presses the "send" button.Communication.payload:string.extension:date and Communication.payload:attachment.extension:date is then registered. 
+* Immediately after,the CareCommunication message has been generated, the Bundle.timestamp is registered. 
+* When the CareCommunication message has been sent, the Provenance.occuredDateTime[x] and Provenance.recorded timestamp are registered. 
+>Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
 <img src="../images/cc_attachement.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
