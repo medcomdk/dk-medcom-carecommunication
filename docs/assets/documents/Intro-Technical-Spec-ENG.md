@@ -141,7 +141,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 <br><br>
 
 ## 3 Examples of a CareCommunication 
-In this section, some examples of Care Communication (New Message, New message with attachment and Reply message ) are presented. 
+In this section, some examples of Care Communication (New Message, New message with attachment and Reply message) are presented. 
 <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> is a simplified example of a new message, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> is a simplified example of a CareCommunication message which includes an attachment, recipient and sender as well as a reference to an encounter, and finally <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> is a simplified example of a reply to the new message.
 
 <a href="#Fig2" rel="noopener noreferrer"> Figure 2 </a> and <a href="#Fig4" rel="noopener noreferrer"> Figure 4 </a> both includes the required content, where <a href="#Fig3" rel="noopener noreferrer"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 

@@ -1,8 +1,8 @@
 
 
-# Map between OIOXML standard XDIS91 and FHIR CareCommunication Messages 
-This document describes mapping between the OIOXML (<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>) and the FHIR CareCommunication message. Not all elements from OIOXML are relevant in FHIR CareCommunication message, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR CareCommunication message. <br>
- <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">Click here to read the Implementation Guide which includes all requirements for the CareCommunication Message</a> 
+# Mapping between OIOXML standard XDIS91 and FHIR CareCommunication 
+This document describes mapping between the OIOXML (<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>) and the FHIR CareCommunication. Not all elements from OIOXML are relevant in FHIR CareCommunication, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR CareCommunication. <br>
+ <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">Click here to read the Implementation Guide which includes all requirements for the CareCommunication.</a> 
 
 
 >Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app FHIRPath tester. In other applications, will the apostrophe (‘…’) might not be used.
@@ -19,7 +19,7 @@ This document describes mapping between the OIOXML (<a href="https://svn.medcom.
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 1795px">
-<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1:Mpping table between OIOXML XDIS91 and FHIR CareCommunication Message</caption>
+<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1:Mapping table between OIOXML, XDIS91 and FHIR CareCommunication</caption>
 <thead>
   <tr>
     <th class="tg-c4ko" rowspan="2">    <br><span style="color:white">Data</span>    </th>
@@ -48,7 +48,7 @@ This document describes mapping between the OIOXML (<a href="https://svn.medcom.
     <td class="tg-7euo" rowspan="2">   <br>Emessage.Envelope.Sent.Time   </td>
     <td class="tg-7euo">   <br>MedComCareCommunicationMessage.timestamp   </td>
     <td class="tg-7euo" rowspan="2">   <br>Yes   </td>
-    <td class="tg-7euo" rowspan="2">   <br>All FHIR timestamps contain   both date and time. This element holds information about when a bundle is   created. The timestamp is equivalent to MedComCareCommunicationMessage.MedcomMessagingProvenance.   occurredDateTime   </td>
+    <td class="tg-7euo" rowspan="2">   <br>All FHIR timestamps contain both date and time. This element holds information about when a bundle is   created. The timestamp is equivalent to MedComCareCommunicationMessage.MedcomMessagingProvenance.   occurredDateTime   </td>
   </tr>
   <tr>
     <td class="tg-7euo">   <br>Bundle.timestamp   </td>
