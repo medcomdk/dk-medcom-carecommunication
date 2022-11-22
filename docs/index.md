@@ -7,15 +7,15 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping between OIOXML, XDIS91 and FHIR CareCommunication Message](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping between OIOXML, XDIS91 and FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
-This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the star tup of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication message it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general practitioners, hospitals, physiotherapists and many more. 
+This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the start-up of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general practitioners, hospitals, physiotherapists and many more. 
 
 ## 1 Standard documentation 
-The standard documentation below provides the necessary content to understand the needs for CareCommunication, the role of the CareCommunication message, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication message includes:
+The standard documentation below provides the necessary content to understand the needs for CareCommunication, the role of the CareCommunication, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication includes:
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
@@ -25,7 +25,7 @@ The standard documentation below provides the necessary content to understand th
 ### 1.1 Clinical guidelines for application 
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
-Below, the clinical guidelines for application can be found(the information is in Danish):<br> 
+Below, the clinical guidelines for application can be found (the information is in Danish):<br> 
 [Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
  
  >Note: Clinical guidelines for application in English are in preparation. As soon as they are ready they will be published. 
@@ -73,17 +73,17 @@ Furthermore, not all elements from the FHIR elements are represented in the docu
 
 
 ## 2 Test and certification
-Certification of a system implies both an approved test protocol and run-trough of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom.
+Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom.
 
-<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom test and certification proces.</a> 
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> 
 
 <b>The test protocols and test scripts are currently in preparation. As soon as they are ready, they will be published below.</b>
 
-**Sending a CareCommunication message**
+**Sending a CareCommunication**
   * Test protocol
   * TouchStone Testscripts
 
-**Receiving a CareCommunication message**
+**Receiving a CareCommunication**
   * Test protocol
   * TouchStone Testscripts
 
