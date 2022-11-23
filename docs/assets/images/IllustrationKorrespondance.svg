@@ -4,10 +4,10 @@
 <svg
    width="156.10417mm"
    height="218.81041mm"
-   viewBox="0 0 156.10418 218.81041"
+   viewBox="0 0 156.10417 218.81041"
    version="1.1"
    id="svg5"
-   inkscape:export-filename="..\..\Skrivebord\eks_korr.svg"
+   inkscape:export-filename="eks_korr.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
@@ -28,16 +28,25 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.0759173"
-     inkscape:cx="483.30851"
-     inkscape:cy="662.69032"
-     inkscape:window-width="1280"
-     inkscape:window-height="729"
-     inkscape:window-x="-8"
+     inkscape:cx="316.93886"
+     inkscape:cy="990.78247"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1072"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g8425" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         x="47"
+         y="208"
+         width="590"
+         height="827"
+         id="rect505" />
+    </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath1">
@@ -93,799 +102,787 @@
          height="116"
          id="rect8164" />
     </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath594">
-      <g
-         id="g598"
-         transform="matrix(3.7795276,0,0,3.7795276,-40.497929,140.42013)">
-        <rect
-           x="23.150494"
-           y="17.880508"
-           width="156.10417"
-           height="218.81041"
-           id="rect596"
-           style="stroke-width:0.264583" />
-      </g>
-    </clipPath>
   </defs>
   <g
      inkscape:label="Lag 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-23.150494,-17.880509)">
+     transform="translate(-23.150494,-17.880508)">
     <g
-       id="g8425"
+       clip-path="url(#clip0)"
        transform="matrix(0.26458333,0,0,0.26458333,10.715077,-37.152825)"
-       clip-path="url(#clipPath594)">
-      <rect
-         x="58.500099"
-         y="594.5"
-         width="561"
-         height="423"
-         stroke="#41719c"
-         stroke-width="1.33333"
-         stroke-miterlimit="8"
-         fill="none"
-         id="rect510" />
-      <rect
-         x="48"
-         y="209"
-         width="588"
-         height="825"
-         stroke="#005937"
-         stroke-width="2"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="none"
-         id="rect512" />
-      <rect
-         x="51"
-         y="212"
-         width="321"
-         height="46"
-         fill="#ffffff"
-         id="rect514" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="15px"
-         transform="translate(60.4515,231)"
-         id="text516">KORRESPONDANCEMEDDELELSE</text>
-      <rect
-         x="58"
-         y="250"
-         width="95"
-         height="26"
-         fill="#ccd8e7"
-         id="rect518" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="13px"
-         transform="translate(68.0554,268)"
-         id="text520">BORGER:</text>
-      <rect
-         x="244.5"
-         y="247.5"
-         width="245"
-         height="90"
-         stroke="#d9d9d9"
-         stroke-width="0.666667"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect522" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,265)"
-         id="text524">251248</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(297.762,265)"
-         id="text526">-</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(301.582,265)"
-         id="text528">9996</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,282)"
-         id="text530">Nancy Ann Test Berggren</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,299)"
-         id="text532">Testpark Allé 48</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,316)"
-         id="text534">3400 Hillerød</text>
-      <rect
-         x="60"
-         y="345"
-         width="94"
-         height="26"
-         fill="#ccd8e7"
-         id="rect536" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="13px"
-         transform="translate(69.4813,363)"
-         id="text538">AFSENDER:</text>
-      <rect
-         x="244.5"
-         y="343.5"
-         width="244"
-         height="67"
-         stroke="#d9d9d9"
-         stroke-width="0.666667"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect540" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,361)"
-         id="text542">Nordsjællands Hospital Test</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,378)"
-         id="text544">Dyrehavevej 29</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,395)"
-         id="text546">3400 Hillerød</text>
-      <rect
-         x="244.5"
-         y="416.5"
-         width="244"
-         height="69"
-         stroke="#d9d9d9"
-         stroke-width="0.666667"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect548" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,434)"
-         id="text550">Hillerød Kommune Test</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,451)"
-         id="text552">Trollesmindealle 27</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,468)"
-         id="text554">3400 Hillerød</text>
-      <rect
-         x="61"
-         y="419"
-         width="95"
-         height="27"
-         fill="#ccd8e7"
-         id="rect556" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="13px"
-         transform="translate(70.907,437)"
-         id="text558">MODTAGER:</text>
-      <rect
-         x="62"
-         y="537"
-         width="95"
-         height="27"
-         fill="#ccd8e7"
-         id="rect560" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="13px"
-         transform="translate(71.8574,555)"
-         id="text562">EMNE:</text>
+       id="g610">
       <g
-         id="g8227"
-         transform="translate(-2.7883184,-7.4355156)">
+         id="g8425">
         <rect
-           x="65.717758"
-           y="607.85889"
-           width="166"
+           x="58.500099"
+           y="594.5"
+           width="561"
+           height="423"
+           stroke="#41719c"
+           stroke-width="1.33333"
+           stroke-miterlimit="8"
+           fill="none"
+           id="rect510" />
+        <rect
+           x="48"
+           y="209"
+           width="588"
+           height="825"
+           stroke="#005937"
+           stroke-width="2"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="none"
+           id="rect512" />
+        <rect
+           x="51"
+           y="212"
+           width="321"
+           height="46"
+           fill="#ffffff"
+           id="rect514" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="700"
+           font-size="15px"
+           transform="translate(60.4515,231)"
+           id="text516">KORRESPONDANCEMEDDELELSE</text>
+        <rect
+           x="58"
+           y="250"
+           width="95"
            height="26"
            fill="#ccd8e7"
-           id="rect568" />
+           id="rect518" />
         <text
            font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
            font-weight="700"
            font-size="13px"
-           transform="translate(71.8573,624)"
-           id="text570">MEDDELELSESTEKST:</text>
-      </g>
-      <rect
-         x="61"
-         y="491"
-         width="95"
-         height="27"
-         fill="#ccd8e7"
-         id="rect602" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="700"
-         font-size="13px"
-         transform="translate(70.907,509)"
-         id="text604">KATEGORI:</text>
-      <rect
-         x="244.50089"
-         y="490.50089"
-         width="244.31264"
-         height="40.998215"
-         stroke="#d9d9d9"
-         stroke-width="0.668451"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect606" />
-      <rect
-         x="245.47452"
-         y="536.59357"
-         width="243.65633"
-         height="40.999107"
-         stroke="#d9d9d9"
-         stroke-width="0.667559"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect606-6" />
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         transform="translate(253.402,508)"
-         id="text608">Sygepleje</text>
-      <text
-         font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-         font-weight="300"
-         font-size="13px"
-         id="text566"
-         x="245.51546"
-         y="558.9433">Spørgsmål vedr. indlæggelsesrapport</text>
-      <rect
-         x="62.337456"
-         y="630.85138"
-         width="551.82239"
-         height="163.27728"
-         stroke="#d9d9d9"
-         stroke-width="2.00483"
-         stroke-linejoin="round"
-         stroke-miterlimit="10"
-         fill="#ffffff"
-         id="rect606-6-0" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="65.623932"
-         y="769.32343"
-         id="text5139"><tspan
-           sodipodi:role="line"
+           transform="translate(68.0554,268)"
+           id="text520">BORGER:</text>
+        <rect
+           x="244.5"
+           y="247.5"
+           width="245"
+           height="90"
+           stroke="#d9d9d9"
+           stroke-width="0.666667"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect522" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,265)"
+           id="text524">251248</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(297.762,265)"
+           id="text526">-</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(301.582,265)"
+           id="text528">9996</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,282)"
+           id="text530">Nancy Ann Test Berggren</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,299)"
+           id="text532">Testpark Allé 48</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,316)"
+           id="text534">3400 Hillerød</text>
+        <rect
+           x="60"
+           y="345"
+           width="94"
+           height="26"
+           fill="#ccd8e7"
+           id="rect536" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="700"
+           font-size="13px"
+           transform="translate(69.4813,363)"
+           id="text538">AFSENDER:</text>
+        <rect
+           x="244.5"
+           y="343.5"
+           width="244"
+           height="67"
+           stroke="#d9d9d9"
+           stroke-width="0.666667"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect540" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,361)"
+           id="text542">Nordsjællands Hospital Test</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,378)"
+           id="text544">Dyrehavevej 29</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,395)"
+           id="text546">3400 Hillerød</text>
+        <rect
+           x="244.5"
+           y="416.5"
+           width="244"
+           height="69"
+           stroke="#d9d9d9"
+           stroke-width="0.666667"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect548" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,434)"
+           id="text550">Hillerød Kommune Test</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,451)"
+           id="text552">Trollesmindealle 27</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,468)"
+           id="text554">3400 Hillerød</text>
+        <rect
+           x="61"
+           y="419"
+           width="95"
+           height="27"
+           fill="#ccd8e7"
+           id="rect556" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="700"
+           font-size="13px"
+           transform="translate(70.907,437)"
+           id="text558">MODTAGER:</text>
+        <rect
+           x="62"
+           y="537"
+           width="95"
+           height="27"
+           fill="#ccd8e7"
+           id="rect560" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="700"
+           font-size="13px"
+           transform="translate(71.8574,555)"
+           id="text562">EMNE:</text>
+        <g
+           id="g8227"
+           transform="translate(-2.7883184,-7.4355156)">
+          <rect
+             x="65.717758"
+             y="607.85889"
+             width="166"
+             height="26"
+             fill="#ccd8e7"
+             id="rect568" />
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="700"
+             font-size="13px"
+             transform="translate(71.8573,624)"
+             id="text570">MEDDELELSESTEKST:</text>
+        </g>
+        <rect
+           x="61"
+           y="491"
+           width="95"
+           height="27"
+           fill="#ccd8e7"
+           id="rect602" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="700"
+           font-size="13px"
+           transform="translate(70.907,509)"
+           id="text604">KATEGORI:</text>
+        <rect
+           x="244.50089"
+           y="490.50089"
+           width="244.31264"
+           height="40.998215"
+           stroke="#d9d9d9"
+           stroke-width="0.668451"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect606" />
+        <rect
+           x="245.47452"
+           y="536.59357"
+           width="243.65633"
+           height="40.999107"
+           stroke="#d9d9d9"
+           stroke-width="0.667559"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect606-6" />
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           transform="translate(253.402,508)"
+           id="text608">Sygepleje</text>
+        <text
+           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+           font-weight="300"
+           font-size="13px"
+           id="text566"
+           x="245.51546"
+           y="558.9433">Spørgsmål vedr. indlæggelsesrapport</text>
+        <rect
+           x="62.337456"
+           y="630.85138"
+           width="551.82239"
+           height="163.27728"
+           stroke="#d9d9d9"
+           stroke-width="2.00483"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           fill="#ffffff"
+           id="rect606-6-0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="65.623932"
            y="769.32343"
-           id="tspan5137"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan5135">Venlig hilsen</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="109.31806"
-         y="786.98273"
-         id="text5145"><tspan
-           sodipodi:role="line"
+           id="text5139"><tspan
+             sodipodi:role="line"
+             x="65.623932"
+             y="769.32343"
+             id="tspan5137"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan5135">Venlig hilsen</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="109.31806"
            y="786.98273"
-           id="tspan5143"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan5141"> </tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="64.694496"
-         y="787.53198"
-         id="text5151"><tspan
-           sodipodi:role="line"
+           id="text5145"><tspan
+             sodipodi:role="line"
+             x="109.31806"
+             y="786.98273"
+             id="tspan5143"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan5141"> </tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="64.694496"
            y="787.53198"
-           id="tspan5149"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan5147">May June Test Moberg</tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:14.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="170.59488"
-         y="804.26184"
-         id="text5157"><tspan
-           sodipodi:role="line"
+           id="text5151"><tspan
+             sodipodi:role="line"
+             x="64.694496"
+             y="787.53198"
+             id="tspan5149"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan5147">May June Test Moberg</tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:14.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="170.59488"
            y="804.26184"
-           id="tspan5155"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:14.75px;font-family:'Roboto Light';fill:#000000"
-             id="tspan5153"> </tspan></tspan></text>
-      <g
-         clip-path="url(#clipEmfPath1)"
-         id="g4257"
-         transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-           transform="translate(7.519609,10.719443)"
-           x="0"
-           y="0"
-           id="text4255"><tspan
+           id="text5157"><tspan
              sodipodi:role="line"
-             x="0"
-             y="0"
-             id="tspan4253"><tspan
+             x="170.59488"
+             y="804.26184"
+             id="tspan5155"><tspan
                dx="0"
                dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4249">A</tspan><tspan
-               dx="-0.62898201"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4251"> </tspan></tspan></text>
-      </g>
-      <g
-         clip-path="url(#clipEmfPath2)"
-         id="g4267"
-         transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-           transform="translate(82.715704,10.719443)"
-           x="0"
-           y="0"
-           id="text4265"><tspan
-             sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:14.75px;font-family:'Roboto Light';fill:#000000"
+               id="tspan5153"> </tspan></tspan></text>
+        <g
+           clip-path="url(#clipEmfPath1)"
+           id="g4257"
+           transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             transform="translate(7.519609,10.719443)"
              x="0"
              y="0"
-             id="tspan4263"><tspan
-               dx="0"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4259">B</tspan><tspan
-               dx="-0.80997002"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4261"> </tspan></tspan></text>
-      </g>
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,707.97536 h 0.595619 v 0.74505 H 68.6319 Z"
-         id="path4269" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,707.97536 h 0.595619 v 0.74505 H 68.6319 Z"
-         id="path4271" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 69.227519,707.97536 h 69.389701 v 0.74505 H 69.227519 Z"
-         id="path4273" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 138.61722,707.97536 h 0.59562 v 0.74505 h -0.59562 z"
-         id="path4275" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 139.21284,707.97536 h 78.62179 v 0.74505 h -78.62179 z"
-         id="path4277" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,707.97536 h 0.59563 v 0.74505 h -0.59563 z"
-         id="path4279" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,707.97536 h 0.59563 v 0.74505 h -0.59563 z"
-         id="path4281" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,708.72041 h 0.595619 v 15.27378 H 68.6319 Z"
-         id="path4283" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 138.61722,708.72041 h 0.59562 v 15.27378 h -0.59562 z"
-         id="path4285" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,708.72041 h 0.59563 v 15.27378 h -0.59563 z"
-         id="path4287" />
-      <g
-         clip-path="url(#clipEmfPath3)"
-         id="g4297"
-         transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-           transform="translate(7.519609,24.478729)"
-           x="0"
-           y="0"
-           id="text4295"><tspan
-             sodipodi:role="line"
+             id="text4255"><tspan
+               sodipodi:role="line"
+               x="0"
+               y="0"
+               id="tspan4253"><tspan
+                 dx="0"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4249">A</tspan><tspan
+                 dx="-0.62898201"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4251"> </tspan></tspan></text>
+        </g>
+        <g
+           clip-path="url(#clipEmfPath2)"
+           id="g4267"
+           transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             transform="translate(82.715704,10.719443)"
              x="0"
              y="0"
-             id="tspan4293"><tspan
-               dx="0"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4289">C</tspan><tspan
-               dx="-0.62646103"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4291"> </tspan></tspan></text>
-      </g>
-      <g
-         clip-path="url(#clipEmfPath4)"
-         id="g4307"
-         transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-           transform="translate(82.715704,24.478729)"
-           x="0"
-           y="0"
-           id="text4305"><tspan
-             sodipodi:role="line"
+             id="text4265"><tspan
+               sodipodi:role="line"
+               x="0"
+               y="0"
+               id="tspan4263"><tspan
+                 dx="0"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4259">B</tspan><tspan
+                 dx="-0.80997002"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4261"> </tspan></tspan></text>
+        </g>
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,707.97536 h 0.595619 v 0.74505 H 68.6319 Z"
+           id="path4269" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,707.97536 h 0.595619 v 0.74505 H 68.6319 Z"
+           id="path4271" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 69.227519,707.97536 h 69.389701 v 0.74505 H 69.227519 Z"
+           id="path4273" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 138.61722,707.97536 h 0.59562 v 0.74505 h -0.59562 z"
+           id="path4275" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 139.21284,707.97536 h 78.62179 v 0.74505 h -78.62179 z"
+           id="path4277" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,707.97536 h 0.59563 v 0.74505 h -0.59563 z"
+           id="path4279" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,707.97536 h 0.59563 v 0.74505 h -0.59563 z"
+           id="path4281" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,708.72041 h 0.595619 v 15.27378 H 68.6319 Z"
+           id="path4283" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 138.61722,708.72041 h 0.59562 v 15.27378 h -0.59562 z"
+           id="path4285" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,708.72041 h 0.59563 v 15.27378 h -0.59563 z"
+           id="path4287" />
+        <g
+           clip-path="url(#clipEmfPath3)"
+           id="g4297"
+           transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             transform="translate(7.519609,24.478729)"
              x="0"
              y="0"
-             id="tspan4303"><tspan
-               dx="0"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4299">D</tspan><tspan
-               dx="-1.243325"
-               dy="0"
-               style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
-               id="tspan4301"> </tspan></tspan></text>
-      </g>
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,723.99419 h 0.595619 v 0.74507 H 68.6319 Z"
-         id="path4309" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 69.227519,723.99419 h 69.389701 v 0.74507 H 69.227519 Z"
-         id="path4311" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 138.61722,723.99419 h 0.59562 v 0.74507 h -0.59562 z"
-         id="path4313" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 139.21284,723.99419 h 78.62179 v 0.74507 h -78.62179 z"
-         id="path4315" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,723.99419 h 0.59563 v 0.74507 h -0.59563 z"
-         id="path4317" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,724.73926 h 0.595619 v 18.99908 H 68.6319 Z"
-         id="path4319" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,743.73834 h 0.595619 v 0.74507 H 68.6319 Z"
-         id="path4321" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 68.6319,743.73834 h 0.595619 v 0.74507 H 68.6319 Z"
-         id="path4323" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 69.227519,743.73834 h 69.389701 v 0.74507 H 69.227519 Z"
-         id="path4325" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 138.61722,724.73926 h 0.59562 v 18.99908 h -0.59562 z"
-         id="path4327" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 138.61722,743.73834 h 0.59562 v 0.74507 h -0.59562 z"
-         id="path4329" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 139.21284,743.73834 h 78.62179 v 0.74507 h -78.62179 z"
-         id="path4331" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,724.73926 h 0.59563 v 18.99908 h -0.59563 z"
-         id="path4333" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,743.73834 h 0.59563 v 0.74507 h -0.59563 z"
-         id="path4335" />
-      <path
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
-         d="m 217.83463,743.73834 h 0.59563 v 0.74507 h -0.59563 z"
-         id="path4337" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:15.3538px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.04093"
-         x="77.093575"
-         y="680.13501"
-         id="text4343"
-         transform="scale(0.89410445,1.1184376)"><tspan
-           sodipodi:role="line"
+             id="text4295"><tspan
+               sodipodi:role="line"
+               x="0"
+               y="0"
+               id="tspan4293"><tspan
+                 dx="0"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4289">C</tspan><tspan
+                 dx="-0.62646103"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4291"> </tspan></tspan></text>
+        </g>
+        <g
+           clip-path="url(#clipEmfPath4)"
+           id="g4307"
+           transform="matrix(0.93070419,0,0,1.1642203,68.6319,707.97536)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+             transform="translate(82.715704,24.478729)"
+             x="0"
+             y="0"
+             id="text4305"><tspan
+               sodipodi:role="line"
+               x="0"
+               y="0"
+               id="tspan4303"><tspan
+                 dx="0"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4299">D</tspan><tspan
+                 dx="-1.243325"
+                 dy="0"
+                 style="font-style:normal;font-variant:normal;font-weight:400;font-size:10.75px;font-family:'Roboto Light';fill:#000000"
+                 id="tspan4301"> </tspan></tspan></text>
+        </g>
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,723.99419 h 0.595619 v 0.74507 H 68.6319 Z"
+           id="path4309" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 69.227519,723.99419 h 69.389701 v 0.74507 H 69.227519 Z"
+           id="path4311" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 138.61722,723.99419 h 0.59562 v 0.74507 h -0.59562 z"
+           id="path4313" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 139.21284,723.99419 h 78.62179 v 0.74507 h -78.62179 z"
+           id="path4315" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,723.99419 h 0.59563 v 0.74507 h -0.59563 z"
+           id="path4317" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,724.73926 h 0.595619 v 18.99908 H 68.6319 Z"
+           id="path4319" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,743.73834 h 0.595619 v 0.74507 H 68.6319 Z"
+           id="path4321" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 68.6319,743.73834 h 0.595619 v 0.74507 H 68.6319 Z"
+           id="path4323" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 69.227519,743.73834 h 69.389701 v 0.74507 H 69.227519 Z"
+           id="path4325" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 138.61722,724.73926 h 0.59562 v 18.99908 h -0.59562 z"
+           id="path4327" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 138.61722,743.73834 h 0.59562 v 0.74507 h -0.59562 z"
+           id="path4329" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 139.21284,743.73834 h 78.62179 v 0.74507 h -78.62179 z"
+           id="path4331" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,724.73926 h 0.59563 v 18.99908 h -0.59563 z"
+           id="path4333" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,743.73834 h 0.59563 v 0.74507 h -0.59563 z"
+           id="path4335" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.04093"
+           d="m 217.83463,743.73834 h 0.59563 v 0.74507 h -0.59563 z"
+           id="path4337" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:15.3538px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.04093"
            x="77.093575"
            y="680.13501"
-           id="tspan4341"
-           style="stroke-width:1.04093"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:15.3538px;font-family:'Roboto Light';fill:#000000;stroke-width:1.04093"
-             id="tspan4339"> </tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:130.408%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="65.206497"
-         y="649.24133"
-         id="text2481"><tspan
-           sodipodi:role="line"
+           id="text4343"
+           transform="scale(0.89410445,1.1184376)"><tspan
+             sodipodi:role="line"
+             x="77.093575"
+             y="680.13501"
+             id="tspan4341"
+             style="stroke-width:1.04093"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:15.3538px;font-family:'Roboto Light';fill:#000000;stroke-width:1.04093"
+               id="tspan4339"> </tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:130.408%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="65.206497"
            y="649.24133"
-           id="tspan2475"><tspan
-             dx="0 0 0 0"
-             dy="0 0 0 0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2471">Hej </tspan></tspan><tspan
-           sodipodi:role="line"
-           x="65.206497"
-           y="666.52039"
-           id="tspan2479"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2477">Nancy Ann er blevet <tspan
+           id="text2481"><tspan
+             sodipodi:role="line"
+             x="65.206497"
+             y="649.24133"
+             id="tspan2475"><tspan
+               dx="0 0 0 0"
+               dy="0 0 0 0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2471">Hej </tspan></tspan><tspan
+             sodipodi:role="line"
+             x="65.206497"
+             y="666.52039"
+             id="tspan2479"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2477">Nancy Ann er blevet <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Light';-inkscape-font-specification:'Roboto Light,  Bold'"
    id="tspan10215">indlagt. </tspan><tspan
    id="tspan10222"
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Light';-inkscape-font-specification:'Roboto Light, '">Vi har modtaget indlæggelsesrapporten fra jer</tspan></tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="66.393532"
-         y="686.96808"
-         id="text2493"><tspan
-           sodipodi:role="line"
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="66.393532"
            y="686.96808"
-           id="tspan2491"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2489">men har et par <tspan
+           id="text2493"><tspan
+             sodipodi:role="line"
+             x="66.393532"
+             y="686.96808"
+             id="tspan2491"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2489">men har et par <tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Light';-inkscape-font-specification:'Roboto Light,  Italic'"
    id="tspan10780">spørgsmål vedr.X</tspan>. </tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="263.67197"
-         y="665.53314"
-         id="text2493-7"><tspan
-           sodipodi:role="line"
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="263.67197"
            y="665.53314"
-           id="tspan2571" /></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         x="686.77417"
-         y="676.74426"
-         id="text2509"><tspan
-           sodipodi:role="line"
+           id="text2493-7"><tspan
+             sodipodi:role="line"
+             x="263.67197"
+             y="665.53314"
+             id="tspan2571" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;line-height:125%;font-family:'Roboto Light';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
            x="686.77417"
            y="676.74426"
-           id="tspan2507"><tspan
-             dx="0"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2501">X</tspan><tspan
-             dx="-0.91745001"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2503">.</tspan><tspan
-             dx="-1.460121"
-             dy="0"
-             style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
-             id="tspan2505"> </tspan></tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:18.6667px;fill:#ffffff;stroke:#000000;stroke-width:3.20126"
-         x="76.611435"
-         y="664.62396"
-         id="text1111"><tspan
-           sodipodi:role="line"
-           id="tspan1109"
+           id="text2509"><tspan
+             sodipodi:role="line"
+             x="686.77417"
+             y="676.74426"
+             id="tspan2507"><tspan
+               dx="0"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2501">X</tspan><tspan
+               dx="-0.91745001"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2503">.</tspan><tspan
+               dx="-1.460121"
+               dy="0"
+               style="font-style:normal;font-variant:normal;font-weight:400;font-size:13.25px;font-family:'Roboto Light';fill:#000000"
+               id="tspan2505"> </tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:18.6667px;fill:#ffffff;stroke:#000000;stroke-width:3.20126"
            x="76.611435"
-           y="664.62396" /></text>
-      <text
-         xml:space="preserve"
-         style="font-size:18.6667px;fill:#ffffff;stroke:#000000;stroke-width:3.20126"
-         x="74.752556"
-         y="660.90619"
-         id="text1669"><tspan
-           sodipodi:role="line"
-           id="tspan1667"
+           y="664.62396"
+           id="text1111"><tspan
+             sodipodi:role="line"
+             id="tspan1109"
+             x="76.611435"
+             y="664.62396" /></text>
+        <text
+           xml:space="preserve"
+           style="font-size:18.6667px;fill:#ffffff;stroke:#000000;stroke-width:3.20126"
            x="74.752556"
-           y="660.90619" /></text>
-      <g
-         clip-path="url(#clip0-7)"
-         transform="matrix(1.0207145,0,0,0.99993219,-0.94654298,-10.031306)"
-         id="g6681">
-        <rect
-           x="62"
-           y="816"
-           width="155"
-           height="26"
-           fill="#ccd8e7"
-           id="rect6677" />
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="700"
-           font-size="13px"
-           transform="translate(71.3333,834)"
-           id="text6679">VEDHÆFT FIL:</text>
-      </g>
-      <g
-         clip-path="url(#clip0-2)"
-         transform="matrix(1.0207145,0,0,0.99993219,-0.40046901,-11.994716)"
-         id="g7427">
-        <rect
-           x="60.500099"
-           y="850.5"
-           width="538"
-           height="39"
-           stroke="#d9d9d9"
-           stroke-width="0.666667"
-           stroke-linejoin="round"
-           stroke-miterlimit="10"
-           fill="#ffffff"
-           id="rect7423" />
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(69.9333,867)"
-           id="text7425">(Vedhæftede filer indsættes)</text>
-      </g>
-      <g
-         clip-path="url(#clip0-1)"
-         transform="matrix(1.0189799,0,0,0.99997278,-0.2982317,-11.64646)"
-         id="g8199">
-        <rect
-           x="61"
-           y="900"
-           width="155"
-           height="26"
-           fill="#ccd8e7"
-           id="rect8169" />
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="700"
-           font-size="13px"
-           transform="translate(70.8667,918)"
-           id="text8171">SIGNATUR:</text>
-        <rect
-           x="61.500099"
-           y="933.5"
-           width="538"
-           height="82"
-           stroke="#d9d9d9"
-           stroke-width="0.666667"
-           stroke-linejoin="round"
-           stroke-miterlimit="10"
-           fill="#ffffff"
-           id="rect8173" />
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(70.8667,951)"
-           id="text8175">Dato og tidspunkt</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(358.867,951)"
-           id="text8177">2022</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(388.44,951)"
-           id="text8179">-</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(392.26,951)"
-           id="text8181">11</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(407.047,951)"
-           id="text8183">-</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(410.867,951)"
-           id="text8185">03</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(70.8667,968)"
-           id="text8187">Forfatters navn</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           id="text8189"
-           x="357.66983"
-           y="967.07056">May June Test Moberg</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(70.8667,985)"
-           id="text8191">Stillingsbetegnelse</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(358.867,985)"
-           id="text8193">Sygeplejerske</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(70.8667,1002)"
-           id="text8195">Relevant telefonnummer</text>
-        <text
-           font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
-           font-weight="300"
-           font-size="13px"
-           transform="translate(358.867,1002)"
-           id="text8197">+4579182375</text>
+           y="660.90619"
+           id="text1669"><tspan
+             sodipodi:role="line"
+             id="tspan1667"
+             x="74.752556"
+             y="660.90619" /></text>
+        <g
+           clip-path="url(#clip0-7)"
+           transform="matrix(1.0207145,0,0,0.99993219,-0.94654298,-10.031306)"
+           id="g6681">
+          <rect
+             x="62"
+             y="816"
+             width="155"
+             height="26"
+             fill="#ccd8e7"
+             id="rect6677" />
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="700"
+             font-size="13px"
+             transform="translate(71.3333,834)"
+             id="text6679">VEDHÆFT FIL:</text>
+        </g>
+        <g
+           clip-path="url(#clip0-2)"
+           transform="matrix(1.0207145,0,0,0.99993219,-0.40046901,-11.994716)"
+           id="g7427">
+          <rect
+             x="60.500099"
+             y="850.5"
+             width="538"
+             height="39"
+             stroke="#d9d9d9"
+             stroke-width="0.666667"
+             stroke-linejoin="round"
+             stroke-miterlimit="10"
+             fill="#ffffff"
+             id="rect7423" />
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(69.9333,867)"
+             id="text7425">(Vedhæftede filer indsættes)</text>
+        </g>
+        <g
+           clip-path="url(#clip0-1)"
+           transform="matrix(1.0189799,0,0,0.99997278,-0.2982317,-11.64646)"
+           id="g8199">
+          <rect
+             x="61"
+             y="900"
+             width="155"
+             height="26"
+             fill="#ccd8e7"
+             id="rect8169" />
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="700"
+             font-size="13px"
+             transform="translate(70.8667,918)"
+             id="text8171">SIGNATUR:</text>
+          <rect
+             x="61.500099"
+             y="933.5"
+             width="538"
+             height="82"
+             stroke="#d9d9d9"
+             stroke-width="0.666667"
+             stroke-linejoin="round"
+             stroke-miterlimit="10"
+             fill="#ffffff"
+             id="rect8173" />
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(70.8667,951)"
+             id="text8175">Dato og tidspunkt</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(358.867,951)"
+             id="text8177">2022</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(388.44,951)"
+             id="text8179">-</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(392.26,951)"
+             id="text8181">11</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(407.047,951)"
+             id="text8183">-</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(410.867,951)"
+             id="text8185">03</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(70.8667,968)"
+             id="text8187">Forfatters navn</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             id="text8189"
+             x="357.66983"
+             y="967.07056">May June Test Moberg</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(70.8667,985)"
+             id="text8191">Stillingsbetegnelse</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(358.867,985)"
+             id="text8193">Sygeplejerske</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(70.8667,1002)"
+             id="text8195">Relevant telefonnummer</text>
+          <text
+             font-family="'Roboto Light', 'Roboto Light_MSFontService', sans-serif"
+             font-weight="300"
+             font-size="13px"
+             transform="translate(358.867,1002)"
+             id="text8197">+4579182375</text>
+        </g>
       </g>
     </g>
   </g>
