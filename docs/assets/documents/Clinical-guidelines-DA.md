@@ -100,7 +100,7 @@ For at understøtte brugeren mest muligt <u>anbefales følgende</u>:
 <p>&nbsp;</p>
 
 MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filtyper, som kan vedhæftes korrespondancemeddelelsen. Governance, herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i MedCom-regi Governance for terminologier og serveren findes via forsiden for Governance for MedCom FHIR Messaging. 
-<a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Klik her for at læse Governance for MedCom FHIR Messaging</a>
+<a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Klik her for at læse Governance for MedCom FHIR Messaging.</a>
 
 ### 4.2 Meddelelsessegment
 Et meddelelsessegment består af korrespondancemeddelelsens meddelelsestekst og afsenders signatur. I de tilfælde hvor der vedhæftes en fil til korrespondancemeddelelsen, vil vedhæftningen knyttes til meddelelsessegmentet. 
@@ -137,7 +137,7 @@ Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes
 
 Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager af besvarelsen (med SOR-kode og EAN-nummer). 
 Det er også muligt at besvare en tidligere modtaget MedCom-meddelelse med korrespondancemeddelelsen. 
-Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur. Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af besvarelsen. En besvarelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved besvarelsen. Hvis der er vedhæftet filer til besvarelsen, knyttes disse til meddelelsessegmentet.De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig2" target="_blank">Figur 2.</a>
+Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur. Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af besvarelsen. En besvarelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved besvarelsen. Hvis der er vedhæftet filer til besvarelsen, knyttes disse til meddelelsessegmentet.De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig2">Figur 2.</a>
 
 
 <figure>
@@ -151,7 +151,7 @@ Ved videresendelse er afsender ansvarlig for, hvilke dele af den modtagne meddel
 MedCom anbefaler, at afsender beskriver årsagen til videresendelsen i meddelelsesteksten.
 Ved videresendelse vælger afsender, hvem modtageren er. 
 Teknisk betyder det, at der ved videresendelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur. Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst, hvori det også anbefales at angive årsagen til videresendelsen. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af videresendelsen. En videresendelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved videresendelsen. Hvis der er vedhæftet filer til videresendelsen, knyttes disse til meddelelsessegmentet.
-De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig3" target="_blank">Figur 3.</a>
+De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse er visualiseret i en aktivitetsdiagram  i <a href="#Fig3">Figur 3.</a>
 
 <figure>
 <img src="../images/DK_S3_VideresendCc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for videresendelse af CareCommunication besked." style="width:40%" id="Fig3">
