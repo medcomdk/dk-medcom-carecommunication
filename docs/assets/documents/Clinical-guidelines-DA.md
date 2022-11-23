@@ -5,21 +5,21 @@
 **Table of contents**
 * [1 Introduktion](#1-introduktion)
 * [2 Formål](#2-formål)
-* [3 Illustration af FHIR korrespondancemeddelelse](#4-illustration-af-fhir-korrespondancemeddelelse)
-* [4 Krav og anbefalinger til FHIR Korrespondancemeddelelse](#5-krav-og-anbefalinger-til-fhir-korrespondancemeddelelse)
-    * [4.1 Kategori og Emne](#51-kategori-og-emne)
-    * [4.2 Meddelelsessegment](#52-formatering-af-meddelelsestekst)
-      * [4.2.1 Meddelesestekst](#51-kategori-og-emne)
-      * [4.2.2 Signatur](#52-formatering-af-meddelelsestekst)
-    * [4.3 Prioritet-krav om afgrænset brug](#53-prioritet-krav-om-afgrænset-brug)
-    * [4.4 Bilag](#54-bilag)
-    * [4.5 Forsendelsesmuligheder og overblik](#56-forsendelsesmuligheder-og-overblik)
-        * [4.5.1 Ved besvarelse](#561-ved-besvarelse)
-        * [4.5.2 Ved videresendelse](#562ved-videresendelse)
-        * [4.5.3 Annulering og rettelse]()
-    * [4.6 Overblik i brugergrænsefladen](#563-overblik-i-brugergrænsefladen)
+* [3 Illustration af FHIR korrespondancemeddelelse](#3-illustration-af-korrespondancemeddelelsen)
+* [4 Krav og anbefalinger til FHIR Korrespondancemeddelelse](#4-krav-og-anbefalinger-til-korrespondancemeddelelsen)
+    * [4.1 Kategori og Emne](#41-kategori-og-emne)
+    * [4.2 Meddelelsessegment](#42-meddelelsessegment)
+      * [4.2.1 Meddelesestekst](#421-meddelelsestekst-feltet)
+      * [4.2.2 Signatur](#422-signatur)
+    * [4.3 Prioritet-krav om afgrænset brug](#43-prioritet-krav-om-afgrænset-brug)
+    * [4.4 Bilag](#44-bilag)
+    * [4.5 Forsendelsesmuligheder og overblik](#45-forsendelsesmuligheder-og-overblik)
+        * [4.5.1 Ved besvarelse](#451-ved-besvarelse)
+        * [4.5.2 Ved videresendelse](#452-ved-videresendelse)
+        * [4.5.3 Annulering og rettelse](#453-annulering-og-rettelse)
+    * [4.6 Overblik i brugergrænsefladen](#46-overblik-i-brugergrænsefladen)
 * [6 Opsummering af krav og anbefalinger til afsender- og modtagersystemer](#6-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer)
-* [7 Use Cases](#10-use-cases)
+* [7 Use Cases](#6-use-cases)
 * [8 Ibrugtagning](#8-ibrugtagning)
 
 <p>&nbsp;</p>
@@ -146,7 +146,7 @@ Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment,
 </figure>
 <br><br>
 
-#### 4.5.2.Ved videresendelse
+#### 4.5.2. Ved videresendelse
 Ved videresendelse er afsender ansvarlig for, hvilke dele af den modtagne meddelelsestråd, der skal medsendes i videresendelsen. Det betyder, at afsender aktivt skal vælge hvilke dele af den forudgående meddelelse, samt hvilke vedhæftede filer, der skal indgå i videresendelse. Det er op til afsender, hvornår det vurderes relevant at videresende en modtaget korrespondancemeddelelse. Afsender er derfor ansvarlige for videresendelsen og relevansen ift. det aktuelle behandlingsforløb.
 MedCom anbefaler, at afsender beskriver årsagen til videresendelsen i meddelelsesteksten.
 Ved videresendelse vælger afsender, hvem modtageren er. 
