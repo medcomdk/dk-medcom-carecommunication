@@ -61,6 +61,8 @@ Description:    "Care related communication between two or more parties in Danis
 * obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-8
 * obeys medcom-careCommunication-9
+* obeys medcom-careCommunication-10
+//* obeys medcom-careCommunication-11
 
 Invariant: medcom-careCommunication-5
 Description: "Priority is only allowed when Communication.category = 'regarding-referral'"
@@ -84,9 +86,17 @@ Severity: #error
 Expression: "payload.extension.value.reference.resolve().practitioner.resolve().name.exists()"
 
 Invariant: medcom-careCommunication-9
-Description: "ID attachment"
+Description: "When an attachment is included, it shall have an identifier"
 Severity: #error
 Expression: "payload.where(content.data.exists()).extension('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-attachment-identifier-extension').exists() or payload.content.data.exists().not()"
+
+Invariant: medcom-careCommunication-10
+Description: "The status shall be 'unknown' or 'entered-in-error'."
+Severity: #error
+Expression: "status='unknown' or status='entered-in-error'"
+
+
+
 
 // CareCommunication new example
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12

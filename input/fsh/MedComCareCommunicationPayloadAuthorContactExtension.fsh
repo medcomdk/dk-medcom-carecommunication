@@ -11,6 +11,6 @@ Description: "Extension to contain the contact information tha author of the pay
 
 
 Invariant: medcom-carecommunication-authorcontact
-Description: "The telephone number shall be numeric between 6 and 16 digits"
+Description: "The telephone number may include + and numbers from 0-9"
 Severity: #error
-Expression: "value.matches('^[0-9]{6,16}$')"
+Expression: "matches('[+]?[-0-9]')" 

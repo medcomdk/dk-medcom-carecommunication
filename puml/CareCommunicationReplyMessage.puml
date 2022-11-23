@@ -95,7 +95,7 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
     }
     class "Provenance (MedComMessagingProvenance)" as replyPRO{
         id = "30c0f779-783f-46b2-b38f-faebd2bedb3f"
-        target = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
+        target.reference = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
         occuredDateTime = "2022-10-02T11:30:11Z"
         recorded = "2022-10-02T11:30:11"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"

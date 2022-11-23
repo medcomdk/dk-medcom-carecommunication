@@ -9,8 +9,9 @@ Description: "The CareCommunication is used to ensure secure electronic communic
 //* obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-4
 //* obeys medcom-careCommunication-9 
-//* obeys medcom-careCommunication-10
-//* obeys medcom-careCommunication-4
+* obeys medcom-careCommunication-12
+* obeys medcom-careCommunication-11
+* obeys medcom-careCommunication-13
 
 Invariant: medcom-careCommunication-1
 Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
@@ -33,6 +34,21 @@ Description: "There shall exist a practitioner given and family name when using 
 Severity: #error
 Expression: "entry.resource.ofType(Practitioner).name.exists()"
 
+Invariant: medcom-careCommunication-11
+Description: "If a specific sender exists, the organisation which the CareTeam or Practitioner is a part of shall be the same as the sender organisation in the MessageHeader resource."
+Severity: #error
+Expression: "Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().managingOrganization.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference or Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().organization.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference or Bundle.entry.resource.ofType(Communication).extension.exists().not()"
+
+Invariant: medcom-careCommunication-12
+Description: "If a specific recipient exists, the organisation which the CareTeam or Practitioner is a part of shall be the same as the receiver organisation in the MessageHeader resource."
+Severity: #error
+Expression: "Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().managingOrganization.reference = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference or Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().organization.reference = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference or Bundle.entry.resource.ofType(Communication).recipient.exists().not()"
+
+Invariant: medcom-careCommunication-13
+Description: "All PractitionerRole resources shall have a reference to an instance of a Practitioner resource."
+Severity: #error
+Expression: "Bundle.entry.resource.ofType(PractitionerRole).practitioner.reference.exists()"
+
 /* Invariant: medcom-careCommunication-9
 Description: "The managing organization of a careteam shall be the sender or receiver organization of the message."
 Severity: #error
@@ -47,14 +63,7 @@ Til practitioner for at tjekke, at der er en henvisning.
 Bundle.entry.resource.ofType('PractitionerRole').where(code.exists()).practitioner.reference.exists()
 
 */
- 
-/* Invariant: medcom-careCommunication-4
-Description: "When there is one Communication resource shall the status  be 'unknown', when there are two shall the status be 'unknown' in one and 'entered-in-error' in one."
-Severity: #error
-Expression: "Bundle.entry.resource.ofType(Communication).count() = 2  and resource.ofType(Communication).hasValue(status = 'unknown') and resource.ofType(Communication).hasValue(status. = 'entered-in-error')"
-//Expression: "Bundle.entry.iif(resource.ofType(Communication).count() = 1  and .esource.ofType(Communication).status = 'unknown'.count() = 1, true, count() = 2  and (status = 'unknown').count() = 1 and (status = 'entered-in-error').count() = 1)"
 
- */
 
 
 Instance: 0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
