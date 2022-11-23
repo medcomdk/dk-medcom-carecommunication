@@ -7,23 +7,23 @@ Description:    "Care related communication between two or more parties in Danis
 * category from $CCCategoryCodes
 * priority MS
 * priority from $RequestPriority
-* priority ^short = "Shall be present if the message priority is known to be ASAP"
+* priority ^short = "Shall be present if the message priority is known to be ASAP, but is only allowed when the category is 'regarding referral', see medcom-careCommunication-5"
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
 * topic MS
-* topic ^short = "Description of the purpose/content, similar to a subject line in an email. Shall be present if topic of the message is known."
+* topic ^short = "The topic (Danish: emne) may be added as a supplement to the category."
 * encounter MS
 * encounter only Reference(MedComCoreEncounter)
 * encounter ^type.aggregation = #bundled
-* encounter ^short = "Shall contain an encounter with a reference to the episode of care if reported to the Danish National Patient Registry"
+* encounter ^short = "Shall contain an encounter with a reference to the episodeOfCare-identifier if reported to the Danish National Patient Registry"
 * recipient MS
 * recipient only Reference(MedComCorePractitionerRole or MedComCoreCareTeam)
-* recipient ^short = "This element is used to describe a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
+* recipient ^short = "Describes a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
 * recipient ^type.aggregation = #bundled 
 * extension contains medcom-carecommunication-sender-extension named sender 0..1 MS SU
 * payload 1..
-* payload ^short = "The content of a message including text and attachments must maximum be 50 MB"
+* payload ^short = "Each payload corresponds to a message segment with a signature and a message text or attachment. At least one payload with a message text shall be included."
 * payload.extension contains medcom-carecommunication-datetime-extension named date 1..1 MS SU
 * payload.extension contains medcom-carecommunication-author-extension named author 1..1 MS SU
 * payload.extension contains medcom-carecommunication-author-contact-extension named authorContact 1..1 MS SU
@@ -36,11 +36,11 @@ Description:    "Care related communication between two or more parties in Danis
     attachment 0.. MS
 * payload[string].content[x] only string
 * payload[string].content[x] MS
-* payload[string] ^short = "xhtml or plain content of the message"
-* payload[string] ^definition = "xhtml shall be used to markup a text. The xhtml shall be compliant with the narrative text format. Otherwise, it is allowed to use plain text."
+* payload[string] ^short = "xhtml content of the message"
+* payload[string] ^definition = "xhtml shall be used to markup a text. The xhtml shall be compliant with the narrative text format."
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
-* payload[attachment] ^short = "The payload of the message shall contain all links or content attached to the message."
+* payload[attachment] ^short = "The payload with an attachment shall contain all links or content attached to the message."
 * payload[attachment].content[x] MS
 * payload.extension contains medcom-carecommunication-attachment-identifier-extension named identifier 0..1 MS SU
 * payload[attachment].contentAttachment 1.. MS
@@ -54,14 +54,13 @@ Description:    "Care related communication between two or more parties in Danis
 * payload[attachment].contentAttachment.title 1.. MS
 * payload[attachment].contentAttachment.creation 1.. MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
-* status ^short = "The MedComCareCommunication message status may be 'unknown'. status is required because of basic FHIR profile requirement"
-* category ^short = "The MedComCareCommunication category (Danish: kategori) describes the content of the message."
-* priority ^short = "The MedComCareCommunication priority may be present if the category is 'regarding referral'."
-* topic ^short = "The MedComCareCommunication topic (Danish: emne) may be added as a supplement to the category."
+* status ^short = "The status may be 'unknown' or 'entered-in-error', dependning on the type of message. status is required because of basic FHIR profile requirement"
+* category ^short = "The category (Danish: kategori) describes the overall content of the message."
 * obeys medcom-careCommunication-5
 * obeys medcom-careCommunication-6
-* obeys medcom-careCommunication-11
-* obeys medcom-careCommunication-13
+* obeys medcom-careCommunication-7
+* obeys medcom-careCommunication-8
+* obeys medcom-careCommunication-9
 
 Invariant: medcom-careCommunication-5
 Description: "Priority is only allowed when Communication.category = 'regarding-referral'"
@@ -73,16 +72,21 @@ Description: "There shall exist a Communication.topic when Communication.categor
 Severity: #error
 Expression: "iif(category.coding.code != 'other', true, category.coding.code = 'other' and topic.exists())"
 
-Invariant: medcom-careCommunication-11
-Description: "There shall exist a practitioner role when using a PractitionerRole as author of a payload."
+Invariant: medcom-careCommunication-7
+Description: "There shall exist a practitioner role when using a PractitionerRole as author in a message segment."
 Severity: #error
 Expression: "payload.extension.value.reference.resolve().code.coding.code.exists()"
 
 
-Invariant: medcom-careCommunication-13
-Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
+Invariant: medcom-careCommunication-8
+Description: "There shall exist a practitioner name when using a Practitioner as author in a message segment."
 Severity: #error
 Expression: "payload.extension.value.reference.resolve().practitioner.resolve().name.exists()"
+
+Invariant: medcom-careCommunication-9
+Description: "ID attachment"
+Severity: #error
+Expression: "payload.where(content.data.exists()).extension('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-attachment-identifier-extension').exists() or payload.content.data.exists().not()"
 
 // CareCommunication new example
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12

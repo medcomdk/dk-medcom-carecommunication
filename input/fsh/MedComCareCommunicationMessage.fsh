@@ -1,13 +1,13 @@
 Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
 Id: medcom-careCommunication-message
-Description: "Message for communication care related information between parties in Danish Health Care using MedCom Standards"
+Description: "The CareCommunication is used to ensure secure electronic communication of personally identifiable information and is most often used for ad hoc communication between parties in Danish Healthcare. However, the CareCommunication shall only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature."
 * entry ^short = "Message content (MedComCareCommunicationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComCareCommunication, MedComCorePatient, MedComCoreEncounter, MedComCorePractitioner, MedComCorePractitionerRole, MedComCoreCareTeam) - Open"
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
 * obeys medcom-careCommunication-3
 //* obeys medcom-careCommunication-7
-* obeys medcom-careCommunication-8 
+* obeys medcom-careCommunication-4
 //* obeys medcom-careCommunication-9 
 //* obeys medcom-careCommunication-10
 //* obeys medcom-careCommunication-4
@@ -25,14 +25,10 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('https://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities'))"
+Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities'))"
 
-/* Invariant: medcom-careCommunication-7
-Description: "A practitioner role shall exist when using a PractitionerRole as author of a payload."
-Severity: #error
-Expression: "entry.resource.ofType(PractitionerRole).where(id in %resource.entry.resource.ofType(Communication).payload.extension.value.reference).code.coding.code.exists()"
-  */
-Invariant: medcom-careCommunication-8
+
+Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
 Severity: #error
 Expression: "entry.resource.ofType(Practitioner).name.exists()"

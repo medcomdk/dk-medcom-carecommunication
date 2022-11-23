@@ -1,31 +1,36 @@
 ### Introduction
 
-This implementation guide (IG) is provided by MedCom to describe the use of FHIR &reg;&copy; Care Communication in  message based exchange of data in Danish healthcare.
+This implementation guide (IG) is provided by MedCom to describe the use of FHIR &reg;&copy; CareCommunication (Danish: Korrespondancen) in  message based exchange of data in Danish healthcare.
 
-This IG contains profiles for MedCom CareCommunication (Danish: Korrespondancen). The purpose of a CareCommunication message is to support digital communication between parties within healthcare, including amongst others the psychiatric and social area. The CareCommunication message is used to ensure secure electronic communication of personally identifiable information and is most often used for ad hoc communication. However, the CareCommunication message shall only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature. 
-Thea CareCommunication message supports: 
+This IG contains profiles for MedCom CareCommunication. The purpose of a CareCommunication is to support digital communication between parties within healthcare, including amongst others the psychiatric and social area. The CareCommunication is used to ensure secure electronic communication of personally identifiable information and is most often used for ad hoc communication. However, the CareCommunication shall only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature. 
+The CareCommunication supports: 
 * Exchange of digital files, also called attachments (Danish: Bilag)
 * Formatting of message text
 * Automatic sorting when receiving a CareCommunication based on nationally agreed categories (Danish: Kategori)
 * Possibility for adding a topic (Danish: Emne)
-* Clarify the sender of the message by requiring a signature
+* Clarify the sender of the message by requiring a signature, including name and role of the author, and relevant phone number. 
 * Enables showing the communication history and activity of the message based on the technical content.
 
 More information about the [clinical guidelines for applications](https://medcomdk.github.io/dk-medcom-carecommunication/#11-clinical-guidelines-for-application) can be found here.
 
 
-#### CareCommunication Message
-The structure of a CareCommunication message is depicted on the following diagram:
+#### CareCommunication
+The structure of a CareCommunication is depicted on the following diagram:
 
-<img alt="Shows the structure of a CareCommunication message. The MedComCareCommunicationMessage includes a MedComCareCommunicationMessageHeader and a MedComMessagingProvenance. MedComCareCommunicationMessageHeader references a sender and receiver organization, the MedComMessagingOrganization and a focus which is a reference to a MedComCareCommunication. From the MedComCareCommunication is a MedComCorePatient, MedComCoreEncounter, Organization, MedComCorePractitioner and MedComCorePractitionerRole referenced." src="./carecommunication/CareCommunication.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" />
+<figure>
+<img alt="Shows the structure of a CareCommunication. The MedComCareCommunicationMessage includes a MedComCareCommunicationMessageHeader and a MedComMessagingProvenance. MedComCareCommunicationMessageHeader references a sender and receiver organization, the MedComMessagingOrganization and a focus which is a reference to a MedComCareCommunication. From the MedComCareCommunication is a MedComCorePatient, MedComCoreEncounter, Organization, MedComCorePractitioner and MedComCorePractitionerRole referenced." src="./carecommunication/CareCommunication.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom CareCommunication standard </b></figcaption>
+</figure>
+<br>
+<br>
 
 CareCommunication follows the general MedCom FHIR messaging model, except that the carbon-copy destination is not allowed to use. The following sections describe the overall purpose of each profile.
 
 ##### MedComCareCommunicationMessage
 
-The [MedComCareCommunicationMessage](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-message) constrains the [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) further to use the MedComCareCommunicationMessageHeader and to require exactly one MedComCorePatient resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the MedComMessagingProvenance profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains activities such as new-message, forward-message, and other activities triggering the message.
+The [MedComCareCommunicationMessage](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-message) constrains the [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) further to use the [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the [MedComMessagingProvenance](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains activities such as new-message, forward-message, and other activities triggering the message.
 
-All referenced resources within the message shall be contained in the entry list in MedCom CareCommunication message.
+All referenced resources within the message shall be contained in the entry list in MedCom CareCommunication.
 
 ##### MedComCareCommunicatonMessageHeader
 
@@ -35,46 +40,46 @@ The [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/fhir/carecommuni
 
 The [MedComCareCommunication](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-communication) profile contains the main content of the message. It based on the Communication resource. MedComCareCommunication profile shall include a category code as defines in the [MedComCareCommunicationCategories ValueSet](http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-categories) and it is allowed to add a topic of the message which may be in free text or from a regionally agreed list of topics that supports and elaborates the category. 
 
-The profile also includes one or more message segment that consists of a message text or an attachment and a signature. In MedComCareCommunication profile message segments can be found under the element payload. A message shall always include a message segment with a message text and it may include zero or more message segments with an attachment. 
+The profile also includes one or more message segment that consists of a message text or an attachment and a signature. In MedComCareCommunication profile message segments can be found under the element payload. A CareCommunication shall always include a message segment with a message text and it may include zero or more message segments with an attachment. 
 
 ###### Sender and recipient
-In the [MedComCareCommunicationMessageHeader](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) profile it is required to include information about a sender and receiver in terms of a reference to a [MedComMessagingOrganization](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html). This information are used for transportation matters and will always include an EAN- and SOR-identifier. 
+In the [MedComCareCommunicationMessageHeader](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) profile it is required to include information about a sender and receiver in terms of a reference to a [MedComMessagingOrganization](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html). This information is used for transportation matters and will always include an EAN- and SOR-identifier. 
 
-It is possible to add a more specific receiver, called recipient, and a more specific sender of a message. These can be found in the MedComCareCommunication profile. This may be used to include a more specific group of professionals or practitioner related to the care and wellbeing of the patient or citizen. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality. Both sender and recipient reference a [MedComCoreCareTeam](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html) and [MedComCorePractitionerRole](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html), where the MedComCorePractitionerRole shall reference a MedComCorePractitioner. Common for both references is that a name of the careteam or practitioner shall be included and there shall be a reference to sender or receiver organisation defined in the MedComCareCommunicationMessageHeader, in order to identify to which organisation the careteam or practitioner belongs. 
+It is possible to add a more specific receiver, called recipient, and a more specific sender of a message. These can be found in the MedComCareCommunication profile. This may be used to include a more specific group of professionals or practitioner related to the care and wellbeing of the patient or citizen. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality. Both sender and recipient reference a [MedComCoreCareTeam](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html) and [MedComCorePractitionerRole](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html), where the MedComCorePractitionerRole shall reference a [MedComCorePractitioner](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html). Common for both references is that a name of the careteam or practitioner shall be included and there shall be a reference to sender or receiver organisation defined in the MedComCareCommunicationMessageHeader, in order to identify to which organisation the careteam or practitioner belongs. 
 
 ##### MedComCorePatient
-The [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a CareCommunication message. It is preferred that a CareCommunication message is being sent for a patient with an official Danish civil person register (CPR)-number. In cases where a CPR-number is not known, a replacement CPR-number (Danish: Erstatnings-CPR) shall be included. 
+The [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a CareCommunication. It is preferred that a CareCommunication is being sent for a patient with an official Danish civil registration number (CPR)-number. In cases where a CPR-number is not known, a replacement CPR-number (Danish: Erstatnings-CPR) shall be included. 
 
 ##### MedComCorePractitionerRole and MedComCorePractitioner
-The [MedComCorePractitionerRole](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html) and [MedComCorePractitioner](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html) profiles are used to describe the author of a payload by name and role (Danish: Stillingsbetegnelse). The MedComCorePractitionerRole is referenced from the MedComCareCommunication profile and MedComCorePractitionerRole includes a reference to the MedComCorePractitioner, why both profiles are shown on the figure above. 
+The [MedComCorePractitionerRole](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html) and [MedComCorePractitioner](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html) profiles are used to describe the author in the signature of a message segment by name and role (Danish: Stillingsbetegnelse).  The MedComCorePractitionerRole is referenced from the MedComCareCommunication profile and MedComCorePractitionerRole includes a reference to the MedComCorePractitioner, why both profiles are shown on <a href="#Fig1">Figure 1</a>. 
 
 ##### MedComMessagingOrganization
-The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html) profile is used in a CareCommunication message to describe the sender and primary receiver of the notification. Please notice, that carbon-copy receiver is not allowed in a CareCommunication message. Both the sender and receiver shall be identified using a SOR- and EAN-identifier.
+The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html) profile is used in a CareCommunication to describe the sender and primary receiver of the notification. Please notice, that carbon-copy receiver is not allowed in a CareCommunication. Both the sender and receiver shall be identified using a SOR- and EAN-identifier.
 
 ##### MedComMessagingProvenance
 
-The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. The allowed activity codes for a CareCommunication message can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. 
+The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. The allowed activity codes for a CareCommunication can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. 
 
-In cases of a previously sent CareCommunication messages, MedComMessagingProvenance references the latest message which makes it possible to create a historic overview of the admission. 
+In cases of a previously sent CareCommunications, MedComMessagingProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
 #### Timestamps
-A CareCommunication message includes several timestamps that represent different events before during sending a CareCommuncation message. [The meaning and use of these timestamps are described here.](https://medcomdk.github.io/dk-medcom-carecommunication/assets/documents/Intro-Technical-Spec-ENG.html)
+A CareCommunication includes several timestamps that represent different events before during sending a CareCommuncation. [The meaning and use of these timestamps are described here.](https://medcomdk.github.io/dk-medcom-carecommunication/assets/documents/Intro-Technical-Spec-ENG.html)
 
 #### IDs
 
 All instances of a profile shall have a global unique id by using an UUID. [Read more about the use of ids here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/052.2_MessageHeader_Identifiers_Timestamps.html).
 
-#### Simplified examples of the CareCommunication message flow
-The simplified examples contain the required content of a CareCommunication message sent between organisations. 
+#### Simplified examples of the CareCommunication flow
+The simplified examples contain the required content of a CareCommunication sent between organisations. 
 
 ##### New Message 
-Below can two simplified examples of a new CareCommunication message be seen, one with the minimum requirements and one with the minimum reqiurements as well as an attachment, episodeOfCare-identifier, sender, and recipient. Since both examples represents a new message is the activity in the Provenance instance 'new-message'. The sender and receiver organisations are both referenced from the MessageHeader and are included in the message. All instances have a unique UUID and the Communication.status is *unknown*.
+Below can two simplified examples of a new CareCommunication be seen, one with the minimum requirements and one with the minimum reqiurements as well as an attachment, episodeOfCare-identifier, sender, and recipient. Since both examples represents a new message is the activity in the Provenance instance 'new-message'. The sender and receiver organisations are both referenced from the MessageHeader and are included in the message. All instances have a unique UUID and the Communication.status is *unknown*.
 
-* [1 - Simplified example of a new CareCommunication message](./carecommunication/CCNewMessage.svg)
+* [1 - Simplified example of a new CareCommunication](./carecommunication/CCNewMessage.svg)
 
-When a CareCommunication message is a new message, reply message or forward message it is possible to add an attachment in a message segment. In the simplified example number 2 is the sender and recipient both represented with an instance of the CareTeam resource. Each careteam work under the organisation who sends or receives the CareCommunication message. The episodeOfCare-identifier is also represented in the Encounter resource. 
+When a CareCommunication is a new message, reply message or forward message it is possible to add an attachment in a message segment. In the simplified example number 2 is the sender and recipient both represented with an instance of the CareTeam resource. Each team described with a CareTeam resource shall work in the organisation who sends or receives the CareCommunication. The episodeOfCare-identifier is also represented in the Encounter resource. 
 
-* [2 - Simplified example of a new CareCommunication message with an attachment, episodeOfCare-identifier, sender and recipient](./carecommunication/CCNewMessageAtt.svg)
+* [2 - Simplified example of a new CareCommunication with an attachment, episodeOfCare-identifier, sender and recipient](./carecommunication/CCNewMessageAtt.svg)
 _Note:_ The attachment is not an actual pdf-document, as the base64-code would be extremely long.
 
 [Click here to see the generated example of simplified example number 1.](https://medcomfhir.dk/ig/carecommunication/Bundle-0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html) 
@@ -82,39 +87,38 @@ _Note:_ The attachment is not an actual pdf-document, as the base64-code would b
 
 
 ##### Reply Message 
-This simplified example describes how a MedCom FHIR CareCommunication message reply shall be handled.
-When sending a reply to a received MedComCareCommunication the reply shall contain the message segment and the Provenance instance from the previous message shall be included. 
-The Provenance.entity.role shall be *revision* and Provenance.entity.identifier shall be a reference to the MessageHeader.id of the previous message as the reply is the based on a previous entity. Provenance.activity shall be *reply-message*. All instances have a unique UUID and the Communication.status is *unknown*. This is a reply to '1 - Simplified example of a new CareCommunication message'. 
+This simplified example describes how a reply to a CareCommunication shall be handled.
+When sending a reply to a received CareCommunication the reply shall contain the message segment and the Provenance instance from the previous message shall be included. 
+The Provenance.entity.role shall be *revision* and Provenance.entity.identifier shall be a reference to the MessageHeader.id of the previous message as the reply is the based on a previous entity. Provenance.activity shall be *reply-message*. All instances have a unique UUID and the Communication.status is *unknown*. This is a reply to '1 - Simplified example of a new CareCommunication'. 
 
-* [3 - Simplified example of a reply CareCommunication message](./carecommunication/CCreplyMessage.svg)
+* [3 - Simplified example of a reply CareCommunication](./carecommunication/CCreplyMessage.svg)
 
 [Click here to see the generated example of simplified example number 3.](https://medcomfhir.dk/ig/carecommunication/Bundle-d5bd2111-2576-48d3-84d4-8be0297a038d.html) 
 
-It is allowed to answer  MedCom CareCommunication message is sent based on a received MedCom OIOXML message the EpisodeOfCareIdentifier resource referenced by the Encounter resource shall contain the episode of care identifier of the OIOXML message if present.
-The Provenance.entity.what.identifier shall contain a reference to the received OIOXML. The reference shall contain the locationnumber and letter identifier, divided by #.
+It is allowed to answer MedCom CareCommunication is sent based on a received MedCom OIOXML message. The Provenance.entity.what.identifier shall contain a reference to the received OIOXML. The reference shall contain the locationnumber and letter identifier, divided by #.
 
 ##### Forward Message 
-This simplified example describes how a MedCom FHIR CareCommunication message forward flow shall be handled.  
+This simplified example describes how to forward a MedCom FHIR CareCommunication shall be handled.  
 When forwarding a received CareCommunication the forward message shall contain both the message segment(s) that are being forwarded, as well as a message segment describing the reason for the forwarding. Further the message contains the instance of the Provenance resource from the previous message.
-The Provenance.entity.role shall be *revision* and Provenance.entity.what.reference shall be a reference to the MessageHeader.id of the previous message. Provenance.activity shall be *forward-message*. This message is forwarding '1 - Simplified example of a new CareCommunication message'.
+The Provenance.entity.role shall be *revision* and Provenance.entity.what.reference shall be a reference to the MessageHeader.id of the previous message. Provenance.activity shall be *forward-message*. This message is forwarding '1 - Simplified example of a new CareCommunication'.
 
-* [4 - Simplified example of a forwarded CareCommunication message](./carecommunication/CCForwardMessage2.svg)
+* [4 - Simplified example of a forwarded CareCommunication](./carecommunication/CCForwardMessage2.svg)
 
 [Click here to see the generated example of simplified example number 4.](https://medcomfhir.dk/ig/carecommunication/Bundle-40426e3e-978f-46e8-a366-a30f27854b0a.html) 
 
 ##### Modify Message
-If a message a is modified by the sender of a previous message, it shall happen by creating another MedCom CareCommunication message. This message shall include two instances of the Communication resource, one with the status *entered-in-error* and a message segment stating the modification and one with the message being modified with the status *unknown* and a message segment from the previous sent message. The ID of the modified message is updated, since the reference to the patient and author are updated to avoid multiple instances with the same information. There shall also be two Provenance instances, one referencing to the message being modified the and one referencing to the modification message, where Provenance.entity.what.reference element points to the message being modified.
+If a message a is modified by the sender of the previous message, it shall happen by creating another new CareCommunication. This message shall include two instances of the Communication resource, one with the status *entered-in-error* and a message segment stating the modification and one with the status *unknown* representing the message being modified, hence including the message segment from the previous sent message. The ID of the modified message is updated, since the reference to the patient and author are updated to avoid multiple instances with the same information. There shall also be two Provenance instances, one referencing to the message being modified the and one referencing to the modification message, where Provenance.entity.what.reference element points to the message being modified.
 In the latter instance of the Provenance resource, shall Provenance.entity.role shall be *revision* and the Provenance.activity shall be *modify-message*. 
 
-* [6 - Simplified example of a cancelling a CareCommunication message](./carecommunication/CCcancelMessage.svg)
+* [5 - Simplified example of a cancelling a CareCommunication](./carecommunication/CCcancelMessage.svg)
 
-[Click here to see the generated example of simplified example number 6.](https://medcomfhir.dk/ig/carecommunication/Bundle-cf9019c6-690d-11ed-9022-0242ac120002.html) 
+[Click here to see the generated example of simplified example number 5.](https://medcomfhir.dk/ig/carecommunication/Bundle-cf9019c6-690d-11ed-9022-0242ac120002.html) 
 
 ##### Cancel Message  
-If a message a is sent by mistake, the message shall be cancelled by creating another MedCom CareCommunication message. This message shall include two instances of the Communication resource, one with the status *entered-in-error* and a message segment stating the cancellation and one with the message being cancelled with the status *unknown* and a message segment from the previous sent message. The ID of the cancelled message is updated, since the reference to the patient and author are updated to avoid multiple instances with the same information. There shall also be two Provenance instances, one referencing to the message being cancelled the and one referencing to the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
+If a message a is sent by mistake, the message shall be cancelled by creating another MedCom CareCommunication. This message shall include two instances of the Communication resource, one with the status *entered-in-error* and a message segment stating the cancellation and one with the status *unknown* representing the  message being cancelled, hence including the message segment from the previous sent message. The ID of the cancelled message is updated, since the reference to the patient and author are updated to avoid multiple instances with the same information. There shall also be two Provenance instances, one referencing to the message being cancelled the and one referencing to the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
 In the latter instance of the Provenance resource, shall Provenance.entity.role shall be *removal* and the Provenance.activity shall be *retract-message*.  
 
-* [6 - Simplified example of a cancelling a CareCommunication message](./carecommunication/CCcancelMessage.svg)
+* [6 - Simplified example of a cancelling a CareCommunication](./carecommunication/CCcancelMessage.svg)
 
 [Click here to see the generated example of simplified example number 6.](https://medcomfhir.dk/ig/carecommunication/Bundle-ad3e05b2-551d-11ed-bdc3-0242ac120002.html) 
 
@@ -132,7 +136,6 @@ This IG has a dependency to the [MedCom Core IG](http://medcomfhir.dk/ig/core/),
 On the [introduction page for CareCommunication](https://medcomdk.github.io/dk-medcom-carecommunication/) the following documentation can be found: 
 * Clinical guidelines
 * Use cases
-* Overview of codes used a HospitalNotification message
 * Mapping document from the previous OIOXML standard (XDIS91) to CareCommunication
 
 ### Governance

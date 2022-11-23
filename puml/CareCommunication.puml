@@ -18,7 +18,7 @@ class "MedComCorePractitioner" as author
 message -- messageheader : "entry"
 messageheader -- communication : "focus"
 communication -- patient : "subject"
-communication -- pracRole : "author role"
+communication -- pracRole : "author"
 message -- provenance : "entry"
 provenance -- messageheader : "target" 
 provenance -- messagingOrganization : "agent.who"
