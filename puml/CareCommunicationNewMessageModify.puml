@@ -1,4 +1,4 @@
-@startuml CCcancelMessage
+@startuml CCmodifyMessage
 
 'layout
 skinparam class {
@@ -13,30 +13,30 @@ skinparam Ranksep 10
 
 
 'title
-title Simplified example: Cancelled message
+title Simplified example: Modified message
 
-'Message 1: error message
-package "CareCommunication message: Cancelled message" as error <<Frame>>{
-    class "Bundle (MedComCareCommunicationMessage)" as errorB {
-        id = "ad3e05b2-551d-11ed-bdc3-0242ac120002"
+'Message 1: modify message
+package "CareCommunication message: Modified message" as modify <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as modifyB {
+        id = "cf9019c6-690d-11ed-9022-0242ac120002"
         type = "message"
         timestamp = "2022-10-01T12:05:10"
     }
-    class "MessageHeader (MedComCareCommunicationMessageHeader)" as errorMH{
-        id = "b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as modifyMH{
+        id = "f8aa0bf0-690d-11ed-9022-0242ac120002"
         event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
         event.code = "care-communication-message"
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/282c1fea-551c-11ed-bdc3-0242ac120002"
-        sender.reference = "Organization/2f12cb92-551c-11ed-bdc3-0242ac120002"
+        destination.receiver.reference = "Organization/87b881a6-690d-11ed-9022-0242ac120002"
+        sender.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        focus.reference = "Communication/1636f3f8-551e-11ed-bdc3-0242ac120002"
-        focus.reference = "Communication/fe2eb07e-690f-11ed-9022-0242ac120002"
+        focus[0].reference = "Communication/273bc02c-9000-11ec-b909-0242ac120002"
+        focus[1].reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
     }
-    class "Patient (MedComCorePatient)" as errorPT{
-        id = "1f697de4-551c-11ed-bdc3-0242ac120002"
+    class "Patient (MedComCorePatient)" as modifyPT{
+        id = "550b46e4-690d-11ed-9022-0242ac120002"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -44,61 +44,61 @@ package "CareCommunication message: Cancelled message" as error <<Frame>>{
         name.given[0] = "Bruno"
         name.given[1] = "Test"
     }
-    class "Communication (MedComCareCommunication)" as errorCom{
-        id = "1636f3f8-551e-11ed-bdc3-0242ac120002"
+    class "Communication (MedComCareCommunication)" as modifyCom{
+        id = "273bc02c-9000-11ec-b909-0242ac120002"
         status = "entered-in-error"
         class = "carecoordination"
-        subject.reference = "Patient/1f697de4-551c-11ed-bdc3-0242ac120002"
-        payload[0].contentString = "Message cancelled."
+        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
+        payload[0].contentString = "Wrong paragraf. Please notice paragraf 2.3.4 in the rehabilitation plan instead..."
         payload[0].extension:date = "2022-10-01T12:05:00Z"
-        payload[0].extension:author.reference = "PractitionerRole/39d3af60-551c-11ed-bdc3-0242ac120002"
+        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
     }
-    class "PractitionerRole (MedComCorePractitionerRole)" as errorPracR{
-        id = "39d3af60-551c-11ed-bdc3-0242ac120002"
+    class "PractitionerRole (MedComCorePractitionerRole)" as modifyPracR{
+        id = "6ff69f1c-690d-11ed-9022-0242ac120002"
         practitioner.reference = "Practitioner/356947dc-551c-11ed-bdc3-0242ac120002"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
-    class "Practitioner (MedComCorePractitioner)" as errorPrac{
+    class "Practitioner (MedComCorePractitioner)" as modifyPrac{
         id = "356947dc-551c-11ed-bdc3-0242ac120002"
         name.family = "Michael"
         name.given = "Burns"
     }
     class "Communication (MedComCareCommunication)" as newCom{
-        id = "fe2eb07e-690f-11ed-9022-0242ac120002"
+        id = "273bc02c-9000-11ec-b909-0242ac120002"
         status = "unknown"
         class = "carecoordination"
-        subject.reference = "Patient/1f697de4-551c-11ed-bdc3-0242ac120002"
+        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
         payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
         payload[0].extension:date = "2022-10-01T12:00:05Z"
-        payload[0].extension:author.reference = "PractitionerRole/39d3af60-551c-11ed-bdc3-0242ac120002"
+        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
     }
-    class "Receiver (MedComMessagingOrganization)" as errorROrg{
-        id = "282c1fea-551c-11ed-bdc3-0242ac120002"
+    class "Receiver (MedComMessagingOrganization)" as modifyROrg{
+        id = "87b881a6-690d-11ed-9022-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
-    class "Sender (MedComMessagingOrganization)" as errorSOrg{
-        id = "2f12cb92-551c-11ed-bdc3-0242ac120002"
+    class "Sender (MedComMessagingOrganization)" as modifySOrg{
+        id = "9e183b44-690d-11ed-9022-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "265161000016000"
     }
-    class "Provenance (MedComMessagingProvenance)" as errorPRO{
-        id = "16fac3d8-551d-11ed-bdc3-0242ac120002"
-        target = "MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+    class "Provenance (MedComMessagingProvenance)" as modifyPRO{
+        id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"
+        target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
         occuredDateTime = "2022-10-01T12:05:10Z"
         recorded = "2022-10-01T12:05:10"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
-        activity.code = "retract-message"
-        agent.who.reference = "Organization/2f12cb92-551c-11ed-bdc3-0242ac120002"
+        activity.code = "modify-message"
+        agent.who.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
-        entity.role.value = "removal"
+        entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
     }
     class "Provenance (MedComMessagingProvenance)" as newPRO{
@@ -111,16 +111,16 @@ package "CareCommunication message: Cancelled message" as error <<Frame>>{
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }
 
-errorB -[hidden]- errorMH
-errorMH -[hidden]-errorPT
-errorPT-[hidden]-errorCom
-errorCom -[hidden]-errorPracR
-errorPracR-[hidden]-errorPrac
-errorPrac-[hidden]-newCom
-newCom -[hidden]-errorROrg
-errorROrg-[hidden]- errorSOrg
-errorSOrg-[hidden]-errorPRO
-errorPRO-[hidden]-newPRO
+modifyB -[hidden]- modifyMH
+modifyMH -[hidden]-modifyPT
+modifyPT-[hidden]-modifyCom
+modifyCom -[hidden]-modifyPracR
+modifyPracR-[hidden]-modifyPrac
+modifyPrac-[hidden]-newCom
+newCom-[hidden]--modifyROrg
+modifyROrg-[hidden]- modifySOrg
+modifySOrg-[hidden]-modifyPRO
+modifyPRO-[hidden]-newPRO
 
 
 @enduml

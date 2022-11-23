@@ -8,16 +8,19 @@ class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingM
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCorePractitionerRole" as authorRole
-class "Sender or recipient" as senderRec
+class "MedComCorePractitionerRole" as pracRole
+class "MedComCoreCareTeam" as careteam
 class "MedComCorePractitioner" as author
 
 
 messageheader -- communication : "focus"
 communication -- patient : "subject"
-communication -- authorRole : "payload author"
-communication -- senderRec : "sender/recipient"
-authorRole -- author : "author"
+communication -- pracRole : "author"
+communication -- careteam : "sender"
+communication -- careteam : "recipient"
+communication -- pracRole : "sender"
+communication -- pracRole : "recipient"
+pracRole -- author : "practitioner"
 
 
 messageheader -- messagingOrganization : "receiver"

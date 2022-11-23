@@ -28,11 +28,11 @@ InstanceOf: MedComMessagingProvenance
 Title: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Usage: #inline
-* target = Reference(40678166-551d-11ed-bdc3-0242ac120002)
+* target = Reference(f8aa0bf0-690d-11ed-9022-0242ac120002)
 * occurredDateTime = 2020-09-28T16:34:56Z
 * recorded = 2020-09-28T16:34:56Z
 * activity.coding = $ActivityCode#modified-message
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d) 
+* agent.who = Reference(9e183b44-690d-11ed-9022-0242ac120002) 
 * entity.role = #revision
 * entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 
