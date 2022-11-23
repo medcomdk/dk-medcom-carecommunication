@@ -160,6 +160,7 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 <br><br>
 
 #### 4.5.3 Annulering og rettelse 
+CareCommunication standarden muliggør at sende en rettelse eller annullering af en tidligere sendt meddelelse. En rettelse kan sendes i tilfælde af, at afsender f.eks. ønsker at rette i meddelelsesfeltet, mens en annullering af meddelelsen skal sendes der er skrevet forkerte personfølsomme oplysninger som f.eks, cpr-nummer. Hvis en meddelelse er sendt og afsender ønsker at rette nogle informationer er dette muligt, da CareCommunication rent teknisk vil indeholde både rettelserne samt en reference til den meddelelse der skal rettes. Det skal synliggøres på brugergrænsefladen for både afsender og modtager, at en given meddelelse er rettet. Tilsvarende gør det sig gældende ift. at annullere en tidligere sendt meddelelse. I dette tilfælde vil meddelelsen indeholde en kort tekst om at meddelelsen er annulleret, samt en reference til den meddelelse der skal annulleres. Det skal synliggøres på brugergrænsefladen for både afsender og modtager at en given meddelelsen er annulleret.
 
 ### 4.6 Historisk overblik i brugergrænsefladen
 Gældende for  alle MedComs FHIR-meddelelser, herunder også korrespondancemeddelelsen, er, at det teknisk er muligt at vise kommunikationshistorik for meddelelsen på brugergrænsefladen på baggrund af det tekniske indhold i meddelelsen. Det er både muligt at se meddelelsens aktivitet, eksempelvis om en meddelelse er en besvarelse, en videresendelse, eller om meddelelsen er rettet eller annulleret. Derudover er det muligt at vise meddelelsessegmentet fra de forudgående meddelelser. 
@@ -175,62 +176,112 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-tysj{color:#333333;text-align:left;vertical-align:top}
-.tg .tg-c4ko{background-color:#2c415c;text-align:left;vertical-align:top}
+.tg .tg-7bnw{background-color:#2c415c;border-color:inherit;color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-<div class="tg-wrap"><table class="tg" id="Tab1">
+<div class="tg-wrap"><table class="tg">
 <caption style="color:#2c415c; font-weight:bold; text-align:center"> Tabel 1: Opsumering af krav og anbefalinger til afsender- og modtagersystemer </caption>
 <thead>
   <tr>
-    <th class="tg-c4ko">   <br>    </th>
-    <th class="tg-c4ko">   <br><span style="color:white">Krav til afsendersystem</span>   </th>
-    <th class="tg-c4ko">   <br><span style="color:white">Anbefalinger til afsendersystem</span>   </th>
-    <th class="tg-c4ko">   <br><span style="color:white">Krav til modtagersystem</span>   </th>
-    <th class="tg-c4ko">   <br><span style="color:white">Anbefalinger til modtager-system</span>   </th>
+    <th class="tg-7bnw">   <br>    </th>
+    <th class="tg-7bnw">   <br>Krav til afsendersystem   </th>
+    <th class="tg-7bnw">   <br>Anbefalinger til afsendersystem   </th>
+    <th class="tg-7bnw">   <br>Krav til modtagersystem   </th>
+    <th class="tg-7bnw">   <br>Anbefalinger til modtager-system   </th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-tysj">   <br>National <br>   <br>kategori   </td>
-    <td class="tg-tysj">   <br>Det er et krav til systemet, at bruger kan vælge og   påsætte en national kategori til meddelelsen, og den valgte kategori er   synlig for afsender.<br>   <br> <br>   <br>Det er et krav, at kategori skal påsættes,   inden meddelelsen kan afsendes.   </td>
-    <td class="tg-tysj">   <br>    </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer skal kunne modtage og vise den valgte kategori på meddelelsen.<br>   <br> <br>   <br>    </td>
-    <td class="tg-tysj">   <br>Det anbefales at gøre brug af muligheden for automatisk fordeling, ved   modtagelse, efter de nationale kategorier. Det er ikke en del af MedComs test   og certificering. <br>   <br>. <br>   <br>    </td>
+    <td class="tg-0pky">National <br>   <br>kategori   </td>
+    <td class="tg-0pky">Det er et krav til systemet, at bruger kan vælge og  påsætte en national kategori til meddelelsen, og den valgte kategori er   synlig for afsender.<br><br>Det er et krav, at kategori skal påsættes, inden meddelelsen kan afsendes.   <br></td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>Det er et krav, at alle systemer skal kunne modtage og vise den valgte kategori på meddelelsen.<br>&nbsp;&nbsp;&nbsp;<br> <br>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0pky">   <br>Det anbefales at gøre brug af muligheden for automatisk fordeling, ved modtagelse, efter de nationale kategorier. Det er ikke en del af MedComs test og certificering. <br>    </td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Emneord   </td>
-    <td class="tg-tysj">   <br>Det er et   krav til systemet, at bruger kan vælge (optionelt) at indsætte emneord til en   meddelelse, og at det valgte emneord er synligt for afsender.<br>   <br> <br>   <br>Emnefeltet kan   enten udfyldes med selvskrevet fritekst eller de regionalt aftalte emneord. <br>   <br> <br>   <br>    </td>
-    <td class="tg-tysj">   <br>Det anbefales, at<br>   <br>regionalt aftalte emneord mappes op   til de nationalt aftalte kategorier, hvor de pågældende emneord relateres til   de relevante kategorier. Det anbefales, at brugeren præsenteres for de   regionalt aftalte emneord, som de kender, og ved valg af emneord, påsætter   systemet automatisk den pågældende relevante kategori (som er valgt ved   forudgående mapning mellem kategori og emneord).  Således slipper brugeren for at skulle tage   stilling til kategori ved regionalt aftalte emneord. <br>   <br>Det er ikke en del af MedComs test og certificering.    </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer kan modtage og vise det valgte emneord.   </td>
-    <td class="tg-tysj">   <br>    </td>
+    <td class="tg-0pky">Emneord   </td>
+    <td class="tg-0pky">Det er et  krav til systemet, at bruger kan vælge (optionelt) at indsætte emneord til en meddelelse, og at det valgte emneord er synligt for afsender.<br><br>Emnefeltet kan  enten udfyldes med selvskrevet fritekst eller de regionalt aftalte emneord. <br>    </td>
+    <td class="tg-0pky">Det anbefales, at regionalt aftalte emneord mappes op til de nationalt aftalte kategorier, hvor de pågældende emneord relateres til de relevante kategorier. <br>Det anbefales, at brugeren præsenteres for de regionalt aftalte emneord, som de kender, og ved valg af emneord, påsætter systemet automatisk den pågældende relevante kategori (som er valgt ved forudgående mappning mellem kategori og emneord).  <br>Således slipper brugeren for at skulle tage  stilling til kategori ved regionalt aftalte emneord. <br><span style="color:#333">   </span><br><span style="color:#333">Det er ikke en del af MedComs test og certificering.    </span></td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>Det er et krav, at alle systemer kan modtage og vise det valgte emneord.&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Prioritet   </td>
-    <td class="tg-tysj">   <br>Det er et krav til systemet, at prioritet kun er synlig og mulig at anvende ved valg af den nationale   kategori ”Vedr. henvisning”.   </td>
-    <td class="tg-tysj">   <br>    </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer kan modtage og vise prioritet.   </td>
-    <td class="tg-tysj">   <br>    </td>
+    <td class="tg-0pky">Prioritet   </td>
+    <td class="tg-0pky">Det er et krav til systemet, at prioritet kun er synlig og mulig at anvende ved valg af den nationale  kategori ”Vedr. henvisning”.   </td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>Det er et krav, at alle systemer kan modtage og vise prioritet.&nbsp;&nbsp;&nbsp;</td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Formatering   </td>
-    <td class="tg-tysj">   <br>Det er et krav til systemet, at afsender kan vælge at formatere   meddelelsesteksten i overensstemmelse med det vedtagne formateringstegnsæt. <br>   <br> <br>   <br>    </td>
-    <td class="tg-tysj">   <br>    </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer kan modtage og vise formateret tekst   i meddelelsesfeltet i overensstemmelse med det vedtagne formateringstegnsæt.   </td>
-    <td class="tg-tysj">   <br>    </td>
+    <td class="tg-0pky">Meddelelsestekst</td>
+    <td class="tg-0pky">Det er et krav til systemet, at afsender skal skrive meddelelsestekst før meddelelsen kan afsendes.</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"> Det er et krav, at alle systemer kan modtage og vise tekst i meddelelsens tekstfelt.    </td>
+    <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Vedhæftede filer   </td>
-    <td class="tg-tysj">   <br>Det er et krav til systemet, at bruger kan vælge at vedhæfte tilladte filtyper. <br>   <br>Det er et krav til systemet at notificere   brugeren, hvis meddelelsen, inklusiv vedhæftede filer, overstiger den tilladte størrelse.   <br>   <br>    </td>
-    <td class="tg-tysj">   <br>    </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer kan modtage og indlæse vedhæftede filer.   </td>
-    <td class="tg-tysj">   <br>    </td>
+    <td class="tg-0pky"> Formatering   </td>
+    <td class="tg-0pky">Det er et krav til systemet, at afsender kan vælge at formatere meddelelsesteksten i overensstemmelse med MedComs subset af XHTML.<br>   <br> <br>   <br>    </td>
+    <td class="tg-0pky">   <br>    </td>
+    <td class="tg-0pky">Det er et krav, at alle systemer kan modtage og vise formateret tekst i meddelelsesfeltet i overensstemmelse med MedComs subset af XHTML.    </td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-tysj">   <br>Signatur   </td>
-    <td class="tg-tysj">   <br>Det er et krav til systemet at udfylde og medsende signatur med bl.a.   forfatters navn, stillingsbetegnelse og relevant telefonnummer.<br><br>   <br>I tilfælde af elementer som ikke kan autoudfyldes af systemet, skal   dette kunne tilføjes manuelt af brugeren, fx telefonnummer.    </td>
-    <td class="tg-tysj">   <br>Det anbefales, at telefonnummer udfyldes med relevant telefonnummer,   så som telefonnummer på afdelingen, afsnittet, enheden eller fx relevant   vagttelefonnummer.   </td>
-    <td class="tg-tysj">   <br>Det er et krav, at alle systemer kan modtage og viseforfatters   signatur med dertilhørende informationer.   </td>
-    <td class="tg-tysj">   <br>    </td>
+    <td class="tg-0pky">Vedhæftede filer   </td>
+    <td class="tg-0pky">   <br>Det er et krav til systemet, at bruger kan vælge at vedhæfte tilladte filtyper. <br>Det er et krav til systemet at alle vedhæftede filer tilføjes et ID, dato for senest gemt samt signatur på forfattere af bilaget   <br>    </td>
+    <td class="tg-0pky">   <br>    </td>
+    <td class="tg-0pky">Det er et krav, at alle systemer kan modtage og vise vedhæftede filer. <br>Det er et krav, at det tydeligt vises i brugergrænsefladen, når der er vedhæftet en fil i korrespondancemeddelelsen.   </td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Signatur   </td>
+    <td class="tg-0pky">Det er et krav til systemet at udfylde og medsende signatur med bl.a. forfatters navn, stillingsbetegnelse og relevant telefonnummer.  <br>I tilfælde af elementer, som ikke kan autoudfyldes af systemet, skal  dette kunne tilføjes manuelt af afsenderen, fx telefonnummer.    </td>
+    <td class="tg-0pky">Det anbefales, at telefonnummer udfyldes med relevant telefonnummer, så som telefonnummer på afdelingen, afsnittet, enheden eller fx relevant vagttelefonnummer.   </td>
+    <td class="tg-0pky">Det er et krav, at alle systemer kan modtage og vise forfatters signatur med dertilhørende informationer.   </td>
+    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Besvarelse</td>
+    <td class="tg-0lax">Det er et krav til systemet, at afsender kan vælge at besvare en modtaget korrespondancemeddelelse. <br>Det er et krav til systemet, at automatisk indsætte referencer til de forudgående meddelelser fra samme kommunikationsflow samt <br>meddelelsessegmenter, dvs. meddelelsestekst, signatur og eventuelle vedhæftede filer, til besvarelsen. <br><br>Det er et krav til systemet, at afsender har mulighed for at besvare en tidligere modtaget MedCom meddelelse med korrespondancemeddelelsen. </td>
+    <td class="tg-0lax">Det anbefales, at systemet benytter sig af de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen, og derved give afsender det bedst mulige overblik.</td>
+    <td class="tg-0lax">Det er et krav, at alle systemer kan modtage og vise en besvarelse inklusiv indsatte referencer til forudgående meddelelser samt meddelelsessegmenter.&nbsp;&nbsp;<br>   <br>Det er et krav, at det tydeligt vises i  brugergrænsefladen, når der er vedhæftet en fil i den besvarede korrespondancemeddelelse.<br>   <br> <br>   <br>    </td>
+    <td class="tg-0lax">Det anbefales, at tydeliggøre, at meddelelsen er en besvarelse for modtager i brugergrænsefladen. <br><br>Det anbefales, systemet benytter sig de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen, <br>og derved give modtager det bedst mulige overblik.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Videresendelse</td>
+    <td class="tg-0lax">Det er et krav til systemet, at afsender kan vælge at videresende en modtaget korrespondancemeddelelse.<br><br>Det er et krav til systemet, at automatisk indsætte referencer til de forudgående meddelelser fra samme kommunikationsflow <br>samt meddelelsessegmenter, dvs. meddelelsestekst, signatur og eventuelle vedhæftede filer, til videresendelsen. </td>
+    <td class="tg-0lax">Det anbefales, at systemet benytter sig af de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen,<br>og derved give afsender det bedst mulige overblik</td>
+    <td class="tg-0lax">Der er et krav, at alle systemer kan modtage og vise en modtaget vidersendt korrespondancemeddelelse inklusiv referencer til de <br>forudgående meddelelser samt meddelelsessegmenter. <br><br>Det er et krav, at det tydeligt vises i brugergrænsefladen, når der er vedhæftet en fil i den videresendte korrespondancemddelelse. </td>
+    <td class="tg-0lax">Det anbefales at tydeliggøre, at meddelelsen er en videresendelse for modtager i brugergrænsefladen. <br><br>Det anbefales, at systemet benytter sig af de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen, <br>og derved give modtager det bedst mulige overblik. </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Årsagen til videresendelse</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Det anbefales, at afsender beskriver årsagen til vidersendelsen i meddelelsens tekstfelt. </td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Annullering</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Det anbefales at tydeliggøre, at meddelelsen er en annullering i brugergrænsefladen.   </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Rettelse</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">  Det anbefales at tydeliggøre, at meddelelsen er en rettelse i  brugergrænsefladen.   </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Størrelse på meddelelsen inklusiv<br>vedhæftede filer</td>
+    <td class="tg-0lax">Det er et krav til systemet at notificere afsender, hvis meddelen, inklusiv vedhæftede filer, overstiger den tilladte størrelse på 100 MB. </td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
   </tr>
 </tbody>
 </table></div>
