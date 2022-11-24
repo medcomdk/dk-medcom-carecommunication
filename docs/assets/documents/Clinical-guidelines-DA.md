@@ -264,17 +264,17 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
   </tr>
   <tr>
     <td class="tg-0lax">Annullering</td>
+    <td class="tg-0lax">Det er et krav til systemet, at afsender kan annullerer en afsendt korrespondancemeddelelse.</td>
     <td class="tg-0lax"></td>
+    <td class="tg-0lax">Det er et krav, at alle modtagersystemer kan tydeliggøre, at meddelelsen er en annullering i brugergrænsefladen</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">Det anbefales at tydeliggøre, at meddelelsen er en annullering i brugergrænsefladen.   </td>
   </tr>
   <tr>
     <td class="tg-0lax">Rettelse</td>
+    <td class="tg-0lax">Det er et krav til systemet, at afsender kan rette en afsendt korrespondancemeddelelse.</td>
     <td class="tg-0lax"></td>
+    <td class="tg-0lax">Det er et krav, at alle modtagersystemer kan tydeliggøre, at meddelelsen er en rettelse i brugergrænsefladen.</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">  Det anbefales at tydeliggøre, at meddelelsen er en rettelse i  brugergrænsefladen.   </td>
   </tr>
   <tr>
     <td class="tg-0lax">Størrelse på meddelelsen inklusiv<br>vedhæftede filer</td>
