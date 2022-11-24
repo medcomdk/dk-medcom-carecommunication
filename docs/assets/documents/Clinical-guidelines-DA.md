@@ -4,7 +4,7 @@
 
 **Table of contents**
 * [1 Introduktion](#1-introduktion)
-* [2 Formål](#2-formål)
+* [2 Formål](#formaal)
 * [3 Illustration af FHIR korrespondancemeddelelse](#3-illustration-af-korrespondancemeddelelsen)
 * [4 Krav og anbefalinger til FHIR Korrespondancemeddelelse](#4-krav-og-anbefalinger-til-korrespondancemeddelelsen)
     * [4.1 Kategori og Emne](#41-kategori-og-emne)
@@ -36,7 +36,7 @@ De tekniske specifikationer for korrespondancemeddelelse findes via forsiden for
  <!-- samt information om en overgangsperiode med samtidig drift af korrespondancemeddelelsen <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> og <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a> og FHIR-KM. -->
 
 
-## 2 Formål
+## 2 Formål {#formaal}
 Formålet med korrespondancemeddelelsen er at understøtte den digitale kommunikation mellem sundhedsvæsnets parter, herunder bl.a. også psykiatri- og socialområdet, hvor initiativ til ny version af korrespondancemeddelelsen er forankret. Korrespondancemeddelelsen anvendes til sikker elektronisk kommunikation af personhenførbare oplysninger og anvendes typisk til ad hoc kommunikation. Korrespondancemeddelelsen skal dog kun bruges på de områder, hvor der i forvejen ikke findes tilgængelige strukturerede MedCom standarder. Korrespondancemeddelelsen skal ikke anvendes ved sager af akut karakter.
 Formålet med korrespondancemeddelelse er bl.a. at:
 *	Give mulighed for at vedhæfte og udveksle digitale filer
