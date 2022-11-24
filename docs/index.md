@@ -7,12 +7,13 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping between OIOXML, XDIS91 and FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping between OIOXML standard (XDIS91) and FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
-This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support digital communication between healthcare professionals by enabling message-based data exchange and to strengthen the start-up of the digital communication between social care, psychiatric and the somatic sector. In a CareCommunication it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. The standard can be used to communicate about a patient or a citizen between healthcare parties, such as municipalities, general practitioners, hospitals, physiotherapists and many more. 
+This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support secure digital communication between social care, psychiatric and the somatic sector. CareCommunication standard enable communication of personally identifiable information and is typically used for ad-hoc communication.However, the correspondence message must only be used in those areas where no structured MedCom standards are already available. The correspondence notification must not be used in cases of an urgent nature.
+In a CareCommunication it is possible to attach a digital document, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category. 
 
 ## 1 Standard documentation 
 The standard documentation below provides the necessary content to understand the needs for CareCommunication, the role of the CareCommunication, what to implement and how to get a MedCom Certificate. The standard documentation for CareCommunication includes:
@@ -65,7 +66,7 @@ Furthermore, the structure of the standard is described and supported with examp
 
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-### 1.4 Mapping between OIOXML, XDIS91 and FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
+### 1.4 Mapping between OIOXML standard (XDIS91) and FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
 Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>are transferred to the CareCommunication, as not all elements are represented in the FHIR standard. 
 
 Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
