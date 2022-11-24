@@ -6,9 +6,7 @@ Description: "The CareCommunication is used to ensure secure electronic communic
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
 * obeys medcom-careCommunication-3
-//* obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-4
-//* obeys medcom-careCommunication-9 
 * obeys medcom-careCommunication-12
 * obeys medcom-careCommunication-11
 * obeys medcom-careCommunication-13
@@ -48,22 +46,6 @@ Invariant: medcom-careCommunication-13
 Description: "All PractitionerRole resources shall have a reference to an instance of a Practitioner resource."
 Severity: #error
 Expression: "Bundle.entry.resource.ofType(PractitionerRole).practitioner.reference.exists()"
-
-/* Invariant: medcom-careCommunication-9
-Description: "The managing organization of a careteam shall be the sender or receiver organization of the message."
-Severity: #error
-Expression: "Bundle.entry.resource.ofType(CareTeam).where(managingOrganization.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference).exists() or where(managingOrganization.reference  = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference).exists()"
-
-Invariant: medcom-careCommunication-10
-Description: "The managing organization of a careteam shall be the sender or receiver organization of the message."
-Severity: #error
-Expression: "Bundle.entry.resource.ofType(Provenance).agent.who.reference.resolve() and where(agent.who.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference).exists() or where(agent.who.reference  = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference).exists()"
-
-Til practitioner for at tjekke, at der er en henvisning. 
-Bundle.entry.resource.ofType('PractitionerRole').where(code.exists()).practitioner.reference.exists()
-
-*/
-
 
 
 Instance: 0dd5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c

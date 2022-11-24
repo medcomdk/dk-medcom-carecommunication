@@ -62,7 +62,6 @@ Description:    "Care related communication between two or more parties in Danis
 * obeys medcom-careCommunication-8
 * obeys medcom-careCommunication-9
 * obeys medcom-careCommunication-10
-//* obeys medcom-careCommunication-11
 
 Invariant: medcom-careCommunication-5
 Description: "Priority is only allowed when Communication.category = 'regarding-referral'"
