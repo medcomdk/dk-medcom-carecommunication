@@ -7,7 +7,7 @@ status: active
 version: "2.0.0"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
-releaseLabel: Build CI
+releaseLabel: Release
 publisher:
   name: MedCom
   url: http://www.medcom.dk

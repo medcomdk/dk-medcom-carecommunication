@@ -1,0 +1,7 @@
+- Communication.recipient may reference a MedComCoreCareTeam or MedComCorePractitionerRole
+- MedComCareCommunicationSenderExtension is added an allow reference to a MedComCoreCareTeam or MedComCorePractitionerRole
+- Communication.sender is no longer MS, Communication.extension.sender is MS
+- MedComCareCommunicationPayloadAuthorContactExtension is added and referenced from Communication.payload.extension.authorContact
+- MessageHeader.focus is changed from 1..1 to 1..2
+- Constraint 1-13 applied to MedComCommunication and MedComCareCommunicationMessage are added or updated.
+- Examples and descriptions updated due to the above changes

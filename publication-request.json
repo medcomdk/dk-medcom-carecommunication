@@ -1,0 +1,14 @@
+{
+    "package-id": "medcom.fhir.dk.carecommunication",
+    "version": "2.0.0",
+    "path": "http://medcomfhir.dk/ig/carecommunication/2.0.0",
+    "status": "release",
+    "sequence": "Release",
+    "milestone" : true,
+    "title": "The DK MedCom CareCommunication IG",
+    "category": "MedCom CareCommunication",
+    "introduction": "The MedCom CareCommunication Implementation Guide includes profiles used in a CareCmmunication message.",
+    "descmd": "@release-notes.md",
+    "ci-build": "http://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/",
+    "changes": "https://github.com/medcomdk/dk-medcom-carecommunication/releases"
+}
