@@ -2,7 +2,7 @@
 
 # Mapping between OIOXML standard (XDIS91) and FHIR CareCommunication 
 This document describes mapping between the OIOXML (<a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>) and the FHIR CareCommunication. Not all elements from OIOXML are relevant in FHIR CareCommunication, which is marked with a ‘NA’. The purpose of this document is to help implementers of FHIR CareCommunication. <br>
- <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/" target="_blank">Click here to read the Implementation Guide which includes all requirements for the CareCommunication.</a> 
+ <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">Click here to read the Implementation Guide which includes all requirements for the CareCommunication.</a> 
 
 
 >Please notice, that the expressions in ‘Actual FHIR path’ are made using the windows app FHIRPath tester. In other applications, will the apostrophe (‘…’) might not be used.

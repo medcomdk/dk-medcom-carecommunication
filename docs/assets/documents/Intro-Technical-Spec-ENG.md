@@ -37,21 +37,21 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessage</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessage</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Bundle</span></td>
     <td class="tg-0pky"><span style="color:#333">Acts as a container for the content of the message</span><br><span style="color:#333">Inherited from the MedComMessagingMessage</span></td>
     <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Type</span><br><span style="color:#333">Timestamp</span><br><span style="color:#333">Entry</span><br></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessageHeader</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessageHeader</span></a></td>
     <td class="tg-0pky"><span style="color:#333">MessageHeader</span></td>
     <td class="tg-0pky"><span style="color:#333">The header of a MedComCareCommunication message, which must always be the first referenced profile, when the type of the bundle is 'message'.This profile holds references to the fundamental information in a message, such as sender, receiver, the content of the message in terms of the CareCommunication profile.</span><br><span style="color:#333">Inherited from MedComMessagingMessageHeader</span></td>
     <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Text</span><br><span style="color:#333">Event[x]:eventCoding</span><br><span style="color:#333">destination:All Slices.use</span><br><span style="color:#333">Destination:primary</span><br> <span style="color:#333">Destination:primary.use</span><br> <span style="color:#333">Destination:primary.endpoint</span><br> <span style="color:#333">Destination:primary.receiver</span><br>  <span style="color:#333">Sender</span><br><span style="color:#333">Source</span><br><span style="color:#333">Source.endpoint</span><br><span style="color:#333">Focus</span></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Communication</span></td>
     <td class="tg-0pky"><span style="color:#333">The MedComCareCommunication profile contains the main content of the message in form of a message segment. A message segment consists of the textual part (payload:string.content[x]) or an attachment (payload:attachment.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp(payload:string.extension:date) and a relevant telephone number (payload:string.extension.authorContact). The message must include a category code (category) and it may include a topic (topic) that supports and elaborates the category. </span></td>
     <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> </td>
@@ -110,7 +110,7 @@ In a CareCommunication, it is required to include information about a sender and
 When sending a CareCommunication, it is possible to add a more specific receiver of the message, called a recipient, and a more specific sender. This may be used to include a more specific organisation or person related to the care, and wellbeing of the patient or citizen can be referenced. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality.
 
 ### 1.2 Categories and the use of priority
-There is a nationally agreed list of categories that must be used when sending a CareCommunication.<br> <a href="https://build.fhir.org/ig/medcomdk/dk-medcom-terminology/CodeSystem-medcom-careCommunication-categoryCodes.html" target="_blank">The list of categories can be seen here</a>. <br>
+There is a nationally agreed list of categories that must be used when sending a CareCommunication.<br> <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-careCommunication-categoryCodes.html" target="_blank">The list of categories can be seen here</a>. <br>
 When a category is of the type 'regarding-referral' it is allowed to add a priority, which can be 'asap' or 'routine'. When the category 'other' is chosen, a topic must be included, as this is used to specify the topic of the CareCommunication.
 
 ### 1.3 Encounter
@@ -143,7 +143,7 @@ In this section, examples of Care Communication (New Message, New message with a
 
 <a href="#Fig2"> Figure 2 </a> and <a href="#Fig4"> Figure 4 </a> both include the required content, whereas <a href="#Fig3"> Figure 3 </a> also includes some MustSupport elements that are not required. There is a difference between the required elements and MustSupport elements, as the required element always must be included in a message. MustSupport elements must be included if they are present in the sender's system, and the receiver must be able to handle the information if it is included. Thus, there is a discrepancy between the elements mentioned in the table above and the figures. 
 More examples, including forward of CareCommunication and, for CareCommunication in both an XML and JSON format can be found on thew MedComCareCommunicationMessage profile. 
-<a href="https://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all examples for MedComCareCommunicationMessage.</a>
+<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see all examples for MedComCareCommunicationMessage.</a>
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
