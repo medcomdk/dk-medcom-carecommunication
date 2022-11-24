@@ -107,7 +107,8 @@ Et meddelelsessegment består af korrespondancemeddelelsens meddelelsestekst og 
 
 #### 4.2.1	Meddelelsestekst-feltet
 Meddelelsestekst-feltet er et fritekstfelt, hvori afsender skriver sin tekst.
-Det er muligt at formatere meddelelsesteksten, herunder bl.a. brug af <b>fed</b>, <u>understregning</u>, <em>kursiv</em> og tabeller i teksten. Formateringen af meddelelsesteksten følger XHTML. MedCom definerer et subset af XHTML, som systemerne som minimum skal understøtte. For brugeren skal det derfor være muligt at benytte formatering i meddelelsesteksten i overensstemmelse med det definerede subset.
+Det er muligt at formatere meddelelsesteksten, herunder bl.a. brug af <b>fed</b>, <u>understregning</u>, <em>kursiv</em> og tabeller i teksten. Formateringen af meddelelsesteksten følger XHTML. MedCom definerer et subset af XHTML, som systemerne som minimum skal understøtte. <br> <a href="https://medcomdk.github.io/dk-medcom-core/assets/documents/MedComMessaging-Styling_the_XHTML.html" target="blank">Klik her for at læse MedCom's definition af  XHTML subsetet.</a> <br> 
+For brugeren skal det derfor være muligt at benytte formatering i meddelelsesteksten i overensstemmelse med det definerede subset.
 
 #### 4.2.2 Signatur
 SSignatur skal altid udfyldes, medsendes af afsender og vises af modtager. Formålet med ’signatur’ er at tydeliggøre, hvem forfatteren af den afsendte korrespondancemeddelelse er. Derfor er det et krav, at signatur udfyldes med bl.a. dato og tidspunkt, forfatters navn, stillingsbetegnelse og relevant telefonnummer. MedCom stiller en liste over stillingsbetegnelser til rådighed, som er sammensat af udtræk fra autorisationsregistret og SKS personaleklassifikation. <br>
