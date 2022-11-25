@@ -4,8 +4,8 @@
 * [1 Profiles in the CareCommunication Standard](#1-profiles-in-the-carecommunication-standard)
   * [1.1 Sender and recipient](#11-sender-and-recipient)
   * [1.2 Categories and the use of priority](#12-categories-and-the-use-of-priority)
-  * [1.3 Encounter](#13-encounter)
-  * [1.4 Payloads](#14-payloads)
+  * [1.3 Encounter and EpisodefCare-identifier](#13-encounter-and-episodeofcare-identifier)
+  * [1.4 Message segments](#14-message-segments)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
 * [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
@@ -165,28 +165,28 @@ All types of simplified examples are created as XML or JSON examples in the Care
 </figure>
 <br><br>
 
-<a href="#Fig4">Figure 4</a>is a simplified example of a reply message. This message represents a reply to the message on <a href="#Fig2">Figure 2</a>. When replying to a message, a new message segment shall be added to the Communication resource. The author information for both message segments shall also be included in the message. The sender and receiver information has switched place. The message contains two Provenance instance, one from the previous message and one from the reply message, which holds a reference to the previous message.  
+<a href="#Fig4">Figure 4</a> is a simplified example of a reply message. This message represents a reply to the message on <a href="#Fig2">Figure 2</a>. When replying to a message, a new message segment shall be added to the Communication resource. The author information for both message segments shall also be included in the message. The sender and receiver information has switched place. The message contains two Provenance instance, one from the previous message and one from the reply message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Reply message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 4: Simplified example: Reply message </b></figcaption>
 </figure>
 <br><br>
 
-<a href="#Fig5">Figure 5</a>is a simplified example of a forward message. This message represents a forwarding of the message on <a href="#Fig2">Figure 2</a>. When forwarding shall the user decide which message segment or segments that shall be forwarded, in this case is only one segment selected. For this reason, does the Communication instance contain two message segment and associated authors. Further shall the message contain two Provenance instance, one from the previous message and one from the forward message, which holds a reference to the previous message.  
+<a href="#Fig5">Figure 5</a> is a simplified example of a forward message. This message represents a forwarding of the message on <a href="#Fig2">Figure 2</a>. When forwarding shall the user decide which message segment or segments that shall be forwarded, in this case is only one segment selected. For this reason, does the Communication instance contain two message segment and associated authors. Further shall the message contain two Provenance instance, one from the previous message and one from the forward message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
 <br><br>
 
-<a href="#Fig6">Figure 6</a>is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. When a message a is modified by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the modification, and one with the status 'unknown' representing the message being modified, hence including the message segment from the previous sent message. The id of the modified message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.  
+<a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. When a message a is modified by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the modification, and one with the status 'unknown' representing the message being modified, hence including the message segment from the previous sent message. The id of the modified message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Modify message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 6: Simplified example: Modify message </b></figcaption>
 </figure>
 
 <br><br>
-<a href="#Fig7">Figure 7</a>is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>. When a message is retracted by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the cancellation and one with the status 'unknown' representing the message being cancelled, hence including the message segment from the previous sent message. The id of the cancelled message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
+<a href="#Fig7">Figure 7</a> is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>. When a message is retracted by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the cancellation and one with the status 'unknown' representing the message being cancelled, hence including the message segment from the previous sent message. The id of the cancelled message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Retract message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 7: Simplified example: Retract message </b></figcaption>
