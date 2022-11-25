@@ -146,7 +146,7 @@ MedComMessagingProvenance is used to keep track of the messaging history and def
 </figure>
 <br><br>
 
-## 3 Examples of CareCommunication 
+## 3 Examples of a CareCommunication 
 In this section, simplified examples of CareCommunication are presented, which includes: 
 * <a href="#Fig2">new message</a>
 * <a href="#Fig3">new message with an attachment, episodeOfCare-identifier, and sender and recipient</a>
