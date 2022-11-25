@@ -4,7 +4,7 @@
 * [1 Profiles in the CareCommunication Standard](#1-profiles-in-the-carecommunication-standard)
   * [1.1 Sender and recipient](#11-sender-and-recipient)
   * [1.2 Categories and the use of priority](#12-categories-and-the-use-of-priority)
-  * [1.3 Encounter and EpisodefCare-identifier](#13-encounter-and-episodeofcare-identifier)
+  * [1.3 Encounter and EpisodeOfCare-identifier](#13-encounter-and-episodeofcare-identifier)
   * [1.4 Message segments](#14-message-segments)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
@@ -88,6 +88,13 @@
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
+    <td class="tg-0pky">CareTeam</td>
+    <td class="tg-0pky">Describes one or more professionals who plan to participate in the coordination and delivery of care for a patient or citizen. It may be used as the sender or recipient from the MedComCareCommunication profile</td>
+    <td class="tg-0pky">Name<br>ManagingOrganization</td>
+    <td class="tg-0pky">Core</td>
+  </tr>
+  <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComMessagingOrganization</span></a></td>
     <td class="tg-0pky">Organisation</td>
     <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organisation. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
@@ -152,41 +159,41 @@ All types of simplified examples are created as XML or JSON examples in the Care
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
-<a href="#Fig2"> Figure 2 </a>is a simplified example of a new message. The MessageHeader references the sender and receiver organisations, both can be found at the bottom of the message. The focus of the message is referenced as the last element in the MessageHeader, which references the Communication resource. The Communication resources holds the message segment. Information about the author of the message segment is represented in the PractitionerRole and Practitioner resources, which holds the author role and name, respectively. The type of message can be seen in the bottom, where the Provenance.activity.code is 'new-message'. 
+<a href="#Fig2"> Figure 2 </a>is a simplified example of a new message. The MessageHeader references the sender and receiver organisations, both can be found at the bottom of the message. From the last element in the MessageHeader is the focus of the message referenced. This is a reference to the Communication instance, which holds information about the message segment. Information about the author of the message segment is represented in the PractitionerRole and Practitioner instances, which includes the author role and name, respectively. The type of message can be seen in the bottom, where the Provenance.activity.code is 'new-message'. 
 <figure>
 <img src="../images/CCNewMessage.svg" alt="Simplified example: New message" style="width: 55%" id="Fig2">
 <figcaption text-align = "center"><b>Figure 2: Simplified example: New message </b></figcaption>
 </figure>
 
-<a href="#Fig3">Figure 3</a> is a simplified example of a new message with an attachment, episodeOfCare-identifier, and sender and recipient. Besides the information in <a href="#Fig2">Figure 2</a>, this message also includes a message segment with an attachment (please notice, that the attachment is base-64-encoded, an only a small part of the encoding is presented in the simplified example) and signature, which also includes an id and a creation time. From the Communication resource is an Encounter resource referenced and the Encounter resource includes an episodeOfCare-identifier. A more specific sender and recipient are also referenced from the Communication resource. These are both represented with a CareTeam, which has the sender and receiver from the MessageHeader as the managing organisation.
+<a href="#Fig3">Figure 3</a> is a simplified example of a new message with an attachment, episodeOfCare-identifier, and sender and recipient. Besides the information in <a href="#Fig2">Figure 2</a>, this message also includes a message segment with an attachment (please notice, that the attachment is base-64-encoded, an only a small part of the encoding is presented in the simplified example) and signature, which also includes an id and a creation time. From the Communication instance is an Encounter instance referenced, which includes an episodeOfCare-identifier. A more specific sender and recipient are also referenced from the Communication instance. These are both represented with a CareTeam, which has the sender and receiver from the MessageHeader as the managing organisation.
 <figure>
 <img src="../images/CCNewMessageAtt.svg" alt="Simplified example: New message with attachment" style="width: 55%" id="Fig3">
 <figcaption text-align = "center"><b>Figure 3: Simplified example: New message with attachment, episodeOfCare-identifier, and sender and recipient </b></figcaption>
 </figure>
 <br><br>
 
-<a href="#Fig4">Figure 4</a> is a simplified example of a reply message. This message represents a reply to the message on <a href="#Fig2">Figure 2</a>. When replying to a message, a new message segment shall be added to the Communication resource. The author information for both message segments shall also be included in the message. The sender and receiver information has switched place. The message contains two Provenance instance, one from the previous message and one from the reply message, which holds a reference to the previous message.  
+<a href="#Fig4">Figure 4</a> is a simplified example of a reply message. This message represents a reply to the message on <a href="#Fig2">Figure 2</a>. When replying to a message, a new message segment shall be added to the Communication instance. The reply can be seen in the payload[0], where the new message can be seen in the payload[1]. The author information for both message segments shall also be included in the message. The sender and receiver information has switched place. The message contains two Provenance instance, one from the previous message and one from the reply message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Reply message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 4: Simplified example: Reply message </b></figcaption>
 </figure>
 <br><br>
 
-<a href="#Fig5">Figure 5</a> is a simplified example of a forward message. This message represents a forwarding of the message on <a href="#Fig2">Figure 2</a>. When forwarding shall the user decide which message segment or segments that shall be forwarded, in this case is only one segment selected. For this reason, does the Communication instance contain two message segment and associated authors. Further shall the message contain two Provenance instance, one from the previous message and one from the forward message, which holds a reference to the previous message.  
+<a href="#Fig5">Figure 5</a> is a simplified example of a forward message. This message represents a forwarding of the message on <a href="#Fig2">Figure 2</a>. When forwarding shall the user decide which message segment or segments that shall be forwarded, in this case is only one segment selected. The forward message can be seen in the payload[0], where the new message can be seen in the payload[1]. For this reason, does the Communication instance contain two message segment and associated authors. Further shall the message contain two Provenance instance, one from the previous message and one from the forward message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
 <br><br>
 
-<a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. When a message a is modified by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the modification, and one with the status 'unknown' representing the message being modified, hence including the message segment from the previous sent message. The id of the modified message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.  
+<a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. When a message a is modified by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication instance, one with the status 'entered-in-error' and a message segment stating the modification, and one with the status 'unknown' representing the message being modified, hence including the message segment from the previous sent message. The id of the modified message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.  
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Modify message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 6: Simplified example: Modify message </b></figcaption>
 </figure>
 
 <br><br>
-<a href="#Fig7">Figure 7</a> is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>. When a message is retracted by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication resource, one with the status 'entered-in-error' and a message segment stating the cancellation and one with the status 'unknown' representing the message being cancelled, hence including the message segment from the previous sent message. The id of the cancelled message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
+<a href="#Fig7">Figure 7</a> is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>. When a message is retracted by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication instance, one with the status 'entered-in-error' and a message segment stating the cancellation and one with the status 'unknown' representing the message being cancelled, hence including the message segment from the previous sent message. The id of the cancelled message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
 <figure>
 <img src="../images/CCreplyMessage.svg" alt="Simplified example: Retract message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 7: Simplified example: Retract message </b></figcaption>
