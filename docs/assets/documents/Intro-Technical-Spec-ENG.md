@@ -217,8 +217,8 @@ If the CareCommunication only contains a message text, the timestamps must be re
 
 
 <figure>
-<img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig5">
-<figcaption text-align = "center"><b>Figure 5: Simplified example: CareCommunication text only </b></figcaption>
+<img src="../images/cc_ONLY_TEXT.svg" alt="Simplified example: CareCommunication text only." style="width: 55%" id="Fig8">
+<figcaption text-align = "center"><b>Figure 8: Simplified example: CareCommunication text only </b></figcaption>
 </figure>
 
 
@@ -232,6 +232,6 @@ If the CareCommunication contains a message text and one or more attachments, th
 >Note that the Provenance.occuredDateTime[x] is human readable, where Provenance.recorded is system readable.
 
 <figure>
-<img src="../images/cc_attachement.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig6">
-<figcaption text-align = "center"><b>Figure 6: Simplified example:CareCommunication text and Attachment </b></figcaption>
+<img src="../images/cc_attachement.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig9">
+<figcaption text-align = "center"><b>Figure 9: Simplified example: CareCommunication text and attachment </b></figcaption>
 </figure>
