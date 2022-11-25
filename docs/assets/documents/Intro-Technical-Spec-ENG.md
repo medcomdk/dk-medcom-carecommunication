@@ -188,14 +188,14 @@ All types of simplified examples are created as XML or JSON examples in the Care
 
 <a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. When a message a is modified by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication instance, one with the status 'entered-in-error' and a message segment stating the modification, and one with the status 'unknown' representing the message being modified, hence including the message segment from the previous sent message. The id of the modified message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.  
 <figure>
-<img src="../images/CCreplyMessage.svg" alt="Simplified example: Modify message" style="width: 55%" id="Fig4">
+<img src="../images/CCmodifyMessage.svg" alt="Simplified example: Modify message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 6: Simplified example: Modify message </b></figcaption>
 </figure>
 
 <br><br>
 <a href="#Fig7">Figure 7</a> is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>. When a message is retracted by the sender of the previous message, a new CareCommunication shall be created. This message shall include two instances of the Communication instance, one with the status 'entered-in-error' and a message segment stating the cancellation and one with the status 'unknown' representing the message being cancelled, hence including the message segment from the previous sent message. The id of the cancelled message is updated since the reference to the patient and author are updated to avoid multiple instances with the same information. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
 <figure>
-<img src="../images/CCreplyMessage.svg" alt="Simplified example: Retract message" style="width: 55%" id="Fig4">
+<img src="../images/CCcancelMessage.svg" alt="Simplified example: Retract message" style="width: 55%" id="Fig4">
 <figcaption text-align = "center"><b>Figure 7: Simplified example: Retract message </b></figcaption>
 </figure>
 <br><br>
