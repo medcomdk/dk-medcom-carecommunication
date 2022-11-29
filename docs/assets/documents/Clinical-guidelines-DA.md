@@ -161,7 +161,7 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 <br><br>
 
 #### 4.5.3 Annulering og rettelse 
-CareCommunication standarden muliggør at sende en rettelse eller annullering af en tidligere sendt meddelelse. En rettelse kan sendes i tilfælde af, at afsender f.eks. ønsker at rette i meddelelsesfeltet, mens en annullering af meddelelsen skal sendes der er skrevet forkerte personfølsomme oplysninger som f.eks, cpr-nummer. Hvis en meddelelse er sendt og afsender ønsker at rette nogle informationer er dette muligt, da CareCommunication rent teknisk vil indeholde både rettelserne samt en reference til den meddelelse der skal rettes. Det skal synliggøres på brugergrænsefladen for både afsender og modtager, at en given meddelelse er rettet. Tilsvarende gør det sig gældende ift. at annullere en tidligere sendt meddelelse. I dette tilfælde vil meddelelsen indeholde en kort tekst om at meddelelsen er annulleret, samt en reference til den meddelelse der skal annulleres. Det skal synliggøres på brugergrænsefladen for både afsender og modtager at en given meddelelsen er annulleret.
+Det er muligt at sende en rettelse eller annullering til en afsendt korrespondancemeddelelse. En rettelse kan sendes i tilfælde af, at afsender f.eks. ønsker at rette i teksten i meddelelsesfeltet, mens en annullering af meddelelsen skal sendes, hvis der er skrevet forkerte personfølsomme oplysninger som fx cpr-nummer. Hvis afsender sender en rettelse til en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde rettelserne og en reference til den korrespondancemeddelelse, som skal rettes. Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er rettet. Hvis afsender sender en annullering af en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde en kort tekst om, at meddelelsen er annulleret, og en reference til den korrespondancemeddelelse der skal annulleres. Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er annulleret.
 
 ### 4.6 Historisk overblik i brugergrænsefladen
 Gældende for  alle MedComs FHIR-meddelelser, herunder også korrespondancemeddelelsen, er, at det teknisk er muligt at vise kommunikationshistorik for meddelelsen på brugergrænsefladen på baggrund af det tekniske indhold i meddelelsen. Det er både muligt at se meddelelsens aktivitet, eksempelvis om en meddelelse er en besvarelse, en videresendelse, eller om meddelelsen er rettet eller annulleret. Derudover er det muligt at vise meddelelsessegmentet fra de forudgående meddelelser. 
@@ -267,14 +267,14 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
     <td class="tg-0lax">Annullering</td>
     <td class="tg-0lax">Det er et krav til systemet, at afsender kan annullerer en afsendt korrespondancemeddelelse.</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">Det er et krav, at alle modtagersystemer kan tydeliggøre, at meddelelsen er en annullering i brugergrænsefladen</td>
+    <td class="tg-0lax">Det er et krav, at alle systemer synliggør i brugergrænsefladen, at meddelelsen er en annullering.</td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">Rettelse</td>
     <td class="tg-0lax">Det er et krav til systemet, at afsender kan rette en afsendt korrespondancemeddelelse.</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax">Det er et krav, at alle modtagersystemer kan tydeliggøre, at meddelelsen er en rettelse i brugergrænsefladen.</td>
+    <td class="tg-0lax">Det er et krav, at alle systemer synliggør i brugergrænsefladen, at meddelelsen er en rettelse.</td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
