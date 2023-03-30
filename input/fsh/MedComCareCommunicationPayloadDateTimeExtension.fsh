@@ -1,4 +1,4 @@
-Extension:  MedComCareCommunicationPayloadDateTimeExtension
+Extension: MedComCareCommunicationPayloadDateTimeExtension
 Id: medcom-carecommunication-datetime-extension
 Title: "PayloadDateTimeExtension"
 Description: "Date and time of this payload"

@@ -1,7 +1,7 @@
-Profile:        MedComCareCommunication
-Parent:         Communication
-Id:             medcom-careCommunication-communication
-Description:    "Care related communication between two or more parties in Danish healthcare"
+Profile: MedComCareCommunication
+Parent: Communication
+Id: medcom-careCommunication-communication
+Description: "Care related communication between two or more parties in Danish healthcare"
 * status MS
 * category 1..1 MS
 * category from $CCCategoryCodes
