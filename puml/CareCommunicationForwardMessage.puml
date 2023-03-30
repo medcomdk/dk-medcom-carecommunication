@@ -18,9 +18,9 @@ title Simplified example: Forward message
 'Message 1: Forward message
 package "CareCommunication message: Forward message" as forward <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as forwardB {
-        id = "40426e3e-978f-46e8-a366-a30f27854b0a"
+        id = "c0426e3e-978f-46e8-a366-a30f27854b0a"
         type = "message"
-        timestamp = "2022-10-02T11:30:10"
+        timestamp = "2023-03-02T09:00:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as forwardMH{
         id = "aac67161-d0de-4933-a78c-060beafb4814"
@@ -30,12 +30,12 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
         destination.receiver.reference = "Organization/f98ed410-54fe-11ed-bdc3-0242ac120002"
-        sender.reference = "Organization/a5e260f6-54ff-11ed-bdc3-0242ac120002"
+        sender.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
         focus.reference = "Communication/0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb"
     }
     class "Patient (MedComCorePatient)" as forwardPT{
-        id = "31c90594-54ff-11ed-bdc3-0242ac120002"
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -45,15 +45,17 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
     }
     class "Communication (MedComCareCommunication)" as forwardCom{
         id = "0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb"
-        status = "unknown"
-        class = "carecoordination"
-        subject.reference = "Patient/31c90594-54ff-11ed-bdc3-0242ac120002"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
         payload[0].contentString = "Forwarded message from Herlev og Gentofte Hospital: Can you please help me clarifying something about the rehabilitation plan?..."
-        payload[0].extension:date = "2022-10-02T11:30:05Z"
+        payload[0].extension:date = "2023-03-02T09:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/7cae09e0-5501-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "44527000"
         payload[1].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[1].extension:date = "2022-10-01T12:00:05Z"
+        payload[1].extension:date = "2023-03-01T12:00:00+01:00"
         payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[1].extension:authorContact.value = "38683868"
     }
@@ -87,20 +89,27 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
         identifier[1].value = "1042981000016003"
     }
     class "Sender (MedComMessagingOrganization)" as forwardSOrg{
-        id = "a5e260f6-54ff-11ed-bdc3-0242ac120002"
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
+    class "Sender of 'new-message' (MedComMessagingOrganization)" as senderOrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
     class "Provenance (MedComMessagingProvenance)" as forwardPRO{
         id = "7466d9f6-d3ae-4be5-8ed7-b333dad30205"
         target = "MessageHeader/aac67161-d0de-4933-a78c-060beafb4814"
-        occuredDateTime = "2022-10-02T11:30:11Z"
-        recorded = "2022-10-02T11:30:11"
+        occuredDateTime = "2023-03-02T09:00:00+01:00"
+        recorded = "2023-03-02T09:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "forward-message"
-        agent.who.reference = "Organization/a5e260f6-54ff-11ed-bdc3-0242ac120002"
+        agent.who.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
@@ -108,8 +117,8 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        occuredDateTime = "2022-10-01T12:00:11Z"
-        recorded = "2022-10-01T12:00:11"
+        occuredDateTime = "2023-03-01T12:00:00+01:00"
+        recorded = "2023-03-01T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -124,7 +133,8 @@ forwardPrac-[hidden]-newPracR
 newPracR-[hidden]-newPrac
 newPrac-[hidden]-forwardROrg
 forwardROrg-[hidden]- forwardSOrg
-forwardSOrg-[hidden]-forwardPRO
+forwardSOrg-[hidden]-senderOrg
+senderOrg-[hidden]-forwardPRO
 forwardPRO-[hidden]-newPRO
 
 

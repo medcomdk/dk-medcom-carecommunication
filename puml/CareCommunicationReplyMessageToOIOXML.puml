@@ -1,4 +1,4 @@
-@startuml CCreplyOIOXMLMessage
+/' @startuml CCreplyOIOXMLMessage
 
 'layout
 skinparam class {
@@ -18,9 +18,9 @@ title Simplified example: Reply to OIOXML message
 'Message 1: Reply to OIOXML message
 package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as replyB {
-        id = "37bfbc0c-553d-11ed-bdc3-0242ac120002"
+        id = "k7bfbc0c-553d-11ed-bdc3-0242ac120002"
         type = "message"
-        timestamp = "2022-10-01T12:00:10"
+        timestamp = "2023-03-03T12:00:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as replyMH{
         id = "3076d9b0-5521-11ed-bdc3-0242ac120002"
@@ -45,25 +45,37 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     }
     class "Communication (MedComCareCommunication)" as replyCom{
         id = "f54efd18-5520-11ed-bdc3-0242ac120002"
-        status = "unknown"
-        class = "carecoordination"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        encounter.reference = "Encounter/2a5b01e4-8c2c-481b-ab12-e383d8e00629"
         subject.reference = "Patient/e8dd504e-551f-11ed-bdc3-0242ac120002"
-        sent = "2022-10-01T12:00:10Z"
         payload[0].contentString = "We have a question regarding the report of admission..."
-        payload[0].extension:date = "2022-10-01T12:00:05Z"
+        payload[0].extension:date = "2023-03-03T12:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/2b80d2b8-5520-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
         id = "2b80d2b8-5520-11ed-bdc3-0242ac120002"
         practitioner.reference = "Practitioner/1e2d6388-5520-11ed-bdc3-0242ac120002"
-        code.system = "http://terminology.hl7.org/CodeSystem/practitioner-role"
-        code.value = "nurse"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as replyPrac{
         id = "1e2d6388-5520-11ed-bdc3-0242ac120002"
         name.family = "Michael"
         name.given = "Burns"
+    }
+    class "Encounter (MedComCoreEncounter)" as replyEnc{
+        id = "2a5b01e4-8c2c-481b-ab12-e383d8e00629"
+        status.system = "http://hl7.org/fhir/encounter-status"
+        status.code = "finished"
+        class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        class.code = "IMP"
+        subject = "Patient/e8dd504e-551f-11ed-bdc3-0242ac120002"
+        episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7"
     }
     class "Receiver (MedComMessagingOrganization)" as replyROrg{
         id = "0e0e7f78-5520-11ed-bdc3-0242ac120002"
@@ -82,8 +94,8 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as replyPRO{
         id = "6de0806d-7050-4db8-8003-0c72aee52948"
         target.reference = "MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
-        occuredDateTime = "2022-10-01T12:00:11Z"
-        recorded = "2022-10-01T12:00:11"
+        occuredDateTime = "2023-03-03T12:00:00+01:00"
+        recorded = "2023-03-03T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "reply-message"
         agent.who.reference = "Organization/fd0666dc-551f-11ed-bdc3-0242ac120002"
@@ -96,9 +108,11 @@ replyMH -[hidden]-replyPT
 replyPT-[hidden]-replyCom
 replyCom -[hidden]-replyPracR
 replyPracR-[hidden]-replyPrac
-replyPrac-[hidden]-replyROrg
+replyPrac-[hidden]-replyEnc
+replyEnc-[hidden]-replyROrg
 replyROrg-[hidden]- replySOrg
 replySOrg-[hidden]-replyPRO
 
 
 @enduml
+ '/

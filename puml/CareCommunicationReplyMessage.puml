@@ -18,9 +18,9 @@ title Simplified example: Reply message
 'Message 1: reply message
 package "CareCommunication message: Reply message" as reply <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as replyB {
-        id = "256549f7-ed10-422d-8088-f7222b686e46"
+        id = "b56549f7-ed10-422d-8088-f7222b686e46"
         type = "message"
-        timestamp = "2022-10-02T11:30:10"
+        timestamp = "2023-03-02T11:30:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as replyMH{
         id = "d5bd2111-2576-48d3-84d4-8be0297a038d"
@@ -29,13 +29,13 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        destination.receiver.reference = "Organization/9eb51090-5503-11ed-bdc3-0242ac120002"
-        sender.reference = "Organization/b2c584de-5503-11ed-bdc3-0242ac120002"
+        destination.receiver.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        sender.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
         focus.reference = "Communication/4c712bdc-1558-4125-a854-fa8b3a11f6ed"
     }
     class "Patient (MedComCorePatient)" as replyPT{
-        id = "31c90594-54ff-11ed-bdc3-0242ac120002"
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -45,15 +45,17 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
     }
     class "Communication (MedComCareCommunication)" as replyCom{
         id = "4c712bdc-1558-4125-a854-fa8b3a11f6ed"
-        status = "unknown"
-        class = "carecoordination"
-        subject.reference = "Patient/31c90594-54ff-11ed-bdc3-0242ac120002"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
         payload[0].contentString = "Thank you for notifying us, we will take care of it..."
-        payload[0].extension:date = "2022-10-02T11:30:05Z"
+        payload[0].extension:date = "2023-03-02T11:30:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "44527000"
         payload[1].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[1].extension:date = "2022-10-01T12:00:05Z"
+        payload[1].extension:date = "2023-03-01T12:00:00+01:00"
         payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[1].extension:authorContact.value = "38683868"
     } 
@@ -79,28 +81,28 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         name.family = "Michael"
         name.given = "Burns"
     }
-    class "Receiver (MedComMessagingOrganization)" as replyROrg{
-        id = "9eb51090-5503-11ed-bdc3-0242ac120002"
-        identifier[0].system = "https://www.gs1.org/gln"
-        identifier[0].value = "5790000209354"
-        identifier[1].system = "urn:oid:1.2.208.176.1.1"
-        identifier[1].value = "265161000016000"
-    }
     class "Sender (MedComMessagingOrganization)" as replySOrg{
-        id = "b2c584de-5503-11ed-bdc3-0242ac120002"
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
+    class "Receiver (MedComMessagingOrganization)" as replyROrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
     class "Provenance (MedComMessagingProvenance)" as replyPRO{
         id = "30c0f779-783f-46b2-b38f-faebd2bedb3f"
         target.reference = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
-        occuredDateTime = "2022-10-02T11:30:11Z"
-        recorded = "2022-10-02T11:30:11"
+        occuredDateTime = "2023-03-02T11:30:00+01:00"
+        recorded = "2023-03-02T11:30:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "reply-message"
-        agent.who.reference = "Organization/b2c584de-5503-11ed-bdc3-0242ac120002"
+        agent.who.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
@@ -108,11 +110,11 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        occuredDateTime = "2022-10-02T11:30:11Z"
-        recorded = "2022-10-02T11:30:11"
+        occuredDateTime = "2023-03-01T12:00:00+01:00"
+        recorded = "2023-03-01T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
-        agent.who.reference = "Organization/b2c584de-5503-11ed-bdc3-0242ac120002"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }
 
 replyB -[hidden]- replyMH

@@ -4,7 +4,7 @@ name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
 status: active
-version: "2.0.0"
+version: "2.1.0"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: Release
