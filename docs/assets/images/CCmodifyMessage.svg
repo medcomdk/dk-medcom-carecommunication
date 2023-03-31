@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1855px" preserveAspectRatio="none" style="width:783px;height:1855px;background:#FFFFFF;" version="1.1" viewBox="0 0 783 1855" width="783px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="279" x="245" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="269" x="250" y="24.5332">Simplified example: Modified message</text><!--MD5=[8e1a684f99a2389dd8971accb07dc7c3]
-cluster modify--><g id="cluster_modify"><rect fill="none" height="1804" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="770" x="7" y="45.6094"/><path d="M362,45.6094 L362,56.2188 L352,66.2188 L7,66.2188 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="345" x="10" y="61.1426">CareCommunication message: Modified message</text></g><!--MD5=[a4e94cd949f445477c264a461400ffd1]
-class modifyB--><g id="elem_modifyB"><rect codeLine="19" fill="#FFFFFF" height="88.4375" id="modifyB" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="81.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="242.5" y="101.1426">Bundle (MedComCareCommunicationMessage)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="109.2188" y2="109.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="29.5" y="127.752">id = "cf9019c6-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="29.5" y="145.3613">type = "message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="29.5" y="162.9707">timestamp = "2022-10-01T12:05:10"</text></g><!--MD5=[780eac3c728d2f6fe355e6c035b8ea3e]
-class modifyMH--><g id="elem_modifyMH"><rect codeLine="24" fill="#FFFFFF" height="229.3125" id="modifyMH" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="179.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="404" x="190" y="199.1426">MessageHeader (MedComCareCommunicationMessageHeader)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="207.2188" y2="207.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="29.5" y="225.752">id = "f8aa0bf0-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="624" x="29.5" y="243.3613">event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="29.5" y="260.9707">event.code = "care-communication-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="702" x="29.5" y="278.5801">destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="29.5" y="296.1895">destination.use.code = "primary"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="460" x="29.5" y="313.7988">destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="574" x="29.5" y="331.4082">destination.receiver.reference = "Organization/87b881a6-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="494" x="29.5" y="349.0176">sender.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="434" x="29.5" y="366.627">source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="514" x="29.5" y="384.2363">focus[0].reference = "Communication/273bc02c-9000-11ec-b909-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="511" x="29.5" y="401.8457">focus[1].reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"</text></g><!--MD5=[c166a3a0ca4d90e04ce59eae1414d3a1]
-class modifyPT--><g id="elem_modifyPT"><rect codeLine="37" fill="#FFFFFF" height="158.875" id="modifyPT" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="418.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="297.5" y="438.1426">Patient (MedComCorePatient)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="446.2188" y2="446.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="29.5" y="464.752">id = "550b46e4-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="29.5" y="482.3613">identifier.system = "urn:oid:1.2.208.176.1.2"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="29.5" y="499.9707">identifier.value = "2509479989"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="29.5" y="517.5801">name.use = "official"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="29.5" y="535.1895">name.family = "Elmer"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="29.5" y="552.7988">name.given[0] = "Bruno"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="29.5" y="570.4082">name.given[1] = "Test"</text></g><!--MD5=[456e12653116d080c5b4af160480e57c]
-class modifyCom--><g id="elem_modifyCom"><rect codeLine="46" fill="#FFFFFF" height="176.4844" id="modifyCom" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="587.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="244.5" y="607.1426">Communication (MedComCareCommunication)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="615.2188" y2="615.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="29.5" y="633.752">id = "273bc02c-9000-11ec-b909-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="29.5" y="651.3613">status = "entered-in-error"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="29.5" y="668.9707">class = "carecoordination"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="459" x="29.5" y="686.5801">subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="684" x="29.5" y="704.1895">payload[0].contentString = "Wrong paragraf. Please notice paragraf 2.3.4 in the rehabilitation plan instead..."</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="335" x="29.5" y="721.7988">payload[0].extension:date = "2022-10-01T12:05:00Z"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="633" x="29.5" y="739.4082">payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="352" x="29.5" y="757.0176">payload[0].extension:authorContact.value = "38683868"</text></g><!--MD5=[4c40ac158f29283f3b0b246e9fdf12fa]
-class modifyPracR--><g id="elem_modifyPracR"><rect codeLine="56" fill="#FFFFFF" height="106.0469" id="modifyPracR" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="773.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="303" x="240.5" y="793.1426">PractitionerRole (MedComCorePractitionerRole)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="801.2188" y2="801.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="29.5" y="819.752">id = "6ff69f1c-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="510" x="29.5" y="837.3613">practitioner.reference = "Practitioner/356947dc-551c-11ed-bdc3-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="725" x="29.5" y="854.9707">code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="29.5" y="872.5801">code.value = "sygeplejerske"</text></g><!--MD5=[5d676a3c99b34c5ebc9920bdf2e606ed]
-class modifyPrac--><g id="elem_modifyPrac"><rect codeLine="62" fill="#FFFFFF" height="88.4375" id="modifyPrac" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="889.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="269.5" y="909.1426">Practitioner (MedComCorePractitioner)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="917.2188" y2="917.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="29.5" y="935.752">id = "356947dc-551c-11ed-bdc3-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="29.5" y="953.3613">name.family = "Michael"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="29.5" y="970.9707">name.given = "Burns"</text></g><!--MD5=[83ba68dc4a509baff37de99c2e8df941]
-class newCom--><g id="elem_newCom"><rect codeLine="67" fill="#FFFFFF" height="176.4844" id="newCom" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="987.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="244.5" y="1007.1426">Communication (MedComCareCommunication)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1015.2188" y2="1015.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="29.5" y="1033.752">id = "273bc02c-9000-11ec-b909-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="29.5" y="1051.3613">status = "unknown"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="29.5" y="1068.9707">class = "carecoordination"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="459" x="29.5" y="1086.5801">subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="518" x="29.5" y="1104.1895">payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="335" x="29.5" y="1121.7988">payload[0].extension:date = "2022-10-01T12:00:05Z"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="633" x="29.5" y="1139.4082">payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="352" x="29.5" y="1157.0176">payload[0].extension:authorContact.value = "38683868"</text></g><!--MD5=[6c1c7842632298fab6f9653b2d4a9ab1]
-class modifyROrg--><g id="elem_modifyROrg"><rect codeLine="77" fill="#FFFFFF" height="123.6563" id="modifyROrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1184.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="255" y="1204.1426">Receiver (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1212.2188" y2="1212.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="29.5" y="1230.752">id = "87b881a6-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29.5" y="1248.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29.5" y="1265.9707">identifier[0].value = "5790001348120"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29.5" y="1283.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29.5" y="1301.1895">identifier[1].value = "953741000016009"</text></g><!--MD5=[ffbf6b3697e0d261c302e0bdc096f2ef]
-class modifySOrg--><g id="elem_modifySOrg"><rect codeLine="84" fill="#FFFFFF" height="123.6563" id="modifySOrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1318.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="260" y="1338.1426">Sender (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1346.2188" y2="1346.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="312" x="29.5" y="1364.752">id = "9e183b44-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29.5" y="1382.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29.5" y="1399.9707">identifier[0].value = "5790000209354"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29.5" y="1417.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29.5" y="1435.1895">identifier[1].value = "265161000016000"</text></g><!--MD5=[024d99143ebf7dc6f4c7e4bd47c8e06e]
-class modifyPRO--><g id="elem_modifyPRO"><rect codeLine="91" fill="#FFFFFF" height="211.7031" id="modifyPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1452.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="247" y="1472.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1480.2188" y2="1480.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="29.5" y="1498.752">id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="437" x="29.5" y="1516.3613">target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="29.5" y="1533.9707">occuredDateTime = "2022-10-01T12:05:10Z"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="29.5" y="1551.5801">recorded = "2022-10-01T12:05:10"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29.5" y="1569.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="29.5" y="1586.7988">activity.code = "modify-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="515" x="29.5" y="1604.4082">agent.who.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="448" x="29.5" y="1622.0176">entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="29.5" y="1639.627">entity.role.value = "revision"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="535" x="29.5" y="1657.2363">entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"</text></g><!--MD5=[32408643bd8caff34a368f9c9dab36a9]
-class newPRO--><g id="elem_newPRO"><rect codeLine="103" fill="#FFFFFF" height="158.875" id="newPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1674.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="247" y="1694.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1702.2188" y2="1702.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="29.5" y="1720.752">id = "4c284936-5454-4116-95fc-3c8eeeed2400"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="505" x="29.5" y="1738.3613">target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="29.5" y="1755.9707">occuredDateTime = "2022-10-01T12:00:11Z"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="29.5" y="1773.5801">recorded = "2022-10-01T12:00:11"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29.5" y="1791.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="29.5" y="1808.7988">activity.code = "new-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="506" x="29.5" y="1826.4082">agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</text></g><!--MD5=[fe63d0696e85df9ac3ddad3a77e82dbb]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1785px" preserveAspectRatio="none" style="width:783px;height:1785px;background:#FFFFFF;" version="1.1" viewBox="0 0 783 1785" width="783px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="279" x="245" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="269" x="250" y="24.5332">Simplified example: Modified message</text><!--MD5=[8e1a684f99a2389dd8971accb07dc7c3]
+cluster modify--><g id="cluster_modify"><rect fill="none" height="1734" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="770" x="7" y="45.6094"/><path d="M362,45.6094 L362,56.2188 L352,66.2188 L7,66.2188 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="345" x="10" y="61.1426">CareCommunication message: Modified message</text></g><!--MD5=[a4e94cd949f445477c264a461400ffd1]
+class modifyB--><g id="elem_modifyB"><rect codeLine="19" fill="#FFFFFF" height="88.4375" id="modifyB" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="81.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="242.5" y="101.1426">Bundle (MedComCareCommunicationMessage)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="109.2188" y2="109.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="307" x="29.5" y="127.752">id = "df9019c6-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="29.5" y="145.3613">type = "message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="273" x="29.5" y="162.9707">timestamp = "2023-03-01T12:30:00+01:00"</text></g><!--MD5=[780eac3c728d2f6fe355e6c035b8ea3e]
+class modifyMH--><g id="elem_modifyMH"><rect codeLine="24" fill="#FFFFFF" height="211.7031" id="modifyMH" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="179.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="404" x="190" y="199.1426">MessageHeader (MedComCareCommunicationMessageHeader)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="207.2188" y2="207.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="29.5" y="225.752">id = "f8aa0bf0-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="624" x="29.5" y="243.3613">event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="29.5" y="260.9707">event.code = "care-communication-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="702" x="29.5" y="278.5801">destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="29.5" y="296.1895">destination.use.code = "primary"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="460" x="29.5" y="313.7988">destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="550" x="29.5" y="331.4082">destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="485" x="29.5" y="349.0176">sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="434" x="29.5" y="366.627">source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="495" x="29.5" y="384.2363">focus.reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"</text></g><!--MD5=[c166a3a0ca4d90e04ce59eae1414d3a1]
+class modifyPT--><g id="elem_modifyPT"><rect codeLine="36" fill="#FFFFFF" height="158.875" id="modifyPT" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="401.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="297.5" y="421.1426">Patient (MedComCorePatient)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="429.2188" y2="429.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304" x="29.5" y="447.752">id = "733cef33-3626-422b-955d-d506aaa65fe1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="29.5" y="465.3613">identifier.system = "urn:oid:1.2.208.176.1.2"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="29.5" y="482.9707">identifier.value = "2509479989"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="29.5" y="500.5801">name.use = "official"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="29.5" y="518.1895">name.family = "Elmer"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="29.5" y="535.7988">name.given[0] = "Bruno"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="29.5" y="553.4082">name.given[1] = "Test"</text></g><!--MD5=[83ba68dc4a509baff37de99c2e8df941]
+class newCom--><g id="elem_newCom"><rect codeLine="45" fill="#FFFFFF" height="282.1406" id="newCom" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="570.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="244.5" y="590.1426">Communication (MedComCareCommunication)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="598.2188" y2="598.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="29.5" y="616.752">id = "d63178cc-690f-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="298" x="29.5" y="634.3613">status.system = "http://hl7.org/fhir/event-status"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="29.5" y="651.9707">status.code = "unknown"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="721" x="29.5" y="669.5801">category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="29.5" y="687.1895">category.code = "training"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="451" x="29.5" y="704.7988">subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="518" x="29.5" y="722.4082">payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="371" x="29.5" y="740.0176">payload[0].extension:date = "2023-03-01T12:00:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="641" x="29.5" y="757.627">payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="352" x="29.5" y="775.2363">payload[0].extension:authorContact.value = "38683868"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="581" x="29.5" y="792.8457">payload[1].contentString = "Corrected the category to 'Traning'. Selected a wrong category."</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="371" x="29.5" y="810.4551">payload[1].extension:date = "2023-03-01T12:30:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="641" x="29.5" y="828.0645">payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="352" x="29.5" y="845.6738">payload[1].extension:authorContact.value = "38683868"</text></g><!--MD5=[4c40ac158f29283f3b0b246e9fdf12fa]
+class modifyPracR--><g id="elem_modifyPracR"><rect codeLine="61" fill="#FFFFFF" height="106.0469" id="modifyPracR" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="900.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="303" x="240.5" y="920.1426">PractitionerRole (MedComCorePractitionerRole)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="928.2188" y2="928.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="307" x="29.5" y="946.752">id = "eda90bde-54f9-11ed-bdc3-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="511" x="29.5" y="964.3613">practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="725" x="29.5" y="981.9707">code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="29.5" y="999.5801">code.value = "sygeplejerske"</text></g><!--MD5=[5d676a3c99b34c5ebc9920bdf2e606ed]
+class modifyPrac--><g id="elem_modifyPrac"><rect codeLine="67" fill="#FFFFFF" height="88.4375" id="modifyPrac" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1016.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="269.5" y="1036.1426">Practitioner (MedComCorePractitioner)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1044.2188" y2="1044.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="29.5" y="1062.752">id = "58c811a5-4082-44eb-9d66-ccbb112d4973"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="29.5" y="1080.3613">name.family = "Michael"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="29.5" y="1097.9707">name.given = "Burns"</text></g><!--MD5=[6c1c7842632298fab6f9653b2d4a9ab1]
+class modifyROrg--><g id="elem_modifyROrg"><rect codeLine="72" fill="#FFFFFF" height="123.6563" id="modifyROrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1114.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="274" x="255" y="1134.1426">Receiver (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1142.2188" y2="1142.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="288" x="29.5" y="1160.752">id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29.5" y="1178.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29.5" y="1195.9707">identifier[0].value = "5790001348120"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29.5" y="1213.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29.5" y="1231.1895">identifier[1].value = "953741000016009"</text></g><!--MD5=[ffbf6b3697e0d261c302e0bdc096f2ef]
+class modifySOrg--><g id="elem_modifySOrg"><rect codeLine="79" fill="#FFFFFF" height="123.6563" id="modifySOrg" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1248.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="260" y="1268.1426">Sender (MedComMessagingOrganization)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1276.2188" y2="1276.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="303" x="29.5" y="1294.752">id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="29.5" y="1312.3613">identifier[0].system = "https://www.gs1.org/gln"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="29.5" y="1329.9707">identifier[0].value = "5790000209354"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="29.5" y="1347.5801">identifier[1].system = "urn:oid:1.2.208.176.1.1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="29.5" y="1365.1895">identifier[1].value = "265161000016000"</text></g><!--MD5=[024d99143ebf7dc6f4c7e4bd47c8e06e]
+class modifyPRO--><g id="elem_modifyPRO"><rect codeLine="86" fill="#FFFFFF" height="211.7031" id="modifyPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1382.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="247" y="1402.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1410.2188" y2="1410.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="29.5" y="1428.752">id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="437" x="29.5" y="1446.3613">target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="321" x="29.5" y="1463.9707">occuredDateTime = "2023-03-01T12:30:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="29.5" y="1481.5801">recorded = "2023-03-01T12:30:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29.5" y="1499.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="29.5" y="1516.7988">activity.code = "modify-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="506" x="29.5" y="1534.4082">agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="448" x="29.5" y="1552.0176">entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="29.5" y="1569.627">entity.role.value = "revision"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="535" x="29.5" y="1587.2363">entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"</text></g><!--MD5=[32408643bd8caff34a368f9c9dab36a9]
+class newPRO--><g id="elem_newPRO"><rect codeLine="98" fill="#FFFFFF" height="158.875" id="newPRO" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="1604.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="247" y="1624.1426">Provenance (MedComMessagingProvenance)</text><line style="stroke:#000000;stroke-width:0.5;" x1="24.5" x2="759.5" y1="1632.2188" y2="1632.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="29.5" y="1650.752">id = "4c284936-5454-4116-95fc-3c8eeeed2400"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="505" x="29.5" y="1668.3613">target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="321" x="29.5" y="1685.9707">occuredDateTime = "2023-03-01T12:00:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="29.5" y="1703.5801">recorded = "2023-03-01T12:00:00+01:00"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="640" x="29.5" y="1721.1895">activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="29.5" y="1738.7988">activity.code = "new-message"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="506" x="29.5" y="1756.4082">agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"</text></g><!--MD5=[456e12653116d080c5b4af160480e57c]
+class modifyCom--><g id="elem_modifyCom"><rect fill="#FFFFFF" height="27.6094" id="modifyCom" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="737" x="23.5" y="862.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="357" y="882.1426">modifyCom</text></g><!--MD5=[fe63d0696e85df9ac3ddad3a77e82dbb]
 link modifyB to modifyMH--><!--MD5=[39ee7ccc71a84bfe2423fa589a45d645]
-link modifyMH to modifyPT--><!--MD5=[a0ee6e8a603af3eaa0079c85fe59d359]
-link modifyPT to modifyCom--><!--MD5=[123f191902668686ce684242e91b096c]
+link modifyMH to modifyPT--><!--MD5=[7c78e64542a9749be268d4d5d8ed96ee]
+link modifyPT to newCom--><!--MD5=[585c20ac245bc172f52dfa9d7ccac236]
+link newCom to modifyCom--><!--MD5=[123f191902668686ce684242e91b096c]
 link modifyCom to modifyPracR--><!--MD5=[93a26b3e2e15431fc9c57cbbf7c7383c]
-link modifyPracR to modifyPrac--><!--MD5=[8de81638442ab0cd99a3d8d468f1b8ec]
-link modifyPrac to newCom--><!--MD5=[d1bc4bdd0a86e7f8573a4dbc2d269206]
-link newCom to modifyROrg--><!--MD5=[e3fa1ad76dc17e3b10c7613180429e60]
+link modifyPracR to modifyPrac--><!--MD5=[7fa973949efe09d63bdde46397e09254]
+link modifyPrac to modifyROrg--><!--MD5=[e3fa1ad76dc17e3b10c7613180429e60]
 link modifyROrg to modifySOrg--><!--MD5=[994fe338fbf0796a001b22c0240d1912]
 link modifySOrg to modifyPRO--><!--MD5=[321ee0300b9cf6c90a7496eb9b6004fd]
-link modifyPRO to newPRO--><!--MD5=[b4f7d420110aedc495db123e10424f94]
+link modifyPRO to newPRO--><!--MD5=[f4734d18cf8ad8cbc0841bfa1b0c0064]
 @startuml CCmodifyMessage
 
 'layout
@@ -41,9 +41,9 @@ title Simplified example: Modified message
 'Message 1: modify message
 package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as modifyB {
-        id = "cf9019c6-690d-11ed-9022-0242ac120002"
+        id = "df9019c6-690d-11ed-9022-0242ac120002"
         type = "message"
-        timestamp = "2022-10-01T12:05:10"
+        timestamp = "2023-03-01T12:30:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as modifyMH{
         id = "f8aa0bf0-690d-11ed-9022-0242ac120002"
@@ -52,14 +52,13 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/87b881a6-690d-11ed-9022-0242ac120002"
-        sender.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        focus[0].reference = "Communication/273bc02c-9000-11ec-b909-0242ac120002"
-        focus[1].reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
+        focus.reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
     }
     class "Patient (MedComCorePatient)" as modifyPT{
-        id = "550b46e4-690d-11ed-9022-0242ac120002"
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -67,46 +66,42 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
         name.given[0] = "Bruno"
         name.given[1] = "Test"
     }
-    class "Communication (MedComCareCommunication)" as modifyCom{
-        id = "273bc02c-9000-11ec-b909-0242ac120002"
-        status = "entered-in-error"
-        class = "carecoordination"
-        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
-        payload[0].contentString = "Wrong paragraf. Please notice paragraf 2.3.4 in the rehabilitation plan instead..."
-        payload[0].extension:date = "2022-10-01T12:05:00Z"
-        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "d63178cc-690f-11ed-9022-0242ac120002"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code = "training"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2023-03-01T12:00:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
+        payload[1].contentString = "Corrected the category to 'Traning'. Selected a wrong category."
+        payload[1].extension:date = "2023-03-01T12:30:00+01:00"
+        payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "38683868"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as modifyPracR{
-        id = "6ff69f1c-690d-11ed-9022-0242ac120002"
-        practitioner.reference = "Practitioner/356947dc-551c-11ed-bdc3-0242ac120002"
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as modifyPrac{
-        id = "356947dc-551c-11ed-bdc3-0242ac120002"
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
         name.family = "Michael"
         name.given = "Burns"
     }
-    class "Communication (MedComCareCommunication)" as newCom{
-        id = "273bc02c-9000-11ec-b909-0242ac120002"
-        status = "unknown"
-        class = "carecoordination"
-        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
-        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[0].extension:date = "2022-10-01T12:00:05Z"
-        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
-        payload[0].extension:authorContact.value = "38683868"
-    }
     class "Receiver (MedComMessagingOrganization)" as modifyROrg{
-        id = "87b881a6-690d-11ed-9022-0242ac120002"
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
     class "Sender (MedComMessagingOrganization)" as modifySOrg{
-        id = "9e183b44-690d-11ed-9022-0242ac120002"
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
@@ -115,11 +110,11 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as modifyPRO{
         id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"
         target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
-        occuredDateTime = "2022-10-01T12:05:10Z"
-        recorded = "2022-10-01T12:05:10"
+        occuredDateTime = "2023-03-01T12:30:00+01:00"
+        recorded = "2023-03-01T12:30:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "modify-message"
-        agent.who.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
@@ -127,8 +122,8 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        occuredDateTime = "2022-10-01T12:00:11Z"
-        recorded = "2022-10-01T12:00:11"
+        occuredDateTime = "2023-03-01T12:00:00+01:00"
+        recorded = "2023-03-01T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -136,11 +131,11 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
 
 modifyB -[hidden]- modifyMH
 modifyMH -[hidden]-modifyPT
-modifyPT-[hidden]-modifyCom
+modifyPT-[hidden]-newCom
+newCom-[hidden]-modifyCom
 modifyCom -[hidden]-modifyPracR
 modifyPracR-[hidden]-modifyPrac
-modifyPrac-[hidden]-newCom
-newCom-[hidden]- -modifyROrg
+modifyPrac-[hidden]-modifyROrg
 modifyROrg-[hidden]- modifySOrg
 modifySOrg-[hidden]-modifyPRO
 modifyPRO-[hidden]-newPRO
@@ -165,9 +160,9 @@ title Simplified example: Modified message
 
 package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as modifyB {
-        id = "cf9019c6-690d-11ed-9022-0242ac120002"
+        id = "df9019c6-690d-11ed-9022-0242ac120002"
         type = "message"
-        timestamp = "2022-10-01T12:05:10"
+        timestamp = "2023-03-01T12:30:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as modifyMH{
         id = "f8aa0bf0-690d-11ed-9022-0242ac120002"
@@ -176,14 +171,13 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-        destination.receiver.reference = "Organization/87b881a6-690d-11ed-9022-0242ac120002"
-        sender.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-        focus[0].reference = "Communication/273bc02c-9000-11ec-b909-0242ac120002"
-        focus[1].reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
+        focus.reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
     }
     class "Patient (MedComCorePatient)" as modifyPT{
-        id = "550b46e4-690d-11ed-9022-0242ac120002"
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
         identifier.system = "urn:oid:1.2.208.176.1.2"
         identifier.value = "2509479989"
         name.use = "official"
@@ -191,46 +185,42 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
         name.given[0] = "Bruno"
         name.given[1] = "Test"
     }
-    class "Communication (MedComCareCommunication)" as modifyCom{
-        id = "273bc02c-9000-11ec-b909-0242ac120002"
-        status = "entered-in-error"
-        class = "carecoordination"
-        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
-        payload[0].contentString = "Wrong paragraf. Please notice paragraf 2.3.4 in the rehabilitation plan instead..."
-        payload[0].extension:date = "2022-10-01T12:05:00Z"
-        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "d63178cc-690f-11ed-9022-0242ac120002"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code = "training"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2023-03-01T12:00:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
+        payload[1].contentString = "Corrected the category to 'Traning'. Selected a wrong category."
+        payload[1].extension:date = "2023-03-01T12:30:00+01:00"
+        payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "38683868"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as modifyPracR{
-        id = "6ff69f1c-690d-11ed-9022-0242ac120002"
-        practitioner.reference = "Practitioner/356947dc-551c-11ed-bdc3-0242ac120002"
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as modifyPrac{
-        id = "356947dc-551c-11ed-bdc3-0242ac120002"
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
         name.family = "Michael"
         name.given = "Burns"
     }
-    class "Communication (MedComCareCommunication)" as newCom{
-        id = "273bc02c-9000-11ec-b909-0242ac120002"
-        status = "unknown"
-        class = "carecoordination"
-        subject.reference = "Patient/550b46e4-690d-11ed-9022-0242ac120002"
-        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[0].extension:date = "2022-10-01T12:00:05Z"
-        payload[0].extension:author.reference = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
-        payload[0].extension:authorContact.value = "38683868"
-    }
     class "Receiver (MedComMessagingOrganization)" as modifyROrg{
-        id = "87b881a6-690d-11ed-9022-0242ac120002"
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790001348120"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "953741000016009"
     }
     class "Sender (MedComMessagingOrganization)" as modifySOrg{
-        id = "9e183b44-690d-11ed-9022-0242ac120002"
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         identifier[0].system = "https://www.gs1.org/gln"
         identifier[0].value = "5790000209354"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
@@ -239,11 +229,11 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as modifyPRO{
         id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"
         target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
-        occuredDateTime = "2022-10-01T12:05:10Z"
-        recorded = "2022-10-01T12:05:10"
+        occuredDateTime = "2023-03-01T12:30:00+01:00"
+        recorded = "2023-03-01T12:30:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "modify-message"
-        agent.who.reference = "Organization/9e183b44-690d-11ed-9022-0242ac120002"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
@@ -251,8 +241,8 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        occuredDateTime = "2022-10-01T12:00:11Z"
-        recorded = "2022-10-01T12:00:11"
+        occuredDateTime = "2023-03-01T12:00:00+01:00"
+        recorded = "2023-03-01T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -260,11 +250,11 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
 
 modifyB -[hidden]- modifyMH
 modifyMH -[hidden]-modifyPT
-modifyPT-[hidden]-modifyCom
+modifyPT-[hidden]-newCom
+newCom-[hidden]-modifyCom
 modifyCom -[hidden]-modifyPracR
 modifyPracR-[hidden]-modifyPrac
-modifyPrac-[hidden]-newCom
-newCom-[hidden]- -modifyROrg
+modifyPrac-[hidden]-modifyROrg
 modifyROrg-[hidden]- modifySOrg
 modifySOrg-[hidden]-modifyPRO
 modifyPRO-[hidden]-newPRO

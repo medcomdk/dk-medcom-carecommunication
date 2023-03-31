@@ -37,7 +37,7 @@ Use cases describe the different scenarios in which a standard support. For a ce
 
 <!-- The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities. -->
 
-[Danish: Use cases](assets/CareCommunication_usecases_v2.0.0.pdf) 
+[Danish: Use cases](assets/CareCommunication_usecases_v2.1.0.pdf) 
 
  >Note: Use cases for CareCommunication in English, are currently in preparation. As soon as they are, ready they will be published. 
 
@@ -78,15 +78,15 @@ Certification of a system implies both an approved test protocol and a run troug
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> 
 
-<b>The test protocols and test scripts are currently in preparation. As soon as they are ready, they will be published below.</b>
+<b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
 
-<!-- **Sending a CareCommunication**
-  * Test protocol
-  * TouchStone Testscripts
+ **Sending a CareCommunication**
+  * [Test protocol in Danish (docx)](CareCommunication_Testprotokol_Afsendelse.docx)
+  * TouchStone Test scripts- link will be provided soon
 
 **Receiving a CareCommunication**
-  * Test protocol
-  * TouchStone Testscripts -->
+  * [Test protocol in Danish (docx)](CareCommunication_Testprotokol_Modtagelse.docx)
+  * TouchStone Test scripts 
 
 
 <!-- ## 3 Release Notes
