@@ -8,9 +8,9 @@
   * [1.4 Message segments](#14-message-segments)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
-* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
+<!-- * [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
   * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1---carecommunication-only-text)
-  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment)
+  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment) -->
 
 ## 1 Profiles in the CareCommunication Standard 
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
@@ -201,7 +201,7 @@ All types of simplified examples are created as XML or JSON examples in the Care
 <br><br>
 
 
-## 4 Timestamps in the CareCommunication 
+<!-- ## 4 Timestamps in the CareCommunication 
 
 The CareCommunication contains six important timestamps:
 * Bundle.timestamp
@@ -241,4 +241,4 @@ If the CareCommunication contains a message text and one or more attachments, th
 <figure>
 <img src="../images/cc_attachement.svg" alt="Simplified example: CareCommunication text and attachment." style="width: 55%" id="Fig9">
 <figcaption text-align = "center"><b>Figure 9: Simplified example: CareCommunication text and attachment </b></figcaption>
-</figure>
+</figure> -->
