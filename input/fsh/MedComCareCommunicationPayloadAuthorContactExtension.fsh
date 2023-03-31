@@ -1,4 +1,4 @@
-Extension:  MedComCareCommunicationPayloadAuthorContactExtension
+Extension: MedComCareCommunicationPayloadAuthorContactExtension
 Id: medcom-carecommunication-author-contact-extension
 Title: "PayloadAuthorContactExtension"
 Description: "Extension to contain the contact information tha author of the payload"

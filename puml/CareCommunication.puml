@@ -13,7 +13,8 @@ class "MedComCorePatient" as patient
 class "MedComCorePractitionerRole" as pracRole
 class "MedComCoreCareTeam" as careteam
 class "MedComCorePractitioner" as author
-
+class "MedComCoreEncounter" as encounter
+class "MedComCoreOrganization" as organization
 
 message -- messageheader : "entry"
 messageheader -- communication : "focus"
@@ -27,6 +28,9 @@ communication -- careteam : "recipient"
 communication -- pracRole : "sender"
 communication -- pracRole : "recipient"
 pracRole -- author : "practitioner"
+pracRole -- organization : "organization"
+careteam -- organization : "managingOrganization"
+communication -- encounter : "encounter"
 
 
 messageheader -- messagingOrganization : "receiver"

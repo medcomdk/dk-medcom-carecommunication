@@ -1,4 +1,4 @@
-Extension:  MedComCareCommunicationAttachmentExtension
+Extension: MedComCareCommunicationAttachmentExtension
 Id: medcom-carecommunication-attachment-identifier-extension
 Title: "AttachmentIdentifierExtension"
 Description: "An extension holding an attachment identifier"

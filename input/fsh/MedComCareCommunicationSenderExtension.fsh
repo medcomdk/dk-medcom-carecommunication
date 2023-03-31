@@ -1,4 +1,4 @@
-Extension:  MedComCareCommunicationSenderExtension
+Extension: MedComCareCommunicationSenderExtension
 Id: medcom-carecommunication-sender-extension
 Title: "SenderExtension"
 Description: "Reference to a more specfic sender of a CareCommunication message."
