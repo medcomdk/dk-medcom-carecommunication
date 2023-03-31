@@ -10,11 +10,12 @@
     * [4.1 Kategori og Emne](#41-kategori-og-emne)
     * [4.2 Meddelelsessegment](#42-meddelelsessegment)
       * [4.2.1 Meddelesestekst](#421-meddelelsestekst-feltet)
+        * [4.2.1.1 Kopierede eller vedhæftede journalnotater](#journalnotater)
       * [4.2.2 Signatur](#422-signatur)
     * [4.3 Prioritet-krav om afgrænset brug](#43-prioritet-krav-om-afgrænset-brug)
-    * [4.4 Vedhæftede filer](#44-vedhæftede-filer)
+    * [4.4 Vedhæftede filer](#bilag)
     * [4.5 Forsendelsesmuligheder og overblik](#45-forsendelsesmuligheder-og-overblik)
-        * [4.5.1 Bbesvarelse](#451-besvarelse)
+        * [4.5.1 Besvarelse](#451-besvarelse)
         * [4.5.2 Videresendelse](#452-videresendelse)
         * [4.5.3 Annullering og rettelse](#453-annullering-og-rettelse)
     * [4.6 Overblik i brugergrænsefladen](#46-overblik-i-brugergrænsefladen)
@@ -70,7 +71,7 @@ Korrespondancemeddelelsen <u>skal</u> indeholde information om:
 
 Korrespondancemeddelelsen <u>kan</u> (=frivilligt) indeholde:
 *	Specifik modtager hvis relevant (fx specifik sagsbehandler eller socialrådgiver i kommunen) 
-*	Emne (supplerer den valgte kategori med et emneord, som fortæller i detaljer, hvad indholdet i korrespondancemeddelelsen drejer sig om, liste med emner er ofte defineret via regionale sundhedsaftaler)
+*	Emne (supplerer den valgte kategori med et emneord, som fortæller i detaljer, hvad indholdet i korrespondancemeddelelsen drejer sig om. Liste med emner er ofte defineret via regionale sundhedsaftaler)
 *	Formatering af meddelelsesteksten (herunder bl.a. brug af formatering som <b>fed</b>, <u>understregning</u>, <em>kursiv</em> og tabeller i teksten)
 *	Vedhæftede filer (knyttes til et meddelelsessegment)
 *	Prioritet (Obs. Kan kun påsættes ved valg af den nationale kategori ”Vedr. henvisning”) 
@@ -96,7 +97,7 @@ For at understøtte brugeren mest muligt <u>anbefales følgende</u>:
 
 <p>&nbsp;</p>
 
-MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filtyper, som kan vedhæftes korrespondancemeddelelsen. Governance, omfattende regler og retningslinjer. herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i MedCom-regi. Governance for terminologier og serveren findes via forsiden for Governance for MedCom FHIR Messaging. 
+MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filtyper, som kan vedhæftes korrespondancemeddelelsen. Governance, omfattende regler og retningslinjer, herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i MedCom-regi. Governance for terminologier og serveren findes via forsiden for Governance for MedCom FHIR Messaging. 
 <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Klik her for at læse Governance for MedCom FHIR Messaging.</a>
 
 ### 4.2 Meddelelsessegment
@@ -107,8 +108,8 @@ Meddelelsestekst-feltet er et fritekstfelt, hvori afsender skriver sin tekst. De
 MedCom anbefaler, at afsender- og modtagersystemer understøtter formatering, herunder bl.a. <b>fed</b>, <u>understregning</u>, <em>kursiv</em> og tabeller i teksten. Dvs. at afsender har mulighed for at formatere sin meddelelsestekst, og modtager kan se eventuel formatering i meddelelsesfeltet. Formateringen af meddelelsesteksten følger XHTML. MedCom definerer et subset af XHTML, som systemerne kan vælge at understøtte.
 <br> <a href="https://medcomdk.github.io/dk-medcom-core/assets/documents/MedComCore-Styling_the_XHTML.html" target="_blank">Klik her for at læse MedCom's definition af  XHTML subsetet.</a> <br> 
 
-##### 4.2.1.1 Kopierede eller vedhæftede journalnotater
-Hvis afsender kopierer og indsætter kortere journalnotater i meddelelsesteksten, anbefaler MedCom, at navn på forfatter, samt tidspunkt for oprettelse, af journalnotatet påskrives og medsendes i meddelelsens tekstfelt. Hvis afsender ønsker at medsende længere journalnotater, f.eks. mere end 1000 tegn (svarende til en halv side), anbefaler MedCom, at disse medsendes som vedhæftede filer. [Se afsnit 4.4 Vedhæftede filer](#44-vedhæftede-filer). 
+##### 4.2.1.1 Kopierede eller vedhæftede journalnotater {#journalnotater}
+Hvis afsender kopierer og indsætter kortere journalnotater i meddelelsesteksten, anbefaler MedCom, at navn på forfatter, samt tidspunkt for oprettelse, af journalnotatet påskrives og medsendes i meddelelsens tekstfelt. Hvis afsender ønsker at medsende længere journalnotater, f.eks. mere end 1000 tegn (svarende til en halv side), anbefaler MedCom, at disse medsendes som vedhæftede filer. [Se afsnit 4.4 Vedhæftede filer](#bilag). 
 
 
 #### 4.2.2 Signatur
@@ -120,14 +121,14 @@ MedCom <u>anbefaler</u>, at telefonnummer udfyldes med relevant telefonnummer, s
 Det bliver muligt at markere en korrespondancemeddelelse med prioritet. Alle systemer testes for, at de kan modtage og vise prioritet. I forhold til anvendelse og afsendelse af prioritet, testes alle systemer for, at prioritet kun er synlig og mulig at bruge ved valg af den nationale kategori ”Vedr. henvisning”. Kravet fremgår af use case og tilhørende testprotokol. Dette er besluttet med baggrund i, at behovet for at anvende prioritet er rejst i regi af et nationalt projekt vedr. forbedring af henvisninger, herunder revidering af henvisningsflowet. Anvendelsen af prioritet skal tilpasses løbende ift. udvikling i overenskomster og på baggrund af nationale krav fra Sundhedsministeriet, Sundhedsstyrelsen og Sundhedsdatastyrelsen. 
 
 
-### 4.4 Vedhæftede filer
+### 4.4 Vedhæftede filer {#bilag}
 Det er muligt at vedhæfte filer, som indlejres i korrespondancemeddelelsen. Når der er vedhæftet en fil til en korrespondancemeddelelse, er det et krav, at det tydeligt vises i brugergrænsefladen. 
 De tilladte filtyper, som kan vedhæftes korrespondancemeddelelsen, ses beskrevet i Implementation Guide for terminologi samt udstilles på terminologiserveren. <br>
 <a href="https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html" target="_blank">Klik her for at finde de tilladte filtyper, som kan vedhæftes i korrespondancemeddelelsen.</a> <br>
 Det er besluttet, at der ikke må medsendes video i en korrespondancemeddelelse grundet størrelsen. Det anbefales, at videoer deles via en forventet kommende national delingsservice. 
 Der vil ikke være begrænsning på, hvor mange vedhæftede filer der kan medsendes i en korrespondancemeddelelse, men i stedet begrænses størrelsen på hele meddelelsen, inklusiv vedhæftede filer. 100 MB er den maksimale størrelse på hele meddelelsen – inklusiv vedhæftede filer, som sendes over VANS. Alle vedhæftede filer tildeles desuden et unikt ID.
 <br> 
-Afsender, som vælger at afsende, besvare eller videresende en korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede filer. Forfatter på den vedhæftede fil er den fagperson, som oprindeligt har udarbejdet filen, og derfor er ansvarlig for det faglige indhold.MedCom anbefaler, at navn, samt tidspunkt for oprettelse, af den vedhæftede fil påskrives og medsendes. Systemfunktionalitet, der understøtter automatisk påsat navn på forfatter, samt tidspunkt for oprettelse, er optionel, og hvis denne funktionalitet ikke findes, anbefales afsender manuelt at påskrive disse informationer enten i den vedhæftede fil, eller som struktureret information i meddelelsessegmentet med den vedhæftede fil.  Når man, som afsender, vælger at medsende en fil, er man også ansvarlig for, at filens indhold er relevant for det aktuelle behandlingsforløb.
+Afsender, som vælger at afsende, besvare eller videresende en korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede filer. Forfatter på den vedhæftede fil er den fagperson, som oprindeligt har udarbejdet filen, og derfor er ansvarlig for det faglige indhold. MedCom anbefaler, at navn, samt tidspunkt for oprettelse, af den vedhæftede fil påskrives og medsendes. Systemfunktionalitet, der understøtter automatisk påsat navn på forfatter, samt tidspunkt for oprettelse, er optionel, og hvis denne funktionalitet ikke findes, anbefales afsender manuelt at påskrive disse informationer enten i den vedhæftede fil, eller som struktureret information i meddelelsessegmentet med den vedhæftede fil.  Når man, som afsender, vælger at medsende en fil, er man også ansvarlig for, at filens indhold er relevant for det aktuelle behandlingsforløb.
 MedCom tjekker, som en del af test og certificering, at vedhæftede filer modtages og indlæses på teknisk niveau, mens krav til understøttelse af arbejdsgange samt brugervenlighed skal varetages lokalt i et samarbejde mellem kunde og it-leverandør.
 
 
@@ -137,10 +138,10 @@ Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes
 
 
 #### 4.5.1 Besvarelse
-
 Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager af besvarelsen (med SOR-kode og EAN-nummer). 
+Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af besvarelsen. En besvarelse af en korrespondancemeddelelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved besvarelsen. Hvis der er vedhæftet filer til besvarelsen, knyttes disse til meddelelsessegmentet. De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i et aktivitetsdiagram i <a href="#Fig2">Figur 2.</a>.
 Det er også muligt at besvare en tidligere modtaget EDIFACT, OIOXML eller FHIR MedCom-meddelelse med korrespondancemeddelelsen. Ved besvarelse af en tidligere modtaget EDIFACT, OIOXML eller FHIR MedCom-meddelelse anvendes det medsendte ID fra den modtagne meddelelse og medsendes i korrespondancemeddelelsen. Således er det muligt, via ID, at koble et relevant flow af meddelelser sammen. Det kan eksempelvis ske ved, at man besvarer en modtaget henvisning med en korrespondancemeddelelse, hvor henvisnings-ID’et anvendes og medsendes i besvarelsen. 
-Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur. Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af besvarelsen. En besvarelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved besvarelsen. Hvis der er vedhæftet filer til besvarelsen, knyttes disse til meddelelsessegmentet. De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i et aktivitetsdiagram  i <a href="#Fig2">Figur 2.</a>
+Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur.
 
 
 <figure>
@@ -167,7 +168,7 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 #### 4.5.3 Annullering og rettelse 
 Det er muligt at sende en rettelse eller annullering til en afsendt korrespondancemeddelelse. En rettelse kan sendes i tilfælde af, at afsender ønsker at rette i teksten i meddelelsesfeltet, rette kategori og/eller emneord eller rette indholdet i en vedhæftet fil, mens en annullering af meddelelsen skal sendes, hvis meddelelsen er sendt på forkert cpr-nummer, til forkert modtager eller ved vedhæftet fil med indhold på forkert cpr-nummer. Hvis afsender sender en rettelse til en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde rettelserne og en reference til den korrespondancemeddelelse, som skal rettes. Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er rettet. Hvis der modtages en rettelse til en korrespondancemeddelelse, som afsender allerede har videresendt, er det afsender af videresendelsen, som er ansvarlig for at videresende den rettede meddelelse. Hvis afsender sender en annullering af en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde en kort tekst om, årsagen til, at meddelelsen er annulleret, og en reference til den korrespondancemeddelelse der skal annulleres. MedCom stiller nogle foruddefinerede tekster med årsag til annullering til rådighed, som systemerne anbefales at bruge og indsætte ved annullering. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html" target="_blank">Klik her for at læse de foruddefinerede tekster med årsager til annullering.</a> <br>
 
-Hvis systemet ikke anvender de foruddefinerede tekster med årsag til annullering fra MedComs liste, anbefales det, at systemet selv definerer og påsætter årsager til annullering. Alternativt skal bruger selv påskrive en annulleringsårsag til annulleringen.
+Hvis systemet ikke anvender de foruddefinerede tekster med årsag til annullering fra MedComs liste, anbefales det, at systemet selv definerer og påsætter årsager til annullering. Alternativt skal bruger selv påskrive en årsag til annulleringen.
 Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er annulleret. Ved annullering annulleres den valgte meddelelse. Ved behov for at annullere flere meddelelser i en tråd, skal afsender manuelt annullere de enkelte meddelelser.  
 Funktionaliteten til at kunne annullere alle meddelelser afsendt i tråden er optionelt for systemet. Hvis afsender ønsker at annullere en tidligere afsendt rettelse til en korrespondancemeddelelse, vil annulleringen gælde for den rettede meddelelse og ikke den oprindelige meddelelse.
 Hvis der modtages en annullering til en korrespondancemeddelelse, som afsender allerede har videresendt, er det afsender af videresendelsen, som er ansvarlig for at annullere den videresendte meddelelse
