@@ -78,6 +78,7 @@ Certification of a system implies both an approved test protocol and a run troug
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> 
 
+<b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
 
  **Sending a CareCommunication**
   * [Test protocol in Danish (docx)](CareCommunication_Testprotokol_Afsendelse.docx)
