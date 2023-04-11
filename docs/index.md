@@ -81,12 +81,12 @@ Certification of a system implies both an approved test protocol and a run troug
 <b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
 
  **Sending a CareCommunication**
-  * [Test protocol in Danish (docx)](CareCommunication_Testprotokol_Afsendelse.docx)
+  * [Test protocol in Danish (docx)](assets/CareCommunication_Testprotokol_Afsendelse.docx)
   * TouchStone Test scripts- link will be provided soon
 
 **Receiving a CareCommunication**
-  * [Test protocol in Danish (docx)](CareCommunication_Testprotokol_Modtagelse.docx)
-  * TouchStone Test scripts 
+  * [Test protocol in Danish (docx)](assets/CareCommunication_Testprotokol_Modtagelse.docx)
+  * TouchStone Test scripts - link will be provided soon
 
 
 <!-- ## 3 Release Notes
