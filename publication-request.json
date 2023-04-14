@@ -5,6 +5,7 @@
     "status": "release",
     "sequence": "Release",
     "milestone" : true,
+    "first": false,
     "title": "The DK MedCom CareCommunication IG",
     "category": "MedCom CareCommunication",
     "introduction": "The MedCom CareCommunication Implementation Guide includes profiles used in a CareCmmunication message.",
