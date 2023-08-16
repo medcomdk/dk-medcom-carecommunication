@@ -117,6 +117,8 @@ There shall be a Provenance instance referencing the message being modified, and
 
 [Click here to see the generated example of simplified example number 4.](./Bundle-df9019c6-690d-11ed-9022-0242ac120002.html) 
 
+> Note: All systems must be able to receive and display modified messages, but it is optional to support sending modify message.
+
 ##### Cancel Message  
 If the sender wants to cancel a previously send CareCommunication, the sender shall create a cancellation message. A message shall be cancelled if the CareCommunication has been sent 1) about an incorrect patient CPR-number, 2) to incorrect receiver, and 3) with an attachment included with information about an incorrect patient.
 This message shall include two instances of the Communication resource, one with the status *entered-in-error* and a message segment stating the reason for the cancellation and one with the status *unknown* representing the message being cancelled, hence including the message segments from the previous sent message. There shall be a Provenance instance referencing to the message being cancelled, and a Provenance instance referencing the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
@@ -127,6 +129,8 @@ In the latter instance of the Provenance resource, the Provenance.entity.role sh
 [Click here to see the generated example of simplified example number 5.](./Bundle-ed3e05b2-551d-11ed-bdc3-0242ac120002.html) 
 
 In a cancellation message a reason for the cancellation must be included. It is recommended that display texts from the CodeSystem [MedComMessagingCancellationReason](http://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html) are included in the message segment of the Communication resource with the status *entered-in-error*.
+
+> Note: All systems must be able to receive and display cancellation messages, but it is optional to support sending cancel message.
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.

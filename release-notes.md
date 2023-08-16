@@ -1,8 +1,2 @@
-- CareCommunication profile: 
-    - In the CareCommunication profile author, authorrole, relevant phonenumber and creation date is made optional (card 0..1) to include for attachments.
-    - Information about the episode of care identifier is clarified.
-    - Figure under Scope and Usage is updated
 - In general: 
-    - Examples are updated and more examples are included. 
-    - A recommendation about use of predefined reasons for cancellations is added under Introduction > Cancel message. 
-    - A description about download is added under Download
+    - Send a cancellation and modify is made optional. For this reason, some descriptions are updated.
