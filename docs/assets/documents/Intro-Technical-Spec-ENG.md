@@ -148,7 +148,7 @@ In this section, simplified examples of CareCommunication are presented, which i
 * <a href="#Fig2">new message</a>
 * <a href="#Fig4">reply message</a>
 * <a href="#Fig5">forward message</a>
-* <a href="#Fig6">modify message</a>
+* <a href="#Fig6">modify message</a> 
 * <a href="#Fig7">retract message</a>
 
 All types of simplified examples are created as XML or JSON examples in the CareCommunication IG. <a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see the full examples of a CareCommunication.</a>
@@ -174,6 +174,8 @@ All types of simplified examples are created as XML or JSON examples in the Care
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
 <br><br>
+
+> Note: All system must be abel to receive and display modify and cancellation message, but it is optional to support sending a modify or cancel message.
 
 <a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. A modification may be used when correcting a part of the message text, the category and/or topic, or the content of an attachment. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected. Further, shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.
 <figure>
