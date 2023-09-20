@@ -2,6 +2,8 @@ Extension: MedComCareCommunicationPayloadAuthorContactExtension
 Id: medcom-carecommunication-author-contact-extension
 Title: "PayloadAuthorContactExtension"
 Description: "Extension to contain the contact information tha author of the payload"
+// * ^context.type = #element
+// * ^context.expression = "Communication.payload"
 * valueContactPoint 1..
 * valueContactPoint.value 1.. MS
 * valueContactPoint.value obeys medcom-carecommunication-authorcontact
