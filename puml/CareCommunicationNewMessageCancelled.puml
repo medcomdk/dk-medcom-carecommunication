@@ -55,6 +55,8 @@ package "CareCommunication message: Cancelled message" as error <<Frame>>{
         payload[0].extension:date = "2023-03-01T12:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+        payload[0].extension:identifier.valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
     }
     class "Communication (MedComCareCommunication)" as errorCom{
         id = "1636f3f8-551e-11ed-bdc3-0242ac120002"
@@ -66,6 +68,8 @@ package "CareCommunication message: Cancelled message" as error <<Frame>>{
         payload[0].extension:date = "2023-03-01T12:11:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:9c6aa7db-71ae-4263-a1df-8876ac44359e"
+        payload[0].extension:identifier.valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as errorPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"

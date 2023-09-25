@@ -34,14 +34,14 @@ When sending a CareCommunication message it is possible to add a more specific r
 
 #### Message segments 
 
-A message segment consist of a message text and a signature or an attachment. 
-The message text and attachments will both be included in the element Communication.payload, however they shall be included in different informations. At least one payload which includes the message text shall be included when sending a CareCommunication message, but zero or more attachments may be included. 
+A message segment consists of a message text and a signature or an attachment. 
+The message text and attachment will both be included in the element Communication.payload, however there are different requirements for the two types of message segments. At least one payload which includes the message text shall be included when sending a new CareCommunication message, but zero or more attachments may be included. 
 
 > Note: Snippets from a patient's journal may be included in the message text or as an attachment e.g. a pdf-document. In either case it is recommended that the sender clearly describes in the message text or attachment, who the original author of the for the journal is and when it was written. If the snippet is included as an attachment, author information may both be included as written/copied text or structured information.
 
 ##### Signature and relevant information
-**Message text:** The written content of the message is of the datatype [string defined by FHIR](http://hl7.org/fhir/R4/datatypes.html#string), and it should obey a subset of [xhtml](https://medcomdk.github.io/dk-medcom-core/assets/documents/MedComCore-Styling_the_XHTML.html). The signature for the message text consists of author name, author role, relevant phone number, and sent timestamp. The identifier is included for technical purposes. <br> 
-**Attachment:** The allowed types of attachment can be found in [ValueSet of allowed mimetypes](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html). In a message segment with an attachment, the title, identifier and timestmap must be included, whereas it is optional to include information about the author, relevant phone number and creation date.
+**Message text:** The written content of the message is of the datatype [string defined by FHIR](http://hl7.org/fhir/R4/datatypes.html#string), and it should obey a subset of [xhtml](https://medcomdk.github.io/dk-medcom-core/assets/documents/MedComCore-Styling_the_XHTML.html). The signature for the message text consists of author name, author role, relevant phone number, and sent timestamp. The identifier is included for technical purposes. See the table below for an overwiev of the requirements.<br> 
+**Attachment:** The allowed types of attachment can be found in [ValueSet of allowed mimetypes](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html). In a message segment with an attachment, the title, identifier and timestamp must be included, whereas it is optional to include information about the author, relevant phone number and creation date as structured data. See the table below for an overwiev of the requirements.<br> 
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -91,15 +91,15 @@ The message text and attachments will both be included in the element Communicat
 R = required and O = optional.
 
 A description of the above mentioned information can be found here: <br> 
-**Author name:** The name of the person responsible for writing the message text. The author shall be described using a MedComCorePractitioner. <br> 
-**Author role:** The role (Danish: stillingsbetegnelse) of the person responsible for writing the message text. The author role shall be described using a MedComCorePractitionerRole. <br> 
+**Author name:** The name of the person responsible for writing the message text. The author shall be described using a MedComCorePractitioner profile. <br> 
+**Author role:** The role (Danish: stillingsbetegnelse) of the person responsible for writing the message text. The author role shall be described using a MedComCorePractitionerRole profile. <br> 
 **Relevant phone number:** A relevant phone number e.g. to the department from which the CareCommunication is sent. The phone number should be applied automatically and it is recommended to use the same phone number as in the SOR-register for the sender organisation. In case it is not possible to apply the phone number automatically, it shall be applied by the author. <br> 
 **Timestamp:** Represents the real world event, where the user presses "send" to send the CareCommunication.<br> 
-**Identifier:** An UUID version 4 with a reference to the assigner organisation. The assigner is a reference to the organisation who assigned the UUID, which will be the same as the initial sender organisation of the message segment. If the attachment is modified and reattached, it shall be given a new UUID and the assigner shall be updated. <br> 
+**Identifier:** An UUID version 4 with a reference to the assigner organisation. The assigner organisation is the organisation who assigned the UUID, which will be the same as the initial sender organisation of the message segment. If the attachment is modified and reattached, it shall be given a new UUID and the assigner shall be updated. <br> 
 **Title:** The title of the attached file. This should be applied by the system. <br>
 **Creation:** The date and time for when the attachment is created. 
 
 ##### Content of the message segments
-Message text must always be included in a CareCommunication, which applies to creating a new message, replying, forwarding, modifying and cancelling a message.
+Message text must always be included in a CareCommunication, which applies to creating a new message, replying, forwarding, modifying and cancelling a message. All previous message segments with message text must be included in a message.
 
 Attachment must always be included the first time they are sent. When replying to a CareCommunication, the base64-encoded content in the element Communication.payload:attachment.content.data or the link in the element Communication.payload:attachment.content.url must not be included, to avoid sending the same content back and forth. Instead the identifier must be used to identify which attachment(s) or link(s) that must be displayed to the receiver. When forwarding, modifying and cancelling a message, all attachments must be included.

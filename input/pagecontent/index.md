@@ -32,7 +32,7 @@ The [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/S
 
 All referenced resources within the message shall be contained in the entry list in MedCom CareCommunication.
 
-##### MedComCareCommunicatonMessageHeader
+##### MedComCareCommunicationMessageHeader
 
 The [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus reference to a MedComCareCommunication profile.
 
@@ -40,9 +40,9 @@ The [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunica
 
 The [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html) profile contains the main content of the message. It based on the Communication resource. MedComCareCommunication profile shall include a category code as defined in the [MedComCareCommunicationCategories ValueSet](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-categories.html) and it is allowed to add a topic of the message which may be in free text or from a regionally agreed list of topics that supports and elaborates the category. 
 
-The profile also includes one or more message segment that consists of a message text and associated signature or an attachment. In MedComCareCommunication profile message segments can be found under the element Communication.payload. A CareCommunication shall always include a message segment with a message text and associated signature. A CareCommunication may include zero or more message segments with an attachment. [Click here for more information about message segments](./StructureDefinition-medcom-careCommunication-communication.html#message-segments.html)
+The profile also includes one or more message segment that consists of a message text and associated signature or an attachment. In MedComCareCommunication profile message segments can be found under the element Communication.payload. A CareCommunication shall always include a message segment with a message text and associated signature. A CareCommunication may include zero or more message segments with an attachment. [Click here for more information about message segments](./StructureDefinition-medcom-careCommunication-communication.html#message-segments)
 
-Further, It is possible to add a more specific receiver, called recipient, and a more specific sender of a message. These can be found in the MedComCareCommunication profile. This may be used to include a more specific group of professionals or practitioner related to the care and wellbeing of the patient or citizen. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality. [Click here for more information about sender and recipient.](./StructureDefinition-medcom-careCommunication-communication.html#recipient-and-sender.html)
+Further, It is possible to add a more specific receiver, called recipient, and a more specific sender of a message. These can be found in the MedComCareCommunication profile. This may be used to include a more specific group of professionals or practitioner related to the care and wellbeing of the patient or citizen. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality. [Click here for more information about sender and recipient.](./StructureDefinition-medcom-careCommunication-communication.html#recipient-and-sender)
 
 ##### MedComCorePatient
 The [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a CareCommunication. It is preferred that a CareCommunication is being sent for a patient with an official Danish civil registration number (CPR)-number. In cases where a CPR-number is not known, a replacement CPR-number (Danish: Erstatnings-CPR) shall be included. 
@@ -68,7 +68,7 @@ A CareCommunication includes several timestamps. These timestamps are present in
 
 It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
 
-It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#attachments)
+It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
 
 
 #### IDs
@@ -89,7 +89,7 @@ Below can a simplified example of a new CareCommunication be seen with the minim
 
 ##### Reply Message 
 This simplified example describes how a reply to a CareCommunication shall be handled.
-When sending a reply to a received CareCommunication the reply shall contain the message segment(s), and the Provenance instance(s) from the previous message shall be included. 
+When sending a reply to a received CareCommunication the reply shall contain the message segment(s) including message text, and the Provenance instance(s) from the previous message shall be included.
 The Provenance.entity.role shall be *revision* and Provenance.entity.what.reference shall contain a reference to the MessageHeader.id of the previous message as the reply is the based on a previous entity. Provenance.activity shall be *reply-message*, and the Communication.status is *unknown*. This is a reply to '1 - Simplified example of a new CareCommunication'. 
 
 * [2 - Simplified example of a reply CareCommunication](./carecommunication/CCreplyMessage.svg)
