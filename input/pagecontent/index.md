@@ -112,7 +112,7 @@ The Provenance.entity.role shall be *revision* and Provenance.entity.what.refere
 > Note: All systems must be able to receive and display forwarded messages, but it is optional to support forwarding of a message.
 
 ##### Modify Message
-If the sender wants to modify a previously send CareCommunication, the sender shall create a modification message. A modification may be used when correcting a part of the message text, the category and/or topic, or the content of an attachment. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected.  
+If the sender wants to modify a previously send CareCommunication, the sender shall create a modification message. A modification may be used when correcting a part of the message text, the category and/or topic, the content of an attachment, author information or episodeOfCare-identifier. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected.  
 There shall be a Provenance instance referencing the message being modified, and a Provenance instance referencing the modification message, where Provenance.entity.what.reference element points to the MessageHeader.id of the previous message. In the latter instance of the Provenance resource, Provenance.entity.role shall be *revision* and the Provenance.activity shall be *modify-message*. 
 
 * [4 - Simplified example of a modifying a CareCommunication](./carecommunication/CCmodifyMessage.svg)
