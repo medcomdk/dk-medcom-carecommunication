@@ -55,13 +55,13 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         payload[1].extension:author.reference = "PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
         payload[1].extension:authorContact.value = "44527000"
         payload[1].extension:identifier.valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
-        payload[1].extension:identifier.valueIdentifier.assigner = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+        payload[1].extension:identifier.valueIdentifier.assigner = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
         payload[0].extension:date = "2023-03-01T12:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
         payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-        payload[0].extension:identifier.valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     } 
     class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
         id = "8bf63050-5504-11ed-bdc3-0242ac120002"
