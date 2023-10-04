@@ -5,7 +5,7 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping from OIOXML standard (XDIS91), and FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
@@ -19,7 +19,7 @@ The standard documentation below provides the necessary content to understand th
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
-  * Mapping between from OIOXML standard (XDIS91), and FHIR CareCommunication 
+  * Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication 
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application 
@@ -66,7 +66,7 @@ Furthermore, the structure of the standard is described and supported with examp
 
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-### 1.4 Mapping from OIOXML standard (XDIS91), and FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
+### 1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
 Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>are transferred to the CareCommunication, as not all elements are represented in the FHIR standard. 
 
 Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>

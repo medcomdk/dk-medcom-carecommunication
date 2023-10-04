@@ -12,7 +12,7 @@
       * [4.2.1 Meddelesestekst](#421-meddelelsestekst-feltet)
         * [4.2.1.1 Kopierede eller vedhæftede journalnotater](#journalnotater)
       * [4.2.2 Signatur](#422-signatur)
-    * [4.3 Prioritet-krav om afgrænset brug](#43-prioritet-krav-om-afgrænset-brug)
+    * [4.3 Prioritet, krav om afgrænset brug](#43-prioritet,-krav-om-afgrænset-brug)
     * [4.4 Vedhæftede filer](#bilag)
     * [4.5 Forsendelsesmuligheder og overblik](#45-forsendelsesmuligheder-og-overblik)
         * [4.5.1 Besvarelse](#451-besvarelse)
@@ -264,7 +264,7 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
   </tr>
   <tr>
     <td class="tg-0lax">Videresendelse</td>
-    <td class="tg-0lax">Hvis systemet understøtter funktionalitet som kan videresende en korrespondancemeddelelse, er det er et krav til systemet, at systemet automatisk indsætter referencer til de forudgående meddelelser fra samme kommunikationsflow <br>samt meddelelsessegmenter, dvs. meddelelsestekst, signatur og eventuelle vedhæftede filer, til videresendelsen. </td>
+    <td class="tg-0lax">Hvis systemet understøtter funktionalitet som kan videresende en korrespondancemeddelelse, er det et krav til systemet, at systemet automatisk indsætter referencer til de forudgående meddelelser fra samme kommunikationsflow <br>samt meddelelsessegmenter, dvs. meddelelsestekst, signatur og eventuelle vedhæftede filer, til videresendelsen. </td>
     <td class="tg-0lax">Det anbefales, at afsender kan vælge at videresende en modtaget korrespondancemeddelelse. <br>Det anbefales, at systemet benytter sig af de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen,<br>og derved give afsender det bedst mulige overblik</td>
     <td class="tg-0lax">Der er et krav, at alle systemer kan modtage og vise en modtaget videresendt korrespondancemeddelelse inklusiv referencer til de <br>forudgående meddelelser samt meddelelsessegmenter. <br><br>Det er et krav, at det tydeligt vises i brugergrænsefladen, når der er vedhæftet en fil i den videresendte korrespondancemeddelelse. </td>
     <td class="tg-0lax">Det anbefales at tydeliggøre, at meddelelsen er en videresendelse for modtager i brugergrænsefladen. <br><br>Det anbefales, at systemet benytter sig af de tekniske muligheder for at skabe kommunikationshistorik i brugergrænsefladen, <br>og derved give modtager det bedst mulige overblik. </td>
