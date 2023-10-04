@@ -28,19 +28,19 @@ CareCommunication follows the general MedCom FHIR messaging model, except that t
 
 ##### MedComCareCommunicationMessage
 
-The [MedComCareCommunicationMessage](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-message) is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) further to use the [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the [MedComMessagingProvenance](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains activities such as new-message, forward-message, and other activities triggering the message.
+The [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html) is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the [MedComMessagingProvenance](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains activities such as new-message, forward-message, and other activities triggering the message.
 
 All referenced resources within the message shall be contained in the entry list in MedCom CareCommunication.
 
-##### MedComCareCommunicatonMessageHeader
+##### MedComCareCommunicationMessageHeader
 
-The [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus reference to a MedComCareCommunication profile.
+The [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and require a focus reference to a MedComCareCommunication profile.
 
 ##### MedComCareCommunication
 
-The [MedComCareCommunication](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-communication) profile contains the main content of the message. It based on the Communication resource. MedComCareCommunication profile shall include a category code as defined in the [MedComCareCommunicationCategories ValueSet](http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-categories) and it is allowed to add a topic of the message which may be in free text or from a regionally agreed list of topics that supports and elaborates the category. 
+The [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html) profile contains the main content of the message. It based on the Communication resource. MedComCareCommunication profile shall include a category code as defined in the [MedComCareCommunicationCategories ValueSet](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-categories.html) and it is allowed to add a topic of the message which may be in free text or from a regionally agreed list of topics that supports and elaborates the category. 
 
-The profile also includes one or more message segment that consists of a message text and associated signature or an attachment. In MedComCareCommunication profile message segments can be found under the element payload. A CareCommunication shall always include a message segment with a message text and associated signature. A CareCommunication may include zero or more message segments with an attachment. 
+The profile also includes one or more message segment that consists of a message text and associated signature or an attachment. In MedComCareCommunication profile message segments can be found under the element Communication.payload. A CareCommunication shall always include a message segment with a message text and associated signature. A CareCommunication may include zero or more message segments with an attachment. [Click here for more information about message segments](./StructureDefinition-medcom-careCommunication-communication.html#message-segments)
 
 Further, It is possible to add a more specific receiver, called recipient, and a more specific sender of a message. These can be found in the MedComCareCommunication profile. This may be used to include a more specific group of professionals or practitioner related to the care and wellbeing of the patient or citizen. An example could be to address a specific general practitioner by name, a specific hospital department or eventually a specific social unit within the social care sector in a municipality. [Click here for more information about sender and recipient.](./StructureDefinition-medcom-careCommunication-communication.html#recipient-and-sender)
 
@@ -60,7 +60,7 @@ The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefin
 In cases of a previously sent CareCommunications, MedComMessagingProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
 #### Timestamps
-A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-communication), [MedComCareCommunicationMessage](http://medcomfhir.dk/fhir/carecommunication/StructureDefinition/medcom-careCommunication-message), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
+A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html), [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
 * Communication.payload.extension:date represents real world event, where the user presses "send" to send the CareCommunication. Each message segment, both string and attachment, will be registered with a date and time for this event.
 * Bundle.timestamp represents the time bundle is generated.
 * Provenance.occuredDateTime[x] represents the time the CareCommunication is sent, in a human-readable time
@@ -68,7 +68,7 @@ A CareCommunication includes several timestamps. These timestamps are present in
 
 It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
 
-It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#attachments)
+It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
 
 
 #### IDs
@@ -89,7 +89,7 @@ Below can a simplified example of a new CareCommunication be seen with the minim
 
 ##### Reply Message 
 This simplified example describes how a reply to a CareCommunication shall be handled.
-When sending a reply to a received CareCommunication the reply shall contain the message segment(s), and the Provenance instance(s) from the previous message shall be included. 
+When sending a reply to a received CareCommunication the reply shall contain the message segment(s) including message text, and the Provenance instance(s) from the previous message shall be included.
 The Provenance.entity.role shall be *revision* and Provenance.entity.what.reference shall contain a reference to the MessageHeader.id of the previous message as the reply is the based on a previous entity. Provenance.activity shall be *reply-message*, and the Communication.status is *unknown*. This is a reply to '1 - Simplified example of a new CareCommunication'. 
 
 * [2 - Simplified example of a reply CareCommunication](./carecommunication/CCreplyMessage.svg)
@@ -109,13 +109,17 @@ The Provenance.entity.role shall be *revision* and Provenance.entity.what.refere
 
 [Click here to see the generated example of simplified example number 3.](./Bundle-c0426e3e-978f-46e8-a366-a30f27854b0a.html) 
 
+> Note: All systems must be able to receive and display forwarded messages, but it is optional to support forwarding of a message.
+
 ##### Modify Message
-If the sender wants to modify a previously send CareCommunication, the sender shall create a modification message. A modification may be used when correcting a part of the message text, the category and/or topic, or the content of an attachment. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected.  
+If the sender wants to modify a previously send CareCommunication, the sender shall create a modification message. A modification may be used when correcting a part of the message text, the category and/or topic, the content of an attachment, author information or episodeOfCare-identifier. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected.  
 There shall be a Provenance instance referencing the message being modified, and a Provenance instance referencing the modification message, where Provenance.entity.what.reference element points to the MessageHeader.id of the previous message. In the latter instance of the Provenance resource, Provenance.entity.role shall be *revision* and the Provenance.activity shall be *modify-message*. 
 
 * [4 - Simplified example of a modifying a CareCommunication](./carecommunication/CCmodifyMessage.svg)
 
 [Click here to see the generated example of simplified example number 4.](./Bundle-df9019c6-690d-11ed-9022-0242ac120002.html) 
+
+> Note: All systems must be able to receive and display modified messages, but it is optional to support sending modify message.
 
 ##### Cancel Message  
 If the sender wants to cancel a previously send CareCommunication, the sender shall create a cancellation message. A message shall be cancelled if the CareCommunication has been sent 1) about an incorrect patient CPR-number, 2) to incorrect receiver, and 3) with an attachment included with information about an incorrect patient.
@@ -127,6 +131,8 @@ In the latter instance of the Provenance resource, the Provenance.entity.role sh
 [Click here to see the generated example of simplified example number 5.](./Bundle-ed3e05b2-551d-11ed-bdc3-0242ac120002.html) 
 
 In a cancellation message a reason for the cancellation must be included. It is recommended that display texts from the CodeSystem [MedComMessagingCancellationReason](http://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html) are included in the message segment of the Communication resource with the status *entered-in-error*.
+
+> Note: All systems must be able to receive and display cancellation messages, but it is optional to support sending cancel message.
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.

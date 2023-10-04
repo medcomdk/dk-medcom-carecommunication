@@ -54,6 +54,8 @@ package "CareCommunication message: New message" as new <<Frame>>{
         payload[0].extension:date = "2023-03-01T12:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"

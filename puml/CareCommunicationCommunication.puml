@@ -9,18 +9,20 @@ class "MedComCoreCareTeam" as careteam
 class "MedComCorePractitioner" as author
 class "MedComCoreEncounter" as encounter
 class "MedComCoreOrganization" as organization
+class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 
 
 
-communication -- encounter : "encounter"
-communication -- patient : "subject"
-communication -- pracRole : "author"
-communication -- careteam : "sender"
-communication -- careteam : "recipient"
-communication -- pracRole : "sender"
-communication -- pracRole : "recipient"
-pracRole -- author : "practitioner"
-pracRole -- organization : "organization"
-careteam -- organization : "managingOrganization"
+communication --> encounter : "encounter"
+communication --> patient : "subject"
+communication --> pracRole : "author"
+communication --> careteam : "sender"
+communication --> careteam : "recipient"
+communication --> pracRole : "sender"
+communication --> pracRole : "recipient"
+communication --> messagingOrganization : "assigner"
+pracRole --> author : "practitioner"
+pracRole --> organization : "organization"
+careteam --> organization : "managingOrganization"
 
 @enduml
