@@ -41,7 +41,7 @@ The message text and attachment will both be included in the element Communicati
 
 ##### Signature and relevant information
 **Message text:** The written content of the message is of the datatype [string defined by FHIR](http://hl7.org/fhir/R4/datatypes.html#string), and it should obey a subset of [xhtml](https://medcomdk.github.io/dk-medcom-core/assets/documents/MedComCore-Styling_the_XHTML.html). The signature for the message text consists of author name, author role, relevant phone number, and sent timestamp. The identifier is included for technical purposes. See the table below for an overview of the requirements.<br> 
-**Attachment:** The allowed types of attachment can be found in [ValueSet of allowed mimetypes](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html). In a message segment with an attachment, the title, identifier and timestamp must be included, whereas it is optional to include information about the author, relevant phone number and creation date as structured data. See the table below for an overview of the requirements.
+**Attachment:** The allowed types of attachment can be found in [ValueSet of allowed mimetypes](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html). In a message segment with an attachment is sent, the title, identifier and timestamp must be included, whereas it is optional to include information about the author, relevant phone number and creation date as structured data. See the table below for an overview of the requirements.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
