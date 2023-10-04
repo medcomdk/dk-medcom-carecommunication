@@ -5,7 +5,7 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping between OIOXML standard (XDIS91), and FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
+  * [1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
@@ -19,7 +19,7 @@ The standard documentation below provides the necessary content to understand th
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
-  * Mapping between OIOXML standard (XDIS91), and FHIR CareCommunication 
+  * Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication 
 <p>&nbsp;</p>
 
 ### 1.1 Clinical guidelines for application 
@@ -37,7 +37,7 @@ Use cases describe the different scenarios in which a standard support. For a ce
 
 <!-- The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities. -->
 
-[Danish: Use cases](assets/CareCommunication_usecases_v2.1.0.pdf) 
+[Danish: Use cases](assets/CareCommunication_usecases_v3.0.0.pdf) 
 
  >Note: Use cases for CareCommunication in English, are currently in preparation. As soon as they are, ready they will be published. 
 
@@ -50,9 +50,9 @@ Use cases describe the different scenarios in which a standard support. For a ce
 
 The technical specifications for the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication</a> is composed by profiles from two basis IG's and from one terminology IG. Links to the IG’s are listed below:
 * <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a>
-*	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
-*	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
-*	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
+  *	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
+  *	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
+  *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
 <p>&nbsp;</p>
 
 <!-- The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
@@ -66,7 +66,7 @@ Furthermore, the structure of the standard is described and supported with examp
 
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-### 1.4 Mapping between OIOXML standard (XDIS91), and FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
+### 1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
 Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>are transferred to the CareCommunication, as not all elements are represented in the FHIR standard. 
 
 Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
