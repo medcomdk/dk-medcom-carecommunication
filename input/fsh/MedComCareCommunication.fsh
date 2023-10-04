@@ -84,13 +84,13 @@ Expression: "iif(category.coding.code != 'other', true, category.coding.code = '
 Invariant: medcom-careCommunication-7
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a message segment."
 Severity: #error
-Expression: "payload.where(extension('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-author-extension').exists()).extension.value.reference.resolve().code.coding.code.exists()"
+Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().code.coding.code.exists()"
 
 
 Invariant: medcom-careCommunication-8
 Description: "There shall exist a practitioner name when using a Practitioner as author in a message segment."
 Severity: #error
-Expression: "payload.where(extension('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-author-extension').exists()).extension.value.reference.resolve().practitioner.resolve().name.exists()"
+Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().practitioner.resolve().name.exists()"
 
 /* Invariant: medcom-careCommunication-9
 Description: "When an attachment is included, it shall have an identifier"
