@@ -1,4 +1,4 @@
-Extension: MedComCareCommunicationPayloadAuthorContactExtension
+/* Extension: MedComCareCommunicationPayloadAuthorContactExtension
 Id: medcom-carecommunication-author-contact-extension
 Title: "PayloadAuthorContactExtension"
 Description: "Extension to contain the contact information tha author of the payload"
@@ -15,4 +15,4 @@ Description: "Extension to contain the contact information tha author of the pay
 Invariant: medcom-carecommunication-authorcontact
 Description: "The telephone number may include + and numbers from 0-9"
 Severity: #error
-Expression: "matches('[+]?[-0-9]')" 
+Expression: "matches('[+]?[-0-9]')"  */

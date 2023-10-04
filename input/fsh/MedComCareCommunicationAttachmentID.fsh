@@ -1,4 +1,4 @@
-Extension: MedComIdentifierExtension
+/* Extension: MedComIdentifierExtension
 Id: medcom-identifier-extension
 Title: "IdentifierExtension"
 Description: "An extension holding identifier"
@@ -22,4 +22,4 @@ Description: "An unique identifier for a message segment used in a CareCommunica
 Invariant: medcom-uuidv4
 Description: "The value shall correspond to the structure of an UUID version 4"
 Severity: #error
-Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')" */
