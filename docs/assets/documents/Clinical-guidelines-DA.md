@@ -280,8 +280,8 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
     <td class="tg-0lax">Annullering</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">Det anbefales, at afsender kan annullere en afsendt korrespondancemeddelelse.</td>
-    <td class="tg-0lax"></td>
     <td class="tg-0lax">Der er et krav, at alle systemer kan modtage og vise en annullering. Det skal være synligt i brugergrænsefladen, at meddelelsen er en annullering.</td>
+    <td class="tg-0lax"></td>
   </tr>
   <tr>
     <td class="tg-0lax">Rettelse</td>
