@@ -21,7 +21,7 @@
     * [4.6 Overblik i brugergrænsefladen](#46-overblik-i-brugergrænsefladen)
 * [5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer](#6-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer)
 * [6 Use Cases](#6-use-cases)
-* [7 Ibrugtagning i SOR/SOR-EDI](#7-ibrugtagning)
+* [7 Ibrugtagning i SOR/SOR-EDI](#ibrugtagning)
 
 <p>&nbsp;</p>
 
@@ -305,6 +305,6 @@ Til brug for den tekniske implementering af korrespondancemeddelelsen findes use
 
 
 
-## 7 Ibrugtagning i SOR/SOR-EDI {#7-ibrugtagning}
+## 7 Ibrugtagning i SOR/SOR-EDI {#ibrugtagning}
 Inden ibrugtagning skal meddelelsestypen for korrespondancemeddelelse ajourføres i SOR-EDI for den enkelte aktør, så der er valide data om, hvem der har implementeret og anvender korrespondancemeddelelsen, og derved hvem der kan afsende og modtage korrespondancemeddelelsen.
 
