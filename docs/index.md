@@ -113,7 +113,7 @@ The following document includes preconditions for the conversion, use cases desc
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
 
-[Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication.xlsx)
+[Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication.xlsx) <br>
 [Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
 
 ### 3.3 Examples
@@ -140,23 +140,23 @@ The table below includes examples of the mapping illustrating four different flo
 <tbody>
   <tr>
     <td class="tg-c3ow">1</td>
-    <td class="tg-c3ow">[XDIS91](assets/examples/Flow1-XDIS91_Ex_to_FHIR.xml) <br>[XBIN01](assets/examples/Flow1-XBIN01_Ex_to_FHIR.xml)</td>
-    <td class="tg-c3ow">[CareCommunication](assets/examples/Flow1-CareCommunication_Ex_from_OIOXML.xml)</td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow1-XDIS91_Ex_to_FHIR.xml" target="_blank">XDIS91</a> <br> <a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow1-XBIN01_Ex_to_FHIR.xml" target="_blank">XBIN01</a></td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow1-CareCommunication_Ex_from_OIOXML.xml" target="_blank">CareCommunication</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow">2</td>
-    <td class="tg-c3ow">[XCTL03 for XDIS91](assets/examples/Flow2-XCTL03_Ex_from_FHIR_XDIS91.xml)<br>[XCTL03 for XBIN01](assets/examples/Flow2-XCTL03_Ex_from_FHIR_XBIN01.xml)</td>
-    <td class="tg-c3ow">[Acknowledgement](assets/examples/Flow2-Acknowledgement_Ex_to_OIOXML.xml)</td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow2-XCTL03_Ex_from_FHIR_XDIS91.xml" target="_blank">XCTL03 for XDIS91</a> <br> <a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow2-XCTL03_Ex_from_FHIR_XBIN01.xml" target="_blank">XCTL03 for XBIN01</a></td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow2-Acknowledgement_Ex_to_OIOXML.xml" target="_blank">Acknowledgement</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow">3</td>
-    <td class="tg-c3ow">[CareCommunication](assets/examples/Flow3-CareCommunication_Ex_to_OIOXML.xml)</td>
-    <td class="tg-c3ow">[XDIS91](assets/examples/Flow3-XDIS91_Ex_from_FHIR.xml)<br>[XBIN01](assets/examples/Flow3-XBIN01_Ex_from_FHIR.xml)</td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow3-CareCommunication_Ex_to_OIOXML.xml" target="_blank">CareCommunication</a></td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow3-XDIS91_Ex_from_FHIR.xml" target="_blank">XDIS91</a><br><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow3-XBIN01_Ex_from_FHIR.xml" target="_blank">XBIN01</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow">4</td>
-    <td class="tg-c3ow">[Acknowledgement](assets/examples/Flow4-Acknowledgement_Ex_from_OIOXML.xml)</td>
-    <td class="tg-c3ow">[XCTL03 for XDIS91](assets/examples/Flow4-XCTL03_Ex_to_FHIR_XDIS91.xml)<br>[XCTL03 for XBIN01](assets/examples/Flow4-XCTL03_Ex_to_FHIR_XBIN01.xml)</td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow4-Acknowledgement_Ex_from_OIOXML.xml" target="_blank">Acknowledgement</a></td>
+    <td class="tg-c3ow"><a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow4-XCTL03_Ex_to_FHIR_XDIS91.xml" target="_blank">XCTL03 for XDIS91</a> <br> <a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/examples/Flow4-XCTL03_Ex_to_FHIR_XBIN01.xml" target="_blank">XCTL03 for XBIN01</a></td>
   </tr>
 </tbody>
 </table>
