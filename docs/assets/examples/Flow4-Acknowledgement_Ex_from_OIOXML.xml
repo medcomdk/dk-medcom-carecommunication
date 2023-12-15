@@ -1,0 +1,181 @@
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e90e15ae-e019-496b-aa65-95aab4983f0d"/>
+  <meta>
+    <profile
+             value="http://medcomfhir.dk/ig/acknowledgement/StructureDefinition/medcom-messaging-acknowledgement"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2023-11-22T12:33:00Z"/>
+  <entry>
+    <fullUrl value="MessageHeader/ec45ab9f-f918-42e3-9536-f6c00fbb8b1e"/>
+    <resource>
+      <MessageHeader>
+        <id value="ec45ab9f-f918-42e3-9536-f6c00fbb8b1e"/>
+        <meta>
+          <profile
+                   value="http://medcomfhir.dk/ig/acknowledgement/StructureDefinition/medcom-messaging-acknowledgementHeader"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="ec45ab9f-f918-42e3-9536-f6c00fbb8b1e"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;ec45ab9f-f918-42e3-9536-f6c00fbb8b1e&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-messaging-acknowledgementHeader.html">MedComAcknowledgementMessageHeader</a></p></div><p><b>event</b>: Acknowledgement Message (Details: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes code acknowledgement-message = 'Acknowledgement Message', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style="display: none">*</td><td/><td><a href="https://sor2.sum.dsdn.dk/#id=359001000016000">https://sor2.sum.dsdn.dk/#id=359001000016000</a></td><td><a href="#Organization_dd4fd046-0e81-47e1-8aea-60498112b1a6">See above (Organization/dd4fd046-0e81-47e1-8aea-60498112b1a6)</a></td></tr></table><p><b>sender</b>: <a href="#Organization_b06fe483-2c9d-4086-8fb5-99a87785bbb1">See above (Organization/b06fe483-2c9d-4086-8fb5-99a87785bbb1)</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sor2.sum.dsdn.dk/#id=328051000016008">https://sor2.sum.dsdn.dk/#id=328051000016008</a></td></tr></table><h3>Responses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>60098c38-6fe1-41ba-aa92-d4809022de88</td><td>ok</td></tr></table></div>
+        </text>
+        <eventCoding>
+          <system
+                  value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"/>
+          <code value="acknowledgement-message"/>
+        </eventCoding>
+        <destination>
+          <extension
+                     url="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension">
+            <valueCoding>
+              <system
+                      value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"/>
+              <code value="primary"/>
+            </valueCoding>
+          </extension>
+          <endpoint value="https://sor2.sum.dsdn.dk/#id=359001000016000"/>
+          <receiver>
+            <reference
+                       value="Organization/dd4fd046-0e81-47e1-8aea-60498112b1a6"/>
+          </receiver>
+        </destination>
+        <sender>
+          <reference
+                     value="Organization/b06fe483-2c9d-4086-8fb5-99a87785bbb1"/>
+        </sender>
+        <source>
+          <endpoint value="https://sor2.sum.dsdn.dk/#id=328051000016008"/>
+        </source>
+        <response>
+          <identifier value="60098c38-6fe1-41ba-aa92-d4809022de88"/>
+          <code value="ok"/>
+        </response>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Provenance/844b884e-390e-42c9-9de0-7cb82b9aebfa"/>
+    <resource>
+      <Provenance>
+        <id value="844b884e-390e-42c9-9de0-7cb82b9aebfa"/>
+        <meta>
+          <profile
+                   value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Provenance</b><a name="844b884e-390e-42c9-9de0-7cb82b9aebfa"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Provenance &quot;844b884e-390e-42c9-9de0-7cb82b9aebfa&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a></p></div><p><b>target</b>: <a href="MessageHeader-60098c38-6fe1-41ba-aa92-d4809022de88.html">MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88</a></p><p><b>occurred</b>: 2023-11-22 12:33:00+0100</p><p><b>recorded</b>: 22. nov. 2023 12.33.00</p><p><b>activity</b>: A new message has been sent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://medcomfhir.dk/ig/terminology/1.5.0/CodeSystem-medcom-messaging-activityCodes.html">MedComMessagingActivityCodes</a>#new-message)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td></tr><tr><td style="display: none">*</td><td><a href="#Organization_dd4fd046-0e81-47e1-8aea-60498112b1a6">See above (Organization/dd4fd046-0e81-47e1-8aea-60498112b1a6)</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference
+                     value="MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88"/>
+        </target>
+        <occurredDateTime value="2023-11-22T12:33:00+01:00"/>
+        <recorded value="2023-11-22T12:33:00+01:00"/>
+        <activity>
+          <coding>
+            <system
+                    value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"/>
+            <code value="new-message"/>
+          </coding>
+        </activity>
+        <agent>
+          <who>
+            <reference
+                       value="Organization/dd4fd046-0e81-47e1-8aea-60498112b1a6"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Provenance/900cb30b-fb71-4bb0-80d1-3cf503be03e3"/>
+    <resource>
+      <Provenance>
+        <id value="900cb30b-fb71-4bb0-80d1-3cf503be03e3"/>
+        <meta>
+          <profile
+                   value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Provenance</b><a name="900cb30b-fb71-4bb0-80d1-3cf503be03e3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Provenance &quot;900cb30b-fb71-4bb0-80d1-3cf503be03e3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a></p></div><p><b>target</b>: <a href="#MessageHeader_ec45ab9f-f918-42e3-9536-f6c00fbb8b1e">See above (MessageHeader/ec45ab9f-f918-42e3-9536-f6c00fbb8b1e)</a></p><p><b>occurred</b>: 2023-11-22 12:33:00+0100</p><p><b>recorded</b>: 22. nov. 2023 13.33.00</p><p><b>activity</b>: Acknowledgement message has been sent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://medcomfhir.dk/ig/terminology/1.5.0/CodeSystem-medcom-messaging-activityCodes.html">MedComMessagingActivityCodes</a>#acknowledgement)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td></tr><tr><td style="display: none">*</td><td><a href="#Organization_b06fe483-2c9d-4086-8fb5-99a87785bbb1">See above (Organization/b06fe483-2c9d-4086-8fb5-99a87785bbb1)</a></td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td style="display: none">*</td><td>revision</td><td><a href="MessageHeader-60098c38-6fe1-41ba-aa92-d4809022de88.html">MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference
+                     value="MessageHeader/ec45ab9f-f918-42e3-9536-f6c00fbb8b1e"/>
+        </target>
+        <occurredDateTime value="2023-11-22T12:33:00+01:00"/>
+        <recorded value="2023-11-22T12:33:00Z"/>
+        <activity>
+          <coding>
+            <system
+                    value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"/>
+            <code value="acknowledgement"/>
+          </coding>
+        </activity>
+        <agent>
+          <who>
+            <reference
+                       value="Organization/b06fe483-2c9d-4086-8fb5-99a87785bbb1"/>
+          </who>
+        </agent>
+        <entity>
+          <role value="revision"/>
+          <what>
+            <reference
+                       value="MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88"/>
+          </what>
+        </entity>
+      </Provenance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/dd4fd046-0e81-47e1-8aea-60498112b1a6"/>
+    <resource>
+      <Organization>
+        <id value="dd4fd046-0e81-47e1-8aea-60498112b1a6"/>
+        <meta>
+          <profile
+                   value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="dd4fd046-0e81-47e1-8aea-60498112b1a6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;dd4fd046-0e81-47e1-8aea-60498112b1a6&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: id: 5790001382445, id: 359001000016000</p></div>
+        </text>
+        <identifier>
+          <system value="https://www.gs1.org/gln"/>
+          <value value="5790001382445"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.1"/>
+          <value value="359001000016000"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Organization/b06fe483-2c9d-4086-8fb5-99a87785bbb1"/>
+    <resource>
+      <Organization>
+        <id value="b06fe483-2c9d-4086-8fb5-99a87785bbb1"/>
+        <meta>
+          <profile
+                   value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="b06fe483-2c9d-4086-8fb5-99a87785bbb1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;b06fe483-2c9d-4086-8fb5-99a87785bbb1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/2.1.0/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: id: 5790000121441, id: 328051000016008</p></div>
+        </text>
+        <identifier>
+          <system value="https://www.gs1.org/gln"/>
+          <value value="5790000121441"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.1"/>
+          <value value="328051000016008"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

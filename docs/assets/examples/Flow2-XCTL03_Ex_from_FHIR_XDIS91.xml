@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Emessage xmlns="http://rep.oio.dk/sundcom.dk/medcom.dk/xml/schemas/2005/08/07/">
+  <Envelope>
+    <Sent>
+      <Date>2023-11-20</Date>
+      <Time>17:46</Time>
+    </Sent>
+    <Identifier>KuvertNr1256</Identifier>
+    <AcknowledgementCode>minuspositivkvitt</AcknowledgementCode>
+  </Envelope>
+  <PositiveReceipt>
+    <Letter>
+      <Identifier>BrevNr5698</Identifier>
+      <VersionCode>XC0330Q</VersionCode>
+      <StatisticalCode>XCTL03</StatisticalCode>
+    </Letter>
+    <Sender>
+      <EANIdentifier>5790000121441</EANIdentifier>
+    </Sender>
+    <Receiver>
+      <EANIdentifier>5790001382445</EANIdentifier>
+    </Receiver>
+    <OriginalEmessage>
+      <OriginalEnvelopeIdentifier>KuvNrerwerwe99</OriginalEnvelopeIdentifier>
+      <OriginalSender>
+        <EANIdentifier>5790001382445</EANIdentifier>
+      </OriginalSender>
+      <OriginalReceiver>
+        <EANIdentifier>5790000121441</EANIdentifier>
+      </OriginalReceiver>
+      <OriginalLetter>
+        <OriginalLetterIdentifier>Brevt23400929</OriginalLetterIdentifier>
+        <OriginalVersionCode>XD9134L</OriginalVersionCode>
+      </OriginalLetter>
+    </OriginalEmessage>
+  </PositiveReceipt>
+</Emessage>

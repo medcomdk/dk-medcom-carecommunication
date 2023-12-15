@@ -7,6 +7,10 @@
   * [1.3 Technical specification](#13-technical-specification)
   * [1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
 * [2 Test and certification](#2-test-and-certification)
+* [3 Conversion service](#3-conversion-service)
+  * [3.1 Use cases and rules](#31-use-cases-and-rules)
+  * [3.2 Mapping of messages](#32-mapping-of-messages)
+  * [3.3 Examples](#33-examples)
 
 > Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
 
@@ -81,14 +85,78 @@ Certification of a system implies both an approved test protocol and a run troug
 <b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
 
  **Sending a CareCommunication**
-  * [Test protocol in Danish (docx)](assets/CareCommunication_Testprotokol_Afsendelse.docx)
+  * [Test protocol in Danish (docx) - will be updated in january](assets/CareCommunication_Testprotokol_Afsendelse.docx)
   * TouchStone Test scripts- link will be provided soon
 
 **Receiving a CareCommunication**
-  * [Test protocol in Danish (docx)](assets/CareCommunication_Testprotokol_Modtagelse.docx)
+  * [Test protocol in Danish (docx) - will be updated in january](assets/CareCommunication_Testprotokol_Modtagelse.docx)
   * TouchStone Test scripts - link will be provided soon
 
 
-<!-- ## 3 Release Notes
+## 3 Conversion service 
+In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (CareCommunication), a conversion service (Danish: Konverteringsløsning) will be made available by the VANS vendors. Documentation about the service and the preconditions can be found in this section. Figure 1 illustrates the flow of the communication messages when a XDIS91 is sent by the sender. The service will support conversion of a CareCommunication message including attachments, where the attachment is sent in a XBIN01. 
 
-[Updates in the latest release.](assets/documents/ReleaseNote-ENG.md) -->
+<figure>
+<img src="assets/images/Conversion.png" alt="Shows the flow of conversion of communication messages" style="width:40%" id="Fig2">
+<figcaption text-align="center"><b>Figure 1 illustrates the flow of conversion of communication messages</b></figcaption>
+</figure>
+
+The service concerns only conversion between OIOXML and FHIR. For this reason, messages sent in EDIFACT must be converted to OIOXML before conversion to FHIR. Conversion will only be performed when the sender and receiver doesn’t support the same standard format.
+
+The service is intended to be available from November 2024 to April 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
+
+### 3.1 Use cases and rules
+The following document includes preconditions for the conversion, use cases describing the flow of events, rules concerning to mapping. 
+
+[Use cases and rules in Danish (pdf)](assets/UseCases-ConversionService.pdf)
+
+### 3.2 Mapping of messages
+The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
+
+[Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication.xlsx)
+[Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
+
+### 3.3 Examples
+The table below includes examples of the mapping illustrating four different flows. 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-fymr">Flow</th>
+    <th class="tg-7btt">From sender to VANS</th>
+    <th class="tg-fymr">From VANS to receiver</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">1</td>
+    <td class="tg-c3ow">[XDIS91](assets/examples/Flow1-XDIS91_Ex_to_FHIR.xml) <br>[XBIN01](assets/examples/Flow1-XBIN01_Ex_to_FHIR.xml)</td>
+    <td class="tg-c3ow">[CareCommunication](assets/examples/Flow1-CareCommunication_Ex_from_OIOXML.xml)</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">2</td>
+    <td class="tg-c3ow">[XCTL03 for XDIS91](assets/examples/Flow2-XCTL03_Ex_from_FHIR_XDIS91.xml)<br>[XCTL03 for XBIN01](assets/examples/Flow2-XCTL03_Ex_from_FHIR_XBIN01.xml)</td>
+    <td class="tg-c3ow">[Acknowledgement](assets/examples/Flow2-Acknowledgement_Ex_to_OIOXML.xml)</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">3</td>
+    <td class="tg-c3ow">[CareCommunication](assets/examples/Flow3-CareCommunication_Ex_to_OIOXML.xml)</td>
+    <td class="tg-c3ow">[XDIS91](assets/examples/Flow3-XDIS91_Ex_from_FHIR.xml)<br>[XBIN01](assets/examples/Flow3-XBIN01_Ex_from_FHIR.xml)</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">4</td>
+    <td class="tg-c3ow">[Acknowledgement](assets/examples/Flow4-Acknowledgement_Ex_from_OIOXML.xml)</td>
+    <td class="tg-c3ow">[XCTL03 for XDIS91](assets/examples/Flow4-XCTL03_Ex_to_FHIR_XDIS91.xml)<br>[XCTL03 for XBIN01](assets/examples/Flow4-XCTL03_Ex_to_FHIR_XBIN01.xml)</td>
+  </tr>
+</tbody>
+</table>
