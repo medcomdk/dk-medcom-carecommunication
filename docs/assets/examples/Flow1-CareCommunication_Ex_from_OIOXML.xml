@@ -64,7 +64,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="3228c610-8f13-453d-8d9c-488372752390"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;3228c610-8f13-453d-8d9c-488372752390&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/2.2.0/StructureDefinition-medcom-core-patient.html">MedComCorePatient</a></p></div><p><b>identifier</b>: id: 2512489996</p><p><b>name</b>: Nancy Ann Berggren (OFFICIAL)</p><p><b>address</b>: Hindbærvej 23 Odense S 5260 </p></div>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="3228c610-8f13-453d-8d9c-488372752390"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;3228c610-8f13-453d-8d9c-488372752390&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/2.2.0/StructureDefinition-medcom-core-patient.html">MedComCorePatient</a></p></div><p><b>identifier</b>: id: 2512489996</p><p><b>name</b>: Nancy Ann Berggren (OFFICIAL)</p><p><b>address</b>: HindbÃ¦rvej 23 Odense S 5260 </p></div>
         </text>
         <identifier>
           <system value="urn:oid:1.2.208.176.1.2"/>
@@ -77,7 +77,7 @@
           <given value="Ann"/>
         </name>
         <address>
-          <line value="Hindbærvej 23"/>
+          <line value="HindbÃ¦rvej 23"/>
           <city value="Odense S"/>
           <postalCode value="5260"/>
         </address>
@@ -95,7 +95,7 @@
         </meta>
         <text>
           <status value="extensions"/>
-          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Communication</b><a name="71cf30a1-9186-42cc-a805-76fa611c82e9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Communication &quot;71cf30a1-9186-42cc-a805-76fa611c82e9&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-careCommunication-communication.html">MedComCareCommunication</a></p></div><p><b>status</b>: unknown</p><p><b>category</b>: Other <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://medcomfhir.dk/ig/terminology/1.4.0/CodeSystem-medcom-careCommunication-categoryCodes.html">MedComCareCommunicationCategories</a>#other)</span></p><p><b>subject</b>: <a href="#Patient_3228c610-8f13-453d-8d9c-488372752390">See above (Patient/3228c610-8f13-453d-8d9c-488372752390)</a></p><p><b>topic</b>: Forundersøgelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>encounter</b>: <a href="#Encounter_fd75f522-f40c-4762-bbea-17facaed105b">See above (Encounter/fd75f522-f40c-4762-bbea-17facaed105b)</a></p><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: id: urn:uuid:1a7544c5-b95b-4fed-96f9-07036496ae5d</p><p><b>PractitionerExtension</b>: <a href="#PractitionerRole_a0f14d16-c75c-4be3-9240-2439ed5372e4">See above (PractitionerRole/a0f14d16-c75c-4be3-9240-2439ed5372e4)</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>content</b>: Denne meddelelse har høj prioritet. &lt;br/&gt; Afdeling A har modtaget en henvisning på ovenstående patient.&lt;br/&gt;Forinden der foretages visitation, bedes følgende undersøgelser foretaget:&lt;br/&gt;Røntgen af hofte i to planer.&lt;br/&gt;Blodtryksresultat&lt;br/&gt;Sænkningsresultat&lt;br/&gt;&lt;br/&gt;Resultaterne bedes fremsendt som et &amp;quot;korrespondancebrev&amp;quot;.&lt;br/&gt;&lt;br/&gt;Venlig hilsen&lt;br/&gt;overlæge K. Petersen&lt;br/&gt;15.01.1999&lt;br/&gt;</p></blockquote><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>PractitionerExtension</b>: <a href="#PractitionerRole_a0f14d16-c75c-4be3-9240-2439ed5372e4">See above (PractitionerRole/a0f14d16-c75c-4be3-9240-2439ed5372e4)</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>IdentifierExtension</b>: id: urn:uuid:c39ea6b2-6052-45e4-a207-415e0205ab6f</p><p><b>content</b>: </p></blockquote></div>
+          <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Communication</b><a name="71cf30a1-9186-42cc-a805-76fa611c82e9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Communication &quot;71cf30a1-9186-42cc-a805-76fa611c82e9&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-careCommunication-communication.html">MedComCareCommunication</a></p></div><p><b>status</b>: unknown</p><p><b>category</b>: Other <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://medcomfhir.dk/ig/terminology/1.4.0/CodeSystem-medcom-careCommunication-categoryCodes.html">MedComCareCommunicationCategories</a>#other)</span></p><p><b>subject</b>: <a href="#Patient_3228c610-8f13-453d-8d9c-488372752390">See above (Patient/3228c610-8f13-453d-8d9c-488372752390)</a></p><p><b>topic</b>: Forundersï¿½gelse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>encounter</b>: <a href="#Encounter_fd75f522-f40c-4762-bbea-17facaed105b">See above (Encounter/fd75f522-f40c-4762-bbea-17facaed105b)</a></p><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: id: urn:uuid:1a7544c5-b95b-4fed-96f9-07036496ae5d</p><p><b>PractitionerExtension</b>: <a href="#PractitionerRole_a0f14d16-c75c-4be3-9240-2439ed5372e4">See above (PractitionerRole/a0f14d16-c75c-4be3-9240-2439ed5372e4)</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>content</b>: Denne meddelelse har hï¿½j prioritet. &lt;br/&gt; Afdeling A har modtaget en henvisning pï¿½ ovenstï¿½ende patient.&lt;br/&gt;Forinden der foretages visitation, bedes fï¿½lgende undersï¿½gelser foretaget:&lt;br/&gt;Rï¿½ntgen af hofte i to planer.&lt;br/&gt;Blodtryksresultat&lt;br/&gt;Sï¿½nkningsresultat&lt;br/&gt;&lt;br/&gt;Resultaterne bedes fremsendt som et &amp;quot;korrespondancebrev&amp;quot;.&lt;br/&gt;&lt;br/&gt;Venlig hilsen&lt;br/&gt;overlï¿½ge K. Petersen&lt;br/&gt;15.01.1999&lt;br/&gt;</p></blockquote><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>PractitionerExtension</b>: <a href="#PractitionerRole_a0f14d16-c75c-4be3-9240-2439ed5372e4">See above (PractitionerRole/a0f14d16-c75c-4be3-9240-2439ed5372e4)</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>IdentifierExtension</b>: id: urn:uuid:c39ea6b2-6052-45e4-a207-415e0205ab6f</p><p><b>content</b>: </p></blockquote></div>
         </text>
         <status value="unknown"/>
         <category>
@@ -109,7 +109,7 @@
           <reference value="Patient/3228c610-8f13-453d-8d9c-488372752390"/>
         </subject>
         <topic>
-          <text value="Forundersøgelse"/>
+          <text value="Forundersï¿½gelse"/>
         </topic>
         <encounter>
           <reference value="Encounter/fd75f522-f40c-4762-bbea-17facaed105b"/>
@@ -144,7 +144,7 @@
             </valueContactPoint>
           </extension>
           <contentString
-                         value="Denne meddelelse har høj prioritet. &lt;br/&gt; Afdeling A har modtaget en henvisning på ovenstående patient.&lt;br/&gt;Forinden der foretages visitation, bedes følgende undersøgelser foretaget:&lt;br/&gt;Røntgen af hofte i to planer.&lt;br/&gt;Blodtryksresultat&lt;br/&gt;Sænkningsresultat&lt;br/&gt;&lt;br/&gt;Resultaterne bedes fremsendt som et &amp;quot;korrespondancebrev&amp;quot;.&lt;br/&gt;&lt;br/&gt;Venlig hilsen&lt;br/&gt;overlæge K. Petersen&lt;br/&gt;15.01.1999&lt;br/&gt;"/>
+                         value="Denne meddelelse har hï¿½j prioritet. &lt;br/&gt; Afdeling A har modtaget en henvisning pï¿½ ovenstï¿½ende patient.&lt;br/&gt;Forinden der foretages visitation, bedes fï¿½lgende undersï¿½gelser foretaget:&lt;br/&gt;Rï¿½ntgen af hofte i to planer.&lt;br/&gt;Blodtryksresultat&lt;br/&gt;Sï¿½nkningsresultat&lt;br/&gt;&lt;br/&gt;Resultaterne bedes fremsendt som et &amp;quot;korrespondancebrev&amp;quot;.&lt;br/&gt;&lt;br/&gt;Venlig hilsen&lt;br/&gt;overlï¿½ge K. Petersen&lt;br/&gt;15.01.1999&lt;br/&gt;"/>
         </payload>
         <payload>
           <extension
