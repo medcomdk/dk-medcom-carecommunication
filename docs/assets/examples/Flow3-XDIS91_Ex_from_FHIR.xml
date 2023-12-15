@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Emessage xmlns="http://rep.oio.dk/sundcom.dk/medcom.dk/xml/schemas/2006/07/01/">
+  <Envelope>
+    <Sent>
+      <Date>2023-11-22</Date>
+      <Time>12:32</Time>
+    </Sent>
+    <Identifier>KuvNrerwerwe00</Identifier>
+    <AcknowledgementCode>pluspositivkvitt</AcknowledgementCode>
+  </Envelope>
+  <ClinicalEmail>
+    <Letter>
+      <Identifier>Brevt23400930</Identifier>
+      <VersionCode>XD9134L</VersionCode>
+      <StatisticalCode>XDIS91</StatisticalCode>
+      <Authorisation>
+        <Date>2023-11-22</Date>
+        <Time>12:32</Time>
+      </Authorisation>
+      <TypeCode>XDIS91</TypeCode>
+      <StatusCode>nytbrev</StatusCode>
+    </Letter>
+    <Sender>
+      <EANIdentifier>5790001382445</EANIdentifier>
+      <Identifier>5790001382445</Identifier>
+      <IdentifierCode>lokationsnummer</IdentifierCode>
+      <OrganisationName>Medcom testcenter</OrganisationName>
+	  <TelephoneSubscriberIdentifier>66131372</TelephoneSubscriberIdentifier>
+    </Sender>
+    <Receiver>
+      <EANIdentifier>5790000121441</EANIdentifier>
+      <Identifier>5790000121441</Identifier>
+      <IdentifierCode>lokationsnummer</IdentifierCode>
+    </Receiver>
+    <Patient>
+      <CivilRegistrationNumber>2512489996</CivilRegistrationNumber>
+      <PersonSurnameName>Ann Berggren</PersonSurnameName>
+      <PersonGivenName>Nancy</PersonGivenName>
+      <EpisodeOfCareStatusCode>inaktiv</EpisodeOfCareStatusCode>
+    </Patient>
+    <AdditionalInformation>
+      <Subject>Vedr. henvisning, Undersøgelser forude for visitation</Subject>
+    </AdditionalInformation>
+    <ClinicalInformation>
+      <Text01>
+        Afdeling A har modtaget en henvisning på ovenstående patient.<Break/>Forinden der foretages visitation, bedes følgende undersøgelser foretaget:<Break/>Røntgen af hofte i to planer.<Break/>Blodtryksresultat<Break/>Sænkningsresultat<Break/><Break/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<Break/><Break/>Venlig hilsen<Break/>Michael<Break/>Forfatter: Michael Burns<Break/>Stilling: Sygeplejerske<Break/>
+      </Text01>
+    </ClinicalInformation>
+    <Reference>
+      <RefDescription>BIN</RefDescription>
+      <BIN>
+        <ObjectIdentifier>64d56beb9d2245d48fa0eaaf186bebae</ObjectIdentifier>
+        <ObjectCode>billede</ObjectCode>
+        <ObjectExtensionCode>pdf</ObjectExtensionCode>
+        <OriginalObjectSize>4297</OriginalObjectSize>
+      </BIN>
+    </Reference>
+  </ClinicalEmail>
+</Emessage>

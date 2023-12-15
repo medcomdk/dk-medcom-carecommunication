@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Emessage xmlns="http://rep.oio.dk/sundcom.dk/medcom.dk/xml/schemas/2006/07/01/">
+  <Envelope>
+    <Sent>
+      <Date>2023-11-20</Date>
+      <Time>17:45</Time>
+    </Sent>
+    <Identifier>KuvNrerwerwe99</Identifier>
+    <AcknowledgementCode>pluspositivkvitt</AcknowledgementCode>
+  </Envelope>
+  <ClinicalEmail>
+    <Letter>
+      <Identifier>Brevt23400929</Identifier>
+      <VersionCode>XD9134L</VersionCode>
+      <StatisticalCode>XDIS91</StatisticalCode>
+      <Authorisation>
+        <Date>2023-11-20</Date>
+        <Time>17:45</Time>
+      </Authorisation>
+      <TypeCode>XDIS91</TypeCode>
+      <StatusCode>nytbrev</StatusCode>
+    </Letter>
+    <Sender>
+      <EANIdentifier>5790001382445</EANIdentifier>
+      <Identifier>5790001382445</Identifier>
+      <IdentifierCode>lokationsnummer</IdentifierCode>
+      <OrganisationName>Medcom testcenter</OrganisationName>
+      <DepartmentName>Certificering</DepartmentName>
+      <MedicalSpecialityCode>ikkeklassificeret</MedicalSpecialityCode>
+    </Sender>
+    <Receiver>
+      <EANIdentifier>5790000121441</EANIdentifier>
+      <Identifier>461</Identifier>
+      <IdentifierCode>kommunenummer</IdentifierCode>
+      <OrganisationName>Hjemmeplejen, Odense Kommune</OrganisationName>
+      <StreetName>Vandværksvej 99</StreetName>
+      <DistrictName>Hillerød</DistrictName>
+      <PostCodeIdentifier>3400</PostCodeIdentifier>
+    </Receiver>
+    <Patient>
+      <CivilRegistrationNumber>2512489996</CivilRegistrationNumber>
+      <PersonSurnameName>Ann Berggren</PersonSurnameName>
+      <PersonGivenName>Nancy</PersonGivenName>
+      <StreetName>Hindbærvej 23</StreetName>
+      <DistrictName>Odense S</DistrictName>
+      <PostCodeIdentifier>5260</PostCodeIdentifier>
+      <EpisodeOfCareStatusCode>inaktiv</EpisodeOfCareStatusCode>
+    </Patient>
+    <AdditionalInformation>
+      <Priority>høj_prioritet</Priority>
+      <Subject>Forundersøgelse</Subject>
+    </AdditionalInformation>
+    <ClinicalInformation>
+      <Text01>
+        Afdeling A har modtaget en henvisning på ovenstående patient.<Break/>Forinden der foretages visitation, bedes følgende undersøgelser foretaget:<Break/>Røntgen af hofte i to planer.<Break/>Blodtryksresultat<Break/>Sænkningsresultat<Break/><Break/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<Break/><Break/>Venlig hilsen<Break/>overlæge K. Petersen<Break/>15.01.1999<Break/>
+      </Text01>
+    </ClinicalInformation>
+    <Reference>
+      <RefDescription>BIN</RefDescription>
+      <BIN>
+        <ObjectIdentifier>c39ea6b2605245e4a207415e0205ab6f</ObjectIdentifier>
+        <ObjectCode>billede</ObjectCode>
+        <ObjectExtensionCode>pdf</ObjectExtensionCode>
+        <OriginalObjectSize>4297</OriginalObjectSize>
+      </BIN>
+    </Reference>
+  </ClinicalEmail>
+</Emessage>
