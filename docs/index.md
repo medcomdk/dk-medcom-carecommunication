@@ -24,7 +24,10 @@ The standard documentation below provides the necessary content to understand th
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
   * Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication 
+  * Governance for CareCommunication 
 <p>&nbsp;</p>
+
+[Click here to read more about the governance for CareCommunication](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
 
 ### 1.1 Clinical guidelines for application 
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
@@ -41,7 +44,7 @@ Use cases describe the different scenarios in which a standard support. For a ce
 
 <!-- The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities. -->
 
-[Danish: Use cases](assets/CareCommunication_usecases_v3.0.0.pdf) 
+[Danish: Use cases (pdf)](assets/CareCommunication_usecases_v3.0.0.pdf) 
 
  >Note: Use cases for CareCommunication in English, are currently in preparation. As soon as they are, ready they will be published. 
 
@@ -85,11 +88,11 @@ Certification of a system implies both an approved test protocol and a run troug
 <b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
 
  **Sending a CareCommunication**
-  * [Test protocol in Danish (docx) - will be updated in january](assets/CareCommunication_Testprotokol_Afsendelse.docx)
+  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
   * TouchStone Test scripts- link will be provided soon
 
 **Receiving a CareCommunication**
-  * [Test protocol in Danish (docx) - will be updated in january](assets/CareCommunication_Testprotokol_Modtagelse.docx)
+  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
   * TouchStone Test scripts - link will be provided soon
 
 
