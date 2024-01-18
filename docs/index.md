@@ -83,9 +83,9 @@ Furthermore, not all elements from the FHIR elements are represented in the docu
 ## 2 Test and certification
 Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom.
 
-<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> 
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
 
-<b>The test protocols in English and test scripts are currently in preparation. As soon as they are ready, they will be published below. </b>
+<b>Test scripts and examples are currently in preparation. As soon as they are ready, they will be published.</b>
 
  **Sending a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
