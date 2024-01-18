@@ -18,6 +18,8 @@
         * [4.5.1 Besvarelse](#451-besvarelse)
         * [4.5.2 Videresendelse](#452-videresendelse)
         * [4.5.3 Annullering og rettelse](#453-annullering-og-rettelse)
+          * [4.5.3.1 Annullering](#4531-annullering)
+          * [4.5.3.2 Rettelse](#4532-rettelse)
     * [4.6 Overblik i brugergrænsefladen](#46-overblik-i-brugergrænsefladen)
 * [5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer](#6-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer)
 * [6 Use Cases](#6-use-cases)
@@ -52,7 +54,7 @@ Formålet med korrespondancemeddelelsen er bl.a. at:
 <a href="#Fig1">Figur 1</a> er en illustration af indholdet i en korrespondancemeddelelse. Illustrationen er et eksempel og indeholder ikke alle datafelter, som er i standarden og afspejler ikke det enkelte systems brugergrænseflade. Den viste tekstformatering af meddelelsesteksten, i <a href="#Fig1">Figur 1</a>, er optionel for systemerne at understøtte.
 
 <figure>
-<img src="../images/IllustrationKorrespondance.svg" alt="Eksempel på, en korrespondancemeddelese" style="width:40%" id="Fig1">
+<img src="../images/IllustrationKorrespondance.svg" alt="Eksempel på, en korrespondancemeddelese" style="width:30%" id="Fig1">
 <figcaption text-align = "center"><b>Figur 1: Eksempel på indhold i korrespondancemeddelelsen </b></figcaption>
 </figure>
 
@@ -64,7 +66,7 @@ Korrespondancemeddelelsen <u>skal</u> indeholde information om:
 *	Afsender
 *	Modtager
 *	Kategori (fortæller på et overordnet niveau, hvad indholdet i korrespondancemeddelelsen drejer sig om)
-*	Meddelelsessegment (indholdende meddelelsestekst og signatur)
+*	Meddelelsessegment (indeholdende meddelelsestekst og signatur)
 *	Signatur skal indeholde dato og tidspunkt, forfatters navn, stillingbetegnelse og relevant telefonnummer
 *	Tekniske data på meddelelsen (herunder bl.a. ID’er og referencer til forudgående meddelelser. <a href="https://medcomdk.github.io/dk-medcom-carecommunication/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank">Klik her for at se den tekniske dokumentation for yderligere information.</a>)
 <p>&nbsp;</p>
@@ -136,17 +138,18 @@ Som en del af test og certificering tjekker MedCom, at ID på vedhæftede filer 
 Det er muligt at besvare, videresende, rette og annullere en modtaget korrespondancemeddelelse. MedCom anbefaler, at systemet giver mulighed for at afsender kan videresende en korrespondancemeddelelse samt rette og annullere en modtaget korrespondancemeddelelse men stiller ikke krav herom. Det er dog et krav, at alle modtagersystemet kan modtage både en videresendelse, en rettelse og en annullering. Det er også et krav, at systemet både kan afsende en besvaret korrespondancemeddelelse og modtage en besvarelse.  
 Både ved besvarelse og videresendelse af en korrespondancemeddelelse indsættes den samme kategori og det samme emne automatisk af systemet. Brugeren kan vælge at ændre det til en anden kategori og et andet emne.  Referencer til den forudgående, eller videresendte, meddelelse skal indgå, da disse tekniske informationer bl.a. anvendes til at kæde meddelelserne sammen, hvormed de giver mulighed for at skabe kommunikationshistorik i brugergrænsefladen. 
 
+MedCom har udarbejdet regler for håndtering af kommunikationsflows, hvor der indgår besvarelser, videresendelser, annulleringer og rettelser, herunder også håndtering af parallelle meddelelser (grundet samtidighed). <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Klik her for at læse reglerne for håndtering af flows med besvarelser, videresendelser, annulleringer og rettelser</a>. Reglerne indgår også i testprotokollerne med henblik på at sikre ensartet implementering og anvendelse. 
 
 #### 4.5.1 Besvarelse
 Det er et krav at kunne afsende en besvarelse til en korrespondancemeddelelse og modtage og vise en besvarelse inklusiv forudgående meddelelser, herunder meddelelsessegmenter og nye vedhæftede filer. Ved besvarelse indsættes afsender af den modtagne korrespondancemeddelelse automatisk som modtager af besvarelsen (med SOR-kode og EAN-nummer). 
 Afsender udfylder det nye meddelelsestekst-felt med selvskrevet tekst. Derudover påsættes også signatur, i samme meddelelsessegment, på afsender af besvarelsen. En besvarelse af en korrespondancemeddelelse består således altid af minimum to meddelelsessegmenter – det tidligere modtaget meddelelsessegment og det nye som afsender udfylder og medsender ved besvarelsen. Hvis der er vedhæftet nye filer til besvarelsen, knyttes disse til meddelelsessegmentet. Hvis afsender har vedhæftet filer i den oprindelige korrespondancemeddelelse, skal de vedhæftede filer fra afsender ikke medsendes igen ved besvarelse. I stedet tjekker MedCom, som en del af test og certificering, at systemerne indlæser og gemmer ID på de vedhæftede filer. Dette med henblik på at systemet ved modtagelse af en besvarelse kan genfinde og vise tidligere vedhæftede filer for brugeren. De ovenstående hændelserne for besvarelse af en korrespondancemeddelelse er visualiseret i et aktivitetsdiagram i <a href="#Fig2">Figur 2</a>.
 Det er også muligt at besvare en tidligere modtaget EDIFACT, OIOXML eller FHIR MedCom-meddelelse med korrespondancemeddelelsen. Ved besvarelse af en tidligere modtaget EDIFACT, OIOXML eller FHIR MedCom-meddelelse anvendes det medsendte ID fra den modtagne meddelelse og medsendes i korrespondancemeddelelsen. Således er det muligt, via ID, at koble et relevant flow af meddelelser sammen. Det kan eksempelvis ske ved, at man besvarer en modtaget henvisning med en korrespondancemeddelelse, hvor forløbs-ID’et anvendes og medsendes i besvarelsen. 
 Teknisk betyder det, at der ved besvarelse indsættes et nyt meddelelsessegment, bestående af et nyt meddelelsestekst-felt og signatur.
-Der skal ikke kunne sendes en besvarelse på en modtaget annullering. Der skal kunne sendes en besvarelse på en rettelse.  
+Der skal ikke kunne sendes en besvarelse på en modtaget annullering.  
 
 
 <figure>
-<img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:40%" id="Fig2">
+<img src="../images/Dk_S2_besvarelse_cc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for besvarelse af CareCommunication besked." style="width:30%" id="Fig2">
 <figcaption text-align="center"><b>Figur 2: Aktivitetsdiagram for besvarelse af en modtaget korrespondancemeddelelse</b> </figcaption>
 </figure>
 <br><br>
@@ -162,23 +165,34 @@ De ovenstående hændelserne for videresendelse af en korrespondancemeddelelse e
 Der skal ikke kunne sendes en videresendelse af hverken en rettelse eller af en annullering. Hvis brugeren har behov for at informere en anden part - som brugeren har videresendt en korrespondancemeddelelse til - om en modtaget rettelse, så skal brugeren enten selv sende en rettelse eller sende en ny korrespondancemeddelelse (afhængig af om systemet understøtter at kunne sende rettelser, som er en optionel funktionalitet men stærkt anbefalet).  
 
 <figure>
-<img src="../images/DK_S3_VideresendCc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for videresendelse af CareCommunication besked." style="width:40%" id="Fig3">
+<img src="../images/DK_S3_VideresendCc.drawio.svg" alt="Viser aktivitetsdiagram over forløbet for videresendelse af CareCommunication besked." style="width:30%" id="Fig3">
 <figcaption text-align="center"><b>Figur 3: Aktivitetsdiagram for videresendelse af en modtaget korrespondancemeddelelse</b> </figcaption>
 </figure>
 <br><br>
 
 #### 4.5.3 Annullering og rettelse 
-MedCom anbefaler, at systemet kan afsende rettelser og annulleringer men stiller ikke krav herom. Der er dog krav om, at alle systemer kan modtage både rettelser og annulleringer, og synliggøre i brugergrænsefladen at en given korrespondancemeddelelse er rettet eller annulleret. Hvis systemet understøtter funktionalitet som kan afsende rettelser og annulleringer, er det muligt at sende en rettelse eller annullering til en afsendt korrespondancemeddelelse. En rettelse kan sendes i tilfælde af, at afsender ønsker at rette i teksten i meddelelsesfeltet, rette kategori og/eller emneord, rette indholdet i en vedhæftet fil, rette forfatteroplysninger, telefonnummer eller episodeOfCare-identifier, mens en annullering af meddelelsen skal sendes, hvis meddelelsen er sendt på forkert cpr-nummer, til forkert modtager eller ved vedhæftet fil med indhold på forkert cpr-nummer. Hvis afsender sender en rettelse til en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde rettelserne og en reference til den korrespondancemeddelelse, som skal rettes. Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er rettet. Hvis der modtages en rettelse til en korrespondancemeddelelse, som afsender allerede har videresendt, er det afsender af videresendelsen, som er ansvarlig for at videresende den rettede meddelelse. Hvis afsender sender en annullering af en afsendt korrespondancemeddelelse, vil denne rent teknisk både indeholde en kort tekst om, årsagen til, at meddelelsen er annulleret, og en reference til den korrespondancemeddelelse der skal annulleres. MedCom stiller nogle foruddefinerede tekster med årsag til annullering til rådighed, som systemerne anbefales at bruge og indsætte ved annullering. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html" target="_blank">Klik her for at læse de foruddefinerede tekster med årsager til annullering.</a> <br>
+MedCom anbefaler, at systemet kan afsende rettelser og annulleringer men stiller ikke krav herom. Der er krav om, at alle systemer kan modtage både rettelser og annulleringer, og synliggøre i brugergrænsefladen at en given korrespondancemeddelelse er rettet eller annulleret. Når der sendes eller modtages en annullering eller rettelse, vil korrespondancetråden ’stoppe’, hvilket betyder, at der ikke længere kan kommunikeres videre på denne tråd. Det er valgt for at sikre, at fejl og/eller mangler ikke bæres videre i kommunikationen. Hvis brugerne fortsat ønsker at kommunikere, skal en ny korrespondancetråd opstartes. 
 
-Hvis systemet ikke anvender de foruddefinerede tekster med årsag til annullering fra MedComs liste, anbefales det, at systemet selv definerer og påsætter årsager til annullering. Alternativt skal bruger selv påskrive en årsag til annulleringen.
-Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er annulleret. Ved annullering annulleres den valgte meddelelse. Ved behov for at annullere flere meddelelser i en tråd, skal afsender manuelt annullere de enkelte meddelelser.  
-Funktionaliteten til at kunne annullere alle meddelelser afsendt i tråden er optionelt for systemet. Hvis afsender ønsker at annullere en tidligere afsendt rettelse til en korrespondancemeddelelse, vil annulleringen gælde for den rettede meddelelse og ikke den oprindelige meddelelse.
-Hvis der modtages en annullering til en korrespondancemeddelelse, som afsender allerede har videresendt, er det afsender af videresendelsen, som er ansvarlig for at annullere den videresendte meddelelse
-Anvendelsen af annullering og rettelse er tænkt så simpelt som muligt med henblik på at reducere kompleksiteten i håndteringen og til funktionalitet i systemerne. Det betyder, at der ikke er indtænkt kaskade-rettelser eller kaskade-annulleringer. Hvis en bruger annullerer, eller retter, en besvarelse vil det altid være den seneste korrespondancemeddelelse i tråden (den seneste besvarelse), som annulleres eller rettes, og ikke hele tråden. Ligeledes vil en brugers rettelse eller annullering af den oprindelige korrespondancemeddelelse heller ikke medføre at eventuelle efterfølgende besvarelser eller videresendelser, af anden part, automatisk rettes eller annulleres. Det er derfor altid modtagerens ansvar at reagere herefter, hvis vedkommende modtager en rettelse eller en annullering.  
+##### 4.5.3.1 Annullering
+En annullering af meddelelsen skal sendes, hvis meddelelsen er sendt på forkert cpr-nummer, til forkert modtager eller ved vedhæftet fil med indhold på forkert cpr-nummer.<br>
+En annullering af en afsendt korrespondancemeddelelse vil rent teknisk både indeholde årsagen til, at meddelelsen er annulleret, og en reference til den korrespondancemeddelelse der skal annulleres. <br>
+MedCom stiller nogle foruddefinerede tekster med årsag til annullering til rådighed, som systemerne anbefales at bruge og indsætte ved annullering. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html" target="_blank">Klik her for at læse de foruddefinerede tekster med årsager til annullering</a>. Hvis systemet ikke anvender de foruddefinerede tekster med årsag til annullering fra MedComs liste, anbefales det, at systemet selv definerer og påsætter årsager til annullering. Alternativt skal bruger selv påskrive en årsag til annulleringen. <br>
+Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er annulleret. <br>
+Ved annullering medsendes information om, hvilken specifik korrespondancemeddelelse der annulleres, men hele korrespondancetråden skal fremgå som annulleret. <br>
+Hvis der modtages en annullering til en korrespondancemeddelelse, som afsender allerede har videresendt, er det afsender af videresendelsen, som er ansvarlig for at informere modtager om annulleringen. Det kan gøres ved enten at annullere videresendelsen eller at informere modtager på anden vis (hvis systemfunktionaliteten ikke understøtter at kunne afsende annulleringer).  <br>
+
+##### 4.5.3.2 Rettelse
+En rettelse skal sendes i tilfælde af, at afsender ønsker at rette i teksten i meddelelsesfeltet, rette kategori og/eller emneord, rette indholdet i en vedhæftet fil, rette forfatteroplysninger, telefonnummer eller episodeOfCare-identifier. <br>
+En rettelse til en afsendt korrespondancemeddelelse vil rent teknisk både indeholde rettelserne og en reference til den korrespondancemeddelelse, der skal rettes. 
+Det skal synliggøres i brugergrænsefladen, for både afsender og modtager, at en given korrespondancemeddelelse er rettet. <br>
+Ved rettelse medsendes information om, hvilken specifik korrespondancemeddelelse der rettes, men hele korrespondancetråden skal fremgå som rettet. <br>
+Hvis der modtages en rettelse til en korrespondancemeddelelse, som afsender har videresendt, er det afsender af videresendelsen, som er ansvarlig for at informere modtager om rettelsen. Det kan gøres ved enten at rette videresendelsen eller at informere modtager på anden vis (hvis systemfunktionaliteten ikke understøtter at kunne afsende rettelser). 
+
+<br>
 
 
 ### 4.6 Historisk overblik i brugergrænsefladen
-Gældende for alle MedComs FHIR-meddelelser, herunder også korrespondancemeddelelsen, er, at der er mulighed for at arbejde med det tekniske indhold i brugergrænsefladen. MedCom stiller krav om, at systemerne synliggør kommunikationshistorikken i brugergrænsefladen (pga. krav om medsendelse og visning af forudgående meddelelsessegmenter). MedCom <u>anbefaler</u>, at systemerne benytter sig af muligheden for at give det bedst mulige overblik over en meddelelses aktivitet (fx om meddelelsen er en ny modtaget meddelelse, en besvarelse eller en videresendelse).      
+Gældende for alle MedComs FHIR-meddelelser, herunder også korrespondancemeddelelsen, er, at der er mulighed for at arbejde med det tekniske indhold i brugergrænsefladen. MedCom anbefaler, at systemerne synliggør kommunikationshistorikken i brugergrænsefladen. Der er krav om, at forudgående meddelelsessegmenter medsendes. MedCom <u>anbefaler</u>, at systemerne benytter sig af muligheden for at give det bedst mulige overblik over en meddelelses status (fx om meddelelsen er en ny modtaget meddelelse, en besvarelse eller en videresendelse). Hvis der er sendt, eller modtaget, en annullering eller rettelse er der krav om, at meddelelsens status er synlig i brugergrænsefladen.       
   
 
 ## 5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer 
