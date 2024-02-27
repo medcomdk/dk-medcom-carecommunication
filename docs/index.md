@@ -5,7 +5,7 @@
   * [1.1 Clinical guidelines for application](#11-clinical-guidelines-for-application)
   * [1.2 Use cases](#12-use-cases)
   * [1.3 Technical specification](#13-technical-specification)
-  * [1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication](#mapping-between-oioxml-and-fhir)
+  * [1.4 Governance for CareCommunication](#14-governance-for-carecommunication)
 * [2 Test and certification](#2-test-and-certification)
 * [3 Conversion service](#3-conversion-service)
   * [3.1 Use cases and rules](#31-use-cases-and-rules)
@@ -23,11 +23,9 @@ The standard documentation below provides the necessary content to understand th
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
-  * Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication 
   * Governance for CareCommunication 
 <p>&nbsp;</p>
 
-[Click here to read more about the governance for CareCommunication](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
 
 ### 1.1 Clinical guidelines for application 
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
@@ -73,11 +71,11 @@ Furthermore, the structure of the standard is described and supported with examp
 
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
-### 1.4 Mapping from OIOXML standard (XDIS91) to FHIR CareCommunication {#mapping-between-oioxml-and-fhir}
-Mapping from previous OIOXML standards to the FHIR CareCommunication standard can be found below. The document is intended to help translate the previous standard to the new FHIR standard. Please notice that not all elements from  <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>are transferred to the CareCommunication, as not all elements are represented in the FHIR standard. 
+### 1.4 Governance for CareCommunication
+Governance describes the general rules which FHIR messages must obey to. The [general governance for FHIR messaging can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication), whereas [governance for the use of CareCommunication can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html). 
 
-Furthermore, not all elements from the FHIR elements are represented in the document; thus, it cannot stand alone for implementation.<br>
-[Click here to see the mapping from the previous OIOXML standard (XDIS91) to the FHIR CareCommunication standard.](assets/documents/Map_between_OIOXML_FHIR.md)
+Further, some recommendations for implementing the CareCommunication standard has been developed. The page recommends how to run a household on the send and received CareCommunications. These are not required to follow, only for recommendation and inspiration.  
+[Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 
 ## 2 Test and certification
