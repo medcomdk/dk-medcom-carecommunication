@@ -2,7 +2,10 @@ Profile: MedComCareCommunication
 Parent: Communication
 Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
-* status MS
+* status = #unknown MS
+* identifier 0..1 MS //1..1
+* identifier obeys medcom-uuidv4
+* identifier ^short = "The communication identifier" 
 * category 1..1 MS
 * category from $CCCategoryCodes
 * priority MS
@@ -62,14 +65,13 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].contentAttachment.title 1.. MS
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
-* status ^short = "The status may be 'unknown' or 'entered-in-error', dependning on the type of message. status is required because of basic FHIR profile requirement"
 * category ^short = "The category (Danish: kategori) describes the overall content of the message."
 * obeys medcom-careCommunication-5
 * obeys medcom-careCommunication-6
 * obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-8
 //* obeys medcom-careCommunication-9
-* obeys medcom-careCommunication-10
+//* obeys medcom-careCommunication-10
 
 Invariant: medcom-careCommunication-5
 Description: "Priority is only allowed when Communication.category = 'regarding-referral'"
@@ -92,15 +94,20 @@ Description: "There shall exist a practitioner name when using a Practitioner as
 Severity: #error
 Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().practitioner.resolve().name.exists()"
 
+/* Invariant: medcom-uuidv4
+Description: "The value shall correspond to the structure of an UUID version 4"
+Severity: #error
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')" */
+
 /* Invariant: medcom-careCommunication-9
 Description: "When an attachment is included, it shall have an identifier"
 Severity: #error
 Expression: "payload.where(content.data.exists()).extension('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-carecommunication-attachment-identifier-extension').exists() or payload.content.data.exists().not()" */
 
-Invariant: medcom-careCommunication-10
+/* Invariant: medcom-careCommunication-10
 Description: "The status shall be 'unknown' or 'entered-in-error'."
 Severity: #error
-Expression: "status='unknown' or status='entered-in-error'"
+Expression: "status='unknown' or status='entered-in-error'" */
 
 
 
@@ -215,7 +222,7 @@ Instance: 1636f3f8-551e-11ed-bdc3-0242ac120002
 InstanceOf: MedComCareCommunication
 Title: "Instance of Communication resource used in a cancel message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - cancel message"
-* status = $EventStatus#entered-in-error
+* status = $EventStatus#unknown // skal udgå!
 * category = $CategoryCodes#carecoordination
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * payload.contentString = "Cancellation due to incorrect CPR-number"
@@ -294,58 +301,7 @@ Usage: #example
 * payload.extension[author].valueReference = Reference(8ebaf0c2-835d-43c8-91ef-c5c1745e0b98)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868"
-* payload.contentString = "Example of a disc-list
-        <ul>
-            <li>Unordered information. </li>
-            <li>Ordered information. </li>
-            <li>Definitions. </li>
-        </ul>
-        Example of a arabic-list
-        <ol class=\"arabic\">
-            <li> arabic 1</li> 
-            <li> arabic 2</li> 
-        </ol> 
-        Example of a unlist
-        <ul class=\"unlist\">
-            <li> unlist 1</li> 
-            <li> unlist 2</li> 
-        </ul>
-        <b>Example of a BOLD text</b> <br/>
-        <i>Example of a ITALIC text</i> <br/>
-        <span style=\"text-decoration: underline\">Example of an UNDERLINE text</span> <br/>
-        <span style=\"text-decoration: line-through\">Example of a STRIKETHROUGH text</span> <br/>
-        <p style=\"text-align: left\">This text is LEFT aligned</p> <br/>
-        <p style=\"text-align: right\">This text is RIGHT aligned</p> <br/>
-        <p style=\"text-align: center\">This text is CENTER aligned</p> <br/>
-        <p style=\"text-align: justify\">This text is JUSTIFIED aligned</p> <br/>
-        
-        <p> Tables:</p> 
-        <table>
-            <caption>Example of a TABLE</caption> 
-            <tr> 
-                <td class=\"border-left\">Border Left</td> 
-                <td class=\"border-right\">Border Right</td> 
-                <td class=\"border-top\">Border Top</td> 
-                <td class=\"border-bottom\">Border Bottom</td> 
-            </tr> 
-        </table> 
-        <table> 
-            <caption>Example of a TABLE</caption> 
-            <thead> 
-                <tr> 
-                    <th> Head Cell 1</th> 
-                    <th> Head Cell 2</th> 
-                    <th> Head Cell 3</th> 
-                </tr> 
-            </thead> 
-            <tbody> 
-                <tr> 
-                    <td> Body Cell 1</td> 
-                    <td> Body Cell 2</td> 
-                    <td> Body Cell 3</td> 
-                </tr> 
-            </tbody> 
-        </table>"
+* payload.contentString = "Example of a disc-list"
 
 
 
