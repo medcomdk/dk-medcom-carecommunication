@@ -20,7 +20,7 @@ package "CareCommunication message: New message with Attachment, Recipient and E
     class "Bundle (MedComCareCommunicationMessage)" as newB {
         id = "6f7e4c80-551a-11ed-bdc3-0242ac120002"
         type = "message"
-        timestamp = "2023-03-01T09:00:00+01:00"
+        timestamp = "2024-05-01T09:00:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as newMH{
         id = "dc04b8c2-5519-11ed-bdc3-0242ac120002"
@@ -53,12 +53,12 @@ package "CareCommunication message: New message with Attachment, Recipient and E
         recipient.reference = "CareTeam/fb1d34fe-6672-11ed-9022-0242ac120002"
         extension.sender.reference = "CareTeam/f693506a-6903-11ed-9022-0242ac120002"
         payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[0].extension:date = "2023-03-01T09:00:00+01:00"
+        payload[0].extension:date = "2024-05-01T09:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/35bb99e4-551a-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
         payload[1].contentAttachment.data = "JVBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC9U..."
         payload[1].contentAttachment.title = "Rehabilitationplan"
-        payload[1].extension:date = "2023-03-01T09:00:00+01:00"
+        payload[1].extension:date = "2024-05-01T09:00:00+01:00"
         payload[1].contentAttachment.contentType = "application/pdf"
         payload[1].contentAttachment.creation = "2023-02-25T08:00:00+01:00"
         payload[1].extension:author.reference = "PractitionerRole/35bb99e4-551a-11ed-bdc3-0242ac120002"
@@ -103,8 +103,8 @@ package "CareCommunication message: New message with Attachment, Recipient and E
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "ee619a58-5519-11ed-bdc3-0242ac120002"
         target.reference = "MessageHeader/dc04b8c2-5519-11ed-bdc3-0242ac120002"
-        occuredDateTime = "2023-03-01T09:00:00+01:00"
-        recorded = "2023-03-01T09:00:11"
+        occuredDateTime = "2024-05-01T09:00:00+01:00"
+        recorded = "2024-05-01T09:00:11"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/c5c393ee-5519-11ed-bdc3-0242ac120002"

@@ -20,7 +20,7 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as replyB {
         id = "k7bfbc0c-553d-11ed-bdc3-0242ac120002"
         type = "message"
-        timestamp = "2023-03-03T12:00:00+01:00"
+        timestamp = "2024-05-03T12:00:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as replyMH{
         id = "3076d9b0-5521-11ed-bdc3-0242ac120002"
@@ -52,7 +52,7 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
         encounter.reference = "Encounter/2a5b01e4-8c2c-481b-ab12-e383d8e00629"
         subject.reference = "Patient/e8dd504e-551f-11ed-bdc3-0242ac120002"
         payload[0].contentString = "We have a question regarding the report of admission..."
-        payload[0].extension:date = "2023-03-03T12:00:00+01:00"
+        payload[0].extension:date = "2024-05-03T12:00:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/2b80d2b8-5520-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
     }
@@ -94,8 +94,8 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as replyPRO{
         id = "6de0806d-7050-4db8-8003-0c72aee52948"
         target.reference = "MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
-        occuredDateTime = "2023-03-03T12:00:00+01:00"
-        recorded = "2023-03-03T12:00:00+01:00"
+        occuredDateTime = "2024-05-03T12:00:00+01:00"
+        recorded = "2024-05-03T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "reply-message"
         agent.who.reference = "Organization/fd0666dc-551f-11ed-bdc3-0242ac120002"

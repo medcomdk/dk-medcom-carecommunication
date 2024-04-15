@@ -54,7 +54,7 @@ Title: "New CareCommunication message."
 Description: "Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
 * entry[=].resource = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -78,7 +78,7 @@ Title: "Reply CareCommunication message"
 Description: "Example of a reply to a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-02T11:30:00+01:00
+* timestamp = 2024-05-02T11:30:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
 * entry[=].resource = d5bd2111-2576-48d3-84d4-8be0297a038d
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -108,7 +108,7 @@ Title: "Forward CareCommunication message"
 Description: "Example of a forward CareCommunication message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-02T09:00:00+01:00
+* timestamp = 2024-05-02T09:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/aac67161-d0de-4933-a78c-060beafb4814"
 * entry[=].resource = aac67161-d0de-4933-a78c-060beafb4814
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -141,7 +141,7 @@ Title: "New CareCommunication message. Including an attachment"
 Description: "Example of a CareCommunication new message with attachment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/dc04b8c2-5519-11ed-bdc3-0242ac120002"
 * entry[=].resource = dc04b8c2-5519-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/79fc4a5c-5fca-4389-8740-89607ce07f2d"
@@ -170,7 +170,7 @@ Title: "New CareCommunication message. Including sender and recipient"
 Description: "Example of a CareCommunication new message with sender and recipient."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/bfe2d85f-5551-4a01-94f5-5d4b66000ad0"
 * entry[=].resource = bfe2d85f-5551-4a01-94f5-5d4b66000ad0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/833cef33-3726-433b-855d-e566aaa65fe1"
@@ -199,7 +199,7 @@ Title: "New CareCommunication message. Including priority"
 Description: "Example of a CareCommunication new message with priority."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/4f3bc2ea-2214-44d7-ba02-e286ddf2b51e"
 * entry[=].resource = 4f3bc2ea-2214-44d7-ba02-e286ddf2b51e
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/e0c57a9f-9b04-43b4-9355-76f3564a1f10"
@@ -224,7 +224,7 @@ Title: "New CareCommunication message. Including journal note in the message tex
 Description: "Example of a CareCommunication new message with journal note in the message text."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/375293b8-2f91-4d08-b13a-83ea76b6d001"
 * entry[=].resource = 375293b8-2f91-4d08-b13a-83ea76b6d001
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b8e3000b-3b95-43e2-8e5b-fc347d0a2411"
@@ -241,7 +241,7 @@ Usage: #example
 * entry[=].resource = c39b114b-a9c1-46bb-ac30-e3ce71f28c3a
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/790daa1e-bf50-4ee0-af8c-31c493e272bb"
 * entry[=].resource = 790daa1e-bf50-4ee0-af8c-31c493e272bb
-
+/* 
 //New message with formatted text
 Instance: f922f204-4a08-4a7a-a900-63b6e0e92b3e
 InstanceOf: MedComCareCommunicationMessage
@@ -249,7 +249,7 @@ Title: "New CareCommunication message. Including XHTML-formatted message text"
 Description: "Example of a CareCommunication new message with formatted message text."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/2f0db363-234c-4096-82f7-3fd63057fd94"
 * entry[=].resource = 2f0db363-234c-4096-82f7-3fd63057fd94
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/f9bc6de0-588f-4a3d-a6c6-eb370d23a473"
@@ -267,7 +267,7 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/33d460d7-670a-449b-90f1-8f677c809729"
 * entry[=].resource = 33d460d7-670a-449b-90f1-8f677c809729
 
-
+ */
 // CareCommunication reply to XDIS message
 Instance: k7bfbc0c-553d-11ed-bdc3-0242ac120002
 InstanceOf: MedComCareCommunicationMessage
@@ -275,7 +275,7 @@ Title: "Reply CareCommunication message. Reply to OIOXML Message"
 Description: "Example of a reply to an OIOXML message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-03T12:00:00+01:00
+* timestamp = 2024-05-03T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
 * entry[=].resource = 3076d9b0-5521-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5"
@@ -296,14 +296,14 @@ Usage: #example
 * entry[=].resource = 6de0806d-7050-4db8-8003-0c72aee52948
 
 
-//CareCommunication cancelation
+/* //CareCommunication cancelation
 Instance: ed3e05b2-551d-11ed-bdc3-0242ac120002
 InstanceOf: MedComCareCommunicationMessage
 Title: "Cancel CareCommunication message"
 Description: "Example of a cancel (retract) a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:05:10Z
+* timestamp = 2024-05-01T12:05:10Z
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
 * entry[=].resource = b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -323,16 +323,16 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/16fac3d8-551d-11ed-bdc3-0242ac120002"
 * entry[=].resource = 16fac3d8-551d-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/4c284936-5454-4116-95fc-3c8eeeed2400"
-* entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400
+* entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400 */
 
-//CareCommunication Modify
+/* //CareCommunication Modify
 Instance: df9019c6-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCareCommunicationMessage
 Title: "Modify CareCommunication message"
 Description: "Example of a CareCommunication modify message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-03-01T12:05:10Z
+* timestamp = 2024-05-01T12:05:10Z
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
 * entry[=].resource = f8aa0bf0-690d-11ed-9022-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -351,4 +351,4 @@ Usage: #example
 * entry[=].resource = f18213f8-2e2c-458d-86ff-4e48ac5d7162
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/4c284936-5454-4116-95fc-3c8eeeed2400"
 * entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400
-
+ */

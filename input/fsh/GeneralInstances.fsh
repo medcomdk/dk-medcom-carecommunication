@@ -104,7 +104,7 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 /* 
 Instanser anvendt til new message with formatted text
 */
-Instance: f9bc6de0-588f-4a3d-a6c6-eb370d23a473
+/* Instance: f9bc6de0-588f-4a3d-a6c6-eb370d23a473
 InstanceOf: MedComCorePatient
 Title: "Bruno Test Elmer"
 Description: "Patient described with minimal information. Valid only if used in a Bundle."
@@ -145,7 +145,7 @@ Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(a9bd6ab5-520d-4fdf-9b5f-55d79daedd73)
 * code = $PractitionerRole#sygeplejerske
-
+ */
 /* 
 Instanser anvendt til new message journal note
 */
@@ -400,11 +400,11 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(7ffff970-5504-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
 
-/*  
+
 /* 
 Instanser anvent til Cancel message 
 */
-Instance: 1f697de4-551c-11ed-bdc3-0242ac120002
+/* Instance: 1f697de4-551c-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePatient
 Title: "Bruno Test Elmer"
 Description: "Patient described with minimal information. Valid only if used in a Bundle."
@@ -445,11 +445,11 @@ Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(356947dc-551c-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
-
-/* 
+ */
+/*
 Instanser anvent til modify message 
 */
-Instance: 550b46e4-690d-11ed-9022-0242ac120002
+/* Instance: 550b46e4-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCorePatient
 Title: "Bruno Test Elmer"
 Description: "Patient described with minimal information. Valid only if used in a Bundle."
@@ -490,7 +490,7 @@ Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(356947dc-551c-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
-
+ */
 /* 
 Instanser anvendt til new message
 */

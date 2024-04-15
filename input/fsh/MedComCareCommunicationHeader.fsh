@@ -42,7 +42,7 @@ Usage: #example
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)
 
-// CareCommunication Cancel example
+/* // CareCommunication Cancel example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a retract message."
@@ -55,9 +55,9 @@ Usage: #example
 * sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus[0] = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
-* focus[1] = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12) 
+* focus[1] = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)  */
 
-// CareCommunication modify example
+/* // CareCommunication modify example
 Instance: f8aa0bf0-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a modify message."
@@ -70,7 +70,7 @@ Usage: #example
 * sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 //* focus[0] = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
-* focus = Reference(d63178cc-690f-11ed-9022-0242ac120002) 
+* focus = Reference(d63178cc-690f-11ed-9022-0242ac120002)  */
 
 
 
@@ -158,7 +158,7 @@ Usage: #example
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(c34e8284-b353-468f-a2ea-f6ef6330292c)
 
-// CareCommunication new example - with formatted messagetext
+/* // CareCommunication new example - with formatted messagetext
 Instance: 2f0db363-234c-4096-82f7-3fd63057fd94
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message with formatted message text."
@@ -170,7 +170,7 @@ Usage: #example
 * destination[primary].receiver = Reference(1680e847-abee-48ad-8704-65eb8225a3cb)
 * sender = Reference(9b876149-842d-4b09-8d3d-27468210d343)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* focus = Reference(3131b349-5162-48a9-9135-9ba730601faa)
+* focus = Reference(3131b349-5162-48a9-9135-9ba730601faa) */
 
 
 // CareCommunication reply to OIOXML example
