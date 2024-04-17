@@ -24,7 +24,7 @@ Priority, found in the element Communication.priority, is used to support the re
 
 #### Episode of care identifier 
 
-In the element Communication.encounter it is possible to reference a [MedComCoreEncounter](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html) profile. An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. The Encounter resource contains an episodeOfCare-identifier. When receiving a message, either CareCommunication or EDIFACT/OIOXML message, there will in many cases be an episodeOfCare-identifier, as it described the id of the contact. If this is the case, it shall always be included in the response. 
+In the element Communication.encounter it is possible to reference a [MedComCoreEncounter](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html) profile. An encounter describes the meeting between a patient and one or more healthcare providers or actors involved in the patient care. The Encounter resource contains an episodeOfCare-identifier. When receiving a message, either CareCommunication or EDIFACT/OIOXML message, there will in many cases be an episodeOfCare-identifier, as it described the id of the contact. If this is the case, it shall always be included in the response. Altenatively, when a user at a hopsital is in the context of e.g. an admission, the episodeOfCare-identifier should be coupled to a CareCommunication.
 [Click here to get more information about the episodeOfCare-identifier]( https://medcomdk.github.io/MedCom-FHIR-Communication/) 
 
 
