@@ -5,7 +5,6 @@ Description: "The CareCommunication is used to ensure secure electronic communic
 * entry ^short = "Message content (MedComCareCommunicationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComCareCommunication, MedComCorePatient, MedComCoreEncounter, MedComCorePractitioner, MedComCorePractitionerRole, MedComCoreCareTeam) - Open"
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
-* obeys medcom-careCommunication-3
 * obeys medcom-careCommunication-4
 * obeys medcom-careCommunication-12
 * obeys medcom-careCommunication-11
@@ -20,12 +19,6 @@ Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one Patient resource"
 Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
-
-Invariant: medcom-careCommunication-3
-Description: "All Provenance resources shall contain activities from medcom-careCommunication-messagingActivities valueset"
-Severity: #error
-Expression: "entry.resource.ofType(Provenance).all(activity.memberOf('http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities'))"
-
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."

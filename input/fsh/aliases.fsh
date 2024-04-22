@@ -13,3 +13,5 @@ Alias: $CCCategoryCodes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-ca
 Alias: $Mimetypes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-attachmentMimeTypes
 Alias: $PractitionerRoleValues = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-PractitionerRoles
 Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
+
+Alias: $CareCommunicationActivities = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities
