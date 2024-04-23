@@ -43,8 +43,8 @@ Expression: "Bundle.entry.resource.ofType(PractitionerRole).practitioner.referen
 
 Instance: add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
 InstanceOf: MedComCareCommunicationMessage
-Title: "New CareCommunication message."
-Description: "Example of a CareCommunication new message."
+Title: "1st message - New CareCommunication message."
+Description: "1st message - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-05-01T12:00:00+01:00
@@ -67,8 +67,8 @@ Usage: #example
 
 Instance: b56549f7-ed10-422d-8088-f7222b686e46
 InstanceOf: MedComCareCommunicationMessage
-Title: "Reply CareCommunication message"
-Description: "Example of a reply to a CareCommunication message."
+Title: "2nd message - Reply CareCommunication message"
+Description: "2nd message - Example of a reply to a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-05-02T11:30:00+01:00

@@ -1,8 +1,8 @@
 // CareCommunication example - new message
 Instance: 4c284936-5454-4116-95fc-3c8eeeed2400
 InstanceOf: MedComCareCommunicationProvenance
-Title: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
+Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
+Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * occurredDateTime = 2024-05-01T12:00:00+01:00
@@ -10,7 +10,7 @@ Usage: #example
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
 * entity[0].role = #revision
-* entity[0].what.identifier.value = "hej"
+* entity[0].what.identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 
 // CareCommunication example - new message w. attachment
 Instance: ee619a58-5519-11ed-bdc3-0242ac120002

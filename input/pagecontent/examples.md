@@ -14,9 +14,9 @@ C replies to B <br>
 
 ### 1st message - new CareCommunication
 
-[1st message.](/Bundle-add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html)
+[1st message](/Bundle-add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html)
 
-The initial message sent from xx to yy.
+The initial message sent from Hjerteafdelingen på Herlev og Gentofte hospital to Plejecenter Herlev.
 
 The message includes one message segment and a new communication identifier. Since it is a new message the activity is in the Provenance instance 'new-message'. The sender and receiver organizations are both referenced from the MessageHeader. 
 
@@ -24,11 +24,13 @@ The CareCommunication contains a topic at Communication.topic.
 
 ### 2nd message - reply CareCommunication
 
-2nd message 
+[2nd message](/Bundle-b56549f7-ed10-422d-8088-f7222b686e46.html) 
 
 A reply to the 1st message. Since it is a reply to the latest CareCommunication, the Communication.identifier remains the same. Two Communication.payload is added which includes the reply to the new message, since an attachment and message text are included. The activity is in the Provenance instance 'reply-message'. 
 
 The author of the second CareCommunication has included an attachment without structured author information. 
+
+In the reply, 
 
 ### 3rd message - reply CareCommunication
 

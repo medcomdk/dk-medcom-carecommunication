@@ -3,27 +3,28 @@ Instanser anvendt til new message
 */
 Instance: 733cef33-3626-422b-955d-d506aaa65fe1
 InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
+Title: "1st message - Bruno Test Elmer"
+Description: "1st message - Patient described with minimal information. Valid only if used in a Bundle."
 Usage: #example
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
 * name[official].family = "Elmer"
+* name[official].given = "Bruno"
 
 // Sender instance - new message
 Instance: o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
 InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a sender organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
+Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
+Description: "1st message - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 // Reciever instance - new message
 Instance: o4cdf292-abf3-4f5f-80ea-60a48013ff6d
 InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
+Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
+Description: "1st message - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "953741000016009" 
 * identifier[EAN-ID].value = "5790001348120" 
 * name = "Plejecenter Herlev"

@@ -31,8 +31,8 @@ Usage: #inline
 // CareCommunication new example
 Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Instance of a MessageHeader resource used in a new message."
-Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Title: "1st message - Instance of a MessageHeader resource used in a new message."
+Description: "1st message - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -77,8 +77,8 @@ Usage: #example
 // CareCommunication reply example
 Instance: d5bd2111-2576-48d3-84d4-8be0297a038d
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Instance of a MessageHeader resource used in a reply message."
-Description: "Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
+Title: "2nd message - Instance of a MessageHeader resource used in a reply message."
+Description: "2nd message - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message

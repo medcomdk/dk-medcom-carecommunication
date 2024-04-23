@@ -117,13 +117,14 @@ Expression: "status='unknown' or status='entered-in-error'" */
 // CareCommunication new example
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: MedComCareCommunication
-Title: "Instance of Communication resource used in a new message."
-Description: "Content of care communication message. Valid only if used in a bundle (message) - new message"
+Title: "1st message - Instance of Communication resource used in a new message."
+Description: "1st message - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
-* category = $CategoryCodes#carecoordination
+* category = $CategoryCodes#examination-results
+* topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
 * payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
@@ -160,20 +161,20 @@ Description: "Content of care communication message. Valid only if used in a bun
 // CareCommunication reply example
 Instance: 4c712bdc-1558-4125-a854-fa8b3a11f6ed
 InstanceOf: MedComCareCommunication
-Title: "Instance of Communication resource used in a reply message."
-Description: "Content of care communication message. Valid only if used in a bundle (message) - reply message"
+Title: "2nd message - Instance of Communication resource used in a reply message."
+Description: "2nd message - Content of care communication message. Valid only if used in a bundle (message) - reply message"
 * status = $EventStatus#unknown
-* identifier.value = "b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
-* category = $CategoryCodes#carecoordination
+* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
+* category = $CategoryCodes#examination-results
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* payload[1].contentString = "Thank you for notifying us, we will take care of it..."
+* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Bloprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Mvh. Emma"
 * payload[1].extension[date].valueDateTime = 2024-05-02T11:30:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
 * payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
-* payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
 * payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
