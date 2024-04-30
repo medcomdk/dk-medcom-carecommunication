@@ -23,10 +23,10 @@ Usage: #example
 * recorded = 2024-05-01T12:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(85669d18-2bb3-4c6e-80d2-e039a63a521c)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "hej"
-* entity[hej].role = #source
-* entity[hej].what.identifier.value = "hdskjfhjk"
+* entity[payload][0].role = #source
+* entity[payload][0].what.identifier.value = "hej"
+* entity[payload][1].role = #source
+* entity[payload][1].what.identifier.value = "hdskjfhjk"
 
 // CareCommunication example - new message w. sender and recipient
 Instance: 5275fdd5-6fa9-44bb-88c3-581795cdb8c6

@@ -30,7 +30,6 @@ A reply to the 1st message. Since it is a reply to the latest CareCommunication,
 
 The author of the second CareCommunication has included an attachment without structured author information. 
 
-In the reply, 
 
 ### 3rd message - reply CareCommunication
 
@@ -55,17 +54,17 @@ The author role at PractitionerRole.text is not from the list of roles. Further 
 
 The examples below demonstrates how different information is included in a CareCommunication. 
 
-### CareCommunication incl. priority
+### CareCommunication with all optional content
 
-[CareCommunication incl. priority]()
+[CareCommunication with all optional content]()
 
-Priority may only be used when the category is 'regarding-referal', as described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
+This includes
+* Priority may only be used when the category is 'regarding-referal', as described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
+* Topic that elaborates the 
+* The episodeOfCare-identifier is be included in the CareCommunication, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
+* Specifik sender and recipient, which are describes as CareTeam instance. This is further described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html)
+* Structured author information for the author of the attachment.
 
-### CareCommunication incl. episodeOfCare-identifier
-
-[CareCommunication incl. episodeOfCare-identifier]()
-
-The episodeOfCare-identifier is be included in the CareCommunication, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
 
 ### CareCommunication incl. patient with replacement-CPR-nr. (eCPR)
 
