@@ -8,7 +8,7 @@ The figure below shows the possible references from MedComCareCommunication prof
 Please refer to the tab "Snapshot Table(Must support)" below for the definition of the required content of a MedComCareCommunication.
 
 #### Communication identifier - NEW!
-The purpose of the communication identifier, in the Communication.identifier.value, is to ensure a common identifier for a communication. This will help implementers keeping track of incomin and outgoing CareCommuncations. This identifier must be a UUID v4 and it must remain the same when replying to the latest CareCommunication. The identifier must be updated when a CareCommunication is forwarded or the user replies to a previously replyed CareCommunication. This is elaborated in the **Governance for CareCommunication [ADD LINK!]**.
+The purpose of the communication identifier, in the Communication.identifier.value, is to ensure a common identifier for a communication. This will help implementers keeping track of incoming and outgoing CareCommuncations. This identifier must be a UUID v4 and it must remain the same when replying to the latest CareCommunication. The identifier must be updated when a CareCommunication is forwarded or the user replies to a previously replyed CareCommunication. This is elaborated in the **Governance for CareCommunication [ADD LINK!]**.
 
 #### Categories and topic
 
@@ -98,7 +98,7 @@ A description of the above mentioned information can be found here: <br>
 **Author role:** The role (Danish: stillingsbetegnelse) of the person responsible for writing the message text. The author role shall be described using a MedComCorePractitionerRole profile. It is recommended to to a role from the defined list of roles or to add a role in the text element.<br> 
 **Relevant phone number:** A relevant phone number e.g. to the department from which the CareCommunication is sent. The phone number should be applied automatically. In case it is not possible to apply the phone number automatically, it shall be applied by the author. <br> 
 **Timestamp:** Represents the real world event, where the user presses "send" to send the CareCommunication.<br> 
-**Identifier:** An UUID version 4 with a reference to the assigner organisation. The assigner organisation is the organisation who assigned the UUID, which will be the same as the initial sender organisation of the message segment. If the attachment is modified and reattached, it shall be given a new UUID and the assigner shall be updated. <br> 
+**Identifier:** An UUID version 4 with a reference to the assigner organisation. The assigner organisation is the organisation who assigned the UUID, which will be the same as the initial sender organisation of the message segment. <br> 
 **Title:** The title of the attached file. This should be applied by the system. <br>
 **Creation:** The date and time for when the attachment is created. 
 
