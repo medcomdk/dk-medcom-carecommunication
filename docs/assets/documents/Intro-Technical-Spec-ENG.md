@@ -148,10 +148,8 @@ In this section, simplified examples of CareCommunication are presented, which i
 * <a href="#Fig2">new message</a>
 * <a href="#Fig4">reply message</a>
 * <a href="#Fig5">forward message</a>
-* <a href="#Fig6">modify message</a> 
-* <a href="#Fig7">retract message</a>
 
-All types of simplified examples are created as XML or JSON examples in the CareCommunication IG. <a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see the full examples of a CareCommunication.</a> All systems must be able to receive and display a forwarded, modified or cancellation messages, but it is optional to support sending a forward, modify or cancellation message.
+All types of simplified examples are created as XML or JSON examples in the CareCommunication IG. <a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message-examples.html" target="_blank">Click here to see the full examples of a CareCommunication.</a> All systems must be able to receive and display a forwarded message, but it is optional to support sending a forward message.
  
   > Note: IT vendors cannot assume any specific order of the resources in a message. 
 
@@ -170,27 +168,10 @@ All types of simplified examples are created as XML or JSON examples in the Care
 
 <a href="#Fig5">Figure 5</a> is a simplified example of a forward message. This message represents a forwarding of the message on <a href="#Fig2">Figure 2</a>. When forwarding shall the user decide which message segment or segments that shall be forwarded, in this case is only one segment selected. The forward message can be seen in the payload[1], where the new message can be seen in the payload[0]. For this reason, does the Communication instance contain two message segment and associated authors. Further shall the message contain two Provenance instance, one from the previous message and one from the forward message, which holds a reference to the previous message.  
 <figure>
-<img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig4">
+<img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig5">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
 <br><br>
-
-
-<a href="#Fig6">Figure 6</a> is a simplified example of a modify message. This message represents a modification of the message on <a href="#Fig2">Figure 2</a>. A modification may be used when correcting a part of the message text, the category and/or topic, or the content of an attachment. The modification message shall contain both the message segment that are being modified from the previous message, as well as a message segment containing the actual modification or describing the modification, e.g. if the category is corrected. Further, shall the message contain two Provenance instance, one from the previous message and one from the modification message, which holds a reference to the previous message.
-<figure>
-<img src="../images/CCmodifyMessage.svg" alt="Simplified example: Modify message" style="width: 55%" id="Fig4">
-<figcaption text-align = "center"><b>Figure 6: Simplified example: Modify message </b></figcaption>
-</figure>
-
-<br><br>
-<a href="#Fig7">Figure 7</a> is a simplified example of a retract message. This message represents a cancellation of the message on <a href="#Fig2">Figure 2</a>.  A message shall be cancelled if the CareCommunication has been sent 1) about an incorrect patient CPR-number, 2) to incorrect receiver, and 3) with an attachment included with information about an incorrect patient. 
-When the sender cancels a previously send CareCommunication, the sender shall create a cancellation message. This message shall include two instances of the Communication instance, one with the status ‘entered-in-error’ and a message segment stating the cancellation and one with the status ‘unknown’ representing the message being cancelled, hence including the message segment from the previous sent message. Further does the message contain two Provenance instance, one from the previous message and one from the retraction message, which holds a reference to the previous message.
-<figure>
-<img src="../images/CCcancelMessage.svg" alt="Simplified example: Retract message" style="width: 55%" id="Fig4">
-<figcaption text-align = "center"><b>Figure 7: Simplified example: Retract message </b></figcaption>
-</figure>
-<br><br>
-
 
 <!-- ## 4 Timestamps in the CareCommunication 
 
