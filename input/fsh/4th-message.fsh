@@ -31,8 +31,23 @@ Usage: #example
 * entry[=].resource = af9b0255-1bdd-49c7-9d39-d652a587e4b2
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/73232102-649c-4c63-88f5-94ce189b94a7"
 * entry[=].resource = 73232102-649c-4c63-88f5-94ce189b94a7
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/73232102-649c-4c63-88f5-94ce189b94a7"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/5c689ef2-c6d7-4c74-adb8-303b772532e2"
+* entry[=].resource = 5c689ef2-c6d7-4c74-adb8-303b772532e2
 
+Instance: 5c689ef2-c6d7-4c74-adb8-303b772532e2
+InstanceOf: MedComCareCommunicationProvenance
+Title: "4th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
+Description: "4th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
+Usage: #inline
+* target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
+* occurredDateTime = 2024-05-04T10:00:00+01:00
+* recorded = 2024-05-04T10:00:00+01:00
+* activity.coding = $ActivityCode#forward-message
+* agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* entity[preceedingMessage].role = #revision
+* entity[preceedingMessage].what = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
+* entity[payload].role = #source
+* entity[payload].what.identifier.value = "urn:uuid:22093247-f2f5-4b25-a5b2-f1dcbbc3998b"
 
 // CareCommunication forward example
 Instance: aac67161-d0de-4933-a78c-060beafb4814
@@ -46,7 +61,7 @@ Usage: #example
 * destination[primary].receiver = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* focus = Reference(0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb)
+* focus = Reference(5485bde0-8246-4f46-b1a1-1f14e0a7a856)
 
 Instance: f98ed410-54fe-11ed-bdc3-0242ac120002
 InstanceOf: MedComMessagingOrganization 
@@ -54,7 +69,7 @@ Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "1042981000016003" 
 * identifier[EAN-ID].value = "5790001348120" 
-* name = "Herlevgaard Center Herlev Kommune"
+//* name = "Herlevgaard Center Herlev Kommune"
 
 // CareCommunication forward example
 Instance: 5485bde0-8246-4f46-b1a1-1f14e0a7a856
@@ -62,12 +77,12 @@ InstanceOf: MedComCareCommunication
 Title: "4th message - Instance of Communication resource used in a forward message."
 Description: "4th message - Content of care communication message. Valid only if used in a bundle (message) - forward message"
 * status = $EventStatus#unknown
-* identifier.value = "urn:uuid:89bd68bd-2c55-4e2d-98a8-e60dafed5e80"
+* identifier.value = "urn:uuid:546b19ba-3e50-4da8-b9ec-7caeefad6928"
 * category = $CategoryCodes#examination-results
 * subject = Reference(22d65545-f98a-4b4d-ba36-51b48b3eb3de)
 * payload[4].contentString = "Hej - Jeg håber det er okay, at jeg videresender denne forespørgsel. Kan I hjælpe os med at finde den, af Michael Burns, efterspurgte information. På forhånd tak. /Emma"
 * payload[4].extension[date].valueDateTime = 2024-05-04T10:00:00+01:00
-* payload[4].extension[identifier].valueIdentifier.value = "urn:uuid:bc9382ba-30f7-4020-a7c4-cbd18f9b4115"
+* payload[4].extension[identifier].valueIdentifier.value = "urn:uuid:22093247-f2f5-4b25-a5b2-f1dcbbc3998b"
 * payload[4].extension[identifier].valueIdentifier.assigner = Reference(82210440-6826-44fc-9fc8-2a29bab6a5c2)
 * payload[4].extension[author].valueReference = Reference(b0b3f1f5-3818-4d1c-aa25-cf08b01697a1)
 * payload[4].extension[authorContact].valueContactPoint.system = #phone 

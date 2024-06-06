@@ -21,6 +21,7 @@ Usage: #inline
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message
 Instance: 487ac745-fd11-4879-9b59-c08c7d47260e
 InstanceOf: MedComMessagingOrganization // 

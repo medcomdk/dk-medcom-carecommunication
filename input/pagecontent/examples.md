@@ -35,21 +35,21 @@ The author of the second CareCommunication has included an attachment without st
 
 [3rd message](Bundle-3dcb5618-3055-406a-9034-1b8fc8de0fea.html) 
 
-This is a reply to the 2nd message. Therefore, the Communication.identifier remains the same. One Communication.payload has been added with the reply. The base64-encoded content from the attachment in the 2nd message is not included, only the idenfitier and author information if available.
+This is a reply to the 2nd message. Therefore, the Communication.identifier remains the same. One Communication.payload has been added with the reply. The base64-encoded content from the attachment in the 2nd message is not included, only the identifier and author information.
+The unique ids of the instances, however the referenced MessageHeader from the previous messages remain the same. 
 
 ### 4th message - forward CareCommunication
 
 [4th message](Bundle-c0426e3e-978f-46e8-a366-a30f27854b0a.html) 
 
-
-This is a forwarding of the 3rd message. Therefore is the Communication.identifier now updated and the base64-encoded content from the attachment in the 2nd message is included. Additional a Communciation.payload is added. The activity is in the Provenance instance 'forward-message'. 
+This is a forwarding of the 3rd message. Therefore is the Communication.identifier updated and the base64-encoded content from the attachment in the 2nd message is included. Additionally, is a Communciation.payload added with a reason for the forwarding. The activity in the Provenance instance is 'forward-message'. A new receiver organization is included. The sender organization does not include a name in Organization.name.
 
 ### 5th message - reply CareCommunication
 
-5th message
+[5th message](Bundle-d11968f5-4bdf-4b50-b146-a8e1cc890fc3.html)
 
-Is a reply to the 4th message. The Communication.identifier remains the same and the base64-encoded content from the attachment in the 2nd message is not included. 
-The author role at PractitionerRole.text is not from the list of roles. Further the sender has included a specific sender of the message. 
+Is a reply to the 4th message. The Communication.identifier remains the same and the base64-encoded content from the attachment in the 2nd message is not included. The user has included a new attachment, which is a link to a webpage. 
+The author role at PractitionerRole.text is not from the list of roles. 
 
 ## Additional examples of CareCommunication
 
