@@ -33,13 +33,14 @@ The author of the second CareCommunication has included an attachment without st
 
 ### 3rd message - reply CareCommunication
 
-3rd message 
+[3rd message](Bundle-3dcb5618-3055-406a-9034-1b8fc8de0fea.html) 
 
 This is a reply to the 2nd message. Therefore, the Communication.identifier remains the same. One Communication.payload has been added with the reply. The base64-encoded content from the attachment in the 2nd message is not included, only the idenfitier and author information if available.
 
 ### 4th message - forward CareCommunication
 
-4th message
+[4th message](Bundle-c0426e3e-978f-46e8-a366-a30f27854b0a.html) 
+
 
 This is a forwarding of the 3rd message. Therefore is the Communication.identifier now updated and the base64-encoded content from the attachment in the 2nd message is included. Additional a Communciation.payload is added. The activity is in the Provenance instance 'forward-message'. 
 

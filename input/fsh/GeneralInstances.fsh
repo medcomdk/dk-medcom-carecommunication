@@ -5,7 +5,7 @@ Instance: 733cef33-3626-422b-955d-d506aaa65fe1
 InstanceOf: MedComCorePatient
 Title: "1st message - Bruno Test Elmer"
 Description: "1st message - Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
+Usage: #inline
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -13,15 +13,16 @@ Usage: #example
 * name[official].given = "Bruno"
 
 // Sender instance - new message
-Instance: o7056980-a8b2-42aa-8a0e-c1fc85d1f40d
+Instance: b581c63c-181f-46f6-990d-b9942c576724
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Usage: #inline
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 // Reciever instance - new message
-Instance: o4cdf292-abf3-4f5f-80ea-60a48013ff6d
+Instance: 487ac745-fd11-4879-9b59-c08c7d47260e
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
@@ -377,13 +378,7 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 * code = $PractitionerRole#sygeplejerske
 
-Instance: f98ed410-54fe-11ed-bdc3-0242ac120002
-InstanceOf: MedComMessagingOrganization 
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "1042981000016003" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Herlevgaard Center Herlev Kommune"
+
 
 
 //Practitioner - reply message

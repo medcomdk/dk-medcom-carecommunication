@@ -28,19 +28,6 @@ InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
 * valueCoding.code = $Use#primary
 
-// CareCommunication new example
-Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "1st message - Instance of a MessageHeader resource used in a new message."
-Description: "1st message - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* focus = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)
 
 /* // CareCommunication Cancel example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
@@ -51,8 +38,8 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus[0] = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
 * focus[1] = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)  */
@@ -66,41 +53,16 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 //* focus[0] = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
 * focus = Reference(d63178cc-690f-11ed-9022-0242ac120002)  */
 
 
 
-// CareCommunication reply example
-Instance: d5bd2111-2576-48d3-84d4-8be0297a038d
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "2nd message - Instance of a MessageHeader resource used in a reply message."
-Description: "2nd message - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* destination[primary].receiver = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* sender = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
 
-// CareCommunication forward example
-Instance: aac67161-d0de-4933-a78c-060beafb4814
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Instance of a MessageHeader resource used in a forward message."
-Description: "Example of a MessageHeader in a forward CareCommunication message. Valid only if used in a bundle (message)."
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
-* destination[primary].receiver = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
-* sender = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* focus = Reference(0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb)
+
 
 // CareCommunication new example - with attachemnt
 Instance: dc04b8c2-5519-11ed-bdc3-0242ac120002

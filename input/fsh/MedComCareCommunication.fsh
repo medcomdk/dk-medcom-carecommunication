@@ -10,6 +10,8 @@ Description: "Care related communication between two or more parties in Danish h
 * identifier ^short = "The communication identifier" 
 * category 1..1 MS
 * category from $CCCategoryCodes
+* category.coding.code 1..1 MS
+* category.coding.system 1..1 MS
 * priority MS
 * priority from $RequestPriority
 * priority ^short = "Shall be present if the message priority is known to be ASAP, but is only allowed when the category is 'regarding referral', see medcom-careCommunication-5"
@@ -17,7 +19,8 @@ Description: "Care related communication between two or more parties in Danish h
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
 * topic MS
-* topic ^short = "The topic (Danish: emne) may be added as a supplement to the category."
+* topic.text 1..1 MS
+* topic ^short = "The topic (Danish: emne) may be added as a supplement to the category. Topic must be added in the text-element."
 * encounter MS
 * encounter only Reference(MedComCoreEncounter)
 * encounter ^type.aggregation = #bundled
@@ -36,21 +39,18 @@ Description: "Care related communication between two or more parties in Danish h
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
-* payload ^slicing.ordered = true
 * payload contains
     string 1.. MS and
     attachment 0.. MS
 * payload[string].content[x] only string
-* payload[string].content[x] MS
+* payload[string].content[x] MS 
 * payload[string].extension[date] 1..1 MS SU
 * payload[string].extension[identifier] 1..1 MS SU
 * payload[string].extension[author] 1..1 MS SU
 * payload[string].extension[authorContact] 1..1 MS SU
-* payload[string] ^short = "xhtml content of the message"
-* payload[string] ^definition = "xhtml shall be used to markup a text. The xhtml shall be compliant with the narrative text format."
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
-* payload[attachment] ^short = "The payload with an attachment shall contain all links or content attached to the message."
+* payload[attachment] ^short = "The payload with an attachment shall contain a link or content attached to the message."
 * payload[attachment].content[x] MS
 * payload[attachment].extension[date] 1..1 MS SU
 * payload[attachment].extension[identifier] 1..1 MS SU
@@ -58,12 +58,12 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].extension[authorContact] 0..1 MS
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
-* payload[attachment].contentAttachment.contentType ^short = "The content type shall be present in case the content is provided as an attached document in the data element."
+* payload[attachment].contentAttachment.contentType ^short = "The content type shall be present when the content is an attachment included in the data element."
 * payload[attachment].contentAttachment.contentType from $Mimetypes
 * payload[attachment].contentAttachment.data MS
-* payload[attachment].contentAttachment.data ^short = "Shall be present and contain the base64 encoded content if the attachment is an attached document"
+* payload[attachment].contentAttachment.data ^short = "Shall be present and contain the base64 encoded content of the attachment."
 * payload[attachment].contentAttachment.url MS
-* payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a document or a web page."
+* payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a web page."
 * payload[attachment].contentAttachment.title 1.. MS
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
@@ -72,11 +72,11 @@ Description: "Care related communication between two or more parties in Danish h
 * obeys medcom-careCommunication-6
 * obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-8
-//* obeys medcom-careCommunication-9
+* obeys medcom-careCommunication-9
 //* obeys medcom-careCommunication-10
 
 Invariant: medcom-careCommunication-5
-Description: "Priority is only allowed when Communication.category = 'regarding-referral'"
+Description: "Priority must not be present when Communication.category is other than 'regarding-referral'"
 Severity: #error
 Expression: "where(category.coding.code != 'regarding-referral').priority.empty()"
 
@@ -99,7 +99,13 @@ Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefi
 /* Invariant: medcom-uuidv4
 Description: "The value shall correspond to the structure of an UUID version 4"
 Severity: #error
-Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')" */
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"
+ */
+
+Invariant: medcom-careCommunication-9
+Description: "An episodeOfCare-identifier must be included when an Encounter instance is included."
+Severity: #error
+Expression: "iif(encounter.exists().not(), true, encounter.reference.resolve().episodeOfCare.identifier.exists())"
 
 /* Invariant: medcom-careCommunication-9
 Description: "When an attachment is included, it shall have an identifier"
@@ -114,24 +120,6 @@ Expression: "status='unknown' or status='entered-in-error'" */
 
 
 
-// CareCommunication new example
-Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
-InstanceOf: MedComCareCommunication
-Title: "1st message - Instance of Communication resource used in a new message."
-Description: "1st message - Content of care communication message. Valid only if used in a bundle (message) - new message"
-* status = $EventStatus#unknown
-* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
-* category = $CategoryCodes#examination-results
-* topic.text = "Forspørgsel på seneste resultater"
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* payload.extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
-* payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "38683868"
-
 
 // CareCommunication forward example
 Instance: 0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb
@@ -145,42 +133,20 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload[1].contentString = "Forwarded message from Herlev og Gentofte Hospital: Can you please help me clarifying something about the rehabilitation plan?..."
 * payload[1].extension[date].valueDateTime = 2024-05-02T09:00:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:5b8b4329-1d55-4a78-bf27-79c690a8dace"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* payload[1].extension[identifier].valueIdentifier.assigner = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * payload[1].extension[author].valueReference = Reference(7cae09e0-5501-11ed-bdc3-0242ac120002)
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload[0].extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload[0].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
 
 
-// CareCommunication reply example
-Instance: 4c712bdc-1558-4125-a854-fa8b3a11f6ed
-InstanceOf: MedComCareCommunication
-Title: "2nd message - Instance of Communication resource used in a reply message."
-Description: "2nd message - Content of care communication message. Valid only if used in a bundle (message) - reply message"
-* status = $EventStatus#unknown
-* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
-* category = $CategoryCodes#examination-results
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Bloprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Mvh. Emma"
-* payload[1].extension[date].valueDateTime = 2024-05-02T11:30:00+01:00
-* payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
-* payload[1].extension[authorContact].valueContactPoint.system = #phone 
-* payload[1].extension[authorContact].valueContactPoint.value = "44527000"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
-* payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload[0].extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* payload[0].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
-* payload[0].extension[authorContact].valueContactPoint.system = #phone 
-* payload[0].extension[authorContact].valueContactPoint.value = "38683868"
+
 
 // CareCommunication reply to OIOXML notification example
 Instance: f54efd18-5520-11ed-bdc3-0242ac120002
@@ -212,14 +178,14 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload[+].contentString = "Corrected the <b>category</b> to 'Traning'. Selected a wrong category."
 * payload[=].extension[date].valueDateTime = 2024-05-01T12:30:00+01:00
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:c118e2d7-9292-4ef4-b7f7-b783c9b1b5de"
-* payload[=].extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* payload[=].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload[=].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "38683868"
 * payload[+].contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload[=].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload[=].extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* payload[=].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload[=].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "38683868"
@@ -235,7 +201,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.contentString = "Cancellation due to incorrect CPR-number"
 * payload.extension[date].valueDateTime = 2024-05-01T12:11:00Z
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:9c6aa7db-71ae-4263-a1df-8876ac44359e"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* payload.extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload.extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868" */
@@ -251,7 +217,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:4916a915-6f81-472d-ae87-ee6f6df5eee5"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
+* payload.extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload.extension[author].valueReference = Reference(39d3af60-551c-11ed-bdc3-0242ac120002)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868" */

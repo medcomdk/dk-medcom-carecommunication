@@ -1,16 +1,3 @@
-// CareCommunication example - new message
-Instance: 4c284936-5454-4116-95fc-3c8eeeed2400
-InstanceOf: MedComCareCommunicationProvenance
-Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
-Usage: #example
-* target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
-* activity.coding = $ActivityCode#new-message
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 
 // CareCommunication example - new message w. attachment
 Instance: ee619a58-5519-11ed-bdc3-0242ac120002
@@ -94,7 +81,7 @@ Usage: #inline
 * occurredDateTime = 2024-05-01T12:30:00+01:00
 * recorded = 2024-05-01T12:30:00+01:00
 * activity.coding = $ActivityCode#modified-message
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d) 
+* agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * entity[payload].role = #source
@@ -110,24 +97,10 @@ Usage: #inline
 * occurredDateTime = 2024-05-01T12:05:10Z
 * recorded = 2024-05-01T12:05:11Z
 * activity.coding = $ActivityCode#retract-message
-* agent.who = Reference(o7056980-a8b2-42aa-8a0e-c1fc85d1f40d) 
+* agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
 * entity.role = #removal
 * entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4) */
 
-Instance: 30c0f779-783f-46b2-b38f-faebd2bedb3f
-InstanceOf: MedComCareCommunicationProvenance
-Title: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - reply to new message"
-Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - reply to new message"
-Usage: #example
-* target = Reference(d5bd2111-2576-48d3-84d4-8be0297a038d)
-* occurredDateTime = 2024-05-02T11:30:00+01:00
-* recorded = 2024-05-02T11:30:00+01:00
-* activity.coding = $ActivityCode#reply-message
-* agent.who = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 
 Instance: 7466d9f6-d3ae-4be5-8ed7-b333dad30205
 InstanceOf: MedComCareCommunicationProvenance
@@ -138,7 +111,7 @@ Usage: #example
 * occurredDateTime = 2024-05-02T09:00:00+01:00
 * recorded = 2024-05-02T09:00:00+01:00
 * activity.coding = $ActivityCode#forward-message
-* agent.who = Reference(o4cdf292-abf3-4f5f-80ea-60a48013ff6d)
+* agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * entity[payload].role = #source
