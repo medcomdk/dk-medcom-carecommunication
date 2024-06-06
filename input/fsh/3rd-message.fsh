@@ -5,29 +5,29 @@ Description: "3rd message - Example of a reply to a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-05-03T09:25:00+01:00
-* entry[+].fullUrl = "urn:uuid:4dff3695-218d-4878-838a-5f23cbba6f82"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/4dff3695-218d-4878-838a-5f23cbba6f82"
 * entry[=].resource = 4dff3695-218d-4878-838a-5f23cbba6f82
-* entry[+].fullUrl = "urn:uuid:22d65545-f98a-4b4d-ba36-51b48b3eb3de"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/22d65545-f98a-4b4d-ba36-51b48b3eb3de"
 * entry[=].resource = 22d65545-f98a-4b4d-ba36-51b48b3eb3de
-* entry[+].fullUrl = "urn:uuid:d2b79da8-acda-4985-a8ad-5ed7ec9a2800"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/d2b79da8-acda-4985-a8ad-5ed7ec9a2800"
 * entry[=].resource = d2b79da8-acda-4985-a8ad-5ed7ec9a2800
-* entry[+].fullUrl = "urn:uuid:2d734f53-c71b-443a-a2d0-41327653b57c"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/2d734f53-c71b-443a-a2d0-41327653b57c"
 * entry[=].resource = 2d734f53-c71b-443a-a2d0-41327653b57c
-* entry[+].fullUrl = "urn:uuid:2a57c93e-de08-423b-b4ee-fcab85cc29bd"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/2a57c93e-de08-423b-b4ee-fcab85cc29bd"
 * entry[=].resource = 2a57c93e-de08-423b-b4ee-fcab85cc29bd
-* entry[+].fullUrl = "urn:uuid:b0b3f1f5-3818-4d1c-aa25-cf08b01697a1"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/b0b3f1f5-3818-4d1c-aa25-cf08b01697a1"
 * entry[=].resource = b0b3f1f5-3818-4d1c-aa25-cf08b01697a1
-* entry[+].fullUrl = "urn:uuid:9a274f97-57e9-4847-8022-4dc6152351c3"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/9a274f97-57e9-4847-8022-4dc6152351c3"
 * entry[=].resource = 9a274f97-57e9-4847-8022-4dc6152351c3
-* entry[+].fullUrl = "urn:uuid:f20f31cd-5dd2-4a80-ab00-97f7109864a7"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/f20f31cd-5dd2-4a80-ab00-97f7109864a7"
 * entry[=].resource = f20f31cd-5dd2-4a80-ab00-97f7109864a7
-* entry[+].fullUrl = "urn:uuid:82210440-6826-44fc-9fc8-2a29bab6a5c2"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/82210440-6826-44fc-9fc8-2a29bab6a5c2"
 * entry[=].resource = 82210440-6826-44fc-9fc8-2a29bab6a5c2
-* entry[+].fullUrl = "urn:uuid:5c748aa5-64ab-47a9-a74b-033b04a19dae"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/5c748aa5-64ab-47a9-a74b-033b04a19dae"
 * entry[=].resource = 5c748aa5-64ab-47a9-a74b-033b04a19dae
-* entry[+].fullUrl = "urn:uuid:af9b0255-1bdd-49c7-9d39-d652a587e4b2"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/af9b0255-1bdd-49c7-9d39-d652a587e4b2"
 * entry[=].resource = af9b0255-1bdd-49c7-9d39-d652a587e4b2
-* entry[+].fullUrl = "urn:uuid:73232102-649c-4c63-88f5-94ce189b94a7"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/73232102-649c-4c63-88f5-94ce189b94a7"
 * entry[=].resource = 73232102-649c-4c63-88f5-94ce189b94a7
 
 // CareCommunication reply example
@@ -107,7 +107,7 @@ Description: "3rd message - Content of care communication message. Valid only if
 * subject = Reference(22d65545-f98a-4b4d-ba36-51b48b3eb3de)
 * payload[3].contentString = "Mange tak for fremsendte. Kan I desuden hjælpe mig med at finde information vedr. kommunal udredning for sygdommen? / Michael"
 * payload[3].extension[date].valueDateTime = 2024-05-03T09:25:00+01:00
-//* payload[3].extension[identifier].valueIdentifier.value = "urn:uuid:07685582-3a8f-4bf3-bfa0-2f040133e922"
+* payload[3].extension[identifier].valueIdentifier.value = "urn:uuid:07685582-3a8f-4bf3-bfa0-2f040133e922"
 * payload[3].extension[identifier].valueIdentifier.assigner = Reference(82210440-6826-44fc-9fc8-2a29bab6a5c2)
 * payload[3].extension[author].valueReference = Reference(b0b3f1f5-3818-4d1c-aa25-cf08b01697a1)
 * payload[3].extension[authorContact].valueContactPoint.system = #phone 

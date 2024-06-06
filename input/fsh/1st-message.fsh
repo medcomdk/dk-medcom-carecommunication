@@ -5,21 +5,21 @@ Description: "1st message - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-05-01T12:00:00+01:00
-* entry[+].fullUrl = "urn:uuid:42cb9200-f421-4d08-8391-7d51a2503cb4"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
 * entry[=].resource = 42cb9200-f421-4d08-8391-7d51a2503cb4
-* entry[+].fullUrl = "urn:uuid:733cef33-3626-422b-955d-d506aaa65fe1"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
-* entry[+].fullUrl = "urn:uuid:94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
 * entry[=].resource = 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
-* entry[+].fullUrl = "urn:uuid:eda90bde-54f9-11ed-bdc3-0242ac120002"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
 * entry[=].resource = eda90bde-54f9-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "urn:uuid:58c811a5-4082-44eb-9d66-ccbb112d4973"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
-* entry[+].fullUrl = "urn:uuid:487ac745-fd11-4879-9b59-c08c7d47260e"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/487ac745-fd11-4879-9b59-c08c7d47260e"
 * entry[=].resource = 487ac745-fd11-4879-9b59-c08c7d47260e
-* entry[+].fullUrl = "urn:uuid:b581c63c-181f-46f6-990d-b9942c576724"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/b581c63c-181f-46f6-990d-b9942c576724"
 * entry[=].resource = b581c63c-181f-46f6-990d-b9942c576724
-* entry[+].fullUrl = "urn:uuid:4c284936-5454-4116-95fc-3c8eeeed2400"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/4c284936-5454-4116-95fc-3c8eeeed2400"
 * entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400
 
 // CareCommunication new example
