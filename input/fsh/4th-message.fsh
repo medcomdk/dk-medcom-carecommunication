@@ -38,12 +38,11 @@ Instance: 5c689ef2-c6d7-4c74-adb8-303b772532e2
 InstanceOf: MedComCareCommunicationProvenance
 Title: "4th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
 Description: "4th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
-Usage: #inline
 * target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
 * occurredDateTime = 2024-05-04T10:00:00+02:00
 * recorded = 2024-05-04T10:00:00+02:00
 * activity.coding = $ActivityCode#forward-message
-* agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* agent.who = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
 * entity[payload].role = #source
@@ -54,12 +53,11 @@ Instance: aac67161-d0de-4933-a78c-060beafb4814
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "4th message - Instance of a MessageHeader resource used in a forward message."
 Description: "4th message - Example of a MessageHeader in a forward CareCommunication message. Valid only if used in a bundle (message)."
-Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
 * destination[primary].receiver = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
-* sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* sender = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(5485bde0-8246-4f46-b1a1-1f14e0a7a856)
 

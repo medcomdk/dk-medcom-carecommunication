@@ -49,7 +49,7 @@ Usage: #inline
 * occurredDateTime = 2024-05-05T11:35:00+02:00
 * recorded = 2024-05-05T11:35:00+02:00
 * activity.coding = $ActivityCode#forward-message
-* agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* agent.who = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
 * entity[payload].role = #source
