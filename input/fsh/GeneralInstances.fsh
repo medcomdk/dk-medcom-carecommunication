@@ -12,7 +12,6 @@ Usage: #inline
 * name[official].family = "Elmer"
 * name[official].given = "Bruno"
 
-// Sender instance - new message
 Instance: b581c63c-181f-46f6-990d-b9942c576724
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
@@ -22,7 +21,6 @@ Usage: #inline
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 
-// Reciever instance - new message
 Instance: 487ac745-fd11-4879-9b59-c08c7d47260e
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."

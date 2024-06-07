@@ -36,13 +36,13 @@ The author of the second CareCommunication has included an attachment without st
 [3rd message](Bundle-3dcb5618-3055-406a-9034-1b8fc8de0fea.html) 
 
 This is a reply to the 2nd message. Therefore, the Communication.identifier remains the same. One Communication.payload has been added with the reply. The base64-encoded content from the attachment in the 2nd message is not included, only the identifier and author information.
-The unique ids of the instances, however the referenced MessageHeader from the previous messages remain the same. 
+The unique ids of the instances are updated, however the referenced MessageHeader in the Provenance instances from the previous messages remain the same. 
 
 ### 4th message - forward CareCommunication
 
 [4th message](Bundle-c0426e3e-978f-46e8-a366-a30f27854b0a.html) 
 
-This is a forwarding of the 3rd message. Therefore is the Communication.identifier updated and the base64-encoded content from the attachment in the 2nd message is included. Additionally, is a Communciation.payload added with a reason for the forwarding. The activity in the Provenance instance is 'forward-message'. A new receiver organization is included. The sender organization does not include a name in Organization.name.
+This is a forwarding of the 3rd message. Therefore is the Communication.identifier updated and the base64-encoded content from the attachment in the 2nd message is included. Additionally, is a Communciation.payload added with a reason for the forwarding. The topic is not forwarded. The activity in the Provenance instance is 'forward-message'. A new receiver organization is included. The sender organization does not include a name in Organization.name.
 
 ### 5th message - reply CareCommunication
 

@@ -4,7 +4,7 @@ Title: "1st message - New CareCommunication message."
 Description: "1st message - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-01T12:00:00+01:00
+* timestamp = 2024-05-01T12:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
 * entry[=].resource = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -48,7 +48,7 @@ Description: "1st message - Content of care communication message. Valid only if
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
+* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * payload.extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
@@ -62,9 +62,9 @@ Title: "1st message - The Provenance instance is only valid if used in a bundle 
 Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
+* entity[payload].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
