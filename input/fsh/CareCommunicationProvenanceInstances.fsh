@@ -6,8 +6,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(dc04b8c2-5519-11ed-bdc3-0242ac120002)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(85669d18-2bb3-4c6e-80d2-e039a63a521c)
 * entity[payload][0].role = #source
@@ -22,8 +22,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(bfe2d85f-5551-4a01-94f5-5d4b66000ad0)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(c5c393ee-5519-11ed-bdc3-0242ac120002)
 * entity[payload].role = #source
@@ -36,8 +36,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(4f3bc2ea-2214-44d7-ba02-e286ddf2b51e)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(fae4c8cf-e5d6-404d-867d-97ffa49a1c58)
 * entity[payload].role = #source
@@ -50,8 +50,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(375293b8-2f91-4d08-b13a-83ea76b6d001)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 * entity[payload].role = #source
@@ -64,8 +64,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(2f0db363-234c-4096-82f7-3fd63057fd94)
-* occurredDateTime = 2024-05-01T12:00:00+01:00
-* recorded = 2024-05-01T12:00:00+01:00
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(9b876149-842d-4b09-8d3d-27468210d343)
 * entity[payload].role = #source
@@ -78,8 +78,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Usage: #inline
 * target = Reference(f8aa0bf0-690d-11ed-9022-0242ac120002)
-* occurredDateTime = 2024-05-01T12:30:00+01:00
-* recorded = 2024-05-01T12:30:00+01:00
+* occurredDateTime = 2024-05-01T12:30:00+02:00
+* recorded = 2024-05-01T12:30:00+02:00
 * activity.coding = $ActivityCode#modified-message
 * agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
 * entity[preceedingMessage].role = #revision
@@ -108,8 +108,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
 Usage: #example
 * target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
-* occurredDateTime = 2024-05-02T09:00:00+01:00
-* recorded = 2024-05-02T09:00:00+01:00
+* occurredDateTime = 2024-05-02T09:00:00+02:00
+* recorded = 2024-05-02T09:00:00+02:00
 * activity.coding = $ActivityCode#forward-message
 * agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * entity[preceedingMessage].role = #revision
@@ -126,8 +126,8 @@ Title: "CareCommunication example. The Provenance instance is only valid if used
 Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - reply to OIOXML-message"
 Usage: #example
 * target = Reference(3076d9b0-5521-11ed-bdc3-0242ac120002)
-* occurredDateTime = 2024-05-03T12:00:00+01:00
-* recorded = 2024-05-03T12:00:00+01:00
+* occurredDateTime = 2024-05-03T12:00:00+02:00
+* recorded = 2024-05-03T12:00:00+02:00
 * activity.coding = $ActivityCode#reply-message
 * agent.who = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * entity[preceedingMessage].role = #revision
