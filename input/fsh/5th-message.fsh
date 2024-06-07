@@ -45,7 +45,7 @@ InstanceOf: MedComCareCommunicationProvenance
 Title: "5th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
 Description: "5th message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
 Usage: #inline
-* target = Reference(aac67161-d0de-4933-a78c-060beafb4814)
+* target = Reference(2654e182-cfee-4537-b744-e36231ebe2f3)
 * occurredDateTime = 2024-05-05T11:35:00+02:00
 * recorded = 2024-05-05T11:35:00+02:00
 * activity.coding = $ActivityCode#forward-message
