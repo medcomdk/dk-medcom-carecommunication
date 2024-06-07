@@ -85,7 +85,7 @@ Description: "5th message - Content of CareCommunication message. Valid only if 
 * payload[6].extension[author].valueReference = Reference(8adda490-63ef-4d97-86f0-14553628e53a)
 * payload[6].extension[authorContact].valueContactPoint.system = #phone 
 * payload[6].extension[authorContact].valueContactPoint.value = "48456523"
-* payload[5].contentAttachment.title = "Link " 
+* payload[5].contentAttachment.title = "Link" 
 * payload[5].contentAttachment.url = "https://medcom.dk/projekter/korrespondancemeddelelse/"
 * payload[5].extension[date].valueDateTime = 2024-05-05T11:35:00+02:00
 * payload[5].extension[identifier].valueIdentifier.value = "urn:uuid:ffed9804-35e3-449f-a1c3-0f8ece783dc7"

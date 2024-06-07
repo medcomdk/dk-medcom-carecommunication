@@ -55,7 +55,7 @@ The author role at PractitionerRole.text is not from the list of roles.
 
 The examples below demonstrates how different information is included in a CareCommunication. 
 
-### CareCommunication with all optional content
+### CareCommunication with all optional content - To Be Done! 
 
 [CareCommunication with all optional content]()
 
@@ -67,14 +67,15 @@ This includes
 * Structured author information for the author of the attachment.
 
 
-### CareCommunication incl. patient with replacement-CPR-nr. (eCPR)
+### CareCommunication where patient has a replacement-CPR. (eCPR)
 
+[CareCommunication where the patient has a replacement-CPR.](Bundle-0d5b3c18-fab6-4d93-9d88-c9c8abf1f18c.html)
 
-
-
+It is allowed to send a CareCommunication for a patient with a replacement-CPR (Danish: erstatnings-CPR or ecpr). In the example, the replacement-CPR is from the national eCPR service, defined by the Patient.identifier.system = "urn:oid:1.2.208.176.1.6.1.1". Further, an EpisodeOfCare-identifier (Danish: forløbsid) is included in the Encounter instance.
 
 ### CareCommunication as a reply to an OIOXML or EDIFACT message
 
+[Reply to an OIOXML message.](./Bundle-k7bfbc0c-553d-11ed-bdc3-0242ac120002.html) 
+
 It is allowed to answer a received MedCom EDIFACT or OIOXML message with a MedCom CareCommunication. The Provenance.entity.what.identifier shall contain a reference to the received OIOXML. The reference shall contain the locationnumber and letter identifier, divided by #. If the message being replied contains an episodOfCareIdentifier, this shall be included in the CareCommunication message.
 
-[Click here to see the generated example of a reply to an OIOXML message.](./Bundle-k7bfbc0c-553d-11ed-bdc3-0242ac120002.html) 

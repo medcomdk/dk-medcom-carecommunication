@@ -14,11 +14,11 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 
-    uri: https://hl7.dk/fhir/core/2.0.0/
-    version: 2.0.0
-  medcom.fhir.dk.core: 2.2.0
+    uri: https://hl7.dk/fhir/core/3.2.0/
+    version: 3.2.0
+  medcom.fhir.dk.core: dev
   medcom.fhir.dk.messaging: current
-  medcom.fhir.dk.terminology: 1.3.0
+  medcom.fhir.dk.terminology: 1.6.0
   
 menu:
   Table of Contents: toc.html

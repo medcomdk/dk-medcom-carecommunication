@@ -33,6 +33,6 @@ Description: "Provenance information about the current and preceeding message."
 * entity[payload].what.identifier ^short = "The identifier of the newly included Communication.payload.extension.valueIdentifier must be included here."
 
 Invariant: medcom-careCommunication-14
-Description: "hjehej"
+Description: "A reference or an identifier to a previous message must exists"
 Severity: #error
 Expression: "reference.exists() or identifier.exists()"

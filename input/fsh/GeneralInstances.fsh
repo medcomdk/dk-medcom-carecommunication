@@ -45,62 +45,6 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 * code = $PractitionerRole#sygeplejerske
 
 
-/* 
-Instanser anvendt til reply to XDIS message
-*/
-Instance: 23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5
-InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].family = "Elmer"
-
-// MedComCoreEncounter instance
-Instance: 2a5b01e4-8c2c-481b-ab12-e383d8e00629
-InstanceOf: MedComCoreEncounter
-Title: "MedCom Core Encounter"
-Description: "Example of a simple MedCom Core Encounter"
-* status = $StatusCodes#finished 
-* class = $ActCodes#IMP 
-* subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
-* episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000" // SOR id for afsender/serviceProvider
-
-// Sender instance - new message
-Instance: e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f
-InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a sender organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "265161000016000" 
-* identifier[EAN-ID].value = "5790000209354" 
-* name = "Hjerteafdelingen på Herlev og Gentofte hospital"
-// Reciever instance - new message
-Instance: ae899cbd-933b-4581-9a16-bd2da73f06a0
-InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
-
-// Practitioners - new message
-Instance: 8659596f-6ef4-421c-9ecd-94b65e4d5ff8
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
-
-Instance: 8dc790ba-8d93-4585-b91c-af8225b0796d
-InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(8659596f-6ef4-421c-9ecd-94b65e4d5ff8)
-* code = $PractitionerRole#sygeplejerske
-
 
 /* 
 Instanser anvendt til new message with formatted text

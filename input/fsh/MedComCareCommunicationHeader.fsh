@@ -135,16 +135,3 @@ Usage: #example
 * focus = Reference(3131b349-5162-48a9-9135-9ba730601faa) */
 
 
-// CareCommunication reply to OIOXML example
-Instance: 3076d9b0-5521-11ed-bdc3-0242ac120002
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Instance of a MessageHeader resource used in a reply to an OIOXML message."
-Description: "MessageHeader for CareCommunication reply to an OIOXML message. Valid only if used in a bundle (message)."
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(ae899cbd-933b-4581-9a16-bd2da73f06a0)
-* sender = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* focus = Reference(f54efd18-5520-11ed-bdc3-0242ac120002)

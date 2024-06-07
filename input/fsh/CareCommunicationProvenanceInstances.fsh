@@ -1,4 +1,4 @@
-
+/*
 // CareCommunication example - new message w. attachment
 Instance: ee619a58-5519-11ed-bdc3-0242ac120002
 InstanceOf: MedComCareCommunicationProvenance
@@ -99,7 +99,7 @@ Usage: #inline
 * activity.coding = $ActivityCode#retract-message
 * agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
 * entity.role = #removal
-* entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4) */
+* entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4) 
 
 
 Instance: 7466d9f6-d3ae-4be5-8ed7-b333dad30205
@@ -117,20 +117,6 @@ Usage: #example
 * entity[payload].role = #source
 * entity[payload].what.identifier.value = "hjk"
 
+*/
 
 
-// CareCommunication reply to XDIS message
-Instance: 6de0806d-7050-4db8-8003-0c72aee52948
-InstanceOf: MedComCareCommunicationProvenance
-Title: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - reply to OIOXML-message"
-Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - reply to OIOXML-message"
-Usage: #example
-* target = Reference(3076d9b0-5521-11ed-bdc3-0242ac120002)
-* occurredDateTime = 2024-05-03T12:00:00+02:00
-* recorded = 2024-05-03T12:00:00+02:00
-* activity.coding = $ActivityCode#reply-message
-* agent.who = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
-* entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what.identifier.value = "B300720181623#5790000121526"
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "jkl"
