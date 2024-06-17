@@ -5,7 +5,6 @@ This implementation guide (IG) is provided by MedCom to describe the use of FHIR
 This IG contains profiles for MedCom CareCommunication. The purpose of a CareCommunication is to support digital communication between parties within healthcare, including amongst others the psychiatric and social area. The CareCommunication is used to ensure secure electronic communication of personally identifiable information and is most often used for ad hoc communication. However, the CareCommunication shall only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature. 
 The CareCommunication supports: 
 * Exchange of digital files, also called attachments (Danish: Vedhæftede filer)
-* Formatting of message text
 * Automatic sorting when receiving a CareCommunication based on nationally agreed categories (Danish: Kategori)
 * Possibility for adding a topic (Danish: Emne)
 * Clarify the sender of the message by requiring a signature, including name and role of the author, and relevant phone number. 
@@ -53,9 +52,9 @@ The [MedComCorePractitionerRole](https://medcomfhir.dk/ig/core/StructureDefiniti
 ##### MedComMessagingOrganization
 The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html) profile is used in a CareCommunication to describe the sender and primary receiver of the notification. Please notice, that carbon-copy receiver is not allowed in a CareCommunication. Both the sender and receiver shall be identified using a SOR- and EAN-identifier.
 
-##### MedComMessagingProvenance
+##### MedComCareCommunicationProvenance
 
-The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
+The [MedComCareCommunicationProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-carecommunication-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all not activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
 
 In cases of a previously sent CareCommunications, MedComMessagingProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
@@ -77,7 +76,7 @@ All instances of a profile shall have a global unique id by using an UUID. [Read
 #### Examples
 The [examples page](examples.html) illustrates a flow of CareCommunications sent between healthcare parties. This includes new message, replies and forwarded messages. 
 
-Further, does the page include a reference to new messages with different type of content such as attachment, sender and recipient, priority, deceased patient and more.
+Additionally, does the page references new messages containing different type of content such as attachments, sender and recipient, priority, deceased patient and more.
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.

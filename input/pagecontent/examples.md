@@ -4,7 +4,7 @@
 
 ## Flow of CareCommunication 
 
-This section describes five subsequent CareCommunications sent between three healthcare departments concerning the same citizen with test-CPR-nr. 250947-9989. The flow is the examples support is: <br>
+This section describes five subsequent CareCommunications sent between three healthcare departments concerning the same citizen with test-CPR-nr. 250947-9989. The flow that the examples support is: <br>
 
 A sends a new message to B <br>
 B replies to A <br>
@@ -18,7 +18,7 @@ C replies to B <br>
 
 The initial message sent from Hjerteafdelingen på Herlev og Gentofte hospital to Plejecenter Herlev.
 
-The message includes one message segment and a new communication identifier. Since it is a new message the activity is in the Provenance instance 'new-message'. The sender and receiver organizations are both referenced from the MessageHeader. 
+The message includes one message segment and a new communication identifier. As it is a new message, the activity is in the Provenance instance 'new-message'. The sender and receiver organizations are both referenced from the MessageHeader. 
 
 The CareCommunication contains a topic at Communication.topic.
 
@@ -26,7 +26,7 @@ The CareCommunication contains a topic at Communication.topic.
 
 [2nd message](Bundle-b56549f7-ed10-422d-8088-f7222b686e46.html) 
 
-A reply to the 1st message. Since it is a reply to the latest CareCommunication, the Communication.identifier remains the same. Two Communication.payload is added which includes the reply to the new message, since an attachment and message text are included. The activity is in the Provenance instance 'reply-message'. 
+A reply to the 1st message. Since it is a reply to the latest CareCommunication, the Communication.identifier remains the same. Two Communication.payload is added which includes the reply to the new message, since a message text and an attachment are included. The activity is in the Provenance instance 'reply-message'. 
 
 The author of the second CareCommunication has included an attachment without structured author information. 
 
@@ -49,7 +49,7 @@ This is a forwarding of the 3rd message. Therefore is the Communication.identifi
 [5th message](Bundle-d11968f5-4bdf-4b50-b146-a8e1cc890fc3.html)
 
 Is a reply to the 4th message. The Communication.identifier remains the same and the base64-encoded content from the attachment in the 2nd message is not included. The user has included a new attachment, which is a link to a webpage. 
-The author role at PractitionerRole.text is not from the list of roles. 
+The author role is not from the list of roles, but is included as at PractitionerRole.code.text. 
 
 ## Additional examples of CareCommunication
 
