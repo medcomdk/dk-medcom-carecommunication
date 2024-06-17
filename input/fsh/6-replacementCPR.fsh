@@ -14,7 +14,7 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/2e8c8e54-388c-4547-954c-1917652986da"
 * entry[=].resource = 2e8c8e54-388c-4547-954c-1917652986da
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/97511212-12e6-4182-a42b-cf232c0c117c"
-* entry[=].resource = 2e8c8e54-388c-4547-954c-1917652986da
+* entry[=].resource = 97511212-12e6-4182-a42b-cf232c0c117c
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/b2f762be-6994-44da-a214-72c765655b3e"
 * entry[=].resource = b2f762be-6994-44da-a214-72c765655b3e
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/0ece868c-6a72-4aa3-8a96-2d985ab630c7"
@@ -35,6 +35,7 @@ Usage: #example
 * sender = Reference(0ece868c-6a72-4aa3-8a96-2d985ab630c7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d8434eb5-8286-48f8-a590-4a27175ed82f)
+* definition = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/MedComCareCommunicationMessageDefinition"
 
 
 // CareCommunication new example
@@ -72,7 +73,7 @@ Instance: 50c51ef0-00b0-429a-b212-35ee0773fd5a
 InstanceOf: MedComCorePatient
 Title: "Bruno Test Elmer"
 Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #inline
+Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
 * identifier.value = "0102882KL5"
 * identifier.use = #temp
@@ -84,7 +85,6 @@ Instance: 0ece868c-6a72-4aa3-8a96-2d985ab630c7
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a sender organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-Usage: #inline
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"

@@ -43,19 +43,7 @@ Usage: #example
 * entity[payload].role = #source
 * entity[payload].what.identifier.value = "hej"
 
-// CareCommunication example - new message w. journalnote
-Instance: 790daa1e-bf50-4ee0-af8c-31c493e272bb
-InstanceOf: MedComCareCommunicationProvenance
-Title: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "CareCommunication example. The Provenance instance is only valid if used in a bundle (message) - new message"
-Usage: #example
-* target = Reference(375293b8-2f91-4d08-b13a-83ea76b6d001)
-* occurredDateTime = 2024-05-01T12:00:00+02:00
-* recorded = 2024-05-01T12:00:00+02:00
-* activity.coding = $ActivityCode#new-message
-* agent.who = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "hej"
+
 
 // CareCommunication example - new message w. formatted message text
 Instance: 33d460d7-670a-449b-90f1-8f677c809729

@@ -130,30 +130,7 @@ Usage: #example
 * entry[=].resource = 9426fb7b-aa5d-4391-ad22-3d46a581560e
 
 
-//New message with journal note
-Instance: gfd00bc2-9c26-4174-934e-f6e4360845de
-InstanceOf: MedComCareCommunicationMessage
-Title: "New CareCommunication message. Including journal note in the message text."
-Description: "Example of a CareCommunication new message with journal note in the message text."
-Usage: #example
-* type = $BundleType#message
-* timestamp = 2024-05-01T12:00:00+01:00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/375293b8-2f91-4d08-b13a-83ea76b6d001"
-* entry[=].resource = 375293b8-2f91-4d08-b13a-83ea76b6d001
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b8e3000b-3b95-43e2-8e5b-fc347d0a2411"
-* entry[=].resource = b8e3000b-3b95-43e2-8e5b-fc347d0a2411
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/c34e8284-b353-468f-a2ea-f6ef6330292c"
-* entry[=].resource = c34e8284-b353-468f-a2ea-f6ef6330292c
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/3b1f7d8c-540e-474c-b079-89284c2de621"
-* entry[=].resource = 3b1f7d8c-540e-474c-b079-89284c2de621
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/6397c13d-7cb2-4834-871c-47f528bb79cf"
-* entry[=].resource = 6397c13d-7cb2-4834-871c-47f528bb79cf
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/33153a8a-97c8-4f55-b7ad-bbedee8bd0e1"
-* entry[=].resource = 33153a8a-97c8-4f55-b7ad-bbedee8bd0e1
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/c39b114b-a9c1-46bb-ac30-e3ce71f28c3a"
-* entry[=].resource = c39b114b-a9c1-46bb-ac30-e3ce71f28c3a
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/790daa1e-bf50-4ee0-af8c-31c493e272bb"
-* entry[=].resource = 790daa1e-bf50-4ee0-af8c-31c493e272bb
+
 
 //New message with formatted text
 Instance: f922f204-4a08-4a7a-a900-63b6e0e92b3e

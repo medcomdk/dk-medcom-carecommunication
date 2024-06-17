@@ -224,23 +224,7 @@ Usage: #example
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868"
 
-// CareCommunication with attachment example - in the messagetext
-Instance: c34e8284-b353-468f-a2ea-f6ef6330292c
-InstanceOf: MedComCareCommunication
-Title: "Instance of Communication resource used in a new message. The message includes a journal note and author information in the messagetext."
-Description: "Content of care communication message. Valid only if used in a bundle (message) - new message with attachment"
-Usage: #example
-* status = $EventStatus#unknown
-* identifier.value = "7c02eb1c-fec7-4a12-9c4f-5423e52bfe5f"
-* category = $CategoryCodes#carecoordination
-* subject = Reference(b8e3000b-3b95-43e2-8e5b-fc347d0a2411)
-* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:8e9ae01c-043f-43f7-b8c0-d50acfec0aac"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
-* payload.extension[author].valueReference = Reference(3b1f7d8c-540e-474c-b079-89284c2de621)
-* payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "38683868"
-* payload.contentString = "Hi, I've attached the following journal note. It contains the information you requested over the phone: <br/> Proin aliquet sit amet justo quis auctor. Integer malesuada tempor purus sit amet dictum. Nulla dictum pharetra erat sit amet faucibus. Fusce porttitor, lectus sed volutpat pulvinar, tortor leo sodales elit, non mattis ligula enim dignissim ex. Donec ornare laoreet elit dapibus maximus. Mauris malesuada enim vitae ligula feugiat, eget rutrum orci auctor. Aenean feugiat volutpat magna ut venenatis. Proin eu ornare metus, in pretium sem. Aenean id bibendum urna. Sed ultricies mauris in erat bibendum rhoncus. Suspendisse ac porttitor tellus. Sed molestie pharetra turpis, pellentesque ultrices tortor sodales sit amet. Integer et nulla luctus, fermentum felis eget, consequat est. Curabitur sed blandit nunc. Etiam cursus neque id diam consequat pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <br/> Nulla vitae lectus ut ipsum lobortis porttitor id eu purus. In finibus erat vitae orci volutpat, in euismod lorem dignissim. Vivamus volutpat orci sit amet velit pulvinar, id elementum lacus placerat. Donec scelerisque ligula at risus auctor venenatis ac et nibh. Donec eget cursus ipsum. Etiam interdum, velit vitae pulvinar egestas, quam risus interdum nisi, ut porta odio magna at diam. Cras dignissim tempor urna id condimentum. Cras molestie sagittis venenatis. Aenean at rutrum tellus, sit amet mollis elit. <br/> Praesent dictum lacinia enim sit amet scelerisque. Proin cursus enim luctus mi fringilla rhoncus. Praesent sagittis, erat vel auctor pretium, elit leo vulputate quam, a tincidunt ante justo sit amet eros. Duis condimentum, dui sed finibus convallis, ipsum neque dictum mauris, quis pulvinar mauris mi feugiat enim. Proin ullamcorper nibh lorem, nec consequat erat rhoncus ut. Praesent nisi ligula, molestie in nulla a, interdum sagittis neque. Nulla viverra elit ac eros mattis ultricies. Pellentesque a iaculis tellus. <br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus commodo nibh nulla, sit amet interdum ex condimentum ac. Mauris sodales placerat mollis. Suspendisse non quam pretium, ultricies nisl in, vehicula neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut condimentum vel orci efficitur viverra. Praesent posuere molestie lacus at consectetur. Vivamus pharetra, eros vel porta pretium, urna sem sodales nisi, ac tristique massa nisl nec sem. Donec at massa non felis ullamcorper eleifend. Morbi sit amet pharetra orci. Vivamus laoreet viverra tempor. <br/> This journal note is written by Hans Hansen on the 20th of November 2022 after a hospitalisation."
+
 
 
 /* // CareCommunication with formatted text (XHTML)

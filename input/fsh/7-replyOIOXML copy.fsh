@@ -38,6 +38,7 @@ Usage: #example
 * sender = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(f54efd18-5520-11ed-bdc3-0242ac120002)
+* definition = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/MedComCareCommunicationMessageDefinition"
 
 Instance: 6de0806d-7050-4db8-8003-0c72aee52948
 InstanceOf: MedComCareCommunicationProvenance
@@ -68,7 +69,7 @@ Usage: #example
 * name[official].family = "Elmer"
 
 // MedComCoreEncounter instance
-Instance: 2a5b01e4-8c2c-481b-ab12-e383d8e00629
+Instance: 303b2782-e2bf-4780-a8a5-c4b02b0e1c66
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
@@ -86,6 +87,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message
 Instance: ae899cbd-933b-4581-9a16-bd2da73f06a0
 InstanceOf: MedComMessagingOrganization // 
@@ -117,13 +119,13 @@ Title: "Instance of Communication resource used in a reply message. A reply to a
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
 Usage: #example
 * status = $EventStatus#unknown
-* identifier.value = "59aac95e-ca57-4b04-b075-9880b7e6441c"
+* identifier.value = "urn:uuid:59aac95e-ca57-4b04-b075-9880b7e6441c"
 * category = $CategoryCodes#carecoordination
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
 * encounter = Reference(2a5b01e4-8c2c-481b-ab12-e383d8e00629)
 * payload.contentString = "We have a question regarding the referal..."
 * payload.extension[date].valueDateTime = 2024-05-07T18:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:8521000b-ce04-4c18-b9b1-04dcbdf8e112"
+* payload.extension[identifier].valueIdentifier.value = "urn:uuid:1813b23d-195e-4b28-8221-24247035bf08"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * payload.extension[author].valueReference = Reference(8dc790ba-8d93-4585-b91c-af8225b0796d)
 * payload.extension[authorContact].valueContactPoint.system = #phone 

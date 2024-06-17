@@ -43,6 +43,7 @@ Usage: #example
 * sender = Reference(82210440-6826-44fc-9fc8-2a29bab6a5c2)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d2b79da8-acda-4985-a8ad-5ed7ec9a2800)
+* definition = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/MedComCareCommunicationMessageDefinition"
 
 
 
@@ -51,7 +52,6 @@ Instance: 73232102-649c-4c63-88f5-94ce189b94a7
 InstanceOf: MedComCareCommunicationProvenance
 Title: "3rd message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
 Description: "3rd message - The Provenance instance is only valid if used in a bundle (message) - new message being forwarded"
-Usage: #inline
 * target = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
 * occurredDateTime = 2024-05-03T09:25:00+02:00
 * recorded = 2024-05-03T09:25:00+02:00
@@ -67,7 +67,6 @@ Instance: 5c748aa5-64ab-47a9-a74b-033b04a19dae
 InstanceOf: MedComCareCommunicationProvenance
 Title: "2nd message - The Provenance instance is only valid if used in a bundle (message) - reply to new message"
 Description: "2nd message - The Provenance instance is only valid if used in a bundle (message) - reply to new message"
-Usage: #inline
 * target = Reference(d5bd2111-2576-48d3-84d4-8be0297a038d)
 * occurredDateTime = 2024-05-02T11:30:00+02:00
 * recorded = 2024-05-02T11:30:00+02:00
@@ -85,7 +84,6 @@ Instance: af9b0255-1bdd-49c7-9d39-d652a587e4b2
 InstanceOf: MedComCareCommunicationProvenance
 Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
-Usage: #inline
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * occurredDateTime = 2024-05-01T12:00:00+02:00
 * recorded = 2024-05-01T12:00:00+02:00
