@@ -117,6 +117,7 @@ Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(6397c13d-7cb2-4834-871c-47f528bb79cf)
 * code = $PractitionerRole#sygeplejerske
+* organization = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 
 
 // CareCommunication with attachment example - in the messagetext
@@ -127,7 +128,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 Usage: #example
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36"
-* category = $CategoryCodes#regarding-referal
+* category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
 * topic.text = "Journal notat"
 * encounter = Reference(2a5b01e4-8c2c-481b-ab12-e383d8e00629)
@@ -164,6 +165,6 @@ Instance: fb1d34fe-6672-11ed-9022-0242ac120002
 InstanceOf: MedComCoreCareTeam // 
 Title: "Example of a recipient in terms of a careteam."
 Description: "Example of a recipient in terms of a careteam."
-* managingOrganization = Reference(b75abdfa-5519-11ed-bdc3-0242ac120002)
+* managingOrganization = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 * name = "Plejecenter Herlev Team 1"
 

@@ -52,16 +52,17 @@ The author role is not from the list of roles, but is included as at Practitione
 
 The examples below demonstrates how different information is included in a CareCommunication. 
 
-## CareCommunication with all optional content - To Be Done! 
+## CareCommunication with all optional content
 
-[CareCommunication with all optional content]()
+[CareCommunication with all optional content](Bundle-gfd00bc2-9c26-4174-934e-f6e4360845de.html)
 
 This includes
-* Priority may only be used when the category is 'regarding-referal', as described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
-* Topic that elaborates the 
-* The episodeOfCare-identifier is be included in the CareCommunication, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
-* Specifik sender and recipient, which are describes as CareTeam instance. This is further described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html)
-* Structured author information for the author of the attachment.
+* Category as 'regarding-referal' and priority
+* Topic that elaborates the category
+* The episodeOfCare-identifier is included in the Encounter instance and referenced from the Communication instance, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
+* Specifik sender and recipient, which are described in CareTeam and Practitioner/PractitionerRole instances. This is further described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html)
+* Structured author information for the author of the attached pdf-document.
+* An attachment in terms of an URL. 
 
 
 ## CareCommunication where patient has a replacement-CPR. (eCPR)
