@@ -16,8 +16,8 @@ Usage: #example
 * entry[=].resource = 8dc790ba-8d93-4585-b91c-af8225b0796d
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/8659596f-6ef4-421c-9ecd-94b65e4d5ff8"
 * entry[=].resource = 8659596f-6ef4-421c-9ecd-94b65e4d5ff8
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Encounter/2a5b01e4-8c2c-481b-ab12-e383d8e00629"
-* entry[=].resource = 2a5b01e4-8c2c-481b-ab12-e383d8e00629
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Encounter/303b2782-e2bf-4780-a8a5-c4b02b0e1c66"
+* entry[=].resource = 303b2782-e2bf-4780-a8a5-c4b02b0e1c66
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/ae899cbd-933b-4581-9a16-bd2da73f06a0"
 * entry[=].resource = ae899cbd-933b-4581-9a16-bd2da73f06a0
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f"
@@ -73,7 +73,7 @@ Instance: 303b2782-e2bf-4780-a8a5-c4b02b0e1c66
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
-* status = $StatusCodes#finished 
+* status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
 * episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
@@ -122,7 +122,7 @@ Usage: #example
 * identifier.value = "urn:uuid:59aac95e-ca57-4b04-b075-9880b7e6441c"
 * category = $CategoryCodes#carecoordination
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
-* encounter = Reference(2a5b01e4-8c2c-481b-ab12-e383d8e00629)
+* encounter = Reference(303b2782-e2bf-4780-a8a5-c4b02b0e1c66)
 * payload.contentString = "We have a question regarding the referal..."
 * payload.extension[date].valueDateTime = 2024-05-07T18:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1813b23d-195e-4b28-8221-24247035bf08"

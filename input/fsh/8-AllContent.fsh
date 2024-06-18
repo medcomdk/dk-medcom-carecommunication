@@ -71,7 +71,7 @@ Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#finished 
 * class = $ActCodes#IMP 
-* subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
+* subject = Reference(b8e3000b-3b95-43e2-8e5b-fc347d0a2411)
 * episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=265161000016000" // SOR id for afsender/serviceProvider
 
@@ -165,6 +165,6 @@ Instance: fb1d34fe-6672-11ed-9022-0242ac120002
 InstanceOf: MedComCoreCareTeam // 
 Title: "Example of a recipient in terms of a careteam."
 Description: "Example of a recipient in terms of a careteam."
-* managingOrganization = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
+* managingOrganization = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)
 * name = "Plejecenter Herlev Team 1"
 
