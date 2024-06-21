@@ -39,7 +39,7 @@ The unique ids of the instances are updated, however the referenced MessageHeade
 
 [4th message](Bundle-c0426e3e-978f-46e8-a366-a30f27854b0a.html) 
 
-This is a forwarding of the 3rd message. Therefore is the Communication.identifier updated and the base64-encoded content from the attachment in the 2nd message is included. Additionally, is a Communciation.payload added with a reason for the forwarding. The topic is not forwarded. The activity in the Provenance instance is 'forward-message'. A new receiver organization is included. The sender organization does not include a name in Organization.name.
+This is a forwarding of the 3rd message. Therefore is the Communication.identifier updated and the base64-encoded content from the attachment in the 2nd message is included. Additionally, is a Communciation.payload added with a reason for the forwarding. The user decides not to forward the topic, why it is not included in the CareCommunication. The activity in the Provenance instance is 'forward-message'. A new receiver organization is included. The sender organization does not include a name in Organization.name.
 
 ## 5th message - reply CareCommunication
 
