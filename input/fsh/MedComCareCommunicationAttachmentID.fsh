@@ -18,8 +18,8 @@ Description: "An unique identifier for a message segment used in a CareCommunica
 * assigner ^short = "A reference to the organization that initially added the message segment."
 * assigner only Reference(MedComCoreOrganization)
 * assigner and value MS
-
+*/
 Invariant: medcom-uuidv4
 Description: "The value shall correspond to the structure of an UUID version 4"
 Severity: #error
-Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')" */
+Expression: "value.matches('urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}')"

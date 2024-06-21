@@ -20,7 +20,7 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Bundle (MedComCareCommunicationMessage)" as modifyB {
         id = "df9019c6-690d-11ed-9022-0242ac120002"
         type = "message"
-        timestamp = "2023-03-01T12:30:00+01:00"
+        timestamp = "2024-05-01T12:30:00+01:00"
     }
     class "MessageHeader (MedComCareCommunicationMessageHeader)" as modifyMH{
         id = "f8aa0bf0-690d-11ed-9022-0242ac120002"
@@ -51,13 +51,13 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
         category.code = "training"
         subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
         payload[1].contentString = "Regarding the rehabilitation plan, please notice that..."
-        payload[1].extension:date = "2023-03-01T12:00:00+01:00"
+        payload[1].extension:date = "2024-05-01T12:00:00+01:00"
         payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[1].extension:authorContact.value = "38683868"
         payload[1].extension:identifier.valueIdentifier.value = "urn:uuid:c118e2d7-9292-4ef4-b7f7-b783c9b1b5de"
         payload[1].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
         payload[0].contentString = "Corrected the category to 'Traning'. Selected a wrong category."
-        payload[0].extension:date = "2023-03-01T12:30:00+01:00"
+        payload[0].extension:date = "2024-05-01T12:30:00+01:00"
         payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
         payload[0].extension:authorContact.value = "38683868"
         payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
@@ -91,8 +91,8 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as modifyPRO{
         id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"
         target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
-        occuredDateTime = "2023-03-01T12:30:00+01:00"
-        recorded = "2023-03-01T12:30:00+01:00"
+        occuredDateTime = "2024-05-01T12:30:00+01:00"
+        recorded = "2024-05-01T12:30:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "modify-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
@@ -103,8 +103,8 @@ package "CareCommunication message: Modified message" as modify <<Frame>>{
     class "Provenance (MedComMessagingProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        occuredDateTime = "2023-03-01T12:00:00+01:00"
-        recorded = "2023-03-01T12:00:00+01:00"
+        occuredDateTime = "2024-05-01T12:00:00+01:00"
+        recorded = "2024-05-01T12:00:00+01:00"
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
