@@ -6,6 +6,7 @@ Description: "The CareCommunication is used to ensure secure electronic communic
 * obeys medcom-careCommunication-1
 * obeys medcom-careCommunication-2
 * obeys medcom-careCommunication-4
+* obeys medcom-careCommunication-3
 * obeys medcom-careCommunication-12
 * obeys medcom-careCommunication-11
 * obeys medcom-careCommunication-13
@@ -19,6 +20,11 @@ Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one Patient resource"
 Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
+
+Invariant: medcom-careCommunication-3
+Description: "All Provenance resources shall conform to medcom-careCommunication-provenance profile"
+Severity: #error
+Expression: "entry.resource.ofType(Provenance).conformsTo('http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-careCommunication-provenance').allTrue()"
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
