@@ -4,7 +4,7 @@ Id: medcom-careCommunication-messageHeader
 Description: "Message header for care communication message"
 * eventCoding = $MessageEvents#care-communication-message
 * destination[cc] ..0
-* focus 1..2 MS
+* focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
 * definition 1..1 MS
