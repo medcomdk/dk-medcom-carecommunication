@@ -2,8 +2,13 @@
 
 # Sundhedsfaglige retningslinjer for anvendelse 
 
+<<<<<<< Updated upstream
 **Table of contents**
 * [1 Introduktion](#1-introduktion)
+=======
+**Indholdsfortegnelse**
+* [1 Introduktion](#1introduktion)
+>>>>>>> Stashed changes
 * [2 Formål](#formaal)
 * [3 Illustration af FHIR korrespondancemeddelelse](#3-illustration-af-korrespondancemeddelelsen)
 * [4 Krav og anbefalinger til FHIR Korrespondancemeddelelse](#4-krav-og-anbefalinger-til-korrespondancemeddelelsen)
@@ -27,10 +32,16 @@
 
 <p>&nbsp;</p>
 
+<<<<<<< Updated upstream
 ## 1 Introduktion
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for korrespondancemeddelelser (på engelsk CareCommunication). Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i korrespondancemeddelelsen, krav og anbefalinger samt ibrugtagning ift. SOR-EDI.
 Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af korrespondancemeddelelsen. 
 
+=======
+## 1 Introduktion {#1introduktion}
+Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for Korrespondancemeddelelser (på engelsk CareCommunication). Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i Korrespondancemeddelelsen, krav og anbefalinger samt ibrugtagning ift. SOR-EDI.
+Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af Korrespondancemeddelelsen. 
+>>>>>>> Stashed changes
 
 Krav og anbefalinger til indhold, herunder funktionaliteter, er udarbejdet i samarbejde med en <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank">national arbejdsgruppe</a> med repræsentanter fra regioner, kommuner og praktiserende læger. Derudover har indholdet på denne side været sendt i høring ved relevante MedCom-grupper samt været bredt tilgængeligt for kommentering via publicering på MedComs hjemmeside.
 De tekniske specifikationer for korrespondancemeddelelse findes via forsiden for MedComs samlede dokumentation for korrespondancemeddelelse, MedCom anvender online værktøjet GitHub til visning. <a href="https://medcomdk.github.io/dk-medcom-carecommunication/ " target="_blank">Klik her for at læse de tekniske specifikationer for korrespondancemeddelelsen.</a> 
