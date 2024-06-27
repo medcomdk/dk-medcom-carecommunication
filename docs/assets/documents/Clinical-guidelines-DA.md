@@ -4,7 +4,7 @@
 
 
 **Indholdsfortegnelse**
-* [1 Introduktion](#1introduktion)
+* [1 Introduktion](#1-introduktion)
 * [2 Formål](#formaal)
 * [3 Illustration af Korrespondancemeddelelsen](#3-illustration-af-Korrespondancemeddelelsen)
 * [4 Krav og anbefalinger til Korrespondancemeddelelsen](#4-krav-og-anbefalinger-til-Korrespondancemeddelelsen)
@@ -25,7 +25,7 @@
 
 <p>&nbsp;</p>
 
-## 1 Introduktion {#1introduktion}
+## 1 Introduktion
 Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for Korrespondancemeddelelser (på engelsk CareCommunication). Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i Korrespondancemeddelelsen, krav og anbefalinger samt ibrugtagning ift. SOR-EDI.
 Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af Korrespondancemeddelelsen. 
 
