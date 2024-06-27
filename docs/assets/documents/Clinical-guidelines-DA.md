@@ -2,26 +2,25 @@
 
 # Sundhedsfaglige retningslinjer for anvendelse 
 
-
 **Indholdsfortegnelse**
 * [1 Introduktion](#1-introduktion)
 * [2 Formål](#formaal)
-* [3 Illustration af Korrespondancemeddelelsen](#3-illustration-af-Korrespondancemeddelelsen)
-* [4 Krav og anbefalinger til Korrespondancemeddelelsen](#4-krav-og-anbefalinger-til-Korrespondancemeddelelsen)
+* [3 Illustration af Korrespondancemeddelelsen](#3-illustration-af-korrespondancemeddelelsen)
+* [4 Krav og anbefalinger til Korrespondancemeddelelsen](#4-krav-og-anbefalinger-til-korrespondancemeddelelsen)
     * [4.1 Kategori og Emne](#41-kategori-og-emne)
     * [4.2 Meddelelsessegment](#42-meddelelsessegment)
-      * [4.2.1 Meddelelsestekst](#421-meddelelsestekst-feltet)
-        * [4.2.1.1 Kopierede eller vedhæftede journalnotater](#journalnotater)
+      * [4.2.1 Meddelelsestekst](#421meddelelsestekst)
+        * [4.2.1.1 Kopierede eller vedhæftede journalnotater](#4211-kopierede-eller-vedhæftede-journalnotater)
       * [4.2.2 Signatur](#422-signatur)
-    * [4.3 Prioritet, krav om afgrænset brug](#43-prioritet,-krav-om-afgrænset-brug)
-    * [4.4 Vedhæftede filer](#bilag)
-    * [4.5 Historisk overblik i brugergrænsefladen](#46-overblik-i-brugergrænsefladen)
-    * [4.6 Forsendelsesmuligheder](#45-forsendelsesmuligheder-og-overblik)
-        * [4.6.1 Besvarelse](#451-besvarelse)
-        * [4.6.2 Videresendelse](#452-videresendelse)
-* [5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer](#6-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer)
+    * [4.3 Prioritet, krav om afgrænset brug](#43-prioritet-krav-om-afgrænset-brug)
+    * [4.4 Vedhæftede filer](#44-vedhæftede-filer)
+    * [4.5 Historisk overblik i brugergrænsefladen](#45-historisk-overblik-i-brugergrænsefladen)
+    * [4.6 Forsendelsesmuligheder](#46-forsendelsesmuligheder)
+        * [4.6.1 Besvarelse](#461-besvarelse)
+        * [4.6.2 Videresendelse](#462-videresendelse)
+* [5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer](#5-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer)
 * [6 Use Cases](#6-use-cases)
-* [7 Ibrugtagning i SOR/SOR-EDI](#ibrugtagning)
+* [7 Ibrugtagning i SOR/SOR-EDI](#7-ibrugtagning-i-sorsor-edi)
 
 <p>&nbsp;</p>
 
@@ -44,7 +43,7 @@ Formålet med Korrespondancemeddelelsen er bl.a. at:
 
 <p>&nbsp;</p>
 
-## 3 Illustration af Korrespondancemeddelelsen {#3-illustration-af-Korrespondancemeddelelsen}
+## 3 Illustration af Korrespondancemeddelelsen
 <a href="#Fig1">Figur 1</a> er en illustration af indholdet i en Korrespondancemeddelelse. Illustrationen er et eksempel og indeholder ikke alle datafelter, som er i standarden og afspejler ikke det enkelte systems brugergrænseflade.
 
 <figure>
@@ -54,7 +53,7 @@ Formålet med Korrespondancemeddelelsen er bl.a. at:
 
 <p>&nbsp;</p>
 
-## 4 Krav og anbefalinger til Korrespondancemeddelelsen {#4-krav-og-anbefalinger-til-Korrespondancemeddelelsen}
+## 4 Krav og anbefalinger til Korrespondancemeddelelsen
 Korrespondancemeddelelsen <u>skal</u> indeholde information om:
 *	Borger/patient som henvendelsen vedrører
 *	Afsender
@@ -73,7 +72,7 @@ Korrespondancemeddelelsen <u>kan</u> (=frivilligt) indeholde:
 *	Prioritet (Obs. Kan kun påsættes ved valg af den nationale kategori ”Vedr. henvisning”) 
 <p>&nbsp;</p>
 
-### 4.1 Kategori og Emne {#41-kategori-og-emne}
+### 4.1 Kategori og Emne
 Kategori består af en national fastlagt liste med aftalte kategorier, som afsender vælger kategori ud fra. Kategorilisten muliggør, at modtager automatisk kan fordele indkomne Korrespondancemeddelelser, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for automatisk fordeling ved modtagelse efter de nationale kategorier i Korrespondancemeddelelsen er ikke en del af MedComs test og certificering.
 <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-careCommunication-categoryCodes.html" target="_blank"> Klik her for at læse de aftalte nationale kategorier.</a> 
 
@@ -96,24 +95,24 @@ For at understøtte brugeren mest muligt <u>anbefales følgende</u>:
 MedCom stiller en terminologiserver til rådighed, som bl.a. udstiller de nationale kategorier og tilladte filtyper, som kan vedhæftes Korrespondancemeddelelsen. Governance, omfattende regler og retningslinjer, herunder bl.a. adgang, opdatering og vedligeholdelse, for såvel terminologiserveren som listen over de nationalt aftalte kategorier, håndteres og fastlægges i MedCom-regi. Governance for terminologier og serveren findes via forsiden for Governance for MedCom FHIR Messaging. 
 <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/" target="_blank">Klik her for at læse Governance for MedCom FHIR Messaging.</a>
 
-### 4.2 Meddelelsessegment {#42-meddelelsessegment}
+### 4.2 Meddelelsessegment
 Et meddelelsessegment består af Korrespondancemeddelelsens meddelelsestekst og afsenders signatur. I de tilfælde hvor der vedhæftes en fil til Korrespondancemeddelelsen, vil vedhæftningen knyttes til et nyt meddelelsessegment. Der er ID på hvert meddelelsessegment, som også skal medsendes og modtages af systemerne. I den forbindelse er der krav om, at meddelelsessegmenter indeholdt meddelelsestekst, altid skal medsendes i kommunikationen, fx ved besvarelse.
 
-#### 4.2.1	Meddelelsestekst {#421-meddelelsestekst-feltet}
+#### 4.2.1	Meddelelsestekst
 Meddelelsestekst-feltet er et fritekstfelt, hvori afsender skriver sin tekst. Det er obligatorisk for afsender at skrive fritekst i meddelelsens tekstfelt.
 
-##### 4.2.1.1 Kopierede eller vedhæftede journalnotater {#journalnotater}
+##### 4.2.1.1 Kopierede eller vedhæftede journalnotater
 Hvis afsender kopierer og indsætter kortere journalnotater i meddelelsesteksten, anbefaler MedCom, at navn på forfatter, samt tidspunkt for oprettelse, af journalnotatet påskrives og medsendes i meddelelsens tekstfelt. Hvis afsender ønsker at medsende længere journalnotater, f.eks. mere end 1000 tegn (svarende til en halv side), anbefaler MedCom, at disse medsendes som vedhæftede filer. [Se afsnit 4.4 Vedhæftede filer](#bilag). 
 
-#### 4.2.2 Signatur {#422-signatur}
+#### 4.2.2 Signatur
 Signatur skal altid udfyldes, medsendes af afsender og vises af modtager. Formålet med ’signatur’ er at tydeliggøre, hvem forfatteren af den afsendte Korrespondancemeddelelse er. Derfor er det et krav, at signatur udfyldes med bl.a. dato og tidspunkt, forfatters navn, stillingsbetegnelse og relevant telefonnummer. Det anbefales at anvende de stillingsbetegnelser, som slutbrugeren er vant til at anvende i fagsystemet. Hvis systemet ikke har indlagt stillingsbetegnelser, stiller MedCom en liste over stillingsbetegnelser til rådighed, som er sammensat af udtræk fra autorisationsregistret og SKS personaleklassifikation. <br>
 <a href="https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-PractitionerRoles.html" target="_blank">Klik her for at læse liste over stillingsbetegnelser.</a> <br> 
 MedCom <u>anbefaler</u>, at telefonnummer udfyldes med relevant telefonnummer, såsom telefonnummer på afdelingen, afsnittet, enheden som afsender er tilknyttet eller fx relevant vagttelefonnummer. Signatur bør så vidt muligt autoudfyldes af systemet. I tilfælde af elementer som ikke kan autoudfyldes af systemet, skal disse kunne tilføjes manuelt af brugeren, fx relevant telefonnummer.
 
-### 4.3 Prioritet, krav om afgrænset brug {#43-prioritet,-krav-om-afgrænset-brug}
+### 4.3 Prioritet, krav om afgrænset brug
 Det bliver muligt at markere en Korrespondancemeddelelse med prioritet men med afgrænset brug i praksis. Alle systemer testes for, at de kan modtage og vise prioritet. I forhold til anvendelse og afsendelse af prioritet, testes alle systemer for, at prioritet kun er synlig og mulig at bruge ved valg af den nationale kategori ”Vedr. henvisning”. Kravet fremgår af use case og tilhørende testprotokol. Dette er besluttet med baggrund i, at behovet for at anvende prioritet er rejst i regi af et nationalt projekt vedr. forbedring af henvisninger, herunder revidering af henvisningsflow. Anvendelsen af prioritet skal tilpasses løbende ift. udvikling i overenskomster og på baggrund af nationale krav fra Sundhedsministeriet, Sundhedsstyrelsen og Sundhedsdatastyrelsen. 
 
-### 4.4 Vedhæftede filer {#bilag}
+### 4.4 Vedhæftede filer
 Det er muligt at vedhæfte filer, som indlejres i Korrespondancemeddelelsen. Når der er vedhæftet en fil til en Korrespondancemeddelelse, er det et krav, at det tydeligt vises i brugergrænsefladen. En vedhæftet fil kan både være en fil med en filtype, fx pdf, eller et link. De tilladte filtyper, som kan vedhæftes Korrespondancemeddelelsen, ses beskrevet i Implementation Guide for terminologi samt udstilles på terminologiserveren. <br>
 <a href="https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html" target="_blank">Klik her for at finde de tilladte filtyper, som kan vedhæftes i Korrespondancemeddelelsen.</a> <br>
 Det er besluttet, at der ikke må medsendes video i en Korrespondancemeddelelse grundet størrelsen. Det anbefales, at videoer deles via en forventet kommende national delingsservice. 
@@ -122,7 +121,7 @@ Der vil ikke være begrænsning på, hvor mange vedhæftede filer der kan medsen
 Afsender, som vælger at afsende, besvare eller videresende en Korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede filer. Forfatter på den vedhæftede fil er den fagperson, som oprindeligt har udarbejdet filen, og derfor er ansvarlig for det faglige indhold. MedCom anbefaler, at navn, samt tidspunkt for oprettelse, af den vedhæftede fil påskrives og medsendes. Systemfunktionalitet, der understøtter automatisk påsat navn på forfatter, samt tidspunkt for oprettelse, er optionel, og hvis denne funktionalitet ikke findes, anbefales afsender manuelt at påskrive disse informationer enten i den vedhæftede fil, eller som struktureret information i meddelelsessegmentet med den vedhæftede fil.  Når man, som afsender, vælger at medsende en fil, er man også ansvarlig for, at filens indhold er relevant for det aktuelle behandlingsforløb.
 Som en del af test og certificering tjekker MedCom, at ID på vedhæftede filer indlæses og gemmes. Dette med henblik på at systemet ved modtagelse af en besvarelse kan genfinde og vise tidligere vedhæftede filer for brugeren. Krav til understøttelse af arbejdsgange samt brugervenlighed skal varetages lokalt i et samarbejde mellem kunde og it-leverandør.
 
-### 4.5 Historisk overblik i brugergrænsefladen {#46-overblik-i-brugergrænsefladen}
+### 4.5 Historisk overblik i brugergrænsefladen
 Systemerne skal benytte sig af muligheden for at give det bedst mulige overblik over en meddelelses aktivitet (fx om meddelelsen er en ny modtaget meddelelse, en besvarelse eller en videresendelse) samt synliggøre kommunikationshistorikken i brugergrænsefladen.
 
 Som en del af Korrespondancemeddelelsen medsendes en kommunikations identifier og referencer mellem meddelelsessegmenter og de tekniske elementer i provenance. Disse tekniske referencer medsendes med henblik på at kunne håndtere og koble meddelelser i en meddelelsestråd på samme måde på tværs af afsender og modtager, og således understøtte at Korrespondancemeddelelser dels placeres i rette tråd (via kommunikations identifier) og dels placeres i korrekt rækkefølge (via referencer mellem provenance og meddelelsessegment). 
@@ -130,11 +129,11 @@ Kommunikations identifieren oprettes af afsender, og der er en kommunikations id
 Reference mellem provenance og meddelelsessegment skal både indgå i forhold til den aktuelle meddelelse, som sendes, men også i forhold til eventuelle forudgående meddelelser. Formålet med referencerne er at koble rækkefølgen af Korrespondancemeddelelser, og at systemerne således ved, hvilke meddelelsessegmenter der er blevet tilføjet i en meddelelse.
 MedCom har udarbejdet regler for håndtering og kobling af meddelelsestråde via kommunikations identifier samt referencer mellem provenance og meddelelsessegmenter. Reglerne beskriver håndtering og kobling af de mulige kommunikationsflows, herunder besvarelser og videresendelser samt håndtering af parallelle meddelelser (grundet samtidighed). <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Klik her for at læse reglerne for håndtering af de mulige kommunikationsflows.</a> Reglerne indgår også i testprotokollerne med henblik på at sikre ensartet implementering og anvendelse.
 
-### 4.6 Forsendelsesmuligheder {#45-forsendelsesmuligheder-og-overblik}
+### 4.6 Forsendelsesmuligheder
 Afsender skal kunne sende en ny Korrespondancemeddelelse samt besvare en Korrespondancemeddelelse. Afsender bør (funktionaliteten er ikke påkrævet) kunne videresende en modtaget Korrespondancemeddelelse. MedCom anbefaler, at systemet understøtter funktionaliteten videresendelse.  Det er et krav, at alle modtagersystemer skal kunne modtage og vise, om meddelelsen er en ny, besvaret eller videresendt Korrespondancemeddelelse.
 Både ved besvarelse og videresendelse af en Korrespondancemeddelelse indsættes den samme kategori og det samme emne automatisk af systemet. Brugeren skal kunne vælge at ændre det til en anden kategori og et andet emne. Referencer til det/de forudgående, eller videresendte, meddelelsessegment(er) skal indgå.
 
-#### 4.6.1 Besvarelse {#451-besvarelse}
+#### 4.6.1 Besvarelse
 Det er et krav at kunne <b>afsende</b> en besvarelse til;
 
 * en ny modtaget Korrespondancemeddelelse
@@ -161,7 +160,7 @@ Det er et krav, at brugeraktør skal kunne fortsætte kommunikationen i meddelel
 Regler for håndtering af parallelle meddelelser, og visning i brugergrænsefladen, er beskrevet i governance for den nye Korrespondancemeddelelse.
 <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Klik her for at læse reglerne for håndtering af de mulige kommunikationsflows.</a>
 
-#### 4.6.2. Videresendelse {#452-videresendelse}
+#### 4.6.2. Videresendelse
 Afsender bør kunne videresende en Korrespondancemeddelelse (funktionaliteten er ikke påkrævet). Det er op til afsender, hvornår det vurderes relevant at <b>videresende</b> en modtaget Korrespondancemeddelelse, såfremt systemet stiller denne mulighed til rådighed, som anbefalet af MedCom. 
 Alle systemer skal kunne <b>modtage</b> en videresendelse. Modtager skal kun kunne besvare den videresendte meddelelse, dvs. at modtageren ikke kan besvare en eller flere af de forudgående meddelelsessegmenter inkluderet i den modtaget videresendelse. 
 Afsender er ansvarlig for videresendelsen og relevansen ift. det aktuelle behandlingsforløb. Hvis systemet har funktionalitet, som kan videresende Korrespondancemeddelelse, skal afsender kunne videresende hele meddelelsestråden, som kan bestå af en eller flere meddelelser og vedhæftede filer. Funktionaliteten til at kunne udvælge hvilke dele af meddelelsestråden, man som afsender ønsker at videresende, er ikke påkrævet i systemerne men optionel. Hvis systemet ikke understøtter, at afsender ved videresendelse kan udvælge hvilke dele af meddelelsestråden og vedhæftede filer, der skal medsendes - og afsender ved, at der er dele i meddelelsestråden, som modtager ikke må modtage/se - skal afsender sende en ny Korrespondancemeddelelse i stedet for at videresende hele meddelelsestråden. Det anbefales, at afsender påskriver navn på den oprindelige forfatter af meddelelsen, som videresendes, i den nyoprettede Korrespondancemeddelelse.
@@ -174,7 +173,7 @@ MedCom anbefaler, at afsender beskriver årsagen til videresendelsen i meddelels
 </figure>
 <br><br>
 
-## 5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer {#6-opsummering-af-krav-og-anbefalinger-til-afsender--og-modtagersystemer}
+## 5 Opsummering af krav og anbefalinger til afsender- og modtagersystemer
 I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og modtagersystemer på baggrund af den tekstuelle del af dokumentationen. For tekniske detaljer henvises til de tekniske specifikationer, som findes via forsiden for Korrespondancemeddelelse i GitHub. <br><a href="https://medcomdk.github.io/dk-medcom-carecommunication/" target="_blank">Klik her for at læse de tekniske specifikationer for Korrespondancemeddelelsen på GitHub</a>. 
 
 <style type="text/css">
@@ -286,8 +285,8 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
 </tbody>
 </table></div>
 
-## 6 Use Cases {#6-use-cases}
+## 6 Use Cases
 Til brug for den tekniske implementering af Korrespondancemeddelelsen findes use case beskrivelser, som demonstrerer indhold og funktionalitet i Korrespondancemeddelelsen, herunder krav og anbefalinger til afsender- og modtagersystemer. <a href="https://medcomdk.github.io/dk-medcom-carecommunication/#12-use-cases" target="_blank">Klik her for at finde use cases. </a> 
 
-## 7 Ibrugtagning i SOR/SOR-EDI {#ibrugtagning} {#ibrugtagning}
+## 7 Ibrugtagning i SOR/SOR-EDI
 Inden ibrugtagning skal meddelelsestypen for Korrespondancemeddelelse ajourføres i SOR-EDI for den enkelte aktør, så der er valide data om, hvem der har implementeret og anvender Korrespondancemeddelelsen, og derved hvem der kan afsende og modtage Korrespondancemeddelelsen.
