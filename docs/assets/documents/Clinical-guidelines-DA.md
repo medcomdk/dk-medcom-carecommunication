@@ -25,7 +25,7 @@
 <p>&nbsp;</p>
 
 ## 1 Introduktion
-Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for Korrespondancemeddelelser (på engelsk CareCommunication). Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i Korrespondancemeddelelsen, krav og anbefalinger samt ibrugtagning ift. SOR-EDI.
+Dette er den tekstuelle del af dokumentationen til MedComs FHIR-standard for Korrespondancemeddelelse (på engelsk CareCommunication). Den tekstuelle del indeholder information om formål, baggrund, en illustration af indholdet i Korrespondancemeddelelsen, krav og anbefalinger samt ibrugtagning ift. SOR-EDI.
 Målgruppen for denne tekst er it-systemleverandører og implementeringsansvarlige, som skal it-understøtte afsendelse og modtagelse af Korrespondancemeddelelsen. 
 
 Krav og anbefalinger til indhold, herunder funktionaliteter, er udarbejdet i samarbejde med en <a href="https://www.medcom.dk/opslag/navne-og-adresser?gruppe=Arb.grp.%20FHIR-Korrespondancemeddelelse" target="_blank">national arbejdsgruppe</a> med repræsentanter fra regioner, kommuner og praktiserende læger. Derudover har indholdet på denne side været sendt i høring ved relevante MedCom-grupper samt været bredt tilgængeligt for kommentering via publicering på MedComs hjemmeside.
@@ -44,7 +44,7 @@ Formålet med Korrespondancemeddelelsen er bl.a. at:
 <p>&nbsp;</p>
 
 ## 3 Illustration af Korrespondancemeddelelsen
-<a href="#Fig1">Figur 1</a> er en illustration af indholdet i en Korrespondancemeddelelse. Illustrationen er et eksempel og indeholder ikke alle datafelter, som er i standarden og afspejler ikke det enkelte systems brugergrænseflade.
+<a href="#Fig1">Figur 1</a> er en illustration af indholdet i Korrespondancemeddelelsen. Illustrationen er et eksempel og indeholder ikke alle datafelter, som er i standarden og afspejler ikke det enkelte systems brugergrænseflade.
 
 <figure>
 <img src="../images/IllustrationKorrespondance.png" alt="Eksempel på, en Korrespondancemeddelelse" style="width:30%" id="Fig1">
@@ -73,7 +73,7 @@ Korrespondancemeddelelsen <u>kan</u> (=frivilligt) indeholde:
 <p>&nbsp;</p>
 
 ### 4.1 Kategori og Emne
-Kategori består af en national fastlagt liste med aftalte kategorier, som afsender vælger kategori ud fra. Kategorilisten muliggør, at modtager automatisk kan fordele indkomne Korrespondancemeddelelser, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for automatisk fordeling ved modtagelse efter de nationale kategorier i Korrespondancemeddelelsen er ikke en del af MedComs test og certificering.
+Kategori består af en national fastlagt liste med aftalte kategorier, som afsender vælger kategori ud fra. Kategorilisten muliggør, at modtager automatisk kan fordele indkomne korrespondancemeddelelser, fx til det relevante kommunale område. Det er et krav, at kategorien vises for brugeren, men muligheden for automatisk fordeling ved modtagelse efter de nationale kategorier i Korrespondancemeddelelsen er ikke en del af MedComs test og certificering.
 <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-careCommunication-categoryCodes.html" target="_blank"> Klik her for at læse de aftalte nationale kategorier.</a> 
 
 Der er oprettet en kategori ”Andet” i de tilfælde, hvor de øvrige kategorier på listen ikke vurderes tilstrækkeligt dækkende for indholdet i Korrespondancemeddelelsen. Ved valg af kategorien ”Andet” er det et krav, at afsender medsender et emne. MedCom anbefaler, at afsender så vidt muligt undlader at anvende kategorien ”Andet”, undtaget i de tilfælde hvor det er absolut nødvendigt.
@@ -124,9 +124,9 @@ Som en del af test og certificering tjekker MedCom, at ID på vedhæftede filer 
 ### 4.5 Historisk overblik i brugergrænsefladen
 Systemerne skal benytte sig af muligheden for at give det bedst mulige overblik over en meddelelses aktivitet (fx om meddelelsen er en ny modtaget meddelelse, en besvarelse eller en videresendelse) samt synliggøre kommunikationshistorikken i brugergrænsefladen.
 
-Som en del af Korrespondancemeddelelsen medsendes en kommunikations identifier og referencer mellem meddelelsessegmenter og de tekniske elementer i provenance. Disse tekniske referencer medsendes med henblik på at kunne håndtere og koble meddelelser i en meddelelsestråd på samme måde på tværs af afsender og modtager, og således understøtte at Korrespondancemeddelelser dels placeres i rette tråd (via kommunikations identifier) og dels placeres i korrekt rækkefølge (via referencer mellem provenance og meddelelsessegment). 
-Kommunikations identifieren oprettes af afsender, og der er en kommunikations identifier per meddelelsestråd. Formålet med kommunikations identifieren er at koble de sammenhørende Korrespondancemeddelelser i én meddelelsestråd, således at meddelelserne vises i samme tråd, både ved afsender og modtager. 
-Reference mellem provenance og meddelelsessegment skal både indgå i forhold til den aktuelle meddelelse, som sendes, men også i forhold til eventuelle forudgående meddelelser. Formålet med referencerne er at koble rækkefølgen af Korrespondancemeddelelser, og at systemerne således ved, hvilke meddelelsessegmenter der er blevet tilføjet i en meddelelse.
+Som en del af Korrespondancemeddelelsen medsendes en kommunikations identifier og referencer mellem meddelelsessegmenter og de tekniske elementer i provenance. Disse tekniske referencer medsendes med henblik på at kunne håndtere og koble meddelelser i en meddelelsestråd på samme måde på tværs af afsender og modtager, og således understøtte at korrespondancemeddelelser dels placeres i rette tråd (via kommunikations identifier) og dels placeres i korrekt rækkefølge (via referencer mellem provenance og meddelelsessegment). 
+Kommunikations identifieren oprettes af afsender, og der er en kommunikations identifier per meddelelsestråd. Formålet med kommunikations identifieren er at koble de sammenhørende korrespondancemeddelelser i én meddelelsestråd, således at meddelelserne vises i samme tråd, både ved afsender og modtager. 
+Reference mellem provenance og meddelelsessegment skal både indgå i forhold til den aktuelle meddelelse, som sendes, men også i forhold til eventuelle forudgående meddelelser. Formålet med referencerne er at koble rækkefølgen af korrespondancemeddelelser, og at systemerne således ved, hvilke meddelelsessegmenter der er blevet tilføjet i en meddelelse.
 MedCom har udarbejdet regler for håndtering og kobling af meddelelsestråde via kommunikations identifier samt referencer mellem provenance og meddelelsessegmenter. Reglerne beskriver håndtering og kobling af de mulige kommunikationsflows, herunder besvarelser og videresendelser samt håndtering af parallelle meddelelser (grundet samtidighed). <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Klik her for at læse reglerne for håndtering af de mulige kommunikationsflows.</a> Reglerne indgår også i testprotokollerne med henblik på at sikre ensartet implementering og anvendelse.
 
 ### 4.6 Forsendelsesmuligheder
@@ -152,11 +152,11 @@ Det er også muligt at besvare en tidligere modtaget EDIFACT, OIOXML eller FHIR 
 </figure>
 <br><br>
 
-<b>Parallelle besvarelser</b>
-I de få tilfælde hvor samme Korrespondancemeddelelse besvares på samme tid af afsender og modtager, vil både afsender- og modtagersystemet modtage såkaldte parallelle Korrespondancemeddelelser. Det er et krav, at begge systemer indlæser meddelelserne i den tilhørende meddelelsestråd, selvom det ikke er den seneste meddelelse i tråden. Begge parallelt afsendte meddelelser skal således placeres i samme meddelelsestråd med samme kommunikations identifier. 
-Det er et krav, at bruger skal kunne fortsætte kommunikationen i meddelelsestråden enten ved besvarelse eller modtagelse af en ny meddelelse, selvom der optræder parallelle Korrespondancemeddelelser.
-Det er vigtigt at synliggøre, hvilke oplysninger slutbrugeren har været bekendt med på afsendelsestidspunktet, når parallelle meddelelser placeres i samme tråd. Derfor er det et krav, at systemerne inkluderer en synlig reference mellem Korrespondancemeddelelserne i tråden, således at brugerne tydeligt kan se, hvad de pågældende Korrespondancemeddelelser er et svar på samt synliggøre sammenhængen mellem de øvrige Korrespondancemeddelelser i meddelelsestråden. Det er op til leverandøren at sikre en visning, der understøtter brugeren bedst muligt. 
-Det er et krav, at brugeraktør skal kunne fortsætte kommunikationen i meddelelsestråden, selvom der optræder parallelle Korrespondancemeddelelser.
+<b>Parallelle besvarelser</b><br>
+I de få tilfælde hvor samme Korrespondancemeddelelse besvares på samme tid af afsender og modtager, vil både afsender- og modtagersystemet modtage såkaldte parallelle korrespondancemeddelelser. Det er et krav, at begge systemer indlæser meddelelserne i den tilhørende meddelelsestråd, selvom det ikke er den seneste meddelelse i tråden. Begge parallelt afsendte meddelelser skal således placeres i samme meddelelsestråd med samme kommunikations identifier. 
+Det er et krav, at bruger skal kunne fortsætte kommunikationen i meddelelsestråden enten ved besvarelse eller modtagelse af en ny meddelelse, selvom der optræder parallelle korrespondancemeddelelser.
+Det er vigtigt at synliggøre, hvilke oplysninger slutbrugeren har været bekendt med på afsendelsestidspunktet, når parallelle meddelelser placeres i samme tråd. Derfor er det et krav, at systemerne inkluderer en synlig reference mellem korrespondancemeddelelserne i tråden, således at brugerne tydeligt kan se, hvad de pågældende korrespondancemeddelelser er et svar på samt synliggøre sammenhængen mellem de øvrige korrespondancemeddelelser i meddelelsestråden. Det er op til leverandøren at sikre en visning, der understøtter brugeren bedst muligt. 
+Det er et krav, at brugeraktør skal kunne fortsætte kommunikationen i meddelelsestråden, selvom der optræder parallelle korrespondancemeddelelser.
 Regler for håndtering af parallelle meddelelser, og visning i brugergrænsefladen, er beskrevet i governance for den nye Korrespondancemeddelelse.
 <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Klik her for at læse reglerne for håndtering af de mulige kommunikationsflows.</a>
 
@@ -244,7 +244,7 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
     <td class="tg-0pky">Kommunikations identifier</td>
     <td class="tg-0pky"><b>Ny</b><br>Det er et krav til afsendersystemet automatisk at påsætte en kommunikations identifier ved oprettelse af en ny Korrespondancemeddelelse.<br><b>Besvarelse</b><br>Det er et krav til afsendersystemet automatisk at bruge samme kommunikations identifier i besvarelsen som i den modtaget meddelelse.<br><b>Videresendelse</b><br>Det er et krav til afsendersystemet automatisk at påsætte en ny kommunikations identifier ved oprettelse af en videresendelse.</td>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">Det er et krav til modtagersystemet automatisk at placere modtagne sammenhørende Korrespondancemeddelelser i samme meddelelsestråd pba. meddelelsernes kommunikations identifier.</td>
+    <td class="tg-0pky">Det er et krav til modtagersystemet automatisk at placere modtagne sammenhørende korrespondancemeddelelser i samme meddelelsestråd pba. meddelelsernes kommunikations identifier.</td>
     <td class="tg-0pky"></td>
   </tr>
     <tr>
