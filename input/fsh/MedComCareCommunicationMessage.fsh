@@ -22,9 +22,9 @@ Severity: #error
 Expression: "entry.where(resource.is(Patient)).count() = 1"
 
 Invariant: medcom-careCommunication-3
-Description: "All Provenance resources shall conform to medcom-careCommunication-provenance profile"
+Description: "All Provenance resources shall be of the type medcom-careCommunication-provenance profile"
 Severity: #error
-Expression: "entry.resource.ofType(Provenance).conformsTo('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance').allTrue()"
+Expression: "entry.resource.ofType(Provenance).where(meta.profile = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance').exists()"
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
