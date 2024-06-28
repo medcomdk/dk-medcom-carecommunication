@@ -35,7 +35,7 @@ Usage: #example
 * sender = Reference(0ece868c-6a72-4aa3-8a96-2d985ab630c7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d8434eb5-8286-48f8-a590-4a27175ed82f)
-* definition = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
 // CareCommunication new example
@@ -75,7 +75,7 @@ Title: "Bruno Test Elmer"
 Description: "Patient described with minimal information. Valid only if used in a Bundle."
 Usage: #example
 * identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
-* identifier.value = "0102882KL5"
+* identifier.value = "0703921VJ4"
 * identifier.use = #temp
 * name[official].use = #official
 * name[official].family = "Berggren"

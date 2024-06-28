@@ -14,3 +14,4 @@
 
 - MedComCareCommunicationMessageHeader profile
     - Added requirement to include a link to the MedComCareCommunicationMessageDefinition.
+    - Restricted the element MessageHeader.focus from 1..2 to 1..1

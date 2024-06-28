@@ -17,7 +17,7 @@ Description: "Provenance information about the current and preceeding message."
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].role ^short = "When a message is a response or a forwarding message the role shall be 'revision'."
 * entity[preceedingMessage].what MS
-* entity[preceedingMessage].what obeys medcom-careCommunication-14
+//* entity[preceedingMessage].what obeys medcom-careCommunication-14
 * entity[preceedingMessage].what ^short = "A reference to the previous message. If the previous message is a FHIR message , the reference element must be used and if the previous message is an EDIFACT or OIOXML, the identifier element must be used."
 * entity[preceedingMessage].what.reference 0..1 MS
 * entity[preceedingMessage].what.reference ^short = "If the previous message is a FHIR message, this element must contain the MessageHeader.id from previous message."

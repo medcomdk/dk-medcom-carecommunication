@@ -43,7 +43,7 @@ Usage: #example
 * sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
-* definition = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
 Instance: 30c0f779-783f-46b2-b38f-faebd2bedb3f
@@ -56,12 +56,12 @@ Usage: #inline
 * recorded = 2024-05-02T11:30:00+02:00
 * activity.coding = $ActivityCode#reply-message
 * agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
-* entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
+* entity[preceedingMessage][0].role = #revision
+* entity[preceedingMessage][0].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* entity[payload][0].role = #source
+* entity[payload][0].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
+* entity[payload][1].role = #source
+* entity[payload][1].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
 
 
 // CareCommunication reply example
