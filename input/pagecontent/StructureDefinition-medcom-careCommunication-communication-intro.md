@@ -78,6 +78,7 @@ The message text and attachment will both be included in the element Communicati
   </tr>
 </tbody>
 </table>
+
 R = required and O = optional.
 
 A description of the above mentioned information can be found here: <br>
