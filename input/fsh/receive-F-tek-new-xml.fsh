@@ -46,13 +46,13 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(de0c79b9-635f-4991-961c-b72390210bf7)
 * identifier.value = "urn:uuid:3cbe7f6c-6815-4bd9-ac4e-a95bf326daa5"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
-* payload.extension[date].valueDateTime = 2024-08-19T13:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:8d9415a0-1b0d-4410-8a97-6097b31e12ff"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
-* payload.extension[author].valueReference = Reference(f552619f-6adf-4f68-9b2d-8636e94e58ed)
-* payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "+4512345789"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
+* payload[0].extension[date].valueDateTime = 2024-08-19T13:00:00+01:00
+* payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8d9415a0-1b0d-4410-8a97-6097b31e12ff"
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
+* payload[0].extension[author].valueReference = Reference(f552619f-6adf-4f68-9b2d-8636e94e58ed)
+* payload[0].extension[authorContact].valueContactPoint.system = #phone 
+* payload[0].extension[authorContact].valueContactPoint.value = "+4512345789"
 
 
 Instance: de0c79b9-635f-4991-961c-b72390210bf7

@@ -51,7 +51,7 @@ InstanceOf: MedComMessagingProvenance
 Title: "Send-F-new - Provenance"
 Description: "Send-F-new - Provenance"
 Usage: #example
-* target = Reference(3eadd00d-011b-4e2f-8f30-6658a6ee89e0)
+* target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
 * occurredDateTime = 2024-08-15T15:20:00+01:00
 * recorded = 2024-08-15T15:20:00+01:00
 * activity.coding = $ActivityCode#new-message
@@ -128,7 +128,7 @@ Usage: #inline
 * activity.coding = $ActivityCode#forward-message
 * agent.who = Reference(a81d6555-94d9-4704-a6b7-8dea0bcd3dac)
 * entity[preceedingMessage][0].role = #revision
-* entity[preceedingMessage][0].what = Reference(3eadd00d-011b-4e2f-8f30-6658a6ee89e0)
+* entity[preceedingMessage][0].what = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
 * entity[payload][0].role = #source
 * entity[payload][0].what.identifier.value = "urn:uuid:4fa05d8d-66e7-46dd-8029-428d44d33f53"
 

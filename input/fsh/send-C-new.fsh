@@ -109,7 +109,7 @@ InstanceOf: MedComMessagingProvenance
 Title: "Send-C-new - Provenance"
 Description: "Send-C-new - Provenance"
 Usage: #example
-* target = Reference(faa030be-842d-4074-b10d-4db41c3dd31d)
+* target = Reference(fdcda88f-b337-45dc-9b82-9650e982aa46)
 * occurredDateTime = 2024-09-07T06:00:00+01:00
 * recorded = 2024-09-07T06:00:00+01:00
 * activity.coding = $ActivityCode#new-message

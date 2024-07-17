@@ -59,14 +59,14 @@ Usage: #example
 * payload[0].extension[date].valueDateTime = 2024-09-14T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:954183f4-bc89-4d75-8073-9b397bacd6ec"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
-* payload[0].extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
+* payload[0].extension[author].valueReference = Reference(84eb6a09-63cf-433d-8522-41465d78756a)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "85572787"
 * payload[1].contentString = "Jeg videresender hermed beskeden fra Kim, så I er orienteret. Mvh. Sygeplejerske K. Jensen"
 * payload[1].extension[date].valueDateTime = 2024-09-14T14:25:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
-* payload[1].extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
+* payload[1].extension[author].valueReference = Reference(1840f077-7ca1-4141-a46b-1bce43065c76)
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "87875455"
 
@@ -165,3 +165,17 @@ Usage: #example
 * entity[1].what = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
 * entity[0].role = #source
 * entity[0].what.identifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"
+
+Instance: 42fa2844-5020-45dd-bd5f-77137ba5ca1f
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Send-K-reply - MessageHeader"
+Description: "Send-K-reply - MessageHeader"
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* destination[primary].receiver = Reference(d2ac69eb-568e-4201-b29d-2af8d3126518)
+* sender = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
+* focus = Reference(e7e596e0-6458-4701-a20f-a9322f85ebe8)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"

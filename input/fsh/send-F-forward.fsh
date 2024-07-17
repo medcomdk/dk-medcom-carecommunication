@@ -96,7 +96,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "Send-F-new - practitionerRole"
 Description: "Send-F-new - practitionerRole"
 * practitioner = Reference(29e0b694-2d3b-4cb2-9fce-0e89860ffa8d)
-* code = $PractitionerRole#laege
+* code = $PractitionerRole#laegesekretaer
 
 // CareCommunication example - new message
 Instance: 93b0a981-986a-43ac-aecb-961d8a618d83
@@ -143,7 +143,6 @@ Usage: #example
 * entry[=].resource = 647746ac-5339-4beb-8411-3f3eaefd0e86
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"
 * entry[=].resource = 93b0a981-986a-43ac-aecb-961d8a618d83
-
 
 Instance: 92d3a7e9-00df-49c0-b9bd-a512e2837b64
 InstanceOf: MedComMessagingOrganization 
@@ -195,10 +194,10 @@ Description: "Send-F-new"
 * category = $CategoryCodes#examination-results
 * subject = Reference(d4ac37e3-864b-4286-84c6-5ecdf4b550c1)
 * topic.text = "Resultater fra hjemmesygeplejen"
-* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. "
+* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. Emma"
 * payload[1].extension[date].valueDateTime = 2024-09-10T15:20:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:eeda532b-5467-49d8-b897-8435bb77f90b"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(528f8b50-107d-44ad-a5e9-89b7891aedb1)
+* payload[1].extension[identifier].valueIdentifier.assigner = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * payload[1].extension[author].valueReference = Reference(cb36cff5-1b78-4d76-bc33-04bce8434bf0)
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "004523232323"

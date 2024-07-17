@@ -106,7 +106,7 @@ InstanceOf: MedComMessagingProvenance
 Title: "Receive-J-Tek-new - Provenance"
 Description: "Receive-J-Tek-new - Provenance"
 Usage: #example
-* target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
+* target = Reference(f7f519bd-a104-43fb-ab8a-058eeaec68c7)
 * occurredDateTime = 2024-08-23T16:00:00+01:00
 * recorded = 2024-08-23T16:00:00+01:00
 * activity.coding = $ActivityCode#new-message
