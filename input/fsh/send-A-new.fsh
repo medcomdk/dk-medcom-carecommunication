@@ -42,6 +42,7 @@ Usage: #example
 * sender = Reference(09844b02-9647-49e1-92ae-37dc5c721888)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * focus = Reference(b2819bfe-07d1-4c26-94a3-a45a702a04a0)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
 Instance: 9fcf448a-4628-45e1-9098-0dd8de0e7e76
@@ -98,6 +99,10 @@ Usage: #example
 * recorded = 2024-10-14T14:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(09844b02-9647-49e1-92ae-37dc5c721888)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:c87eb7b4-4680-499f-b6dd-49b0581ca5c6"
+* entity[1].role = #source
+* entity[1].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
 
 // Recipient CareTeam 
 Instance: 48aa320d-dd35-40b8-a6c0-82312652b720
@@ -132,6 +137,7 @@ Usage: #example
 * category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
 * topic.text = "Kritisk tilstand"
+* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 * subject = Reference(9fcf448a-4628-45e1-9098-0dd8de0e7e76)
 * recipient = Reference(2d808d61-69ec-4040-b6f8-2be94926f86e) 
 * extension[sender].valueReference = Reference(48aa320d-dd35-40b8-a6c0-82312652b720)

@@ -36,6 +36,8 @@ Usage: #example
 * sender = Reference(c0347f2c-f11e-440f-99f6-a1ebf3b53e74)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(2678d1b2-0a76-4663-a216-b1a14e72aafa)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: 2678d1b2-0a76-4663-a216-b1a14e72aafa
 InstanceOf: MedComCareCommunication
@@ -46,6 +48,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(2f6d23d0-239c-44bb-9033-acab45416029)
 * topic.text = "Resultater fra hjemmesygeplejen"
+* identifier.value = "urn:uuid:c29f6032-28bf-4a11-af98-6f451fa77fee"
 * payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael, sygeplejerske."
 * payload.extension[date].valueDateTime = 2024-10-15T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:ee96d66f-f95a-4f23-855c-44befb31c52b"
@@ -122,3 +125,5 @@ Usage: #example
 * recorded = 2024-10-15T15:20:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(674cb75e-4a5c-4609-b740-8b09e06b0e42)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:ee96d66f-f95a-4f23-855c-44befb31c52b"

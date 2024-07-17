@@ -34,6 +34,8 @@ Usage: #example
 * sender = Reference(e6eca63f-1cf5-4cf8-8b08-481907a278d6)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(682519df-2e8c-4890-914c-d6e0f936bb08)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: 682519df-2e8c-4890-914c-d6e0f936bb08
 InstanceOf: MedComCareCommunication
@@ -43,6 +45,7 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
 * subject = Reference(badec6f1-1cd7-474d-a445-f3fcf7ccd926)
+* identifier.value = "urn:uuid:a1090f8b-499e-46dc-ac78-43468e07ebd8"
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
 * payload.extension[date].valueDateTime = 2024-10-15T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:139e3105-6114-415a-ab86-d78b3599fa0e"
@@ -114,3 +117,5 @@ Usage: #example
 * recorded = 2024-10-15T15:20:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(01f408d4-b6f1-448a-833e-9a9fd83befef)
+* entity.role = #source
+* entity.what.identifier.value = "urn:uuid:139e3105-6114-415a-ab86-d78b3599fa0e"

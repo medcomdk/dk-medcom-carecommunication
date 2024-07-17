@@ -36,6 +36,8 @@ Usage: #example
 * sender = Reference(0e804dff-95f7-40fe-bb96-561363715869)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(e6907e11-f007-4e2c-a98d-a543229a10c2)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: e6907e11-f007-4e2c-a98d-a543229a10c2
 InstanceOf: MedComCareCommunication
@@ -46,6 +48,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(b670ed56-9a4f-4903-ad51-65773a327d93)
 * topic.text = "Resultater fra hjemmesygeplejen"
+* identifier.value = "urn:uuid:a6be8e47-43a0-4a34-8041-083d41eba038"
 * payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen. Denne meddelelse ligner til Tek-B-new, men er det ikke. Hilsen Michael, sygeplejerske."
 * payload.extension[date].valueDateTime = 2024-10-18T08:30:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:dc9665dd-b9c3-4349-af08-e9dd61d0e211"
@@ -122,3 +125,5 @@ Usage: #example
 * recorded = 2024-10-18T08:30:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(454aafa3-8ecb-4c0b-9696-eee6cce6c498) 
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:dc9665dd-b9c3-4349-af08-e9dd61d0e211"

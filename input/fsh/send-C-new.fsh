@@ -34,6 +34,8 @@ Usage: #example
 * sender = Reference(5559b731-171a-4f0c-8e61-23c54f1cdf6f)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(f465a829-e50d-4240-8228-496581a742a6)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: f465a829-e50d-4240-8228-496581a742a6
 InstanceOf: MedComCareCommunication
@@ -43,6 +45,7 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#regarding-referral
 * subject = Reference(7ae057dd-3786-44ea-8575-123dff351f2d)
+* identifier.value = "urn:uuid:cf2f559c-03e7-4f21-a39a-4be61ca15ae5"
 * payload.contentString = "Til rette vedkommende hos Per Thorsleth. Afdeling A har modtaget en henvisning patient. Forinden der foretages visitation, bedes følgende undersøgelser foretaget: Røntgen af hofte i to planer (Vedhæftet er seneste røntgen). Blodtryksresultat Sænkningsresultat  Resultaterne bedes fremsendt som et korrespondancebrev. Venlig hilsen overlæge K. Petersen"
 * payload.extension[date].valueDateTime = 2024-10-16T06:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:2fc22ab5-d84d-4896-80a6-dd6630a7de69"
@@ -111,3 +114,7 @@ Usage: #example
 * recorded = 2024-10-16T06:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(9b668ecc-a9e4-4bbb-968a-d27b9894a8c9)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:2fc22ab5-d84d-4896-80a6-dd6630a7de69"
+* entity[1].role = #source
+* entity[1].what.identifier.value = "urn:uuid:5a44c168-2652-46c3-9120-dc468eadce7a"

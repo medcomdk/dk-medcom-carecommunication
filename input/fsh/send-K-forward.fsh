@@ -1,7 +1,7 @@
 Instance: 77c771ca-05d6-4efb-9a74-2fc513787f3a
 InstanceOf: MedComCareCommunicationMessage
-Title: "Send-K-reply"
-Description: "Send-K-reply"
+Title: "Send-K-forward"
+Description: "Send-K-forward"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-19T13:00:00+01:00
@@ -19,6 +19,8 @@ Usage: #example
 * entry[=].resource = 84eb6a09-63cf-433d-8522-41465d78756a
 * entry[+].fullUrl = "Practitioner/a7e25289-11d8-4125-a08a-9c1d85cbd950"
 * entry[=].resource = a7e25289-11d8-4125-a08a-9c1d85cbd950
+* entry[+].fullUrl = "Organization/d2ac69eb-568e-4201-b29d-2af8d3126518"
+* entry[=].resource = d2ac69eb-568e-4201-b29d-2af8d3126518
 * entry[+].fullUrl = "Organization/7260b118-d744-4396-bbf2-80245933b1dd"
 * entry[=].resource = 7260b118-d744-4396-bbf2-80245933b1dd
 * entry[+].fullUrl = "Organization/6ea7c7cb-824b-4619-a13e-bc8828afd7e1"
@@ -36,10 +38,12 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
-* destination[primary].receiver = Reference(6ea7c7cb-824b-4619-a13e-bc8828afd7e1)
+* destination[primary].receiver = Reference(d2ac69eb-568e-4201-b29d-2af8d3126518)
 * sender = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(e7e596e0-6458-4701-a20f-a9322f85ebe8)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: e7e596e0-6458-4701-a20f-a9322f85ebe8
 InstanceOf: MedComCareCommunication
@@ -50,6 +54,7 @@ Usage: #example
 * category = $CategoryCodes#deceased
 * subject = Reference(db2fd52e-9a7a-418f-90d1-b422e07c895d)
 * topic.text = "Afgået ved døden"
+* identifier.value = "urn:uuid:06a106f9-df1c-4064-9031-b6a4cb841e85"
 * payload[0].contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen"
 * payload[0].extension[date].valueDateTime = 2024-10-19T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:954183f4-bc89-4d75-8073-9b397bacd6ec"
@@ -57,7 +62,7 @@ Usage: #example
 * payload[0].extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "85572787"
-* payload[1].contentString = "Tak for at rette henvendelse. Vi får slettet hans aftaler og informerer desuden xxx. Mvh. Sygeplejerske K. Jensen"
+* payload[1].contentString = "Jeg videresender hermed beskeden fra Kim, så I er orienteret. Mvh. Sygeplejerske K. Jensen"
 * payload[1].extension[date].valueDateTime = 2024-10-19T14:25:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
@@ -83,6 +88,13 @@ Description: "Send-K-reply - Sender"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
+
+Instance: d2ac69eb-568e-4201-b29d-2af8d3126518
+InstanceOf: MedComMessagingOrganization 
+Title: "Send-F-new"
+Description: "Send-F-new"
+* identifier[SOR-ID].value = "1042981000016003" 
+* identifier[EAN-ID].value = "5790001348120" 
 
 // Reciever instance - new message for attachement
 Instance: 6ea7c7cb-824b-4619-a13e-bc8828afd7e1
@@ -135,6 +147,8 @@ Usage: #example
 * recorded = 2024-10-19T13:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:954183f4-bc89-4d75-8073-9b397bacd6ec"
 
 // CareCommunication example - reply message
 Instance: 86b93888-0a2d-4530-a1c2-263394932e11
@@ -145,7 +159,9 @@ Usage: #example
 * target = Reference(3dbffafe-ce3c-45b0-bca7-2c008c478e79)
 * occurredDateTime = 2024-10-19T14:25:00+01:00
 * recorded = 2024-10-19T14:25:00+01:00
-* activity.coding = $ActivityCode#reply-message
+* activity.coding = $ActivityCode#forward-message
 * agent.who = Reference(6ea7c7cb-824b-4619-a13e-bc8828afd7e1)
-* entity.role = #revision
-* entity.what = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
+* entity[1].role = #revision
+* entity[1].what = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"

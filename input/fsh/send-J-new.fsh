@@ -34,6 +34,8 @@ Usage: #example
 * sender = Reference(hujkfds678j)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1385391000016002"
 * focus = Reference(fhjkewyuir8791kshjekjcxjnmc.klklj)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: fhjkewyuir8791kshjekjcxjnmc.klklj
 InstanceOf: MedComCareCommunication
@@ -43,58 +45,8 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#psychiatry-social-disability
 * subject = Reference(uiodss8902la.z.ikfldsi9439d)
-* payload.contentString = "Til rette vedkommende. Jeg har netop startet samtaler med Bruno..... Hilsen Anita, psykolog. Example of a disc-list
-        <ul>
-            <li>Unordered information. </li>
-            <li>Ordered information. </li>
-            <li>Definitions. </li>
-        </ul>
-        Example of a arabic-list
-        <ol class=\"arabic\">
-            <li> arabic 1</li> 
-            <li> arabic 2</li> 
-        </ol> 
-        Example of a unlist
-        <ul class=\"unlist\">
-            <li> unlist 1</li> 
-            <li> unlist 2</li> 
-        </ul>
-        <b>Example of a BOLD text</b> <br/>
-        <i>Example of a ITALIC text</i> <br/>
-        <span style=\"text-decoration: underline\">Example of an UNDERLINE text</span> <br/>
-        <span style=\"text-decoration: line-through\">Example of a STRIKETHROUGH text</span> <br/>
-        <p style=\"text-align: left\">This text is LEFT aligned</p> <br/>
-        <p style=\"text-align: right\">This text is RIGHT aligned</p> <br/>
-        <p style=\"text-align: center\">This text is CENTER aligned</p> <br/>
-        <p style=\"text-align: justify\">This text is JUSTIFIED aligned</p> <br/>
-        
-        <p> Tables:</p> 
-        <table>
-            <caption>Example of a TABLE</caption> 
-            <tr> 
-                <td class=\"border-left\">Border Left</td> 
-                <td class=\"border-right\">Border Right</td> 
-                <td class=\"border-top\">Border Top</td> 
-                <td class=\"border-bottom\">Border Bottom</td> 
-            </tr> 
-        </table> 
-        <table> 
-            <caption>Example of a TABLE</caption> 
-            <thead> 
-                <tr> 
-                    <th> Head Cell 1</th> 
-                    <th> Head Cell 2</th> 
-                    <th> Head Cell 3</th> 
-                </tr> 
-            </thead> 
-            <tbody> 
-                <tr> 
-                    <td> Body Cell 1</td> 
-                    <td> Body Cell 2</td> 
-                    <td> Body Cell 3</td> 
-                </tr> 
-            </tbody> 
-        </table>"
+* identifier.value = "urn:uuid:dd26bec0-8f68-4f58-aee6-8084032855c0"
+* payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita, psykolog."
 * payload.extension[date].valueDateTime = 2024-10-17T17:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:ed7e027d-5c18-4e23-986f-0f9586d3d111"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(hfjdsyur74893j5hjkfdshj78.jkclzikd)
@@ -159,3 +111,5 @@ Usage: #example
 * recorded = 2024-10-17T17:20:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(hfjdsyur74893j5hjkfdshj78.jkclzikd)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:ed7e027d-5c18-4e23-986f-0f9586d3d111"

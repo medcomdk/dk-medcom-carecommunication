@@ -34,6 +34,8 @@ Usage: #example
 * sender = Reference(4b56eb00-9f9b-4f6e-92ce-2bd779759895)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(e69c06be-102c-4392-9ccb-96914e374f88)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: e69c06be-102c-4392-9ccb-96914e374f88
 InstanceOf: MedComCareCommunication
@@ -43,59 +45,9 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#deceased
 * subject = Reference(f590bf2e-5a6e-4cfb-88d9-58ff2016f5fb)
+* identifier.value = "urn:uuid:3cd0beb4-fe08-4d0c-8dcb-f0020b434cf3"
 * topic.text = "Afgået ved døden"
-* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen. Vær venligst opmærksom på følgende: Example of a disc-list
-        <ul>
-            <li>Unordered information. </li>
-            <li>Ordered information. </li>
-            <li>Definitions. </li>
-        </ul>
-        Example of a arabic-list
-        <ol class=\"arabic\">
-            <li> arabic 1</li> 
-            <li> arabic 2</li> 
-        </ol> 
-        Example of a unlist
-        <ul class=\"unlist\">
-            <li> unlist 1</li> 
-            <li> unlist 2</li> 
-        </ul>
-        <b>Example of a BOLD text</b> <br/>
-        <i>Example of a ITALIC text</i> <br/>
-        <span style=\"text-decoration: underline\">Example of an UNDERLINE text</span> <br/>
-        <span style=\"text-decoration: line-through\">Example of a STRIKETHROUGH text</span> <br/>
-        <p style=\"text-align: left\">This text is LEFT aligned</p> <br/>
-        <p style=\"text-align: right\">This text is RIGHT aligned</p> <br/>
-        <p style=\"text-align: center\">This text is CENTER aligned</p> <br/>
-        <p style=\"text-align: justify\">This text is JUSTIFIED aligned</p> <br/>
-        
-        <p> Tables:</p> 
-        <table>
-            <caption>Example of a TABLE</caption> 
-            <tr> 
-                <td class=\"border-left\">Border Left</td> 
-                <td class=\"border-right\">Border Right</td> 
-                <td class=\"border-top\">Border Top</td> 
-                <td class=\"border-bottom\">Border Bottom</td> 
-            </tr> 
-        </table> 
-        <table> 
-            <caption>Example of a TABLE</caption> 
-            <thead> 
-                <tr> 
-                    <th> Head Cell 1</th> 
-                    <th> Head Cell 2</th> 
-                    <th> Head Cell 3</th> 
-                </tr> 
-            </thead> 
-            <tbody> 
-                <tr> 
-                    <td> Body Cell 1</td> 
-                    <td> Body Cell 2</td> 
-                    <td> Body Cell 3</td> 
-                </tr> 
-            </tbody> 
-        </table>"
+* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen."
 * payload.extension[date].valueDateTime = 2024-10-14T16:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:d63ddff2-594f-403b-8518-2c255e3f3d4c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
@@ -164,3 +116,7 @@ Usage: #example
 * recorded = 2024-10-14T16:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
+* entity[0].role = #source
+* entity[0].what.identifier.value = "urn:uuid:d63ddff2-594f-403b-8518-2c255e3f3d4c"
+* entity[1].role = #source
+* entity[1].what.identifier.value = "urn:uuid:ee9b9b6b-0956-4ea1-9745-b29f23b93eaa"

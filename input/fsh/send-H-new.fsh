@@ -34,6 +34,8 @@ Usage: #example
 * sender = Reference(e640191b-a64c-4d05-ab28-285b4e91a816)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
 * focus = Reference(38f751db-339c-46a6-a10d-cb88f72b2150)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 
 Instance: 38f751db-339c-46a6-a10d-cb88f72b2150
 InstanceOf: MedComCareCommunication
@@ -44,6 +46,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(8d7f4ef8-ac79-4b7d-b9e7-b769471221b2)
 * topic.text = "Resultater fra hjemmesygeplejen"
+* identifier.value = "urn:uuid:5fdc8520-7a2f-497c-97ed-fcca13f12f8b"
 * payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael, sygeplejerske."
 * payload.extension[date].valueDateTime = 2024-10-15T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:c75a51cf-dab7-4bf9-9b13-b81700c78b05"
@@ -57,11 +60,12 @@ Instance: 8d7f4ef8-ac79-4b7d-b9e7-b769471221b2
 InstanceOf: MedComCorePatient
 Title: "Send-H-new - Patient"
 Description: "Send-H-new - Patient"
-* identifier[ecpr].system = "nationalEcprregister"
-* identifier[ecpr].value = "1206550VK9"
+* identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier.value = "1206550VK9"
 * name.use = #temp
 * name.given = "Peter"
 * name.family = "Unknown"
+
 
 // Sender instance - new message for attachement
 Instance: cf3b8736-ffca-48a1-b2e7-550b5c503be8
@@ -109,3 +113,5 @@ Usage: #example
 * recorded = 2024-10-15T15:20:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(cf3b8736-ffca-48a1-b2e7-550b5c503be8)
+* entity.role = #source
+* entity.what.identifier.value = "urn:uuid:c75a51cf-dab7-4bf9-9b13-b81700c78b05"
