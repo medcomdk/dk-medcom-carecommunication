@@ -58,9 +58,10 @@ InstanceOf: MedComCorePatient
 Title: "Send-H-new - Patient"
 Description: "Send-H-new - Patient"
 * identifier[ecpr].system = "nationalEcprregister"
-* identifier[ecpr].value = "0703921VJ4"
-* name[official].use = #official
-* name[official].family = "Elmer"
+* identifier[ecpr].value = "1206550VK9"
+* name.use = #temp
+* name.given = "Peter"
+* name.family = "Unknown"
 
 // Sender instance - new message for attachement
 Instance: cf3b8736-ffca-48a1-b2e7-550b5c503be8
@@ -86,9 +87,9 @@ Instance: 264a24ad-ef78-4289-987a-3f6dbc75ec01
 InstanceOf: MedComCorePractitioner
 Title: "Send-H-new - practitioner"
 Description: "Send-H-new - practitioner"
-* name.given[0] = "Michael"
-* name.given[1] = "Magnus"
-* name.family = "Burns"
+* name[0].given[0] = "Michael"
+* name[0].given[1] = "Magnus"
+* name[0].family = "Burns"
 
 Instance: 68f7756d-b5f0-47db-924b-8bf0f6864b9e
 InstanceOf: MedComCorePractitionerRole

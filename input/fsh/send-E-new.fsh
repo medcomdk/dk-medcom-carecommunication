@@ -43,7 +43,7 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
 * subject = Reference(badec6f1-1cd7-474d-a445-f3fcf7ccd926)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
 * payload.extension[date].valueDateTime = 2024-10-15T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:139e3105-6114-415a-ab86-d78b3599fa0e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(01f408d4-b6f1-448a-833e-9a9fd83befef)
@@ -101,7 +101,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "Send-E-new - practitionerRole"
 Description: "Send-E-new - practitionerRole"
 * practitioner = Reference(b004946b-6960-46da-8e88-68de64f0dbe8)
-* code = $PractitionerRole#sygeplejerske
+* code.text = "Visitator"
 
 // CareCommunication example - new message
 Instance: 9b06f698-dbca-45ba-be53-9c8b09715c43
