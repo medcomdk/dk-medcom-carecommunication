@@ -5,21 +5,21 @@ Description: "Send-D-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-15T12:00:00+01:00
-* entry[+].fullUrl = "MessageHeader/fdf5a171-5a5b-498f-be75-00d23ffdbd88"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/fdf5a171-5a5b-498f-be75-00d23ffdbd88"
 * entry[=].resource = fdf5a171-5a5b-498f-be75-00d23ffdbd88
-* entry[+].fullUrl = "Patient/b6a2e10b-f6da-49de-86b3-980755fc07d5"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b6a2e10b-f6da-49de-86b3-980755fc07d5"
 * entry[=].resource = b6a2e10b-f6da-49de-86b3-980755fc07d5
-* entry[+].fullUrl = "Communication/94e90632-7081-4a72-82ed-a23778706b09"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/94e90632-7081-4a72-82ed-a23778706b09"
 * entry[=].resource = 94e90632-7081-4a72-82ed-a23778706b09
-* entry[+].fullUrl = "PractitionerRole/66e95c8f-4297-435d-a4a9-eed130083cae"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/66e95c8f-4297-435d-a4a9-eed130083cae"
 * entry[=].resource = 66e95c8f-4297-435d-a4a9-eed130083cae
-* entry[+].fullUrl = "Practitioner/652d44ea-d5ad-4745-bf09-88789a258117"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/652d44ea-d5ad-4745-bf09-88789a258117"
 * entry[=].resource = 652d44ea-d5ad-4745-bf09-88789a258117
-* entry[+].fullUrl = "Organization/23e981cb-c908-4654-ab56-7f23b5126afd"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/23e981cb-c908-4654-ab56-7f23b5126afd"
 * entry[=].resource = 23e981cb-c908-4654-ab56-7f23b5126afd
-* entry[+].fullUrl = "Organization/5b68d9ca-2782-47bf-b095-04573db9363b"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/5b68d9ca-2782-47bf-b095-04573db9363b"
 * entry[=].resource = 5b68d9ca-2782-47bf-b095-04573db9363b
-* entry[+].fullUrl = "Provenance/47368ed8-62bf-462e-a345-7671bb85c926"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/47368ed8-62bf-462e-a345-7671bb85c926"
 * entry[=].resource = 47368ed8-62bf-462e-a345-7671bb85c926
 
 Instance: fdf5a171-5a5b-498f-be75-00d23ffdbd88

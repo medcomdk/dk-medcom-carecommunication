@@ -5,23 +5,23 @@ Description: "Send-Tek-B-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-18T08:30:00+01:00
-* entry[+].fullUrl = "MessageHeader/7969a2b7-3ff4-4802-9246-8ed74102ed73"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/7969a2b7-3ff4-4802-9246-8ed74102ed73"
 * entry[=].resource = 7969a2b7-3ff4-4802-9246-8ed74102ed73
-* entry[+].fullUrl = "Patient/b670ed56-9a4f-4903-ad51-65773a327d93"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b670ed56-9a4f-4903-ad51-65773a327d93"
 * entry[=].resource = b670ed56-9a4f-4903-ad51-65773a327d93
-* entry[+].fullUrl = "Communication/e6907e11-f007-4e2c-a98d-a543229a10c2"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/e6907e11-f007-4e2c-a98d-a543229a10c2"
 * entry[=].resource = e6907e11-f007-4e2c-a98d-a543229a10c2
-* entry[+].fullUrl = "PractitionerRole/edccec4f-0d3e-46be-9f66-97f459f6bafe"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/edccec4f-0d3e-46be-9f66-97f459f6bafe"
 * entry[=].resource = edccec4f-0d3e-46be-9f66-97f459f6bafe
-* entry[+].fullUrl = "Practitioner/1236e5b1-40cf-4d40-b44a-0ae8e8931121"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/1236e5b1-40cf-4d40-b44a-0ae8e8931121"
 * entry[=].resource = 1236e5b1-40cf-4d40-b44a-0ae8e8931121
-* entry[+].fullUrl = "Encounter/ede7ee60-4541-438c-922d-1898a14fa3b1"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Encounter/ede7ee60-4541-438c-922d-1898a14fa3b1"
 * entry[=].resource = ede7ee60-4541-438c-922d-1898a14fa3b1
-* entry[+].fullUrl = "Organization/454aafa3-8ecb-4c0b-9696-eee6cce6c498"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/454aafa3-8ecb-4c0b-9696-eee6cce6c498"
 * entry[=].resource = 454aafa3-8ecb-4c0b-9696-eee6cce6c498
-* entry[+].fullUrl = "Organization/0e804dff-95f7-40fe-bb96-561363715869"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/0e804dff-95f7-40fe-bb96-561363715869"
 * entry[=].resource = 0e804dff-95f7-40fe-bb96-561363715869
-* entry[+].fullUrl = "Provenance/d53ad029-99e5-44d5-b240-2ea01930701a"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/d53ad029-99e5-44d5-b240-2ea01930701a"
 * entry[=].resource = d53ad029-99e5-44d5-b240-2ea01930701a
 
 Instance: 7969a2b7-3ff4-4802-9246-8ed74102ed73

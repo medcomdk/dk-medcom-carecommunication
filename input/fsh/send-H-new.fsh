@@ -5,21 +5,21 @@ Description: "Send-H-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-15T15:20:00+01:00
-* entry[+].fullUrl = "MessageHeader/5a663fe8-c361-411d-876d-4f6b06749e59"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/5a663fe8-c361-411d-876d-4f6b06749e59"
 * entry[=].resource = 5a663fe8-c361-411d-876d-4f6b06749e59
-* entry[+].fullUrl = "Patient/8d7f4ef8-ac79-4b7d-b9e7-b769471221b2"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/8d7f4ef8-ac79-4b7d-b9e7-b769471221b2"
 * entry[=].resource = 8d7f4ef8-ac79-4b7d-b9e7-b769471221b2
-* entry[+].fullUrl = "Communication/38f751db-339c-46a6-a10d-cb88f72b2150"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/38f751db-339c-46a6-a10d-cb88f72b2150"
 * entry[=].resource = 38f751db-339c-46a6-a10d-cb88f72b2150
-* entry[+].fullUrl = "PractitionerRole/68f7756d-b5f0-47db-924b-8bf0f6864b9e"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/68f7756d-b5f0-47db-924b-8bf0f6864b9e"
 * entry[=].resource = 68f7756d-b5f0-47db-924b-8bf0f6864b9e
-* entry[+].fullUrl = "Practitioner/264a24ad-ef78-4289-987a-3f6dbc75ec01"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/264a24ad-ef78-4289-987a-3f6dbc75ec01"
 * entry[=].resource = 264a24ad-ef78-4289-987a-3f6dbc75ec01
-* entry[+].fullUrl = "Organization/cf3b8736-ffca-48a1-b2e7-550b5c503be8"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/cf3b8736-ffca-48a1-b2e7-550b5c503be8"
 * entry[=].resource = cf3b8736-ffca-48a1-b2e7-550b5c503be8
-* entry[+].fullUrl = "Organization/e640191b-a64c-4d05-ab28-285b4e91a816"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/e640191b-a64c-4d05-ab28-285b4e91a816"
 * entry[=].resource = e640191b-a64c-4d05-ab28-285b4e91a816
-* entry[+].fullUrl = "Provenance/a0c5b890-3c4c-4165-871c-e3fdf2608b47"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/a0c5b890-3c4c-4165-871c-e3fdf2608b47"
 * entry[=].resource = a0c5b890-3c4c-4165-871c-e3fdf2608b47
 
 Instance: 5a663fe8-c361-411d-876d-4f6b06749e59
@@ -61,10 +61,10 @@ InstanceOf: MedComCorePatient
 Title: "Send-H-new - Patient"
 Description: "Send-H-new - Patient"
 * identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
-* identifier.value = "1206550VK9"
-* name.use = #temp
+* identifier.value = "0703921VJ5"
+* name.use = #official
 * name.given = "Peter"
-* name.family = "Unknown"
+* name.family = "Hansen"
 
 
 // Sender instance - new message for attachement

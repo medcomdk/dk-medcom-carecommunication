@@ -5,21 +5,21 @@ Description: "Send-I-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-14T16:00:00+01:00
-* entry[+].fullUrl = "MessageHeader/faa030be-842d-4074-b10d-4db41c3dd31d"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/faa030be-842d-4074-b10d-4db41c3dd31d"
 * entry[=].resource = faa030be-842d-4074-b10d-4db41c3dd31d
-* entry[+].fullUrl = "Patient/7ae057dd-3786-44ea-8575-123dff351f2d"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/7ae057dd-3786-44ea-8575-123dff351f2d"
 * entry[=].resource = 7ae057dd-3786-44ea-8575-123dff351f2d
-* entry[+].fullUrl = "Communication/f465a829-e50d-4240-8228-496581a742a6"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/f465a829-e50d-4240-8228-496581a742a6"
 * entry[=].resource = f465a829-e50d-4240-8228-496581a742a6
-* entry[+].fullUrl = "PractitionerRole/08fdeaa7-d122-43fa-8c87-4b0eab1746bf"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/08fdeaa7-d122-43fa-8c87-4b0eab1746bf"
 * entry[=].resource = 08fdeaa7-d122-43fa-8c87-4b0eab1746bf
-* entry[+].fullUrl = "Practitioner/7103d3c0-54d2-4b4d-b123-13774ce5dd02"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/7103d3c0-54d2-4b4d-b123-13774ce5dd02"
 * entry[=].resource = 7103d3c0-54d2-4b4d-b123-13774ce5dd02
-* entry[+].fullUrl = "Organization/c9de18c4-0991-47fe-88ab-d55b0bd09374"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/c9de18c4-0991-47fe-88ab-d55b0bd09374"
 * entry[=].resource = c9de18c4-0991-47fe-88ab-d55b0bd09374
-* entry[+].fullUrl = "Organization/4b56eb00-9f9b-4f6e-92ce-2bd779759895"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/4b56eb00-9f9b-4f6e-92ce-2bd779759895"
 * entry[=].resource = 4b56eb00-9f9b-4f6e-92ce-2bd779759895
-* entry[+].fullUrl = "Provenance/9b044b9b-c617-4861-b5e4-96b46fd14b22"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/9b044b9b-c617-4861-b5e4-96b46fd14b22"
 * entry[=].resource = 9b044b9b-c617-4861-b5e4-96b46fd14b22
 
 Instance: 42fa2844-5020-45dd-bd5f-77137ba5ca1f
@@ -43,7 +43,7 @@ Title: "Send-I-new - Communication"
 Description: "Send-I-new - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#deceased
+* category = $CategoryCodes#decease
 * subject = Reference(f590bf2e-5a6e-4cfb-88d9-58ff2016f5fb)
 * identifier.value = "urn:uuid:3cd0beb4-fe08-4d0c-8dcb-f0020b434cf3"
 * topic.text = "Afgået ved døden"
@@ -54,7 +54,7 @@ Usage: #example
 * payload.extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "85572787"
-* payload[1].contentAttachment.contentType = $bcp13#image/pdf
+* payload[1].contentAttachment.contentType = $bcp13#image/png
 * payload[1].contentAttachment.title = "Kalenderoversigt" 
 * payload[1].extension[date].valueDateTime = 2024-10-14T16:00:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ee9b9b6b-0956-4ea1-9745-b29f23b93eaa"

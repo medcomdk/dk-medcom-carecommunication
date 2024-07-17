@@ -5,21 +5,21 @@ Description: "Send-C-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-16T06:00:00+01:00
-* entry[+].fullUrl = "MessageHeader/42fa2844-5020-45dd-bd5f-77137ba5ca1f"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/42fa2844-5020-45dd-bd5f-77137ba5ca1f"
 * entry[=].resource = 42fa2844-5020-45dd-bd5f-77137ba5ca1f
-* entry[+].fullUrl = "Patient/f590bf2e-5a6e-4cfb-88d9-58ff2016f5fb"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/f590bf2e-5a6e-4cfb-88d9-58ff2016f5fb"
 * entry[=].resource = f590bf2e-5a6e-4cfb-88d9-58ff2016f5fb
-* entry[+].fullUrl = "Communication/e69c06be-102c-4392-9ccb-96914e374f88"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/e69c06be-102c-4392-9ccb-96914e374f88"
 * entry[=].resource = e69c06be-102c-4392-9ccb-96914e374f88
-* entry[+].fullUrl = "PractitionerRole/c95dcab1-07af-4127-bb51-c43ed60a37ed"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/c95dcab1-07af-4127-bb51-c43ed60a37ed"
 * entry[=].resource = c95dcab1-07af-4127-bb51-c43ed60a37ed
-* entry[+].fullUrl = "Practitioner/d8fb6b7e-d0d7-4bac-9488-9bf24bb7c7a5"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/d8fb6b7e-d0d7-4bac-9488-9bf24bb7c7a5"
 * entry[=].resource = d8fb6b7e-d0d7-4bac-9488-9bf24bb7c7a5
-* entry[+].fullUrl = "Organization/9b668ecc-a9e4-4bbb-968a-d27b9894a8c9"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/9b668ecc-a9e4-4bbb-968a-d27b9894a8c9"
 * entry[=].resource = 9b668ecc-a9e4-4bbb-968a-d27b9894a8c9
-* entry[+].fullUrl = "Organization/5559b731-171a-4f0c-8e61-23c54f1cdf6f"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/5559b731-171a-4f0c-8e61-23c54f1cdf6f"
 * entry[=].resource = 5559b731-171a-4f0c-8e61-23c54f1cdf6f
-* entry[+].fullUrl = "Provenance/935df1e8-894c-44ad-ba88-f47faa1aa504"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/935df1e8-894c-44ad-ba88-f47faa1aa504"
 * entry[=].resource = 935df1e8-894c-44ad-ba88-f47faa1aa504
 
 Instance: faa030be-842d-4074-b10d-4db41c3dd31d
@@ -53,7 +53,7 @@ Usage: #example
 * payload.extension[author].valueReference = Reference(08fdeaa7-d122-43fa-8c87-4b0eab1746bf)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868"
-* payload[1].contentAttachment.contentType = $bcp13#image/pdf
+* payload[1].contentAttachment.contentType = $bcp13#image/png
 * payload[1].contentAttachment.title = "Røntgen-hofter" 
 * payload[1].extension[date].valueDateTime = 2024-10-16T06:00:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:5a44c168-2652-46c3-9120-dc468eadce7a"

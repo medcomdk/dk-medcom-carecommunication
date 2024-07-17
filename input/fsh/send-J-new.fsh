@@ -5,21 +5,21 @@ Description: "Send-K-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-17T17:20:00+01:00
-* entry[+].fullUrl = "MessageHeader/ejklfdsio898kfd"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/ejklfdsio898kfd"
 * entry[=].resource = ejklfdsio898kfd
-* entry[+].fullUrl = "Patient/uiodss8902la.z.ikfldsi9439d"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/uiodss8902la.z.ikfldsi9439d"
 * entry[=].resource = uiodss8902la.z.ikfldsi9439d
-* entry[+].fullUrl = "Communication/fhjkewyuir8791kshjekjcxjnmc.klklj"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/fhjkewyuir8791kshjekjcxjnmc.klklj"
 * entry[=].resource = fhjkewyuir8791kshjekjcxjnmc.klklj
-* entry[+].fullUrl = "PractitionerRole/jklfds.jklorewp-hcksa6wjs"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/jklfds.jklorewp-hcksa6wjs"
 * entry[=].resource = jklfds.jklorewp-hcksa6wjs
-* entry[+].fullUrl = "Practitioner/jklsfdiur7uckhxz89"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/jklsfdiur7uckhxz89"
 * entry[=].resource = jklsfdiur7uckhxz89
-* entry[+].fullUrl = "Organization/hfjdsyur74893j5hjkfdshj78.jkclzikd"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/hfjdsyur74893j5hjkfdshj78.jkclzikd"
 * entry[=].resource = hfjdsyur74893j5hjkfdshj78.jkclzikd
-* entry[+].fullUrl = "Organization/hujkfds678j"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/hujkfds678j"
 * entry[=].resource = hujkfds678j
-* entry[+].fullUrl = "Provenance/jfkdls7f89fdsjkcxz1hnjkzlzal.klasa-klaoi"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/jfkdls7f89fdsjkcxz1hnjkzlzal.klasa-klaoi"
 * entry[=].resource = jfkdls7f89fdsjkcxz1hnjkzlzal.klasa-klaoi
 
 Instance: ejklfdsio898kfd

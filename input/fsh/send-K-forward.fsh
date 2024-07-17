@@ -5,29 +5,29 @@ Description: "Send-K-forward"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-19T13:00:00+01:00
-* entry[+].fullUrl = "MessageHeader/3dbffafe-ce3c-45b0-bca7-2c008c478e79"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/3dbffafe-ce3c-45b0-bca7-2c008c478e79"
 * entry[=].resource = 3dbffafe-ce3c-45b0-bca7-2c008c478e79
-* entry[+].fullUrl = "Patient/db2fd52e-9a7a-418f-90d1-b422e07c895d"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/db2fd52e-9a7a-418f-90d1-b422e07c895d"
 * entry[=].resource = db2fd52e-9a7a-418f-90d1-b422e07c895d
-* entry[+].fullUrl = "Communication/e7e596e0-6458-4701-a20f-a9322f85ebe8"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/e7e596e0-6458-4701-a20f-a9322f85ebe8"
 * entry[=].resource = e7e596e0-6458-4701-a20f-a9322f85ebe8
-* entry[+].fullUrl = "PractitionerRole/1840f077-7ca1-4141-a46b-1bce43065c76"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/1840f077-7ca1-4141-a46b-1bce43065c76"
 * entry[=].resource = 1840f077-7ca1-4141-a46b-1bce43065c76
-* entry[+].fullUrl = "Practitioner/9ec69637-d91e-491d-a5b2-ec1661b98bc5"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/9ec69637-d91e-491d-a5b2-ec1661b98bc5"
 * entry[=].resource = 9ec69637-d91e-491d-a5b2-ec1661b98bc5
-* entry[+].fullUrl = "PractitionerRole/84eb6a09-63cf-433d-8522-41465d78756a"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/84eb6a09-63cf-433d-8522-41465d78756a"
 * entry[=].resource = 84eb6a09-63cf-433d-8522-41465d78756a
-* entry[+].fullUrl = "Practitioner/a7e25289-11d8-4125-a08a-9c1d85cbd950"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/a7e25289-11d8-4125-a08a-9c1d85cbd950"
 * entry[=].resource = a7e25289-11d8-4125-a08a-9c1d85cbd950
-* entry[+].fullUrl = "Organization/d2ac69eb-568e-4201-b29d-2af8d3126518"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/d2ac69eb-568e-4201-b29d-2af8d3126518"
 * entry[=].resource = d2ac69eb-568e-4201-b29d-2af8d3126518
-* entry[+].fullUrl = "Organization/7260b118-d744-4396-bbf2-80245933b1dd"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/7260b118-d744-4396-bbf2-80245933b1dd"
 * entry[=].resource = 7260b118-d744-4396-bbf2-80245933b1dd
-* entry[+].fullUrl = "Organization/6ea7c7cb-824b-4619-a13e-bc8828afd7e1"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/6ea7c7cb-824b-4619-a13e-bc8828afd7e1"
 * entry[=].resource = 6ea7c7cb-824b-4619-a13e-bc8828afd7e1
-* entry[+].fullUrl = "Provenance/4e290fa6-0a40-4cc8-abd3-14ac22e0b48b"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/4e290fa6-0a40-4cc8-abd3-14ac22e0b48b"
 * entry[=].resource = 4e290fa6-0a40-4cc8-abd3-14ac22e0b48b
-* entry[+].fullUrl = "Provenance/86b93888-0a2d-4530-a1c2-263394932e11"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/86b93888-0a2d-4530-a1c2-263394932e11"
 * entry[=].resource = 86b93888-0a2d-4530-a1c2-263394932e11
 
 Instance: 3dbffafe-ce3c-45b0-bca7-2c008c478e79
@@ -51,7 +51,7 @@ Title: "Send-K-reply - Communication"
 Description: "Send-K-reply - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#deceased
+* category = $CategoryCodes#decease
 * subject = Reference(db2fd52e-9a7a-418f-90d1-b422e07c895d)
 * topic.text = "Afgået ved døden"
 * identifier.value = "urn:uuid:06a106f9-df1c-4064-9031-b6a4cb841e85"
