@@ -4,7 +4,7 @@ Title: "Send-Tek-B-new"
 Description: "Send-Tek-B-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-18T08:30:00+01:00
+* timestamp = 2024-09-16T08:30:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/7969a2b7-3ff4-4802-9246-8ed74102ed73"
 * entry[=].resource = 7969a2b7-3ff4-4802-9246-8ed74102ed73
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b670ed56-9a4f-4903-ad51-65773a327d93"
@@ -50,7 +50,7 @@ Usage: #example
 * topic.text = "Resultater fra hjemmesygeplejen"
 * identifier.value = "urn:uuid:a6be8e47-43a0-4a34-8041-083d41eba038"
 * payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen. Denne meddelelse ligner til Tek-B-new, men er det ikke. Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-10-18T08:30:00+01:00
+* payload.extension[date].valueDateTime = 2024-09-16T08:30:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:dc9665dd-b9c3-4349-af08-e9dd61d0e211"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(454aafa3-8ecb-4c0b-9696-eee6cce6c498)
 * payload.extension[author].valueReference = Reference(edccec4f-0d3e-46be-9f66-97f459f6bafe)
@@ -121,8 +121,8 @@ Title: "Send-Tek-B-new - Provenance"
 Description: "Send-Tek-B-new - Provenance"
 Usage: #example
 * target = Reference(7969a2b7-3ff4-4802-9246-8ed74102ed73)
-* occurredDateTime = 2024-10-18T08:30:00+01:00
-* recorded = 2024-10-18T08:30:00+01:00
+* occurredDateTime = 2024-09-16T08:30:00+01:00
+* recorded = 2024-09-16T08:30:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(454aafa3-8ecb-4c0b-9696-eee6cce6c498) 
 * entity[0].role = #source

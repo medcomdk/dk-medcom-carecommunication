@@ -4,7 +4,7 @@ Title: "receive-F-tek-new"
 Description: "receive-F-tek-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-15T15:20:00+01:00
+* timestamp = 2024-08-19T13:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/d3339011-1a71-4c5c-a743-bf7d782ac7ae"
 * entry[=].resource = d3339011-1a71-4c5c-a743-bf7d782ac7ae
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/de0c79b9-635f-4991-961c-b72390210bf7"
@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(de0c79b9-635f-4991-961c-b72390210bf7)
 * identifier.value = "urn:uuid:3cbe7f6c-6815-4bd9-ac4e-a95bf326daa5"
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
-* payload.extension[date].valueDateTime = 2024-10-15T15:20:00+01:00
+* payload.extension[date].valueDateTime = 2024-08-19T13:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:8d9415a0-1b0d-4410-8a97-6097b31e12ff"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
 * payload.extension[author].valueReference = Reference(f552619f-6adf-4f68-9b2d-8636e94e58ed)
@@ -113,8 +113,8 @@ Title: "receive-F-tek-new - Provenance"
 Description: "receive-F-tek-new - Provenance"
 Usage: #example
 * target = Reference(d3339011-1a71-4c5c-a743-bf7d782ac7ae)
-* occurredDateTime = 2024-10-15T15:20:00+01:00
-* recorded = 2024-10-15T15:20:00+01:00
+* occurredDateTime = 2024-08-19T13:00:00+01:00
+* recorded = 2024-08-19T13:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
 * entity.role = #source

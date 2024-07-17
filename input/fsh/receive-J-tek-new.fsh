@@ -4,7 +4,7 @@ Title: "Receive-J-Tek-new"
 Description: "Receive-J-Tek-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-14T16:00:00+01:00
+* timestamp = 2024-08-23T16:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/f7f519bd-a104-43fb-ab8a-058eeaec68c7"
 * entry[=].resource = f7f519bd-a104-43fb-ab8a-058eeaec68c7
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/e85e8d47-46a9-4b6a-b86d-9dcf96d24543"
@@ -48,7 +48,7 @@ Usage: #example
 * identifier.value = "urn:uuid:b84738c1-a67f-4de9-a883-fab6d0ba0c44"
 * topic.text = "Afgået ved døden"
 * payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen."
-* payload.extension[date].valueDateTime = 2024-10-14T16:00:00+01:00
+* payload.extension[date].valueDateTime = 2024-08-23T16:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1df44fde-c8e1-4d0c-99cd-fc521cb728e5"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(aea5f134-5cc9-44b1-b5db-7155e45717ee)
 * payload.extension[author].valueReference = Reference(8a11159b-2b92-4232-9990-09bbae6ec6cb)
@@ -107,8 +107,8 @@ Title: "Receive-J-Tek-new - Provenance"
 Description: "Receive-J-Tek-new - Provenance"
 Usage: #example
 * target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
-* occurredDateTime = 2024-10-14T16:00:00+01:00
-* recorded = 2024-10-14T16:00:00+01:00
+* occurredDateTime = 2024-08-23T16:00:00+01:00
+* recorded = 2024-08-23T16:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(aea5f134-5cc9-44b1-b5db-7155e45717ee)
 * entity[0].role = #source

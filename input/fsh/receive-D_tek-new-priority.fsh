@@ -4,7 +4,7 @@ Title: "Send-A-new"
 Description: "Send-A-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-14T12:00:00+01:00
+* timestamp = 2024-08-17T14:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/4e60a233-2980-4d0f-9d7b-e38853be77ab"
 * entry[=].resource = 4e60a233-2980-4d0f-9d7b-e38853be77ab
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/ae4abfb5-b0f6-443c-a420-0c0649cbe0c0"
@@ -89,8 +89,8 @@ Title: "Send-A-new - Provenance"
 Description: "Send-A-new - Provenance"
 Usage: #example
 * target = Reference(4e60a233-2980-4d0f-9d7b-e38853be77ab)
-* occurredDateTime = 2024-10-14T14:00:00+01:00
-* recorded = 2024-10-14T14:00:00+01:00
+* occurredDateTime = 2024-08-17T14:00:00+01:00
+* recorded = 2024-08-17T14:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)
 * entity[0].role = #source
@@ -108,7 +108,7 @@ Usage: #example
 * identifier.value = "urn:uuid:161d8b55-bf2e-416a-ad92-2e022bbcd486"
 * subject = Reference(ae4abfb5-b0f6-443c-a420-0c0649cbe0c0)
 * payload[0].contentString = "Til rette vedkommende. <br/> Vi vil med denne korrespondance gerne &quot;prøve&quot; på &apos; nogle &apos; særlige &lt;tegn&gt; ; til test &amp; certificering @ ^ * <br/> /Hilsen Michael, sygeplejerske."
-* payload[0].extension[date].valueDateTime = 2024-10-14T14:00:00+01:00
+* payload[0].extension[date].valueDateTime = 2024-08-17T14:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:21ee7617-5e47-406e-83bd-347ba6a7a872"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)
 * payload[0].extension[author].valueReference = Reference(bbe737f3-f1a9-435d-ab7f-d96798952a75)

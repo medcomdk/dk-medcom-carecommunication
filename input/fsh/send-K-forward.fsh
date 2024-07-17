@@ -4,7 +4,7 @@ Title: "Send-K-forward"
 Description: "Send-K-forward"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-19T13:00:00+01:00
+* timestamp = 2024-09-14T13:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/3dbffafe-ce3c-45b0-bca7-2c008c478e79"
 * entry[=].resource = 3dbffafe-ce3c-45b0-bca7-2c008c478e79
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/db2fd52e-9a7a-418f-90d1-b422e07c895d"
@@ -56,14 +56,14 @@ Usage: #example
 * topic.text = "Afgået ved døden"
 * identifier.value = "urn:uuid:06a106f9-df1c-4064-9031-b6a4cb841e85"
 * payload[0].contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen"
-* payload[0].extension[date].valueDateTime = 2024-10-19T13:00:00+01:00
+* payload[0].extension[date].valueDateTime = 2024-09-14T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:954183f4-bc89-4d75-8073-9b397bacd6ec"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * payload[0].extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "85572787"
 * payload[1].contentString = "Jeg videresender hermed beskeden fra Kim, så I er orienteret. Mvh. Sygeplejerske K. Jensen"
-* payload[1].extension[date].valueDateTime = 2024-10-19T14:25:00+01:00
+* payload[1].extension[date].valueDateTime = 2024-09-14T14:25:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * payload[1].extension[author].valueReference = Reference(c95dcab1-07af-4127-bb51-c43ed60a37ed)
@@ -143,8 +143,8 @@ Title: "Send-K-reply - Provenance"
 Description: "Send-K-reply - Provenance"
 Usage: #example
 * target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
-* occurredDateTime = 2024-10-19T13:00:00+01:00
-* recorded = 2024-10-19T13:00:00+01:00
+* occurredDateTime = 2024-09-14T13:00:00+01:00
+* recorded = 2024-09-14T13:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * entity[0].role = #source
@@ -157,8 +157,8 @@ Title: "Send-K-reply - Provenance"
 Description: "Send-K-reply - Provenance"
 Usage: #example
 * target = Reference(3dbffafe-ce3c-45b0-bca7-2c008c478e79)
-* occurredDateTime = 2024-10-19T14:25:00+01:00
-* recorded = 2024-10-19T14:25:00+01:00
+* occurredDateTime = 2024-09-14T14:25:00+01:00
+* recorded = 2024-09-14T14:25:00+01:00
 * activity.coding = $ActivityCode#forward-message
 * agent.who = Reference(6ea7c7cb-824b-4619-a13e-bc8828afd7e1)
 * entity[1].role = #revision

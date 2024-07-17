@@ -4,7 +4,7 @@ Title: "Receive-L-Tek-new - New CareCommunication message."
 Description: "Receive-L-Tek-new - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-01T12:00:00+02:00
+* timestamp = 2024-08-24T12:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec"
 * entry[=].resource = 8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b7fed758-bfdd-4c21-bfca-bb0b4b7081a0"
@@ -90,7 +90,7 @@ Description: "Receive-L-Tek-new - Content of care communication message. Valid o
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
+* payload.extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * payload.extension[author].valueReference = Reference(569a1bff-55a1-4868-a7b4-80fedb2066e3)
@@ -104,8 +104,8 @@ Title: "Receive-L-Tek-new - The Provenance instance is only valid if used in a b
 Description: "Receive-L-Tek-new - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec)
-* occurredDateTime = 2024-05-01T12:00:00+02:00
-* recorded = 2024-05-01T12:00:00+02:00
+* occurredDateTime = 2024-08-24T12:00:00+02:00
+* recorded = 2024-08-24T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * entity[payload].role = #source
@@ -194,7 +194,7 @@ Description: "Receive-K-Tek-reply - Content of care communication message. Valid
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
+* payload[0].extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * payload[0].extension[author].valueReference = Reference(569a1bff-55a1-4868-a7b4-80fedb2066e3)

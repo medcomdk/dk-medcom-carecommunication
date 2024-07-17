@@ -4,7 +4,7 @@ Title: "receive-G-tek-new"
 Description: "receive-G-tek-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-17T17:20:00+01:00
+* timestamp = 2024-08-20T17:20:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/ejklfdsio8klakfd"
 * entry[=].resource = ejklfdsio8klakfd
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/uiodss8902laikfldsi9439d"
@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(uiodss8902laikfldsi9439d)
 * identifier.value = "urn:uuid:9936312e-593d-428b-8d70-aa025d587be3"
 * payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita, psykolog."
-* payload.extension[date].valueDateTime = 2024-10-17T17:20:00+01:00
+* payload.extension[date].valueDateTime = 2024-08-20T17:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:27ca31f6-e41d-4661-bc03-8e32f0a84dcb"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(hdfg4893j5hjkfdshj78.jkclzikd)
 * payload.extension[author].valueReference = Reference(jklfds.jkloreweda7a6wjs)
@@ -107,8 +107,8 @@ Title: "receive-G-tek-new - Provenance"
 Description: "receive-G-tek-new - Provenance"
 Usage: #example
 * target = Reference(ejklfdsio8klakfd)
-* occurredDateTime = 2024-10-17T17:20:00+01:00
-* recorded = 2024-10-17T17:20:00+01:00
+* occurredDateTime = 2024-08-20T17:20:00+01:00
+* recorded = 2024-08-20T17:20:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(hdfg4893j5hjkfdshj78.jkclzikd)
 * entity[0].role = #source

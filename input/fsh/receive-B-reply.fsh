@@ -143,7 +143,7 @@ Description: "Receive-A-reply"
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
+* payload[0].extension[date].valueDateTime = 2024-08-11T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(5007be8f-49dd-48ae-9808-66270aef1865)
 * payload[0].extension[author].valueReference = Reference(fd823675-9a45-4cf6-9348-5b9806e8385f)
@@ -177,7 +177,7 @@ Description: "Receive-A-reply"
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(7b4803a9-a048-4551-9f61-c3143dba3786)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
+* payload.extension[date].valueDateTime = 2024-08-11T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(5007be8f-49dd-48ae-9808-66270aef1865)
 * payload.extension[author].valueReference = Reference(fd823675-9a45-4cf6-9348-5b9806e8385f)
@@ -191,8 +191,8 @@ Title: "Receive-A-reply"
 Description: "Receive-A-reply"
 Usage: #inline
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* occurredDateTime = 2024-05-01T12:00:00+02:00
-* recorded = 2024-05-01T12:00:00+02:00
+* occurredDateTime = 2024-08-11T12:00:00+02:00
+* recorded = 2024-08-11T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(5007be8f-49dd-48ae-9808-66270aef1865)
 * entity[payload].role = #source

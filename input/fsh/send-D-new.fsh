@@ -4,7 +4,7 @@ Title: "Send-D-new"
 Description: "Send-D-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-10-15T12:00:00+01:00
+* timestamp = 2024-09-08T12:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/fdf5a171-5a5b-498f-be75-00d23ffdbd88"
 * entry[=].resource = fdf5a171-5a5b-498f-be75-00d23ffdbd88
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b6a2e10b-f6da-49de-86b3-980755fc07d5"
@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(b6a2e10b-f6da-49de-86b3-980755fc07d5)
 * identifier.value = "urn:uuid:f9e8167e-39fb-4d94-a32b-43655ade1082"
 * payload.contentString = "Til rette vedkommende. Vi vil med denne korrespondance gerne &quot;prøve&quot; på &apos; nogle &apos; særlige &lt;tegn&gt; ; til test &amp; certificering @ ^ * /Hilsen Michael, sygeplejerske."
-* payload.extension[date].valueDateTime = 2024-10-15T12:00:00+01:00
+* payload.extension[date].valueDateTime = 2024-09-08T12:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:8521000b-ce04-4c18-b9b1-04dcbdf8e112"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(23e981cb-c908-4654-ab56-7f23b5126afd)
 * payload.extension[author].valueReference = Reference(66e95c8f-4297-435d-a4a9-eed130083cae)
@@ -103,8 +103,8 @@ Title: "Send-D-new - Provenance"
 Description: "Send-D-new - Provenance"
 Usage: #example
 * target = Reference(fdf5a171-5a5b-498f-be75-00d23ffdbd88)
-* occurredDateTime = 2024-10-15T12:00:00+01:00
-* recorded = 2024-10-15T12:00:00+01:00
+* occurredDateTime = 2024-09-08T12:00:00+01:00
+* recorded = 2024-09-08T12:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(23e981cb-c908-4654-ab56-7f23b5126afd)
 * entity.role = #source
