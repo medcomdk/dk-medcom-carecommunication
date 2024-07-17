@@ -17,8 +17,8 @@ Usage: #example
 * entry[=].resource = b19a6a37-ec37-4dbb-95ca-1e0c92378c7e
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/2d808d61-69ec-4040-b6f8-2be94926f86e"
 * entry[=].resource = 2d808d61-69ec-4040-b6f8-2be94926f86e
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/4b350c2d-1114-4cc5-a9ba-58bf3692d515"
-* entry[=].resource = 4b350c2d-1114-4cc5-a9ba-58bf3692d515
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/c2984887-1df7-4e43-8621-22bd6bac37c8"
+* entry[=].resource = c2984887-1df7-4e43-8621-22bd6bac37c8
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/CareTeam/48aa320d-dd35-40b8-a6c0-82312652b720"
 * entry[=].resource = 48aa320d-dd35-40b8-a6c0-82312652b720
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/09844b02-9647-49e1-92ae-37dc5c721888"
@@ -113,18 +113,18 @@ Description: "Send-A-new - Sender Careteam"
 * name = "Team +80 år"
 
 // Practitioners - new message with attachment
-Instance: 4b350c2d-1114-4cc5-a9ba-58bf3692d515
+Instance: c2984887-1df7-4e43-8621-22bd6bac37c8
 InstanceOf: MedComCorePractitioner
 Title: "Send-A-new - specifik Receiver practitioner"
 Description: "Send-A-new - specifik Receiver practitioner"
-* name.given = "Michael"
-* name.family = "Burns"
+* name.given = "Birgit"
+* name.family = "Berggren"
 
 Instance: 2d808d61-69ec-4040-b6f8-2be94926f86e
 InstanceOf: MedComCorePractitionerRole
 Title: "Send-A-new - specifik Receiver practitionerRole"
 Description: "Send-A-new - specifik Receiver practitionerRole"
-* practitioner = Reference(4b350c2d-1114-4cc5-a9ba-58bf3692d515)
+* practitioner = Reference(c2984887-1df7-4e43-8621-22bd6bac37c8)
 * organization = Reference(26bfb2de-a811-4744-9883-9a50c59e710d)
 * code = $PractitionerRole#afdelingslaege
 
