@@ -104,7 +104,7 @@ Description: "Send-H-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: a0c5b890-3c4c-4165-871c-e3fdf2608b47
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-H-new - Provenance"
 Description: "Send-H-new - Provenance"
 Usage: #example

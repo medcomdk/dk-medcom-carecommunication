@@ -98,7 +98,7 @@ Description: "Receive-E-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 0fc624e5-3455-4272-bf97-e018817156b5
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Receive-E-new - Provenance"
 Description: "Receive-E-new - Provenance"
 Usage: #example

@@ -102,7 +102,7 @@ Description: "Send-K-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: jfkdls7f89fdsjkcxz1hnjkzlzal.klasa-klaoi
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-K-new - Provenance"
 Description: "Send-K-new - Provenance"
 Usage: #example

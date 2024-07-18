@@ -105,7 +105,7 @@ Description: "Send-D-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 4e64df0c-6452-4505-8189-b3ae0c0e3d8b
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-D-new - Provenance"
 Description: "Send-D-new - Provenance"
 Usage: #example

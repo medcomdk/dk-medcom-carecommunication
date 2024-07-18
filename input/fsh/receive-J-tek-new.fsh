@@ -102,7 +102,7 @@ Description: "Receive-J-Tek-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 520281e1-e735-4e5c-8980-fb8a36e820cb
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Receive-J-Tek-new - Provenance"
 Description: "Receive-J-Tek-new - Provenance"
 Usage: #example

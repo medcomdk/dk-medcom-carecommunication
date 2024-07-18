@@ -102,7 +102,7 @@ Description: "receive-M-tek-new-dublicate - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 0ba6b512-88a0-480a-8e79-34faef0ff447
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "receive-M-tek-new-dublicate - Provenance"
 Description: "receive-M-tek-new-dublicate - Provenance"
 Usage: #example

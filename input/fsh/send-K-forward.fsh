@@ -138,7 +138,7 @@ Description: "Send-K-reply - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 4e290fa6-0a40-4cc8-abd3-14ac22e0b48b
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-K-reply - Provenance"
 Description: "Send-K-reply - Provenance"
 Usage: #example
@@ -152,7 +152,7 @@ Usage: #example
 
 // CareCommunication example - reply message
 Instance: 86b93888-0a2d-4530-a1c2-263394932e11
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-K-reply - Provenance"
 Description: "Send-K-reply - Provenance"
 Usage: #example

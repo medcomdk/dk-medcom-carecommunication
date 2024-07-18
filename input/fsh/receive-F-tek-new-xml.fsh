@@ -108,7 +108,7 @@ Description: "receive-F-tek-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: c0499c96-d85b-4807-85d2-0f0f1a9d2df0
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "receive-F-tek-new - Provenance"
 Description: "receive-F-tek-new - Provenance"
 Usage: #example

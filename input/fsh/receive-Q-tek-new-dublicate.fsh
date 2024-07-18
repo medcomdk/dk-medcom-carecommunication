@@ -108,7 +108,7 @@ Description: "receive-Q-tek-new-dublicate - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 1cff1fd0-44a1-4246-a96c-41db3bb25bbe
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "receive-Q-tek-new-dublicate - Provenance"
 Description: "receive-Q-tek-new-dublicate - Provenance"
 Usage: #example

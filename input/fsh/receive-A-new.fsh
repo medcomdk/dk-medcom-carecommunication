@@ -90,7 +90,7 @@ Description: "Receive-A-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 0a3c00aa-36ef-4b2e-b746-4f6eb612ecb8
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Receive-A-new - Provenance"
 Description: "Receive-A-new - Provenance"
 Usage: #example

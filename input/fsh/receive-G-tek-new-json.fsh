@@ -102,7 +102,7 @@ Description: "receive-G-tek-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: jfkdls7jz1hnjkzlzal.klasa-klaoi
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "receive-G-tek-new - Provenance"
 Description: "receive-G-tek-new - Provenance"
 Usage: #example

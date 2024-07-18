@@ -100,7 +100,7 @@ Description: "Send-F-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: 93b0a981-986a-43ac-aecb-961d8a618d83
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-F-new - Provenance"
 Description: "Send-F-new - Provenance"
 Usage: #example

@@ -116,7 +116,7 @@ Description: "Send-Tek-B-new - practitionerRole"
 
 // CareCommunication example - new message
 Instance: d53ad029-99e5-44d5-b240-2ea01930701a
-InstanceOf: MedComMessagingProvenance
+InstanceOf: MedComCareCommunicationProvenance
 Title: "Send-Tek-B-new - Provenance"
 Description: "Send-Tek-B-new - Provenance"
 Usage: #example
