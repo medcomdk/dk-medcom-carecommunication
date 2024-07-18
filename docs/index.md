@@ -87,11 +87,13 @@ Certification of a system implies both an approved test protocol and a run troug
 
  **Sending a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
-  * TouchStone Test scripts- link will be provided soon
+    * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html">Test examples</a>
+  *  <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
+    * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose.</a>
 
 **Receiving a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
-  * TouchStone Test scripts - link will be provided soon
+    * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html">Test examples</a>
 
 
 ## 3 Conversion service 
