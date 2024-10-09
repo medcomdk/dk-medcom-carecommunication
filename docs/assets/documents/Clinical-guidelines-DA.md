@@ -182,12 +182,12 @@ I <a href="#Tab1">tabel 1</a> opsummeres krav og anbefalinger til afsender- og m
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-7bnw{background-color:#2c415c;border-color:inherit;color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-7bnw{background-color:#002134;border-color:inherit;color:#efefef;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg">
-<caption style="color:#2c415c; font-weight:bold; text-align:center"> Tabel 1: Opsummering af krav og anbefalinger til afsender- og modtagersystemer </caption>
+<caption style="color:#002134; font-weight:bold; text-align:center"> Tabel 1: Opsummering af krav og anbefalinger til afsender- og modtagersystemer </caption>
 <thead>
   <tr>
     <th class="tg-7bnw">   <br>    </th>

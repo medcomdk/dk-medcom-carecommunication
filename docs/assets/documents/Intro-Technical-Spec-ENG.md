@@ -22,11 +22,11 @@
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-lc33{background-color:#2c415c;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-lc33{background-color:#002134;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg">
-<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in the CareCommunication standard</caption>
+<caption style="color:#002134; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in the CareCommunication standard</caption>
 <thead>
   <tr>
     <th class="tg-lc33"><span style="font-weight:bold">Profile</span></th>

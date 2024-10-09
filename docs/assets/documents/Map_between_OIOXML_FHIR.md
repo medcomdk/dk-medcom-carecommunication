@@ -15,11 +15,11 @@ This document describes mapping between the OIOXML (<a href="https://svn.medcom.
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c4ko{background-color:#2c415c;text-align:left;vertical-align:top}
+.tg .tg-c4ko{background-color:#002134;text-align:left;vertical-align:top}
 .tg .tg-7euo{background-color:#ffffff;color:#333333;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
 <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 1795px">
-<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1:Mapping table between OIOXML, XDIS91 and FHIR CareCommunication</caption>
+<caption style="color:#002134; font-weight:bold; text-align:center"> Table 1:Mapping table between OIOXML, XDIS91 and FHIR CareCommunication</caption>
 <thead>
   <tr>
     <th class="tg-c4ko" rowspan="2">    <br><span style="color:white">Data</span>    </th>
