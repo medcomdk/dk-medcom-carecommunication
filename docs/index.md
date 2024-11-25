@@ -106,7 +106,7 @@ In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (Care
 
 The service concerns only conversion between OIOXML and FHIR. For this reason, messages sent in EDIFACT must be converted to OIOXML before conversion to FHIR. Conversion will only be performed when the sender and receiver doesn’t support the same standard format.
 
-The service is intended to be available from November 2024 to April 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
+The service is intended to be available from spring 2025 to the end of 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
 
 ### 3.1 Use cases and rules
 The following document includes preconditions for the conversion, use cases describing the flow of events, rules concerning to mapping. 
@@ -163,3 +163,8 @@ The table below includes examples of the mapping illustrating four different flo
   </tr>
 </tbody>
 </table>
+
+### 3.4 Test protocol
+Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly.
+  * [Test protocol in English (docx)](assets/ConversionService_Testprotocol.docx)
+    * Test examples will be provided soon.
