@@ -1,7 +1,7 @@
 Instance: 91b4b79a-520f-48cb-bb9a-9c3e27301968
 InstanceOf: MedComCareCommunicationMessage
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-12T11:30:00+02:00
@@ -88,8 +88,8 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 // CareCommunication reply example
 Instance: 8daf0286-2477-4766-8ed2-cc76970e44b1
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -103,8 +103,8 @@ Usage: #example
 
 Instance: 365e05b6-0165-4f4b-9ce1-ae6b6185015c
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 Usage: #inline
 * target = Reference(8daf0286-2477-4766-8ed2-cc76970e44b1)
 * occurredDateTime = 2024-08-12T11:30:00+02:00
@@ -122,8 +122,8 @@ Usage: #inline
 // CareCommunication reply example
 Instance: 9c4ff4b0-093c-4111-8c29-3ae2b04a16db
 InstanceOf: MedComCareCommunication
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:18fa94f2-d40d-46a6-b50d-4086c8e184ad"
 * category = $CategoryCodes#examination-results
@@ -153,8 +153,8 @@ Description: "Receive-A-reply"
 /* // CareCommunication new example
 Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -169,8 +169,8 @@ Usage: #example
 // CareCommunication new example
 Instance: 94e65db8-2f0c-4a2c-a7c9-06a160d59a12
 InstanceOf: MedComCareCommunication
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 * category = $CategoryCodes#examination-results
@@ -187,8 +187,8 @@ Description: "Receive-A-reply"
 // CareCommunication example - new message
 Instance: 30e15db8-3c33-43c1-87cb-7e8a902e8003
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Receive-A-reply"
-Description: "Receive-A-reply"
+Title: "receive_B-reply"
+Description: "receive_B-reply"
 Usage: #inline
 * target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * occurredDateTime = 2024-08-11T12:00:00+02:00

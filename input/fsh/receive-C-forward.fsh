@@ -2,8 +2,8 @@
 
 Instance: 1c4dbd72-4af3-41f9-a9b5-dacd8d62f994
 InstanceOf: MedComCorePatient
-Title: "Send-F-new - Patient"
-Description: "Send-F-new - Patient"
+Title: "receive_C-forward - Patient"
+Description: "receive_C-forward - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -14,8 +14,8 @@ Description: "Send-F-new - Patient"
 // Sender instance - new message for attachement
 Instance: ca5a7c53-fc3a-4565-b419-a443c3bc6870
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-F-new - Sender"
-Description: "Send-F-new - Sender"
+Title: "receive_C-forward - Sender"
+Description: "receive_C-forward - Sender"
 * identifier[SOR-ID].value = "328081000016004" 
 * identifier[EAN-ID].value = "5790000121786" 
 * name = "Hjemmesygeplejen, Aalborg kommune"
@@ -23,8 +23,8 @@ Description: "Send-F-new - Sender"
 // Reciever instance - new message for attachement
 Instance: a81d6555-94d9-4704-a6b7-8dea0bcd3dac
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-F-new - Receiver"
-Description: "Send-F-new - Receiver"
+Title: "receive_C-forward - Receiver"
+Description: "receive_C-forward - Receiver"
 * identifier[SOR-ID].value = "1339531000016004" 
 * identifier[EAN-ID].value = "5790002626814" 
 * name = "Lægeklinik Ølgod"
@@ -33,23 +33,23 @@ Description: "Send-F-new - Receiver"
 // Practitioners - new message with attachment
 Instance: 06d61404-9502-4579-9475-4e3ddd071bc5
 InstanceOf: MedComCorePractitioner
-Title: "Send-F-new - practitioner"
-Description: "Send-F-new - practitioner"
+Title: "receive_C-forward - practitioner"
+Description: "receive_C-forward - practitioner"
 * name.given[0] = "Emma"
 * name.family = "Waters"
 
 Instance: 6666a833-8621-475a-9fc5-a34b1a043a03
 InstanceOf: MedComCorePractitionerRole
-Title: "Send-F-new - practitionerRole"
-Description: "Send-F-new - practitionerRole"
+Title: "receive_C-forward - practitionerRole"
+Description: "receive_C-forward - practitionerRole"
 * practitioner = Reference(06d61404-9502-4579-9475-4e3ddd071bc5)
 * code = $PractitionerRole#laege
 
 // CareCommunication example - new message
 Instance: 45f68408-94e2-48f9-b740-5c487a3e7e56
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-F-new - Provenance"
-Description: "Send-F-new - Provenance"
+Title: "receive_C-forward - Provenance"
+Description: "receive_C-forward - Provenance"
 Usage: #example
 * target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
 * occurredDateTime = 2024-08-15T15:20:00+01:00
@@ -61,8 +61,8 @@ Usage: #example
 
 Instance: 8352b67a-23b2-44c5-b43a-725270a90722
 InstanceOf: MedComCareCommunicationMessage
-Title: "Send-F-new"
-Description: "Send-F-new"
+Title: "receive_C-forward"
+Description: "receive_C-forward"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-16T11:30:00+02:00
@@ -95,8 +95,8 @@ Usage: #example
 
 Instance: 8b67e42d-fc9b-45c4-8313-86b9c7416445
 InstanceOf: MedComMessagingOrganization 
-Title: "Send-F-new"
-Description: "Send-F-new"
+Title: "receive_C-forward"
+Description: "receive_C-forward"
 * identifier[SOR-ID].value = "1042981000016003" 
 * identifier[EAN-ID].value = "5790001348120" 
 //* name = "Herlevgaard Center Herlev Kommune"
@@ -104,8 +104,8 @@ Description: "Send-F-new"
 // CareCommunication reply example
 Instance: d2b81c34-ec5d-4c5f-9380-1b5aa507544b
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Send-F-new"
-Description: "Send-F-new"
+Title: "receive_C-forward"
+Description: "receive_C-forward"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -119,8 +119,8 @@ Usage: #example
 
 Instance: fdb3c81c-e1b3-4cee-866a-334360c162a0
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-F-new"
-Description: "Send-F-new"
+Title: "receive_C-forward"
+Description: "receive_C-forward"
 Usage: #inline
 * target = Reference(d2b81c34-ec5d-4c5f-9380-1b5aa507544b)
 * occurredDateTime = 2024-08-16T11:30:00+02:00
@@ -150,8 +150,8 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 // CareCommunication reply example
 Instance: e37c9933-1fc6-48e0-9819-66bc026cf3d4
 InstanceOf: MedComCareCommunication
-Title: "Send-F-new"
-Description: "Send-F-new"
+Title: "receive_C-forward"
+Description: "receive_C-forward"
 * identifier.value = "urn:uuid:bb5aba27-2112-434a-ac3f-d317ba7a70cd"
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results

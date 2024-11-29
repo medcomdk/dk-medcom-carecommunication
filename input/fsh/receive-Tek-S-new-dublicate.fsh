@@ -1,7 +1,7 @@
 Instance: c289e585-7f30-4d58-88e3-0baedd9ffeee
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-N-tek-new-dublicate"
-Description: "receive-N-tek-new-dublicate"
+Title: "receive-Tek-S-new-dublicate"
+Description: "receive-Tek-S-new-dublicate"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-26T15:20:00+01:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: b8040f0c-2921-4da1-a481-023baa352b01
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive-N-tek-new-dublicate - MessageHeader"
-Description: "receive-N-tek-new-dublicate - MessageHeader"
+Title: "receive-Tek-S-new-dublicate - MessageHeader"
+Description: "receive-Tek-S-new-dublicate - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: a31cae55-2d49-41f2-ae74-562dc4547572
 InstanceOf: MedComCareCommunication
-Title: "receive-N-tek-new-dublicate - Communication"
-Description: "receive-N-tek-new-dublicate - Communication"
+Title: "receive-Tek-S-new-dublicate - Communication"
+Description: "receive-Tek-S-new-dublicate - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#other
@@ -58,8 +58,8 @@ Usage: #example
 
 Instance: 73782c2a-c9be-4ca6-9c70-020c0bd83511
 InstanceOf: MedComCorePatient
-Title: "receive-N-tek-new-dublicate - Patient"
-Description: "receive-N-tek-new-dublicate - Patient"
+Title: "receive-Tek-S-new-dublicate - Patient"
+Description: "receive-Tek-S-new-dublicate - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -71,8 +71,8 @@ Description: "receive-N-tek-new-dublicate - Patient"
 // Sender instance - new message for attachement
 Instance: 1cc8e567-bf4a-4dc6-b427-f23942cb4661
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-N-tek-new-dublicate - Sender"
-Description: "receive-N-tek-new-dublicate - Sender"
+Title: "receive-Tek-S-new-dublicate - Sender"
+Description: "receive-Tek-S-new-dublicate - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
@@ -80,8 +80,8 @@ Description: "receive-N-tek-new-dublicate - Sender"
 // Reciever instance - new message for attachement
 Instance: 77dcf3fd-9ee6-4e64-9ab4-b1619bae5811
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-N-tek-new-dublicate - Receiver"
-Description: "receive-N-tek-new-dublicate - Receiver"
+Title: "receive-Tek-S-new-dublicate - Receiver"
+Description: "receive-Tek-S-new-dublicate - Receiver"
 * identifier[SOR-ID].value = "1339531000016004" 
 * identifier[EAN-ID].value = "5790002626814" 
 * name = "Lægeklinik Ølgod"
@@ -90,23 +90,23 @@ Description: "receive-N-tek-new-dublicate - Receiver"
 // Practitioners - new message with attachment
 Instance: 9f50e7b5-8da2-4832-bef8-eed9dc69ec6f
 InstanceOf: MedComCorePractitioner
-Title: "receive-N-tek-new-dublicate - practitioner"
-Description: "receive-N-tek-new-dublicate - practitioner"
+Title: "receive-Tek-S-new-dublicate - practitioner"
+Description: "receive-Tek-S-new-dublicate - practitioner"
 * name.given = "Michelle"
 * name.family = "Burns"
 
 Instance: 01b4af5e-314a-4992-9683-67cc2876fecf
 InstanceOf: MedComCorePractitionerRole
-Title: "receive-N-tek-new-dublicate - practitionerRole"
-Description: "receive-N-tek-new-dublicate - practitionerRole"
+Title: "receive-Tek-S-new-dublicate - practitionerRole"
+Description: "receive-Tek-S-new-dublicate - practitionerRole"
 * practitioner = Reference(9f50e7b5-8da2-4832-bef8-eed9dc69ec6f)
 * code = $PractitionerRole#laegesekretaer
 
 // CareCommunication example - new message
 Instance: ddc0fc7b-0ad1-43e1-b9c4-b1a3d9ef1c50
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive-N-tek-new-dublicate - Provenance"
-Description: "receive-N-tek-new-dublicate - Provenance"
+Title: "receive-Tek-S-new-dublicate - Provenance"
+Description: "receive-Tek-S-new-dublicate - Provenance"
 Usage: #example
 * target = Reference(b8040f0c-2921-4da1-a481-023baa352b01)
 * occurredDateTime = 2024-08-26T15:20:00+01:00

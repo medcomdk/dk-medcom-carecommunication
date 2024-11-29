@@ -1,7 +1,7 @@
 Instance: jklfds89r78jklsduf98w487953jkl.jkliuuh
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-G-tek-new"
-Description: "receive-G-tek-new"
+Title: "receive_Tek-L-new-json"
+Description: "receive_Tek-L-new-json"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-20T17:20:00+01:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: ejklfdsio8klakfd
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive-G-tek-new - MessageHeader"
-Description: "receive-G-tek-new - MessageHeader"
+Title: "receive_Tek-L-new-json - MessageHeader"
+Description: "receive_Tek-L-new-json - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: fhjkewyuir1234kshjekjcxjnmc.klklj
 InstanceOf: MedComCareCommunication
-Title: "receive-G-tek-new - Communication"
-Description: "receive-G-tek-new - Communication"
+Title: "receive_Tek-L-new-json - Communication"
+Description: "receive_Tek-L-new-json - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#psychiatry-social-disability
@@ -57,8 +57,8 @@ Usage: #example
 
 Instance: uiodss8902laikfldsi9439d
 InstanceOf: MedComCorePatient
-Title: "receive-G-tek-new - Patient"
-Description: "receive-G-tek-new - Patient"
+Title: "receive_Tek-L-new-json - Patient"
+Description: "receive_Tek-L-new-json - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -69,8 +69,8 @@ Description: "receive-G-tek-new - Patient"
 // Sender instance - new message
 Instance: hdfg4893j5hjkfdshj78.jkclzikd
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-G-tek-new - Sender"
-Description: "receive-G-tek-new - Sender"
+Title: "receive_Tek-L-new-json - Sender"
+Description: "receive_Tek-L-new-json - Sender"
 * identifier[SOR-ID].value = "502191000016006" 
 * identifier[EAN-ID].value = "5790000121786" 
 * name = "Anita Thenstrup"
@@ -78,8 +78,8 @@ Description: "receive-G-tek-new - Sender"
 // Reciever instance - new message 
 Instance: hujkfd2348j
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-G-tek-new - Receiver"
-Description: "receive-G-tek-new - Receiver"
+Title: "receive_Tek-L-new-json - Receiver"
+Description: "receive_Tek-L-new-json - Receiver"
 * identifier[SOR-ID].value = "1385391000016002" 
 * identifier[EAN-ID].value = "5790002632389" 
 * name = "Padagogisk Psykologisk Rådgivning"
@@ -88,23 +88,23 @@ Description: "receive-G-tek-new - Receiver"
 // Practitioners - new message 
 Instance: jklsfdiur7ucfgh89
 InstanceOf: MedComCorePractitioner
-Title: "receive-G-tek-new - practitioner"
-Description: "receive-G-tek-new - practitioner"
+Title: "receive_Tek-L-new-json - practitioner"
+Description: "receive_Tek-L-new-json - practitioner"
 * name.given[0] = "Anita"
 * name.family = "Thenstrup"
 
 Instance: jklfds.jkloreweda7a6wjs
 InstanceOf: MedComCorePractitionerRole
-Title: "receive-G-tek-new - practitionerRole"
-Description: "receive-G-tek-new - practitionerRole"
+Title: "receive_Tek-L-new-json - practitionerRole"
+Description: "receive_Tek-L-new-json - practitionerRole"
 * practitioner = Reference(jklsfdiur7ucfgh89)
 * code = $PractitionerRole#pyskolog
 
 // CareCommunication example - new message
 Instance: jfkdls7jz1hnjkzlzal.klasa-klaoi
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive-G-tek-new - Provenance"
-Description: "receive-G-tek-new - Provenance"
+Title: "receive_Tek-L-new-json - Provenance"
+Description: "receive_Tek-L-new-json - Provenance"
 Usage: #example
 * target = Reference(ejklfdsio8klakfd)
 * occurredDateTime = 2024-08-20T17:20:00+01:00

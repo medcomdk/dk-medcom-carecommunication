@@ -1,7 +1,7 @@
 Instance: 7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
 InstanceOf: MedComCareCommunicationMessage
-Title: "Receive-L-Tek-new - New CareCommunication message."
-Description: "Receive-L-Tek-new - Example of a CareCommunication new message."
+Title: "receive-Tek-P-reply-order - New CareCommunication message."
+Description: "receive-Tek-P-reply-order - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-24T12:00:00+02:00
@@ -24,16 +24,16 @@ Usage: #example
 
 Instance: 55b3ef79-9e10-4b52-9d94-6c97ff5a0999
 InstanceOf: MedComMessagingOrganization // 
-Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "receive-Tek-P-reply-order - Example of a sender organization with a SOR and an EAN identifier."
+Description: "receive-Tek-P-reply-order - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 
 Instance: 966bc46d-f02f-4be3-a44a-d47ebdf4fdad
 InstanceOf: MedComMessagingOrganization // 
-Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "receive-Tek-P-reply-order - Example of a reciever organization with a SOR and an EAN identifier."
+Description: "receive-Tek-P-reply-order - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "953741000016009" 
 * identifier[EAN-ID].value = "5790001348120" 
 * name = "Plejecenter Herlev"
@@ -55,8 +55,8 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 
 Instance: b7fed758-bfdd-4c21-bfca-bb0b4b7081a0
 InstanceOf: MedComCorePatient
-Title: "1st message - Peter Hansen"
-Description: "1st message - Patient described with minimal information. Valid only if used in a Bundle."
+Title: "receive-Tek-P-reply-order - Peter Hansen"
+Description: "receive-Tek-P-reply-order - Patient described with minimal information. Valid only if used in a Bundle."
 * identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
 * identifier.value = "0703921VJ5"
 * name.use = #official
@@ -66,8 +66,8 @@ Description: "1st message - Patient described with minimal information. Valid on
 // CareCommunication new example
 Instance: 8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Receive-L-Tek-new - Instance of a MessageHeader resource used in a new message."
-Description: "Receive-L-Tek-new - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Title: "receive-Tek-P-reply-order - Instance of a MessageHeader resource used in a new message."
+Description: "receive-Tek-P-reply-order - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -82,8 +82,8 @@ Usage: #example
 // CareCommunication new example
 Instance: 26bc9e59-e225-4330-9a0c-e6f06785846d
 InstanceOf: MedComCareCommunication
-Title: "Receive-L-Tek-new - Instance of Communication resource used in a new message."
-Description: "Receive-L-Tek-new - Content of care communication message. Valid only if used in a bundle (message) - new message"
+Title: "receive-Tek-P-reply-order - Instance of Communication resource used in a new message."
+Description: "receive-Tek-P-reply-order - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:d6d721a1-f4ec-4906-8946-ef808525bef1"
 * category = $CategoryCodes#examination-results
@@ -100,8 +100,8 @@ Description: "Receive-L-Tek-new - Content of care communication message. Valid o
 // CareCommunication example - new message
 Instance: 0696ca09-5213-4b6c-98e6-0d7c05c16080
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Receive-L-Tek-new - The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "Receive-L-Tek-new - The Provenance instance is only valid if used in a bundle (message) - new message"
+Title: "receive-Tek-P-reply-order - The Provenance instance is only valid if used in a bundle (message) - new message"
+Description: "receive-Tek-P-reply-order - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec)
 * occurredDateTime = 2024-08-24T12:00:00+02:00

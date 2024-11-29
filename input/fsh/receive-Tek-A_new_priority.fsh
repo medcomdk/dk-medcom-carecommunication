@@ -1,7 +1,7 @@
 Instance: 0c8dddf2-c882-4b00-8870-5035279e7d01
 InstanceOf: MedComCareCommunicationMessage
-Title: "Send-A-new"
-Description: "Send-A-new"
+Title: "Receive_Tek-A_new_priority"
+Description: "Receive_Tek-A_new_priority"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-17T14:00:00+01:00
@@ -26,8 +26,8 @@ Usage: #example
 
 Instance: 4e60a233-2980-4d0f-9d7b-e38853be77ab
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Send-A-new - MessageHeader"
-Description: "Send-A-new - MessageHeader"
+Title: "Receive_Tek-A_new_priority - MessageHeader"
+Description: "Receive_Tek-A_new_priority - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -41,8 +41,8 @@ Usage: #example
 
 Instance: ae4abfb5-b0f6-443c-a420-0c0649cbe0c0
 InstanceOf: MedComCorePatient
-Title: "Send-A-new - Patient"
-Description: "Send-A-new - Patient"
+Title: "Receive_Tek-A_new_priority - Patient"
+Description: "Receive_Tek-A_new_priority - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -51,8 +51,8 @@ Description: "Send-A-new - Patient"
 // Sender instance - new message for attachement
 Instance: 9a74ae38-1f8f-43de-ac8d-01647bb4c5b4
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-A-new - Sender"
-Description: "Send-A-new - Sender"
+Title: "Receive_Tek-A_new_priority - Sender"
+Description: "Receive_Tek-A_new_priority - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
@@ -60,8 +60,8 @@ Description: "Send-A-new - Sender"
 // Reciever instance - new message for attachement
 Instance: 99c5abc9-6956-4fb2-b888-90138ff951e0
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-A-new - Receiver"
-Description: "Send-A-new - Receiver"
+Title: "Receive_Tek-A_new_priority - Receiver"
+Description: "Receive_Tek-A_new_priority - Receiver"
 * identifier[SOR-ID].value = "1339531000016004" 
 * identifier[EAN-ID].value = "5790002626814" 
 * name = "Lægeklinik Ølgod"
@@ -70,36 +70,36 @@ Description: "Send-A-new - Receiver"
 // Practitioners - new message with attachment
 Instance: 7d252548-bf05-4151-bf1f-86ad706f1c1b
 InstanceOf: MedComCorePractitioner
-Title: "Send-A-new - practitioner"
-Description: "Send-A-new - practitioner"
+Title: "Receive_Tek-A_new_priority - practitioner"
+Description: "Receive_Tek-A_new_priority - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: bbe737f3-f1a9-435d-ab7f-d96798952a75
 InstanceOf: MedComCorePractitionerRole
-Title: "Send-A-new - practitionerRole"
-Description: "Send-A-new - practitionerRole"
+Title: "Receive_Tek-A_new_priority - practitionerRole"
+Description: "Receive_Tek-A_new_priority - practitionerRole"
 * practitioner = Reference(7d252548-bf05-4151-bf1f-86ad706f1c1b)
 * code = $PractitionerRole#sygeplejerske
 
 // CareCommunication example - new message
 Instance: efb3d609-f267-44dd-b488-2b2128aa2e2c
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-A-new - Provenance"
-Description: "Send-A-new - Provenance"
+Title: "Receive_Tek-A_new_priority - Provenance"
+Description: "Receive_Tek-A_new_priority - Provenance"
 Usage: #example
 * target = Reference(4e60a233-2980-4d0f-9d7b-e38853be77ab)
 * occurredDateTime = 2024-08-17T14:00:00+01:00
 * recorded = 2024-08-17T14:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)
-* entity[0].role = #source
-* entity[0].what.identifier.value = "urn:uuid:21ee7617-5e47-406e-83bd-347ba6a7a872"
+* entity[payload].role = #source
+* entity[payload].what.identifier.value = "urn:uuid:21ee7617-5e47-406e-83bd-347ba6a7a872"
 
 Instance: 2595f801-1211-4578-86f5-c7ad3a860e27
 InstanceOf: MedComCareCommunication
-Title: "Send-A-new - Communication"
-Description: "Send-A-new - Communication"
+Title: "Receive_Tek-A_new_priority - Communication"
+Description: "Receive_Tek-A_new_priority - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#regarding-referral

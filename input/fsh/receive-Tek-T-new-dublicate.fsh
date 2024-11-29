@@ -1,7 +1,7 @@
 Instance: 5de12884-eae7-4fd3-ba4a-d8b56be4baff
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-O-tek-new-dublicate"
-Description: "receive-O-tek-new-dublicate"
+Title: "receive-Tek-T-new-dublicate"
+Description: "receive-Tek-T-new-dublicate"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-26T15:20:00+01:00

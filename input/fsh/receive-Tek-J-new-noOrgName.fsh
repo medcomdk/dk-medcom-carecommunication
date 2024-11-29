@@ -1,7 +1,7 @@
 Instance: 68f5c0f8-e33e-4302-89b0-cdea52801ec9
 InstanceOf: MedComCareCommunicationMessage
-Title: "Receive-E-new"
-Description: "Receive-E-new"
+Title: "Receive_Tek-J-new-noOrgName"
+Description: "Receive_Tek-J-new-noOrgName"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-18T12:00:00+01:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: 221b6439-c282-4bf9-9ddc-8c2b8975e809
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Receive-E-new - MessageHeader"
-Description: "Receive-E-new - MessageHeader"
+Title: "Receive_Tek-J-new-noOrgName - MessageHeader"
+Description: "Receive_Tek-J-new-noOrgName - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: bde891c9-d099-4af4-9dc2-6b4e60940dfc
 InstanceOf: MedComCareCommunication
-Title: "Receive-E-new - Communication"
-Description: "Receive-E-new - Communication"
+Title: "Receive_Tek-J-new-noOrgName - Communication"
+Description: "Receive_Tek-J-new-noOrgName - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#training
@@ -57,8 +57,8 @@ Usage: #example
 
 Instance: 506544db-a78e-4f74-bdcb-95e9951c9fd1
 InstanceOf: MedComCorePatient
-Title: "Receive-E-new - Patient"
-Description: "Receive-E-new - Patient"
+Title: "Receive_Tek-J-new-noOrgName - Patient"
+Description: "Receive_Tek-J-new-noOrgName - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -67,16 +67,16 @@ Description: "Receive-E-new - Patient"
 // Sender instance - new message for attachement
 Instance: 558786fe-d4c0-474d-ac12-5b290619bdbf
 InstanceOf: MedComMessagingOrganization // 
-Title: "Receive-E-new - Sender"
-Description: "Receive-E-new - Sender"
+Title: "Receive_Tek-J-new-noOrgName - Sender"
+Description: "Receive_Tek-J-new-noOrgName - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 
 // Reciever instance - new message for attachement
 Instance: 5efd9dfc-9fc6-4289-942a-e56c24cb4e05
 InstanceOf: MedComMessagingOrganization // 
-Title: "Receive-E-new - Receiver"
-Description: "Receive-E-new - Receiver"
+Title: "Receive_Tek-J-new-noOrgName - Receiver"
+Description: "Receive_Tek-J-new-noOrgName - Receiver"
 * identifier[SOR-ID].value = "1339531000016004" 
 * identifier[EAN-ID].value = "5790002626814" 
 
@@ -84,23 +84,23 @@ Description: "Receive-E-new - Receiver"
 // Practitioners - new message with attachment
 Instance: 48dc7a52-19f5-42c6-ba7c-48ebed7c6cc9
 InstanceOf: MedComCorePractitioner
-Title: "Receive-E-new - practitioner"
-Description: "Receive-E-new - practitioner"
+Title: "Receive_Tek-J-new-noOrgName - practitioner"
+Description: "Receive_Tek-J-new-noOrgName - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: 147b1985-76d3-428f-bb91-e397017c5607
 InstanceOf: MedComCorePractitionerRole
-Title: "Receive-E-new - practitionerRole"
-Description: "Receive-E-new - practitionerRole"
+Title: "Receive_Tek-J-new-noOrgName - practitionerRole"
+Description: "Receive_Tek-J-new-noOrgName - practitionerRole"
 * practitioner = Reference(48dc7a52-19f5-42c6-ba7c-48ebed7c6cc9)
 * code = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU
 
 // CareCommunication example - new message
 Instance: 0fc624e5-3455-4272-bf97-e018817156b5
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Receive-E-new - Provenance"
-Description: "Receive-E-new - Provenance"
+Title: "Receive_Tek-J-new-noOrgName - Provenance"
+Description: "Receive_Tek-J-new-noOrgName - Provenance"
 Usage: #example
 * target = Reference(221b6439-c282-4bf9-9ddc-8c2b8975e809)
 * occurredDateTime = 2024-08-18T12:00:00+01:00
