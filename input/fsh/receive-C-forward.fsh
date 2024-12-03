@@ -66,29 +66,29 @@ Description: "receive_C-forward"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-16T11:30:00+02:00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/MessageHeader/d2b81c34-ec5d-4c5f-9380-1b5aa507544b"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/d2b81c34-ec5d-4c5f-9380-1b5aa507544b"
 * entry[=].resource = d2b81c34-ec5d-4c5f-9380-1b5aa507544b
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Patient/1c4dbd72-4af3-41f9-a9b5-dacd8d62f994"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/1c4dbd72-4af3-41f9-a9b5-dacd8d62f994"
 * entry[=].resource = 1c4dbd72-4af3-41f9-a9b5-dacd8d62f994
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Communication/e37c9933-1fc6-48e0-9819-66bc026cf3d4"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/e37c9933-1fc6-48e0-9819-66bc026cf3d4"
 * entry[=].resource = e37c9933-1fc6-48e0-9819-66bc026cf3d4
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
-* entry[=].resource = 8bf63050-5504-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
-* entry[=].resource = 7ffff970-5504-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/PractitionerRole/da0ffcef-7cdd-43be-a462-47caa7abc8a8"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/6666a833-8621-475a-9fc5-a34b1a043a03"
+* entry[=].resource = 6666a833-8621-475a-9fc5-a34b1a043a03
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/06d61404-9502-4579-9475-4e3ddd071bc5"
+* entry[=].resource = 06d61404-9502-4579-9475-4e3ddd071bc5
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/da0ffcef-7cdd-43be-a462-47caa7abc8a8"
 * entry[=].resource = da0ffcef-7cdd-43be-a462-47caa7abc8a8
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Practitioner/d0d09ee7-ac4c-4beb-839c-85763d50c7a4"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/d0d09ee7-ac4c-4beb-839c-85763d50c7a4"
 * entry[=].resource = d0d09ee7-ac4c-4beb-839c-85763d50c7a4
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/a81d6555-94d9-4704-a6b7-8dea0bcd3dac"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/a81d6555-94d9-4704-a6b7-8dea0bcd3dac"
 * entry[=].resource = a81d6555-94d9-4704-a6b7-8dea0bcd3dac
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/ca5a7c53-fc3a-4565-b419-a443c3bc6870"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/ca5a7c53-fc3a-4565-b419-a443c3bc6870"
 * entry[=].resource = ca5a7c53-fc3a-4565-b419-a443c3bc6870
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/8b67e42d-fc9b-45c4-8313-86b9c7416445"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/8b67e42d-fc9b-45c4-8313-86b9c7416445"
 * entry[=].resource = 8b67e42d-fc9b-45c4-8313-86b9c7416445
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Provenance/fdb3c81c-e1b3-4cee-866a-334360c162a0"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/fdb3c81c-e1b3-4cee-866a-334360c162a0"
 * entry[=].resource = fdb3c81c-e1b3-4cee-866a-334360c162a0
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Provenance/45f68408-94e2-48f9-b740-5c487a3e7e56"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/45f68408-94e2-48f9-b740-5c487a3e7e56"
 * entry[=].resource = 45f68408-94e2-48f9-b740-5c487a3e7e56
 
 
@@ -167,7 +167,7 @@ Description: "receive_C-forward"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
 * payload[0].extension[date].valueDateTime = 2024-08-15T15:20:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:d189f0c2-8397-4cae-b62c-0d0958b4899a"
-* payload[0].extension[identifier].valueIdentifier.assigner = Reference(ca5a7c53-fc3a-4565-b419-a443c3bc6870)
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(8b67e42d-fc9b-45c4-8313-86b9c7416445)
 * payload[0].extension[author].valueReference = Reference(da0ffcef-7cdd-43be-a462-47caa7abc8a8)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"

@@ -83,14 +83,6 @@ Instance: 89a4dee7-145b-4d09-abaf-24529cb12f15
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-I_new_moreInfo - Sender"
 Description: "receive_Tek-I_new_moreInfo - Sender"
-* identifier[0].use = #usual
-* identifier[=].type.text = "MASTER_EAF"
-* identifier[=].value = "11469610"
-* identifier[=].system = "urn:oid:1.2.840.114350.1.13.416.3.7.5.737384.158"
-* identifier[+].use = #usual
-* identifier[=].type.text = "DENMARK"
-* identifier[=].value = "219"
-* identifier[=].system = "urn:oid:1.2.840.114350.1.13.416.3.7.5.737384.168"
 * identifier[SOR-ID].use = #official
 * identifier[=].type.text = "SOR"
 * identifier[=].value = "1053231000016001"
@@ -99,6 +91,14 @@ Description: "receive_Tek-I_new_moreInfo - Sender"
 * identifier[=].type.text = "EAN"
 * identifier[=].value = "5790002508240"
 * identifier[=].system = "https://www.gs1.org/gln"
+* identifier[+].use = #usual
+* identifier[=].type.text = "MASTER_EAF"
+* identifier[=].value = "11469610"
+* identifier[=].system = "urn:oid:1.2.840.114350.1.13.416.3.7.5.737384.158"
+* identifier[+].use = #usual
+* identifier[=].type.text = "DENMARK"
+* identifier[=].value = "219"
+* identifier[=].system = "urn:oid:1.2.840.114350.1.13.416.3.7.5.737384.168"
 * name = "Sygehusadviser, Hillerød"
 * telecom[0].system = #phone
 * telecom[=].value = "72 32 00 00"

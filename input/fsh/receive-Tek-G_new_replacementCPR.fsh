@@ -43,7 +43,7 @@ Title: "receive_Tek-G_new_replacementCPR - Communication"
 Description: "receive_Tek-G_new_replacementCPR - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#carecommunication
+* category = $CategoryCodes#medicine
 * subject = Reference(442804e5-2f1e-4a73-b1b9-a3a0eaff1849)
 * identifier.value = "urn:uuid:bf3d9ae2-8c06-4769-8ea2-6f5295f6440b"
 * payload[0].contentString = "Til rette vedkommende. Vi har desværre ikke anden information end et fornavn. Pt. oplyser, at have være i tilknytning til jer. Kan I bekræfte det? På forhånd tak. Hilsen Michael, visitator."
@@ -61,7 +61,7 @@ Title: "receive_Tek-G_new_replacementCPR - Patient"
 Description: "receive_Tek-G_new_replacementCPR - Patient"
 * identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
 * identifier.value = "1206550VK9"
-* name.use = #temp
+* name.use = #official
 * name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
 * name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
 * name.given = "Peter"

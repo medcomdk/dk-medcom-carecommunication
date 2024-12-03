@@ -119,29 +119,29 @@ Description: "Send-F-new"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-10-16T11:30:00+02:00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/MessageHeader/01e6ede5-7fc5-4bd3-ae04-b8247bc4219a"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/01e6ede5-7fc5-4bd3-ae04-b8247bc4219a"
 * entry[=].resource = 01e6ede5-7fc5-4bd3-ae04-b8247bc4219a
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Patient/d4ac37e3-864b-4286-84c6-5ecdf4b550c1"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/d4ac37e3-864b-4286-84c6-5ecdf4b550c1"
 * entry[=].resource = d4ac37e3-864b-4286-84c6-5ecdf4b550c1
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Communication/c6612943-7520-4050-b692-dbb2ca320fdb"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/c6612943-7520-4050-b692-dbb2ca320fdb"
 * entry[=].resource = c6612943-7520-4050-b692-dbb2ca320fdb
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
 * entry[=].resource = 8bf63050-5504-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
 * entry[=].resource = 7ffff970-5504-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
 * entry[=].resource = eda90bde-54f9-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
 * entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/487ac745-fd11-4879-9b59-c08c7d47260e"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/487ac745-fd11-4879-9b59-c08c7d47260e"
 * entry[=].resource = 487ac745-fd11-4879-9b59-c08c7d47260e
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/b581c63c-181f-46f6-990d-b9942c576724"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/b581c63c-181f-46f6-990d-b9942c576724"
 * entry[=].resource = b581c63c-181f-46f6-990d-b9942c576724
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Organization/92d3a7e9-00df-49c0-b9bd-a512e2837b64"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/92d3a7e9-00df-49c0-b9bd-a512e2837b64"
 * entry[=].resource = 92d3a7e9-00df-49c0-b9bd-a512e2837b64
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Provenance/647746ac-5339-4beb-8411-3f3eaefd0e86"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/647746ac-5339-4beb-8411-3f3eaefd0e86"
 * entry[=].resource = 647746ac-5339-4beb-8411-3f3eaefd0e86
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"
 * entry[=].resource = 93b0a981-986a-43ac-aecb-961d8a618d83
 
 Instance: 92d3a7e9-00df-49c0-b9bd-a512e2837b64

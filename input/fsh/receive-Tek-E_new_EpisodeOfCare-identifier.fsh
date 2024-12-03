@@ -33,7 +33,7 @@ Description: "Example of a simple MedCom Core Encounter"
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
 * episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
-* episodeOfCare.identifier.value = "CAE20167-A49D-53D5-A4CD-78B5C325E969" 
+* episodeOfCare.identifier.value = "88c3a921-f984-5751-8c03-69f7cdf47571" 
 * episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
 
 Instance: 90c99cb5-c3fa-47c5-b625-b823e0203a09
