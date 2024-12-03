@@ -157,13 +157,6 @@ Description: "receive_C-forward"
 * category = $CategoryCodes#examination-results
 * subject = Reference(1c4dbd72-4af3-41f9-a9b5-dacd8d62f994)
 * topic.text = "Resultater fra hjemmesygeplejen"
-* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. Emma"
-* payload[1].extension[date].valueDateTime = 2024-08-16T11:30:00+01:00
-* payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:4fa05d8d-66e7-46dd-8029-428d44d33f53"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(ca5a7c53-fc3a-4565-b419-a443c3bc6870)
-* payload[1].extension[author].valueReference = Reference(6666a833-8621-475a-9fc5-a34b1a043a03)
-* payload[1].extension[authorContact].valueContactPoint.system = #phone 
-* payload[1].extension[authorContact].valueContactPoint.value = "004523232323"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
 * payload[0].extension[date].valueDateTime = 2024-08-15T15:20:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:d189f0c2-8397-4cae-b62c-0d0958b4899a"
@@ -171,3 +164,10 @@ Description: "receive_C-forward"
 * payload[0].extension[author].valueReference = Reference(da0ffcef-7cdd-43be-a462-47caa7abc8a8)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
+* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. Emma"
+* payload[1].extension[date].valueDateTime = 2024-08-16T11:30:00+01:00
+* payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:4fa05d8d-66e7-46dd-8029-428d44d33f53"
+* payload[1].extension[identifier].valueIdentifier.assigner = Reference(ca5a7c53-fc3a-4565-b419-a443c3bc6870)
+* payload[1].extension[author].valueReference = Reference(6666a833-8621-475a-9fc5-a34b1a043a03)
+* payload[1].extension[authorContact].valueContactPoint.system = #phone 
+* payload[1].extension[authorContact].valueContactPoint.value = "004523232323"

@@ -83,11 +83,11 @@ Instance: 89a4dee7-145b-4d09-abaf-24529cb12f15
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-I_new_moreInfo - Sender"
 Description: "receive_Tek-I_new_moreInfo - Sender"
-* identifier[SOR-ID].use = #official
+* identifier[0].use = #official
 * identifier[=].type.text = "SOR"
 * identifier[=].value = "1053231000016001"
 * identifier[=].system = "urn:oid:1.2.208.176.1.1"
-* identifier[EAN-ID].use = #official
+* identifier[+].use = #official
 * identifier[=].type.text = "EAN"
 * identifier[=].value = "5790002508240"
 * identifier[=].system = "https://www.gs1.org/gln"

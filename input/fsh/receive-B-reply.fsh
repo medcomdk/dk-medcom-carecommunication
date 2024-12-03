@@ -114,7 +114,7 @@ Usage: #inline
 * entity[preceedingMessage][0].role = #revision
 * entity[preceedingMessage][0].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
 * entity[payload][0].role = #source
-* entity[payload][0].what.identifier.value = "urn:uuid:80ea45d6-d60e-4cd5-a51a-18906d0baefe"
+* entity[payload][0].what.identifier.value = "urn:uuid:231b0921-59b4-474c-8ca8-aee33611d140"
 * entity[payload][1].role = #source
 * entity[payload][1].what.identifier.value = "urn:uuid:ace97a0b-269f-4c67-a9e6-a5b7f20e160e"
 
