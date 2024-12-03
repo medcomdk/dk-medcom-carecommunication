@@ -46,6 +46,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(64610edb-bb86-4248-87ae-28c1385c3c23)
 * identifier.value = "urn:uuid:c4a7575c-c3d7-4f34-a120-6f1ea28f9c12"
+* payload.contentString = "To be removed"
 * payload.extension[date].valueDateTime = 2024-11-10T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:6abbaeaf-0c35-4212-9fc2-48d7b520ac69"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(409b87d3-398e-44cb-9246-35b47ff75cc4)
