@@ -17,7 +17,7 @@ dependencies:
     uri: https://hl7.dk/fhir/core/3.2.0/
     version: 3.2.0
   medcom.fhir.dk.core: 2.4.0
-  medcom.fhir.dk.messaging: 2.2.0
+  medcom.fhir.dk.messaging: 2.2.1
   medcom.fhir.dk.terminology: 1.7.0
   
 menu:
