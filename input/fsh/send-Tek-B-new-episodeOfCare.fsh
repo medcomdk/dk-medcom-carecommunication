@@ -65,8 +65,10 @@ Description: "Send-Tek-B-new - Encounter"
 * status = $StatusCodes#finished 
 * class = $ActCodes#IMP 
 * subject = Reference(b670ed56-9a4f-4903-ad51-65773a327d93)
-* episodeOfCare.identifier.value = "39e3e169-9ece-4ba4-bd24-2e0fbeebc333" 
+* episodeOfCare.identifier.value = "urn:uuid:39e3e169-9ece-4ba4-bd24-2e0fbeebc333" 
 * episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=328081000016004" // SOR id for afsender/serviceProvider
+* episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
+* episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
 
 Instance: b670ed56-9a4f-4903-ad51-65773a327d93
 InstanceOf: MedComCorePatient

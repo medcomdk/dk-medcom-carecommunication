@@ -1,6 +1,6 @@
-Instance: 5f85e1bd-03ea-47b9-bfe1-dbde95e69c75
+Instance: 720f68cf-21bf-4c40-a90c-a113e00e88a8
 InstanceOf: MedComCareCommunicationMessage
-Title: "Send-D-new"
+Title: "Send-B-new"
 Description: "Send-B-new"
 Usage: #example
 * type = $BundleType#message
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: 2dd1d41f-4fc5-40e7-8fd6-850bbc3cc22c
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Send-D-new - MessageHeader"
-Description: "Send-D-new - MessageHeader"
+Title: "Send-B-new - MessageHeader"
+Description: "Send-B-new - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: d0c09c24-42bb-44eb-807e-6b3b22f6dbfc
 InstanceOf: MedComCareCommunication
-Title: "Send-D-new - Communication"
-Description: "Send-D-new - Communication"
+Title: "Send-B-new - Communication"
+Description: "Send-B-new - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#training
@@ -62,8 +62,8 @@ Usage: #example
 
 Instance: 2bc74be8-a622-4422-98c9-894b7c245d70
 InstanceOf: MedComCorePatient
-Title: "Send-D-new - Patient"
-Description: "Send-D-new - Patient"
+Title: "Send-B-new - Patient"
+Description: "Send-B-new - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -72,8 +72,8 @@ Description: "Send-D-new - Patient"
 // Sender instance - new message for attachement
 Instance: 630bbfae-6b43-46f8-9b51-98cdea34e46d
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-D-new - Sender"
-Description: "Send-D-new - Sender"
+Title: "Send-B-new - Sender"
+Description: "Send-B-new - Sender"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -81,8 +81,8 @@ Description: "Send-D-new - Sender"
 // Reciever instance - new message for attachement
 Instance: 585e0101-8450-4126-b049-19b19c42e2dd
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-D-new - Receiver"
-Description: "Send-D-new - Receiver"
+Title: "Send-B-new - Receiver"
+Description: "Send-B-new - Receiver"
 * identifier[SOR-ID].value = "1339531000016004" 
 * identifier[EAN-ID].value = "5790001348250" 
 * name = "Per Thorseth"
@@ -91,23 +91,23 @@ Description: "Send-D-new - Receiver"
 // Practitioners - new message with attachment
 Instance: e9b0072b-d261-47d9-861d-0165525da25d
 InstanceOf: MedComCorePractitioner
-Title: "Send-D-new - practitioner"
-Description: "Send-D-new - practitioner"
+Title: "Send-B-new - practitioner"
+Description: "Send-B-new - practitioner"
 * name.given = "Kim"
 * name.family = "Petersen"
 
 Instance: 2308beab-7e2d-4958-9031-64b487d4f598
 InstanceOf: MedComCorePractitionerRole
-Title: "Send-D-new - practitionerRole"
-Description: "Send-D-new - practitionerRole"
+Title: "Send-B-new - practitionerRole"
+Description: "Send-B-new - practitionerRole"
 * practitioner = Reference(e9b0072b-d261-47d9-861d-0165525da25d)
 * code = $PractitionerRole#overlaege
 
 // CareCommunication example - new message
 Instance: 4e64df0c-6452-4505-8189-b3ae0c0e3d8b
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-D-new - Provenance"
-Description: "Send-D-new - Provenance"
+Title: "Send-B-new - Provenance"
+Description: "Send-B-new - Provenance"
 Usage: #example
 * target = Reference(2dd1d41f-4fc5-40e7-8fd6-850bbc3cc22c)
 * occurredDateTime = 2024-09-06T17:15:00+01:00

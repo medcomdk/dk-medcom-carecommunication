@@ -1,4 +1,4 @@
-/* Instance: 9c2371ff-09a0-4626-9fb9-f70645546361
+Instance: 9c2371ff-09a0-4626-9fb9-f70645546361
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-F-new"
 Description: "Send-F-new"
@@ -20,7 +20,7 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/ec80691c-8d77-4424-9b6f-169560d602ad"
 * entry[=].resource = ec80691c-8d77-4424-9b6f-169560d602ad
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"
-* entry[=].resource = 93b0a981-986a-43ac-aecb-961d8a618d83 */
+* entry[=].resource = 93b0a981-986a-43ac-aecb-961d8a618d83
 
 Instance: 3eadd00d-011b-4e2f-8f30-6658a6ee89e0
 InstanceOf: MedComCareCommunicationMessageHeader
