@@ -126,10 +126,10 @@ Usage: #example
 * entry[=].resource = d4ac37e3-864b-4286-84c6-5ecdf4b550c1
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/c6612943-7520-4050-b692-dbb2ca320fdb"
 * entry[=].resource = c6612943-7520-4050-b692-dbb2ca320fdb
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
-* entry[=].resource = 8bf63050-5504-11ed-bdc3-0242ac120002
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
-* entry[=].resource = 7ffff970-5504-11ed-bdc3-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/cb36cff5-1b78-4d76-bc33-04bce8434bf0"
+* entry[=].resource = cb36cff5-1b78-4d76-bc33-04bce8434bf0
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/29e0b694-2d3b-4cb2-9fce-0e89860ffa8d"
+* entry[=].resource = 29e0b694-2d3b-4cb2-9fce-0e89860ffa8d
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
 * entry[=].resource = eda90bde-54f9-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"

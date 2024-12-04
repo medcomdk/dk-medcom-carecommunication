@@ -163,7 +163,7 @@ Usage: #inline
 * agent.who = Reference(b6274cf9-18c6-405f-a6ca-5abe42ebf149)
 * occurredDateTime = "2024-11-01T12:00:00+01:00"
 * recorded = "2024-11-01T12:00:00+01:00"
-* meta.profile = "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-carecommunication-provenance"
+* meta.profile = "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-careCommunication-provenance"
 * target = Reference(c5bda2fe-1371-4614-bf6c-66aa3f87c232)
 * entity[payload][0].role = #source
 * entity[payload][=].what.identifier.value = "urn:uuid:b3a937ac-82bc-4f96-9692-c72c2ae307ee"
