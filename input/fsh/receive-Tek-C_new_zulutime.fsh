@@ -103,7 +103,6 @@ Description: "Receive_Tek-C_new_zulutime - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#alcohol-and-drug-treatment	
-* priority = $PriorityCode#asap
 * topic.text = "Kritisk tilstand"
 * identifier.value = "urn:uuid:2ee940d6-b2b8-4489-a0b0-0ae5a477b618"
 * subject = Reference(44803bc6-6836-4382-8206-b45748dee5fd)

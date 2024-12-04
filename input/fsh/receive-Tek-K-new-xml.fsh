@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#home-care-assessment
 * subject = Reference(de0c79b9-635f-4991-961c-b72390210bf7)
 * identifier.value = "urn:uuid:3cbe7f6c-6815-4bd9-ac4e-a95bf326daa5"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
 * payload[0].extension[date].valueDateTime = 2024-08-19T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8d9415a0-1b0d-4410-8a97-6097b31e12ff"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)

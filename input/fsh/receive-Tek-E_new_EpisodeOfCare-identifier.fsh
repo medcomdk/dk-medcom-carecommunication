@@ -60,7 +60,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
 * identifier.value = "urn:uuid:eca85df4-e6c9-41d7-88c0-7e6fb79029b9"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
 * payload[0].extension[date].valueDateTime = 2024-11-03T09:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:80ab9ebc-98df-4d4c-ad7c-57c654e9bf21"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(01965998-608c-43a9-bc4d-4b671a9168c7)

@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#medicine
 * subject = Reference(442804e5-2f1e-4a73-b1b9-a3a0eaff1849)
 * identifier.value = "urn:uuid:bf3d9ae2-8c06-4769-8ea2-6f5295f6440b"
-* payload[0].contentString = "Til rette vedkommende. Vi har desværre ikke anden information end et fornavn. Pt. oplyser, at have være i tilknytning til jer. Kan I bekræfte det? På forhånd tak. Hilsen Michael, visitator."
+* payload[0].contentString = "Til rette vedkommende. Vi har desværre ikke anden information end et fornavn. Pt. oplyser, at have være i tilknytning til jer. Kan I bekræfte det? På forhånd tak. Hilsen Michael"
 * payload[0].extension[date].valueDateTime = 2024-11-05T20:30:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:12ff8a10-36b0-43d7-8f6d-61449fe3a1ec"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(9cf4942a-b0ed-45ba-b13d-6a655f2c0acf)

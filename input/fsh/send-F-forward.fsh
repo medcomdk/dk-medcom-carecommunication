@@ -140,6 +140,8 @@ Usage: #example
 * entry[=].resource = b581c63c-181f-46f6-990d-b9942c576724
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/92d3a7e9-00df-49c0-b9bd-a512e2837b64"
 * entry[=].resource = 92d3a7e9-00df-49c0-b9bd-a512e2837b64
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/528f8b50-107d-44ad-a5e9-89b7891aedb1"
+* entry[=].resource = 528f8b50-107d-44ad-a5e9-89b7891aedb1
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/647746ac-5339-4beb-8411-3f3eaefd0e86"
 * entry[=].resource = 647746ac-5339-4beb-8411-3f3eaefd0e86
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"

@@ -8,25 +8,25 @@ Instance: ee22cec7-aad7-4bfe-ab1b-5ada3f59e676
 InstanceOf: MedComCareCommunicationMessage
 Usage: #example
 * entry[0].resource = c5bda2fe-1371-4614-bf6c-66aa3f87c232
-* entry[=].fullUrl = "MessageHeader/c5bda2fe-1371-4614-bf6c-66aa3f87c232"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/c5bda2fe-1371-4614-bf6c-66aa3f87c232"
 * entry[+].resource = 86f10ce3-3fe1-4f44-ab6e-3525315d21ee
-* entry[=].fullUrl = "Patient/86f10ce3-3fe1-4f44-ab6e-3525315d21ee"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/86f10ce3-3fe1-4f44-ab6e-3525315d21ee"
 * entry[+].resource = 3ffb10b5-2092-44f1-8f49-9aa18309470c
-* entry[=].fullUrl = "Communication/3ffb10b5-2092-44f1-8f49-9aa18309470c"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/3ffb10b5-2092-44f1-8f49-9aa18309470c"
 * entry[+].resource = 08eb433e-4de3-4efc-925e-15d74df53b16
-* entry[=].fullUrl = "PractitionerRole/08eb433e-4de3-4efc-925e-15d74df53b16"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/08eb433e-4de3-4efc-925e-15d74df53b16"
 * entry[+].resource = feb5dd82-6e61-430d-88f1-2d9febb2ec17
-* entry[=].fullUrl = "Practitioner/feb5dd82-6e61-430d-88f1-2d9febb2ec17"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/feb5dd82-6e61-430d-88f1-2d9febb2ec17"
 * entry[+].resource = c16b3ca4-9ef2-4f89-9dd1-2c157f314b9e
-* entry[=].fullUrl = "PractitionerRole/c16b3ca4-9ef2-4f89-9dd1-2c157f314b9e"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/c16b3ca4-9ef2-4f89-9dd1-2c157f314b9e"
 * entry[+].resource = f9e1207b-403a-4aec-beb0-870e9fc9b27d
-* entry[=].fullUrl = "Practitioner/f9e1207b-403a-4aec-beb0-870e9fc9b27d"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/f9e1207b-403a-4aec-beb0-870e9fc9b27d"
 * entry[+].resource = a13ffb07-aa0a-45c4-98c6-b101773fd8a4
-* entry[=].fullUrl = "Organization/a13ffb07-aa0a-45c4-98c6-b101773fd8a4"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/a13ffb07-aa0a-45c4-98c6-b101773fd8a4"
 * entry[+].resource = b6274cf9-18c6-405f-a6ca-5abe42ebf149
-* entry[=].fullUrl = "Organization/b6274cf9-18c6-405f-a6ca-5abe42ebf149"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/b6274cf9-18c6-405f-a6ca-5abe42ebf149"
 * entry[+].resource = d70f7635-0494-4470-bde3-91498ef2c760
-* entry[=].fullUrl = "Provenance/d70f7635-0494-4470-bde3-91498ef2c760"
+* entry[=].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/d70f7635-0494-4470-bde3-91498ef2c760"
 * type = #message
 * meta.profile = "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message"
 * timestamp = "2024-11-01T12:00:00+01:00"

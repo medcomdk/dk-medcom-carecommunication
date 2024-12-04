@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(badec6f1-1cd7-474d-a445-f3fcf7ccd926)
 * identifier.value = "urn:uuid:a1090f8b-499e-46dc-ac78-43468e07ebd8"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
 * payload.extension[date].valueDateTime = 2024-09-09T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:139e3105-6114-415a-ab86-d78b3599fa0e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(01f408d4-b6f1-448a-833e-9a9fd83befef)
