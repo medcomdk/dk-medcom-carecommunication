@@ -43,7 +43,7 @@ Title: "receive_Tek-F_new_deceased - Communication"
 Description: "receive_Tek-F_new_deceased - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#decease
 * subject = Reference(14b37923-b02e-42ec-917c-9f3601d741d2)
 * identifier.value = "urn:uuid:086536f8-2621-4b5f-a85c-41e6ed8fc0db"
 * payload[0].contentString = "Til rette vedkommende. Vi må desværre meddelele, at Bruno er afgået ved døden tidligere i dag. Hilsen Michael, visitator."
@@ -98,7 +98,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-F_new_deceased - practitionerRole"
 Description: "receive_Tek-F_new_deceased - practitionerRole"
 * practitioner = Reference(93e45bf0-3e84-4a44-a93a-f668b81271b9)
-* code.text = "Visitator"
+* code = $PractitionerRole#socialogsundhedsmehjaelper	
 
 // CareCommunication example - new message
 Instance: 331a0b0a-1a7d-4480-88d2-805c478a7fb6

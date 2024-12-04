@@ -43,7 +43,7 @@ Title: "receive_Tek-K-new-xml - Communication"
 Description: "receive_Tek-K-new-xml - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#home-care-assessment
 * subject = Reference(de0c79b9-635f-4991-961c-b72390210bf7)
 * identifier.value = "urn:uuid:3cbe7f6c-6815-4bd9-ac4e-a95bf326daa5"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-K-new-xml - practitionerRole"
 Description: "receive_Tek-K-new-xml - practitionerRole"
 * practitioner = Reference(a4b405c0-ea2a-4daf-bbd3-8f8ce99ce1eb)
-* code.text = "Visitator"
+* code.coding.text = "Visitator"
 
 // CareCommunication example - new message
 Instance: c0499c96-d85b-4807-85d2-0f0f1a9d2df0

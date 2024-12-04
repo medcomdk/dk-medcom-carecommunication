@@ -86,7 +86,7 @@ Title: "receive-Tek-M-new-parallel - Instance of Communication resource used in 
 Description: "receive-Tek-M-new-parallel - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:1b1cf143-519a-44f9-b471-05f34fce0670"
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#nursing
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(d4344858-bd8f-42fb-9f84-50b2b66a5ed1)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."

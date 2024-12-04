@@ -31,9 +31,9 @@ Description: "Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
-* episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
+* episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
-* episodeOfCare.identifier.value = "88c3a921-f984-5751-8c03-69f7cdf47571" 
+* episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
 
 Instance: 90c99cb5-c3fa-47c5-b625-b823e0203a09
@@ -118,7 +118,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-E_new_episodeOfCare-identifier - practitionerRole"
 Description: "receive_Tek-E_new_episodeOfCare-identifier - practitionerRole"
 * practitioner = Reference(261e3ea6-1556-4312-bd06-d05deb8a7e58)
-* code.text = "Visitator"
+* code = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesAutorisationsregistret#osteopat
 
 // CareCommunication example - new message
 Instance: 3c7dd36e-9b50-4fc4-8b8c-2efa4d436f60

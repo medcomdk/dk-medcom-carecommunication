@@ -43,7 +43,7 @@ Title: "receive-Tek-R-new-dublicate - Communication"
 Description: "receive-Tek-R-new-dublicate - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#outpatient
 * subject = Reference(5986ec2e-05a4-4e30-8d2f-f09fb09eb832)
 * identifier.value = "urn:uuid:4098a5ef-3e35-455c-b6cb-01533423593b"
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Henrik, læge."

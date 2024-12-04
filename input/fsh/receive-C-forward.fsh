@@ -43,7 +43,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_C-forward - practitionerRole"
 Description: "receive_C-forward - practitionerRole"
 * practitioner = Reference(06d61404-9502-4579-9475-4e3ddd071bc5)
-* code = $PractitionerRole#laege
+* code = $PractitionerRole#optiker
 
 // CareCommunication example - new message
 Instance: 45f68408-94e2-48f9-b740-5c487a3e7e56

@@ -22,7 +22,7 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/93b0a981-986a-43ac-aecb-961d8a618d83"
 * entry[=].resource = 93b0a981-986a-43ac-aecb-961d8a618d83 */
 
-/* Instance: 3eadd00d-011b-4e2f-8f30-6658a6ee89e0
+Instance: 3eadd00d-011b-4e2f-8f30-6658a6ee89e0
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Send-F-new - MessageHeader"
 Description: "Send-F-new - MessageHeader"

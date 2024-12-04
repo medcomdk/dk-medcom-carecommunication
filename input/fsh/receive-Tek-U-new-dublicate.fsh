@@ -43,7 +43,7 @@ Title: "receive_Tek-U-new-dublicate - Communication"
 Description: "receive_Tek-U-new-dublicate - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#telemedicine
 * subject = Reference(283b6471-3134-4b7e-9d48-b6fad32e6384)
 * identifier.value = "urn:uuid:69ab69e8-af33-4e93-9171-7906ad43c1ab"
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-U-new-dublicate - practitionerRole"
 Description: "receive_Tek-U-new-dublicate - practitionerRole"
 * practitioner = Reference(dd46a69e-b2e5-4e0d-9cc4-95259c9722e2)
-* code.text = "Visitator"
+* code = $PractitionerRole#diaetistassistent
 
 // CareCommunication example - new message
 Instance: 1cff1fd0-44a1-4246-a96c-41db3bb25bbe

@@ -43,7 +43,7 @@ Title: "receive_Tek-I_new_moreInfo - Communication"
 Description: "receive_Tek-I_new_moreInfo - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#training
 * subject = Reference(83949bef-2b75-429c-ada7-ca3998fb046a)
 * identifier.value = "urn:uuid:ea0e95d0-f72c-4e7f-9250-a2037be75545"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
@@ -136,7 +136,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-I_new_moreInfo - practitionerRole"
 Description: "receive_Tek-I_new_moreInfo - practitionerRole"
 * practitioner = Reference(940b514b-938d-4186-85f6-96477ec5b5dd)
-* code.text = "Visitator"
+* code = $PractitionerRole#ledendelaegesekretaer
 
 // CareCommunication example - new message
 Instance: f30ecf6a-7128-4020-b0d8-e1afa4d30655

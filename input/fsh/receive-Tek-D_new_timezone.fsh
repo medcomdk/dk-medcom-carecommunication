@@ -43,7 +43,7 @@ Title: "receive_Tek-D_new_timezone - Communication"
 Description: "receive_Tek-D_new_timezone - Communication"
 Usage: #example
 * status = $EventStatus#unknown
-* category = $CategoryCodes#examination-results
+* category = $CategoryCodes#assistive-devices
 * subject = Reference(000e3045-8f08-4f17-9ee8-bcf98d564135)
 * identifier.value = "urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-D_new_timezone - practitionerRole"
 Description: "receive_Tek-D_new_timezone - practitionerRole"
 * practitioner = Reference(43b59123-9588-4091-ac7c-ef45c90083b5)
-* code.text = "Visitator"
+* code = $PractitionerRole#sygeplejerske
 
 // CareCommunication example - new message
 Instance: b1bfb2f7-200b-41e6-b4a0-35bafd1d4770

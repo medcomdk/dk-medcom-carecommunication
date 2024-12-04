@@ -101,7 +101,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-G_new_replacementCPR - practitionerRole"
 Description: "receive_Tek-G_new_replacementCPR - practitionerRole"
 * practitioner = Reference(5d923318-8e37-4fe5-97d3-de93682aed6d)
-* code.text = "Visitator"
+* code = $PractitionerRole#beskaeftigelsesvejleder
 
 // CareCommunication example - new message
 Instance: 8263b00b-99d4-4899-add4-dc5f27515e7c
