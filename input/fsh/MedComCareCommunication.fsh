@@ -88,7 +88,7 @@ Expression: "iif(category.coding.code != 'other', true, category.coding.code = '
 Invariant: medcom-careCommunication-7
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a message segment."
 Severity: #error
-Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().code.coding.exists()"
+Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().code.exists()"
 
 
 Invariant: medcom-careCommunication-8

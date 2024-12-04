@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-K-new-xml - practitionerRole"
 Description: "receive_Tek-K-new-xml - practitionerRole"
 * practitioner = Reference(a4b405c0-ea2a-4daf-bbd3-8f8ce99ce1eb)
-* code.coding.text = "Visitator"
+* code.text = "Visitator"
 
 // CareCommunication example - new message
 Instance: c0499c96-d85b-4807-85d2-0f0f1a9d2df0

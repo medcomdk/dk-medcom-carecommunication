@@ -43,6 +43,7 @@ Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
 * subject = Reference(d4ac37e3-864b-4286-84c6-5ecdf4b550c1)
+* identifier.value = "urn:uuid:b2090f8b-499e-46dc-ac78-43468e07ebc7"
 * topic.text = "Resultater fra hjemmesygeplejen"
 * payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael, sygeplejerske."
 * payload.extension[date].valueDateTime = 2024-09-10T15:20:00+01:00
@@ -50,7 +51,7 @@ Usage: #example
 * payload.extension[identifier].valueIdentifier.assigner = Reference(528f8b50-107d-44ad-a5e9-89b7891aedb1)
 * payload.extension[author].valueReference = Reference(cb36cff5-1b78-4d76-bc33-04bce8434bf0)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "004523232323" */
+* payload.extension[authorContact].valueContactPoint.value = "004523232323"
 
 
 Instance: d4ac37e3-864b-4286-84c6-5ecdf4b550c1

@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "Send-E-new - practitionerRole"
 Description: "Send-E-new - practitionerRole"
 * practitioner = Reference(b004946b-6960-46da-8e88-68de64f0dbe8)
-* code.coding.text = "Visitator"
+* code.text = "Visitator"
 
 // CareCommunication example - new message
 Instance: 9b06f698-dbca-45ba-be53-9c8b09715c43
