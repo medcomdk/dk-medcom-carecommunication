@@ -87,7 +87,7 @@
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
     <td class="tg-0pky">CareTeam</td>
     <td class="tg-0pky">Describes one or more professionals who plan to participate in the coordination and delivery of care for a patient or citizen. It may be used as the sender or recipient from the MedComCareCommunication profile</td>
     <td class="tg-0pky">Name<br>ManagingOrganization</td>
@@ -101,14 +101,14 @@
     <td class="tg-0pky">Messaging</td>
   </tr>
   <tr>
-    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComMessagingProvenance</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationProvenance</span></a></td>
     <td class="tg-0pky">Provenance</td>
     <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or a modified message.<br>In case of a previously sent message, the Provenance resource holds a reference to this message.<br>Therefore, it is possible to get an overview of the communication about a patient.</td>
-    <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message)</td>
+    <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message) and the payload(s) of the current message</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
    <tr>
-    <td class="tg-0pky"><a href="https://build.fhir.org/ig/medcomdk/dk-medcom-core/StructureDefinition-medcom-core-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreOrganization</span></a></td>
+    <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreOrganization</span></a></td>
     <td class="tg-0pky">Organization</td>
     <td class="tg-0pky">Contains information about an organization. The Organization is referenced from Practitioner or CareTeam.</td>
     <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Name</td>
@@ -134,7 +134,7 @@ When receiving a message, either CareCommunication or EDIFACT/OIOXML message, th
 ## 2 Internal references in a CareCommunication 
 The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).<br>
 The references between the profiles are shown in  <a href="#Fig1"> Figure 1</a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader the sender and receiver organisations are referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
-MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganization. 
+MedComCareCommunicationProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganization. 
 
  <!-- Additionally, contain the message text and attachment if they are included -->
 <figure>
