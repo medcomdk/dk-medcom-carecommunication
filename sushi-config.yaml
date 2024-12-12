@@ -4,7 +4,7 @@ name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
 status: active
-version: "4.0.0"
+version: "4.0.2"
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: release
@@ -17,7 +17,7 @@ dependencies:
     uri: https://hl7.dk/fhir/core/3.2.0/
     version: 3.2.0
   medcom.fhir.dk.core: 2.4.0
-  medcom.fhir.dk.messaging: 2.2.0
+  medcom.fhir.dk.messaging: 2.2.1
   medcom.fhir.dk.terminology: 1.7.0
   
 menu:
