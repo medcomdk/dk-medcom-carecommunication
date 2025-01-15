@@ -86,11 +86,11 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 
 Instance: b4a8fd31-274a-4d09-8ad7-14aa82b7c7d2
 InstanceOf: MedComMessagingOrganization  
-Title: "1st message - Example of a receiver organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "325371000016006" 
-* identifier[EAN-ID].value = "5790000120314" 
-* name = "MedCom FDIS91"
+Title: "1st message - Example of a receiver organization whom is not able to receive an XBIN"
+Description: "1st message - Example of an organization whom is not able to receive an XBIN"
+* identifier[SOR-ID].value = "2551000016006" 
+* identifier[EAN-ID].value = "5790000123766" 
+* name = "Center for genoptræning Østerbro"
 
 // Practitioners - new message
 Instance: 1d12ab42-902a-4116-83e6-39cc5aff2e30
