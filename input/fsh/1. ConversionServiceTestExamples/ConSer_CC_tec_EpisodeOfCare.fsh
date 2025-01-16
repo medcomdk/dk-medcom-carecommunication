@@ -1,7 +1,7 @@
 Instance: 638f34e8-c81c-47c6-a6b8-e0e34525b413
 InstanceOf: MedComCareCommunicationMessage
-Title: "episodeOfCare-identifier"
-Description: "episodeOfCare-identifier"
+Title: "ConSer_CC_tec_EpisodeOfCare - New CareCommunication message"
+Description: "ConSer_CC_tec_EpisodeOfCare - New CareCommunication message"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-03T09:00:00+01:00
@@ -26,8 +26,8 @@ Usage: #example
 
 Instance: 675bd368-bfec-47a1-9f74-3e7db5eb8cfb
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "1st message - Example of MessageHeader"
-Description: "1st message - Example of MessageHeader"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of MessageHeader"
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -40,8 +40,8 @@ Usage: #example
 
 Instance: d3a76a91-5252-4136-ba00-e35fba0bc479
 InstanceOf: MedComCoreEncounter
-Title: "MedCom Core Encounter"
-Description: "Example of a simple MedCom Core Encounter"
+Title: "ConSer_CC_tec_EpisodeOfCare - MedCom Core Encounter"
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(adf06795-cc9e-4855-a277-780314134b45)
@@ -53,8 +53,8 @@ Description: "Example of a simple MedCom Core Encounter"
 
 Instance: ede71a03-6611-416b-835a-2937622c526b
 InstanceOf: MedComCareCommunication
-Title: "1st message - Example of Communication"
-Description: "1st message - Example of Communication"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of Communication"
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
@@ -71,8 +71,8 @@ Usage: #example
 
 Instance: adf06795-cc9e-4855-a277-780314134b45
 InstanceOf: MedComCorePatient
-Title: "1st message - Example of Patient"
-Description: "1st message - Example of Patient"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of Patient"
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -89,8 +89,8 @@ Description: "1st message - Example of Patient"
 // Sender instance
 Instance: 41714d59-64cd-4ff5-aeca-20745e811557
 InstanceOf: MedComMessagingOrganization // 
-Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of a sender organization with a SOR and an EAN identifier."
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "325371000016006" 
 * identifier[EAN-ID].value = "5790000120314" 
 * name = "MedCom FDIS91"
@@ -98,8 +98,8 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 // Reciever instance
 Instance: bc25bf57-e3ec-423c-a828-683e9fda09df
 InstanceOf: MedComMessagingOrganization  
-Title: "1st message - Example of a receiver organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of a receiver organization with a SOR and an EAN identifier."
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "325251000016005" 
 * identifier[EAN-ID].value = "5790000121526" 
 * name = "MedCom XDIS91"
@@ -108,23 +108,23 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 // Practitioners - new message with attachment
 Instance: 167e1987-c3a5-47f1-959a-385130d7f8b5
 InstanceOf: MedComCorePractitioner
-Title: "1st message - Example of practitioner"
-Description: "receive_Tek-E_new_episodeOfCare-identifier - practitioner"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of practitioner"
+Description: "ConSer_CC_tec_EpisodeOfCare - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: 0a93fdc7-b053-4ed5-9e95-2d6de043326d
 InstanceOf: MedComCorePractitionerRole
-Title: "1st message - Example of practitionerRole"
-Description: "receive_Tek-E_new_episodeOfCare-identifier - practitionerRole"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of practitionerRole"
+Description: "ConSer_CC_tec_EpisodeOfCare - practitionerRole"
 * practitioner = Reference(167e1987-c3a5-47f1-959a-385130d7f8b5)
 * code.text = "Visitator"
 
 // CareCommunication example - new message
 Instance: d6f29e31-15ee-4b77-98d3-8163a94c6485
 InstanceOf: MedComCareCommunicationProvenance
-Title: "1st message - Example of Provenance"
-Description: "1st message - Example of Provenance"
+Title: "ConSer_CC_tec_EpisodeOfCare - Example of Provenance"
+Description: "ConSer_CC_tec_EpisodeOfCare - Example of Provenance"
 Usage: #example
 * target = Reference(675bd368-bfec-47a1-9f74-3e7db5eb8cfb)
 * occurredDateTime = 2024-11-03T09:00:00+01:00

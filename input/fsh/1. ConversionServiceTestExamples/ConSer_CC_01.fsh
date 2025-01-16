@@ -1,7 +1,7 @@
 Instance: c06a7511-be85-4f1c-9af9-a322ca60b6f1
 InstanceOf: MedComCareCommunicationMessage
-Title: "1st message - New CareCommunication message."
-Description: "1st message - Example of a CareCommunication new message."
+Title: "ConSer_CC_01 - New CareCommunication message."
+Description: "ConSer_CC_01 - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2025-01-02T12:00:00+02:00
@@ -25,8 +25,8 @@ Usage: #example
 
 Instance: d2d3befc-9912-46e8-b4ac-434f022ff50c
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "1st message - Instance of a MessageHeader resource used in a new message."
-Description: "1st message - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Title: "ConSer_CC_01 - Instance of a MessageHeader resource used in a new message."
+Description: "ConSer_CC_01 - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -40,8 +40,8 @@ Usage: #example
 // CareCommunication new example
 Instance: 255a6650-1813-4783-97fd-8dc193063bf2
 InstanceOf: MedComCareCommunication
-Title: "1st message - Instance of Communication resource used in a new message."
-Description: "1st message - Content of care communication message. Valid only if used in a bundle (message) - new message"
+Title: "ConSer_CC_01 - Instance of Communication resource used in a new message."
+Description: "ConSer_CC_01 - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 * category = $CategoryCodes#regarding-referrel
@@ -57,8 +57,8 @@ Description: "1st message - Content of care communication message. Valid only if
 
 Instance: 8963193a-1016-4a8e-98f1-b59435f6d4bd
 InstanceOf: MedComCorePatient
-Title: "1st message - Kaja Test Hansen"
-Description: "1st message - Patient described with minimal information. Valid only if used in a Bundle."
+Title: "ConSer_CC_01 - Kaja Test Hansen"
+Description: "ConSer_CC_01 - Patient described with minimal information. Valid only if used in a Bundle."
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2103009996"
 * name[official].use = #official
@@ -67,16 +67,16 @@ Description: "1st message - Patient described with minimal information. Valid on
 
 Instance: 27bf44de-bd5c-4d53-9829-1acea7198f06
 InstanceOf: MedComMessagingOrganization  
-Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "ConSer_CC_01 - Example of a sender organization with a SOR and an EAN identifier."
+Description: "ConSer_CC_01 - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "325371000016006" 
 * identifier[EAN-ID].value = "5790000120314" 
 * name = "MedCom FDIS91"
 
 Instance: 794f12bb-d22c-4b90-a108-a10e4c3299d3
 InstanceOf: MedComMessagingOrganization  
-Title: "1st message - Example of a receiver organization with a SOR and an EAN identifier."
-Description: "1st message - Example of an organization with a SOR and an EAN identifier."
+Title: "ConSer_CC_01 - Example of a receiver organization with a SOR and an EAN identifier."
+Description: "ConSer_CC_01 - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "325251000016005" 
 * identifier[EAN-ID].value = "5790000121526" 
 * name = "MedCom XDIS91"
@@ -84,15 +84,15 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 // Practitioners - new message
 Instance: f1b2fc1d-c184-45f2-bd1e-4f156ab319ce
 InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
+Title: "ConSer_CC_01 - Simple practitioner with a name"
+Description: "ConSer_CC_01 - Simple practitioner with a name"
 * name.given = "Katrine"
 * name.family = "Andersen"
 
 Instance: 6dd564dd-aea8-47ab-a26c-0e30285a9642
 InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
+Title: "ConSer_CC_01 - PractitionerRole with a role and reference to a practitioner"
+Description: "ConSer_CC_01 - PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(f1b2fc1d-c184-45f2-bd1e-4f156ab319ce)
 * code = $PractitionerRole#sygeplejerske
 
@@ -100,8 +100,8 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 // CareCommunication example - new message
 Instance: 7a34ea51-3a8b-4d71-841a-aa00961d4439
 InstanceOf: MedComCareCommunicationProvenance
-Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
+Title: "ConSer_CC_01 - The Provenance instance is only valid if used in a bundle (message) - new message"
+Description: "ConSer_CC_01 - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(d2d3befc-9912-46e8-b4ac-434f022ff50c)
 * occurredDateTime = 2025-01-02T12:00:00+02:00
