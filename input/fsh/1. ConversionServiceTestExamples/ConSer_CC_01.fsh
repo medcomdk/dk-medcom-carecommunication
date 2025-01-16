@@ -30,10 +30,10 @@ Description: "1st message - Example of a MessageHeader in a new CareCommunicatio
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009" // RCH: Vi skal finde ud af om det er SOR id for modtageren, og den dermed skal rettes i alle eksemplerne.
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
 * destination[primary].receiver = Reference(794f12bb-d22c-4b90-a108-a10e4c3299d3)
 * sender = Reference(27bf44de-bd5c-4d53-9829-1acea7198f06)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000" // RCH: Vi skal finde ud af om det er SOR id for afsenderen, og den dermed skal rettes i alle eksemplerne.
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006" 
 * focus = Reference(255a6650-1813-4783-97fd-8dc193063bf2) 
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 

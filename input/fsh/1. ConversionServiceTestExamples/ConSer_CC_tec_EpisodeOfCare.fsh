@@ -24,6 +24,20 @@ Usage: #example
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/d6f29e31-15ee-4b77-98d3-8163a94c6485"
 * entry[=].resource = d6f29e31-15ee-4b77-98d3-8163a94c6485
 
+Instance: 675bd368-bfec-47a1-9f74-3e7db5eb8cfb
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "1st message - Example of MessageHeader"
+Description: "1st message - Example of MessageHeader"
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
+* destination[primary].receiver = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
+* sender = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
+* focus = Reference(ede71a03-6611-416b-835a-2937622c526b)
+* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+
 Instance: d3a76a91-5252-4136-ba00-e35fba0bc479
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
@@ -35,20 +49,6 @@ Description: "Example of a simple MedCom Core Encounter"
 * episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
 * episodeOfCare.identifier.value = "88c3a921-f984-5751-8c03-69f7cdf47571" 
 * episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
-
-Instance: 675bd368-bfec-47a1-9f74-3e7db5eb8cfb
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "1st message - Example of MessageHeader"
-Description: "1st message - Example of MessageHeader"
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
-* destination[primary].receiver = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
-* sender = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
-* focus = Reference(ede71a03-6611-416b-835a-2937622c526b)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
 Instance: ede71a03-6611-416b-835a-2937622c526b
@@ -97,12 +97,12 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 
 // Reciever instance
 Instance: bc25bf57-e3ec-423c-a828-683e9fda09df
-InstanceOf: MedComMessagingOrganization // 
+InstanceOf: MedComMessagingOrganization  
 Title: "1st message - Example of a receiver organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "325371000016006" 
-* identifier[EAN-ID].value = "5790000120314" 
-* name = "MedCom FDIS91"
+* identifier[SOR-ID].value = "325251000016005" 
+* identifier[EAN-ID].value = "5790000121526" 
+* name = "MedCom XDIS91"
 
 
 // Practitioners - new message with attachment
