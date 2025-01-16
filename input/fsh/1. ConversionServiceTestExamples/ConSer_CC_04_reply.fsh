@@ -137,8 +137,8 @@ Usage: #example
 // Reciever instance - new message
 Instance: cd573069-3281-4f2b-b216-b7be7fd82762
 InstanceOf: MedComMessagingOrganization // 
-Title: "3rd message - Example of a reciever organization with a SOR and an EAN identifier."
-Description: "3rd message - Example of an organization with a SOR and an EAN identifier."
+Title: "ConSer_CC_04_reply - Example of a reciever organization with a SOR and an EAN identifier."
+Description: "ConSer_CC_04_reply - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "325251000016005" 
 * identifier[EAN-ID].value = "5790000121526" 
 * name = "MedCom XDIS91"
@@ -146,15 +146,15 @@ Description: "3rd message - Example of an organization with a SOR and an EAN ide
 // Practitioners - new message
 Instance: 8d51ef0e-e438-4cc3-a2c2-70a1d24fd85b
 InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
+Title: "ConSer_CC_04_reply - Simple practitioner with a name"
+Description: "ConSer_CC_04_reply - Simple practitioner with a name"
 * name.given = "Michael"
 * name.family = "Burns"  
 
 Instance: 4a430005-f38b-4900-9fe3-baed1f95fa34
 InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
+Title: "ConSer_CC_04_reply - PractitionerRole with a role and reference to a practitioner"
+Description: "ConSer_CC_04_reply - PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(8d51ef0e-e438-4cc3-a2c2-70a1d24fd85b)
 * code = $PractitionerRole#sygeplejerske
 
@@ -162,15 +162,15 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 //Practitioner - reply message
 Instance: a5662f8a-70de-4adc-871c-b22257ae6276
 InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
+Title: "ConSer_CC_04_reply - Simple practitioner with a name"
+Description: "ConSer_CC_04_reply - Simple practitioner with a name"
 * name.given = "Emma"
 * name.family = "Waters"
 
 Instance: 8ae1c0b7-eb7d-4bc4-be5e-6782983117ff
 InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
+Title: "ConSer_CC_04_reply - PractitionerRole with a role and reference to a practitioner"
+Description: "ConSer_CC_04_reply - PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(a5662f8a-70de-4adc-871c-b22257ae6276)
 * code = $PractitionerRole#sygeplejerske
 
