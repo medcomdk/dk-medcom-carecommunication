@@ -37,10 +37,10 @@ Description: "ConSer_CC_04_reply - Example of a MessageHeader in a reply CareCom
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
 * destination[primary].receiver = Reference(cd573069-3281-4f2b-b216-b7be7fd82762)
 * sender = Reference(2c178026-e176-4995-9b63-1eef54898f1f)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
 * focus = Reference(289d5578-1224-4c7b-b0bd-da6cc08bd7c0)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
