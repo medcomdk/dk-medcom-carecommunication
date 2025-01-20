@@ -79,7 +79,7 @@ Further, some recommendations for implementing the CareCommunication standard ha
 
 
 ## 2 Test and certification
-Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom.
+Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom. 
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
 
@@ -120,7 +120,7 @@ The follow documents describe mapping of the communication messages and receipts
 [Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
 
 ### 3.3 Examples
-The table below includes examples of the mapping illustrating four different flows. 
+The table below includes examples of the mapping illustrating four different flows. OBS: The examples are currently outdated, as they are not updated to CareCommunication version 4.0.0. They will be updated soon.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -167,4 +167,4 @@ The table below includes examples of the mapping illustrating four different flo
 ### 3.4 Test protocol
 Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly.
   * [Test protocol in English (docx)](assets/ConversionService_Testprotocol.docx)
-    * Test examples will be provided soon.
+    * [Test examples for the test protocol (zip)](assets/ConversionService_TestExamples_2025_01_20.zip).
