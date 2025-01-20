@@ -31,10 +31,10 @@ Description: "ConSer_CC_tec_EpisodeOfCare - Example of MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
-* destination[primary].receiver = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
-* sender = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
+* destination[primary].receiver = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
+* sender = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
 * focus = Reference(ede71a03-6611-416b-835a-2937622c526b)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
