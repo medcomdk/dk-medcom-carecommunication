@@ -100,6 +100,7 @@ Et meddelelsessegment består af Korrespondancemeddelelsens meddelelsestekst og 
 
 #### 4.2.1	Meddelelsestekst
 Meddelelsestekst-feltet er et fritekstfelt, hvori afsender skriver sin tekst. Det er obligatorisk for afsender at skrive fritekst i meddelelsens tekstfelt.
+Det er et krav til afsendersystemet at understøtte muligheden for linjeskift i meddelelsens fritekstfelt. Det er et krav til modtagersystemet at understøtte og vise linjeskift i meddelelsens fritekstfelt. Læs mere i <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html" target="_blank">Governance for CareCommunication</a>. 
 
 ##### 4.2.1.1 Kopierede eller vedhæftede journalnotater
 Hvis afsender kopierer og indsætter kortere journalnotater i meddelelsesteksten, anbefaler MedCom, at navn på forfatter, samt tidspunkt for oprettelse, af journalnotatet påskrives og medsendes i meddelelsens tekstfelt. Hvis afsender ønsker at medsende længere journalnotater, f.eks. mere end 1000 tegn (svarende til en halv side), anbefaler MedCom, at disse medsendes som vedhæftede filer. [Se afsnit 4.4 Vedhæftede filer](#bilag). 
