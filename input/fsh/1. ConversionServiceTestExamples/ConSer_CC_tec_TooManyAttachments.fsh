@@ -44,7 +44,7 @@ Title: "ConSer_CC_tec_TooManyAttachments - Instance of Communication resource us
 Description: "ConSer_CC_tec_TooManyAttachments - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
-* category = $CategoryCodes#regarding-referrel
+* category = $CategoryCodes#regarding-referral
 * topic.text = "Henvisning til videre udredning"
 * subject = Reference(17cbe1ce-f31e-4428-8eb3-12c3f4ff22ea)
 * payload.contentString = "Kære praktiserende læge, Vi skriver angående jeres patient, Kaja Hansen, som blev tilset i vores kardiologiske afdeling d. 01.01.2025. På baggrund af undersøgelsen anbefaler vi videre udredning for mulig hjertearytmi. Vi har booket en Holter-monitorering, som Kaja vil få foretaget d. 15.01.2025. Vi beder jer om at sikre, at patientens medicinstatus er opdateret inden monitoreringen. Hvis I har spørgsmål til udredningen, er I velkomne til at kontakte os. Venlig hilsen Katrine, Sygeplejerske"
