@@ -168,3 +168,4 @@ The table below includes examples of the mapping illustrating four different flo
 Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly.
   * [Test protocol in English (docx)](assets/ConversionService_Testprotocol.docx)
     * [Test examples for the test protocol (zip)](assets/ConversionService_TestExamples_2025_01_30.zip).
+    * [Test examples without VANSenvelope (zip)](assets/ConvertionService_examples_without_VANSenvelope.zip). (OBS: Not for use in test protocol)
