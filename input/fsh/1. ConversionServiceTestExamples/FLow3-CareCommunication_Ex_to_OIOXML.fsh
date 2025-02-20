@@ -4,7 +4,7 @@ Title: "Flow3CareCommunication_Ex_to_OIOXML - New CareCommunication message."
 Description: "Flow3CareCommunication_Ex_to_OIOXML - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-11-22T12:32:00+02:00
+* timestamp = 2023-11-22T12:33:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/080d88be-177c-42a4-9124-de4e73ad485a"
 * entry[=].resource = 080d88be-177c-42a4-9124-de4e73ad485a
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/722453e1-49ad-4fc9-a337-b4c478539467"
@@ -111,8 +111,8 @@ Title: "Flow3CareCommunication_Ex_to_OIOXML - The Provenance instance is only va
 Description: "Flow3CareCommunication_Ex_to_OIOXML - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(080d88be-177c-42a4-9124-de4e73ad485a)
-* occurredDateTime = 2025-01-03T13:00:00+02:00
-* recorded = 2025-01-03T13:00:00+02:00
+* occurredDateTime = 2023-11-22T12:32:00+02:00
+* recorded = 2023-11-22T12:32:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(fffe78de-0d4c-4073-9d2d-653f9a742142)
 * entity[payload].role = #source
