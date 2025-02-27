@@ -120,7 +120,7 @@ The follow documents describe mapping of the communication messages and receipts
 [Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
 
 ### 3.3 Examples
-The table below includes examples of the mapping illustrating four different flows. OBS: The examples are currently outdated, as they are not updated to CareCommunication version 4.0.0. They will be updated soon.
+The table below includes examples of the mapping illustrating four different flows for CareCommunication version 4.0.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

@@ -30,29 +30,29 @@
     </Sender>
     <Receiver>
       <EANIdentifier>5790000121441</EANIdentifier>
-      <Identifier>461</Identifier>
+      <Identifier>5790000121441</Identifier>
       <IdentifierCode>kommunenummer</IdentifierCode>
       <OrganisationName>Hjemmeplejen, Odense Kommune</OrganisationName>
-      <StreetName>Vandværksvej 99</StreetName>
-      <DistrictName>Hillerød</DistrictName>
+      <StreetName>VandvÃ¦rksvej 99</StreetName>
+      <DistrictName>HillerÃ¸d</DistrictName>
       <PostCodeIdentifier>3400</PostCodeIdentifier>
     </Receiver>
     <Patient>
       <CivilRegistrationNumber>2512489996</CivilRegistrationNumber>
       <PersonSurnameName>Ann Berggren</PersonSurnameName>
       <PersonGivenName>Nancy</PersonGivenName>
-      <StreetName>Hindbærvej 23</StreetName>
+      <StreetName>HindbÃ¦rvej 23</StreetName>
       <DistrictName>Odense S</DistrictName>
       <PostCodeIdentifier>5260</PostCodeIdentifier>
       <EpisodeOfCareStatusCode>inaktiv</EpisodeOfCareStatusCode>
     </Patient>
     <AdditionalInformation>
-      <Priority>høj_prioritet</Priority>
-      <Subject>Forundersøgelse</Subject>
+      <Priority>hÃ¸j_prioritet</Priority>
+      <Subject>ForundersÃ¸gelse</Subject>
     </AdditionalInformation>
     <ClinicalInformation>
       <Text01>
-        Afdeling A har modtaget en henvisning på ovenstående patient.<Break/>Forinden der foretages visitation, bedes følgende undersøgelser foretaget:<Break/>Røntgen af hofte i to planer.<Break/>Blodtryksresultat<Break/>Sænkningsresultat<Break/><Break/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<Break/><Break/>Venlig hilsen<Break/>overlæge K. Petersen<Break/>15.01.1999<Break/>
+        Afdeling A har modtaget en henvisning pÃ¥ ovenstÃ¥ende patient.<br/>Forinden der foretages visitation, bedes fÃ¸lgende undersÃ¸gelser foretaget:<br/>RÃ¸ntgen af hofte i to planer.<br/>Blodtryksresultat<br/>SÃ¦nkningsresultat<br/><br/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<br/><br/>Venlig hilsen<br/>overlÃ¦ge K. Petersen<br/>15.01.1999<br/>
       </Text01>
     </ClinicalInformation>
     <Reference>
