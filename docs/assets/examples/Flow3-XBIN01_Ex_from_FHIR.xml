@@ -24,12 +24,8 @@
       <EANIdentifier>5790001382445</EANIdentifier>
       <Identifier>5790001382445</Identifier>
       <IdentifierCode>lokationsnummer</IdentifierCode>
-	  <OrganisationName>MedCom XML vans KMD</OrganisationName>
-      <UnitName>MedCom XML vans KMD</UnitName>
-      <StreetName>Forskerparken 10</StreetName>
-      <DistrictName>Odense</DistrictName>
-      <PostCodeIdentifier>5230</PostCodeIdentifier>
-	  <TelephoneSubscriberIdentifier>66131372</TelephoneSubscriberIdentifier>
+      <OrganisationName>MedCom testcenter</OrganisationName>
+	<TelephoneSubscriberIdentifier>66131372</TelephoneSubscriberIdentifier>
       <MedicalSpecialityCode>ikkeklassificeret</MedicalSpecialityCode>
     </Sender>
     <Receiver>

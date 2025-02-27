@@ -24,7 +24,7 @@
       <EANIdentifier>5790001382445</EANIdentifier>
       <Identifier>5790001382445</Identifier>
       <IdentifierCode>lokationsnummer</IdentifierCode>
-      <OrganisationName>Medcom testcenter</OrganisationName>
+      <OrganisationName>MedCom testcenter</OrganisationName>
 	  <TelephoneSubscriberIdentifier>66131372</TelephoneSubscriberIdentifier>
     </Sender>
     <Receiver>
@@ -39,11 +39,11 @@
       <EpisodeOfCareStatusCode>inaktiv</EpisodeOfCareStatusCode>
     </Patient>
     <AdditionalInformation>
-      <Subject>Vedr. henvisning, Undersøgelser forude for visitation</Subject>
+      <Subject>Vedr. henvisning, UndersÃ¸gelser forude for visitation</Subject>
     </AdditionalInformation>
     <ClinicalInformation>
       <Text01>
-        Afdeling A har modtaget en henvisning på ovenstående patient.<Break/>Forinden der foretages visitation, bedes følgende undersøgelser foretaget:<Break/>Røntgen af hofte i to planer.<Break/>Blodtryksresultat<Break/>Sænkningsresultat<Break/><Break/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<Break/><Break/>Venlig hilsen<Break/>Michael<Break/>Forfatter: Michael Burns<Break/>Stilling: Sygeplejerske<Break/>
+        Afdeling A har modtaget en henvisning pÃ¥ ovenstÃ¥ende patient.<Break/>Forinden der foretages visitation, bedes fÃ¸lgende undersÃ¸gelser foretaget:<Break/>RÃ¸ntgen af hofte i to planer.<Break/>Blodtryksresultat<Break/>SÃ¦nkningsresultat<Break/><Break/>Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.<Break/><Break/>Venlig hilsen<Break/>Michael<Break/>Forfatter: Michael Burns<Break/>Stilling: Sygeplejerske<Break/>
       </Text01>
     </ClinicalInformation>
     <Reference>
