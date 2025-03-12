@@ -4,7 +4,7 @@ Title: "1st message - New CareCommunication message."
 Description: "1st message - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-01T12:00:00+02:00
+* timestamp = 2024-05-01T13:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
 * entry[=].resource = 42cb9200-f421-4d08-8391-7d51a2503cb4
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
