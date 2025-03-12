@@ -63,7 +63,7 @@ Usage: #inline
 * payload[=].extension[author].valueReference = Reference(08eb433e-4de3-4efc-925e-15d74df53b16)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "38683868"
-* payload[=].contentString = "Sorry about all the attachments, there is just so much important on this topic."
+* payload[=].contentString = "Sorry about all the attachments, there is just so much important on this topic.<br/>Hilsen Michael Burns <br/> Sygeplejerske <br/> 38683868 <br/> 2024-11-01 12:00"
 * payload[+].extension[date].valueDateTime = 2024-11-01T12:00:00+01:00
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
 * payload[=].extension[identifier].valueIdentifier.assigner = Reference(b6274cf9-18c6-405f-a6ca-5abe42ebf149)

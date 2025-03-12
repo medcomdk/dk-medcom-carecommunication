@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(558786fe-d4c0-474d-ac12-5b290619bdbf)
 * sender = Reference(5efd9dfc-9fc6-4289-942a-e56c24cb4e05)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(bde891c9-d099-4af4-9dc2-6b4e60940dfc)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#training
 * subject = Reference(506544db-a78e-4f74-bdcb-95e9951c9fd1)
 * identifier.value = "urn:uuid:afe59274-01a4-42b1-8bf4-a7cf907aac53"
-* payload.contentString = "Til rette vedkommende. Som aftalt pr.tlf. dd. vedrørende ovenstående patient: Vi vurderer at funktionsevnen for Spise og for Drikke skal ændres til Moderat. /Venlig hilsen Hjemmesygeplejerske K. Hansen"
+* payload.contentString = "Til rette vedkommende. Som aftalt pr.tlf. dd. vedrørende ovenstående patient: Vi vurderer at funktionsevnen for Spise og for Drikke skal ændres til Moderat. Hilsen Michael Burns <br/> ingen stillingsbetegnelse <br/> 38683868 <br/> 2024-08-18 12:00"
 * payload.extension[date].valueDateTime = 2024-08-18T12:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:09479fd9-8694-48cf-88b5-c957ee6d561a"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(558786fe-d4c0-474d-ac12-5b290619bdbf)
@@ -77,8 +77,8 @@ Instance: 5efd9dfc-9fc6-4289-942a-e56c24cb4e05
 InstanceOf: MedComMessagingOrganization // 
 Title: "Receive_Tek-J-new-noOrgName - Receiver"
 Description: "Receive_Tek-J-new-noOrgName - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
 
 
 // Practitioners - new message with attachment

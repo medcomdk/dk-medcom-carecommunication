@@ -1,3 +1,4 @@
+// TEK-U skal være en dublet af T med forsellig bundle ID: Derfor skal TEK-T kopiers til U of indsætte nyt bundle-ID. 
 Instance: 5de12884-eae7-4fd3-ba4a-d8b56be4baff
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-T-new-dublicate"

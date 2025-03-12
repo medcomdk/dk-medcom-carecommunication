@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * destination[primary].receiver = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
 * sender = Reference(4b56eb00-9f9b-4f6e-92ce-2bd779759895)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(223f08f9-f104-436e-bbdf-0422d51c309b)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -47,14 +47,14 @@ Usage: #example
 * subject = Reference(535087d0-04ec-4795-93c4-0b216acb6091)
 * identifier.value = "urn:uuid:3cd0beb4-fe08-4d0c-8dcb-f0020b434cf3"
 * topic.text = "Afgået ved døden"
-* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen."
+* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Hilsen Kim Jensen<br/> Overlæge <br/> +45 85572787 <br/> 2024-09-12 16:00"
 * payload.extension[date].valueDateTime = 2024-09-12T16:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:d63ddff2-594f-403b-8518-2c255e3f3d4c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
 * payload.extension[author].valueReference = Reference(a81ae208-3de0-4fb8-b802-841be9b05325)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "85572787"
-* payload[1].contentAttachment.contentType = $bcp13#image/png
+* payload[1].contentAttachment.contentType = $bcp13#application/pdf
 * payload[1].contentAttachment.title = "Kalenderoversigt" 
 * payload[1].extension[date].valueDateTime = 2024-09-12T16:00:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ee9b9b6b-0956-4ea1-9745-b29f23b93eaa"
@@ -85,9 +85,9 @@ Instance: 4b56eb00-9f9b-4f6e-92ce-2bd779759895
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-I-new - Receiver"
 Description: "Send-I-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790001348250" 
-* name = "Per Thorseth"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment

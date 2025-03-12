@@ -31,10 +31,10 @@ Description: "Send-Tek-A-new - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=328081000016004"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1385391000016002"
 * destination[primary].receiver = Reference(674cb75e-4a5c-4609-b740-8b09e06b0e42)
 * sender = Reference(c0347f2c-f11e-440f-99f6-a1ebf3b53e74)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(2678d1b2-0a76-4663-a216-b1a14e72aafa)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -48,8 +48,9 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(2f6d23d0-239c-44bb-9033-acab45416029)
 * topic.text = "Resultater fra hjemmesygeplejen"
+* encounter = Reference(c3efbaa3-4b9e-4da1-bb4a-496d33953abd)
 * identifier.value = "urn:uuid:c29f6032-28bf-4a11-af98-6f451fa77fee"
-* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael, sygeplejerske."
+* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael Magnus Burns <br/> Sygeplejerske <br/>004523232323 <br/> 2024-09-15 15:20"
 * payload.extension[date].valueDateTime = 2024-09-15T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:ee96d66f-f95a-4f23-855c-44befb31c52b"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(674cb75e-4a5c-4609-b740-8b09e06b0e42)
@@ -66,7 +67,7 @@ Description: "Send-Tek-A-new - Encounter"
 * class = $ActCodes#IMP 
 * subject = Reference(2f6d23d0-239c-44bb-9033-acab45416029)
 * episodeOfCare.identifier.value = "d3779c52-1fc9-4d96-93dc-693a4faab338" 
-* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=328081000016004" // SOR id for afsender/serviceProvider
+* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1385391000016002" // SOR id for afsender/serviceProvider
 
 Instance: 2f6d23d0-239c-44bb-9033-acab45416029
 InstanceOf: MedComCorePatient
@@ -84,18 +85,18 @@ Instance: 674cb75e-4a5c-4609-b740-8b09e06b0e42
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-Tek-A-new - Sender"
 Description: "Send-Tek-A-new - Sender"
-* identifier[SOR-ID].value = "328081000016004" 
-* identifier[EAN-ID].value = "5790000121786" 
-* name = "Hjemmesygeplejen, Aalborg kommune"
+* identifier[SOR-ID].value = "1385391000016002" 
+* identifier[EAN-ID].value = "5790002632389" 
+* name = "Pædagogisk Psykologisk Rådgivning"
 
 // Reciever instance - new message for attachement
 Instance: c0347f2c-f11e-440f-99f6-a1ebf3b53e74
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-Tek-A-new - Receiver"
 Description: "Send-Tek-A-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment

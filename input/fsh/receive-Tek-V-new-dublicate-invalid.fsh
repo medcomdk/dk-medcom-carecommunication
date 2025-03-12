@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(fe92c210-7725-4749-8045-37ed53878f26)
 * sender = Reference(74fb6fce-089e-444d-bca3-7d2673c6901f)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(bc0c3901-87d3-4d90-ba32-9b02cc631de8)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(aa6fad12-1876-4c7d-a955-06b78f85eb52)
 * identifier.value = "urn:uuid:f3eb2617-5388-4210-ad77-fc1da77f9108"
-* payload.contentString = "Jeg håber denne besked er korrekt, hvis ikke, send da en negativ kvittering, tak. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
+* payload.contentString = "Jeg håber denne besked er korrekt, hvis ikke, send da en negativ kvittering, tak. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Lægesekretær <br/> +4512345789 <br/> 2024-08-27 15:20"
 * payload.extension[date].valueDateTime = 2024-08-27T15:20:00+01:00
 //* payload.extension[identifier].valueIdentifier.value = "urn:uuid:84a28362-d870-440e-bdf6-7a0102b8f2f6"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(fe92c210-7725-4749-8045-37ed53878f26)
@@ -86,9 +86,9 @@ Instance: 74fb6fce-089e-444d-bca3-7d2673c6901f
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive-Tek-V-new-dublicate - Receiver"
 Description: "receive-Tek-V-new-dublicate - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

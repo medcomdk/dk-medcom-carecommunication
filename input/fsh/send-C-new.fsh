@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * destination[primary].receiver = Reference(9b668ecc-a9e4-4bbb-968a-d27b9894a8c9)
 * sender = Reference(5559b731-171a-4f0c-8e61-23c54f1cdf6f)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(ea643637-f201-4203-bf4d-9219e20e7ac5)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#regarding-referral
 * subject = Reference(8643e0b2-66a8-4412-b3e6-a2b67045b52b)
 * identifier.value = "urn:uuid:cf2f559c-03e7-4f21-a39a-4be61ca15ae5"
-* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Afdeling A har modtaget en henvisning patient. Forinden der foretages visitation, bedes følgende undersøgelser foretaget: Røntgen af hofte i to planer (Vedhæftet er seneste røntgen). Blodtryksresultat Sænkningsresultat  Resultaterne bedes fremsendt som et korrespondancebrev. Venlig hilsen overlæge K. Petersen"
+* payload.contentString = "Til rette vedkommende hos 2100 Lægehuset Østerbro. Afdeling A har modtaget en henvisning patient. Forinden der foretages visitation, bedes følgende undersøgelser foretaget: Røntgen af hofte i to planer (Vedhæftet er seneste røntgen). Blodtryksresultat Sænkningsresultat  Resultaterne bedes fremsendt som et korrespondancebrev. Hilsen Kim Petersen <br/> Overlæge <br/> 38683868 <br/> 2024-09-07 06:00"
 * payload.extension[date].valueDateTime = 2024-09-07T06:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:2fc22ab5-d84d-4896-80a6-dd6630a7de69"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(9b668ecc-a9e4-4bbb-968a-d27b9894a8c9)
@@ -83,9 +83,9 @@ Instance: 5559b731-171a-4f0c-8e61-23c54f1cdf6f
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-C-new - Receiver"
 Description: "Send-C-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790001348250" 
-* name = "Per Thorseth"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment

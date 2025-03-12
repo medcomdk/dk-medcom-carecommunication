@@ -37,7 +37,7 @@ Description: "Send-K-forward - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * destination[primary].receiver = Reference(d2ac69eb-568e-4201-b29d-2af8d3126518)
 * sender = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
@@ -55,14 +55,14 @@ Usage: #example
 * subject = Reference(db2fd52e-9a7a-418f-90d1-b422e07c895d)
 * topic.text = "Afgået ved døden"
 * identifier.value = "urn:uuid:06a106f9-df1c-4064-9031-b6a4cb841e85"
-* payload[0].contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen"
+* payload[0].contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Hilsen Nancy Jensen <br/> Lægesekretær <br/> 85572787 <br/> 2024-09-14 13:00"
 * payload[0].extension[date].valueDateTime = 2024-09-14T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:954183f4-bc89-4d75-8073-9b397bacd6ec"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * payload[0].extension[author].valueReference = Reference(84eb6a09-63cf-433d-8522-41465d78756a)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "85572787"
-* payload[1].contentString = "Jeg videresender hermed beskeden fra Kim, så I er orienteret. Mvh. Sygeplejerske K. Jensen"
+* payload[1].contentString = "Jeg videresender hermed beskeden fra Kim, så I er orienteret. Hilsen Kim Jensen <br/> Sygeplejerske <br/> 87875455 <br/> 2024-09-14 14:25"
 * payload[1].extension[date].valueDateTime = 2024-09-14T14:25:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:cfc9886a-5f54-463b-9255-99bfaf778d8c"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
@@ -101,9 +101,9 @@ Instance: 6ea7c7cb-824b-4619-a13e-bc8828afd7e1
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-K-forward - Receiver"
 Description: "Send-K-forward - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790001348250" 
-* name = "Per Thorseth"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 // Practitioners - new message with attachment
 Instance: 9ec69637-d91e-491d-a5b2-ec1661b98bc5
@@ -173,7 +173,7 @@ Description: "Send-K-forward - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * destination[primary].receiver = Reference(d2ac69eb-568e-4201-b29d-2af8d3126518)
 * sender = Reference(7260b118-d744-4396-bbf2-80245933b1dd)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"

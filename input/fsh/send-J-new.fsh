@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#psychiatry-social-disability
 * subject = Reference(uiodss8902la.z.ikfldsi9439d)
 * identifier.value = "urn:uuid:dd26bec0-8f68-4f58-aee6-8084032855c0"
-* payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita, psykolog."
+* payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita Thenstrup <br/> Psykolog <br/> +45 35363738 <br/> 2024-09-13 17:20"
 * payload.extension[date].valueDateTime = 2024-09-13T17:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:ed7e027d-5c18-4e23-986f-0f9586d3d111"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(hfjdsyur74893j5hjkfdshj78.jkclzikd)

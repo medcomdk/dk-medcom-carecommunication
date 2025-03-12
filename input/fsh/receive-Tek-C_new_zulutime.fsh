@@ -31,7 +31,7 @@ Description: "Receive_Tek-C_new_zulutime - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * destination[primary].receiver = Reference(baa210c3-9d09-4647-8e1c-d177ac9c1805)
 * sender = Reference(74563c71-15be-4f7a-9281-3d057574cd6b)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
@@ -62,9 +62,9 @@ Instance: baa210c3-9d09-4647-8e1c-d177ac9c1805
 InstanceOf: MedComMessagingOrganization // 
 Title: "Receive_Tek-C_new_zulutime - Receiver"
 Description: "Receive_Tek-C_new_zulutime - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment
@@ -106,7 +106,7 @@ Usage: #example
 * topic.text = "Kritisk tilstand"
 * identifier.value = "urn:uuid:2ee940d6-b2b8-4489-a0b0-0ae5a477b618"
 * subject = Reference(44803bc6-6836-4382-8206-b45748dee5fd)
-* payload[0].contentString = "Til rette vedkommende. Mon I har vist det rigtige tidspunkt? /Hilsen Michael, sygeplejerske."
+* payload[0].contentString = "Til rette vedkommende. Mon I har vist det rigtige tidspunkt? <br/>Hilsen Michael Burns <br/> Sygeplejerske <br/> +4538683868 <br/> 2024-08-17 12:00"
 * payload[0].extension[date].valueDateTime = 2024-08-17T14:00:00Z
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:33225941-7b0d-4f83-a2b0-05e4ba1e11f5"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(74563c71-15be-4f7a-9281-3d057574cd6b)

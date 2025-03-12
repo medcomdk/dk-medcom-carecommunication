@@ -34,7 +34,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=328081000016004"
 * destination[primary].receiver = Reference(454aafa3-8ecb-4c0b-9696-eee6cce6c498)
 * sender = Reference(0e804dff-95f7-40fe-bb96-561363715869)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(e6907e11-f007-4e2c-a98d-a543229a10c2)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -48,8 +48,9 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(b670ed56-9a4f-4903-ad51-65773a327d93)
 * topic.text = "Resultater fra hjemmesygeplejen"
+* encounter = Reference(ede7ee60-4541-438c-922d-1898a14fa3b1)
 * identifier.value = "urn:uuid:a6be8e47-43a0-4a34-8041-083d41eba038"
-* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen. Denne meddelelse ligner til Tek-B-new, men er det ikke. Hilsen Michael, sygeplejerske."
+* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen. Denne meddelelse ligner til Tek-B-new, men er det ikke. Hilsen Michael Magnus Burns <br/> Sygeplejerske <br/> 004523232323 <br/> 2024-09-16 08:30"
 * payload.extension[date].valueDateTime = 2024-09-16T08:30:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:dc9665dd-b9c3-4349-af08-e9dd61d0e211"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(454aafa3-8ecb-4c0b-9696-eee6cce6c498)
@@ -95,9 +96,9 @@ Instance: 0e804dff-95f7-40fe-bb96-561363715869
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-Tek-B-new - Receiver"
 Description: "Send-Tek-B-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment

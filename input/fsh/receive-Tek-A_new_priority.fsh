@@ -31,7 +31,7 @@ Description: "Receive_Tek-A_new_priority - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * destination[primary].receiver = Reference(99c5abc9-6956-4fb2-b888-90138ff951e0)
 * sender = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
@@ -62,9 +62,9 @@ Instance: 99c5abc9-6956-4fb2-b888-90138ff951e0
 InstanceOf: MedComMessagingOrganization // 
 Title: "Receive_Tek-A_new_priority - Receiver"
 Description: "Receive_Tek-A_new_priority - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment
@@ -107,7 +107,7 @@ Usage: #example
 * topic.text = "Kritisk tilstand"
 * identifier.value = "urn:uuid:161d8b55-bf2e-416a-ad92-2e022bbcd486"
 * subject = Reference(ae4abfb5-b0f6-443c-a420-0c0649cbe0c0)
-* payload[0].contentString = "Til rette vedkommende. <br/> Vi vil med denne korrespondance gerne &quot;prøve&quot; på &apos; nogle &apos; særlige &lt;tegn&gt; ; til test &amp; certificering @ ^ * <br/> /Hilsen Michael, sygeplejerske."
+* payload[0].contentString = "Til rette vedkommende. <br/> Vi vil med denne korrespondance gerne &quot;prøve&quot; på &apos; nogle &apos; særlige &lt;tegn&gt; ; til test &amp; certificering @ ^ * <br/> Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-17 14:00"
 * payload[0].extension[date].valueDateTime = 2024-08-17T14:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:21ee7617-5e47-406e-83bd-347ba6a7a872"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)

@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1053231000016001"
 * destination[primary].receiver = Reference(89a4dee7-145b-4d09-abaf-24529cb12f15)
 * sender = Reference(efb6250c-1ba5-4856-b7e7-d9e830d58c09)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(435427fb-84c4-496e-ba55-4234091e83cc)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#training
 * subject = Reference(83949bef-2b75-429c-ada7-ca3998fb046a)
 * identifier.value = "urn:uuid:ea0e95d0-f72c-4e7f-9250-a2037be75545"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Ledende Lægesekretær <br/> +4512345789 <br/> 2024-11-08 08:00"
 * payload[0].extension[date].valueDateTime = 2024-11-08T08:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8f4863a0-bb37-41f5-bcd9-944f3b04fe11"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(89a4dee7-145b-4d09-abaf-24529cb12f15)
@@ -118,9 +118,9 @@ Instance: efb6250c-1ba5-4856-b7e7-d9e830d58c09
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-I_new_moreInfo - Receiver"
 Description: "receive_Tek-I_new_moreInfo - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

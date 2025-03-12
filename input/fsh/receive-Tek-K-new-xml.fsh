@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
 * sender = Reference(ba9a61b8-62ec-496c-85ff-6a3dd2d213c3)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(8434cabb-6066-485c-9bf1-6a4e2e09547b)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#home-care-assessment
 * subject = Reference(de0c79b9-635f-4991-961c-b72390210bf7)
 * identifier.value = "urn:uuid:3cbe7f6c-6815-4bd9-ac4e-a95bf326daa5"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Ledende Lægesekretær <br/> +4512345789 <br/> 2024-08-19 13:00"
 * payload[0].extension[date].valueDateTime = 2024-08-19T13:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8d9415a0-1b0d-4410-8a97-6097b31e12ff"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(d3b21860-e8a9-44ba-8db4-10521975ef34)
@@ -86,9 +86,9 @@ Instance: ba9a61b8-62ec-496c-85ff-6a3dd2d213c3
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-K-new-xml - Receiver"
 Description: "receive_Tek-K-new-xml - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment
@@ -104,7 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-K-new-xml - practitionerRole"
 Description: "receive_Tek-K-new-xml - practitionerRole"
 * practitioner = Reference(a4b405c0-ea2a-4daf-bbd3-8f8ce99ce1eb)
-* code.text = "Visitator"
+* code = $PractitionerRole#ledendelaegesekretaer
 
 // CareCommunication example - new message
 Instance: c0499c96-d85b-4807-85d2-0f0f1a9d2df0

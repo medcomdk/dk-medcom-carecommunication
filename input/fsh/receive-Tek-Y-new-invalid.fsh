@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(409b87d3-398e-44cb-9246-35b47ff75cc4)
 * sender = Reference(6e7761cb-2dc9-48c7-8fd4-b49d46dd9c05)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(4a003dce-060c-4d9d-b5d6-7513323049d1)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -80,9 +80,9 @@ Instance: 6e7761cb-2dc9-48c7-8fd4-b49d46dd9c05
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive-Tek-Y-new-invalid - Receiver"
 Description: "receive-Tek-Y-new-invalid - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

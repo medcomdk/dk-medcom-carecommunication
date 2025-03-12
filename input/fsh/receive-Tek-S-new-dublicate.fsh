@@ -1,3 +1,4 @@
+//Note: Denne fil skal ikke bruges, vi tager receive-Tek-R-new-dublicate og indsætter denne i den fil med dette navn, dette vil gøre at S er en duplicate er R. 
 Instance: c289e585-7f30-4d58-88e3-0baedd9ffeee
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-S-new-dublicate"
@@ -32,7 +33,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(1cc8e567-bf4a-4dc6-b427-f23942cb4661)
 * sender = Reference(77dcf3fd-9ee6-4e64-9ab4-b1619bae5811)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(a31cae55-2d49-41f2-ae74-562dc4547572)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -82,9 +83,9 @@ Instance: 77dcf3fd-9ee6-4e64-9ab4-b1619bae5811
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive-Tek-S-new-dublicate - Receiver"
 Description: "receive-Tek-S-new-dublicate - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

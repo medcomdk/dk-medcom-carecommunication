@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * destination[primary].receiver = Reference(aea5f134-5cc9-44b1-b5db-7155e45717ee)
 * sender = Reference(d8ca8b48-565a-46c8-a1c8-e781c498626a)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(930876e5-8cf8-40f0-bd6c-3e38520d61de)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(e85e8d47-46a9-4b6a-b86d-9dcf96d24543)
 * identifier.value = "urn:uuid:b84738c1-a67f-4de9-a883-fab6d0ba0c44"
 * topic.text = "Afgået ved døden"
-* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Mvh. Sygeplejerske K. Jensen."
+* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Med venlig hilsen Kim Jensen <br/>Overlæge <br/> 85572787 <br/> 2024-08-23 16:00"
 * payload.extension[date].valueDateTime = 2024-08-23T16:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1df44fde-c8e1-4d0c-99cd-fc521cb728e5"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(aea5f134-5cc9-44b1-b5db-7155e45717ee)
@@ -80,9 +80,9 @@ Instance: d8ca8b48-565a-46c8-a1c8-e781c498626a
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive-Tek-O-new - Receiver"
 Description: "receive-Tek-O-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790001348250" 
-* name = "Per Thorseth"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment

@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(9cf4942a-b0ed-45ba-b13d-6a655f2c0acf)
 * sender = Reference(f9342201-81bd-4a41-a7e5-0f2ae8823656)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(f1947b33-8b35-4cdf-9e0a-0141352f8e42)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#medicine
 * subject = Reference(442804e5-2f1e-4a73-b1b9-a3a0eaff1849)
 * identifier.value = "urn:uuid:bf3d9ae2-8c06-4769-8ea2-6f5295f6440b"
-* payload[0].contentString = "Til rette vedkommende. Vi har desværre ikke anden information end et fornavn. Pt. oplyser, at have være i tilknytning til jer. Kan I bekræfte det? På forhånd tak. Hilsen Michael"
+* payload[0].contentString = "Til rette vedkommende. Vi har desværre ikke anden information end et fornavn. Pt. oplyser, at have være i tilknytning til jer. Kan I bekræfte det? På forhånd tak. Hilsen Michael Burns <br/> Beskæftigelsesvejleder <br/> +4512345789 <br/> 2024-11-05 20:30"
 * payload[0].extension[date].valueDateTime = 2024-11-05T20:30:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:12ff8a10-36b0-43d7-8f6d-61449fe3a1ec"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(9cf4942a-b0ed-45ba-b13d-6a655f2c0acf)
@@ -83,9 +83,9 @@ Instance: f9342201-81bd-4a41-a7e5-0f2ae8823656
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-G_new_replacementCPR - Receiver"
 Description: "receive_Tek-G_new_replacementCPR - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

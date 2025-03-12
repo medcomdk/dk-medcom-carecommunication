@@ -32,7 +32,7 @@ Description: "Example of a simple MedCom Core Encounter"
 * class = $ActCodes#IMP 
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
 * episodeOfCare.identifier.value = "urn:uuid:39e3e169-9ece-4ba4-bd24-2e0fbeebc333" 
-* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
+* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=330461000016004" // SOR id for afsender/serviceProvider
 * episodeOfCare.identifier.value = "urn:uuid:fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
 
@@ -46,7 +46,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
 * destination[primary].receiver = Reference(01965998-608c-43a9-bc4d-4b671a9168c7)
 * sender = Reference(826bb133-fca8-4c23-87cd-8039102f0dded)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
 * focus = Reference(500b6aa5-407b-489c-8439-b658f4858ff4)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -58,9 +58,10 @@ Description: "receive_Tek-E_new_episodeOfCare-identifier - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
+* encounter = Reference(ca0f5d0c-cb2a-4ad5-a08a-e7dbd2092b13)
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
 * identifier.value = "urn:uuid:eca85df4-e6c9-41d7-88c0-7e6fb79029b9"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Osteopat <br/> +4512345789 <br/> 2024-11-03 09:00"
 * payload[0].extension[date].valueDateTime = 2024-11-03T09:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:80ab9ebc-98df-4d4c-ad7c-57c654e9bf21"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(01965998-608c-43a9-bc4d-4b671a9168c7)
@@ -100,9 +101,9 @@ Instance: 826bb133-fca8-4c23-87cd-8039102f0dded
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-E_new_episodeOfCare-identifier - Receiver"
 Description: "receive_Tek-E_new_episodeOfCare-identifier - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment

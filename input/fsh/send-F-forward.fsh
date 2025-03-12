@@ -32,7 +32,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=328081000016004"
 * destination[primary].receiver = Reference(528f8b50-107d-44ad-a5e9-89b7891aedb1)
 * sender = Reference(ec80691c-8d77-4424-9b6f-169560d602ad)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1339531000016004"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(7e6007ea-dd75-4f6f-bebe-9238957b0774)
 
 Instance: 7e6007ea-dd75-4f6f-bebe-9238957b0774
@@ -45,7 +45,7 @@ Usage: #example
 * subject = Reference(d4ac37e3-864b-4286-84c6-5ecdf4b550c1)
 * identifier.value = "urn:uuid:b2090f8b-499e-46dc-ac78-43468e07ebc7"
 * topic.text = "Resultater fra hjemmesygeplejen"
-* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael, sygeplejerske."
+* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Med venlig hilsen Emma Waters <br/>Lægesekretær <br/> 004523232323 <br/> 2024-09-10 15:20"
 * payload.extension[date].valueDateTime = 2024-09-10T15:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:b478c855-cf10-4cc6-b773-368c7c9eb60e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(528f8b50-107d-44ad-a5e9-89b7891aedb1)
@@ -79,9 +79,9 @@ Instance: ec80691c-8d77-4424-9b6f-169560d602ad
 InstanceOf: MedComMessagingOrganization // 
 Title: "Send-F-new - Receiver"
 Description: "Send-F-new - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "1017421000016003" 
+* identifier[EAN-ID].value = "5790002408496" 
+* name = "2100 Lægehuset Østerbro"
 
 
 // Practitioners - new message with attachment
@@ -197,14 +197,14 @@ Description: "Send-F-new"
 * category = $CategoryCodes#examination-results
 * subject = Reference(d4ac37e3-864b-4286-84c6-5ecdf4b550c1)
 * topic.text = "Resultater fra hjemmesygeplejen"
-* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. Emma"
+* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Med venlig hilsen Emma Waters <br/>Lægesekretær <br/> 004523232323 <br/> 2024-09-10 15:20"
 * payload[1].extension[date].valueDateTime = 2024-09-10T15:20:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:eeda532b-5467-49d8-b897-8435bb77f90b"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * payload[1].extension[author].valueReference = Reference(cb36cff5-1b78-4d76-bc33-04bce8434bf0)
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "004523232323"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Sygeplejerske <br/> 38683868 <br/> 2024-09-08 12:00"
 * payload[0].extension[date].valueDateTime = 2024-09-08T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:6a4b69ee-636c-4fe3-a250-51abec6a7f4d"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)

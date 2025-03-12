@@ -25,9 +25,9 @@ Instance: a81d6555-94d9-4704-a6b7-8dea0bcd3dac
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_C-forward - Receiver"
 Description: "receive_C-forward - Receiver"
-* identifier[SOR-ID].value = "1339531000016004" 
-* identifier[EAN-ID].value = "5790002626814" 
-* name = "Lægeklinik Ølgod"
+* identifier[SOR-ID].value = "330461000016004" 
+* identifier[EAN-ID].value = "5790001353308" 
+* name = "Sundhedsplejen, Aabenraa kommune"
 
 
 // Practitioners - new message with attachment
@@ -157,14 +157,14 @@ Description: "receive_C-forward"
 * category = $CategoryCodes#examination-results
 * subject = Reference(1c4dbd72-4af3-41f9-a9b5-dacd8d62f994)
 * topic.text = "Resultater fra hjemmesygeplejen"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak.<br/> Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 01010101 <br/> 2024-08-15 15:20"
 * payload[0].extension[date].valueDateTime = 2024-08-15T15:20:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:d189f0c2-8397-4cae-b62c-0d0958b4899a"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(8b67e42d-fc9b-45c4-8313-86b9c7416445)
 * payload[0].extension[author].valueReference = Reference(da0ffcef-7cdd-43be-a462-47caa7abc8a8)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
-* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Mvh. Emma"
+* payload[1].contentString = "Hej, jeg videresender nedenstående besked til jer, da I har udført undersøgelserne på Bruno. Svar venligst direkte til Michael fra Hjerteafdelingen på Herlev og Gentofte hospital. Med venlig hilsen Emma Waters <br/>Optiker <br/> 004523232323<br/> 2024-08-16 11:30"
 * payload[1].extension[date].valueDateTime = 2024-08-16T11:30:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:4fa05d8d-66e7-46dd-8029-428d44d33f53"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(ca5a7c53-fc3a-4565-b419-a443c3bc6870)
