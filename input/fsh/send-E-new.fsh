@@ -104,6 +104,7 @@ InstanceOf: MedComCorePractitionerRole
 Title: "Send-E-new - practitionerRole"
 Description: "Send-E-new - practitionerRole"
 * practitioner = Reference(b004946b-6960-46da-8e88-68de64f0dbe8)
+* code = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NAVU
 * code.text = "Visitator"
 
 // CareCommunication example - new message
