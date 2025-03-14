@@ -4,7 +4,7 @@ Title: "receive-Tek-Q-new-order - New CareCommunication message."
 Description: "receive-Tek-Q-new-order - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-24T12:00:00+02:00
+* timestamp = 2024-08-24T12:30:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec"
 * entry[=].resource = 8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b7fed758-bfdd-4c21-bfca-bb0b4b7081a0"
@@ -118,7 +118,7 @@ Title: "Tek-P-reply-order - Reply CareCommunication message"
 Description: "Tek-P-reply-order - Example of a reply to a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-02T11:30:00+02:00
+* timestamp = 2024-08-24T12:30:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/2414b445-665f-41af-9ecd-b97c0b58c081"
 * entry[=].resource = 2414b445-665f-41af-9ecd-b97c0b58c081
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b7fed758-bfdd-4c21-bfca-bb0b4b7081a0"
@@ -166,8 +166,8 @@ Title: "Tek-P-reply-order - The Provenance instance for a reply to a new message
 Description: "Tek-P-reply-order - The Provenance instance is only valid if used in a bundle (message)"
 Usage: #inline
 * target = Reference(2414b445-665f-41af-9ecd-b97c0b58c081)
-* occurredDateTime = 2024-05-02T11:30:00+02:00
-* recorded = 2024-05-02T11:30:00+02:00
+* occurredDateTime = 2024-08-24T12:30:00+02:00
+* recorded = 2024-08-24T12:30:00+02:00
 * activity.coding = $ActivityCode#reply-message
 * agent.who = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
 * entity[preceedingMessage][0].role = #revision
@@ -186,8 +186,8 @@ Description: "Tek-P-reply-order - Content of care communication message. Valid o
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Med venlig hilsen Emma Waters <br/>Sygeplejerske <br/>44527000 <br/> 2024-05-02 11:30"
-* payload[1].extension[date].valueDateTime = 2024-05-02T11:30:00+02:00
+* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Med venlig hilsen Emma Waters <br/>Sygeplejerske <br/>44527000 <br/> 2024-08-24T12:30"
+* payload[1].extension[date].valueDateTime = 2024-08-24T12:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ac353781-0e43-447d-80f4-d090028abcc1"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
 * payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
