@@ -4,7 +4,7 @@ Title: "Send-A-new"
 Description: "Send-A-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-09-05T12:00:00+01:00
+* timestamp = 2024-09-05T14:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/0ebb6284-eb20-45eb-8113-6620d2d08608"
 * entry[=].resource = 0ebb6284-eb20-45eb-8113-6620d2d08608
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/9fcf448a-4628-45e1-9098-0dd8de0e7e76"
