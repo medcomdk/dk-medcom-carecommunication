@@ -5,21 +5,21 @@ Description: "receive_Tek_new_ID"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-07T17:20:00+01:00
-* entry[+].fullUrl = "https://thisisanabsoluteRef/MessageHeader/ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f"
+* entry[+].fullUrl = "https://thisisanabsoluteref/MessageHeader/ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f"
 * entry[=].resource = ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Patient/fdsgjhfrgeu567485-.fdsf"
+* entry[+].fullUrl = "https://thisisanabsoluteref/Patient/fdsgjhfrgeu567485-.fdsf"
 * entry[=].resource = fdsgjhfrgeu567485-.fdsf
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Communication/45645.hfjksr7.klklj"
+* entry[+].fullUrl = "https://thisisanabsoluteref/Communication/45645.hfjksr7.klklj"
 * entry[=].resource = 45645.hfjksr7.klklj
-* entry[+].fullUrl = "https://thisisanabsoluteRef/PractitionerRole/j.k.k.67843274je"
+* entry[+].fullUrl = "https://thisisanabsoluteref/PractitionerRole/j.k.k.67843274je"
 * entry[=].resource = j.k.k.67843274je
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Practitioner/hfkjsu574783yhfjdx67-hjk"
+* entry[+].fullUrl = "https://thisisanabsoluteref/Practitioner/hfkjsu574783yhfjdx67-hjk"
 * entry[=].resource = hfkjsu574783yhfjdx67-hjk
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Organization/dfhjkshertu6787bjbsjnmbdf-.hfjdks7."
+* entry[+].fullUrl = "https://thisisanabsoluteref/Organization/dfhjkshertu6787bjbsjnmbdf-.hfjdks7."
 * entry[=].resource = dfhjkshertu6787bjbsjnmbdf-.hfjdks7.
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Organization/ghjghgh"
+* entry[+].fullUrl = "https://thisisanabsoluteref/Organization/ghjghgh"
 * entry[=].resource = ghjghgh
-* entry[+].fullUrl = "https://thisisanabsoluteRef/Provenance/hfdjks887.8.89frkdshjf778"
+* entry[+].fullUrl = "https://thisisanabsoluteref/Provenance/hfdjks887.8.89frkdshjf778"
 * entry[=].resource = hfdjks887.8.89frkdshjf778
 
 Instance: ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f
