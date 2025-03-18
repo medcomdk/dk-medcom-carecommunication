@@ -4,7 +4,7 @@ Title: "Receive_Tek-J-new-noOrgName"
 Description: "Receive_Tek-J-new-noOrgName"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-18T12:00:00+01:00
+* timestamp = 2024-08-18T12:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/221b6439-c282-4bf9-9ddc-8c2b8975e809"
 * entry[=].resource = 221b6439-c282-4bf9-9ddc-8c2b8975e809
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/506544db-a78e-4f74-bdcb-95e9951c9fd1"
@@ -46,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#training
 * subject = Reference(506544db-a78e-4f74-bdcb-95e9951c9fd1)
 * identifier.value = "urn:uuid:afe59274-01a4-42b1-8bf4-a7cf907aac53"
-* payload.contentString = "Til rette vedkommende. Som aftalt pr.tlf. dd. vedrørende ovenstående patient: Vi vurderer at funktionsevnen for Spise og for Drikke skal ændres til Moderat. Hilsen Michael Burns <br/> ingen stillingsbetegnelse <br/> 38683868 <br/> 2024-08-18 12:00"
-* payload.extension[date].valueDateTime = 2024-08-18T12:00:00+01:00
+* payload.contentString = "Til rette vedkommende. Som aftalt pr.tlf. dd. vedrørende ovenstående patient: Vi vurderer at funktionsevnen for Spise og for Drikke skal ændres til Moderat. Hilsen Michael Burns \n ingen stillingsbetegnelse"
+* payload.extension[date].valueDateTime = 2024-08-18T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:09479fd9-8694-48cf-88b5-c957ee6d561a"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(558786fe-d4c0-474d-ac12-5b290619bdbf)
 * payload.extension[author].valueReference = Reference(147b1985-76d3-428f-bb91-e397017c5607)
@@ -103,8 +103,8 @@ Title: "Receive_Tek-J-new-noOrgName - Provenance"
 Description: "Receive_Tek-J-new-noOrgName - Provenance"
 Usage: #example
 * target = Reference(221b6439-c282-4bf9-9ddc-8c2b8975e809)
-* occurredDateTime = 2024-08-18T12:00:00+01:00
-* recorded = 2024-08-18T12:00:00+01:00
+* occurredDateTime = 2024-08-18T12:00:00+02:00
+* recorded = 2024-08-18T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(558786fe-d4c0-474d-ac12-5b290619bdbf)
 * entity.role = #source

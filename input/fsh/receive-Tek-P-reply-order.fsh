@@ -89,7 +89,7 @@ Description: "receive-Tek-Q-new-order - Content of care communication message. V
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-24 12:00"
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Sygeplejerske"
 * payload.extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
@@ -186,14 +186,14 @@ Description: "Tek-P-reply-order - Content of care communication message. Valid o
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Med venlig hilsen Emma Waters <br/>Sygeplejerske <br/>44527000 <br/> 2024-08-24T12:30"
+* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Med venlig hilsen Emma Waters \nSygeplejerske"
 * payload[1].extension[date].valueDateTime = 2024-08-24T12:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ac353781-0e43-447d-80f4-d090028abcc1"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
 * payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-24 12:00"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Sygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)

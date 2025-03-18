@@ -4,7 +4,7 @@ Title: "Send-E-new"
 Description: "Send-E-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-09-09T15:20:00+01:00
+* timestamp = 2024-09-09T15:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/53aef9cc-0104-408e-8e67-e65fb64f8f74"
 * entry[=].resource = 53aef9cc-0104-408e-8e67-e65fb64f8f74
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/badec6f1-1cd7-474d-a445-f3fcf7ccd926"
@@ -46,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * subject = Reference(badec6f1-1cd7-474d-a445-f3fcf7ccd926)
 * identifier.value = "urn:uuid:a1090f8b-499e-46dc-ac78-43468e07ebd8"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Visitator <br/> +4512345789 <br/> 2024-09-09 15:20"
-* payload.extension[date].valueDateTime = 2024-09-09T15:20:00+01:00
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Visitator"
+* payload.extension[date].valueDateTime = 2024-09-09T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:139e3105-6114-415a-ab86-d78b3599fa0e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(01f408d4-b6f1-448a-833e-9a9fd83befef)
 * payload.extension[author].valueReference = Reference(1be91ae0-ed06-47d3-b42f-4b3bc41fb76e)
@@ -114,8 +114,8 @@ Title: "Send-E-new - Provenance"
 Description: "Send-E-new - Provenance"
 Usage: #example
 * target = Reference(53aef9cc-0104-408e-8e67-e65fb64f8f74)
-* occurredDateTime = 2024-09-09T15:20:00+01:00
-* recorded = 2024-09-09T15:20:00+01:00
+* occurredDateTime = 2024-09-09T15:20:00+02:00
+* recorded = 2024-09-09T15:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(01f408d4-b6f1-448a-833e-9a9fd83befef)
 * entity.role = #source
