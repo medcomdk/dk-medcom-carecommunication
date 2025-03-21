@@ -1,10 +1,10 @@
-Instance: 7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
+Instance: R-Tek-P-reply-order-7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-Q-new-order - New CareCommunication message."
 Description: "receive-Tek-Q-new-order - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-24T12:30:00+02:00
+* timestamp = 2024-08-24T12:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec"
 * entry[=].resource = 8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/b7fed758-bfdd-4c21-bfca-bb0b4b7081a0"
@@ -78,7 +78,6 @@ Usage: #example
 * focus = Reference(26bc9e59-e225-4330-9a0c-e6f06785846d)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
-
 // CareCommunication new example
 Instance: 26bc9e59-e225-4330-9a0c-e6f06785846d
 InstanceOf: MedComCareCommunication
@@ -89,7 +88,7 @@ Description: "receive-Tek-Q-new-order - Content of care communication message. V
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-24 12:00"
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak.\nHilsen Michael Burns \n Sygeplejerske"
 * payload.extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
@@ -112,7 +111,7 @@ Usage: #inline
 * entity[payload].what.identifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 
 
-Instance: 3e047a9d-c86a-4828-b686-6a80403df5eb
+Instance: R-Tek-P-reply-order-3e047a9d-c86a-4828-b686-6a80403df5eb
 InstanceOf: MedComCareCommunicationMessage
 Title: "Tek-P-reply-order - Reply CareCommunication message"
 Description: "Tek-P-reply-order - Example of a reply to a CareCommunication message."
@@ -152,10 +151,10 @@ Description: "Tek-P-reply-order - Example of a MessageHeader in a reply CareComm
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
-* destination[primary].receiver = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
-* sender = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
+* sender = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(9e829a72-32b2-4810-a56e-1e8f3a81e888)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -169,7 +168,7 @@ Usage: #inline
 * occurredDateTime = 2024-08-24T12:30:00+02:00
 * recorded = 2024-08-24T12:30:00+02:00
 * activity.coding = $ActivityCode#reply-message
-* agent.who = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
+* agent.who = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * entity[preceedingMessage][0].role = #revision
 * entity[preceedingMessage][0].what = Reference(8f537c84-17f9-4fd1-a3d6-3d4008d6c6ec)
 * entity[payload][0].role = #source
@@ -186,14 +185,14 @@ Description: "Tek-P-reply-order - Content of care communication message. Valid o
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Med venlig hilsen Emma Waters <br/>Sygeplejerske <br/>44527000 <br/> 2024-08-24T12:30"
+* payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf.\nHilsen Michael Burns \n Sygeplejerske"
 * payload[1].extension[date].valueDateTime = 2024-08-24T12:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ac353781-0e43-447d-80f4-d090028abcc1"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
-* payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
+* payload[1].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
+* payload[1].extension[author].valueReference = Reference(569a1bff-55a1-4868-a7b4-80fedb2066e3) 
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
-* payload[1].extension[authorContact].valueContactPoint.value = "44527000"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-24 12:00"
+* payload[1].extension[authorContact].valueContactPoint.value = "38683868"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Sygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)

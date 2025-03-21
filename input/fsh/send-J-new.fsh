@@ -1,10 +1,10 @@
-Instance: jklfds89r45jklsduf98w487953jkl.jkliuuh
+Instance: S-J-new-jklfds89r45jklsduf98w487953jkl.jkliuuh
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-K-new"
 Description: "Send-K-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-09-13T17:20:00+01:00
+* timestamp = 2024-09-13T17:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/ejklfdsio898kfd"
 * entry[=].resource = ejklfdsio898kfd
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/uiodss8902la.z.ikfldsi9439d"
@@ -46,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#psychiatry-social-disability
 * subject = Reference(uiodss8902la.z.ikfldsi9439d)
 * identifier.value = "urn:uuid:dd26bec0-8f68-4f58-aee6-8084032855c0"
-* payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita Thenstrup <br/> Psykolog <br/> +45 35363738 <br/> 2024-09-13 17:20"
-* payload.extension[date].valueDateTime = 2024-09-13T17:20:00+01:00
+* payload.contentString = "Til rette vedkommende. \n Jeg har netop startet samtaler med Bruno..... \n Hilsen Anita Thenstrup \n Psykolog"
+* payload.extension[date].valueDateTime = 2024-09-13T17:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:ed7e027d-5c18-4e23-986f-0f9586d3d111"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(hfjdsyur74893j5hjkfdshj78.jkclzikd)
 * payload.extension[author].valueReference = Reference(jklfds.jklorewp-hcksa6wjs)
@@ -107,8 +107,8 @@ Title: "Send-K-new - Provenance"
 Description: "Send-K-new - Provenance"
 Usage: #example
 * target = Reference(ejklfdsio898kfd)
-* occurredDateTime = 2024-09-13T17:20:00+01:00
-* recorded = 2024-09-13T17:20:00+01:00
+* occurredDateTime = 2024-09-13T17:20:00+02:00
+* recorded = 2024-09-13T17:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(hfjdsyur74893j5hjkfdshj78.jkclzikd)
 * entity[0].role = #source

@@ -1,10 +1,10 @@
-Instance: 6280ec98-0799-4a3a-8a66-c426207d93f1
+Instance: -R-Tek-L-new-json-6280ec98-0799-4a3a-8a66-c426207d93f1
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek-L-new-json"
 Description: "receive_Tek-L-new-json"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-20T17:20:00+01:00
+* timestamp = 2024-08-20T17:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/ejklfdsio8klakfd"
 * entry[=].resource = ejklfdsio8klakfd
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/uiodss8902laikfldsi9439d"
@@ -46,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#psychiatry-social-disability
 * subject = Reference(uiodss8902laikfldsi9439d)
 * identifier.value = "urn:uuid:9936312e-593d-428b-8d70-aa025d587be3"
-* payload.contentString = "Til rette vedkommende. <br/> Jeg har netop startet samtaler med Bruno..... <br/> Hilsen Anita Thenstruo <br/> Psykolog <br/> 35363738 <br/> 2024-08-20 17:20"
-* payload.extension[date].valueDateTime = 2024-08-20T17:20:00+01:00
+* payload.contentString = "Til rette vedkommende. \n Jeg har netop startet samtaler med Bruno..... \n Hilsen Anita Thenstruo \n Psykolog"
+* payload.extension[date].valueDateTime = 2024-08-20T17:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:27ca31f6-e41d-4661-bc03-8e32f0a84dcb"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(hdfg4893j5hjkfdshj78.jkclzikd)
 * payload.extension[author].valueReference = Reference(jklfds.jkloreweda7a6wjs)
@@ -107,8 +107,8 @@ Title: "receive_Tek-L-new-json - Provenance"
 Description: "receive_Tek-L-new-json - Provenance"
 Usage: #example
 * target = Reference(ejklfdsio8klakfd)
-* occurredDateTime = 2024-08-20T17:20:00+01:00
-* recorded = 2024-08-20T17:20:00+01:00
+* occurredDateTime = 2024-08-20T17:20:00+02:00
+* recorded = 2024-08-20T17:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(hdfg4893j5hjkfdshj78.jkclzikd)
 * entity[0].role = #source

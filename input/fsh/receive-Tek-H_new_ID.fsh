@@ -1,4 +1,4 @@
-Instance: 33ee6434-a9cc-4679-8bb8-4f940bd63e30
+Instance: R-Tek-H-new-ID-33ee6434-a9cc-4679-8bb8-4f940bd63e30
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek_new_ID"
 Description: "receive_Tek_new_ID"
@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#psychiatry-social-disability
 * subject = Reference(fdsgjhfrgeu567485-.fdsf)
 * identifier.value = "urn:uuid:a3b9e5ce-9c0c-4d00-aea1-65d6bf400c33"
-* payload.contentString = "Til rette vedkommende. Mon disse ID'er skaber problemer? Hilsen Anita Thenstrup <br/> Psykolog <br/> +4535363738 <br/> 2024-11-07 17:20"
+* payload.contentString = "Til rette vedkommende. Mon disse ID'er skaber problemer? Hilsen Anita Thenstrup\nPsykolog"
 * payload.extension[date].valueDateTime = 2024-11-07T17:20:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:30bbad4a-8ec6-4979-b2a1-92b8541624e7"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(dfhjkshertu6787bjbsjnmbdf-.hfjdks7.)

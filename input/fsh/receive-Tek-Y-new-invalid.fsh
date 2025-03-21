@@ -1,4 +1,5 @@
-Instance: 3d1149cd-d3e3-421a-ae31-4860decb4272
+// OBS!! * payload.contentString = "To be removed"
+Instance: -R-Tek-Y-new-invalid-3d1149cd-d3e3-421a-ae31-4860decb4272
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-Y-new-invalid"
 Description: "receive-Tek-Y-new-invalid"

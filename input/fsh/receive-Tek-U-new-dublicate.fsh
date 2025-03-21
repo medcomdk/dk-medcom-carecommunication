@@ -1,11 +1,10 @@
-// TEK-U skal være en dublet af T med forsellig bundle ID: Derfor skal TEK-T kopiers til U of indsætte nyt bundle-ID. 
-Instance: fa97e431-332f-4605-ad37-c259dc2b8637
+Instance: R-Tek-U-new-dublicate-fa97e431-332f-4605-ad37-c259dc2b8637
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek-U-new-dublicate"
 Description: "receive_Tek-U-new-dublicate"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-28T15:20:00+01:00
+* timestamp = 2024-08-28T15:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/559e4be0-e1f2-4371-969d-29bbbd5ca9d1"
 * entry[=].resource = 559e4be0-e1f2-4371-969d-29bbbd5ca9d1
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/283b6471-3134-4b7e-9d48-b6fad32e6384"
@@ -47,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#telemedicine
 * subject = Reference(283b6471-3134-4b7e-9d48-b6fad32e6384)
 * identifier.value = "urn:uuid:69ab69e8-af33-4e93-9171-7906ad43c1ab"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Diætistassistent <br/> +4512345789 <br/> 2024-08-28 15:20"
-* payload.extension[date].valueDateTime = 2024-08-28T15:20:00+01:00
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Diætistassistent"
+* payload.extension[date].valueDateTime = 2024-08-28T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:07f74c3d-b3e5-4054-850e-a8ef8a550c36"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(2052a3bd-c32d-4e81-b5ec-83f9ad012899)
 * payload.extension[author].valueReference = Reference(67612d44-215b-4441-a35b-b6ab3ab9c9ce)
@@ -114,8 +113,8 @@ Title: "receive_Tek-U-new-dublicate - Provenance"
 Description: "receive_Tek-U-new-dublicate - Provenance"
 Usage: #example
 * target = Reference(559e4be0-e1f2-4371-969d-29bbbd5ca9d1)
-* occurredDateTime = 2024-08-28T15:20:00+01:00
-* recorded = 2024-08-28T15:20:00+01:00
+* occurredDateTime = 2024-08-28T15:20:00+02:00
+* recorded = 2024-08-28T15:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(2052a3bd-c32d-4e81-b5ec-83f9ad012899)
 * entity.role = #source

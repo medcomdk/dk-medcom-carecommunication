@@ -1,10 +1,10 @@
-Instance: 7283eae8-0427-4bb0-8486-06b4febd416c
+Instance: R-Tek-R-new-dublicate-7283eae8-0427-4bb0-8486-06b4febd416c
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-R-new-dublicate"
 Description: "receive-Tek-R-new-dublicate"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-25T15:20:00+01:00
+* timestamp = 2024-08-25T15:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/7784a5ff-0293-4a54-aaf1-974714807fb3"
 * entry[=].resource = 7784a5ff-0293-4a54-aaf1-974714807fb3
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/5986ec2e-05a4-4e30-8d2f-f09fb09eb832"
@@ -46,8 +46,8 @@ Usage: #example
 * category = $CategoryCodes#outpatient
 * subject = Reference(5986ec2e-05a4-4e30-8d2f-f09fb09eb832)
 * identifier.value = "urn:uuid:4098a5ef-3e35-455c-b6cb-01533423593b"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Henrik Elderly <br/> Sygehuslæge <br/> +4512345789 <br/> 2024-08-25 15:20"
-* payload.extension[date].valueDateTime = 2024-08-25T15:20:00+01:00
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Henrik Elderly \n Sygehuslæge"
+* payload.extension[date].valueDateTime = 2024-08-25T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:da11e1b2-a1c6-40c4-8412-e5b93a52831e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(2aa3877e-d446-4c24-b497-399baaba894c)
 * payload.extension[author].valueReference = Reference(dfd68df4-1cd1-45a8-a5df-4cc9e78ea0ec)
@@ -107,8 +107,8 @@ Title: "receive-Tek-R-new-dublicate - Provenance"
 Description: "receive-Tek-R-new-dublicate - Provenance"
 Usage: #example
 * target = Reference(7784a5ff-0293-4a54-aaf1-974714807fb3)
-* occurredDateTime = 2024-08-25T15:20:00+01:00
-* recorded = 2024-08-25T15:20:00+01:00
+* occurredDateTime = 2024-08-25T15:20:00+02:00
+* recorded = 2024-08-25T15:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(2aa3877e-d446-4c24-b497-399baaba894c)
 * entity.role = #source

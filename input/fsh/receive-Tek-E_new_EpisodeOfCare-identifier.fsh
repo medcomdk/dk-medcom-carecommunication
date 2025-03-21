@@ -1,4 +1,4 @@
-Instance: d000e12e-4b0c-477e-9cb7-80b2a3b3adc0
+Instance: R-Tek-E-new-EOC-identifier-d000e12e-4b0c-477e-9cb7-80b2a3b3adc0
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek-E_new_episodeOfCare-identifier"
 Description: "receive_Tek-E_new_episodeOfCare-identifier"
@@ -61,7 +61,7 @@ Usage: #example
 * encounter = Reference(ca0f5d0c-cb2a-4ad5-a08a-e7dbd2092b13)
 * subject = Reference(9d6ff5cd-ea6f-4cd7-9a81-dfb41c6ec420)
 * identifier.value = "urn:uuid:eca85df4-e6c9-41d7-88c0-7e6fb79029b9"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns <br/> Osteopat <br/> +4512345789 <br/> 2024-11-03 09:00"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Osteopat"
 * payload[0].extension[date].valueDateTime = 2024-11-03T09:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:80ab9ebc-98df-4d4c-ad7c-57c654e9bf21"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(01965998-608c-43a9-bc4d-4b671a9168c7)

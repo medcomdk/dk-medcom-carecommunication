@@ -1,10 +1,10 @@
-Instance: 260f76f2-d986-4ba1-8049-2369b1b164ce
+Instance: R-Tek-X-new-dublicate-inv-260f76f2-d986-4ba1-8049-2369b1b164ce
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-X-new-dublicate-invalid"
 Description: "receive-Tek-X-new-dublicate-invalid"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-08-27T15:20:00+01:00
+* timestamp = 2024-08-27T15:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/6550cb10-06e1-44fa-a66d-72f3f60c7c55"
 * entry[=].resource = 6550cb10-06e1-44fa-a66d-72f3f60c7c55
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/aa6fad12-1876-4c7d-a955-06b78f85eb52"

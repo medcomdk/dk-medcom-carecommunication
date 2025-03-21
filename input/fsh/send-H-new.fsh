@@ -1,10 +1,10 @@
-Instance: aca3d03a-febd-4b88-ad53-ac1bc36da615
+Instance: S-H-new-aca3d03a-febd-4b88-ad53-ac1bc36da615
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-H-new"
 Description: "Send-H-new"
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-09-11T15:20:00+01:00
+* timestamp = 2024-09-11T15:20:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/5a663fe8-c361-411d-876d-4f6b06749e59"
 * entry[=].resource = 5a663fe8-c361-411d-876d-4f6b06749e59
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/8d7f4ef8-ac79-4b7d-b9e7-b769471221b2"
@@ -47,8 +47,8 @@ Usage: #example
 * subject = Reference(8d7f4ef8-ac79-4b7d-b9e7-b769471221b2)
 * topic.text = "Resultater fra hjemmesygeplejen"
 * identifier.value = "urn:uuid:5fdc8520-7a2f-497c-97ed-fcca13f12f8b"
-* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... Hilsen Michael Magnus Burns <br/> Sygeplejerske <br/> 004523232323 <br/> 2024-09-11 15:20"
-* payload.extension[date].valueDateTime = 2024-09-11T15:20:00+01:00
+* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... \nHilsen Michael Magnus Burns\n Sygeplejerske"
+* payload.extension[date].valueDateTime = 2024-09-11T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:c75a51cf-dab7-4bf9-9b13-b81700c78b05"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(cf3b8736-ffca-48a1-b2e7-550b5c503be8)
 * payload.extension[author].valueReference = Reference(68f7756d-b5f0-47db-924b-8bf0f6864b9e)
@@ -109,8 +109,8 @@ Title: "Send-H-new - Provenance"
 Description: "Send-H-new - Provenance"
 Usage: #example
 * target = Reference(5a663fe8-c361-411d-876d-4f6b06749e59)
-* occurredDateTime = 2024-09-11T15:20:00+01:00
-* recorded = 2024-09-11T15:20:00+01:00
+* occurredDateTime = 2024-09-11T15:20:00+02:00
+* recorded = 2024-09-11T15:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(cf3b8736-ffca-48a1-b2e7-550b5c503be8)
 * entity.role = #source

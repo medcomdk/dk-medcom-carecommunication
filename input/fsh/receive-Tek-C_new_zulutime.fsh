@@ -1,4 +1,4 @@
-Instance: 6e5d7a74-a88a-47a3-8362-20396e9db332
+Instance: R-Tek-C-new-zulutime-6e5d7a74-a88a-47a3-8362-20396e9db332
 InstanceOf: MedComCareCommunicationMessage
 Title: "Receive_Tek-C_new_zulutime"
 Description: "Receive_Tek-C_new_zulutime"
@@ -106,7 +106,7 @@ Usage: #example
 * topic.text = "Kritisk tilstand"
 * identifier.value = "urn:uuid:2ee940d6-b2b8-4489-a0b0-0ae5a477b618"
 * subject = Reference(44803bc6-6836-4382-8206-b45748dee5fd)
-* payload[0].contentString = "Til rette vedkommende. Mon I har vist det rigtige tidspunkt? <br/>Hilsen Michael Burns <br/> Sygeplejerske <br/> +4538683868 <br/> 2024-08-17 12:00"
+* payload[0].contentString = "Til rette vedkommende. Mon I har vist det rigtige tidspunkt? \nHilsen Michael Burns\nSygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-08-17T14:00:00Z
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:33225941-7b0d-4f83-a2b0-05e4ba1e11f5"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(74563c71-15be-4f7a-9281-3d057574cd6b)
