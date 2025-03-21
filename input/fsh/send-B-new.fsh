@@ -1,4 +1,4 @@
-Instance: 720f68cf-21bf-4c40-a90c-a113e00e88a8
+Instance: S-B-new-720f68cf-21bf-4c40-a90c-a113e00e88a8
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-B-new"
 Description: "Send-B-new"

@@ -1,4 +1,4 @@
-Instance: 5d29cc7d-dcf7-4b50-81b1-a8d971973ff6
+Instance: R-Tek-I-new-moreInfo-5d29cc7d-dcf7-4b50-81b1-a8d971973ff6
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek-I_new_moreInfo"
 Description: "receive_Tek-I_new_moreInfo"
@@ -36,7 +36,6 @@ Usage: #example
 * focus = Reference(435427fb-84c4-496e-ba55-4234091e83cc)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
-
 Instance: 435427fb-84c4-496e-ba55-4234091e83cc
 InstanceOf: MedComCareCommunication
 Title: "receive_Tek-I_new_moreInfo - Communication"
@@ -53,7 +52,6 @@ Usage: #example
 * payload[0].extension[author].valueReference = Reference(e2eb406c-3a28-4509-baba-2d0a0f6db759)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "+4512345789"
-
 
 Instance: 83949bef-2b75-429c-ada7-ca3998fb046a
 InstanceOf: MedComCorePatient
@@ -121,7 +119,6 @@ Description: "receive_Tek-I_new_moreInfo - Receiver"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
-
 
 // Practitioners - new message with attachment
 Instance: 940b514b-938d-4186-85f6-96477ec5b5dd

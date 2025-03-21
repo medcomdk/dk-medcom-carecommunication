@@ -1,5 +1,6 @@
+//Denne slettes ifm. opdatering af testprotokollen. Derefter vil det udelukkende være 'receive-Tek-R-new-dublicate' der indlæses to gange
 //Note: Denne fil skal ikke bruges, vi tager receive-Tek-R-new-dublicate og indsætter denne i den fil med dette navn, dette vil gøre at S er en duplicate er R. 
-Instance: c289e585-7f30-4d58-88e3-0baedd9ffeee
+Instance: -R-Tek-S-new-dublicate-c289e585-7f30-4d58-88e3-0baedd9ffeee
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-S-new-dublicate"
 Description: "receive-Tek-S-new-dublicate"

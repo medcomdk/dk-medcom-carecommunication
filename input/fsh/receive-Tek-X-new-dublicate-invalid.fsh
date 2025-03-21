@@ -1,4 +1,4 @@
-Instance: 260f76f2-d986-4ba1-8049-2369b1b164ce
+Instance: R-Tek-X-new-dublicate-inv-260f76f2-d986-4ba1-8049-2369b1b164ce
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-X-new-dublicate-invalid"
 Description: "receive-Tek-X-new-dublicate-invalid"

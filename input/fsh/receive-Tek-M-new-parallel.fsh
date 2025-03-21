@@ -1,4 +1,4 @@
-Instance: c1edf6f3-2554-4b72-b58b-0f030ee555ba
+Instance: R-Tek-M-new-parallel-c1edf6f3-2554-4b72-b58b-0f030ee555ba
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-M-new-parallel - New CareCommunication message."
 Description: "receive-Tek-M-new-parallel - Example of a CareCommunication new message."
@@ -112,7 +112,7 @@ Usage: #inline
 * entity[payload].what.identifier.value = "urn:uuid:71a92aba-ee31-4ccf-86ed-3d6b823f4c67"
 
 
-Instance: 0e2864ad-a6a1-4e84-a9dc-aeacee63f981
+Instance: R-Tek-N-new-parallel-0e2864ad-a6a1-4e84-a9dc-aeacee63f981
 InstanceOf: MedComCareCommunicationMessage
 Title: "Receive-Tek-N-reply-parallel - Reply CareCommunication message"
 Description: "Receive-Tek-N-reply-parallel - Example of a reply to a CareCommunication message."

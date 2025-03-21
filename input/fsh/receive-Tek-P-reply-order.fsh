@@ -1,4 +1,4 @@
-Instance: 7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
+Instance: R-Tek-P-reply-order-7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-Q-new-order - New CareCommunication message."
 Description: "receive-Tek-Q-new-order - Example of a CareCommunication new message."
@@ -111,7 +111,7 @@ Usage: #inline
 * entity[payload].what.identifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 
 
-Instance: 3e047a9d-c86a-4828-b686-6a80403df5eb
+Instance: R-Tek-P-reply-order-3e047a9d-c86a-4828-b686-6a80403df5eb
 InstanceOf: MedComCareCommunicationMessage
 Title: "Tek-P-reply-order - Reply CareCommunication message"
 Description: "Tek-P-reply-order - Example of a reply to a CareCommunication message."

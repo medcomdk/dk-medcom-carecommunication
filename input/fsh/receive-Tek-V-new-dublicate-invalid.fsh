@@ -1,4 +1,4 @@
-Instance: 260a3cc1-38eb-454a-a57b-9e32eabb54a3
+Instance: R-Tek-V-new-dublicate-inv-260a3cc1-38eb-454a-a57b-9e32eabb54a3
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-V-new-dublicate"
 Description: "receive-Tek-V-new-dublicate"
@@ -36,7 +36,6 @@ Usage: #example
 * focus = Reference(bc0c3901-87d3-4d90-ba32-9b02cc631de8)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
-
 Instance: bc0c3901-87d3-4d90-ba32-9b02cc631de8
 InstanceOf: MedComCareCommunication
 Title: "receive-Tek-V-new-dublicate - Communication"
@@ -53,7 +52,6 @@ Usage: #example
 * payload.extension[author].valueReference = Reference(fb1abc8a-3238-4292-97dc-327291bf8573)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "+4512345789"
-
 
 Instance: aa6fad12-1876-4c7d-a955-06b78f85eb52
 InstanceOf: MedComCorePatient

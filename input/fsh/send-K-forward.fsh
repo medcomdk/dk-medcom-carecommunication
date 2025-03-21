@@ -1,4 +1,4 @@
-Instance: 77c771ca-05d6-4efb-9a74-2fc513787f3a
+Instance: S-K-forward-77c771ca-05d6-4efb-9a74-2fc513787f3a
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-K-forward"
 Description: "Send-K-forward"

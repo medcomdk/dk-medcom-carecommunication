@@ -24,7 +24,7 @@ Usage: #example
 * entry[=].resource = ddc0fc7b-0ad1-43e1-b9c4-b1a3d9ef1c50
 
 Instance: fa97e431-332f-4605-ad37-c259dc2b8637 */
-Instance: 5de12884-eae7-4fd3-ba4a-d8b56be4baff
+Instance: R-Tek-T-new-dublicate-5de12884-eae7-4fd3-ba4a-d8b56be4baff
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-T-new-dublicate"
 Description: "receive-Tek-T-new-dublicate"

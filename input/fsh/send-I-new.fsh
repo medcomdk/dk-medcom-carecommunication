@@ -1,4 +1,4 @@
-Instance: 1e9fdc8f-50f0-4dc3-9879-facdf331a2fe
+Instance: S-I-new-1e9fdc8f-50f0-4dc3-9879-facdf331a2fe
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-I-new"
 Description: "Send-I-new"

@@ -1,4 +1,5 @@
-Instance: 9c2371ff-09a0-4626-9fb9-f70645546361
+// Rikke og Søren: Dette eksempel findes ikke i testprotokollen
+Instance: S-F-forward-9c2371ff-09a0-4626-9fb9-f70645546361
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-F-new"
 Description: "Send-F-new"

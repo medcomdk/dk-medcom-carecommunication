@@ -1,5 +1,4 @@
-//Instance: R-Tek-A-new-priority-ac8dddf2-c882-4b00-8870-5035279e7d01
-Instance: ac8dddf2-c882-4b00-8870-5035279e7d01
+Instance: R-Tek-A-new-priority-0c8dddf2-c882-4b00-8870-5035279e7d01
 InstanceOf: MedComCareCommunicationMessage
 Title: "Receive_Tek-A_new_priority"
 Description: "Receive_Tek-A_new_priority"

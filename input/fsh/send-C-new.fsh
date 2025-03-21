@@ -1,4 +1,4 @@
-Instance: 683f2782-11e2-490a-9fa5-d5da09cc317a
+Instance: S-C-new-683f2782-11e2-490a-9fa5-d5da09cc317a
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-C-new"
 Description: "Send-C-new"

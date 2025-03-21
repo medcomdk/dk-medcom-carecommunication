@@ -1,4 +1,4 @@
-Instance: jklfds89r45jklsduf98w487953jkl.jkliuuh
+Instance: S-J-new-jklfds89r45jklsduf98w487953jkl.jkliuuh
 InstanceOf: MedComCareCommunicationMessage
 Title: "Send-K-new"
 Description: "Send-K-new"
