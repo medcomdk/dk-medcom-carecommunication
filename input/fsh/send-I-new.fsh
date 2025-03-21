@@ -30,8 +30,8 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
-* destination[primary].receiver = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
-* sender = Reference(4b56eb00-9f9b-4f6e-92ce-2bd779759895)
+* destination[primary].receiver = Reference(4b56eb00-9f9b-4f6e-92ce-2bd779759895)
+* sender = Reference(c9de18c4-0991-47fe-88ab-d55b0bd09374)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1017421000016003"
 * focus = Reference(223f08f9-f104-436e-bbdf-0422d51c309b)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"

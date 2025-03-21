@@ -1,4 +1,4 @@
-Instance: a3e54e97-c625-4717-a806-1d801ce08449
+Instance: R-Tek-A2-new-linebreak-a3e54e97-c625-4717-a806-1d801ce08449
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-A2-new-linebreak - New CareCommunication message."
 Description: "receive-Tek-A2-new-linebreak - Example of a CareCommunication new message."
@@ -47,7 +47,7 @@ Description: "receive-Tek-A2-new-linebreak - Content of care communication messa
 * category = $CategoryCodes#discharge
 * topic.text = "Tilbagemelding efter indlæggelse"
 * subject = Reference(0c970bb6-033d-4c89-a093-3930da7e914b)
-* payload.contentString = "Vi skriver for at informere om, at jeres patient Kaja Hansen blev udskrevet.\nHun er udskrevet fra vores afdeling d. 01.01.2025 efter behandling for lungebetændelse. Hun blev behandlet med intravenøs antibiotika under indlæggelsen og er nu overgået til peroral behandling med Amoxicillin 500 mg x 3 dagligt i 7 dage. Vi anbefaler en kontrol af infektionstal og lungefunktion om < 2 uger, samt opfølgning på eventuelle tilbagevendende symptomer.\n I denne test vil vi gerne se at der står \n som rigtig tekst \n Med venlig hilsen, Jørgen Berggren \nOverlæge"
+* payload.contentString = "Vi skriver for at informere om, at jeres patient Kaja Hansen blev udskrevet.\nHun er udskrevet fra vores afdeling d. 01.01.2025 efter behandling for lungebetændelse. Hun blev behandlet med intravenøs antibiotika under indlæggelsen og er nu overgået til peroral behandling med Amoxicillin 500 mg x 3 dagligt i 7 dage. Vi anbefaler en kontrol af infektionstal og lungefunktion om < 2 uger, samt opfølgning på eventuelle tilbagevendende symptomer.\n\nDette er linje 1\nDette er linje 2\n\nDette er linje 4, med en 'usynlig' linje ovenfor\nMed venlig hilsen, Jørgen Berggren\nOverlæge"
 * payload.extension[date].valueDateTime = 2025-01-03T13:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(00bc5aa6-b0e3-40c5-ab92-8144640e3482)

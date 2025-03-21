@@ -44,6 +44,7 @@ Description: "Send-C-new - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#regarding-referral
+* priority = $PriorityCode#asap
 * subject = Reference(8643e0b2-66a8-4412-b3e6-a2b67045b52b)
 * identifier.value = "urn:uuid:cf2f559c-03e7-4f21-a39a-4be61ca15ae5"
 * payload.contentString = "Til rette vedkommende hos 2100 Lægehuset Østerbro. Afdeling A har modtaget en henvisning patient. Forinden der foretages visitation, bedes følgende undersøgelser foretaget: Røntgen af hofte i to planer (Vedhæftet er seneste røntgen). Blodtryksresultat Sænkningsresultat  Resultaterne bedes fremsendt som et korrespondancebrev. Hilsen Kim Petersen \n Overlæge"

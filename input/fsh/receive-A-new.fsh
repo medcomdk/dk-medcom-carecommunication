@@ -1,4 +1,4 @@
-Instance: b10f940e-2000-4ec8-9e0b-a3fb60fc5bb5
+Instance: R-A-new-b10f940e-2000-4ec8-9e0b-a3fb60fc5bb5
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_A-new"
 Description: "receive_A-new"

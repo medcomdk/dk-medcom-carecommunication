@@ -151,9 +151,9 @@ Instance: 92d3a7e9-00df-49c0-b9bd-a512e2837b64
 InstanceOf: MedComMessagingOrganization 
 Title: "Send-F-new"
 Description: "Send-F-new"
-* identifier[SOR-ID].value = "1042981000016003" 
+* identifier[SOR-ID].value = "953751000016007" 
 * identifier[EAN-ID].value = "5790001348120" 
-//* name = "Herlevgaard Center Herlev Kommune"
+//* name = "Sundhed og Ældre, Herlev"
 
 // CareCommunication reply example
 Instance: 01e6ede5-7fc5-4bd3-ae04-b8247bc4219a
@@ -163,7 +163,7 @@ Description: "Send-F-new"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953751000016007"
 * destination[primary].receiver = Reference(92d3a7e9-00df-49c0-b9bd-a512e2837b64)
 * sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"

@@ -4,7 +4,7 @@ Alias: $medcom-careCommunication-categoryCodes = http://medcomfhir.dk/ig/termino
 Alias: $medcom-core-PractitionerRolesSKSadministrativ = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
 Alias: $medcom-messaging-activityCodes = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes
 
-Instance: ee22cec7-aad7-4bfe-ab1b-5ada3f59e676
+Instance: R-Tek-B-new-attachment-ee22cec7-aad7-4bfe-ab1b-5ada3f59e676
 InstanceOf: MedComCareCommunicationMessage
 Usage: #example
 * entry[0].resource = c5bda2fe-1371-4614-bf6c-66aa3f87c232
@@ -184,3 +184,5 @@ Usage: #inline
 * entity[payload][=].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
 * entity[payload][+].role = #source
 * entity[payload][=].what.identifier.value = "urn:uuid:4054ff4d-ee20-488d-951b-04dcfda9f327"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:fcdc0fe5-07b0-444f-a172-1fa44df2e93c"

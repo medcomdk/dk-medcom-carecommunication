@@ -93,7 +93,7 @@ Instance: d2ac69eb-568e-4201-b29d-2af8d3126518
 InstanceOf: MedComMessagingOrganization 
 Title: "Send-F-new"
 Description: "Send-F-new"
-* identifier[SOR-ID].value = "1042981000016003" 
+* identifier[SOR-ID].value = "953751000016007" 
 * identifier[EAN-ID].value = "5790001348120" 
 
 // Reciever instance - new message for attachement
