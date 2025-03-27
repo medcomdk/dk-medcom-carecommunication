@@ -1,4 +1,4 @@
-Instance: R-Tek-P-reply-order-7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
+Instance: R-Tek-Q-reply-order-7c5a0cc0-f0f8-4a2e-9de9-d9293598bf94
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-Q-new-order - New CareCommunication message."
 Description: "receive-Tek-Q-new-order - Example of a CareCommunication new message."
