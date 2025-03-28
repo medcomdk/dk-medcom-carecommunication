@@ -114,6 +114,13 @@
               <reference value="PractitionerRole/9437cbf4-809f-4f65-a0fb-11f19268fc21"/>
             </valueReference>
           </extension>
+		  <extension
+                     url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
+            <valueContactPoint>
+              <system value="phone"/>
+              <value value="66131372"/>
+            </valueContactPoint>
+          </extension>
           <contentString value="Afdeling A har modtaget en henvisning på ovenstående patient.&lt;br/&gt;Røntgen af hofte i to planer.&lt;br/&gt;Blodtryksresultat&lt;br/&gt;Sænkningsresultat&lt;br/&gt;&lt;br/&gt;Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.&lt;br/&gt;&lt;br/&gt;Venlig hilsen&lt;br/&gt;Michael&lt;br/&gt;"/>
         </payload>
         <payload>
@@ -127,6 +134,13 @@
                 <reference value="Organization/fffe78de-0d4c-4073-9d2d-653f9a742142"/>
               </assigner>
             </valueIdentifier>
+          </extension>
+		  <extension
+                     url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
+            <valueContactPoint>
+              <system value="phone"/>
+              <value value="66131372"/>
+            </valueContactPoint>
           </extension>
           <contentAttachment>
             <contentType value="application/pdf"/>
