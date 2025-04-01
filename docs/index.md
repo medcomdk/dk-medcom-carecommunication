@@ -116,7 +116,7 @@ The following document includes preconditions for the conversion, use cases desc
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
 
-Update of mapping table for XDIS91/CareCommunication: Changes of 2025-03-28 are marked with red.
+Update of mapping table for XDIS91/CareCommunication: Changes of 2025-03-28 and 2025-04-01 are marked with red.
 
 [Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication.xlsx) <br>
 [Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
