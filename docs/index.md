@@ -23,7 +23,8 @@ The standard documentation below provides the necessary content to understand th
   * Clinical guidelines for application
   * Use cases
   * Technical Specifications in terms of the relevant IG's and clinical introduction to the content of the IG
-  * Governance for CareCommunication 
+  * Governance for CareCommunication
+  * <a href="https://chat.fhir.org/#narrow/channel/495699-denmark.2Fmedcom.2Fprofile.2FCareCommunication/" target="_blank">Zulip FHIR channel</a>: This space is for developers working with CareCommunication. Use this forum to ask questions, share insights, discuss implementation challenges, and help each other. Both MedCom and other developers can answer questions. Remember to create an account.
 <p>&nbsp;</p>
 
 
