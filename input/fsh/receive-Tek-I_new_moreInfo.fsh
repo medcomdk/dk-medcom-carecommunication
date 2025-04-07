@@ -1,7 +1,7 @@
-Instance: R-Tek-I-new-moreInfo-5d29cc7d-dcf7-4b50-81b1-a8d971973ff6
+Instance: R-Tek-C-5d29cc7d-dcf7-4b50-81b1-a8d971973ff6
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive_Tek-I_new_moreInfo"
-Description: "receive_Tek-I_new_moreInfo"
+Title: "Receive_Tek-C"
+Description: "Receive_Tek-C"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-08T08:00:00+01:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: 53f20992-c926-466a-b5f5-ac6f80fc88d6
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive_Tek-I_new_moreInfo - MessageHeader"
-Description: "receive_Tek-I_new_moreInfo - MessageHeader"
+Title: "Receive_Tek-C - MessageHeader"
+Description: "Receive_Tek-C - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -38,14 +38,14 @@ Usage: #example
 
 Instance: 435427fb-84c4-496e-ba55-4234091e83cc
 InstanceOf: MedComCareCommunication
-Title: "receive_Tek-I_new_moreInfo - Communication"
-Description: "receive_Tek-I_new_moreInfo - Communication"
+Title: "Receive_Tek-C - Communication"
+Description: "Receive_Tek-C - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#training
 * subject = Reference(83949bef-2b75-429c-ada7-ca3998fb046a)
 * identifier.value = "urn:uuid:ea0e95d0-f72c-4e7f-9250-a2037be75545"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Ledende Lægesekretær"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. \nJeg har indsat en masse ekstra information på afsender, modtager og patienten, kan man se det? \nPå forhånd tak. \nHilsen Michael Burns \n Ledende Lægesekretær"
 * payload[0].extension[date].valueDateTime = 2024-11-08T08:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8f4863a0-bb37-41f5-bcd9-944f3b04fe11"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(89a4dee7-145b-4d09-abaf-24529cb12f15)
@@ -55,8 +55,8 @@ Usage: #example
 
 Instance: 83949bef-2b75-429c-ada7-ca3998fb046a
 InstanceOf: MedComCorePatient
-Title: "receive_Tek-I_new_moreInfo - Patient"
-Description: "receive_Tek-I_new_moreInfo - Patient"
+Title: "Receive_Tek-C - Patient"
+Description: "Receive_Tek-C - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -79,8 +79,8 @@ Description: "receive_Tek-I_new_moreInfo - Patient"
 // Sender instance - new message for attachement
 Instance: 89a4dee7-145b-4d09-abaf-24529cb12f15
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-I_new_moreInfo - Sender"
-Description: "receive_Tek-I_new_moreInfo - Sender"
+Title: "Receive_Tek-C - Sender"
+Description: "Receive_Tek-C - Sender"
 * identifier[0].use = #official
 * identifier[=].type.text = "SOR"
 * identifier[=].value = "1053231000016001"
@@ -114,32 +114,47 @@ Description: "receive_Tek-I_new_moreInfo - Sender"
 // Reciever instance - new message for attachement
 Instance: efb6250c-1ba5-4856-b7e7-d9e830d58c09
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-I_new_moreInfo - Receiver"
-Description: "receive_Tek-I_new_moreInfo - Receiver"
+Title: "Receive_Tek-C - Receiver"
+Description: "Receive_Tek-C - Receiver"
+* identifier[0].use = #official
+* identifier[=].type.text = "SOR"
 * identifier[SOR-ID].value = "330461000016004" 
+* identifier[=].system = "urn:oid:1.2.208.176.1.1"
+* identifier[+].use = #official
+* identifier[=].type.text = "EAN"
 * identifier[EAN-ID].value = "5790001353308" 
+* identifier[=].system = "https://www.gs1.org/gln"
 * name = "Sundhedsplejen, Aabenraa kommune"
+* telecom[0].system = #phone
+* telecom[=].value = "01 02 03 04"
+* telecom[=].use = #work
+* telecom[+].system = #fax
+* telecom[=].value = "04 03 02 01"
+* telecom[=].use = #work
+* active = true
+* address.line = "Bjerggade 4 E"
+* address.postalCode = "6200 "
 
 // Practitioners - new message with attachment
 Instance: 940b514b-938d-4186-85f6-96477ec5b5dd
 InstanceOf: MedComCorePractitioner
-Title: "receive_Tek-I_new_moreInfo - practitioner"
-Description: "receive_Tek-I_new_moreInfo - practitioner"
+Title: "Receive_Tek-C - practitioner"
+Description: "Receive_Tek-C - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: e2eb406c-3a28-4509-baba-2d0a0f6db759
 InstanceOf: MedComCorePractitionerRole
-Title: "receive_Tek-I_new_moreInfo - practitionerRole"
-Description: "receive_Tek-I_new_moreInfo - practitionerRole"
+Title: "Receive_Tek-C - practitionerRole"
+Description: "Receive_Tek-C - practitionerRole"
 * practitioner = Reference(940b514b-938d-4186-85f6-96477ec5b5dd)
 * code = $PractitionerRole#ledendelaegesekretaer
 
 // CareCommunication example - new message
 Instance: f30ecf6a-7128-4020-b0d8-e1afa4d30655
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive_Tek-I_new_moreInfo - Provenance"
-Description: "receive_Tek-I_new_moreInfo - Provenance"
+Title: "Receive_Tek-C - Provenance"
+Description: "Receive_Tek-C - Provenance"
 Usage: #example
 * target = Reference(53f20992-c926-466a-b5f5-ac6f80fc88d6)
 * occurredDateTime = 2024-11-08T08:00:00+01:00

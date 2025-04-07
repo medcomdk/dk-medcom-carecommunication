@@ -1,7 +1,7 @@
 Instance: R-Tek-B-82875f08-4b9e-4a23-b81a-e23ec1251334
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive_Tek-D_new_timezone"
-Description: "receive_Tek-D_new_timezone"
+Title: "Receive_Tek-B"
+Description: "Receive_Tek-B"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-02T08:00:00+01:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive_Tek-D_new_timezone - MessageHeader"
-Description: "receive_Tek-D_new_timezone - MessageHeader"
+Title: "Receive_Tek-B - MessageHeader"
+Description: "Receive_Tek-B - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: 45645.hfjksr7.klklj
 InstanceOf: MedComCareCommunication
-Title: "receive_Tek-D_new_timezone - Communication"
-Description: "receive_Tek-D_new_timezone - Communication"
+Title: "Receive_Tek-B - Communication"
+Description: "Receive_Tek-B - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#assistive-devices
@@ -57,8 +57,8 @@ Usage: #example
 
 Instance: fdsgjhfrgeu567485-.fdsf
 InstanceOf: MedComCorePatient
-Title: "receive_Tek-D_new_timezone - Patient"
-Description: "receive_Tek-D_new_timezone - Patient"
+Title: "Receive_Tek-B - Patient"
+Description: "Receive_Tek-B - Patient"
 * identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
 * identifier.value = "1206550VK9"
 * name.use = #official
@@ -70,8 +70,8 @@ Description: "receive_Tek-D_new_timezone - Patient"
 // Sender instance - new message for attachement
 Instance: dfhjkshertu6787bjbsjnmbdf-.hfjdks7.
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-D_new_timezone - Sender"
-Description: "receive_Tek-D_new_timezone - Sender"
+Title: "Receive_Tek-B - Sender"
+Description: "Receive_Tek-B - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
@@ -79,8 +79,8 @@ Description: "receive_Tek-D_new_timezone - Sender"
 // Reciever instance - new message for attachement
 Instance: ghjghgh
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-D_new_timezone - Receiver"
-Description: "receive_Tek-D_new_timezone - Receiver"
+Title: "Receive_Tek-B - Receiver"
+Description: "Receive_Tek-B - Receiver"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -89,23 +89,23 @@ Description: "receive_Tek-D_new_timezone - Receiver"
 // Practitioners - new message with attachment
 Instance: hfkjsu574783yhfjdx67-hjk
 InstanceOf: MedComCorePractitioner
-Title: "receive_Tek-D_new_timezone - practitioner"
-Description: "receive_Tek-D_new_timezone - practitioner"
+Title: "Receive_Tek-B - practitioner"
+Description: "Receive_Tek-B - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: j.k.k.67843274je
 InstanceOf: MedComCorePractitionerRole
-Title: "receive_Tek-D_new_timezone - practitionerRole"
-Description: "receive_Tek-D_new_timezone - practitionerRole"
+Title: "Receive_Tek-B - practitionerRole"
+Description: "Receive_Tek-B - practitionerRole"
 * practitioner = Reference(hfkjsu574783yhfjdx67-hjk)
 * code = $PractitionerRole#sygeplejerske
 
 // CareCommunication example - new message
 Instance: hfdjks887.8.89frkdshjf778
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive_Tek-D_new_timezone - Provenance"
-Description: "receive_Tek-D_new_timezone - Provenance"
+Title: "Receive_Tek-B - Provenance"
+Description: "Receive_Tek-B - Provenance"
 Usage: #example
 * target = Reference(ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f)
 * occurredDateTime = 2024-11-02T08:00:00+01:00
