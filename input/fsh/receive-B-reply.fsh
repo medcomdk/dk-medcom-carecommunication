@@ -129,6 +129,8 @@ Description: "receive_B-reply"
 * category = $CategoryCodes#examination-results
 * topic.text = "Forespørgsel på seneste resultater"
 * subject = Reference(7b4803a9-a048-4551-9f61-c3143dba3786)
+* recipient = Reference(fd823675-9a45-4cf6-9348-5b9806e8385f) //Specifik modtager indsat 2025-04-07
+* extension[sender].valueReference = Reference(3d079530-8c63-4c5c-a6f9-825279aef4d2) //Specifik sender indsat 2025-04-07
 * payload[2].contentAttachment.contentType = $bcp13#application/pdf
 * payload[2].contentAttachment.title = "Blodprøveresultater" 
 * payload[2].extension[date].valueDateTime = 2024-08-12T11:30:00+02:00

@@ -1,28 +1,28 @@
-Instance: R-Tek-D-new-timezone-82875f08-4b9e-4a23-b81a-e23ec1251334
+Instance: R-Tek-B-82875f08-4b9e-4a23-b81a-e23ec1251334
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive_Tek-D_new_timezone"
 Description: "receive_Tek-D_new_timezone"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-02T08:00:00+01:00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/56d771fd-f8d2-4c46-a56e-af4a46565b5e"
-* entry[=].resource = 56d771fd-f8d2-4c46-a56e-af4a46565b5e
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/000e3045-8f08-4f17-9ee8-bcf98d564135"
-* entry[=].resource = 000e3045-8f08-4f17-9ee8-bcf98d564135
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/82c19fa7-e1ca-4c30-933e-169f74a09b00"
-* entry[=].resource = 82c19fa7-e1ca-4c30-933e-169f74a09b00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/d355f156-a291-4a5f-b5a0-044f9ff1d283"
-* entry[=].resource = d355f156-a291-4a5f-b5a0-044f9ff1d283
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/43b59123-9588-4091-ac7c-ef45c90083b5"
-* entry[=].resource = 43b59123-9588-4091-ac7c-ef45c90083b5
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"
-* entry[=].resource = b93b1d79-4cd4-4737-98d0-4748a0378b09
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/3d06d6a9-2845-450f-837f-effa4732264d"
-* entry[=].resource = 3d06d6a9-2845-450f-837f-effa4732264d
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/b1bfb2f7-200b-41e6-b4a0-35bafd1d4770"
-* entry[=].resource = b1bfb2f7-200b-41e6-b4a0-35bafd1d4770
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f"
+* entry[=].resource = ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/fdsgjhfrgeu567485-.fdsf"
+* entry[=].resource = fdsgjhfrgeu567485-.fdsf
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/45645.hfjksr7.klklj"
+* entry[=].resource = 45645.hfjksr7.klklj
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/j.k.k.67843274je"
+* entry[=].resource = j.k.k.67843274je
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/hfkjsu574783yhfjdx67-hjk"
+* entry[=].resource = hfkjsu574783yhfjdx67-hjk
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/dfhjkshertu6787bjbsjnmbdf-.hfjdks7."
+* entry[=].resource = dfhjkshertu6787bjbsjnmbdf-.hfjdks7.
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/ghjghgh"
+* entry[=].resource = ghjghgh
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/hfdjks887.8.89frkdshjf778"
+* entry[=].resource = hfdjks887.8.89frkdshjf778
 
-Instance: 56d771fd-f8d2-4c46-a56e-af4a46565b5e
+Instance: ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "receive_Tek-D_new_timezone - MessageHeader"
 Description: "receive_Tek-D_new_timezone - MessageHeader"
@@ -30,50 +30,45 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=441211000016000"
-* destination[primary].receiver = Reference(b93b1d79-4cd4-4737-98d0-4748a0378b09)
-* sender = Reference(3d06d6a9-2845-450f-837f-effa4732264d)
+* destination[primary].receiver = Reference(dfhjkshertu6787bjbsjnmbdf-.hfjdks7.)
+* sender = Reference(ghjghgh)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
-* focus = Reference(82c19fa7-e1ca-4c30-933e-169f74a09b00)
+* focus = Reference(45645.hfjksr7.klklj)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
-Instance: 82c19fa7-e1ca-4c30-933e-169f74a09b00
+Instance: 45645.hfjksr7.klklj
 InstanceOf: MedComCareCommunication
 Title: "receive_Tek-D_new_timezone - Communication"
 Description: "receive_Tek-D_new_timezone - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#assistive-devices
-* subject = Reference(000e3045-8f08-4f17-9ee8-bcf98d564135)
+* subject = Reference(fdsgjhfrgeu567485-.fdsf)
 * identifier.value = "urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6"
 * payload[0].contentString = "Til rette vedkommende. Har I mon vist det rigtige tidspunkt? Hilsen Michael Burns \n Sygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-11-02T08:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:729e63f5-a691-441e-84fe-953594b801b2"
-* payload[0].extension[identifier].valueIdentifier.assigner = Reference(b93b1d79-4cd4-4737-98d0-4748a0378b09)
-* payload[0].extension[author].valueReference = Reference(d355f156-a291-4a5f-b5a0-044f9ff1d283)
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(dfhjkshertu6787bjbsjnmbdf-.hfjdks7.)
+* payload[0].extension[author].valueReference = Reference(j.k.k.67843274je)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "+4512345789"
 
 
-Instance: 000e3045-8f08-4f17-9ee8-bcf98d564135
+Instance: fdsgjhfrgeu567485-.fdsf
 InstanceOf: MedComCorePatient
 Title: "receive_Tek-D_new_timezone - Patient"
 Description: "receive_Tek-D_new_timezone - Patient"
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].given[0] = "Bruno"
-* name[official].given[1] = "Test"
-* name[official].family = "Elmer"
-* address.line = "Testpark Allé 48"
-* address.city = "Hillerød"
-* address.postalCode = "3400"
-* telecom.system = #phone
-* telecom.value = "47899878"
-* telecom.use = #mobile
+* identifier.system = #urn:oid:1.2.208.176.1.6.1.3.177
+* identifier.value = "1206550VK9"
+* name.use = #official
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* name.family.extension.valueCode = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
+* name.given = "Peter"
+* gender = #male
 
 // Sender instance - new message for attachement
-Instance: b93b1d79-4cd4-4737-98d0-4748a0378b09
+Instance: dfhjkshertu6787bjbsjnmbdf-.hfjdks7.
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-D_new_timezone - Sender"
 Description: "receive_Tek-D_new_timezone - Sender"
@@ -82,7 +77,7 @@ Description: "receive_Tek-D_new_timezone - Sender"
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
 
 // Reciever instance - new message for attachement
-Instance: 3d06d6a9-2845-450f-837f-effa4732264d
+Instance: ghjghgh
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-D_new_timezone - Receiver"
 Description: "receive_Tek-D_new_timezone - Receiver"
@@ -92,30 +87,30 @@ Description: "receive_Tek-D_new_timezone - Receiver"
 
 
 // Practitioners - new message with attachment
-Instance: 43b59123-9588-4091-ac7c-ef45c90083b5
+Instance: hfkjsu574783yhfjdx67-hjk
 InstanceOf: MedComCorePractitioner
 Title: "receive_Tek-D_new_timezone - practitioner"
 Description: "receive_Tek-D_new_timezone - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
-Instance: d355f156-a291-4a5f-b5a0-044f9ff1d283
+Instance: j.k.k.67843274je
 InstanceOf: MedComCorePractitionerRole
 Title: "receive_Tek-D_new_timezone - practitionerRole"
 Description: "receive_Tek-D_new_timezone - practitionerRole"
-* practitioner = Reference(43b59123-9588-4091-ac7c-ef45c90083b5)
+* practitioner = Reference(hfkjsu574783yhfjdx67-hjk)
 * code = $PractitionerRole#sygeplejerske
 
 // CareCommunication example - new message
-Instance: b1bfb2f7-200b-41e6-b4a0-35bafd1d4770
+Instance: hfdjks887.8.89frkdshjf778
 InstanceOf: MedComCareCommunicationProvenance
 Title: "receive_Tek-D_new_timezone - Provenance"
 Description: "receive_Tek-D_new_timezone - Provenance"
 Usage: #example
-* target = Reference(56d771fd-f8d2-4c46-a56e-af4a46565b5e)
+* target = Reference(ejklfdsio8klakfd.hjfkdshfjk-hfjkdshfj89432n7f)
 * occurredDateTime = 2024-11-02T08:00:00+01:00
 * recorded = 2024-11-02T08:00:00+01:00
 * activity.coding = $ActivityCode#new-message
-* agent.who = Reference(b93b1d79-4cd4-4737-98d0-4748a0378b09)
+* agent.who = Reference(dfhjkshertu6787bjbsjnmbdf-.hfjdks7.)
 * entity[payload].role = #source
 * entity[payload].what.identifier.value = "urn:uuid:729e63f5-a691-441e-84fe-953594b801b2"
