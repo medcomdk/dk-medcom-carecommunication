@@ -116,9 +116,24 @@ Instance: efb6250c-1ba5-4856-b7e7-d9e830d58c09
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive_Tek-I_new_moreInfo - Receiver"
 Description: "receive_Tek-I_new_moreInfo - Receiver"
+* identifier[0].use = #official
+* identifier[=].type.text = "SOR"
 * identifier[SOR-ID].value = "330461000016004" 
+* identifier[=].system = "urn:oid:1.2.208.176.1.1"
+* identifier[+].use = #official
+* identifier[=].type.text = "EAN"
 * identifier[EAN-ID].value = "5790001353308" 
+* identifier[=].system = "https://www.gs1.org/gln"
 * name = "Sundhedsplejen, Aabenraa kommune"
+* telecom[0].system = #phone
+* telecom[=].value = "01 02 03 04"
+* telecom[=].use = #work
+* telecom[+].system = #fax
+* telecom[=].value = "04 03 02 01"
+* telecom[=].use = #work
+* active = true
+* address.line = "Bjerggade 4 E"
+* address.postalCode = "6200"
 
 // Practitioners - new message with attachment
 Instance: 940b514b-938d-4186-85f6-96477ec5b5dd

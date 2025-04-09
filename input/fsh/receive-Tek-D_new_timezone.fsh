@@ -9,8 +9,8 @@ Usage: #example
 * entry[=].resource = 56d771fd-f8d2-4c46-a56e-af4a46565b5e
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/000e3045-8f08-4f17-9ee8-bcf98d564135"
 * entry[=].resource = 000e3045-8f08-4f17-9ee8-bcf98d564135
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/cae36d9a-df51-49d9-8851-6ff96f6f0af4"
-* entry[=].resource = cae36d9a-df51-49d9-8851-6ff96f6f0af4
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/4f92e47c-6440-4905-bb49-74eda6816698"
+* entry[=].resource = 4f92e47c-6440-4905-bb49-74eda6816698
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/d355f156-a291-4a5f-b5a0-044f9ff1d283"
 * entry[=].resource = d355f156-a291-4a5f-b5a0-044f9ff1d283
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/43b59123-9588-4091-ac7c-ef45c90083b5"
@@ -33,11 +33,11 @@ Usage: #example
 * destination[primary].receiver = Reference(b93b1d79-4cd4-4737-98d0-4748a0378b09)
 * sender = Reference(3d06d6a9-2845-450f-837f-effa4732264d)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=330461000016004"
-* focus = Reference(cae36d9a-df51-49d9-8851-6ff96f6f0af4)
+* focus = Reference(4f92e47c-6440-4905-bb49-74eda6816698)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
 
-Instance: cae36d9a-df51-49d9-8851-6ff96f6f0af4
+Instance: 4f92e47c-6440-4905-bb49-74eda6816698
 InstanceOf: MedComCareCommunication
 Title: "receive_Tek-D_new_timezone - Communication"
 Description: "receive_Tek-D_new_timezone - Communication"
