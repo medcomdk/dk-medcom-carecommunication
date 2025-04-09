@@ -1,7 +1,7 @@
-Instance: -R-Tek-O-new-20fcbedb-ced8-4949-9edf-a145e0bb9b09
+Instance: R-Tek-G-20fcbedb-ced8-4949-9edf-a145e0bb9b09
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-Tek-O-new"
-Description: "receive-Tek-O-new"
+Title: "receive-Tek-G"
+Description: "receive-Tek-G"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-23T16:00:00+02:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: f7f519bd-a104-43fb-ab8a-058eeaec68c7
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive-Tek-O-new - MessageHeader"
-Description: "receive-Tek-O-new - MessageHeader"
+Title: "receive-Tek-G - MessageHeader"
+Description: "receive-Tek-G - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: 930876e5-8cf8-40f0-bd6c-3e38520d61de
 InstanceOf: MedComCareCommunication
-Title: "receive-Tek-O-new - Communication"
-Description: "receive-Tek-O-new - Communication"
+Title: "receive-Tek-G - Communication"
+Description: "receive-Tek-G - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#decease
@@ -58,8 +58,8 @@ Usage: #example
 
 Instance: e85e8d47-46a9-4b6a-b86d-9dcf96d24543
 InstanceOf: MedComCorePatient
-Title: "receive-Tek-O-new - Patient"
-Description: "receive-Tek-O-new - Patient"
+Title: "receive-Tek-G - Patient"
+Description: "receive-Tek-G - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -69,8 +69,8 @@ Description: "receive-Tek-O-new - Patient"
 // Sender instance - new message for attachement
 Instance: aea5f134-5cc9-44b1-b5db-7155e45717ee
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-O-new - Sender"
-Description: "receive-Tek-O-new - Sender"
+Title: "receive-Tek-G - Sender"
+Description: "receive-Tek-G - Sender"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -78,8 +78,8 @@ Description: "receive-Tek-O-new - Sender"
 // Reciever instance - new message for attachement
 Instance: d8ca8b48-565a-46c8-a1c8-e781c498626a
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-O-new - Receiver"
-Description: "receive-Tek-O-new - Receiver"
+Title: "receive-Tek-G - Receiver"
+Description: "receive-Tek-G - Receiver"
 * identifier[SOR-ID].value = "1017421000016003" 
 * identifier[EAN-ID].value = "5790002408496" 
 * name = "2100 Lægehuset Østerbro"
@@ -88,23 +88,23 @@ Description: "receive-Tek-O-new - Receiver"
 // Practitioners - new message with attachment
 Instance: 5edc1273-b409-4fcc-a39c-15d8beb3ae71
 InstanceOf: MedComCorePractitioner
-Title: "receive-Tek-O-new - practitioner"
-Description: "receive-Tek-O-new - practitioner"
+Title: "receive-Tek-G - practitioner"
+Description: "receive-Tek-G - practitioner"
 * name.given = "Kim"
 * name.family = "Jensen"
 
 Instance: 8a11159b-2b92-4232-9990-09bbae6ec6cb
 InstanceOf: MedComCorePractitionerRole
-Title: "receive-Tek-O-new - practitionerRole"
-Description: "receive-Tek-O-new - practitionerRole"
+Title: "receive-Tek-G - practitionerRole"
+Description: "receive-Tek-G - practitionerRole"
 * practitioner = Reference(5edc1273-b409-4fcc-a39c-15d8beb3ae71)
 * code = $PractitionerRole#overlaege
 
 // CareCommunication example - new message
 Instance: 520281e1-e735-4e5c-8980-fb8a36e820cb
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive-Tek-O-new - Provenance"
-Description: "receive-Tek-O-new - Provenance"
+Title: "receive-Tek-G - Provenance"
+Description: "receive-Tek-G - Provenance"
 Usage: #example
 * target = Reference(f7f519bd-a104-43fb-ab8a-058eeaec68c7)
 * occurredDateTime = 2024-08-23T16:00:00+02:00

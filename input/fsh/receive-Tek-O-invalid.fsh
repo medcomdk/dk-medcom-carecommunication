@@ -1,8 +1,8 @@
 // OBS!! * payload.contentString = "To be removed"
-Instance: -R-Tek-Y-new-invalid-3d1149cd-d3e3-421a-ae31-4860decb4272
+Instance: R-Tek-O-invalid-3d1149cd-d3e3-421a-ae31-4860decb4272
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-Tek-Y-new-invalid"
-Description: "receive-Tek-Y-new-invalid"
+Title: "receive-Tek-O-invalid"
+Description: "receive-Tek-O-invalid"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-11-10T15:20:00+01:00
@@ -25,8 +25,8 @@ Usage: #example
 
 Instance: 5c2cdf2c-bcbd-4c15-adce-6b862a84249c
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive-Tek-Y-new-invalid - MessageHeader"
-Description: "receive-Tek-Y-new-invalid - MessageHeader"
+Title: "receive-Tek-O-invalid - MessageHeader"
+Description: "receive-Tek-O-invalid - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -40,8 +40,8 @@ Usage: #example
 
 Instance: 4a003dce-060c-4d9d-b5d6-7513323049d1
 InstanceOf: MedComCareCommunication
-Title: "receive-Tek-Y-new-invalid - Communication"
-Description: "receive-Tek-Y-new-invalid - Communication"
+Title: "receive-Tek-O-invalid - Communication"
+Description: "receive-Tek-O-invalid - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#examination-results
@@ -58,8 +58,8 @@ Usage: #example
 
 Instance: 64610edb-bb86-4248-87ae-28c1385c3c23
 InstanceOf: MedComCorePatient
-Title: "receive-Tek-Y-new-invalid - Patient"
-Description: "receive-Tek-Y-new-invalid - Patient"
+Title: "receive-Tek-O-invalid - Patient"
+Description: "receive-Tek-O-invalid - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -70,8 +70,8 @@ Description: "receive-Tek-Y-new-invalid - Patient"
 // Sender instance - new message for attachement
 Instance: 409b87d3-398e-44cb-9246-35b47ff75cc4
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-Y-new-invalid - Sender"
-Description: "receive-Tek-Y-new-invalid - Sender"
+Title: "receive-Tek-O-invalid - Sender"
+Description: "receive-Tek-O-invalid - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
@@ -79,8 +79,8 @@ Description: "receive-Tek-Y-new-invalid - Sender"
 // Reciever instance - new message for attachement
 Instance: 6e7761cb-2dc9-48c7-8fd4-b49d46dd9c05
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-Y-new-invalid - Receiver"
-Description: "receive-Tek-Y-new-invalid - Receiver"
+Title: "receive-Tek-O-invalid - Receiver"
+Description: "receive-Tek-O-invalid - Receiver"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -89,23 +89,23 @@ Description: "receive-Tek-Y-new-invalid - Receiver"
 // Practitioners - new message with attachment
 Instance: 1d301fb6-9d72-4f72-9182-1f60656df133
 InstanceOf: MedComCorePractitioner
-Title: "receive-Tek-Y-new-invalid - practitioner"
-Description: "receive-Tek-Y-new-invalid - practitioner"
+Title: "receive-Tek-O-invalid - practitioner"
+Description: "receive-Tek-O-invalid - practitioner"
 * name.given = "Henrik"
 * name.family = "Elderly"
 
 Instance: bb760c55-95b0-4f74-9b16-794e7780d5f2
 InstanceOf: MedComCorePractitionerRole
-Title: "receive-Tek-Y-new-invalid - practitionerRole"
-Description: "receive-Tek-Y-new-invalid - practitionerRole"
+Title: "receive-Tek-O-invalid - practitionerRole"
+Description: "receive-Tek-O-invalid - practitionerRole"
 * practitioner = Reference(1d301fb6-9d72-4f72-9182-1f60656df133)
 * code = $PractitionerRole#sygehuslaege
 
 // CareCommunication example - new message
 Instance: 69620f44-c01b-4c8f-9bfe-97b00639a770
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive-Tek-Y-new-invalid - Provenance"
-Description: "receive-Tek-Y-new-invalid - Provenance"
+Title: "receive-Tek-O-invalid - Provenance"
+Description: "receive-Tek-O-invalid - Provenance"
 Usage: #example
 * target = Reference(5c2cdf2c-bcbd-4c15-adce-6b862a84249c)
 * occurredDateTime = 2024-11-10T15:20:00+01:00

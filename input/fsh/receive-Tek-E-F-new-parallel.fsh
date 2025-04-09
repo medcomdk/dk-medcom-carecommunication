@@ -1,7 +1,7 @@
-Instance: R-Tek-M-new-parallel-c1edf6f3-2554-4b72-b58b-0f030ee555ba
+Instance: R-Tek-E-new-parallel-c1edf6f3-2554-4b72-b58b-0f030ee555ba
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-Tek-M-new-parallel - New CareCommunication message."
-Description: "receive-Tek-M-new-parallel - Example of a CareCommunication new message."
+Title: "Receive_Tek-E-new-parallel - New CareCommunication message."
+Description: "Receive_Tek-E-new-parallel - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-21T12:00:00+02:00
@@ -24,16 +24,16 @@ Usage: #example
 
 Instance: e6dd7d8c-5744-440a-8347-d932a8f65a6b
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-M-new-parallel - Example of a sender organization with a SOR and an EAN identifier."
-Description: "receive-Tek-M-new-parallel - Example of an organization with a SOR and an EAN identifier."
+Title: "Receive_Tek-E-new-parallel - Example of a sender organization with a SOR and an EAN identifier."
+Description: "Receive_Tek-E-new-parallel - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 
 Instance: b349d429-8041-485c-b0ba-e08b2ed8bfd7
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive-Tek-M-new-parallel - Example of a reciever organization with a SOR and an EAN identifier."
-Description: "receive-Tek-M-new-parallel - Example of an organization with a SOR and an EAN identifier."
+Title: "Receive_Tek-E-new-parallel - Example of a reciever organization with a SOR and an EAN identifier."
+Description: "Receive_Tek-E-new-parallel - Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "953741000016009" 
 * identifier[EAN-ID].value = "5790001348120" 
 * name = "Plejecenter Herlev"
@@ -55,8 +55,8 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 
 Instance: d4344858-bd8f-42fb-9f84-50b2b66a5ed1
 InstanceOf: MedComCorePatient
-Title: "receive-Tek-M-new-parallel - Bruno Test Elmer"
-Description: "receive-Tek-M-new-parallel - Patient described with minimal information. Valid only if used in a Bundle."
+Title: "Receive_Tek-E-new-parallel - Bruno Test Elmer"
+Description: "Receive_Tek-E-new-parallel - Patient described with minimal information. Valid only if used in a Bundle."
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -66,8 +66,8 @@ Description: "receive-Tek-M-new-parallel - Patient described with minimal inform
 // CareCommunication new example
 Instance: 9db30fd5-f443-4c7f-8e1a-e8da7e758f0a
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive-Tek-M-new-parallel - Instance of a MessageHeader resource used in a new message."
-Description: "receive-Tek-M-new-parallel - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Title: "Receive_Tek-E-new-parallel - Instance of a MessageHeader resource used in a new message."
+Description: "Receive_Tek-E-new-parallel - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -82,8 +82,8 @@ Usage: #example
 // CareCommunication new example
 Instance: 726561c2-b521-4c0e-bff7-d9cbe9153a4c
 InstanceOf: MedComCareCommunication
-Title: "receive-Tek-M-new-parallel - Instance of Communication resource used in a new message."
-Description: "receive-Tek-M-new-parallel - Content of care communication message. Valid only if used in a bundle (message) - new message"
+Title: "Receive_Tek-E-new-parallel - Instance of Communication resource used in a new message."
+Description: "Receive_Tek-E-new-parallel - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:1b1cf143-519a-44f9-b471-05f34fce0670"
 * category = $CategoryCodes#nursing
@@ -100,8 +100,8 @@ Description: "receive-Tek-M-new-parallel - Content of care communication message
 // CareCommunication example - new message
 Instance: 2240d2e5-99a9-494a-b166-a8f0f687c114
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive-Tek-M-new-parallel - The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "receive-Tek-M-new-parallel - The Provenance instance is only valid if used in a bundle (message) - new message"
+Title: "Receive_Tek-E-new-parallel - The Provenance instance is only valid if used in a bundle (message) - new message"
+Description: "Receive_Tek-E-new-parallel - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
 * target = Reference(9db30fd5-f443-4c7f-8e1a-e8da7e758f0a)
 * occurredDateTime = 2024-08-21T12:00:00+02:00
@@ -112,10 +112,10 @@ Usage: #inline
 * entity[payload].what.identifier.value = "urn:uuid:71a92aba-ee31-4ccf-86ed-3d6b823f4c67"
 
 
-Instance: R-Tek-N-new-parallel-0e2864ad-a6a1-4e84-a9dc-aeacee63f981
+Instance: R-Tek-F-new-parallel-0e2864ad-a6a1-4e84-a9dc-aeacee63f981
 InstanceOf: MedComCareCommunicationMessage
-Title: "Receive-Tek-N-reply-parallel - Reply CareCommunication message"
-Description: "Receive-Tek-N-reply-parallel - Example of a reply to a CareCommunication message."
+Title: "Receive_Tek-F-reply-parallel - Reply CareCommunication message"
+Description: "Receive_Tek-F-reply-parallel - Example of a reply to a CareCommunication message."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-22T11:30:00+02:00
@@ -147,8 +147,8 @@ Usage: #example
 // CareCommunication reply example
 Instance: cecb42e9-4909-4287-a66e-992f6bd1b17f
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Receive-Tek-N-reply-parallel - Instance of a MessageHeader resource used in a reply message."
-Description: "Receive-Tek-N-reply-parallel - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
+Title: "Receive_Tek-F-reply-parallel - Instance of a MessageHeader resource used in a reply message."
+Description: "Receive_Tek-F-reply-parallel - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -162,8 +162,8 @@ Usage: #example
 
 Instance: 9b7e7188-1aea-4b5b-bab2-ef6d134a6c31
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Receive-Tek-N-reply-parallel - The Provenance instance for a reply to a new message"
-Description: "Receive-Tek-N-reply-parallel - The Provenance instance is only valid if used in a bundle (message)"
+Title: "Receive_Tek-F-reply-parallel - The Provenance instance for a reply to a new message"
+Description: "Receive_Tek-F-reply-parallel - The Provenance instance is only valid if used in a bundle (message)"
 Usage: #inline
 * target = Reference(cecb42e9-4909-4287-a66e-992f6bd1b17f)
 * occurredDateTime = 2024-08-22T11:30:00+02:00
@@ -181,8 +181,8 @@ Usage: #inline
 // CareCommunication reply example
 Instance: 8ac16b4c-4d32-424d-bf0b-1e2eed87eef1
 InstanceOf: MedComCareCommunication
-Title: "Receive-Tek-N-reply-parallel - Instance of Communication resource used in a reply message."
-Description: "Receive-Tek-N-reply-parallel - Content of care communication message. Valid only if used in a bundle (message) - reply message"
+Title: "Receive_Tek-F-reply-parallel - Instance of Communication resource used in a reply message."
+Description: "Receive_Tek-F-reply-parallel - Content of care communication message. Valid only if used in a bundle (message) - reply message"
 * status = $EventStatus#unknown
 * identifier.value = "urn:uuid:1b1cf143-519a-44f9-b471-05f34fce0670"
 * category = $CategoryCodes#examination-results

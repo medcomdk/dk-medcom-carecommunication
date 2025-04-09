@@ -1,7 +1,7 @@
-Instance: R-Tek-U-new-dublicate-fa97e431-332f-4605-ad37-c259dc2b8637
+Instance: R-Tek-L-dublicate-fa97e431-332f-4605-ad37-c259dc2b8637
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive_Tek-U-new-dublicate"
-Description: "receive_Tek-U-new-dublicate"
+Title: "receive_Tek-L-dublicate"
+Description: "receive_Tek-L-dublicate"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-28T15:20:00+02:00
@@ -24,8 +24,8 @@ Usage: #example
 
 Instance: 559e4be0-e1f2-4371-969d-29bbbd5ca9d1
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "receive_Tek-U-new-dublicate - MessageHeader"
-Description: "receive_Tek-U-new-dublicate - MessageHeader"
+Title: "receive_Tek-L-dublicate - MessageHeader"
+Description: "receive_Tek-L-dublicate - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -39,8 +39,8 @@ Usage: #example
 
 Instance: e49ad4b0-537a-442c-b624-e0ae956410da
 InstanceOf: MedComCareCommunication
-Title: "receive_Tek-U-new-dublicate - Communication"
-Description: "receive_Tek-U-new-dublicate - Communication"
+Title: "receive_Tek-L-dublicate - Communication"
+Description: "receive_Tek-L-dublicate - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#telemedicine
@@ -57,8 +57,8 @@ Usage: #example
 
 Instance: 283b6471-3134-4b7e-9d48-b6fad32e6384
 InstanceOf: MedComCorePatient
-Title: "receive_Tek-U-new-dublicate - Patient"
-Description: "receive_Tek-U-new-dublicate - Patient"
+Title: "receive_Tek-L-dublicate - Patient"
+Description: "receive_Tek-L-dublicate - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -75,8 +75,8 @@ Description: "receive_Tek-U-new-dublicate - Patient"
 // Sender instance - new message for attachement
 Instance: 2052a3bd-c32d-4e81-b5ec-83f9ad012899
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-U-new-dublicate - Sender"
-Description: "receive_Tek-U-new-dublicate - Sender"
+Title: "receive_Tek-L-dublicate - Sender"
+Description: "receive_Tek-L-dublicate - Sender"
 * identifier[SOR-ID].value = "441211000016000" 
 * identifier[EAN-ID].value = "5790001987244" 
 * name = "Klinik for Ældresygdomme, AUH, Skejby"
@@ -84,8 +84,8 @@ Description: "receive_Tek-U-new-dublicate - Sender"
 // Reciever instance - new message for attachement
 Instance: 996df80d-e9d3-4885-aad1-8609ad459a16
 InstanceOf: MedComMessagingOrganization // 
-Title: "receive_Tek-U-new-dublicate - Receiver"
-Description: "receive_Tek-U-new-dublicate - Receiver"
+Title: "receive_Tek-L-dublicate - Receiver"
+Description: "receive_Tek-L-dublicate - Receiver"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -94,23 +94,23 @@ Description: "receive_Tek-U-new-dublicate - Receiver"
 // Practitioners - new message with attachment
 Instance: dd46a69e-b2e5-4e0d-9cc4-95259c9722e2
 InstanceOf: MedComCorePractitioner
-Title: "receive_Tek-U-new-dublicate - practitioner"
-Description: "receive_Tek-U-new-dublicate - practitioner"
+Title: "receive_Tek-L-dublicate - practitioner"
+Description: "receive_Tek-L-dublicate - practitioner"
 * name.given = "Michael"
 * name.family = "Burns"
 
 Instance: 67612d44-215b-4441-a35b-b6ab3ab9c9ce
 InstanceOf: MedComCorePractitionerRole
-Title: "receive_Tek-U-new-dublicate - practitionerRole"
-Description: "receive_Tek-U-new-dublicate - practitionerRole"
+Title: "receive_Tek-L-dublicate - practitionerRole"
+Description: "receive_Tek-L-dublicate - practitionerRole"
 * practitioner = Reference(dd46a69e-b2e5-4e0d-9cc4-95259c9722e2)
 * code = $PractitionerRole#diaetistassistent
 
 // CareCommunication example - new message
 Instance: 1cff1fd0-44a1-4246-a96c-41db3bb25bbe
 InstanceOf: MedComCareCommunicationProvenance
-Title: "receive_Tek-U-new-dublicate - Provenance"
-Description: "receive_Tek-U-new-dublicate - Provenance"
+Title: "receive_Tek-L-dublicate - Provenance"
+Description: "receive_Tek-L-dublicate - Provenance"
 Usage: #example
 * target = Reference(559e4be0-e1f2-4371-969d-29bbbd5ca9d1)
 * occurredDateTime = 2024-08-28T15:20:00+02:00

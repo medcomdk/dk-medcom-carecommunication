@@ -1,4 +1,4 @@
-// TEK-U skal være en dublet af T med forskelig bundle ID: Derfor skal TEK-T kopiers til U of indsætte nyt bundle-ID. 
+// TEK-L skal være en dublet af K med forskelig bundle ID: Derfor skal TEK-K kopiers til L of indsætte nyt bundle-ID. 
 /*Instance: 5de12884-eae7-4fd3-ba4a-d8b56be4baff
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-T-new-dublicate"
@@ -24,10 +24,10 @@ Usage: #example
 * entry[=].resource = ddc0fc7b-0ad1-43e1-b9c4-b1a3d9ef1c50
 
 Instance: fa97e431-332f-4605-ad37-c259dc2b8637 */
-Instance: R-Tek-T-new-dublicate-5de12884-eae7-4fd3-ba4a-d8b56be4baff
+Instance: R-Tek-K-dublicate-5de12884-eae7-4fd3-ba4a-d8b56be4baff
 InstanceOf: MedComCareCommunicationMessage
-Title: "receive-Tek-T-new-dublicate"
-Description: "receive-Tek-T-new-dublicate"
+Title: "receive-Tek-K-dublicate"
+Description: "receive-Tek-K-dublicate"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-08-28T15:20:00+02:00
