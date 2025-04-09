@@ -1,7 +1,7 @@
-Instance: S-K-forward-77c771ca-05d6-4efb-9a74-2fc513787f3a
+Instance: S-E-forward-77c771ca-05d6-4efb-9a74-2fc513787f3a
 InstanceOf: MedComCareCommunicationMessage
-Title: "Send-K-forward"
-Description: "Send-K-forward"
+Title: "Send-E-forward"
+Description: "Send-E-forward"
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2024-09-14T13:00:00+02:00
@@ -32,8 +32,8 @@ Usage: #example
 
 Instance: 3dbffafe-ce3c-45b0-bca7-2c008c478e79
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Send-K-forward - MessageHeader"
-Description: "Send-K-forward - MessageHeader"
+Title: "Send-E-forward - MessageHeader"
+Description: "Send-E-forward - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
@@ -47,8 +47,8 @@ Usage: #example
 
 Instance: e7e596e0-6458-4701-a20f-a9322f85ebe8
 InstanceOf: MedComCareCommunication
-Title: "Send-K-forward - Communication"
-Description: "Send-K-forward - Communication"
+Title: "Send-E-forward - Communication"
+Description: "Send-E-forward - Communication"
 Usage: #example
 * status = $EventStatus#unknown
 * category = $CategoryCodes#decease
@@ -72,8 +72,8 @@ Usage: #example
 
 Instance: db2fd52e-9a7a-418f-90d1-b422e07c895d
 InstanceOf: MedComCorePatient
-Title: "Send-K-forward - Patient"
-Description: "Send-K-forward - Patient"
+Title: "Send-E-forward - Patient"
+Description: "Send-E-forward - Patient"
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989"
 * name[official].use = #official
@@ -83,8 +83,8 @@ Description: "Send-K-forward - Patient"
 // Sender instance - new message for attachement
 Instance: 7260b118-d744-4396-bbf2-80245933b1dd
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-K-forward - Sender"
-Description: "Send-K-forward - Sender"
+Title: "Send-E-forward - Sender"
+Description: "Send-E-forward - Sender"
 * identifier[SOR-ID].value = "330461000016004" 
 * identifier[EAN-ID].value = "5790001353308" 
 * name = "Sundhedsplejen, Aabenraa kommune"
@@ -99,8 +99,8 @@ Description: "Send-F-new"
 // Reciever instance - new message for attachement
 Instance: 6ea7c7cb-824b-4619-a13e-bc8828afd7e1
 InstanceOf: MedComMessagingOrganization // 
-Title: "Send-K-forward - Receiver"
-Description: "Send-K-forward - Receiver"
+Title: "Send-E-forward - Receiver"
+Description: "Send-E-forward - Receiver"
 * identifier[SOR-ID].value = "1017421000016003" 
 * identifier[EAN-ID].value = "5790002408496" 
 * name = "2100 Lægehuset Østerbro"
@@ -108,15 +108,15 @@ Description: "Send-K-forward - Receiver"
 // Practitioners - new message with attachment
 Instance: 9ec69637-d91e-491d-a5b2-ec1661b98bc5
 InstanceOf: MedComCorePractitioner
-Title: "Send-K-forward - practitioner"
-Description: "Send-K-forward - practitioner"
+Title: "Send-E-forward - practitioner"
+Description: "Send-E-forward - practitioner"
 * name.given = "Kim"
 * name.family = "Jensen"
 
 Instance: 1840f077-7ca1-4141-a46b-1bce43065c76
 InstanceOf: MedComCorePractitionerRole
-Title: "Send-K-forward - practitionerRole"
-Description: "Send-K-forward - practitionerRole"
+Title: "Send-E-forward - practitionerRole"
+Description: "Send-E-forward - practitionerRole"
 * practitioner = Reference(9ec69637-d91e-491d-a5b2-ec1661b98bc5)
 * code = $PractitionerRole#sygeplejerske
 
@@ -124,23 +124,23 @@ Description: "Send-K-forward - practitionerRole"
 // Practitioners - reply message with attachment
 Instance: a7e25289-11d8-4125-a08a-9c1d85cbd950
 InstanceOf: MedComCorePractitioner
-Title: "Send-K-forward - practitioner"
-Description: "Send-K-forward - practitioner"
+Title: "Send-E-forward - practitioner"
+Description: "Send-E-forward - practitioner"
 * name.given = "Nancy"
 * name.family = "Nielsen"
 
 Instance: 84eb6a09-63cf-433d-8522-41465d78756a
 InstanceOf: MedComCorePractitionerRole
-Title: "Send-K-forward - practitionerRole"
-Description: "Send-K-forward - practitionerRole"
+Title: "Send-E-forward - practitionerRole"
+Description: "Send-E-forward - practitionerRole"
 * practitioner = Reference(a7e25289-11d8-4125-a08a-9c1d85cbd950)
 * code = $PractitionerRole#laegesekretaer
 
 // CareCommunication example - new message
 Instance: 4e290fa6-0a40-4cc8-abd3-14ac22e0b48b
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-K-forward - Provenance"
-Description: "Send-K-forward - Provenance"
+Title: "Send-E-forward - Provenance"
+Description: "Send-E-forward - Provenance"
 Usage: #example
 * target = Reference(42fa2844-5020-45dd-bd5f-77137ba5ca1f)
 * occurredDateTime = 2024-09-14T13:00:00+02:00
@@ -153,8 +153,8 @@ Usage: #example
 // CareCommunication example - reply message
 Instance: 86b93888-0a2d-4530-a1c2-263394932e11
 InstanceOf: MedComCareCommunicationProvenance
-Title: "Send-K-forward - Provenance"
-Description: "Send-K-forward - Provenance"
+Title: "Send-E-forward - Provenance"
+Description: "Send-E-forward - Provenance"
 Usage: #example
 * target = Reference(3dbffafe-ce3c-45b0-bca7-2c008c478e79)
 * occurredDateTime = 2024-09-14T14:25:00+02:00
@@ -168,8 +168,8 @@ Usage: #example
 
 Instance: 42fa2844-5020-45dd-bd5f-77137ba5ca1f
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Send-K-forward - MessageHeader"
-Description: "Send-K-forward - MessageHeader"
+Title: "Send-E-forward - MessageHeader"
+Description: "Send-E-forward - MessageHeader"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message

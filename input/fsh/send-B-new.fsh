@@ -114,7 +114,7 @@ Usage: #example
 * recorded = 2024-09-06T17:15:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(630bbfae-6b43-46f8-9b51-98cdea34e46d)
-* entity[0].role = #source
-* entity[0].what.identifier.value = "urn:uuid:24a4d8f0-6490-46ef-95bd-b699198fdc00"
-* entity[1].role = #source
-* entity[1].what.identifier.value = "urn:uuid:4ad37a69-99c9-4d68-9216-450267bb2a9a"
+* entity[payload][0].role = #source
+* entity[payload][0].what.identifier.value = "urn:uuid:24a4d8f0-6490-46ef-95bd-b699198fdc00"
+* entity[payload][1].role = #source
+* entity[payload][1].what.identifier.value = "urn:uuid:4ad37a69-99c9-4d68-9216-450267bb2a9a"

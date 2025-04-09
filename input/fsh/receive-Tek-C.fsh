@@ -118,11 +118,11 @@ Title: "Receive_Tek-C - Receiver"
 Description: "Receive_Tek-C - Receiver"
 * identifier[0].use = #official
 * identifier[=].type.text = "SOR"
-* identifier[SOR-ID].value = "330461000016004" 
+* identifier[=].value = "330461000016004"
 * identifier[=].system = "urn:oid:1.2.208.176.1.1"
 * identifier[+].use = #official
 * identifier[=].type.text = "EAN"
-* identifier[EAN-ID].value = "5790001353308" 
+* identifier[=].value = "5790001353308"
 * identifier[=].system = "https://www.gs1.org/gln"
 * name = "Sundhedsplejen, Aabenraa kommune"
 * telecom[0].system = #phone
@@ -133,7 +133,7 @@ Description: "Receive_Tek-C - Receiver"
 * telecom[=].use = #work
 * active = true
 * address.line = "Bjerggade 4 E"
-* address.postalCode = "6200 "
+* address.postalCode = "6200"
 
 // Practitioners - new message with attachment
 Instance: 940b514b-938d-4186-85f6-96477ec5b5dd

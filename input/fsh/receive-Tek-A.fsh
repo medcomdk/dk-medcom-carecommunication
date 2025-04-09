@@ -133,7 +133,7 @@ Usage: #example
 * payload[+].extension[date].valueDateTime = 2024-08-17T14:00:00Z
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
 * payload[=].extension[identifier].valueIdentifier.assigner = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)
-* payload[=].extension[author].valueReference = Reference(c16b3ca4-9ef2-4f89-9dd1-2c157f314b9e)
+* payload[=].extension[author].valueReference = Reference(bbe737f3-f1a9-435d-ab7f-d96798952a75)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "+4523232323"
 * payload[=].contentAttachment.contentType = #application/pdf

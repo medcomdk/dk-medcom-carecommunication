@@ -115,5 +115,5 @@ Usage: #example
 * recorded = 2024-08-27T15:20:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(fe92c210-7725-4749-8045-37ed53878f26)
-* entity.role = #source
-* entity.what.identifier.value = "urn:uuid:69badd84-ec6d-475f-bedf-d6671b11865d"
+* entity[payload][0].role = #source
+* entity[payload][0].what.identifier.value = "urn:uuid:69badd84-ec6d-475f-bedf-d6671b11865d"
