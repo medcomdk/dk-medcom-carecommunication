@@ -1,4 +1,6 @@
 // OBS!! * payload.contentString = "To be removed"
+// OBS!! Husk også komma på linjen over
+
 Instance: R-Tek-O-invalid-3d1149cd-d3e3-421a-ae31-4860decb4272
 InstanceOf: MedComCareCommunicationMessage
 Title: "receive-Tek-O-invalid"

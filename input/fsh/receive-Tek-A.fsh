@@ -121,8 +121,7 @@ Usage: #example
 * encounter = Reference(ca0f5d0c-cb2a-4ad5-a08a-e7dbd2092b13)
 * subject = Reference(ae4abfb5-b0f6-443c-a420-0c0649cbe0c0)
 // Beskedsegment inkl linebreaks og specialkarakterer
-* payload[0].contentString = "Til rette vedkommende. \n Vi vil med denne korrespondance gerne \"prøve\" på 'nogle' særlige <tegn>; til test & certificering @ ^ * \n \n\nDette er linje 1\nDette er linje 2\n\nDette er linje 4, med en 'usynlig' linje ovenfor \nHilsen Michael Burns \n Sygeplejerske"
-//* payload[0].contentString = "Til rette vedkommende. <br/> Vi vil med denne korrespondance gerne &quot;prøve&quot; på &apos; nogle &apos; særlige &lt;tegn&gt; ; til test &amp; certificering @ ^ * <br/> Hilsen Michael Burns <br/> Sygeplejerske <br/> +45 38683868 <br/> 2024-08-17 14:00"
+* payload[0].contentString = "Til rette vedkommende.\nVi vil med denne korrespondance gerne \"prøve\" på 'nogle' særlige <tegn>; til test & certificering @ ^ *\n\n\nDette er linje 1\nDette er linje 2\n\nDette er linje 4, med en 'usynlig' linje ovenfor.\nHilsen Michael Burns\nSygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-08-17T14:00:00Z
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:21ee7617-5e47-406e-83bd-347ba6a7a872"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(9a74ae38-1f8f-43de-ac8d-01647bb4c5b4)

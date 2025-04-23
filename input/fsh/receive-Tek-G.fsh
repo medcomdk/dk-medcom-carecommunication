@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(e85e8d47-46a9-4b6a-b86d-9dcf96d24543)
 * identifier.value = "urn:uuid:b84738c1-a67f-4de9-a883-fab6d0ba0c44"
 * topic.text = "Afgået ved døden"
-* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke. Med venlig hilsen Kim Jensen \nOverlæge"
+* payload.contentString = "Til rette vedkommende hos Per Thorsleth. Bruno Elmer er desværre død i nat kl. 4.15. I hans kalender fremgår det, at han vil komme til læge i morgen kl. 11. Det gør han ikke.\nMed venlig hilsen\nKim Jensen\nOverlæge"
 * payload.extension[date].valueDateTime = 2024-08-23T16:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1df44fde-c8e1-4d0c-99cd-fc521cb728e5"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(aea5f134-5cc9-44b1-b5db-7155e45717ee)

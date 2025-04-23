@@ -88,7 +88,7 @@ Description: "receive-Tek-I - Content of care communication message. Valid only 
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak.\nHilsen Michael Burns \n Sygeplejerske"
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno.\nPå forhånd tak.\nHilsen Michael Burns\nSygeplejerske"
 * payload.extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
@@ -181,14 +181,14 @@ Description: "receive-Tek-H - Content of care communication message. Valid only 
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(b7fed758-bfdd-4c21-bfca-bb0b4b7081a0)
-* payload[1].contentString = "Jeg glemte lige at skrive, at der også skulle være udført en røntgenundersøgelse som vi også ønsker informationer om.\nvh. Michael \nSygeplejerske"
+* payload[1].contentString = "Jeg glemte lige at skrive, at der også skulle være udført en røntgenundersøgelse som vi også ønsker informationer om.\nVh. Michael\nSygeplejerske"
 * payload[1].extension[date].valueDateTime = 2024-08-24T12:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:ac353781-0e43-447d-80f4-d090028abcc1"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * payload[1].extension[author].valueReference = Reference(569a1bff-55a1-4868-a7b4-80fedb2066e3) 
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "38683868"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak.\nHilsen Michael Burns \n Sygeplejerske"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak.\nHilsen Michael Burns\nSygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-08-24T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:67ebe566-c20e-4885-8fff-5552875ef74c"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)

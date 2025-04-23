@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#assistive-devices
 * subject = Reference(fdsgjhfrgeu567485-.fdsf)
 * identifier.value = "urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6"
-* payload[0].contentString = "Til rette vedkommende. Har I mon vist det rigtige tidspunkt? Hilsen Michael Burns \n Sygeplejerske"
+* payload[0].contentString = "Til rette vedkommende. Har I mon vist det rigtige tidspunkt?\nHilsen Michael Burns\nSygeplejerske"
 * payload[0].extension[date].valueDateTime = 2024-11-02T08:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:729e63f5-a691-441e-84fe-953594b801b2"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(dfhjkshertu6787bjbsjnmbdf-.hfjdks7.)

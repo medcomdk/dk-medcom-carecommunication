@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#telemedicine
 * subject = Reference(283b6471-3134-4b7e-9d48-b6fad32e6384)
 * identifier.value = "urn:uuid:69ab69e8-af33-4e93-9171-7906ad43c1ab"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael Burns \n Diætistassistent"
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno.\nPå forhånd tak.\nHilsen Michael Burns\nDiætistassistent"
 * payload.extension[date].valueDateTime = 2024-08-28T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:07f74c3d-b3e5-4054-850e-a8ef8a550c36"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(2052a3bd-c32d-4e81-b5ec-83f9ad012899)

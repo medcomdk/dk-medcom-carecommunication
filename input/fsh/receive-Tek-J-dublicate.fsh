@@ -46,7 +46,7 @@ Usage: #example
 * category = $CategoryCodes#outpatient
 * subject = Reference(5986ec2e-05a4-4e30-8d2f-f09fb09eb832)
 * identifier.value = "urn:uuid:4098a5ef-3e35-455c-b6cb-01533423593b"
-* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Henrik Elderly \n Sygehuslæge"
+* payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno.\nPå forhånd tak.\nHilsen Henrik Elderly\nSygehuslæge"
 * payload.extension[date].valueDateTime = 2024-08-25T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:da11e1b2-a1c6-40c4-8412-e5b93a52831e"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(2aa3877e-d446-4c24-b497-399baaba894c)

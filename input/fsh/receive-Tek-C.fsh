@@ -45,7 +45,7 @@ Usage: #example
 * category = $CategoryCodes#training
 * subject = Reference(83949bef-2b75-429c-ada7-ca3998fb046a)
 * identifier.value = "urn:uuid:ea0e95d0-f72c-4e7f-9250-a2037be75545"
-* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. \nJeg har indsat en masse ekstra information på afsender, modtager og patienten, kan man se det? \nPå forhånd tak. \nHilsen Michael Burns \n Ledende Lægesekretær"
+* payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno.\nJeg har indsat en masse ekstra information på afsender, modtager og patienten, kan man se det?\nPå forhånd tak.\nHilsen Michael Burns\nLedende Lægesekretær"
 * payload[0].extension[date].valueDateTime = 2024-11-08T08:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:8f4863a0-bb37-41f5-bcd9-944f3b04fe11"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(89a4dee7-145b-4d09-abaf-24529cb12f15)

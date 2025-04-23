@@ -47,7 +47,7 @@ Usage: #example
 * subject = Reference(8d7f4ef8-ac79-4b7d-b9e7-b769471221b2)
 * topic.text = "Resultater fra hjemmesygeplejen"
 * identifier.value = "urn:uuid:5fdc8520-7a2f-497c-97ed-fcca13f12f8b"
-* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen..... \nHilsen Michael Magnus Burns\n Sygeplejerske"
+* payload.contentString = "Til rette vedkommende. Hermed fremsendes undersøgelsesresultater fra seneste besøg af hjemmesygeplejen.....\nHilsen Michael Magnus Burns\nSygeplejerske"
 * payload.extension[date].valueDateTime = 2024-09-11T15:20:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:c75a51cf-dab7-4bf9-9b13-b81700c78b05"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(cf3b8736-ffca-48a1-b2e7-550b5c503be8)
