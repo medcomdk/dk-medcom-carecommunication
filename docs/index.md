@@ -84,16 +84,16 @@ Certification of a system implies both an approved test protocol and a run troug
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
 
-<b>Test scripts and examples are currently in preparation. As soon as they are ready, they will be published.</b>
 
 **Test examples for sending and receiving a CareCommunication**
-    * [Test examples for CareCommunication](assets/CareCommunication_testeksemples.zip).
+
+* [Test examples for CareCommunication](assets/CareCommunication_testexamples.zip).
 
  **Sending a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
   <!--  * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html">Test examples</a>-->
   *  <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
-    * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose.</a>
+    * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose. The test script IG inlcudes obsolete test examples for an old test protocol. Do not use these. </a>
 
 **Receiving a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
