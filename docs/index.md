@@ -87,7 +87,7 @@ Certification of a system implies both an approved test protocol and a run troug
 
 **Test examples for sending and receiving a CareCommunication**
 
-* [Test examples for CareCommunication](assets/CareCommunication_testexamples.zip).
+* [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip).
 
  **Sending a CareCommunication**
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
