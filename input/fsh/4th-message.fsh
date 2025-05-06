@@ -67,7 +67,7 @@ InstanceOf: MedComMessagingOrganization
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "1042981000016003" 
-* identifier[EAN-ID].value = "5790001348120" 
+* identifier[EAN-ID].value = "5790001387419" 
 //* name = "Herlevgaard Center Herlev Kommune"
 
 // CareCommunication forward example

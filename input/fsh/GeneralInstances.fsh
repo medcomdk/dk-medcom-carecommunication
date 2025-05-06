@@ -23,9 +23,9 @@ Instance: 487ac745-fd11-4879-9b59-c08c7d47260e
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
@@ -70,9 +70,9 @@ Instance: 1680e847-abee-48ad-8704-65eb8225a3cb
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: a9bd6ab5-520d-4fdf-9b5f-55d79daedd73
@@ -116,9 +116,9 @@ Instance: 4e03a9cd-4d75-4e01-9420-7f0b4ecff305
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: e081a7fc-2df6-47e9-b6cd-77d8aaf7e8df
@@ -160,9 +160,9 @@ Instance: bf24f51c-a99b-47db-a785-8c5ef22ebc27
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 
 // Practitioners - new message with attachment
@@ -221,9 +221,9 @@ Instance: b75abdfa-5519-11ed-bdc3-0242ac120002
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 
 // Practitioners - new message   recipient and sender
@@ -302,12 +302,12 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 // Reciever instance - new message
 Instance: 282c1fea-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComMessagingOrganization // Plejecenter Herlev
+InstanceOf: MedComMessagingOrganization // Arden Lægehus
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 //Practitioner - reply message
 Instance: 356947dc-551c-11ed-bdc3-0242ac120002
@@ -347,12 +347,12 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 // Reciever instance - new message
 Instance: 87b881a6-690d-11ed-9022-0242ac120002
-InstanceOf: MedComMessagingOrganization // Plejecenter Herlev
+InstanceOf: MedComMessagingOrganization // Arden Lægehus
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 //Practitioner - reply message
 Instance: 7c7f31d6-690d-11ed-9022-0242ac120002
@@ -391,12 +391,12 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 // Reciever instance - new message
 Instance: 0e0e7f78-5520-11ed-bdc3-0242ac120002
-InstanceOf: MedComMessagingOrganization // Plejecenter Herlev
+InstanceOf: MedComMessagingOrganization // Arden Lægehus
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 1e2d6388-5520-11ed-bdc3-0242ac120002

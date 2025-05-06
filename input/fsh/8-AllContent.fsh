@@ -38,7 +38,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)
 * sender = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -99,9 +99,9 @@ Instance: 33153a8a-97c8-4f55-b7ad-bbedee8bd0e1
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 6397c13d-7cb2-4834-871c-47f528bb79cf
@@ -166,5 +166,5 @@ InstanceOf: MedComCoreCareTeam //
 Title: "Example of a recipient in terms of a careteam."
 Description: "Example of a recipient in terms of a careteam."
 * managingOrganization = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)
-* name = "Plejecenter Herlev Team 1"
+* name = "Arden Lægehus Team 1"
 

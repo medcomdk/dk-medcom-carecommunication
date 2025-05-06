@@ -34,9 +34,9 @@ Instance: b349d429-8041-485c-b0ba-e08b2ed8bfd7
 InstanceOf: MedComMessagingOrganization // 
 Title: "Receive_Tek-E-new-parallel - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Receive_Tek-E-new-parallel - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: e169f935-8fe2-4821-8fbf-b0324a8975e3
@@ -71,7 +71,7 @@ Description: "Receive_Tek-E-new-parallel - Example of a MessageHeader in a new C
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(b349d429-8041-485c-b0ba-e08b2ed8bfd7)
 * sender = Reference(e6dd7d8c-5744-440a-8347-d932a8f65a6b)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -152,7 +152,7 @@ Description: "Receive_Tek-F-reply-parallel - Example of a MessageHeader in a rep
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(b349d429-8041-485c-b0ba-e08b2ed8bfd7)
 * sender = Reference(e6dd7d8c-5744-440a-8347-d932a8f65a6b)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"

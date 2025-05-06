@@ -28,7 +28,7 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
         event.code = "care-communication-message"
         destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
         destination.use.code = "primary"
-        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
         destination.receiver.reference = "Organization/0e0e7f78-5520-11ed-bdc3-0242ac120002"
         sender.reference = "Organization/fd0666dc-551f-11ed-bdc3-0242ac120002"
         source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -80,9 +80,9 @@ package "CareCommunication message: Reply to OIOXML message" as reply <<Frame>>{
     class "Receiver (MedComMessagingOrganization)" as replyROrg{
         id = "0e0e7f78-5520-11ed-bdc3-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
-        identifier[0].value = "5790001348120"
+        identifier[0].value = "5790001387419"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
-        identifier[1].value = "953741000016009"
+        identifier[1].value = "382871000016004"
     }
     class "Sender (MedComMessagingOrganization)" as replySOrg{
         id = "fd0666dc-551f-11ed-bdc3-0242ac120002"

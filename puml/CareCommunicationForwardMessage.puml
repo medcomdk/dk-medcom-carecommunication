@@ -31,7 +31,7 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
         destination.endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
         destination.receiver.reference = "Organization/f98ed410-54fe-11ed-bdc3-0242ac120002"
         sender.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
-        source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
         focus.reference = "Communication/0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb"
     }
     class "Patient (MedComCorePatient)" as forwardPT{
@@ -88,16 +88,16 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
     class "Receiver (MedComMessagingOrganization)" as forwardROrg{
         id = "f98ed410-54fe-11ed-bdc3-0242ac120002"
         identifier[0].system = "https://www.gs1.org/gln"
-        identifier[0].value = "5790001348120"
+        identifier[0].value = "5790001387419"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "1042981000016003"
     }
     class "Sender (MedComMessagingOrganization)" as forwardSOrg{
         id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
         identifier[0].system = "https://www.gs1.org/gln"
-        identifier[0].value = "5790001348120"
+        identifier[0].value = "5790001387419"
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
-        identifier[1].value = "953741000016009"
+        identifier[1].value = "382871000016004"
     }
     class "Sender of 'new-message' (MedComMessagingOrganization)" as senderOrg{
         id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"

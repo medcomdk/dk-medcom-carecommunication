@@ -30,7 +30,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(b2f762be-6994-44da-a214-72c765655b3e)
 * sender = Reference(0ece868c-6a72-4aa3-8a96-2d985ab630c7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -93,9 +93,9 @@ Instance: b2f762be-6994-44da-a214-72c765655b3e
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 97511212-12e6-4182-a42b-cf232c0c117c

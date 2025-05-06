@@ -66,9 +66,9 @@ Instance: 5007be8f-49dd-48ae-9808-66270aef1865
 InstanceOf: MedComMessagingOrganization 
 Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 4d528261-ef8c-4f83-ab61-deb5b5e6823e
@@ -96,7 +96,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * destination[primary].receiver = Reference(5007be8f-49dd-48ae-9808-66270aef1865)
 * sender = Reference(3d079530-8c63-4c5c-a6f9-825279aef4d2)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * focus = Reference(9c4ff4b0-093c-4111-8c29-3ae2b04a16db)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 
@@ -160,7 +160,7 @@ Description: "receive_B-reply"
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(3d079530-8c63-4c5c-a6f9-825279aef4d2)
 * sender = Reference(5007be8f-49dd-48ae-9808-66270aef1865)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"

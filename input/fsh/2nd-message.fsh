@@ -41,7 +41,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * destination[primary].receiver = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 

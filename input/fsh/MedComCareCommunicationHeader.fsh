@@ -25,7 +25,7 @@ Description: "MessageHeader for CareCommunication cancel message. Valid only if 
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -40,7 +40,7 @@ Description: "MessageHeader for CareCommunication modify message. Valid only if 
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -60,7 +60,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(bf24f51c-a99b-47db-a785-8c5ef22ebc27)
 * sender = Reference(85669d18-2bb3-4c6e-80d2-e039a63a521c)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -74,7 +74,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(b75abdfa-5519-11ed-bdc3-0242ac120002)
 * sender = Reference(c5c393ee-5519-11ed-bdc3-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -88,7 +88,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(4e03a9cd-4d75-4e01-9420-7f0b4ecff305)
 * sender = Reference(fae4c8cf-e5d6-404d-867d-97ffa49a1c58)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -104,7 +104,7 @@ Description: "Example of a MessageHeader in a new CareCommunication message. Val
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(1680e847-abee-48ad-8704-65eb8225a3cb)
 * sender = Reference(9b876149-842d-4b09-8d3d-27468210d343)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"

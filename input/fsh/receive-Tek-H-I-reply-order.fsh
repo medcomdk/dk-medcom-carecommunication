@@ -34,9 +34,9 @@ Instance: 966bc46d-f02f-4be3-a44a-d47ebdf4fdad
 InstanceOf: MedComMessagingOrganization // 
 Title: "receive-Tek-I - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "receive-Tek-I - Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: a28e0818-2957-4d60-bc86-41d236bf23db
@@ -71,7 +71,7 @@ Description: "receive-Tek-I - Example of a MessageHeader in a new CareCommunicat
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
 * sender = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -147,7 +147,7 @@ Description: "receive-Tek-H - Example of a MessageHeader in a reply CareCommunic
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(966bc46d-f02f-4be3-a44a-d47ebdf4fdad)
 * sender = Reference(55b3ef79-9e10-4b52-9d94-6c97ff5a0999)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"

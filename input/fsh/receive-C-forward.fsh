@@ -94,7 +94,7 @@ InstanceOf: MedComMessagingOrganization
 Title: "receive_C-forward"
 Description: "receive_C-forward"
 * identifier[SOR-ID].value = "953751000016007"
-* identifier[EAN-ID].value = "5790001348120" 
+* identifier[EAN-ID].value = "5790001387419" 
 //* name = "Sundhed og Ældre, Herlev"
 
 // CareCommunication reply example
@@ -108,7 +108,7 @@ Usage: #example
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953751000016007"
 * destination[primary].receiver = Reference(8b67e42d-fc9b-45c4-8313-86b9c7416445)
 * sender = Reference(a81d6555-94d9-4704-a6b7-8dea0bcd3dac)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * focus = Reference(e37c9933-1fc6-48e0-9819-66bc026cf3d4)
 * definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
 

@@ -33,7 +33,7 @@ Description: "MessageHeader for CareCommunication reply to an OIOXML message. Va
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(ae899cbd-933b-4581-9a16-bd2da73f06a0)
 * sender = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
@@ -93,9 +93,9 @@ Instance: ae899cbd-933b-4581-9a16-bd2da73f06a0
 InstanceOf: MedComMessagingOrganization // 
 Title: "Example of a reciever organization with a SOR and an EAN identifier."
 Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
+* identifier[SOR-ID].value = "382871000016004" 
+* identifier[EAN-ID].value = "5790001387419" 
+* name = "Arden Lægehus"
 
 // Practitioners - new message
 Instance: 8659596f-6ef4-421c-9ecd-94b65e4d5ff8

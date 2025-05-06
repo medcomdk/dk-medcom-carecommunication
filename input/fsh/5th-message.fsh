@@ -63,7 +63,7 @@ Description: "5th message - Example of a MessageHeader in a reply CareCommunicat
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=382871000016004"
 * destination[primary].receiver = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * sender = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"

@@ -13,7 +13,7 @@ C replies to B <br>
 
 [1st message](Bundle-add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html)
 
-The initial message sent from Hjerteafdelingen på Herlev og Gentofte hospital to Plejecenter Herlev.
+The initial message sent from Hjerteafdelingen på Herlev og Gentofte hospital to Arden Lægehus.
 
 The message includes one message segment and a new communication identifier. As it is a new message, the activity is in the Provenance instance 'new-message'. The sender and receiver organizations are both referenced from the MessageHeader. 
 
