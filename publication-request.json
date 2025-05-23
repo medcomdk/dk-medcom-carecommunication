@@ -1,15 +1,11 @@
 {
     "package-id": "medcom.fhir.dk.carecommunication",
-    "version": "4.0.2",
-    "path": "http://medcomfhir.dk/ig/carecommunication/4.0.2",
+    "version": "4.0.3",
+    "path": "http://medcomfhir.dk/ig/carecommunication/4.0.3",
     "status": "release",
     "sequence": "Release",
     "mode" : "milestone",
     "first": false,
-    "title": "DK MedCom CareCommunication",
-    "category": "Care Management",
-    "introduction": "The MedCom CareCommunication Implementation Guide includes profiles used in a CareCmmunication message.",
     "descmd": "@release-notes.md",
-    "ci-build": "http://build.fhir.org/ig/medcomdk/dk-medcom-carecommunication",
-    "changes": "https://github.com/medcomdk/dk-medcom-carecommunication/releases"
+    "desc": "Dependency bumped to fix hyperlinks in various places. No actual changes made",
 }
