@@ -8,5 +8,6 @@ jobs:
     with:
       RELEASE_VERSION: ${{ github.ref_name }}
       FHIR_PUBLICATION_BOT_APP_ID: ${{ vars.FHIR_PUBLICATION_BOT_APP_ID }}
+      IG_PUBLISHER_VERSION: 1.7.1
     secrets:
       PUBLISHER_APP_PRIVATE_KEY: ${{ secrets.PUBLISHER_APP_PRIVATE_KEY }}
