@@ -7,5 +7,5 @@
     "mode" : "milestone",
     "first": false,
     "descmd": "@release-notes.md",
-    "desc": "Dependency bumped to fix hyperlinks in various places. No actual changes made",
+    "desc": "Dependency bumped to fix hyperlinks in various places. No actual changes made"
 }
