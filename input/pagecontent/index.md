@@ -54,7 +54,7 @@ The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDef
 
 ##### MedComCareCommunicationProvenance
 
-The [MedComCareCommunicationProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-carecommunication-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all not activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
+The [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all not activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
 
 In cases of a previously sent CareCommunications, MedComMessagingProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
