@@ -1,6 +1,6 @@
 Instance: 793d9762-6afb-4b7d-b492-1c7991aa91d8
 InstanceOf: MedComCareCommunicationMessage
-Title: "ConSer_CC_06_forward - Forward CareCommunication message"
+Title: "ConSer_CC_06_forward_attachment - Forward CareCommunication message"
 Description: "Example of a forward CareCommunication message."
 Usage: #example
 * type = $BundleType#message
@@ -212,4 +212,3 @@ Description: "ConSer_CC_06_forward_attachment - Content of care communication me
 * payload[0].extension[author].valueReference = Reference(03ce50f2-d7ad-472b-b29c-00880a422fd1)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
-

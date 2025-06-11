@@ -220,4 +220,3 @@ Description: "ConSer_CC_06_forward_attachment - Content of care communication me
 * payload[0].extension[author].valueReference = Reference(4ad4f1b7-1e71-4772-9757-4d424ae7f71e)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
-
