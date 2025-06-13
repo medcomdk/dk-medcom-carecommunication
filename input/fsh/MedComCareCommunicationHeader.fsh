@@ -4,13 +4,13 @@ Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
 * meta 1..1 MS
 * meta.profile 1..1 MS SU
-//* eventCoding = $MessageEvents#care-communication-message (exactly)
 * eventCoding.code MS
 * eventCoding.system MS
 * eventCoding.system 1..
 * eventCoding.code = #care-communication-message
 * eventCoding.system = $MessageEvents
 * destination[cc] ..0
+* destination MS
 * destination[primary] MS
 * destination[primary].extension[use].url MS
 * destination[primary].extension[use].valueCoding MS

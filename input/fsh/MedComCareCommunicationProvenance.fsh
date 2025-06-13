@@ -2,6 +2,9 @@ Profile: MedComCareCommunicationProvenance
 Parent: MedComMessagingProvenance
 Id: medcom-careCommunication-provenance
 Description: "Provenance information about the current and preceeding message."
+* meta 1..1 MS
+* meta.profile 1..1 MS SU
+* occurredDateTime MS
 * target only Reference(MedComCareCommunicationMessageHeader)
 * activity from $CareCommunicationActivities
 * entity 1..* 
