@@ -4,6 +4,7 @@ Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
 * status = #unknown
 * status MS
+* text MS
 * identifier 1..1 MS 
 * identifier.value 1..1 MS 
 * identifier obeys medcom-uuidv4
@@ -26,6 +27,7 @@ Description: "Care related communication between two or more parties in Danish h
 * encounter ^type.aggregation = #bundled
 * encounter ^short = "Shall contain a reference to an Encounter resource with a episodeOfCare-identifier, if the identifier is included in a previous message."
 * recipient MS
+* recipient ..1
 * recipient only Reference(MedComCorePractitionerRole or MedComCoreCareTeam)
 * recipient ^short = "Describes a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
 * recipient ^type.aggregation = #bundled 
@@ -54,7 +56,7 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].content[x] MS
 * payload[attachment].extension[date] 1..1 MS SU
 * payload[attachment].extension[identifier] 1..1 MS SU
-* payload[attachment].extension[author] 0..1 MS 
+* payload[attachment].extension[author] 0..1 MS
 * payload[attachment].extension[authorContact] 0..1 MS
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
