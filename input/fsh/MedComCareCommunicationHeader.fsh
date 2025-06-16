@@ -3,7 +3,7 @@ Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
 * meta 1..1 MS
-* meta.profile 1..1 MS SU
+* meta.profile 1..1 MS
 * eventCoding.code MS
 * eventCoding.system MS
 * eventCoding.system 1..
