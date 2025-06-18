@@ -59,11 +59,12 @@ The [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunicati
 In cases of a previously sent CareCommunications, MedComCareCommunicationProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
 #### Timestamps
-A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html), [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html), and [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) and have different purposes:
+A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html), [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html), and [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) and have different purposes. Most often, the timestamps will be identical, as the Bundle is typically created and sent in the same workflow. However, the Bundle.timestamp must differ from the other timestamps if the message is not sent in the same workflow in which the Bundle was created. The timestamps are as follows: 
 * Communication.payload.extension:date represents real world event, where the user presses "send" to send the CareCommunication. Each message segment, both string and attachment, will be registered with a date and time for this event.
 * Bundle.timestamp represents the time bundle is generated.
 * Provenance.occuredDateTime[x] represents the time the CareCommunication is sent, in a human-readable time
 * Provenance.recorded represents the time the CareCommunication is sent, in a machine-readable time
+
 
 It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
 
