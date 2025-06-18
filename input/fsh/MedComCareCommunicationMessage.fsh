@@ -34,12 +34,12 @@ Expression: "entry.resource.ofType(Practitioner).name.exists()"
 Invariant: medcom-careCommunication-11
 Description: "If a specific sender exists, the organisation which the CareTeam or Practitioner is a part of shall be the same as the sender organisation in the MessageHeader resource."
 Severity: #error
-Expression: "Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().managingOrganization.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference or Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().organization.reference = %resource.entry.resource.ofType(MessageHeader).sender.reference or Bundle.entry.resource.ofType(Communication).extension.exists().not()"
+Expression: "Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().managingOrganization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve() or Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().organization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve() or Bundle.entry.resource.ofType(Communication).extension.exists().not()"
 
 Invariant: medcom-careCommunication-12
 Description: "If a specific recipient exists, the organisation which the CareTeam or Practitioner is a part of shall be the same as the receiver organisation in the MessageHeader resource."
 Severity: #error
-Expression: "Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().managingOrganization.reference = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference or Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().organization.reference = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference or Bundle.entry.resource.ofType(Communication).recipient.exists().not()"
+Expression: "Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().managingOrganization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference.resolve() or Bundle.entry.resource.ofType(Communication).recipient.reference.resolve().organization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).destination.receiver.reference.resolve() or undle.entry.resource.ofType(Communication).recipient.exists().not()"
 
 Invariant: medcom-careCommunication-13
 Description: "All PractitionerRole resources shall have a reference to an instance of a Practitioner resource."
