@@ -2,30 +2,38 @@
 
 hide empty members
 
+top to bottom direction
+
 class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
 class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
-class "MedComMessagingProvenance" as provenance
+class "MedComCareCommunicationProvenance" as provenance <<MedComMessagingProvenance>>
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCoreEncounter" as encounter
-class "Organization" as recipientOrganization 
-class "MedComCorePractitionerRole" as recipientRole
+class "MedComCorePractitionerRole" as pracRole
+class "MedComCoreCareTeam" as careteam
 class "MedComCorePractitioner" as author
+class "MedComCoreEncounter" as encounter
+class "MedComCoreOrganization" as organization
 
-message -- messageheader : "entry"
-message -- provenance : "entry"
-messageheader -- messagingOrganization : "sender"
-messageheader -- messagingOrganization : "receiver"
-messageheader -- messagingOrganization : "carbon copy"
-messageheader -- communication : "focus"
-communication -- encounter : "encounter"
-communication -- patient : "subject"
-communication -- recipientOrganization : "sender"
-communication -- recipientRole : "sender"
-communication -- recipientOrganization : "recipient"
-communication -- recipientRole : "recipient"
-communication -- author : "payload author"
+message --> messageheader : "entry"
+messageheader --> communication : "focus"
+communication --> patient : "subject"
+communication --> pracRole : "author"
+message --> provenance : "entry"
+provenance --> messageheader : "target" 
+provenance --> messagingOrganization : "agent.who"
+communication --> careteam : "sender"
+communication --> careteam : "recipient"
+communication --> pracRole : "sender"
+communication --> pracRole : "recipient"
+messagingOrganization <-- communication : "assigner"
+pracRole --> author : "practitioner"
+pracRole --> organization : "organization"
+careteam --> organization : "managingOrganization"
+communication --> encounter : "encounter"
 
-encounter -patient :"subject"
+
+messageheader --> messagingOrganization : "receiver"
+messageheader --> messagingOrganization : "sender"
 @enduml
