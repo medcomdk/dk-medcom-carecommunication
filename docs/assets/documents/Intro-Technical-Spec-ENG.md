@@ -7,9 +7,6 @@
   * [1.3 Encounter and EpisodeOfCare-identifier](#13-encounter-and-episodeofcare-identifier)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
-* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
-  * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1---carecommunication-only-text)
-  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment) 
 
 ## 1 Profiles in the CareCommunication Standard 
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
