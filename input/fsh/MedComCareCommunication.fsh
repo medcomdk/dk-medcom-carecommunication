@@ -74,6 +74,7 @@ Description: "Care related communication between two or more parties in Danish h
 * obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-8
 * obeys medcom-careCommunication-9
+* obeys medcom-careCommunication-15
 //* obeys medcom-careCommunication-10
 
 Invariant: medcom-careCommunication-5
@@ -107,6 +108,12 @@ Invariant: medcom-careCommunication-9
 Description: "An episodeOfCare-identifier must be included when an Encounter instance is included."
 Severity: #error
 Expression: "iif(encounter.exists().not(), true, encounter.reference.resolve().episodeOfCare.identifier.exists())"
+
+Invariant: medcom-careCommunication-15
+Description: "If an Encounter resource is present in the bundle, there must be a reference to it in Communication.encounter. If no Encounter is present, Communication.encounter must not be populated."
+Severity: #error
+Expression: "iif(Bundle.entry.resource.ofType(Encounter).exists(), Bundle.entry.resource.ofType(Communication).encounter.reference.exists(), Bundle.entry.resource.ofType(Communication).encounter.exists().not())"
+
 
 /* Invariant: medcom-careCommunication-9
 Description: "When an attachment is included, it shall have an identifier"
