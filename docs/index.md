@@ -1,6 +1,4 @@
 # MedCom CareCommunication
-><b>Pleas be aware that this page is under review. A stable version of the CareCommunicationstandard is expected to be ready at the end of November 2022 </b>
-
 
 **Table of contents**
 * [1 Standard documentation](#1-standard-documentation)

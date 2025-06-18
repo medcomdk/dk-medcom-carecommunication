@@ -6,7 +6,7 @@ top to bottom direction
 
 class "MedComCareCommunicationMessage" as message <<MedComMessagingMessage>>
 class "MedComCareCommunicationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
-class "MedComMessagingProvenance" as provenance
+class "MedComCareCommunicationProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
