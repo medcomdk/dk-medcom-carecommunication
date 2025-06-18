@@ -7,9 +7,9 @@
   * [1.3 Encounter and EpisodeOfCare-identifier](#13-encounter-and-episodeofcare-identifier)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
 * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
-<!-- * [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
+* [4 Timestamps in the CareCommunication standard](#4-timestamps-in-the-carecommunication)
   * [4.1 Scenario 1-CareCommunication only text](#41-scenario-1---carecommunication-only-text)
-  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment) -->
+  * [4.2 Scenario 1-CareCommunication text and attachment](#42-scenario-2---carecommunication-text-and-attachment) 
 
 ## 1 Profiles in the CareCommunication Standard 
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
@@ -105,7 +105,7 @@
     <td class="tg-0pky">Provenance</td>
     <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or a modified message.<br>In case of a previously sent message, the Provenance resource holds a reference to this message.<br>Therefore, it is possible to get an overview of the communication about a patient.</td>
     <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message) and the payload(s) of the current message</td>
-    <td class="tg-0pky">Messaging</td>
+    <td class="tg-0pky">CareCommunication</td>
   </tr>
    <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreOrganization</span></a></td>
@@ -134,7 +134,7 @@ When receiving a message, either CareCommunication or EDIFACT/OIOXML message, th
 ## 2 Internal references in a CareCommunication 
 The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).<br>
 The references between the profiles are shown in  <a href="#Fig1"> Figure 1</a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader the sender and receiver organisations are referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
-MedComCareCommunicationProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComMessagingMessageHeader as the target and the actor in terms of a MedComMessagingOrganization. 
+MedComCareCommunicationProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComCareCommunicationMessageHeader as the target and the actor in terms of a MedComMessagingOrganization. 
 
  <!-- Additionally, contain the message text and attachment if they are included -->
 <figure>
