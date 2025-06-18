@@ -65,7 +65,6 @@ A CareCommunication includes several timestamps. These timestamps are present in
 * Provenance.occuredDateTime[x] represents the time the CareCommunication is sent, in a human-readable time
 * Provenance.recorded represents the time the CareCommunication is sent, in a machine-readable time
 
-
 It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
 
 It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
