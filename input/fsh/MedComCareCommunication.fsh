@@ -113,7 +113,7 @@ Expression: "iif(encounter.exists().not(), true, encounter.reference.resolve().e
 Invariant: medcom-careCommunication-15
 Description: "If an Encounter resource is present in the bundle, there must be a reference to it in Communication.encounter. If no Encounter is present, Communication.encounter must not be populated."
 Severity: #error
-Expression: "iif(Bundle.entry.resource.ofType(Encounter).exists(), Bundle.entry.resource.ofType(Communication).encounter.reference.exists(), Bundle.entry.resource.ofType(Communication).encounter.exists().not())"
+Expression: "iif(encounter.exists(), Communication.encounter.reference.exists(), Communication.encounter.exists().not())"
 
 
 /* Invariant: medcom-careCommunication-9
