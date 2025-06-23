@@ -56,12 +56,12 @@ Usage: #example
 * recorded = 2024-05-01T12:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36" // text
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:a4f712ee-faea-48d9-9108-27aeb639e5a0" // attachment
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:eed10baa-5280-4d05-904b-3ce180a91568" // link
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36" // text
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:a4f712ee-faea-48d9-9108-27aeb639e5a0" // attachment
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:eed10baa-5280-4d05-904b-3ce180a91568" // link
 
 
 // MedComCoreEncounter instance
