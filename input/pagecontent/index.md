@@ -69,10 +69,6 @@ It is assumed that in most cases, the above mentioned timestamps will be equal, 
 
 It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
 
-#### IDs
-
-All instances of a profile shall have a global unique id by using an UUID. [Read more about the use of ids here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/052.2_MessageHeader_Identifiers_Timestamps.html).
-
 #### Examples
 The [examples page](examples.html) illustrates a flow of CareCommunications sent between healthcare parties. This includes new message, replies and forwarded messages. 
 
