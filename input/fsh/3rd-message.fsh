@@ -74,10 +74,10 @@ Description: "2nd message - The Provenance instance is only valid if used in a b
 * agent.who = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
 
 // CareCommunication example - new message
 Instance: af9b0255-1bdd-49c7-9d39-d652a587e4b2
