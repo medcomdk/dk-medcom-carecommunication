@@ -119,6 +119,7 @@ Title: "Instance of Communication resource used in a reply message. A reply to a
 Description: "Content of care communication message. Valid only if used in a bundle (message)."
 Usage: #example
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:59aac95e-ca57-4b04-b075-9880b7e6441c"
 * category = $CategoryCodes#carecoordination
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)

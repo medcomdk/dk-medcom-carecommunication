@@ -4,6 +4,7 @@ Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
 * status = #unknown
 * status MS
+* text 1..1
 * identifier 1..1 MS 
 * identifier.value 1..1 MS 
 * identifier obeys medcom-uuidv4

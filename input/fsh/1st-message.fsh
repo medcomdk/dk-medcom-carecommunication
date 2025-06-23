@@ -44,6 +44,7 @@ InstanceOf: MedComCareCommunication
 Title: "1st message - Instance of Communication resource used in a new message."
 Description: "1st message - Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"

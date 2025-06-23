@@ -76,6 +76,7 @@ InstanceOf: MedComCareCommunication
 Title: "4th message - Instance of Communication resource used in a forward message."
 Description: "4th message - Content of care communication message. Valid only if used in a bundle (message) - forward message"
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:546b19ba-3e50-4da8-b9ec-7caeefad6928"
 * category = $CategoryCodes#examination-results
 * subject = Reference(22d65545-f98a-4b4d-ba36-51b48b3eb3de)

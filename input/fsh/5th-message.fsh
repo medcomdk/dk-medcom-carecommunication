@@ -76,6 +76,7 @@ InstanceOf: MedComCareCommunication
 Title: "5th message - Instance of Communication resource used in a reply message."
 Description: "5th message - Content of CareCommunication message. Valid only if used in a bundle (message) - reply message"
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:546b19ba-3e50-4da8-b9ec-7caeefad6928"
 * category = $CategoryCodes#examination-results
 * subject = Reference(22d65545-f98a-4b4d-ba36-51b48b3eb3de)

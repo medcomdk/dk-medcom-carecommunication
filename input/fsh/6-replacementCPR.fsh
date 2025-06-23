@@ -44,6 +44,7 @@ InstanceOf: MedComCareCommunication
 Title: "Instance of Communication resource used in a new message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
 * category = $CategoryCodes#examination-results
 * subject = Reference(50c51ef0-00b0-429a-b212-35ee0773fd5a)

@@ -127,6 +127,7 @@ Title: "Instance of Communication resource used in a new message. The message in
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message with attachment"
 Usage: #example
 * status = $EventStatus#unknown
+* insert CommonNarrative
 * identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36"
 * category = $CategoryCodes#regarding-referral
 * priority = $PriorityCode#asap
