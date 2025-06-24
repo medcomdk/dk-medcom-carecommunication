@@ -1,10 +1,14 @@
+Alias: $obligation      = http://hl7.org/fhir/StructureDefinition/obligation
+
 Profile: MedComCareCommunication
 Parent: Communication
 Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
 * status = #unknown
 * status MS
-* text 1..1
+* status ^extension[$obligation][+].extension[code].valueCode = #SHALL:in-narrative
+* status ^extension[$obligation][=].extension[actor].valueCanonical = Canonical(CareCommunicationProducerActor)
+* text 1..1 MS
 * identifier 1..1 MS 
 * identifier.value 1..1 MS 
 * identifier obeys medcom-uuidv4
