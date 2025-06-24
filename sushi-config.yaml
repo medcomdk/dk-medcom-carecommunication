@@ -19,7 +19,6 @@ dependencies:
   medcom.fhir.dk.core: 2.4.0
   medcom.fhir.dk.messaging: 2.2.2
   medcom.fhir.dk.terminology: 1.7.0
-  hl7.fhir.uv.extensions: 5.2.0
   
 menu:
   Table of Contents: toc.html
