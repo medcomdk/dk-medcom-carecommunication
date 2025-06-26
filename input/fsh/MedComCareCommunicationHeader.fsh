@@ -8,8 +8,7 @@ Description: "Message header for care communication message"
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
 * definition 1..1 MS
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
-
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5.0"
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
