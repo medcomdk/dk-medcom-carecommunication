@@ -58,10 +58,10 @@ Usage: #inline
 * agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * entity[preceedingMessage][0].role = #revision
 * entity[preceedingMessage][0].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
-* entity[payload][0].role = #source
-* entity[payload][0].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
-* entity[payload][1].role = #source
-* entity[payload][1].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
 
 
 // CareCommunication reply example
