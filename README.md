@@ -12,3 +12,4 @@ docker run --name=hapi-fhir --rm -p 8080:8080 -e HAPI_IMPLEMENTATION_GUIDE_URL=h
 -where the environment variable HAPI_IMPLEMENTATION_GUIDE_URL points to the package.tgz of any given FHIR Implementation Guide
 
 Once, started the server instance is accessible @ eg. http://localhost:8080/hapi-fhir-jpaserver/
+
