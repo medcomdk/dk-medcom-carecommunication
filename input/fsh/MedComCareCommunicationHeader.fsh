@@ -4,9 +4,6 @@ Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
 * meta 1..1 MS
 * meta.profile 1..1 MS
-* text ^short = "The narrative text SHALL always be included when exchanging a MedCom message. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
-* text.status MS
-* text.div MS
 * eventCoding.code MS
 * eventCoding.system MS
 * eventCoding.system 1..

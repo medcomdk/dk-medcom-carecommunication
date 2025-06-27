@@ -4,9 +4,6 @@ Id: medcom-careCommunication-provenance
 Description: "Provenance information about the current and preceeding message."
 * meta 1..1 MS
 * meta.profile 1..1 MS
-* text ^short = "The narrative text SHALL always be included when exchanging a MedCom message. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
-* text.status MS
-* text.div MS
 * occurredDateTime MS
 * target only Reference(MedComCareCommunicationMessageHeader)
 * activity from $CareCommunicationActivities

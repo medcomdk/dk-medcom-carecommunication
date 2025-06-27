@@ -4,12 +4,12 @@ Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
 * meta 1..1 MS
 * meta.profile 1..1 MS
-* status = #unknown
-* status MS
 * text MS
-* text ^short = "The narrative text SHALL always be included when exchanging a MedCom message. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
+* text ^short = "The narrative text SHALL always be included when exchanging a MedCom FHIR Bundle. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
 * text.status MS
 * text.div MS
+* status = #unknown
+* status MS
 * identifier 1..1 MS 
 * identifier.value 1..1 MS 
 * identifier obeys medcom-uuidv4
