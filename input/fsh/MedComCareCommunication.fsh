@@ -29,7 +29,7 @@ Description: "Care related communication between two or more parties in Danish h
 * recipient only Reference(MedComCorePractitionerRole or MedComCoreCareTeam)
 * recipient ^short = "Describes a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
 * recipient ^type.aggregation = #bundled 
-* extension contains medcom-core-sender-extension named sender 0..1 MS SU
+* extension contains medcom-core-sender-extension named sender 0..1 MS
 * payload 1..
 * payload ^short = "Each payload corresponds to a message segment with a message text or an attachment. At least one payload with a message text shall be included."
 * payload.extension contains medcom-core-datetime-extension named date 0..1 
@@ -44,16 +44,16 @@ Description: "Care related communication between two or more parties in Danish h
     attachment 0.. MS
 * payload[string].content[x] only string
 * payload[string].content[x] MS 
-* payload[string].extension[date] 1..1 MS SU
-* payload[string].extension[identifier] 1..1 MS SU
-* payload[string].extension[author] 1..1 MS SU
-* payload[string].extension[authorContact] 1..1 MS SU
+* payload[string].extension[date] 1..1 MS 
+* payload[string].extension[identifier] 1..1 MS 
+* payload[string].extension[author] 1..1 MS
+* payload[string].extension[authorContact] 1..1 MS
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
 * payload[attachment] ^short = "The payload with an attachment shall contain a link or content attached to the message."
 * payload[attachment].content[x] MS
-* payload[attachment].extension[date] 1..1 MS SU
-* payload[attachment].extension[identifier] 1..1 MS SU
+* payload[attachment].extension[date] 1..1 MS 
+* payload[attachment].extension[identifier] 1..1 MS
 * payload[attachment].extension[author] 0..1 MS 
 * payload[attachment].extension[authorContact] 0..1 MS
 * payload[attachment].contentAttachment 1.. MS
