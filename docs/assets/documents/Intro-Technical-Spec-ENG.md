@@ -78,11 +78,11 @@
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">MedComMessagingProvenance</td>
+    <td class="tg-0pky">MedComCareCommunicationProvenance</td>
     <td class="tg-0pky">Provenance</td>
     <td class="tg-0pky">Describes the activity of a message, e.g. whether the message concern an inpatient admission or discharge. <br>In cases of a previously send message concerning the same admission,<br> the Provenance resource holds a reference to the previous message. <br>Thereby it is possible to get an overview of the patient's admission</td>
     <td class="tg-0pky">Id<br>Target <br>OccurredDateTime <br>Timestamps<br>Activity<br>Agent<br>Entity(reference to the previous message)</td>
-    <td class="tg-0pky">Messaging</td>
+    <td class="tg-0pky">CareCommunication</td>
   </tr>
 </tbody>
 </table>

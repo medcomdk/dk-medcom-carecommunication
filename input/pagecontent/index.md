@@ -27,7 +27,7 @@ CareCommunication follows the general MedCom FHIR messaging model, except that r
 
 ##### MedComCareCommunicationMessage
 
-The [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html) is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the [MedComMessagingProvenance](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains the activities new-message, reply-message and forward-message.
+The [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html) is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComCareCommunicationMessageHeader](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message. Furthermore, it contains rules that constrains the ValueSet of activities in the [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) profile to only contain activities from the [MedComCareCommunicationMessageActivities ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html), which contains the activities new-message, reply-message and forward-message.
 
 All referenced resources within the message shall be contained in the entry list in MedCom CareCommunication.
 
@@ -54,12 +54,12 @@ The [MedComMessagingOrganization](http://medcomfhir.dk/ig/messaging/StructureDef
 
 ##### MedComCareCommunicationProvenance
 
-The [MedComCareCommunicationProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-carecommunication-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all not activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
+The [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) profile is used to track information about the activity of the communication, e.g. if the message describes a 'new-message' or 'reply-message'. Activity codes can be found in [MedComCareCommunicationMessageActivityCodes ValueSet](https://medcomfhir.dk/ig/terminology/ValueSet-medcom-careCommunication-messagingActivities.html) on the Terminology IG. Note that all not activity codes are allowed for a CareCommunication. The allowed activity codes are: new-message, reply-message and forward-message. 
 
-In cases of a previously sent CareCommunications, MedComMessagingProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
+In cases of a previously sent CareCommunications, MedComCareCommunicationProvenance references the metadata of the latest message which makes it possible to create a historic overview of the admission. 
 
 #### Timestamps
-A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html), [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
+A CareCommunication includes several timestamps. These timestamps are present in the profiles [MedComCareCommunication](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html), [MedComCareCommunicationMessage](http://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html), and [MedComCareCommunicationProvenance](https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html) and have different purposes. Most often, the timestamps will be identical, as the Bundle is typically created and sent in the same workflow. However, the Bundle.timestamp must differ from the other timestamps if the message is not sent in the same workflow in which the Bundle was created. The timestamps are as follows: 
 * Communication.payload.extension:date represents real world event, where the user presses "send" to send the CareCommunication. Each message segment, both string and attachment, will be registered with a date and time for this event.
 * Bundle.timestamp represents the time bundle is generated.
 * Provenance.occuredDateTime[x] represents the time the CareCommunication is sent, in a human-readable time
@@ -68,10 +68,6 @@ A CareCommunication includes several timestamps. These timestamps are present in
 It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
 
 It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
-
-#### IDs
-
-All instances of a profile shall have a global unique id by using an UUID. [Read more about the use of ids here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/052.2_MessageHeader_Identifiers_Timestamps.html).
 
 #### Examples
 The [examples page](examples.html) illustrates a flow of CareCommunications sent between healthcare parties. This includes new message, replies and forwarded messages. 
