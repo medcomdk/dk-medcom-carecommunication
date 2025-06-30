@@ -2,6 +2,12 @@ Profile: MedComCareCommunication
 Parent: Communication
 Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
+* meta 1..1 MS
+* meta.profile 1..1 MS
+* text MS
+* text ^short = "The narrative text SHALL always be included when exchanging a MedCom FHIR Bundle. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
+* text.status MS
+* text.div MS
 * status = #unknown
 * status MS
 * identifier 1..1 MS 
@@ -26,6 +32,7 @@ Description: "Care related communication between two or more parties in Danish h
 * encounter ^type.aggregation = #bundled
 * encounter ^short = "Shall contain a reference to an Encounter resource with a episodeOfCare-identifier, if the identifier is included in a previous message."
 * recipient MS
+* recipient ..1
 * recipient only Reference(MedComCorePractitionerRole or MedComCoreCareTeam)
 * recipient ^short = "Describes a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
 * recipient ^type.aggregation = #bundled 
@@ -55,7 +62,7 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].content[x] MS
 * payload[attachment].extension[date] 1..1 MS
 * payload[attachment].extension[identifier] 1..1 MS
-* payload[attachment].extension[author] 0..1 MS 
+* payload[attachment].extension[author] 0..1 MS
 * payload[attachment].extension[authorContact] 0..1 MS
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
