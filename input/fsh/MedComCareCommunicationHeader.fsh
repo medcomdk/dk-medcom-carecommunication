@@ -22,7 +22,13 @@ Description: "Message header for CareCommunication message"
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
 * definition 1..1 MS
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition obeys medcom-carecommunication-definition-url
+
+Invariant: medcom-carecommunication-definition-url
+Description: "SHALL reference a MedCom CareCommunication MessageDefinition whose canonical URL starts with
+http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5. — that is, any version 1.x of the message definition. The current minor version the sender uses must be added in the end of the definition."
+Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5[.][0-9]{1,2}$')"
+Severity: #error
 
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
