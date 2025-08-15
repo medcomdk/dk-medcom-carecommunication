@@ -29,6 +29,7 @@ menu:
   Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  Dependencies: dependencies.html
 
 parameters:
   apply-contact: true
