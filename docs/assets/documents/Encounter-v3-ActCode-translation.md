@@ -24,7 +24,7 @@ The translation is provided solely to support implementers, and the use of the e
     <th class="tg-ippy"><b>Code</b></th>
     <th class="tg-ippy"><b>System</b></th>
     <th class="tg-ippy"><b>Display (EN)</b></th>
-    <th class="tg-ippy"><b>Danish</b></th>
+    <th class="tg-ippy"><b>Danish (DA)</b></th>
   </tr>
 </thead>
 <tbody>
