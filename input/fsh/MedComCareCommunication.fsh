@@ -24,6 +24,7 @@ Description: "Care related communication between two or more parties in Danish h
 * subject 1.. MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled
+* insert ProducerShallPutInNarrative(subject)
 * topic MS
 * topic.text 1..1 MS
 * topic ^short = "The topic (Danish: emne) may be added as a supplement to the category. Topic must be added in the text-element."

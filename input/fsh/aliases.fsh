@@ -15,3 +15,5 @@ Alias: $PractitionerRoleValues = http://medcomfhir.dk/ig/terminology/ValueSet/me
 Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
 
 Alias: $CareCommunicationActivities = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-messagingActivities
+
+Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
