@@ -89,7 +89,7 @@ A description of the above mentioned information can be found here: <br>
 **Relevant phone number:** A relevant phone number e.g. to the department from which the CareCommunication is sent. The phone number should be applied automatically. In case it is not possible to apply the phone number automatically, it shall be applied by the author. <br> 
 **Timestamp:** Represents the real world event, where the user presses "send" to send the CareCommunication.<br> 
 **Identifier:** An UUID version 4 with a reference to the organisation who assigned the identifier, which will be the same as the sender organisation of the message segment. <br> 
-**Title:** The title of the attached file. This should be applied by the system. Note: it is not allowed to include the '.filetype' in the title. <br>
+**Title:** The title of the attached file. This should be applied by the system. Note: it is not allowed for the system to automatically include the '.filetype' in the title. <br>
 **Creation:** The date and time for when the attachment is created. 
 
 ##### Content of the message segments

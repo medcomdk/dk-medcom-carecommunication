@@ -73,7 +73,7 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].contentAttachment.url MS
 * payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a web page."
 * payload[attachment].contentAttachment.title 1.. MS
-* payload[attachment].contentAttachment.title ^short = "Note: it is not allowed to include the '.filetype' in the title."
+* payload[attachment].contentAttachment.title ^short = "Note: it is not allowed for the system to automatically include '.filetype' in the title."
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
 * category ^short = "The category (Danish: kategori) describes the overall content of the message."
