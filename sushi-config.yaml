@@ -25,10 +25,10 @@ menu:
   Table of Contents: toc.html
   Home: index.html
   Profiles: profiles.html
-  Extensions: extensions.html
   Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  Dependencies: dependencies.html
 
 parameters:
   apply-contact: true
