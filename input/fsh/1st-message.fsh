@@ -67,5 +67,5 @@ Usage: #inline
 * recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"

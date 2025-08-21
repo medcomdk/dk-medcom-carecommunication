@@ -69,6 +69,7 @@ Instance: 2a5b01e4-8c2c-481b-ab12-e383d8e00629
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
+* identifier.value = "urn:uuid:9cf0f386-e9a0-4b42-b330-bf52dbe7ad1e"
 * status = $StatusCodes#finished 
 * class = $ActCodes#IMP 
 * subject = Reference(b8e3000b-3b95-43e2-8e5b-fc347d0a2411)
@@ -108,6 +109,7 @@ Instance: 6397c13d-7cb2-4834-871c-47f528bb79cf
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
+* identifier.value = "urn:uuid:2d40735b-6dbc-433d-8bdb-33a0ea4212ae"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -115,6 +117,7 @@ Instance: 3b1f7d8c-540e-474c-b079-89284c2de621
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
+* identifier.value = "urn:uuid:888919b9-573d-4470-8474-7a0a99a4fca6"
 * practitioner = Reference(6397c13d-7cb2-4834-871c-47f528bb79cf)
 * code = $PractitionerRole#sygeplejerske
 * organization = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
@@ -165,6 +168,7 @@ Instance: fb1d34fe-6672-11ed-9022-0242ac120002
 InstanceOf: MedComCoreCareTeam // 
 Title: "Example of a recipient in terms of a careteam."
 Description: "Example of a recipient in terms of a careteam."
+* identifier.value = "urn:uuid:7f8293fc-01c9-42a6-b360-9526d3747e40"
 * managingOrganization = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)
 * name = "Plejecenter Herlev Team 1"
 
