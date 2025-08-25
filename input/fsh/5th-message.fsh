@@ -52,8 +52,10 @@ Usage: #inline
 * agent.who = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:22093247-f2f5-4b25-a5b2-f1dcbbc3998b"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:76b064ff-e8b0-433f-8b23-780f181dae54"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:ffed9804-35e3-449f-a1c3-0f8ece783dc7"
 
 // CareCommunication reply example
 Instance: 2654e182-cfee-4537-b744-e36231ebe2f3
