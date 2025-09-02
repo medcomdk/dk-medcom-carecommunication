@@ -35,7 +35,7 @@ Usage: #example
 * sender = Reference(0ece868c-6a72-4aa3-8a96-2d985ab630c7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d8434eb5-8286-48f8-a590-4a27175ed82f)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5.0.0"
 
 
 // CareCommunication new example
