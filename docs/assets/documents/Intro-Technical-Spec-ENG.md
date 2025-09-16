@@ -52,14 +52,14 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Communication</span></td>
     <td class="tg-0pky"><span style="color:#333">The MedComCareCommunication profile contains the main content of the message in form of a message segment. A message segment consists of the textual part (payload:string.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp (payload:string.extension:date) and a relevant telephone number (payload:string.extension.authorContact), or an attachment (payload:attachment.content[x]). The message must include a category code (category) and it may include a topic (topic) that supports and elaborates the category. <br> Further, it is possible to include an episodeOfCare-identifier, by referencing an Encounter resource (encounter). <br>A more specific sender and recipient of the message may be referenced from the elements recipient and extension.sender.</span></td>
-    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Extension.sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> <span style="color:#333">payload:string.identifier</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:attachment.identifier</span><br></td>
+    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Identifer</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Extension.sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> <span style="color:#333">payload:string.identifier</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:attachment.identifier</span><br></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePatient</span></a></td>
     <td class="tg-0pky">Patient</td>
     <td class="tg-0pky">Describes a citizen or patient in which the communication concerns when exchanging a CareCommunication.</td>
-    <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
+    <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitionerRole</span></a></td>
     <td class="tg-0pky">PractitionerRole</td>
     <td class="tg-0pky">Describes the role of a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author role and sender or recipient.</td>
-    <td class="tg-0pky">Practitioner <br>Organization</td>
+    <td class="tg-0pky">Practitioner <br>Organization <br>Identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
@@ -87,7 +87,7 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
     <td class="tg-0pky">CareTeam</td>
     <td class="tg-0pky">Describes one or more professionals who plan to participate in the coordination and delivery of care for a patient or citizen. It may be used as the sender or recipient from the MedComCareCommunication profile</td>
-    <td class="tg-0pky">Name<br>ManagingOrganization</td>
+    <td class="tg-0pky">Name <br>ManagingOrganization <br>Identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
