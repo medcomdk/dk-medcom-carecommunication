@@ -80,7 +80,7 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare providers. The Encounter holds the episodeOfCare-identifier.</td>
-    <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
+    <td class="tg-0pky">Status<br>Class<br>Identifier<br>Subject<br>episodeOfCare-identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
