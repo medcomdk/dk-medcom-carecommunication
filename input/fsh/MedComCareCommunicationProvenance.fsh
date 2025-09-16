@@ -2,8 +2,7 @@ Profile: MedComCareCommunicationProvenance
 Parent: MedComMessagingProvenance
 Id: medcom-careCommunication-provenance
 Description: "Provenance information about the current and preceeding message."
-* meta 1..1 MS
-* meta.profile 1..1 MS
+* id MS
 * occurredDateTime MS
 * target only Reference(MedComCareCommunicationMessageHeader)
 * activity from $CareCommunicationActivities
@@ -35,6 +34,14 @@ Description: "Provenance information about the current and preceeding message."
 * entity[payload].what ^short = "A reference to the payload included in this message."
 * entity[payload].what.identifier 1..1 MS
 * entity[payload].what.identifier ^short = "The identifier of the newly included Communication.payload.extension.valueIdentifier must be included here."
+* insert ProducerShallPutInNarrative(id)
+* insert ProducerShallPutInNarrative(target)
+* insert ProducerShallPutInNarrative(occurredDateTime)
+* insert ProducerShallPutInNarrative(activity.coding.code)
+* insert ProducerShallPutInNarrative(agent.who)
+* insert ProducerShallPutInNarrative(entity.role)
+* insert ProducerShallPutInNarrative(entity.what.reference)
+* insert ProducerShallPutInNarrative(entity.what.identifier)
 
 Invariant: medcom-careCommunication-14
 Description: "A reference or an identifier to a previous message must exists"

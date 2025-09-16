@@ -2,8 +2,7 @@ Profile: MedComCareCommunication
 Parent: Communication
 Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
-* meta 1..1 MS
-* meta.profile 1..1 MS
+* id MS
 * text MS
 * text ^short = "The narrative text SHALL always be included when exchanging a MedCom FHIR Bundle. For Governance of MedCom Narratives, see https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/050_Governance-for-MedCom-FHIR-Messages.html#6-narrative-texts."
 * text.status MS
@@ -16,6 +15,7 @@ Description: "Care related communication between two or more parties in Danish h
 * identifier ^short = "The communication identifier" 
 * category 1..1 MS
 * category from $CCCategoryCodes
+* category.coding MS
 * category.coding.code 1..1 MS
 * category.coding.system 1..1 MS
 * priority MS
@@ -84,6 +84,26 @@ Description: "Care related communication between two or more parties in Danish h
 * obeys medcom-careCommunication-9
 * obeys medcom-careCommunication-15
 //* obeys medcom-careCommunication-10
+* insert ProducerShallPutInNarrative(id)
+* insert ProducerShallPutInNarrative(extension[sender])
+* insert ProducerShallPutInNarrative(status)
+* insert ProducerShallPutInNarrative(category.coding.code)
+* insert ProducerShallPutInNarrative(priority)
+* insert ProducerShallPutInNarrative(subject)
+* insert ProducerShallPutInNarrative(topic.text)
+* insert ProducerShallPutInNarrative(encounter)
+* insert ProducerShallPutInNarrative(recipient)
+* insert ProducerShallPutInNarrative(payload[string].extension[date])
+* insert ProducerShallPutInNarrative(payload[string].extension[author])
+* insert ProducerShallPutInNarrative(payload[string].extension[authorContact])
+* insert ProducerShallPutInNarrative(payload[string].content[x])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[date])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[author])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[authorContact])
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].contentType)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].url)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].title)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].creation)
 
 Invariant: medcom-careCommunication-5
 Description: "Priority must not be present when Communication.category is other than 'regarding-referral'"

@@ -2,8 +2,6 @@ Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
-* meta 1..1 MS
-* meta.profile 1..1 MS
 * eventCoding.code MS
 * eventCoding.system MS
 * eventCoding.system 1..
@@ -23,6 +21,17 @@ Description: "Message header for CareCommunication message"
 * focus ^type.aggregation = #bundled
 * definition 1..1 MS
 * definition obeys medcom-carecommunication-definition-url
+* insert ProducerShallPutInNarrative(id)
+* insert ProducerShallPutInNarrative(eventCoding.code)
+* insert ProducerShallPutInNarrative(destination[primary].extension[use].valueCoding.code)
+* insert ProducerShallPutInNarrative(destination[primary].endpoint)
+* insert ProducerShallPutInNarrative(destination[primary].receiver)
+* insert ProducerShallPutInNarrative(destination[cc].extension[use].valueCoding.code)
+* insert ProducerShallPutInNarrative(destination[cc].endpoint)
+* insert ProducerShallPutInNarrative(destination[cc].receiver)
+* insert ProducerShallPutInNarrative(sender)
+* insert ProducerShallPutInNarrative(source.endpoint)
+* insert ProducerShallPutInNarrative(focus)
 
 Invariant: medcom-carecommunication-definition-url
 Description: "SHALL reference a MedCom CareCommunication MessageDefinition whose canonical URL starts with
