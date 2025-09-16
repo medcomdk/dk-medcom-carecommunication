@@ -31,21 +31,18 @@ The standard documentation below provides the necessary content to understand th
 ### 1.1 Clinical guidelines for application 
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
-Below, the clinical guidelines for application can be found (the information is in Danish):<br> 
-[Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
- 
- >Note: Clinical guidelines for application in English are in preparation. As soon as they are ready, they will be published. 
+Below, the clinical guidelines for application can be found (the information is in both Danish and English):<br> 
+[Sundhedsfaglige retningslinjer for anvendelse | Clinical guidelines](assets/documents/Clinical-guidelines-DA.md) <br> 
 
-<!-- [English: Clinical guidelines for application](assets/documents/Clinical-guidelines-ENG.md)  -->
 
 ### 1.2 Use cases
 Use cases describe the different scenarios in which a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of CareCommunication. The descriptions are targeted IT system vendors and the people responsible for the implementation in regions and municipalities.
 
 <!-- The use cases for CareCommunication are qualified in collaboration with EPR and vendors catering to the municipalities. -->
 
-[Danish: Use cases (pdf)](assets/CareCommunication_use_cases_v4.0.0.pdf) 
+[English: Use cases (pdf)](assets/CareCommunication_use cases_v5.0.pdf) 
 
- >Note: Use cases for CareCommunication in English, are currently in preparation. As soon as they are, ready they will be published. 
+
 
 <!-- Below can the use cases in Danish and English be found:<br> 
 
