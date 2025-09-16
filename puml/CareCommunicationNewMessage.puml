@@ -59,12 +59,14 @@ package "CareCommunication message: New message" as new <<Frame>>{
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        identifier.value = "urn:uuid:879ba03e-e95f-424f-8c2f-baca2a5b143c" 
         practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as newPrac{
         id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        identifier.value = "urn:uuid:008226fc-811e-4450-908b-1d321c3dbee3"
         name.family = "Michael"
         name.given = "Burns"
     }
@@ -90,6 +92,7 @@ package "CareCommunication message: New message" as new <<Frame>>{
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.what.identifier = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
     }
 
 newB -[hidden]- newMH

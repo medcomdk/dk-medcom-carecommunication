@@ -65,23 +65,27 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as forwardPracR{
         id = "7cae09e0-5501-11ed-bdc3-0242ac120002"
+        identifier.value = "urn:uuid:cb4106e7-c552-4b99-874d-0f8c004fde68"
         practitioner.reference = "Practitioner/ad055a3d-16b6-41f9-891a-7dd73eecaf03"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as forwardPrac{
         id = "ad055a3d-16b6-41f9-891a-7dd73eecaf03"
+        identifier.value = "urn:uuid:1d95363a-f1e7-4aa4-94a6-b7b40224af78"
         name.family = "Emma"
         name.given = "Waters"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        identifier.value = "urn:uuid:879ba03e-e95f-424f-8c2f-baca2a5b143c"
         practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as newPrac{
         id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        identifier.value = "urn:uuid:008226fc-811e-4450-908b-1d321c3dbee3"
         name.family = "Michael"
         name.given = "Burns"
     }
@@ -117,6 +121,7 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        entity.what.identifier = "urn:uuid:5b8b4329-1d55-4a78-bf27-79c690a8dace"
     }
     class "Provenance (MedComCareCommunicationProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
@@ -126,6 +131,8 @@ package "CareCommunication message: Forward message" as forward <<Frame>>{
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.role.value = "Source"
+        entity.what.identifier = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
     }
 
 forwardB -[hidden]- forwardMH
