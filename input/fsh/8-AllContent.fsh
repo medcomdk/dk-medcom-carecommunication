@@ -43,7 +43,7 @@ Usage: #example
 * sender = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(c34e8284-b353-468f-a2ea-f6ef6330292c)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 // CareCommunication example - new message w. journalnote
 Instance: 790daa1e-bf50-4ee0-af8c-31c493e272bb

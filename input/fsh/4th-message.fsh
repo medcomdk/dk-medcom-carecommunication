@@ -60,7 +60,7 @@ Description: "4th message - Example of a MessageHeader in a forward CareCommunic
 * sender = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(5485bde0-8246-4f46-b1a1-1f14e0a7a856)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 Instance: f98ed410-54fe-11ed-bdc3-0242ac120002
 InstanceOf: MedComMessagingOrganization 

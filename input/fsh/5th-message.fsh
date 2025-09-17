@@ -68,7 +68,7 @@ Usage: #example
 * sender = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
 * focus = Reference(d148fa55-3201-4a18-a7b0-bce67bf597a6)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 // CareCommunication reply example
 Instance: d148fa55-3201-4a18-a7b0-bce67bf597a6
