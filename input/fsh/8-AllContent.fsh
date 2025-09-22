@@ -36,7 +36,7 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message with journal note in message text."
 Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)

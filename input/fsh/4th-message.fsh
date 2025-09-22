@@ -53,7 +53,7 @@ Instance: aac67161-d0de-4933-a78c-060beafb4814
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "4th message - Instance of a MessageHeader resource used in a forward message."
 Description: "4th message - Example of a MessageHeader in a forward CareCommunication message. Valid only if used in a bundle (message)."
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
 * destination[primary].receiver = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
