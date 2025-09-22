@@ -73,27 +73,27 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitionerRole</span></a></td>
     <td class="tg-0pky">PractitionerRole</td>
     <td class="tg-0pky">Describes the role of a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author role and sender or recipient.</td>
-    <td class="tg-0pky">Practitioner <br>Organization <br>Identifier</td>
+    <td class="tg-0pky">Practitioner <br>Organization</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare providers. The Encounter holds the episodeOfCare-identifier.</td>
-    <td class="tg-0pky">Status<br>Class<br>Identifier<br>Subject<br>episodeOfCare-identifier</td>
+    <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
     <td class="tg-0pky">CareTeam</td>
     <td class="tg-0pky">Describes one or more professionals who plan to participate in the coordination and delivery of care for a patient or citizen. It may be used as the sender or recipient from the MedComCareCommunication profile</td>
-    <td class="tg-0pky">Name <br>ManagingOrganization <br>Identifier</td>
+    <td class="tg-0pky">Name <br>ManagingOrganization</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComMessagingOrganization</span></a></td>
-    <td class="tg-0pky">Organisation</td>
-    <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organisation. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
+    <td class="tg-0pky">Organization</td>
+    <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organization. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
     <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Identifier(EAN-id)<br>Name</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
