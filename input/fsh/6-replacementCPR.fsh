@@ -102,7 +102,6 @@ Instance: 97511212-12e6-4182-a42b-cf232c0c117c
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:4ef8f154-eb3f-47fd-8bd2-4668d93dbff1"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -110,6 +109,5 @@ Instance: 2e8c8e54-388c-4547-954c-1917652986da
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:1196b21a-cd5d-402f-87f2-ceb0a08ea393"
 * practitioner = Reference(97511212-12e6-4182-a42b-cf232c0c117c)
 * code = $PractitionerRole#sygeplejerske

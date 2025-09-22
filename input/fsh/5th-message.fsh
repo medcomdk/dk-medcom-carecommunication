@@ -137,7 +137,6 @@ Instance: ed8d4f6a-a2e4-4343-b823-37ca90c1872a
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:023a131d-6b53-4c18-9863-a3b9749dbf7d"
 * name.given[0] = "Ann"
 * name.given[1] = "Marie"
 * name.family = "Wounds"
@@ -146,6 +145,5 @@ Instance: 8adda490-63ef-4d97-86f0-14553628e53a
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:4953f257-28c2-46e2-92f1-b207b70c3099"
 * practitioner = Reference(ed8d4f6a-a2e4-4343-b823-37ca90c1872a)
 * code.text = "Visitator"

@@ -65,27 +65,23 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
     } 
     class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
         id = "8bf63050-5504-11ed-bdc3-0242ac120002"
-        identifier.value = "urn:uuid:cb4106e7-c552-4b99-874d-0f8c004fde68"
         practitioner.reference = "Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as replyPrac{
         id = "7ffff970-5504-11ed-bdc3-0242ac120002"
-        identifier.value = "urn:uuid:1d95363a-f1e7-4aa4-94a6-b7b40224af78"
         name.family = "Emma"
         name.given = "Waters"
     }
     class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
         id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
-        identifier.value = "urn:uuid:879ba03e-e95f-424f-8c2f-baca2a5b143c"
         practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
         code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
         code.value = "sygeplejerske"
     }
     class "Practitioner (MedComCorePractitioner)" as newPrac{
         id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
-        identifier.value = "urn:uuid:008226fc-811e-4450-908b-1d321c3dbee3"
         name.family = "Michael"
         name.given = "Burns"
     }

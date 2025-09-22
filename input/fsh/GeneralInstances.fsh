@@ -32,7 +32,6 @@ Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:520a2af7-4cac-479b-8219-fcefd060ce6a"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -40,7 +39,6 @@ Instance: eda90bde-54f9-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:07f9df46-05d1-41e7-a51c-e5d7b5e9c72a"
 * practitioner = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 * code = $PractitionerRole#sygeplejerske
 
@@ -128,7 +126,6 @@ Instance: e081a7fc-2df6-47e9-b6cd-77d8aaf7e8df
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:1a9b5f4f-7652-4de0-9595-b5779f30cbae"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -136,7 +133,6 @@ Instance: ac1dfd45-a135-47b8-acd7-db0405e21dd0
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:562db31d-caed-4bfe-8312-0331fb6a837d"
 * practitioner = Reference(e081a7fc-2df6-47e9-b6cd-77d8aaf7e8df)
 * code = $PractitionerRole#sygeplejerske
 
@@ -176,7 +172,6 @@ Instance: 5d37f9e1-2beb-4528-81bf-d521d108c738
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:99bad89f-f60b-4dbe-97a6-00b4c0187d7a"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -184,7 +179,6 @@ Instance: e0aca758-487a-4536-b750-35753cbef090
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:64a7722c-7c4e-4e66-9488-4f6bab977cd3"
 * practitioner = Reference(5d37f9e1-2beb-4528-81bf-d521d108c738)
 * code = $PractitionerRole#sygeplejerske
 
@@ -193,7 +187,6 @@ Instance: b12c1357-62f1-455e-b07a-3ebf454c50bc
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:d9f6317e-77ed-4663-9596-76ae9a2db3cb"
 * name.given = "Hans"
 * name.family = "Hansen"
 
@@ -201,7 +194,6 @@ Instance: 7f3c3dbb-1b40-41f7-8acc-fb82eb3d4dd3
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:0cfd262f-9332-427a-9e63-e501b79f5031"
 * practitioner = Reference(b12c1357-62f1-455e-b07a-3ebf454c50bc)
 * code = $PractitionerRole#speciallaege
 
@@ -242,7 +234,6 @@ Instance: 20eac382-551a-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:209133f8-7800-4981-8366-f2ce1d5fb1ed"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -250,7 +241,6 @@ Instance: 35bb99e4-551a-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:63298543-1615-4aad-a795-27227ac695d6"
 * practitioner = Reference(20eac382-551a-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
 
@@ -263,7 +253,6 @@ Instance: ad055a3d-16b6-41f9-891a-7dd73eecaf03
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:71207b1d-a1cd-4334-bebe-4486acac7ad3"
 * name.given = "Emma"
 * name.family = "Waters"
 
@@ -271,7 +260,6 @@ Instance: 7cae09e0-5501-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:6c7536f7-a2ce-4c2e-9d16-ad66e5cfa80c"
 * practitioner = Reference(ad055a3d-16b6-41f9-891a-7dd73eecaf03)
 * code = $PractitionerRole#sygeplejerske
 
@@ -283,7 +271,6 @@ Instance: 7ffff970-5504-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:a28ae55f-7c8b-435a-9f4d-c86e281832e3"
 * name.given = "Emma"
 * name.family = "Waters"
 
@@ -291,7 +278,6 @@ Instance: 8bf63050-5504-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:3e6efe42-b4f1-4e63-ab0f-91a4eb9363a7"
 * practitioner = Reference(7ffff970-5504-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
 
@@ -421,7 +407,6 @@ Instance: 1e2d6388-5520-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:308bbd33-7903-4f6e-843c-806ed2f4f1e1"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -429,6 +414,5 @@ Instance: 2b80d2b8-5520-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:88b4f532-91bf-41a9-8176-3a410d06849b"
 * practitioner = Reference(1e2d6388-5520-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske

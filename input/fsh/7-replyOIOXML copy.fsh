@@ -73,7 +73,6 @@ Instance: 303b2782-e2bf-4780-a8a5-c4b02b0e1c66
 InstanceOf: MedComCoreEncounter
 Title: "MedCom Core Encounter"
 Description: "Example of a simple MedCom Core Encounter"
-* identifier.value = "urn:uuid:8e25869d-92ad-4a81-a7b9-5edfd5e28287"
 * status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
@@ -103,7 +102,6 @@ Instance: 8659596f-6ef4-421c-9ecd-94b65e4d5ff8
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* identifier.value = "urn:uuid:0d26c3b7-e3db-4e35-9f51-89e9b01e75ac"
 * name.given = "Michael"
 * name.family = "Burns"
 
@@ -111,7 +109,6 @@ Instance: 8dc790ba-8d93-4585-b91c-af8225b0796d
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* identifier.value = "urn:uuid:ad898612-c16c-4842-a3fb-a785465fb0b6"
 * practitioner = Reference(8659596f-6ef4-421c-9ecd-94b65e4d5ff8)
 * code = $PractitionerRole#sygeplejerske
 
