@@ -9,6 +9,8 @@
 <!-- * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication) -->
 
 ## 1 Profiles in the CareCommunication Standard 
+> Only the top-level elements directly under the resource are listed in the overview in Table 1. To see MustSupport for the underlying child elements, you need to consult the Implementation Guide for the specific resource, which is linked in the left side of Table 1.
+
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
 
 > There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system, and the receiver must be able to handle the information if it is included in a message.
@@ -29,7 +31,7 @@
     <th class="tg-lc33"><span style="font-weight:bold">Profile</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Resource</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Description</span></th>
-    <th class="tg-lc33"><span style="font-weight:bold">MustSupport elements</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">MustSupport elements (Top-level elements only)</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Implementation Guide Origin</span></th>
   </tr>
 </thead>
