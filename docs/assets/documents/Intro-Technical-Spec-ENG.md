@@ -6,7 +6,7 @@
   * [1.2 Categories and the use of priority](#12-categories-and-the-use-of-priority)
   * [1.3 Encounter and EpisodeOfCare-identifier](#13-encounter-and-episodeofcare-identifier)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
-* [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
+<!-- * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication) -->
 
 ## 1 Profiles in the CareCommunication Standard 
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
@@ -140,7 +140,7 @@ MedComCareCommunicationProvenance is used to keep track of the messaging history
 </figure>
 <br><br>
 
-## 3 Examples of a CareCommunication 
+<!-- ## 3 Examples of a CareCommunication 
 In this section, simplified examples of CareCommunication are presented, which includes: 
 * <a href="#Fig2">new message</a>
 * <a href="#Fig4">reply message</a>
@@ -168,7 +168,7 @@ All types of simplified examples are created as XML or JSON examples in the Care
 <img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig5">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
-<br><br>
+<br><br> -->
 
 <!-- ## 4 Timestamps in the CareCommunication 
 
