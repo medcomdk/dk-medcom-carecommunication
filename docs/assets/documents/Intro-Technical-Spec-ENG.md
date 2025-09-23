@@ -59,28 +59,28 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePatient</span></a></td>
     <td class="tg-0pky">Patient</td>
     <td class="tg-0pky">Describes a citizen or patient in which the communication concerns when exchanging a CareCommunication.</td>
-    <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom</td>
+    <td class="tg-0pky">Id<br>Text<br>Identifier:cpr<br>Identifier:x-ecpr<br>Identifier:d-ecpr<br>Name:official<br>Telecom<br>Address</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitioner</span></a></td>
     <td class="tg-0pky">Practitioner</td>
     <td class="tg-0pky">Describes a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author and sender or recipient.<br><br>MedComCorePractitioner is inherited from the DkCorePractitioner, and must include a name of the practitioner if available. <br></td>
-    <td class="tg-0pky">Name </td>
+    <td class="tg-0pky">Id<br>Text<br>Name</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitionerRole</span></a></td>
     <td class="tg-0pky">PractitionerRole</td>
     <td class="tg-0pky">Describes the role of a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author role and sender or recipient.</td>
-    <td class="tg-0pky">Practitioner <br>Organization</td>
+    <td class="tg-0pky">Id<br>Text<br>Practitioner<br>Organization<br>Code</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare providers. The Encounter holds the episodeOfCare-identifier.</td>
-    <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
+    <td class="tg-0pky">Id<br>Text<br>Status<br>Class<br>Subject<br>episodeOfCare:All Slices<br>episodeOfCare:lpr3identifier<br>serviceProvider</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
