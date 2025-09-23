@@ -69,6 +69,9 @@ It is assumed that in most cases, the above mentioned timestamps will be equal, 
 
 It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#signature-and-relevant-information)
 
+#### Narrative text 
+For guidance on how the narrative text should be structured, please refer to the general guide available [here.](https://medcomdk.github.io/MedComLandingPage/assets/documents/GeneralGovernanceFHIRStandards.html)
+
 #### Examples
 The [examples page](examples.html) illustrates a flow of CareCommunications sent between healthcare parties. This includes new message, replies and forwarded messages. 
 
