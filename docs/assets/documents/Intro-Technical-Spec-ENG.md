@@ -6,9 +6,11 @@
   * [1.2 Categories and the use of priority](#12-categories-and-the-use-of-priority)
   * [1.3 Encounter and EpisodeOfCare-identifier](#13-encounter-and-episodeofcare-identifier)
 * [2 Internal references in a CareCommunication](#2-internal-references-in-a-carecommunication)
-* [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication)
+<!-- * [3 Examples of a CareCommunication](#3-examples-of-a-carecommunication) -->
 
 ## 1 Profiles in the CareCommunication Standard 
+> Only the top-level elements directly under the resource are listed in the overview in Table 1. To see MustSupport for the underlying child elements, you need to consult the Implementation Guide for the specific resource, which is linked in the left side of Table 1.
+
 > In case of any discrepancies between the <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> and this page, the IG page should be followed. Please contact <fhir@medcom.dk> if you find any discrepancies.
 
 > There is a difference between the required elements and MustSupport elements, as the required element always shall be included in a message. MustSupport elements must be included if they are present in the sender's system, and the receiver must be able to handle the information if it is included in a message.
@@ -29,7 +31,7 @@
     <th class="tg-lc33"><span style="font-weight:bold">Profile</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Resource</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Description</span></th>
-    <th class="tg-lc33"><span style="font-weight:bold">MustSupport elements</span></th>
+    <th class="tg-lc33"><span style="font-weight:bold">MustSupport elements (Top-level elements only)</span></th>
     <th class="tg-lc33"><span style="font-weight:bold">Implementation Guide Origin</span></th>
   </tr>
 </thead>
@@ -38,77 +40,77 @@
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-message.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessage</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Bundle</span></td>
     <td class="tg-0pky"><span style="color:#333">Acts as a container for the content of the message</span><br><span style="color:#333">Inherited from the MedComMessagingMessage</span></td>
-    <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Type</span><br><span style="color:#333">Timestamp</span><br><span style="color:#333">Entry</span><br></td>
+    <td class="tg-0pky"><span style="color:#333">id</span><br><span style="color:#333">type</span><br><span style="color:#333">timestamp</span><br><span style="color:#333">entry</span><br></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-messageHeader.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationMessageHeader</span></a></td>
     <td class="tg-0pky"><span style="color:#333">MessageHeader</span></td>
     <td class="tg-0pky"><span style="color:#333">The header of a MedComCareCommunication message, which must always be the first referenced profile, when the type of the bundle is 'message'.This profile holds references to the fundamental information in a message, such as sender, receiver, and the content of the message in terms of the CareCommunication profile.</span><br><span style="color:#333">Inherited from MedComMessagingMessageHeader</span></td>
-    <td class="tg-0pky"><span style="color:#333">Id</span><br><span style="color:#333">Text</span><br><span style="color:#333">Event[x]:eventCoding</span><br><span style="color:#333">Destination:primary</span><br> <span style="color:#333">Destination:primary.use</span><br> <span style="color:#333">Destination:primary.endpoint</span><br> <span style="color:#333">Destination:primary.receiver</span><br>  <span style="color:#333">Sender</span><br><span style="color:#333">Source</span><br><span style="color:#333">Source.endpoint</span><br><span style="color:#333">Focus</span></td>
+    <td class="tg-0pky"><span style="color:#333">id</span><br><span style="color:#333">text</span><br><span style="color:#333">event[x]</span><br><span style="color:#333">destination:primary</span><br><span style="color:#333">sender</span><br><span style="color:#333">source</span><br><span style="color:#333">focus</span><br><span style="color:#333">definition</span></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunication</span></a></td>
     <td class="tg-0pky"><span style="color:#333">Communication</span></td>
     <td class="tg-0pky"><span style="color:#333">The MedComCareCommunication profile contains the main content of the message in form of a message segment. A message segment consists of the textual part (payload:string.content[x]) and a signature which includes an author (payload:string.extension.author), a timestamp (payload:string.extension:date) and a relevant telephone number (payload:string.extension.authorContact), or an attachment (payload:attachment.content[x]). The message must include a category code (category) and it may include a topic (topic) that supports and elaborates the category. <br> Further, it is possible to include an episodeOfCare-identifier, by referencing an Encounter resource (encounter). <br>A more specific sender and recipient of the message may be referenced from the elements recipient and extension.sender.</span></td>
-    <td class="tg-0pky"><span style="color:#333">Status</span><br><span style="color:#333">Category</span><br><span style="color:#333">Priority</span><br><span style="color:#333">Subject</span><br><span style="color:#333">Topic</span><br><span style="color:#333">Encounter</span><br><span style="color:#333">Sent (dateTime)</span><br><span style="color:#333">Recipient</span><br><span style="color:#333">Extension.sender</span><br><span style="color:#333">Slices for payload</span><br> <span style="color:#333">payload:string.content[x]</span><br> <span style="color:#333">payload:string.extension:author</span><br> <span style="color:#333">payload:string.extension:authorContact</span> <span style="color:#333">payload:string.extension:date</span> <span style="color:#333">payload:string.identifier</span><br> <span style="color:#333">payload:attachment.content[x]</span><br> <span style="color:#333">payload:attachment.identifier</span><br></td>
+    <td class="tg-0pky"><span style="color:#333">id</span><br><span style="color:#333">text</span><br><span style="color:#333">extension.sender</span><br><span style="color:#333">identifier</span><br><span style="color:#333">status</span><br><span style="color:#333">category</span><br><span style="color:#333">priority</span><br><span style="color:#333">subject</span><br><span style="color:#333">topic</span><br><span style="color:#333">encounter</span><br><span style="color:#333">recipient</span><br><span style="color:#333">payload:string</span><br><span style="color:#333">payload:attachment</span><br></td>
     <td class="tg-0pky"><span style="color:#333">CareCommunication</span></td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePatient</span></a></td>
     <td class="tg-0pky">Patient</td>
     <td class="tg-0pky">Describes a citizen or patient in which the communication concerns when exchanging a CareCommunication.</td>
-    <td class="tg-0pky">Id<br>Identifier(CPR-number)<br>Name<br>Address<br>Telecom<br>Deceased[x]</td>
+    <td class="tg-0pky">id<br>text<br>identifier:cpr<br>identifier:x-ecpr<br>identifier:d-ecpr<br>name:official<br>telecom<br>address</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitioner.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitioner</span></a></td>
     <td class="tg-0pky">Practitioner</td>
     <td class="tg-0pky">Describes a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author and sender or recipient.<br><br>MedComCorePractitioner is inherited from the DkCorePractitioner, and must include a name of the practitioner if available. <br></td>
-    <td class="tg-0pky">Name </td>
+    <td class="tg-0pky">id<br>text<br>name</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-practitionerrole.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCorePractitionerRole</span></a></td>
     <td class="tg-0pky">PractitionerRole</td>
     <td class="tg-0pky">Describes the role of a healthcare professional or another actor involved in citizen or patient care. This profile is used to describe the author role and sender or recipient.</td>
-    <td class="tg-0pky">Practitioner <br>Organization</td>
+    <td class="tg-0pky">id<br>text<br>practitioner<br>organization<br>code</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-encounter.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreEncounter</span></a></td>
     <td class="tg-0pky">Encounter</td>
     <td class="tg-0pky">Describes the interaction between a patient and one or more healthcare providers. The Encounter holds the episodeOfCare-identifier.</td>
-    <td class="tg-0pky">Status<br>Class<br>Subject<br>episodeOfCare-identifier</td>
+    <td class="tg-0pky">id<br>text<br>status<br>class<br>subject<br>episodeOfCare:All Slices<br>episodeOfCare:lpr3identifier<br>serviceProvider</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-careteam.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreCareTeam</span></a></td>
     <td class="tg-0pky">CareTeam</td>
     <td class="tg-0pky">Describes one or more professionals who plan to participate in the coordination and delivery of care for a patient or citizen. It may be used as the sender or recipient from the MedComCareCommunication profile</td>
-    <td class="tg-0pky">Name<br>ManagingOrganization</td>
+    <td class="tg-0pky">id<br>text<br>name<br>managingOrganization</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComMessagingOrganization</span></a></td>
-    <td class="tg-0pky">Organisation</td>
-    <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organisation. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
-    <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Identifier(EAN-id)<br>Name</td>
+    <td class="tg-0pky">Organization</td>
+    <td class="tg-0pky">Contains information which is useful to identify a sender or receiver organization. It is primarily used for transportation matters, why it must contain a SOR and EAN identifier. This profile inherits from MedComCoreOrganization.</td>
+    <td class="tg-0pky">id<br>text<br>identifier:EAN-ID<br>identifier:SOR-ID<br>name</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
   <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-provenance.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCareCommunicationProvenance</span></a></td>
     <td class="tg-0pky">Provenance</td>
     <td class="tg-0pky">Describes the activity of a message, e.g. if the message is a new message or a modified message.<br>In case of a previously sent message, the Provenance resource holds a reference to this message.<br>Therefore, it is possible to get an overview of the communication about a patient.</td>
-    <td class="tg-0pky">Id<br>Target<br>OccurredDateTime<br>Timestamps<br>Activity<br>Agent<br>Entity (reference to the previous message) and the payload(s) of the current message</td>
+    <td class="tg-0pky">id<br>text<br>target<br>occurred[x]:occurredDateTime<br>recorded<br>activity<br>agent<br>entity:All Slices<br>entity:preceedingMessage<br>entity:payload</td>
     <td class="tg-0pky">CareCommunication</td>
   </tr>
    <tr>
     <td class="tg-0pky"><a href="https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html" target="_blank"><span style="text-decoration:none;color:#5093D6">MedComCoreOrganization</span></a></td>
     <td class="tg-0pky">Organization</td>
     <td class="tg-0pky">Contains information about an organization. The Organization is referenced from Practitioner or CareTeam.</td>
-    <td class="tg-0pky">Id<br>Identifier(SOR-id)<br>Name</td>
+    <td class="tg-0pky">id<br>text<br>identifier:SOR-ID<br>name</td>
     <td class="tg-0pky">Core</td>
   </tr>
 </tbody>
@@ -140,7 +142,7 @@ MedComCareCommunicationProvenance is used to keep track of the messaging history
 </figure>
 <br><br>
 
-## 3 Examples of a CareCommunication 
+<!-- ## 3 Examples of a CareCommunication 
 In this section, simplified examples of CareCommunication are presented, which includes: 
 * <a href="#Fig2">new message</a>
 * <a href="#Fig4">reply message</a>
@@ -168,7 +170,7 @@ All types of simplified examples are created as XML or JSON examples in the Care
 <img src="../images/CCForwardMessage2.svg" alt="Simplified example: Forward message" style="width: 55%" id="Fig5">
 <figcaption text-align = "center"><b>Figure 5: Simplified example: Forward message </b></figcaption>
 </figure>
-<br><br>
+<br><br> -->
 
 <!-- ## 4 Timestamps in the CareCommunication 
 
