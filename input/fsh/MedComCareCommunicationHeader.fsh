@@ -5,8 +5,6 @@ Description: "Message header for CareCommunication message"
 * eventCoding.code = #care-communication-message
 * eventCoding.system = $MessageEvents
 * destination[cc] ..0
-* destination[primary].extension[use].valueCoding.system 1..
-* destination[primary].extension[use].valueCoding.code 1..
 * focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
@@ -14,10 +12,8 @@ Description: "Message header for CareCommunication message"
 * definition obeys medcom-carecommunication-definition-url
 * insert ProducerShallPutInNarrative(id)
 * insert ProducerShallPutInNarrative(eventCoding.code)
-* insert ProducerShallPutInNarrative(destination[primary].extension[use].valueCoding.code)
 * insert ProducerShallPutInNarrative(destination[primary].endpoint)
 * insert ProducerShallPutInNarrative(destination[primary].receiver)
-* insert ProducerShallPutInNarrative(destination[cc].extension[use].valueCoding.code)
 * insert ProducerShallPutInNarrative(destination[cc].endpoint)
 * insert ProducerShallPutInNarrative(destination[cc].receiver)
 * insert ProducerShallPutInNarrative(sender)
@@ -34,7 +30,7 @@ Severity: #error
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
 Usage: #inline
-* valueCoding.code = $Use#primary
+* valueCoding = $Use#primary
 
 
 /* // CareCommunication Cancel example
