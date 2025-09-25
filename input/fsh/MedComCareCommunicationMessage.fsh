@@ -2,8 +2,6 @@ Profile: MedComCareCommunicationMessage
 Parent: MedComMessagingMessage
 Id: medcom-careCommunication-message
 Description: "The CareCommunication is used to ensure secure electronic communication of personally identifiable information and is most often used for ad hoc communication between parties in Danish Healthcare. However, the CareCommunication shall only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature."
-* meta 1..1 MS
-* meta.profile 1..1 MS SU
 * entry.resource 1..
 * entry ^short = "Message content (MedComCareCommunicationMessageHeader, MedComMessagingOrganization, MedComMessagingProvenance, MedComCareCommunication, MedComCorePatient, MedComCoreEncounter, MedComCorePractitioner, MedComCorePractitionerRole, MedComCoreCareTeam) - Open"
 * obeys medcom-careCommunication-1
