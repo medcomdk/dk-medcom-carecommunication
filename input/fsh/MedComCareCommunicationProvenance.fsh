@@ -2,8 +2,6 @@ Profile: MedComCareCommunicationProvenance
 Parent: MedComMessagingProvenance
 Id: medcom-careCommunication-provenance
 Description: "Provenance information about the current and preceeding message."
-* id MS
-* occurredDateTime MS
 * target only Reference(MedComCareCommunicationMessageHeader)
 * activity from $CareCommunicationActivities
 * activity ^short = "If the previous message is an EDIFACT or OIOXML message, the activity code must be reply-message"

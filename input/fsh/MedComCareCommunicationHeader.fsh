@@ -2,24 +2,15 @@ Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
-* eventCoding.code MS
-* eventCoding.system MS
-* eventCoding.system 1..
 * eventCoding.code = #care-communication-message
 * eventCoding.system = $MessageEvents
 * destination[cc] ..0
-* destination MS
-* destination[primary] MS
-* destination[primary].extension[use].url MS
-* destination[primary].extension[use].valueCoding MS
-* destination[primary].extension[use].valueCoding.system MS
-* destination[primary].extension[use].valueCoding.code MS
 * destination[primary].extension[use].valueCoding.system 1..
 * destination[primary].extension[use].valueCoding.code 1..
 * focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
-* definition 1..1 MS
+* definition 1..1
 * definition obeys medcom-carecommunication-definition-url
 * insert ProducerShallPutInNarrative(id)
 * insert ProducerShallPutInNarrative(eventCoding.code)
