@@ -15,7 +15,7 @@ Description: "Care related communication between two or more parties in Danish h
 * identifier ^short = "The communication identifier" 
 * category 1..1 MS
 * category from $CCCategoryCodes
-* category.coding MS
+* category.coding 1..1 MS
 * category.coding.code 1..1 MS
 * category.coding.system 1..1 MS
 * priority MS
