@@ -2,8 +2,6 @@ Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
 Description: "Message header for CareCommunication message"
-* eventCoding.system MS
-* eventCoding.system 1..
 * eventCoding.code = #care-communication-message
 * eventCoding.system = $MessageEvents
 * destination[cc] ..0
