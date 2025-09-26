@@ -25,7 +25,7 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall be of the type medcom-careCommunication-provenance profile"
 Severity: #error
-Expression: "entry.resource.ofType(Provenance).all(conformsTo(meta.profile = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance'))"
+Expression: "entry.resource.ofType(Provenance).all(conformsTo('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance'))"
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
