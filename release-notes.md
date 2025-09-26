@@ -1,3 +1,5 @@
+- Updated constraint medcom-careCommunication-3: as it did not work intentionally.
+
 - Updated constraint medcom-careCommunication-7: Previously, only a practitioner role code was accepted. It now accepts either a practitioner role code or a free-text description of the role.
 
 - Updated constraints medcom-careCommunication-11 and medcom-careCommunication-12 to use resolve(). This ensures that sender and recipient references can be resolved to their full resources, making it possible to compare the organization of a Practitioner or CareTeam with the corresponding sender or receiver organization in the MessageHeader.
@@ -37,6 +39,8 @@
 - Corrected dependencies for parent Implementation Guides. Be aware of changes in these IGs as well.
 
 - Dependencies tab in the menu bar is added.
+
+- Excluded TTL format from the examples.
 
 - The following cardinalities, MustSupport, and Obligation (SHALL:in-narrative) have been added:
 
