@@ -25,7 +25,7 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall be of the type medcom-careCommunication-provenance profile"
 Severity: #error
-Expression: "entry.resource.ofType(Provenance).where(meta.profile = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance').exists()"
+Expression: "entry.resource.ofType(Provenance).all(conformsTo(meta.profile = 'http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance'))"
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
@@ -33,10 +33,15 @@ Severity: #error
 Expression: "entry.resource.ofType(Practitioner).name.exists()"
 
 Invariant: medcom-careCommunication-11
-Description: "If a specific sender is present, at least one of the organisations that the referenced CareTeam or Practitioner/PractitionerRole belongs to MUST equal the organisation referenced in MessageHeader.sender.
+Description: "If a specific sender is present, at least one of the organisations that the
+ referenced CareTeam or Practitioner/PractitionerRole belongs to MUST equal the organisation referenced in MessageHeader.sender.
 If no specific sender extension is present, this rule is not evaluated."
 Severity: #error
-Expression: "Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().managingOrganization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve() or Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().organization.reference.resolve() = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve() or Bundle.entry.resource.ofType(Communication).extension.exists().not()"
+Expression: "Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().managingOrganization.reference.resolve()
+        = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve()
+    or Bundle.entry.resource.ofType(Communication).extension.value.reference.resolve().organization.reference.resolve()
+        = %resource.entry.resource.ofType(MessageHeader).sender.reference.resolve()
+    or Bundle.entry.resource.ofType(Communication).extension.exists().not()"
 
 Invariant: medcom-careCommunication-12
 Description: "If a specific recipient is present, at least one of the organisations that the referenced CareTeam or Practitioner/PractitionerRole belongs to MUST equal the organisation referenced in MessageHeader.receiver.
