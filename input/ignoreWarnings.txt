@@ -27,5 +27,7 @@ Unable to check if http://medcomfhir.dk/ig/core/1.0/ValueSet/medcom-carecommunic
 %medcom-careCommunication-6: The left side is inherently a collection, and so the expression 'category.coding.code%
 %medcom-careCommunication-11: The left side is inherently a collection, and so the expression%
 
-
-
+# Irrelevant
+%The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide%
+%An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide%
+%Pinned the version of%

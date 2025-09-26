@@ -29,8 +29,10 @@ menu:
   Dependencies: dependencies.html
 
 parameters:
+  apply-version: false
+  default-version: true
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
+  pin-canonicals: pin-multiples
   excludettl: true
-  pin-canonicals: pin-multiples # Pin canonical URLs when multiple versions are present due to more than one of the same dependency in the IG

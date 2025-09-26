@@ -63,8 +63,8 @@ The examples below demonstrates how different information is included in a CareC
 This includes
 * Category as 'regarding-referal' and priority
 * Topic that elaborates the category
-* The episodeOfCare-identifier is included in the Encounter instance and referenced from the Communication instance, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html).
-* Specifik sender and recipient, which are described in CareTeam and Practitioner/PractitionerRole instances. This is further described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication-intro.html)
+* The episodeOfCare-identifier is included in the Encounter instance and referenced from the Communication instance, as the user of a hospital system in the context of an admission, when creating a CareCommunication. Other usages is described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication.html).
+* Specifik sender and recipient, which are described in CareTeam and Practitioner/PractitionerRole instances. This is further described on the page for the [MedComCareCommunication profile](StructureDefinition-medcom-careCommunication-communication.html)
 * Structured author information for the author of the attached pdf-document.
 * An attachment in terms of an URL. 
 
