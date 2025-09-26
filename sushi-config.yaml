@@ -32,3 +32,5 @@ parameters:
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
+  excludettl: true
+  pin-canonicals: pin-multiples # Pin canonical URLs when multiple versions are present due to more than one of the same dependency in the IG
