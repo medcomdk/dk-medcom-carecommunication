@@ -26,13 +26,6 @@ http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunica
 Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5[.][0-9]{1,2}$')"
 Severity: #error
 
-
-Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-InstanceOf: MedComMessagingDestinationUseExtension
-Usage: #inline
-* valueCoding = $Use#primary
-
-
 /* // CareCommunication Cancel example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 InstanceOf: MedComCareCommunicationMessageHeader
