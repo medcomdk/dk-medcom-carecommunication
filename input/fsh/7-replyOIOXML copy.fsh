@@ -5,7 +5,7 @@ Title: "Reply CareCommunication message. Reply to OIOXML Message"
 Description: "Example of a reply to an OIOXML message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-07T18:00:00+01:00
+* timestamp = 2024-05-07T18:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
 * entry[=].resource = 3076d9b0-5521-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5"
@@ -124,7 +124,7 @@ Usage: #example
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
 * encounter = Reference(303b2782-e2bf-4780-a8a5-c4b02b0e1c66)
 * payload.contentString = "We have a question regarding the referal..."
-* payload.extension[date].valueDateTime = 2024-05-07T18:00:00+01:00
+* payload.extension[date].valueDateTime = 2024-05-07T18:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1813b23d-195e-4b28-8221-24247035bf08"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * payload.extension[author].valueReference = Reference(8dc790ba-8d93-4585-b91c-af8225b0796d)

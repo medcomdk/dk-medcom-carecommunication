@@ -44,7 +44,7 @@ InstanceOf: MedComCareCommunication
 Title: "Instance of Communication resource used in a new message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
-* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
+* identifier.value = "urn:uuid:cefe0dee-13b5-4bec-a843-09b4d58e4fe6"
 * category = $CategoryCodes#examination-results
 * subject = Reference(50c51ef0-00b0-429a-b212-35ee0773fd5a)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
