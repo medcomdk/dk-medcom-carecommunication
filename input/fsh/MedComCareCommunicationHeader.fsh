@@ -10,14 +10,6 @@ Description: "Message header for CareCommunication message"
 * focus ^type.aggregation = #bundled
 * definition 1..1
 * definition obeys medcom-carecommunication-definition-url
-* insert ProducerShallPutInNarrative(id)
-* insert ProducerShallPutInNarrative(eventCoding.code)
-* insert ProducerShallPutInNarrative(destination[primary].endpoint)
-* insert ProducerShallPutInNarrative(destination[primary].receiver)
-* insert ProducerShallPutInNarrative(destination[cc].endpoint)
-* insert ProducerShallPutInNarrative(destination[cc].receiver)
-* insert ProducerShallPutInNarrative(sender)
-* insert ProducerShallPutInNarrative(source.endpoint)
 * insert ProducerShallPutInNarrative(focus)
 
 Invariant: medcom-carecommunication-definition-url
