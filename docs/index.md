@@ -56,9 +56,7 @@ The technical specifications for the MedCom CareCommunication standard is compos
   *	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
   *	<a href="https://medcomfhir.dk/ig/messaging/4.0.0-trial-use/" target="_blank">MedCom Messaging IG (Version 4.0.0: Currently trial-use)</a>
   *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
-<p>&nbsp;</p>
   *	<a href="https://medcomfhir.dk/ig/messagedefinitions/" target="_blank">MedCom MessageDefinitions IG</a>
-<p>&nbsp;</p>
 
 <!-- The profiles that are part of the technical specification for <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a> are:  
 *	<a href="https://medcomfhir.dk/ig/carecommunication/StructureDefinition-medcom-careCommunication-communication.html" target="_blank">MedComCareCommunication</a>
