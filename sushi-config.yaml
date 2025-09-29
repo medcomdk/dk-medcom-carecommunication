@@ -3,11 +3,11 @@ canonical: http://medcomfhir.dk/ig/carecommunication
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
-status: active
-version: 4.0.3
+status: draft # draft | active | retired | unknown
+version: 5.0.0-trial-use
 fhirVersion: 4.0.1
 copyrightYear: 2021+
-releaseLabel: release
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: MedCom
   url: http://www.medcom.dk
