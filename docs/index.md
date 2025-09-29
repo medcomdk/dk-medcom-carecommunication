@@ -12,7 +12,7 @@
   * [3.2 Mapping of messages](#32-mapping-of-messages)
   * [3.3 Examples](#33-examples)
 
-> Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
+> Note: Clinical guidelines for application is available in both Danish and English. The remaining documentation will solely be in English.
 
 This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support secure digital communication between social care, the psychiatric area and the somatic sector. CareCommunication standard enable communication of personally identifiable information and is typically used for ad hoc communication. However, the CareCommunication must only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature.
 
@@ -85,21 +85,27 @@ Certification of a system implies both an approved test protocol and a run troug
 
 
 **Test examples for sending and receiving a CareCommunication**
-The test material will be available on this page from November 1, 2025.
-<!--* [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip).-->
 
- **Sending a CareCommunication**
 The test material will be available on this page from November 1, 2025.
- <!-- * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
-  *  <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
 
-  * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose. The test script IG inlcudes obsolete test examples for an old test protocol. Do not use these. </a>
+<!-- * [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip) -->
+
+**Sending a CareCommunication**
+
+The test material will be available on this page from November 1, 2025.
+
+<!--
+* [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
+* <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
+* <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose. The test script IG includes obsolete test examples for an old test protocol. Do not use these.</a>
 -->
 
 **Receiving a CareCommunication**
+
 The test material will be available on this page from November 1, 2025.
-<!--  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
--->
+
+<!-- * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx) -->
+
 
 
 ## 3 Conversion service 
