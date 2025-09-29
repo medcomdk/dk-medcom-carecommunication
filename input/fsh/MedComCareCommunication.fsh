@@ -2,6 +2,11 @@ Profile: MedComCareCommunication
 Parent: Communication
 Id: medcom-careCommunication-communication
 Description: "Care related communication between two or more parties in Danish healthcare"
+* id MS
+* text MS
+* text ^short = "The narrative text SHALL always be included when exchanging a MedCom FHIR Bundle."
+* text.status MS
+* text.div MS
 * status = #unknown
 * status MS
 * identifier 1..1 MS 
@@ -10,6 +15,7 @@ Description: "Care related communication between two or more parties in Danish h
 * identifier ^short = "The communication identifier" 
 * category 1..1 MS
 * category from $CCCategoryCodes
+* category.coding 1..1 MS
 * category.coding.code 1..1 MS
 * category.coding.system 1..1 MS
 * priority MS
@@ -26,10 +32,11 @@ Description: "Care related communication between two or more parties in Danish h
 * encounter ^type.aggregation = #bundled
 * encounter ^short = "Shall contain a reference to an Encounter resource with a episodeOfCare-identifier, if the identifier is included in a previous message."
 * recipient MS
+* recipient ..1
 * recipient only Reference(MedComCorePractitionerRole or MedComCoreCareTeam)
 * recipient ^short = "Describes a more specific receiver than the MessageHeader.destination.reciever, called a recipient. It may be a careteam a homecare group in the municipality or a named general practitioner."
 * recipient ^type.aggregation = #bundled 
-* extension contains medcom-core-sender-extension named sender 0..1 MS SU
+* extension contains medcom-core-sender-extension named sender 0..1 MS
 * payload 1..
 * payload ^short = "Each payload corresponds to a message segment with a message text or an attachment. At least one payload with a message text shall be included."
 * payload.extension contains medcom-core-datetime-extension named date 0..1 
@@ -44,17 +51,18 @@ Description: "Care related communication between two or more parties in Danish h
     attachment 0.. MS
 * payload[string].content[x] only string
 * payload[string].content[x] MS 
-* payload[string].extension[date] 1..1 MS SU
-* payload[string].extension[identifier] 1..1 MS SU
-* payload[string].extension[author] 1..1 MS SU
-* payload[string].extension[authorContact] 1..1 MS SU
+* payload[string].content[x] ^short = "Line breaks must be represented as \n in FHIR JSON and as &#xA; in FHIR XML."
+* payload[string].extension[date] 1..1 MS
+* payload[string].extension[identifier] 1..1 MS
+* payload[string].extension[author] 1..1 MS
+* payload[string].extension[authorContact] 1..1 MS
 * payload[attachment].content[x] only Attachment
 * payload[attachment] 0.. MS
 * payload[attachment] ^short = "The payload with an attachment shall contain a link or content attached to the message."
 * payload[attachment].content[x] MS
-* payload[attachment].extension[date] 1..1 MS SU
-* payload[attachment].extension[identifier] 1..1 MS SU
-* payload[attachment].extension[author] 0..1 MS 
+* payload[attachment].extension[date] 1..1 MS
+* payload[attachment].extension[identifier] 1..1 MS
+* payload[attachment].extension[author] 0..1 MS
 * payload[attachment].extension[authorContact] 0..1 MS
 * payload[attachment].contentAttachment 1.. MS
 * payload[attachment].contentAttachment.contentType MS
@@ -65,6 +73,7 @@ Description: "Care related communication between two or more parties in Danish h
 * payload[attachment].contentAttachment.url MS
 * payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a web page."
 * payload[attachment].contentAttachment.title 1.. MS
+* payload[attachment].contentAttachment.title ^short = "Note: it is not allowed for the system to automatically include '.filetype' in the title."
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
 * category ^short = "The category (Danish: kategori) describes the overall content of the message."
@@ -73,7 +82,28 @@ Description: "Care related communication between two or more parties in Danish h
 * obeys medcom-careCommunication-7
 * obeys medcom-careCommunication-8
 * obeys medcom-careCommunication-9
+* obeys medcom-careCommunication-15
 //* obeys medcom-careCommunication-10
+* insert ProducerShallPutInNarrative(id)
+* insert ProducerShallPutInNarrative(extension[sender])
+* insert ProducerShallPutInNarrative(status)
+* insert ProducerShallPutInNarrative(category.coding.code)
+* insert ProducerShallPutInNarrative(priority)
+* insert ProducerShallPutInNarrative(subject)
+* insert ProducerShallPutInNarrative(topic.text)
+* insert ProducerShallPutInNarrative(encounter)
+* insert ProducerShallPutInNarrative(recipient)
+* insert ProducerShallPutInNarrative(payload[string].extension[date])
+* insert ProducerShallPutInNarrative(payload[string].extension[author])
+* insert ProducerShallPutInNarrative(payload[string].extension[authorContact])
+* insert ProducerShallPutInNarrative(payload[string].content[x])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[date])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[author])
+* insert ProducerShallPutInNarrative(payload[attachment].extension[authorContact])
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].contentType)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].url)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].title)
+* insert ProducerShallPutInNarrative(payload[attachment].content[x].creation)
 
 Invariant: medcom-careCommunication-5
 Description: "Priority must not be present when Communication.category is other than 'regarding-referral'"
@@ -88,7 +118,7 @@ Expression: "iif(category.coding.code != 'other', true, category.coding.code = '
 Invariant: medcom-careCommunication-7
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a message segment."
 Severity: #error
-Expression: "payload.where(extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').exists()).extension.value.reference.resolve().code.coding.code.exists()"
+Expression: "entry.resource.payload.extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').value.resolve().all(code.coding.code.exists() xor code.text.exists())"
 
 
 Invariant: medcom-careCommunication-8
@@ -106,6 +136,12 @@ Invariant: medcom-careCommunication-9
 Description: "An episodeOfCare-identifier must be included when an Encounter instance is included."
 Severity: #error
 Expression: "iif(encounter.exists().not(), true, encounter.reference.resolve().episodeOfCare.identifier.exists())"
+
+Invariant: medcom-careCommunication-15
+Description: "If an Encounter resource is present in the bundle, there must be a reference to it in Communication.encounter. If no Encounter is present, Communication.encounter must not be populated."
+Severity: #error
+Expression: "iif(encounter.exists(), Communication.encounter.reference.exists(), Communication.encounter.exists().not())"
+
 
 /* Invariant: medcom-careCommunication-9
 Description: "When an attachment is included, it shall have an identifier"

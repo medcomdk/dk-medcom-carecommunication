@@ -13,23 +13,26 @@ publisher:
   url: http://www.medcom.dk
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
-  hl7.fhir.dk.core: 
-    uri: https://hl7.dk/fhir/core/3.2.0/
-    version: 3.2.0
-  medcom.fhir.dk.core: 2.4.0
-  medcom.fhir.dk.messaging: 2.2.2
-  medcom.fhir.dk.terminology: 1.7.0
+  hl7.fhir.dk.core: 3.4.0
+  medcom.fhir.dk.core: 3.0.0
+  medcom.fhir.dk.messaging: 4.0.0-trial-use
+  medcom.fhir.dk.terminology: 2.0.0
+  medcom.fhir.dk.messagedefinitions: 1.0.0
   
 menu:
   Table of Contents: toc.html
   Home: index.html
   Profiles: profiles.html
-  Extensions: extensions.html
   Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  Dependencies: dependencies.html
 
 parameters:
+  apply-version: false
+  default-version: true
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
+  pin-canonicals: pin-multiples
+  excludettl: true

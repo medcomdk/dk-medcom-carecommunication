@@ -99,7 +99,7 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         identifier[1].system = "urn:oid:1.2.208.176.1.1"
         identifier[1].value = "265161000016000"
     }
-    class "Provenance (MedComMessagingProvenance)" as replyPRO{
+    class "Provenance (MedComCareCommunicationProvenance)" as replyPRO{
         id = "30c0f779-783f-46b2-b38f-faebd2bedb3f"
         target.reference = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
         occuredDateTime = "2024-05-02T11:30:00+01:00"
@@ -110,8 +110,9 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
         entity.role.value = "revision"
         entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        entity.what.identifier = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
     }
-    class "Provenance (MedComMessagingProvenance)" as newPRO{
+    class "Provenance (MedComCareCommunicationProvenance)" as newPRO{
         id = "4c284936-5454-4116-95fc-3c8eeeed2400"
         target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
         occuredDateTime = "2024-05-01T12:00:00+01:00"
@@ -119,6 +120,7 @@ package "CareCommunication message: Reply message" as reply <<Frame>>{
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.what.identifier = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
     }
 
 replyB -[hidden]- replyMH

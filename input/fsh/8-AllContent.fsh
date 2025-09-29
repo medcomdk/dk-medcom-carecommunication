@@ -36,14 +36,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message with journal note in message text."
 Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(33153a8a-97c8-4f55-b7ad-bbedee8bd0e1)
 * sender = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(c34e8284-b353-468f-a2ea-f6ef6330292c)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 // CareCommunication example - new message w. journalnote
 Instance: 790daa1e-bf50-4ee0-af8c-31c493e272bb
@@ -56,12 +56,12 @@ Usage: #example
 * recorded = 2024-05-01T12:00:00+01:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36" // text
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:a4f712ee-faea-48d9-9108-27aeb639e5a0" // attachment
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:eed10baa-5280-4d05-904b-3ce180a91568" // link
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:f9cf2547-7a1c-4639-9fd3-9f717556ad36" // text
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:a4f712ee-faea-48d9-9108-27aeb639e5a0" // attachment
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:eed10baa-5280-4d05-904b-3ce180a91568" // link
 
 
 // MedComCoreEncounter instance

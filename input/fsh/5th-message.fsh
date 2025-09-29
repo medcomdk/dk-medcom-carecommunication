@@ -15,14 +15,14 @@ Usage: #example
 * entry[=].resource = ed8d4f6a-a2e4-4343-b823-37ca90c1872a
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8adda490-63ef-4d97-86f0-14553628e53a"
 * entry[=].resource = 8adda490-63ef-4d97-86f0-14553628e53a
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/2d734f53-c71b-443a-a2d0-41327653b57c"
-* entry[=].resource = 2d734f53-c71b-443a-a2d0-41327653b57c
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/2a57c93e-de08-423b-b4ee-fcab85cc29bd"
-* entry[=].resource = 2a57c93e-de08-423b-b4ee-fcab85cc29bd
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/b0b3f1f5-3818-4d1c-aa25-cf08b01697a1"
-* entry[=].resource = b0b3f1f5-3818-4d1c-aa25-cf08b01697a1
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/9a274f97-57e9-4847-8022-4dc6152351c3"
-* entry[=].resource = 9a274f97-57e9-4847-8022-4dc6152351c3
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
+* entry[=].resource = 8bf63050-5504-11ed-bdc3-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
+* entry[=].resource = 7ffff970-5504-11ed-bdc3-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+* entry[=].resource = eda90bde-54f9-11ed-bdc3-0242ac120002
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+* entry[=].resource = 58c811a5-4082-44eb-9d66-ccbb112d4973
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/f98ed410-54fe-11ed-bdc3-0242ac120002"
 * entry[=].resource = f98ed410-54fe-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Organization/f20f31cd-5dd2-4a80-ab00-97f7109864a7"
@@ -52,8 +52,10 @@ Usage: #inline
 * agent.who = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * entity[preceedingMessage].role = #revision
 * entity[preceedingMessage].what = Reference(4dff3695-218d-4878-838a-5f23cbba6f82)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:22093247-f2f5-4b25-a5b2-f1dcbbc3998b"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:76b064ff-e8b0-433f-8b23-780f181dae54"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:ffed9804-35e3-449f-a1c3-0f8ece783dc7"
 
 // CareCommunication reply example
 Instance: 2654e182-cfee-4537-b744-e36231ebe2f3
@@ -61,14 +63,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "5th message - Instance of a MessageHeader resource used in a reply message."
 Description: "5th message - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * sender = Reference(f98ed410-54fe-11ed-bdc3-0242ac120002)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1042981000016003"
 * focus = Reference(d148fa55-3201-4a18-a7b0-bce67bf597a6)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 // CareCommunication reply example
 Instance: d148fa55-3201-4a18-a7b0-bce67bf597a6
@@ -94,22 +96,22 @@ Description: "5th message - Content of CareCommunication message. Valid only if 
 * payload[4].contentString = "Hej - Jeg håber det er okay, at jeg videresender denne forespørgsel. Kan I hjælpe os med at finde den, af Michael Burns, efterspurgte information. På forhånd tak. /Emma"
 * payload[4].extension[date].valueDateTime = 2024-05-04T10:00:00+02:00
 * payload[4].extension[identifier].valueIdentifier.value = "urn:uuid:bc9382ba-30f7-4020-a7c4-cbd18f9b4115"
-* payload[4].extension[identifier].valueIdentifier.assigner = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
-* payload[4].extension[author].valueReference = Reference(2d734f53-c71b-443a-a2d0-41327653b57c)
+* payload[4].extension[identifier].valueIdentifier.assigner = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
+* payload[4].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002)
 * payload[4].extension[authorContact].valueContactPoint.system = #phone 
 * payload[4].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[3].contentString = "Mange tak for fremsendte. Kan I desuden hjælpe mig med at finde information vedr. kommunal udredning for sygdommen? / Michael"
 * payload[3].extension[date].valueDateTime = 2024-05-03T09:25:00+02:00
 * payload[3].extension[identifier].valueIdentifier.value = "urn:uuid:07685582-3a8f-4bf3-bfa0-2f040133e922"
 * payload[3].extension[identifier].valueIdentifier.assigner = Reference(82210440-6826-44fc-9fc8-2a29bab6a5c2)
-* payload[3].extension[author].valueReference = Reference(b0b3f1f5-3818-4d1c-aa25-cf08b01697a1)
+* payload[3].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[3].extension[authorContact].valueContactPoint.system = #phone 
 * payload[3].extension[authorContact].valueContactPoint.value = "38683868"
 * payload[2].contentAttachment.contentType = $bcp13#application/pdf
 * payload[2].contentAttachment.creation = 2024-04-30T08:00:00+02:00
 * payload[2].contentAttachment.title = "Blodprøveresultater" 
 * payload[2].extension[date].valueDateTime = 2024-05-02T11:30:00+02:00
-* payload[2].extension[author].valueReference = Reference(2d734f53-c71b-443a-a2d0-41327653b57c)
+* payload[2].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002)
 * payload[2].extension[authorContact].valueContactPoint.system = #phone 
 * payload[2].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[2].extension[identifier].valueIdentifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
@@ -118,14 +120,14 @@ Description: "5th message - Content of CareCommunication message. Valid only if 
 * payload[1].extension[date].valueDateTime = 2024-05-02T11:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
 * payload[1].extension[identifier].valueIdentifier.assigner = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
-* payload[1].extension[author].valueReference = Reference(2d734f53-c71b-443a-a2d0-41327653b57c) 
+* payload[1].extension[author].valueReference = Reference(8bf63050-5504-11ed-bdc3-0242ac120002) 
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."
 * payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+02:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 * payload[0].extension[identifier].valueIdentifier.assigner = Reference(82210440-6826-44fc-9fc8-2a29bab6a5c2)
-* payload[0].extension[author].valueReference = Reference(b0b3f1f5-3818-4d1c-aa25-cf08b01697a1)
+* payload[0].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
  
