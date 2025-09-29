@@ -85,11 +85,11 @@ Certification of a system implies both an approved test protocol and a run troug
 
 
 **Test examples for sending and receiving a CareCommunication**
-The test material will be available on this page from November 1, 2026.
+The test material will be available on this page from November 1, 2025.
 <!--* [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip).-->
 
  **Sending a CareCommunication**
-The test material will be available on this page from November 1, 2026.
+The test material will be available on this page from November 1, 2025.
  <!-- * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
   *  <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
 
@@ -97,7 +97,7 @@ The test material will be available on this page from November 1, 2026.
 -->
 
 **Receiving a CareCommunication**
-The test material will be available on this page from November 1, 2026.
+The test material will be available on this page from November 1, 2025.
 <!--  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
 -->
 
@@ -115,9 +115,9 @@ The service concerns only conversion between OIOXML and FHIR. For this reason, m
 The service is intended to be available from spring 2025 to the end of 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
 
 ### 3.1 Use cases and rules
-The following document includes preconditions for the conversion, use cases describing the flow of events, rules concerning to mapping. 
+The following document outlines the preconditions for the conversion service, use cases describing the flow of events, and mapping rules.
 
-[Use cases and rules in Danish (pdf)](assets/UseCases-ConversionService_april2025.pdf) (Note: The UseCase document has been revised to clarify the time limit related to Acknowledgements.)
+[Use cases and rules in Danish (pdf)](assets/UseCases-ConversionService_August2025.pdf).
 
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
