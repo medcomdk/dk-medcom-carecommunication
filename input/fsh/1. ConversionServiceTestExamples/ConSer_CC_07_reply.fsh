@@ -107,7 +107,6 @@ Description: "ConSer_CC_07_reply - Content of care communication message. Valid 
 * category = $CategoryCodes#examination-results
 * topic.text = "Forspørgsel på seneste resultater"
 * subject = Reference(aab29fb1-7b56-450c-aee8-0d50f40b800e)
-
 * payload[1].contentString = "Hej Michael, Resultaterne for undersøgelsen kommer her. Blodtryk 130/95 mmHg, vægt: 83 kg og højde: 179 cm. Blodprøven påviste ikke tegn på sukkersyge eller vitaminmangel. Se mere i den vedhæftede pdf. Mvh. Emma"
 * payload[1].extension[date].valueDateTime = 2024-05-02T11:30:00+02:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"

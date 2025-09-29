@@ -59,9 +59,8 @@ Instance: 938544b6-721d-4d14-9e61-016e726ae180
 InstanceOf: MedComCorePatient
 Title: "ConSer_CC_13_DoubleCPR - Example of Patient"
 Description: "ConSer_CC_13_DoubleCPR - Example of Patient"
-* identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
-* identifier.value = "0703921VJ4" // dette CPR Er taget fra CC_12
-* identifier.use = #temp
+* identifier[x-ecpr].system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier[x-ecpr].value = "0703921VJ4" // dette CPR Er taget fra CC_12
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
 * identifier[cpr].value = "2509479989" 
 * name[official].use = #official

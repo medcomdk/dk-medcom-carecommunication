@@ -31,10 +31,10 @@ Description: "ConSer_CC_02 - Example of MessageHeader"
 Usage: #example
 * destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
 * destination[primary].receiver = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
 * sender = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
 * focus = Reference(ede71a03-6611-416b-835a-2937622c526b)
 * definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
@@ -45,10 +45,10 @@ Description: "ConSer_CC_02 - Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(adf06795-cc9e-4855-a277-780314134b45)
-* episodeOfCare.identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
-* episodeOfCare.identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
-* episodeOfCare.identifier.value = "88c3a921-f984-5751-8c03-69f7cdf47571" 
-* episodeOfCare.identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
+* episodeOfCare[0].identifier.value = "94cd3c1f-98b9-57b9-8f06-6f8aabf2fb86" 
+* episodeOfCare[0].identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
+* episodeOfCare[1].identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
+* episodeOfCare[1].identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
 
 
 Instance: ede71a03-6611-416b-835a-2937622c526b

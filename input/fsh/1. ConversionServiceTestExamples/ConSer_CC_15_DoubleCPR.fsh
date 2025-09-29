@@ -59,12 +59,10 @@ Instance: e1ada6b9-0782-4e18-b2e1-85ab642018a9
 InstanceOf: MedComCorePatient
 Title: "ConSer_CC_15_DoubleCPR - Example of Patient"
 Description: "ConSer_CC_15_DoubleCPR - Example of Patient"
-* identifier.system = "urn:oid:1.2.208.176.1.6.1.1"
-* identifier.value = "0703921VJ5"
-* identifier.use = #temp
-* identifier.system = "urn:oid:1.2.208.176.1.6.1.3"
-* identifier.value = "1206550VK9"
-* identifier.use = #temp
+* identifier[x-ecpr].system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier[x-ecpr].value = "0703921VJ5"
+* identifier[d-ecpr].system = "urn:oid:1.2.208.176.1.6.1.3"
+* identifier[d-ecpr].value = "1206550VK9"
 * name[official].use = #official
 * name[official].given = "Peter"
 * name[official].family = "Hansen"
