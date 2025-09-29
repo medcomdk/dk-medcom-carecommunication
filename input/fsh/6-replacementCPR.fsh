@@ -28,14 +28,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message."
 Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(b2f762be-6994-44da-a214-72c765655b3e)
 * sender = Reference(0ece868c-6a72-4aa3-8a96-2d985ab630c7)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(d8434eb5-8286-48f8-a590-4a27175ed82f)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 
 // CareCommunication new example
@@ -44,7 +44,7 @@ InstanceOf: MedComCareCommunication
 Title: "Instance of Communication resource used in a new message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - new message"
 * status = $EventStatus#unknown
-* identifier.value = "urn:uuid:b2eb3d0e-5de5-4de9-b2a3-0ff321ad1c3a"
+* identifier.value = "urn:uuid:cefe0dee-13b5-4bec-a843-09b4d58e4fe6"
 * category = $CategoryCodes#examination-results
 * subject = Reference(50c51ef0-00b0-429a-b212-35ee0773fd5a)
 * payload.contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, sygeplejerske."

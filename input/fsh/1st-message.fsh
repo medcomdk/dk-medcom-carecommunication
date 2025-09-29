@@ -28,14 +28,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "1st message - Instance of a MessageHeader resource used in a new message."
 Description: "1st message - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 
 // CareCommunication new example
@@ -67,5 +67,5 @@ Usage: #inline
 * recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724)
-* entity[payload].role = #source
-* entity[payload].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"

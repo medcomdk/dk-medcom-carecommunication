@@ -36,14 +36,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "2nd message - Instance of a MessageHeader resource used in a reply message."
 Description: "2nd message - Example of a MessageHeader in a reply CareCommunication message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * destination[primary].receiver = Reference(b581c63c-181f-46f6-990d-b9942c576724)
 * sender = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 
 Instance: 30c0f779-783f-46b2-b38f-faebd2bedb3f

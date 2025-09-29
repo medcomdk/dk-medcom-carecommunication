@@ -42,54 +42,6 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(58c811a5-4082-44eb-9d66-ccbb112d4973)
 * code = $PractitionerRole#sygeplejerske
 
-
-
-/* 
-Instanser anvendt til new message with formatted text
-*/
-/* Instance: f9bc6de0-588f-4a3d-a6c6-eb370d23a473
-InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].family = "Elmer"
-
-// Sender instance - new message
-Instance: 9b876149-842d-4b09-8d3d-27468210d343
-InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a sender organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "265161000016000" 
-* identifier[EAN-ID].value = "5790000209354" 
-* name = "Hjerteafdelingen på Herlev og Gentofte hospital"
-// Reciever instance - new message
-Instance: 1680e847-abee-48ad-8704-65eb8225a3cb
-InstanceOf: MedComMessagingOrganization // 
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
-
-// Practitioners - new message
-Instance: a9bd6ab5-520d-4fdf-9b5f-55d79daedd73
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
-
-Instance: 8ebaf0c2-835d-43c8-91ef-c5c1745e0b98
-InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(a9bd6ab5-520d-4fdf-9b5f-55d79daedd73)
-* code = $PractitionerRole#sygeplejerske
- */
-
 /* 
 Instanser anvendt til new message priority
 */
@@ -111,6 +63,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message
 Instance: 4e03a9cd-4d75-4e01-9420-7f0b4ecff305
 InstanceOf: MedComMessagingOrganization // 
@@ -155,6 +108,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message for attachement
 Instance: bf24f51c-a99b-47db-a785-8c5ef22ebc27
 InstanceOf: MedComMessagingOrganization // 
@@ -216,6 +170,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message   recipient and sender
 Instance: b75abdfa-5519-11ed-bdc3-0242ac120002
 InstanceOf: MedComMessagingOrganization // 
@@ -278,97 +233,6 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(7ffff970-5504-11ed-bdc3-0242ac120002)
 * code = $PractitionerRole#sygeplejerske
 
-
-/* 
-Instanser anvent til Cancel message 
-*/
-/* Instance: 1f697de4-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].family = "Elmer"
-
-// Sender instance - new message
-Instance: 2f12cb92-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComMessagingOrganization // Hjerteafdelingen på Herlev og Gentofte hospital
-Title: "Example of a sender organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "265161000016000" 
-* identifier[EAN-ID].value = "5790000209354" 
-* name = "Hjerteafdelingen på Herlev og Gentofte hospital"
-// Reciever instance - new message
-Instance: 282c1fea-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComMessagingOrganization // Plejecenter Herlev
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
-
-//Practitioner - reply message
-Instance: 356947dc-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
-
-Instance: 39d3af60-551c-11ed-bdc3-0242ac120002
-InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(356947dc-551c-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#sygeplejerske
- */
-/*
-Instanser anvent til modify message 
-*/
-/* Instance: 550b46e4-690d-11ed-9022-0242ac120002
-InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].family = "Elmer"
-
-// Sender instance - new message
-Instance: 9e183b44-690d-11ed-9022-0242ac120002
-InstanceOf: MedComMessagingOrganization // Hjerteafdelingen på Herlev og Gentofte hospital
-Title: "Example of a sender organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "265161000016000" 
-* identifier[EAN-ID].value = "5790000209354" 
-* name = "Hjerteafdelingen på Herlev og Gentofte hospital"
-// Reciever instance - new message
-Instance: 87b881a6-690d-11ed-9022-0242ac120002
-InstanceOf: MedComMessagingOrganization // Plejecenter Herlev
-Title: "Example of a reciever organization with a SOR and an EAN identifier."
-Description: "Example of an organization with a SOR and an EAN identifier."
-* identifier[SOR-ID].value = "953741000016009" 
-* identifier[EAN-ID].value = "5790001348120" 
-* name = "Plejecenter Herlev"
-
-//Practitioner - reply message
-Instance: 7c7f31d6-690d-11ed-9022-0242ac120002
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
-
-Instance: 6ff69f1c-690d-11ed-9022-0242ac120002
-InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(356947dc-551c-11ed-bdc3-0242ac120002)
-* code = $PractitionerRole#sygeplejerske
- */
 /* 
 Instanser anvendt til new message
 */
@@ -389,6 +253,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 * identifier[SOR-ID].value = "265161000016000" 
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
+
 // Reciever instance - new message
 Instance: 0e0e7f78-5520-11ed-bdc3-0242ac120002
 InstanceOf: MedComMessagingOrganization // Plejecenter Herlev

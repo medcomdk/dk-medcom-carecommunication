@@ -90,6 +90,7 @@ package "CareCommunication message: New message" as new <<Frame>>{
         activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
         activity.code = "new-message"
         agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.what.identifier = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
     }
 
 newB -[hidden]- newMH

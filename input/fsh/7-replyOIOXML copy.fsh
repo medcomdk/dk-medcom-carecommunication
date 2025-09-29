@@ -5,7 +5,7 @@ Title: "Reply CareCommunication message. Reply to OIOXML Message"
 Description: "Example of a reply to an OIOXML message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2024-05-07T18:00:00+01:00
+* timestamp = 2024-05-07T18:00:00+02:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/3076d9b0-5521-11ed-bdc3-0242ac120002"
 * entry[=].resource = 3076d9b0-5521-11ed-bdc3-0242ac120002
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5"
@@ -31,14 +31,14 @@ InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Instance of a MessageHeader resource used in a reply to an OIOXML message."
 Description: "MessageHeader for CareCommunication reply to an OIOXML message. Valid only if used in a bundle (message)."
 Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
 * destination[primary].receiver = Reference(ae899cbd-933b-4581-9a16-bd2da73f06a0)
 * sender = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(f54efd18-5520-11ed-bdc3-0242ac120002)
-* definition = "http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"
+* definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 
 Instance: 6de0806d-7050-4db8-8003-0c72aee52948
 InstanceOf: MedComCareCommunicationProvenance
@@ -124,7 +124,7 @@ Usage: #example
 * subject = Reference(23ebfcd8-e4f2-4ce8-908b-aa7cfb9ffef5)
 * encounter = Reference(303b2782-e2bf-4780-a8a5-c4b02b0e1c66)
 * payload.contentString = "We have a question regarding the referal..."
-* payload.extension[date].valueDateTime = 2024-05-07T18:00:00+01:00
+* payload.extension[date].valueDateTime = 2024-05-07T18:00:00+02:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:1813b23d-195e-4b28-8221-24247035bf08"
 * payload.extension[identifier].valueIdentifier.assigner = Reference(e17d03b8-e7fd-4654-bc9c-cb2eb5dda71f)
 * payload.extension[author].valueReference = Reference(8dc790ba-8d93-4585-b91c-af8225b0796d)

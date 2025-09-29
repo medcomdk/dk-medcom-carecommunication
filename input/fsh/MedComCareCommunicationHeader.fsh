@@ -10,28 +10,13 @@ Description: "Message header for CareCommunication message"
 * focus ^type.aggregation = #bundled
 * definition 1..1
 * definition obeys medcom-carecommunication-definition-url
-* insert ProducerShallPutInNarrative(id)
-* insert ProducerShallPutInNarrative(eventCoding.code)
-* insert ProducerShallPutInNarrative(destination[primary].endpoint)
-* insert ProducerShallPutInNarrative(destination[primary].receiver)
-* insert ProducerShallPutInNarrative(destination[cc].endpoint)
-* insert ProducerShallPutInNarrative(destination[cc].receiver)
-* insert ProducerShallPutInNarrative(sender)
-* insert ProducerShallPutInNarrative(source.endpoint)
 * insert ProducerShallPutInNarrative(focus)
 
 Invariant: medcom-carecommunication-definition-url
 Description: "SHALL reference a MedCom CareCommunication MessageDefinition whose canonical URL starts with
-http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5. — that is, any version 5.x of the message definition. The current minor version the sender uses must be added in the end of the definition."
-Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition5[.][0-9]{1,2}$')"
+http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5. — that is, any version 5.x of the message definition. The current minor version the sender uses must be added in the end of the definition."
+Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5[.][0-9]{1,2}$')"
 Severity: #error
-
-
-Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-InstanceOf: MedComMessagingDestinationUseExtension
-Usage: #inline
-* valueCoding = $Use#primary
-
 
 /* // CareCommunication Cancel example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
