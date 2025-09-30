@@ -58,7 +58,6 @@ Formålet med Korrespondancemeddelelsen er at understøtte den digitale kommunik
 
 ## 3 Illustration af Korrespondancemeddelelsen | Illustration of CareCommunication
 <a href="#Fig1">Figur 1</a> er en illustration af indholdet i Korrespondancemeddelelsen. Illustrationen er et eksempel og indeholder ikke alle datafelter, som er i standarden og afspejler ikke det enkelte systems brugergrænseflade.
-<p>&nbsp;</p>
 <a href="#Fig1">Figure 1</a><span style="color:#6a737d">is an illustration of the content of a CareCommunication. The illustration is an example and does not include all data fields defined in the standard, nor does it reflect the user interface of any specific system.</span>
 
 <figure>
