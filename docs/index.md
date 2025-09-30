@@ -179,4 +179,4 @@ The table below includes examples of the mapping illustrating four different flo
 ### 3.4 Test protocol
 Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly. 
   * [Test protocol in English (docx)](assets/ConversionService_Testprotocol_v500.docx)
-    * [Test examples for the test protocol (zip)](assets/ConversionSerivice_TestExcamples_2025-05-15.zip). Test examples are updated 2025-05-19.
+    * [Test examples for the test protocol (zip)](assets/ConversionService_TestExamples_v500-minus-ConSer_XDIS91_05_XBIN01.zip).
