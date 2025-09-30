@@ -45,7 +45,7 @@ Description: "ConSer_CC_02 - Example of a simple MedCom Core Encounter"
 * status = $StatusCodes#in-progress 
 * class = $ActCodes#IMP 
 * subject = Reference(adf06795-cc9e-4855-a277-780314134b45)
-* episodeOfCare[0].identifier.value = "94cd3c1f-98b9-57b9-8f06-6f8aabf2fb86" 
+* episodeOfCare[0].identifier.value = "urn:uuid:94cd3c1f-98b9-57b9-8f06-6f8aabf2fb86" 
 * episodeOfCare[0].identifier.system = "https://www.esundhed.dk/Registre/Landspatientregisteret" 
 * episodeOfCare[1].identifier.value = "fc60e762-b13b-5773-865e-67f3907bdcc7" 
 * episodeOfCare[1].identifier.system = "https://sor2.sum.dsdn.dk/#id=1339531000016004" // SOR id for afsender/serviceProvider
