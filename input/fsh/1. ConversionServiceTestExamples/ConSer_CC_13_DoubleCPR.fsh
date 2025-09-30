@@ -29,10 +29,10 @@ Description: "ConSer_CC_13_DoubleCPR - Example of MessageHeader"
 Usage: #example
 * destination[primary].extension[use].valueCoding = $Use#primary
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
 * destination[primary].receiver = Reference(cb801931-b871-418d-bdc5-912893096dea)
 * sender = Reference(f6494a29-1837-4f64-b903-da0d46e5da69)
-* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325251000016005"
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=325371000016006"
 * focus = Reference(625a7fc6-cf65-4285-bbcc-93ea59755b2e)
 * definition = "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
 

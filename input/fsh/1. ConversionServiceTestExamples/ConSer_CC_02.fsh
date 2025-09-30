@@ -23,6 +23,8 @@ Usage: #example
 * entry[=].resource = bc25bf57-e3ec-423c-a828-683e9fda09df
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/d6f29e31-15ee-4b77-98d3-8163a94c6485"
 * entry[=].resource = d6f29e31-15ee-4b77-98d3-8163a94c6485
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/CareTeam/68881430-7ddb-44e9-b4ba-fc96c42be847"
+* entry[=].resource = 68881430-7ddb-44e9-b4ba-fc96c42be847
 
 Instance: 675bd368-bfec-47a1-9f74-3e7db5eb8cfb
 InstanceOf: MedComCareCommunicationMessageHeader
@@ -60,6 +62,8 @@ Usage: #example
 * category = $CategoryCodes#examination-results
 * encounter = Reference(d3a76a91-5252-4136-ba00-e35fba0bc479)
 * subject = Reference(adf06795-cc9e-4855-a277-780314134b45)
+* recipient = Reference(68881430-7ddb-44e9-b4ba-fc96c42be847) 
+* extension[sender].valueReference = Reference(0a93fdc7-b053-4ed5-9e95-2d6de043326d)
 * identifier.value = "urn:uuid:eca85df4-e6c9-41d7-88c0-7e6fb79029b9"
 * payload[0].contentString = "Til rette vedkommende. Vi ønsker information om de seneste undersøgelser udført på Bruno. På forhånd tak. Hilsen Michael, visitator."
 * payload[0].extension[date].valueDateTime = 2024-11-03T09:00:00+01:00
@@ -120,6 +124,7 @@ Title: "ConSer_CC_02 - Example of practitionerRole"
 Description: "ConSer_CC_02 - practitionerRole"
 * practitioner = Reference(167e1987-c3a5-47f1-959a-385130d7f8b5)
 * code.text = "Visitator"
+* organization = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
 
 // CareCommunication example - new message
 Instance: d6f29e31-15ee-4b77-98d3-8163a94c6485
@@ -134,3 +139,10 @@ Usage: #example
 * agent.who = Reference(41714d59-64cd-4ff5-aeca-20745e811557)
 * entity[payload][+].role = #source
 * entity[payload][=].what.identifier.value = "urn:uuid:80ab9ebc-98df-4d4c-ad7c-57c654e9bf21"
+
+Instance: 68881430-7ddb-44e9-b4ba-fc96c42be847
+InstanceOf: MedComCoreCareTeam // 
+Title: "Example of a recipient in terms of a careteam."
+Description: "Example of a recipient in terms of a careteam."
+* managingOrganization = Reference(bc25bf57-e3ec-423c-a828-683e9fda09df)
+* name = "Plejecenter Herlev Team 1"

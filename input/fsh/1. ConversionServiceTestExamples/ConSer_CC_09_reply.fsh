@@ -73,6 +73,9 @@ Description: "ConSer_CC_09_reply - The Provenance instance from the answered mes
 * agent.who = Reference(cd573069-3281-4f2b-b216-b7be7fd82762)
 * entity[payload][+].role = #source
 * entity[payload][=].what.identifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
+
 
 
 
