@@ -47,15 +47,15 @@ Description: "ConSer_CC_04_multipleAttachments - Content of care communication m
 * category = $CategoryCodes#discharge
 * topic.text = "Tilbagemelding efter indlæggelse"
 * subject = Reference(b162fb1b-5eb9-4ddb-b20a-1dccd96e38c4)
-* payload.contentString = "Vi skriver for at informere om, at jeres patient Kaja Hansen blev udskrevet fra vores afdeling d. 01.01.2025 efter behandling for lungebetændelse. Hun blev behandlet med intravenøs antibiotika under indlæggelsen og er nu overgået til peroral behandling med Amoxicillin 500 mg x 3 dagligt i 7 dage.
+* payload[0].contentString = "Vi skriver for at informere om, at jeres patient Kaja Hansen blev udskrevet fra vores afdeling d. 01.01.2025 efter behandling for lungebetændelse. Hun blev behandlet med intravenøs antibiotika under indlæggelsen og er nu overgået til peroral behandling med Amoxicillin 500 mg x 3 dagligt i 7 dage.
 Vi anbefaler en kontrol af infektionstal og lungefunktion om 2 uger, samt opfølgning på eventuelle tilbagevendende symptomer.
 Med venlig hilsen, Jørgen Berggren, Overlæge."
-* payload.extension[date].valueDateTime = 2025-01-03T13:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(aff41a5a-a459-48ee-b999-74bb999dc4a3)
-* payload.extension[author].valueReference = Reference(c5ce3a93-10bb-4eed-860b-af3da8353ad6)
-* payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "02020202"
+* payload[0].extension[date].valueDateTime = 2025-01-03T13:00:00+01:00
+* payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(aff41a5a-a459-48ee-b999-74bb999dc4a3)
+* payload[0].extension[author].valueReference = Reference(c5ce3a93-10bb-4eed-860b-af3da8353ad6)
+* payload[0].extension[authorContact].valueContactPoint.system = #phone 
+* payload[0].extension[authorContact].valueContactPoint.value = "02020202"
 * payload[1].contentAttachment.contentType = $bcp13#image/png
 * payload[1].contentAttachment.title = "madpyramiden" 
 * payload[1].extension[date].valueDateTime = 2024-09-06T17:15:00+01:00

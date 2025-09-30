@@ -47,15 +47,15 @@ Description: "ConSer_CC_01 - Content of care communication message. Valid only i
 * category = $CategoryCodes#examination-results
 * topic.text = "Anmodning om opfølgning"
 * subject = Reference(4ac4ab47-977b-4bcf-9d01-e41234aef4cd)
-* payload.contentString = "Vi har modtaget svar på biopsi taget fra jeres patient Kaja Hansen d. 03.01.2025. Resultatet viser ingen tegn på malignitet, men der er tegn på kronisk inflammation.
+* payload[0].contentString = "Vi har modtaget svar på biopsi taget fra jeres patient Kaja Hansen d. 03.01.2025. Resultatet viser ingen tegn på malignitet, men der er tegn på kronisk inflammation.
 Vi anbefaler, at I drøfter resultaterne med patienten og vurderer behovet for eventuel medicinsk behandling eller henvisning til specialafdeling, fx reumatologi.
 Venlig hilsen Hans Hansen, Specialelæge"
-* payload.extension[date].valueDateTime = 2025-01-04T14:00:00+01:00
-* payload.extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(34413831-111f-43b0-b4b0-2a065e8a76b7)
-* payload.extension[author].valueReference = Reference(ff942e5b-6a22-4e5f-be0e-630a76df77a1)
-* payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "03030303"
+* payload[0].extension[date].valueDateTime = 2025-01-04T14:00:00+01:00
+* payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(34413831-111f-43b0-b4b0-2a065e8a76b7)
+* payload[0].extension[author].valueReference = Reference(ff942e5b-6a22-4e5f-be0e-630a76df77a1)
+* payload[0].extension[authorContact].valueContactPoint.system = #phone 
+* payload[0].extension[authorContact].valueContactPoint.value = "03030303"
 
 Instance: 4ac4ab47-977b-4bcf-9d01-e41234aef4cd
 InstanceOf: MedComCorePatient

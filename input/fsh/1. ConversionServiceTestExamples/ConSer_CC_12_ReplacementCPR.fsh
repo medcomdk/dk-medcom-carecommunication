@@ -4,7 +4,7 @@ Title: "ConSer_CC_12_ReplacementCPR - New CareCommunication message."
 Description: "ConSer_CC_12_ReplacementCPR - Example of a CareCommunication new message."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2025-01-03T14:00:00+01:00
+* timestamp = 2025-01-03T13:00:00+01:00
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/7b4132c5-f862-4a99-b0cc-a226e73b09f3"
 * entry[=].resource = 7b4132c5-f862-4a99-b0cc-a226e73b09f3
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/4c25ca82-e68f-4867-b3c3-8b762dc145f2"
