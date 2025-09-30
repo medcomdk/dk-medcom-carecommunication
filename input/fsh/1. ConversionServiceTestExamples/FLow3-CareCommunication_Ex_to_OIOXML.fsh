@@ -53,7 +53,7 @@ Description: "Flow3CareCommunication_Ex_to_OIOXML - Content of care communicatio
 * payload.extension[identifier].valueIdentifier.assigner = Reference(fffe78de-0d4c-4073-9d2d-653f9a742142)
 * payload.extension[author].valueReference = Reference(9437cbf4-809f-4f65-a0fb-11f19268fc21)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
-* payload.extension[authorContact].valueContactPoint.value = "12345678"
+* payload.extension[authorContact].valueContactPoint.value = "66131372"
 * payload[1].contentAttachment.contentType = $bcp13#application/pdf
 * payload[1].contentAttachment.title = "billede" 
 * payload[1].extension[date].valueDateTime = 2023-11-22T12:32:00+01:00
