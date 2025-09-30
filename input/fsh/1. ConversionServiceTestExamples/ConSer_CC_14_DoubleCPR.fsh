@@ -1,4 +1,4 @@
-/* Instance: 52b43f0b-2b5c-49d9-b62d-3f76eb8d6821
+Instance: 52b43f0b-2b5c-49d9-b62d-3f76eb8d6821
 InstanceOf: MedComCareCommunicationMessage
 Title: "ConSer_CC_14_DoubleCPR - New CareCommunication message"
 Description: "ConSer_CC_14_DoubleCPR - New CareCommunication message"
@@ -59,10 +59,12 @@ Instance: 06c62382-cd69-438f-acc7-971a3c47ecea
 InstanceOf: MedComCorePatient
 Title: "ConSer_CC_14_DoubleCPR - Example of Patient"
 Description: "ConSer_CC_14_DoubleCPR - Example of Patient"
-* identifier[cpr][0].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr][0].value = "2103009996" //det her cpr-nummer er katjas
-* identifier[cpr][1].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr][1].value = "2509479989" 
+* identifier[x-ecpr].system = "urn:oid:1.2.208.176.1.6.1.1"
+* identifier[x-ecpr].value = "0703921VJ5"
+* identifier[d-ecpr].system = "urn:oid:1.2.208.176.1.6.1.3"
+* identifier[d-ecpr].value = "1206550VK9"
+* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
+* identifier[cpr].value = "2509479989" 
 * name[official].use = #official
 * name[official].given[0] = "Bruno"
 * name[official].given[1] = "Test"
@@ -115,4 +117,4 @@ Usage: #example
 * activity.coding = $ActivityCode#new-message
 * agent.who = Reference(b7402e44-e37b-4a9e-8d1c-daf509fd6cb8)
 * entity[payload][+].role = #source
-* entity[payload][=].what.identifier.value = "urn:uuid:19bb04e9-a3af-4384-9fc5-877f253e2283" */
+* entity[payload][=].what.identifier.value = "urn:uuid:19bb04e9-a3af-4384-9fc5-877f253e2283" 
