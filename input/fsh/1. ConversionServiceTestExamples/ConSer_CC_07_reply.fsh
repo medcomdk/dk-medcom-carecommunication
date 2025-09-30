@@ -25,10 +25,23 @@ Usage: #example
 * entry[=].resource = 67637a07-b789-4d3f-b452-d9aed28d8247
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/c8c5f360-e818-4d2f-85d6-5442035d703e"
 * entry[=].resource = c8c5f360-e818-4d2f-85d6-5442035d703e
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/4c284936-5454-4116-95fc-3c8eeeed2400"
-* entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Provenance/d15ea345-7e6d-495a-92c7-5ffb40a62e23"
+* entry[=].resource = d15ea345-7e6d-495a-92c7-5ffb40a62e23
 
 
+// CareCommunication example - new message
+Instance: d15ea345-7e6d-495a-92c7-5ffb40a62e23
+InstanceOf: MedComCareCommunicationProvenance
+Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
+Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
+Usage: #inline
+* target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* occurredDateTime = 2024-05-01T12:00:00+02:00
+* recorded = 2024-05-01T12:00:00+02:00
+* activity.coding = $ActivityCode#new-message
+* agent.who = Reference(67637a07-b789-4d3f-b452-d9aed28d8247)
+* entity[payload][+].role = #source
+* entity[payload][=].what.identifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
 
 // CareCommunication reply example
 Instance: d1536429-8fca-4f93-a433-30c2ccca3ed7

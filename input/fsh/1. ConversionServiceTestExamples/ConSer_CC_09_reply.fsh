@@ -1,4 +1,4 @@
-// Denne besked er et reply til ConSer_CC_02_attachment
+// Denne besked er et reply til ConSer_CC_03_attachment
 Instance: e33518d5-1cc7-468a-817f-239f9688490f
 InstanceOf: MedComCareCommunicationMessage
 Title: "ConSer_CC_09_reply - Reply CareCommunication message with attachment"

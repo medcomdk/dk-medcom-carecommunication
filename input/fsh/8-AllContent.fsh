@@ -117,6 +117,7 @@ Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
 * practitioner = Reference(6397c13d-7cb2-4834-871c-47f528bb79cf)
 * code = $PractitionerRole#sygeplejerske
+* organization = Reference(c39b114b-a9c1-46bb-ac30-e3ce71f28c3a)
 
 // CareCommunication with attachment example - in the messagetext
 Instance: c34e8284-b353-468f-a2ea-f6ef6330292c
