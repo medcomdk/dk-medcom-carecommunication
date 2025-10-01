@@ -70,17 +70,18 @@ Furthermore, the structure of the standard is described and supported with examp
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 ### 1.4 Governance for CareCommunication
-Governance describes the general rules which FHIR messages must obey to. The [general governance for FHIR messaging can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication), whereas [governance for the use of CareCommunication can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html). 
+Governance describes the general rules which FHIR messages must obey to.
 
-Further, some recommendations for implementing the CareCommunication standard has been developed. The page recommends how to run a household on the send and received CareCommunications. These are not required to follow, only for recommendation and inspiration.  
-[Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
+[General governance for MedCom FHIR can be found here](https://medcomdk.github.io/MedComLandingPage/).
 
+[general governance for FHIR messaging can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication).
+
+[governance for the use of CareCommunication can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html).
 
 ## 2 Test and certification
 Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom. 
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
-
 
 **Test examples for sending and receiving a CareCommunication**
 
