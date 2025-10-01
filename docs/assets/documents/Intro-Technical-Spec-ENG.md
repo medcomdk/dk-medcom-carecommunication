@@ -132,15 +132,15 @@ When receiving a message, either CareCommunication or EDIFACT/OIOXML message, th
 
 ## 2 Internal references in a CareCommunication 
 The CareCommunication follows [MedCom’s generic messaging model](https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html).<br>
-The references between the profiles are shown in  <a href="#Fig1"> Figure 1</a> below. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader the sender and receiver organisations are referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
-MedComCareCommunicationProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComCareCommunicationMessageHeader as the target and the actor in terms of a MedComMessagingOrganization. 
+The references between the profiles are shown in the CareCommunication Implementation Guides Home page. The MedComCareCommunicationMessage profile acts as the container which includes the other profiles. From the MedComCareCommunicationMessageHeader the sender and receiver organisations are referenced as the MedComMessagingOrganization together with the focus of the message, which is the MedComCareCommunication profile. This profile must always reference a subject of the type MedComCorePatient.<br> 
+MedComCareCommunicationProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComCareCommunicationMessageHeader as the target and the actor in terms of a MedComMessagingOrganization.
 
  <!-- Additionally, contain the message text and attachment if they are included -->
-<figure>
+<!-- <figure>
 <img src="../images/CareCommunication.svg" alt="Show references between the profiles in an CareCommunication message." style="width:60%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the CareCommunication.</b> </figcaption>
 </figure>
-<br><br>
+<br><br> -->
 
 <!-- ## 3 Examples of a CareCommunication 
 In this section, simplified examples of CareCommunication are presented, which includes: 
