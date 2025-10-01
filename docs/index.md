@@ -85,13 +85,13 @@ Certification of a system implies both an approved test protocol and a run troug
 
 **Test examples for sending and receiving a CareCommunication**
 
-The test material will be available on this page from November 1, 2025.
+The test material will be released on this page no later than October 27, 2025.
 
 <!-- * [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip) -->
 
 **Sending a CareCommunication**
 
-The test material will be available on this page from November 1, 2025.
+The test material will be released on this page no later than October 27, 2025.
 
 <!--
 * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
@@ -101,7 +101,7 @@ The test material will be available on this page from November 1, 2025.
 
 **Receiving a CareCommunication**
 
-The test material will be available on this page from November 1, 2025.
+The test material will be released on this page no later than October 27, 2025.
 
 <!-- * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx) -->
 
