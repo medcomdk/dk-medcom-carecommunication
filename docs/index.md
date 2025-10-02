@@ -181,3 +181,4 @@ The table below includes examples of the mapping illustrating four different flo
 Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly. 
   * [Test protocol in English (docx)](assets/ConversionService_Testprotocol_v500.docx)
     * [Test examples for the test protocol (zip)](assets/ConversionService_TestExamples_v500-minus-ConSer_XDIS91_05_XBIN01.zip).
+    * NB:One test example named ConSer_XDIS91_05_XBIN01 was too big for this GitHub repository. Remember to [download this file as well from here](https://github.com/medcomdk/dk-medcom-carecommunication/releases/tag/v.5.0.0-githubpages). You will find it as a binary attachment to the release note. 
