@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="59124ce5-5c1e-4898-b7d5-db943b9323b1"/>
+  <id value="f859cbbe-aeef-44b6-8cfc-221b897ab723"/>
   <meta>
     <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message"/>
   </meta>
   <type value="message"/>
-  <timestamp value="2024-11-02T08:00:00+01:00"/>
+  <timestamp value="2023-11-20T17:45:00+01:00"/>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/MessageHeader/56d771fd-f8d2-4c46-a56e-af4a46565b5e"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88"/>
     <resource>
       <MessageHeader>
-        <id value="56d771fd-f8d2-4c46-a56e-af4a46565b5e"/>
+        <id value="60098c38-6fe1-41ba-aa92-d4809022de88"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MessageHeader_56d771fd-f8d2-4c46-a56e-af4a46565b5e"> </a><p class="res-header-id"><b>Generated Narrative: MessageHeader 56d771fd-f8d2-4c46-a56e-af4a46565b5e</b></p><a name="56d771fd-f8d2-4c46-a56e-af4a46565b5e"> </a><a name="hc56d771fd-f8d2-4c46-a56e-af4a46565b5e"> </a><a name="56d771fd-f8d2-4c46-a56e-af4a46565b5e-da-DK"> </a><p><b>event</b>: <a href="http://medcomfhir.dk/ig/terminology/1.7.0/CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-care-communication-message">MedComMessagingEventCodes care-communication-message</a>: Care Communication Message</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style="display: none">*</td><td/><td><a href="https://sor2.sum.dsdn.dk/#id=328051000016008">https://sor2.sum.dsdn.dk/#id=328051000016008</a></td><td><a href="Organization-3d06d6a9-2845-450f-837f-effa4732264d.html">Organization Hjemmeplejen, Odense Kommune</a></td></tr></table><p><b>sender</b>: <a href="Organization-b93b1d79-4cd4-4737-98d0-4748a0378b09.html">Organization MedCom testcenter</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sor2.sum.dsdn.dk/#id=359001000016000">https://sor2.sum.dsdn.dk/#id=359001000016000</a></td></tr></table><p><b>focus</b>: <a href="Communication-cae36d9a-df51-49d9-8851-6ff96f6f0af4.html">Communication: identifier = urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6; status = unknown; category = Examination Results</a></p><p><b>definition</b>: <code>http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0</code></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="MessageHeader_60098c38-6fe1-41ba-aa92-d4809022de88"> </a><p class="res-header-id"><b>Generated Narrative: MessageHeader 60098c38-6fe1-41ba-aa92-d4809022de88</b></p><a name="60098c38-6fe1-41ba-aa92-d4809022de88"> </a><a name="hc60098c38-6fe1-41ba-aa92-d4809022de88"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-careCommunication-messageHeader.html">MedComCareCommunicationMessageHeader</a></p></div><p><b>event</b>: <a href="http://medcomfhir.dk/ig/terminology/1.8.1/CodeSystem-medcom-messaging-eventCodes.html#medcom-messaging-eventCodes-care-communication-message">MedComMessagingEventCodes care-communication-message</a>: Care Communication Message</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style="display: none">*</td><td/><td><a href="https://sor2.sum.dsdn.dk/#id=328051000016008">https://sor2.sum.dsdn.dk/#id=328051000016008</a></td><td><a href="Organization-93322213-eaba-4ab9-af83-e09497e7e581.html">Organization Social og Sundhed Odense Kommune</a></td></tr></table><p><b>sender</b>: <a href="Organization-3dcbbc97-4c34-4f53-87a1-6d7667a8fb27.html">Organization MedCom testcenter</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td><a href="https://sor2.sum.dsdn.dk/#id=359001000016000">https://sor2.sum.dsdn.dk/#id=359001000016000</a></td></tr></table><p><b>focus</b>: <a href="Communication-9611cad1-e4cd-4cb2-a7be-0f8b47b056d1.html">Communication: identifier = urn:uuid:bb210642-8a47-4ca6-8724-018872fbd597; status = unknown; category = Andet; topic = </a></p><p><b>definition</b>: <a href="http://medcomfhir.dk/ig/messagedefinitions/1.0.0/MessageDefinition-MedComCareCommunicationMessageDefinitionV5.0.html">http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0</a></p></div>
         </text>
         <eventCoding>
           <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"/>
@@ -31,32 +31,32 @@
           </extension>
           <endpoint value="https://sor2.sum.dsdn.dk/#id=328051000016008"/>
           <receiver>
-            <reference value="Organization/3d06d6a9-2845-450f-837f-effa4732264d"/>
+            <reference value="Organization/93322213-eaba-4ab9-af83-e09497e7e581"/>
           </receiver>
         </destination>
         <sender>
-          <reference value="Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+          <reference value="Organization/3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
         </sender>
         <source>
           <endpoint value="https://sor2.sum.dsdn.dk/#id=359001000016000"/>
         </source>
         <focus>
-          <reference value="Communication/cae36d9a-df51-49d9-8851-6ff96f6f0af4"/>
+          <reference value="Communication/9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"/>
         </focus>
-        <definition value="http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0"/>
+        <definition value="http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"/>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Patient/000e3045-8f08-4f17-9ee8-bcf98d564135"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Patient/07903cc6-3cab-492a-8017-6f426cd69ba4"/>
     <resource>
       <Patient>
-        <id value="000e3045-8f08-4f17-9ee8-bcf98d564135"/>
+        <id value="07903cc6-3cab-492a-8017-6f426cd69ba4"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_000e3045-8f08-4f17-9ee8-bcf98d564135"> </a><p class="res-header-id"><b>Generated Narrative: Patient 000e3045-8f08-4f17-9ee8-bcf98d564135</b></p><a name="000e3045-8f08-4f17-9ee8-bcf98d564135"> </a><a name="hc000e3045-8f08-4f17-9ee8-bcf98d564135"> </a><a name="000e3045-8f08-4f17-9ee8-bcf98d564135-da-DK"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Nancy Ann Berggren (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2512489996)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Hindbærvej 23 Odense S 5260 </td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_07903cc6-3cab-492a-8017-6f426cd69ba4"> </a><p class="res-header-id"><b>Generated Narrative: Patient 07903cc6-3cab-492a-8017-6f426cd69ba4</b></p><a name="07903cc6-3cab-492a-8017-6f426cd69ba4"> </a><a name="hc07903cc6-3cab-492a-8017-6f426cd69ba4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/3.0.0/StructureDefinition-medcom-core-patient.html">MedComCorePatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Nancy Ann Hansen (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2512489996)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Hindbærvej 23 Odense S 5260 </td></tr></table></div>
         </text>
         <identifier>
           <system value="urn:oid:1.2.208.176.1.2"/>
@@ -64,7 +64,7 @@
         </identifier>
         <name>
           <use value="official"/>
-          <family value="Berggren"/>
+          <family value="Hansen"/>
           <given value="Nancy"/>
           <given value="Ann"/>
         </name>
@@ -77,64 +77,64 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Communication/cae36d9a-df51-49d9-8851-6ff96f6f0af4"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Communication/9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"/>
     <resource>
       <Communication>
-        <id value="cae36d9a-df51-49d9-8851-6ff96f6f0af4"/>
+        <id value="9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-communication"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Communication_cae36d9a-df51-49d9-8851-6ff96f6f0af4"> </a><p class="res-header-id"><b>Generated Narrative: Communication cae36d9a-df51-49d9-8851-6ff96f6f0af4</b></p><a name="cae36d9a-df51-49d9-8851-6ff96f6f0af4"> </a><a name="hccae36d9a-df51-49d9-8851-6ff96f6f0af4"> </a><a name="cae36d9a-df51-49d9-8851-6ff96f6f0af4-da-DK"> </a><p><b>identifier</b>: urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6</p><p><b>status</b>: Unknown</p><p><b>category</b>: <span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes examination-results}">Examination Results</span></p><p><b>subject</b>: <a href="Patient-000e3045-8f08-4f17-9ee8-bcf98d564135.html">Nancy Ann Berggren (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2512489996)</a></p><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: urn:uuid:729e63f5-a691-441e-84fe-953594b801b2</p><p><b>PractitionerExtension</b>: <a href="PractitionerRole-d355f156-a291-4a5f-b5a0-044f9ff1d283.html">PractitionerRole Sygeplejerske</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>content</b>: Denne besked har høj prioritet.
-Afdeling A har modtaget en henvisning på ovenstående patient.
-Forinden der foretages visitation, bedes følgende undersøgelser foretages:
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Communication_9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"> </a><p class="res-header-id"><b>Generated Narrative: Communication 9611cad1-e4cd-4cb2-a7be-0f8b47b056d1</b></p><a name="9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"> </a><a name="hc9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-careCommunication-communication.html">MedComCareCommunication</a></p></div><p><b>identifier</b>: urn:uuid:bb210642-8a47-4ca6-8724-018872fbd597</p><p><b>status</b>: Unknown</p><p><b>category</b>: <span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes other}">Andet</span></p><p><b>subject</b>: <a href="Patient-07903cc6-3cab-492a-8017-6f426cd69ba4.html">Nancy Ann Hansen (official) (no stated gender), DoB Unknown ( urn:oid:1.2.208.176.1.2#2512489996)</a></p><p><b>topic</b>: <span title="Codes:">Forundersøgelse</span></p><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: urn:uuid:b43933ea-4e53-4b25-9f3b-8644b8003ada</p><p><b>PractitionerExtension</b>: <a href="PractitionerRole-75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b.html">PractitionerRole Overlæge</a></p><p><b>ContactExtension</b>: ph: 65432030</p><p><b>content</b>: Denne meddelelse har høj prioritet. Afdeling A har modtaget en henvisning på ovenstående patient.
+Forinden der foretages visitation, bedes følgende undersøgelser foretaget:
 Røntgen af hofte i to planer.
 Blodtryksresultat
 Sænkningsresultat
-
-Resultaterne bedes fremsendt som et 'korrespondancebrev'.
-
+Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.
 Venlig hilsen
 overlæge K. Petersen
-15.01.1999</p></blockquote><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: urn:uuid:4ad37a69-99c9-4d68-9216-450267bb2a9f</p><p><b>PractitionerExtension</b>: <a href="PractitionerRole-d355f156-a291-4a5f-b5a0-044f9ff1d283.html">PractitionerRole Sygeplejerske</a></p><p><b>ContactExtension</b>: ph: 66131372</p><p><b>content</b>: application/pdf: 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M7OAMbnpZ72BM58YoVk8Aqn+Bkb4wq4uTPYb+LZ80Uy7JW7bCwuZb3VI6eYtsT4W4ejLttvk2HBsfyyShW+DYrTdJvpsyFGLc3ebaHbxrUvo3h0g5c3Dnu8Fx6JUDb5ieW1On8A5vUuWE6O/gpX12ZG79yvYKwNn7Fnkr2C9LKY+9Lmw1OC4yUFEy1NO6m3TxXoF//Y/QgW4pQplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMjc3NgplbmRvYmoKMiAwIG9iago8PCAvVHlwZSAvUGFnZSAvUGFyZW50IDMgMCBSIC9SZXNvdXJjZXMgNiAwIFIgL0NvbnRlbnRzIDQgMCBSIC9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCj4+CmVuZG9iago2IDAgb2JqCjw8IC9Qcm9jU2V0IFsgL1BERiBdIC9FeHRHU3RhdGUgPDwgL0dzMSA3IDAgUiA+PiA+PgplbmRvYmoKNyAwIG9iago8PCAvVHlwZSAvRXh0R1N0YXRlIC9PUE0gMSA+PgplbmRvYmoKMyAwIG9iago8PCAvVHlwZSAvUGFnZXMgL01lZGlhQm94IFswIDAgNTk1IDg0Ml0gL0NvdW50IDEgL0tpZHMgWyAyIDAgUiBdID4+CmVuZG9iago4IDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAzIDAgUiA+PgplbmRvYmoKOSAwIG9iagoo/v9cMDAwTVwwMDBlXDAwMGRcMDAwY1wwMDBvXDAwMG1cMDAwX1wwMDBsXDAwMG9cMDAwZ1wwMDBvXDAwMF9cMDAwMlwwMDAwXDAwMDFcMDAwNVwwMDBfXDAwMGJcMDAwbFwwMDDlXDAwMCBcMDAwc1wwMDBrXDAwMHJcMDAwaVwwMDBmXDAwMHRcMDAwIFwwMDBtXDAwMGVcMDAwZFwwMDAgXDAwMGhcMDAwdlwwMDBpXDAwMGRcMDAwIFwwMDBiXDAwMGFcMDAwZ1wwMDBnXDAwMHJcMDAwdVwwMDBuXDAwMGRcMDAwX1wwMDBjXDAwMG1cMDAweVwwMDBrXDAwMC5cMDAwcFwwMDBkXDAwMGYpCmVuZG9iagoxMCAwIG9iagooTWFjIE9TIFggMTAuMTIuMyBRdWFydHogUERGQ29udGV4dCkKZW5kb2JqCjExIDAgb2JqCihCaWxsZWRmcmVtdmlzZXIpCmVuZG9iagoxMiAwIG9iagooRDoyMDE3MDMxNDEyMTYyNlowMCcwMCcpCmVuZG9iagoxMyAwIG9iagooKQplbmRvYmoKMTQgMCBvYmoKWyBdCmVuZG9iagoxIDAgb2JqCjw8IC9UaXRsZSA5IDAgUiAvUHJvZHVjZXIgMTAgMCBSIC9DcmVhdG9yIDExIDAgUiAvQ3JlYXRpb25EYXRlIDEyIDAgUiAvTW9kRGF0ZQoxMiAwIFIgL0tleXdvcmRzIDEzIDAgUiAvQUFQTDpLZXl3b3JkcyAxNCAwIFIgPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDM2OTggMDAwMDAgbiAKMDAwMDAwMjg5MiAwMDAwMCBuIAowMDAwMDAzMTA4IDAwMDAwIG4gCjAwMDAwMDAwMjIgMDAwMDAgbiAKMDAwMDAwMjg3MiAwMDAwMCBuIAowMDAwMDAyOTk2IDAwMDAwIG4gCjAwMDAwMDMwNjMgMDAwMDAgbiAKMDAwMDAwMzE5MSAwMDAwMCBuIAowMDAwMDAzMjQwIDAwMDAwIG4gCjAwMDAwMDM1MzAgMDAwMDAgbiAKMDAwMDAwMzU4MyAwMDAwMCBuIAowMDAwMDAzNjE3IDAwMDAwIG4gCjAwMDAwMDM2NTkgMDAwMDAgbiAKMDAwMDAwMzY3OCAwMDAwMCBuIAp0cmFpbGVyCjw8IC9TaXplIDE1IC9Sb290IDggMCBSIC9JbmZvIDEgMCBSIC9JRCBbIDw5MDU2NWUwNTMyOTQ3YjE2N2MwODEzOGI2ZDZhNzNlYT4KPDkwNTY1ZTA1MzI5NDdiMTY3YzA4MTM4YjZkNmE3M2VhPiBdID4+CnN0YXJ0eHJlZgozODQxCiUlRU9GCg==</p></blockquote></div>
+15.01.1999</p></blockquote><blockquote><p><b>payload</b></p><p><b>DateTimeExtension</b>: 2023-11-20 17:45:00+0100</p><p><b>IdentifierExtension</b>: urn:uuid:c39ea6b2-6052-45e4-a207-415e0205ab6f</p><p><b>content</b>: application/pdf: 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M7OAMbnpZ72BM58YoVk8Aqn+Bkb4wq4uTPYb+LZ80Uy7JW7bCwuZb3VI6eYtsT4W4ejLttvk2HBsfyyShW+DYrTdJvpsyFGLc3ebaHbxrUvo3h0g5c3Dnu8Fx6JUDb5ieW1On8A5vUuWE6O/gpX12ZG79yvYKwNn7Fnkr2C9LKY+9Lmw1OC4yUFEy1NO6m3TxXoF//Y/QgW4pQplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMjc3NgplbmRvYmoKMiAwIG9iago8PCAvVHlwZSAvUGFnZSAvUGFyZW50IDMgMCBSIC9SZXNvdXJjZXMgNiAwIFIgL0NvbnRlbnRzIDQgMCBSIC9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCj4+CmVuZG9iago2IDAgb2JqCjw8IC9Qcm9jU2V0IFsgL1BERiBdIC9FeHRHU3RhdGUgPDwgL0dzMSA3IDAgUiA+PiA+PgplbmRvYmoKNyAwIG9iago8PCAvVHlwZSAvRXh0R1N0YXRlIC9PUE0gMSA+PgplbmRvYmoKMyAwIG9iago8PCAvVHlwZSAvUGFnZXMgL01lZGlhQm94IFswIDAgNTk1IDg0Ml0gL0NvdW50IDEgL0tpZHMgWyAyIDAgUiBdID4+CmVuZG9iago4IDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAzIDAgUiA+PgplbmRvYmoKOSAwIG9iagoo/v9cMDAwTVwwMDBlXDAwMGRcMDAwY1wwMDBvXDAwMG1cMDAwX1wwMDBsXDAwMG9cMDAwZ1wwMDBvXDAwMF9cMDAwMlwwMDAwXDAwMDFcMDAwNVwwMDBfXDAwMGJcMDAwbFwwMDDlXDAwMCBcMDAwc1wwMDBrXDAwMHJcMDAwaVwwMDBmXDAwMHRcMDAwIFwwMDBtXDAwMGVcMDAwZFwwMDAgXDAwMGhcMDAwdlwwMDBpXDAwMGRcMDAwIFwwMDBiXDAwMGFcMDAwZ1wwMDBnXDAwMHJcMDAwdVwwMDBuXDAwMGRcMDAwX1wwMDBjXDAwMG1cMDAweVwwMDBrXDAwMC5cMDAwcFwwMDBkXDAwMGYpCmVuZG9iagoxMCAwIG9iagooTWFjIE9TIFggMTAuMTIuMyBRdWFydHogUERGQ29udGV4dCkKZW5kb2JqCjExIDAgb2JqCihCaWxsZWRmcmVtdmlzZXIpCmVuZG9iagoxMiAwIG9iagooRDoyMDE3MDMxNDEyMTYyNlowMCcwMCcpCmVuZG9iagoxMyAwIG9iagooKQplbmRvYmoKMTQgMCBvYmoKWyBdCmVuZG9iagoxIDAgb2JqCjw8IC9UaXRsZSA5IDAgUiAvUHJvZHVjZXIgMTAgMCBSIC9DcmVhdG9yIDExIDAgUiAvQ3JlYXRpb25EYXRlIDEyIDAgUiAvTW9kRGF0ZQoxMiAwIFIgL0tleXdvcmRzIDEzIDAgUiAvQUFQTDpLZXl3b3JkcyAxNCAwIFIgPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDM2OTggMDAwMDAgbiAKMDAwMDAwMjg5MiAwMDAwMCBuIAowMDAwMDAzMTA4IDAwMDAwIG4gCjAwMDAwMDAwMjIgMDAwMDAgbiAKMDAwMDAwMjg3MiAwMDAwMCBuIAowMDAwMDAyOTk2IDAwMDAwIG4gCjAwMDAwMDMwNjMgMDAwMDAgbiAKMDAwMDAwMzE5MSAwMDAwMCBuIAowMDAwMDAzMjQwIDAwMDAwIG4gCjAwMDAwMDM1MzAgMDAwMDAgbiAKMDAwMDAwMzU4MyAwMDAwMCBuIAowMDAwMDAzNjE3IDAwMDAwIG4gCjAwMDAwMDM2NTkgMDAwMDAgbiAKMDAwMDAwMzY3OCAwMDAwMCBuIAp0cmFpbGVyCjw8IC9TaXplIDE1IC9Sb290IDggMCBSIC9JbmZvIDEgMCBSIC9JRCBbIDw5MDU2NWUwNTMyOTQ3YjE2N2MwODEzOGI2ZDZhNzNlYT4KPDkwNTY1ZTA1MzI5NDdiMTY3YzA4MTM4YjZkNmE3M2VhPiBdID4+CnN0YXJ0eHJlZgozODQxCiUlRU9GCg==</p></blockquote></div>
         </text>
         <identifier>
-          <value value="urn:uuid:3fab3414-6c8b-45bf-af93-27dd333554c6"/>
+          <value value="urn:uuid:bb210642-8a47-4ca6-8724-018872fbd597"/>
         </identifier>
         <status value="unknown"/>
         <category>
           <coding>
             <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"/>
-            <code value="examination-results"/>
+            <code value="other"/>
           </coding>
         </category>
         <subject>
-          <reference value="Patient/000e3045-8f08-4f17-9ee8-bcf98d564135"/>
+          <reference value="Patient/07903cc6-3cab-492a-8017-6f426cd69ba4"/>
         </subject>
+        <topic>
+          <text value="Forundersøgelse"/>
+        </topic>
         <payload>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension">
             <valueDateTime value="2023-11-20T17:45:00+01:00"/>
           </extension>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension">
             <valueIdentifier>
-              <value value="urn:uuid:729e63f5-a691-441e-84fe-953594b801b2"/>
+              <value value="urn:uuid:b43933ea-4e53-4b25-9f3b-8644b8003ada"/>
               <assigner>
-                <reference value="Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+                <reference value="Organization/3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
               </assigner>
             </valueIdentifier>
           </extension>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension">
             <valueReference>
-              <reference value="PractitionerRole/d355f156-a291-4a5f-b5a0-044f9ff1d283"/>
+              <reference value="PractitionerRole/75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"/>
             </valueReference>
           </extension>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
             <valueContactPoint>
               <system value="phone"/>
-              <value value="66131372"/>
+              <value value="65432030"/>
             </valueContactPoint>
           </extension>
-          <contentString value="Denne besked har høj prioritet.&#xA;Afdeling A har modtaget en henvisning på ovenstående patient.&#xA;Forinden der foretages visitation, bedes følgende undersøgelser foretages:&#xA;Røntgen af hofte i to planer.&#xA;Blodtryksresultat&#xA;Sænkningsresultat&#xA;&#xA;Resultaterne bedes fremsendt som et 'korrespondancebrev'.&#xA;&#xA;Venlig hilsen&#xA;overlæge K. Petersen&#xA;15.01.1999"/>
+          <contentString value="Denne meddelelse har høj prioritet. Afdeling A har modtaget en henvisning på ovenstående patient.&#xA;Forinden der foretages visitation, bedes følgende undersøgelser foretaget:&#xA;Røntgen af hofte i to planer.&#xA;Blodtryksresultat&#xA;Sænkningsresultat&#xA;Resultaterne bedes fremsendt som et &quot;korrespondancebrev&quot;.&#xA;Venlig hilsen&#xA;overlæge K. Petersen&#xA;15.01.1999"/>
         </payload>
         <payload>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension">
@@ -142,83 +142,95 @@ overlæge K. Petersen
           </extension>
           <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension">
             <valueIdentifier>
-              <value value="urn:uuid:4ad37a69-99c9-4d68-9216-450267bb2a9f"/>
+              <value value="urn:uuid:c39ea6b2-6052-45e4-a207-415e0205ab6f"/>
               <assigner>
-                <reference value="Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+                <reference value="Organization/3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
               </assigner>
             </valueIdentifier>
-          </extension>
-          <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension">
-            <valueReference>
-              <reference value="PractitionerRole/d355f156-a291-4a5f-b5a0-044f9ff1d283"/>
-            </valueReference>
-          </extension>
-          <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
-            <valueContactPoint>
-              <system value="phone"/>
-              <value value="66131372"/>
-            </valueContactPoint>
           </extension>
           <contentAttachment>
             <contentType value="application/pdf"/>
             <data value="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M7OAMbnpZ72BM58YoVk8Aqn+Bkb4wq4uTPYb+LZ80Uy7JW7bCwuZb3VI6eYtsT4W4ejLttvk2HBsfyyShW+DYrTdJvpsyFGLc3ebaHbxrUvo3h0g5c3Dnu8Fx6JUDb5ieW1On8A5vUuWE6O/gpX12ZG79yvYKwNn7Fnkr2C9LKY+9Lmw1OC4yUFEy1NO6m3TxXoF//Y/QgW4pQplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKMjc3NgplbmRvYmoKMiAwIG9iago8PCAvVHlwZSAvUGFnZSAvUGFyZW50IDMgMCBSIC9SZXNvdXJjZXMgNiAwIFIgL0NvbnRlbnRzIDQgMCBSIC9NZWRpYUJveCBbMCAwIDU5NSA4NDJdCj4+CmVuZG9iago2IDAgb2JqCjw8IC9Qcm9jU2V0IFsgL1BERiBdIC9FeHRHU3RhdGUgPDwgL0dzMSA3IDAgUiA+PiA+PgplbmRvYmoKNyAwIG9iago8PCAvVHlwZSAvRXh0R1N0YXRlIC9PUE0gMSA+PgplbmRvYmoKMyAwIG9iago8PCAvVHlwZSAvUGFnZXMgL01lZGlhQm94IFswIDAgNTk1IDg0Ml0gL0NvdW50IDEgL0tpZHMgWyAyIDAgUiBdID4+CmVuZG9iago4IDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAzIDAgUiA+PgplbmRvYmoKOSAwIG9iagoo/v9cMDAwTVwwMDBlXDAwMGRcMDAwY1wwMDBvXDAwMG1cMDAwX1wwMDBsXDAwMG9cMDAwZ1wwMDBvXDAwMF9cMDAwMlwwMDAwXDAwMDFcMDAwNVwwMDBfXDAwMGJcMDAwbFwwMDDlXDAwMCBcMDAwc1wwMDBrXDAwMHJcMDAwaVwwMDBmXDAwMHRcMDAwIFwwMDBtXDAwMGVcMDAwZFwwMDAgXDAwMGhcMDAwdlwwMDBpXDAwMGRcMDAwIFwwMDBiXDAwMGFcMDAwZ1wwMDBnXDAwMHJcMDAwdVwwMDBuXDAwMGRcMDAwX1wwMDBjXDAwMG1cMDAweVwwMDBrXDAwMC5cMDAwcFwwMDBkXDAwMGYpCmVuZG9iagoxMCAwIG9iagooTWFjIE9TIFggMTAuMTIuMyBRdWFydHogUERGQ29udGV4dCkKZW5kb2JqCjExIDAgb2JqCihCaWxsZWRmcmVtdmlzZXIpCmVuZG9iagoxMiAwIG9iagooRDoyMDE3MDMxNDEyMTYyNlowMCcwMCcpCmVuZG9iagoxMyAwIG9iagooKQplbmRvYmoKMTQgMCBvYmoKWyBdCmVuZG9iagoxIDAgb2JqCjw8IC9UaXRsZSA5IDAgUiAvUHJvZHVjZXIgMTAgMCBSIC9DcmVhdG9yIDExIDAgUiAvQ3JlYXRpb25EYXRlIDEyIDAgUiAvTW9kRGF0ZQoxMiAwIFIgL0tleXdvcmRzIDEzIDAgUiAvQUFQTDpLZXl3b3JkcyAxNCAwIFIgPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDM2OTggMDAwMDAgbiAKMDAwMDAwMjg5MiAwMDAwMCBuIAowMDAwMDAzMTA4IDAwMDAwIG4gCjAwMDAwMDAwMjIgMDAwMDAgbiAKMDAwMDAwMjg3MiAwMDAwMCBuIAowMDAwMDAyOTk2IDAwMDAwIG4gCjAwMDAwMDMwNjMgMDAwMDAgbiAKMDAwMDAwMzE5MSAwMDAwMCBuIAowMDAwMDAzMjQwIDAwMDAwIG4gCjAwMDAwMDM1MzAgMDAwMDAgbiAKMDAwMDAwMzU4MyAwMDAwMCBuIAowMDAwMDAzNjE3IDAwMDAwIG4gCjAwMDAwMDM2NTkgMDAwMDAgbiAKMDAwMDAwMzY3OCAwMDAwMCBuIAp0cmFpbGVyCjw8IC9TaXplIDE1IC9Sb290IDggMCBSIC9JbmZvIDEgMCBSIC9JRCBbIDw5MDU2NWUwNTMyOTQ3YjE2N2MwODEzOGI2ZDZhNzNlYT4KPDkwNTY1ZTA1MzI5NDdiMTY3YzA4MTM4YjZkNmE3M2VhPiBdID4+CnN0YXJ0eHJlZgozODQxCiUlRU9GCg=="/>
-            <title value="billede"/>
+            <title value="vektor_grafik"/>
           </contentAttachment>
         </payload>
       </Communication>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/PractitionerRole/d355f156-a291-4a5f-b5a0-044f9ff1d283"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/PractitionerRole/75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"/>
     <resource>
       <PractitionerRole>
-        <id value="d355f156-a291-4a5f-b5a0-044f9ff1d283"/>
+        <id value="75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_d355f156-a291-4a5f-b5a0-044f9ff1d283"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole d355f156-a291-4a5f-b5a0-044f9ff1d283</b></p><a name="d355f156-a291-4a5f-b5a0-044f9ff1d283"> </a><a name="hcd355f156-a291-4a5f-b5a0-044f9ff1d283"> </a><a name="d355f156-a291-4a5f-b5a0-044f9ff1d283-da-DK"> </a><p><b>practitioner</b>: <a href="Practitioner-43b59123-9588-4091-ac7c-ef45c90083b5.html">Practitioner K Petersen </a></p><p><b>code</b>: <span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ sygeplejerske}">Sygeplejerske</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole 75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b</b></p><a name="75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"> </a><a name="hc75e68f91-f9bb-4a4c-be27-32ae4b0a7e5b"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/3.0.0/StructureDefinition-medcom-core-practitionerrole.html">MedComCorePractitionerRole</a></p></div><p><b>practitioner</b>: <a href="Practitioner-2998635f-5b22-4a2d-abc3-ad3934ba55d2.html">Practitioner K. Petersen </a></p><p><b>code</b>: <span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ overlaege}">Overlæge</span></p></div>
         </text>
         <practitioner>
-          <reference value="Practitioner/43b59123-9588-4091-ac7c-ef45c90083b5"/>
+          <reference value="Practitioner/2998635f-5b22-4a2d-abc3-ad3934ba55d2"/>
         </practitioner>
         <code>
           <coding>
             <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"/>
-            <code value="sygeplejerske"/>
+            <code value="overlaege"/>
           </coding>
         </code>
       </PractitionerRole>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Practitioner/43b59123-9588-4091-ac7c-ef45c90083b5"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Practitioner/2998635f-5b22-4a2d-abc3-ad3934ba55d2"/>
     <resource>
       <Practitioner>
-        <id value="43b59123-9588-4091-ac7c-ef45c90083b5"/>
+        <id value="2998635f-5b22-4a2d-abc3-ad3934ba55d2"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_43b59123-9588-4091-ac7c-ef45c90083b5"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner 43b59123-9588-4091-ac7c-ef45c90083b5</b></p><a name="43b59123-9588-4091-ac7c-ef45c90083b5"> </a><a name="hc43b59123-9588-4091-ac7c-ef45c90083b5"> </a><a name="43b59123-9588-4091-ac7c-ef45c90083b5-da-DK"> </a><p><b>name</b>: K Petersen </p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_2998635f-5b22-4a2d-abc3-ad3934ba55d2"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner 2998635f-5b22-4a2d-abc3-ad3934ba55d2</b></p><a name="2998635f-5b22-4a2d-abc3-ad3934ba55d2"> </a><a name="hc2998635f-5b22-4a2d-abc3-ad3934ba55d2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/core/3.0.0/StructureDefinition-medcom-core-practitioner.html">MedComCorePractitioner</a></p></div><p><b>name</b>: K. Petersen </p></div>
         </text>
         <name>
           <family value="Petersen"/>
-          <given value="K"/>
+          <given value="K."/>
         </name>
       </Practitioner>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/93322213-eaba-4ab9-af83-e09497e7e581"/>
     <resource>
       <Organization>
-        <id value="b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+        <id value="93322213-eaba-4ab9-af83-e09497e7e581"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_b93b1d79-4cd4-4737-98d0-4748a0378b09"> </a><p class="res-header-id"><b>Generated Narrative: Organization b93b1d79-4cd4-4737-98d0-4748a0378b09</b></p><a name="b93b1d79-4cd4-4737-98d0-4748a0378b09"> </a><a name="hcb93b1d79-4cd4-4737-98d0-4748a0378b09"> </a><a name="b93b1d79-4cd4-4737-98d0-4748a0378b09-da-DK"> </a><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790001382445, <code>urn:oid:1.2.208.176.1.1</code>/359001000016000</p><p><b>name</b>: MedCom testcenter</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_93322213-eaba-4ab9-af83-e09497e7e581"> </a><p class="res-header-id"><b>Generated Narrative: Organization 93322213-eaba-4ab9-af83-e09497e7e581</b></p><a name="93322213-eaba-4ab9-af83-e09497e7e581"> </a><a name="hc93322213-eaba-4ab9-af83-e09497e7e581"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/4.0.0-trial-use/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790000121441, <code>urn:oid:1.2.208.176.1.1</code>/328051000016008</p><p><b>name</b>: Social og Sundhed Odense Kommune</p></div>
+        </text>
+        <identifier>
+          <system value="https://www.gs1.org/gln"/>
+          <value value="5790000121441"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.208.176.1.1"/>
+          <value value="328051000016008"/>
+        </identifier>
+        <name value="Social og Sundhed Odense Kommune"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
+    <resource>
+      <Organization>
+        <id value="3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
+        <meta>
+          <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"> </a><p class="res-header-id"><b>Generated Narrative: Organization 3dcbbc97-4c34-4f53-87a1-6d7667a8fb27</b></p><a name="3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"> </a><a name="hc3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://medcomfhir.dk/ig/messaging/4.0.0-trial-use/StructureDefinition-medcom-messaging-organization.html">MedComMessagingOrganization</a></p></div><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790001382445, <code>urn:oid:1.2.208.176.1.1</code>/359001000016000</p><p><b>name</b>: MedCom testcenter</p></div>
         </text>
         <identifier>
           <system value="https://www.gs1.org/gln"/>
@@ -233,45 +245,18 @@ overlæge K. Petersen
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/3d06d6a9-2845-450f-837f-effa4732264d"/>
-    <resource>
-      <Organization>
-        <id value="3d06d6a9-2845-450f-837f-effa4732264d"/>
-        <meta>
-          <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"/>
-        </meta>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_3d06d6a9-2845-450f-837f-effa4732264d"> </a><p class="res-header-id"><b>Generated Narrative: Organization 3d06d6a9-2845-450f-837f-effa4732264d</b></p><a name="3d06d6a9-2845-450f-837f-effa4732264d"> </a><a name="hc3d06d6a9-2845-450f-837f-effa4732264d"> </a><a name="3d06d6a9-2845-450f-837f-effa4732264d-da-DK"> </a><p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790000121441, <code>urn:oid:1.2.208.176.1.1</code>/328051000016008, <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code>/0461</p><p><b>name</b>: Hjemmeplejen, Odense Kommune</p></div>
-        </text>
-        <identifier>
-          <system value="https://www.gs1.org/gln"/>
-          <value value="5790000121441"/>
-        </identifier>
-        <identifier>
-          <system value="urn:oid:1.2.208.176.1.1"/>
-          <value value="328051000016008"/>
-        </identifier>
-        <identifier>
-          <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
-          <value value="0461"/>
-        </identifier>
-        <name value="Hjemmeplejen, Odense Kommune"/>
-      </Organization>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Provenance/b1bfb2f7-200b-41e6-b4a0-35bafd1d4770"/>
+    <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Provenance/8b7b5caf-35be-430d-9aa8-09eaecd55f89"/>
     <resource>
       <Provenance>
-        <id value="b1bfb2f7-200b-41e6-b4a0-35bafd1d4770"/>
+        <id value="8b7b5caf-35be-430d-9aa8-09eaecd55f89"/>
         <meta>
           <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_b1bfb2f7-200b-41e6-b4a0-35bafd1d4770"> </a><p class="res-header-id"><b>Generated Narrative: Provenance b1bfb2f7-200b-41e6-b4a0-35bafd1d4770</b></p><a name="b1bfb2f7-200b-41e6-b4a0-35bafd1d4770"> </a><a name="hcb1bfb2f7-200b-41e6-b4a0-35bafd1d4770"> </a><a name="b1bfb2f7-200b-41e6-b4a0-35bafd1d4770-da-DK"> </a><p>Provenance for <a href="MessageHeader-56d771fd-f8d2-4c46-a56e-af4a46565b5e.html">MessageHeader: event[x] = Care Communication Message (MedComMessagingEventCodes#care-communication-message); definition = http://medcomfhir.dk/ig/carecommunication/medcom-careCommunication-message-definition|4.0.0</a></p><p>Summary</p><table class="grid"><tr><td>Occurrence</td><td>2023-11-20 17:45:00+0100</td></tr><tr><td>Recorded</td><td>2023-11-20 17:45:00+0100</td></tr><tr><td>Activity</td><td><span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes new-message}">A new message has been sent</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>who</b></td></tr><tr><td><a href="Organization-b93b1d79-4cd4-4737-98d0-4748a0378b09.html">Organization MedCom testcenter</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Provenance_8b7b5caf-35be-430d-9aa8-09eaecd55f89"> </a><p class="res-header-id"><b>Generated Narrative: Provenance 8b7b5caf-35be-430d-9aa8-09eaecd55f89</b></p><a name="8b7b5caf-35be-430d-9aa8-09eaecd55f89"> </a><a name="hc8b7b5caf-35be-430d-9aa8-09eaecd55f89"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-medcom-careCommunication-provenance.html">MedComCareCommunicationProvenance</a></p></div><p>Provenance for <a href="MessageHeader-60098c38-6fe1-41ba-aa92-d4809022de88.html">MessageHeader: event[x] = Care Communication Message (MedComMessagingEventCodes#care-communication-message); definition = http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0</a></p><p>Summary</p><table class="grid"><tr><td>Occurrence</td><td>2023-11-20 17:45:00+0100</td></tr><tr><td>Recorded</td><td>2023-11-20 17:45:00+0100</td></tr><tr><td>Activity</td><td><span title="Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes new-message}">A new message has been sent</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>who</b></td></tr><tr><td><a href="Organization-3dcbbc97-4c34-4f53-87a1-6d7667a8fb27.html">Organization MedCom testcenter</a></td></tr></table></div>
         </text>
         <target>
-          <reference value="MessageHeader/56d771fd-f8d2-4c46-a56e-af4a46565b5e"/>
+          <reference value="MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88"/>
         </target>
         <occurredDateTime value="2023-11-20T17:45:00+01:00"/>
         <recorded value="2023-11-20T17:45:00+01:00"/>
@@ -283,14 +268,14 @@ overlæge K. Petersen
         </activity>
         <agent>
           <who>
-            <reference value="Organization/b93b1d79-4cd4-4737-98d0-4748a0378b09"/>
+            <reference value="Organization/3dcbbc97-4c34-4f53-87a1-6d7667a8fb27"/>
           </who>
         </agent>
         <entity>
           <role value="source"/>
           <what>
             <identifier>
-              <value value="urn:uuid:729e63f5-a691-441e-84fe-953594b801b2"/>
+              <value value="urn:uuid:b43933ea-4e53-4b25-9f3b-8644b8003ada"/>
             </identifier>
           </what>
         </entity>
@@ -298,7 +283,7 @@ overlæge K. Petersen
           <role value="source"/>
           <what>
             <identifier>
-              <value value="urn:uuid:4ad37a69-99c9-4d68-9216-450267bb2a9f"/>
+              <value value="urn:uuid:c39ea6b2-6052-45e4-a207-415e0205ab6f"/>
             </identifier>
           </what>
         </entity>
