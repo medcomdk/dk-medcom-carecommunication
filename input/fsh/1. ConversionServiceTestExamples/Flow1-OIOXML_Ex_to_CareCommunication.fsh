@@ -5,8 +5,8 @@ Description: "Flow1-OIOXML-Ex-to-CareCommunication - Example of a CareCommunicat
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2023-11-20T17:45:00+01:00
-* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/69cc8998-a726-4705-8ef9-0e2fbdb348eb"
-* entry[=].resource = 69cc8998-a726-4705-8ef9-0e2fbdb348eb
+* entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/MessageHeader/60098c38-6fe1-41ba-aa92-d4809022de88"
+* entry[=].resource = 60098c38-6fe1-41ba-aa92-d4809022de88
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Patient/07903cc6-3cab-492a-8017-6f426cd69ba4"
 * entry[=].resource = 07903cc6-3cab-492a-8017-6f426cd69ba4
 * entry[+].fullUrl = "https://medcomfhir.dk/ig/carecommunication/Communication/9611cad1-e4cd-4cb2-a7be-0f8b47b056d1"
@@ -23,7 +23,7 @@ Usage: #example
 * entry[=].resource = 8b7b5caf-35be-430d-9aa8-09eaecd55f89
 
 
-Instance: 69cc8998-a726-4705-8ef9-0e2fbdb348eb
+Instance: 60098c38-6fe1-41ba-aa92-d4809022de88
 InstanceOf: MedComCareCommunicationMessageHeader
 Title: "Flow1-OIOXML-Ex-to-CareCommunication - Instance of a MessageHeader resource used in a new message."
 Description: "Flow1-OIOXML-Ex-to-CareCommunication - Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
@@ -115,7 +115,7 @@ InstanceOf: MedComCareCommunicationProvenance
 Title: "Flow1-OIOXML-Ex-to-CareCommunication - The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "Flow1-OIOXML-Ex-to-CareCommunication - The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #inline
-* target = Reference(69cc8998-a726-4705-8ef9-0e2fbdb348eb)
+* target = Reference(60098c38-6fe1-41ba-aa92-d4809022de88)
 * occurredDateTime = 2023-11-20T17:45:00+01:00
 * recorded = 2023-11-20T17:45:00+01:00
 * activity.coding = $ActivityCode#new-message
