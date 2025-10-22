@@ -12,7 +12,7 @@
   * [3.2 Mapping of messages](#32-mapping-of-messages)
   * [3.3 Examples](#33-examples)
 
-> Note: Clinical guidelines for application and use cases are available in both Danish and English. The remaining documentation will solely be in English.
+> Note: Clinical guidelines for application is available in both Danish and English. The remaining documentation will solely be in English.
 
 This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support secure digital communication between social care, the psychiatric area and the somatic sector. CareCommunication standard enable communication of personally identifiable information and is typically used for ad hoc communication. However, the CareCommunication must only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature.
 
@@ -32,7 +32,7 @@ The standard documentation below provides the necessary content to understand th
 The clinical guidelines for application are the foundation for the CareCommunication standard. It describes the clinical needs for the CareCommunication, the requirements for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for CareCommunication. It is important for both implementers and business specialists to understand the clinical guidelines for application to ensure that the implemented standard supports the requirements.
 
 Below, the clinical guidelines for application can be found (the information is in both Danish and English):<br> 
-[Sundhedsfaglige retningslinjer for anvendelse | Clinical guidelines](assets/documents/Clinical-guidelines-DA.md) <br> 
+[Sundhedsfaglige retningslinjer for anvendelse | Clinical guidelines for application](assets/documents/Clinical-guidelines-DA.md) <br> 
 
 
 ### 1.2 Use cases
@@ -70,14 +70,13 @@ Furthermore, the structure of the standard is described and supported with examp
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 ### 1.4 Governance for CareCommunication
-Governance describes the general rules which FHIR messages must obey to. 
-The general governance for FHIR messaging [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication)
-The general governance for the use of CareCommunication [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
-The governance for use of Carecommunication [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
+Governance describes the general rules which FHIR messages must obey to.
 
-Further, some recommendations for implementing the CareCommunication standard has been developed. The page recommends how to run a household on the send and received CareCommunications. These are not required to follow, only for recommendation and inspiration.  
-[Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
+General governance for MedCom FHIR [can be found here](https://medcomdk.github.io/MedComLandingPage/).
 
+General governance for FHIR messaging [can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication).
+
+Governance for the use of CareCommunication [can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html).
 
 ## 2 Test and certification
 Certification of a system implies both an **approved test protocol** and a **successful run-through of Touchstone test scripts**.  
@@ -101,7 +100,7 @@ The test material consists of both a **test protocol** (Word document) and a set
 
 
 ## 3 Conversion service 
-In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (CareCommunication), a conversion service (Danish: Konverteringsløsning) will be made available by the VANS vendors. Documentation about the service and the preconditions can be found in this section. Figure 1 illustrates the flow of the communication messages when a XDIS91 is sent by the sender. The service will support conversion of a CareCommunication message including attachments, where the attachment is sent in a XBIN01. 
+In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (CareCommunication), a conversion service (Danish: Konverteringsløsning) will be made available by the VANS vendors. Documentation about the service and the preconditions can be found in this section. Figure 1 illustrates the flow of the communication messages when a XDIS91 is sent by the sender. The service will support conversion of a CareCommunication message including attachments, where the attachment is sent in an XBIN01. 
 
 <figure>
 <img src="assets/images/Conversion.png" alt="Shows the flow of conversion of communication messages" style="width:40%" id="Fig2">
@@ -110,7 +109,7 @@ In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (Care
 
 The service concerns only conversion between OIOXML and FHIR. For this reason, messages sent in EDIFACT must be converted to OIOXML before conversion to FHIR. Conversion will only be performed when the sender and receiver doesn’t support the same standard format.
 
-The service is intended to be available from spring 2025 to the end of 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
+The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
 
 ### 3.1 Use cases and rules
 The following document outlines the preconditions for the conversion service, the use cases describing the flow of events, and the corresponding mapping rules. Furthermore, flowcharts illustrating the events described in the use case document can be found in *Illustrations of Concersion Scenarios*.
@@ -121,13 +120,11 @@ The following document outlines the preconditions for the conversion service, th
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
 
-Update of mapping table for XDIS91/CareCommunication: Changes of 2025-03-28, 2025-04-01 and 2025-04-03 are marked with red.
-
-[Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication.xlsx) <br>
+[Mapping of communication messages (XDIS91/CareCommunication) (xlsx)](assets/Mapning-XDIS91-CareCommunication_v500.xlsx) <br>
 [Mapping of acknowledgement messages (XCTL/Acknowledgement) (xlsx)](assets/Mapning-XCTL-Acknowledgement.xlsx)
 
 ### 3.3 Examples
-The table below includes examples of the mapping illustrating four different flows for CareCommunication version 4.0. Flow 1 and flow 3 CareCommunication files have been updated due to errors 2025-03-28.
+The table below includes examples of the mapping illustrating four different flows for CareCommunication version 5.0. **NB:** The narrative texts are autogenerated in the FHIR examples and are therefore not representative. See [Governance for the implementation of narratives](https://medcomdk.github.io/MedComLandingPage/assets/documents/GeneralGovernanceFHIRStandards.html#5-implementation-requirements-for-narrative-texts).
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -173,6 +170,7 @@ The table below includes examples of the mapping illustrating four different flo
 
 ### 3.4 Test protocol
 Test of the conversion service includes going through the testprotocol. In the test protocol the use cases and rules in the use case document are adressed, and it will be ensured that the mapping is performed correctly. 
- <!-- * [Test protocol in English (docx)](assets/ConversionService_Testprotocol.docx)
-    * [Test examples for the test protocol (zip)](assets/ConversionSerivice_TestExcamples_2025-05-15.zip). Test examples are updated 2025-05-19.
-    * [Test examples without VANSenvelope (zip)](assets/ConvertionService_examples_without_VANSenvelope.zip). (Note: Not for use in test protocol, and not updated after 2025-01-30)-->
+  * [Test protocol in English (docx)](assets/ConversionService_Testprotocol_v500.docx)
+    * [Test examples for the test protocol (zip)](assets/ConversionService_TestExamples_v500-minus-ConSer_XDIS91_05_XBIN01.zip).
+    * **NB:** One test example named ConSer_XDIS91_05_XBIN01 was too big for this GitHub repository. Remember to [download this file as well from here](https://github.com/medcomdk/dk-medcom-carecommunication/releases/tag/v.5.0.0-githubpages). You will find it as a binary attachment to the release note.
+    * **NB:** The narrative texts are autogenerated in the FHIR examples and are therefore not representative. See [Governance for the implementation of narratives](https://medcomdk.github.io/MedComLandingPage/assets/documents/GeneralGovernanceFHIRStandards.html#5-implementation-requirements-for-narrative-texts).
