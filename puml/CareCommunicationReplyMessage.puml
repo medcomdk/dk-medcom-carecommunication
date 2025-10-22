@@ -1,4 +1,4 @@
-@startuml CCReplyMessage
+@startuml CCreplyMessage
 
 'layout
 skinparam class {
@@ -15,159 +15,125 @@ skinparam Ranksep 10
 'title
 title Simplified example: Reply message
 
-'Message 1: New message
-package "Message 1: New message" as new <<Frame>>{
-    class "Bundle 1" as newB {
-        Bundle.id = BUN1
-        Bundle.timestamp = 2021-12-03T14:00:10Z
-        ...
+'Message 1: reply message
+package "CareCommunication message: Reply message" as reply <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as replyB {
+        id = "b56549f7-ed10-422d-8088-f7222b686e46"
+        type = "message"
+        timestamp = "2024-05-02T11:30:00+01:00"
     }
-    class "MessageHeader 1" as newMH{
-        MessageHeader.id = MHID1
-        ...
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as replyMH{
+        id = "d5bd2111-2576-48d3-84d4-8be0297a038d"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        destination.receiver.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        sender.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        focus.reference = "Communication/4c712bdc-1558-4125-a854-fa8b3a11f6ed"
     }
-    class "Sender Organization 1" as newSOrg{
-        ...
+    class "Patient (MedComCorePatient)" as replyPT{
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
     }
-    class "Reciver Organization 1" as newROrg{
-        ...
+    class "Communication (MedComCareCommunication)" as replyCom{
+        id = "4c712bdc-1558-4125-a854-fa8b3a11f6ed"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[1].contentString = "Thank you for notifying us, we will take care of it..."
+        payload[1].extension:date = "2024-05-02T11:30:00+01:00"
+        payload[1].extension:author.reference = "PractitionerRole/8bf63050-5504-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "44527000"
+        payload[1].extension:identifier.valueIdentifier.value = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
+        payload[1].extension:identifier.valueIdentifier.assigner = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2024-05-01T12:00:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    } 
+    class "PractitionerRole (MedComCorePractitionerRole)" as replyPracR{
+        id = "8bf63050-5504-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/7ffff970-5504-11ed-bdc3-0242ac120002"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
     }
-    class "Communication 1" as newCom{
-        Communication.status = "unknown"
-        Communication.class = "medicine"
-        Communication.sent = 2021-12-03T14:00:00Z        
-        Communication.payload.contentString = "Question regarding medicine"
-        Communication.payload.payloadDateTimeExtension = 2021-12-03T12:34:56Z
-        Communication.payload.payloadAuthorExtension = Practitioner/Prac1
-        ...
+    class "Practitioner (MedComCorePractitioner)" as replyPrac{
+        id = "7ffff970-5504-11ed-bdc3-0242ac120002"
+        name.family = "Emma"
+        name.given = "Waters"
     }
-    class "Encounter 1" as newENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        ...
+    class "PractitionerRole (MedComCorePractitionerRole)" as newPracR{
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
     }
-    class "Patient 1" as newPT{
-        ...
+    class "Practitioner (MedComCorePractitioner)" as newPrac{
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        name.family = "Michael"
+        name.given = "Burns"
     }
-    class "Practitioner 1" as newPrac{
-        Practitioner.identifier = Prac1
-        ...
+    class "Sender (MedComMessagingOrganization)" as replySOrg{
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
     }
-    class "PractitionerRole 1" as newPracR{
-        ...
+    class "Receiver (MedComMessagingOrganization)" as replyROrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
     }
-    class "Provenance 1" as newPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
+    class "Provenance (MedComCareCommunicationProvenance)" as replyPRO{
+        id = "30c0f779-783f-46b2-b38f-faebd2bedb3f"
+        target.reference = "MessageHeader/d5bd2111-2576-48d3-84d4-8be0297a038d"
+        occuredDateTime = "2024-05-02T11:30:00+01:00"
+        recorded = "2024-05-02T11:30:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "reply-message"
+        agent.who.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "revision"
+        entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        entity.what.identifier = "urn:uuid:a9becf76-fc4c-49aa-8a68-6a0584871fcd"
     }
-
-newB -[hidden]- newMH
-newMH -[hidden]- newSOrg
-newSOrg-[hidden]-newROrg
-newROrg-[hidden]-newCom
-newCom -[hidden]- newENC
-newENC-[hidden]-newPT
-newPT-[hidden]-newPrac
-newPrac-[hidden]-newPracR
-newPracR-[hidden]-newPRO
-
-
-
-}
-
-'Message 2: reply inpatient
-package "Message 2: Reply message" as reply <<Frame>>{
-    class "Bundle 2" as replyB {
-        Bundle.id = BUN2
-        Bundle.timestamp = 2021-12-04T16:00:10Z
-        ...
-    }
-    class "MessageHeader 2" as replyMH{
-        MessageHeader.id = MHID2
-        ...
-    }
-    class "Sender Organization 2" as replySOrg{
-        ...
-    }
-    class "Reciver Organization 2" as replyROrg{
-        ...
-    }
-    class "Communication 2" as newreplyCom{
-        Communication.status = "unknown"
-        Communication.class = "medicine"
-        Communication.sent = 2021-12-04T16:00:00Z
-        Communication.payload[0].contentString = "Question regarding medicine..."
-        Communication.payload[0].payloadDateTimeExtension = 2021-12-03T12:34:56Z
-        Communication.payload[0].payloadAuthorExtension = Practitioner/Prac1
-        Communication.payload[1].contentString = "Answer to medicine question..."
-        Communication.payload[1].payloadDateTimeExtension = 2021-12-04T16:10:01Z
-        Communication.payload[1].payloadAuthorExtension = Practitioner/Prac2
-        ...
-    }
-    class "Encounter 1" as newreplyENC{
-        Encounter.status = "in-progress"
-        Encounter.class = "IMP"
-        ...
-    }
-    class "Patient 1" as newreplyPT{
-        ...
-    }
-    class "Practitioner 1" as newreplyPrac{
-        Practitioner.identifier = Prac1
-        ...
-    }
-    class "PractitionerRole 1" as newreplyPracR{
-        ...
-    }
-    class "Provenance 1" as newreplyPRO{
-        Provenance.target = MessageHeader/MHID1
-        Provenance.activity = "new-messsage"
-        Provenance.agent.who = "Sender Organization 1"
-        ...
-    }
-    class "Practitioner 2" as replyPrac{
-        Practitioner.identifier = Prac2
-        ...
-    }
-    class "PractitionerRole 2" as replyPracR{
-        ...
-    }    
-    class "Provenance 2" as replyPRO{
-        Provenance.target = MessageHeader/MHID2
-        Provenance.activity = "reply-messsage"
-        Provenance.agent.who = "Sender Organization 2"
-        Provenance.entity.role = "derivation"
-        Provenance.entity.what.reference = MessageHeader/MHID1
-        ...
+    class "Provenance (MedComCareCommunicationProvenance)" as newPRO{
+        id = "4c284936-5454-4116-95fc-3c8eeeed2400"
+        target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        occuredDateTime = "2024-05-01T12:00:00+01:00"
+        recorded = "2024-05-01T12:00:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.what.identifier = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
     }
 
 replyB -[hidden]- replyMH
-replyMH -[hidden]- replySOrg
-replySOrg-[hidden]-replyROrg
-replyROrg-[hidden]-newreplyCom
-newreplyCom -[hidden]- newreplyENC
-newreplyENC-[hidden]-newreplyPT
-newreplyPT-[hidden]-newreplyPrac
-newreplyPrac-[hidden]-newreplyPracR
-newreplyPracR-[hidden]-newreplyPRO
-newreplyPRO-[hidden]-replyPrac
-replyPrac-[hidden]-replyPracR
-replyPracR-[hidden]-replyPRO
-
-
-
-}
-
-' pile mellem de to beskeder
-' admit --> finished
+replyMH -[hidden]-replyPT
+replyPT-[hidden]-replyCom
+replyCom -[hidden]-replyPracR
+replyPracR-[hidden]-replyPrac
+replyPrac-[hidden]-newPracR
+newPracR-[hidden]-newPrac
+newPrac-[hidden]-replyROrg
+replyROrg-[hidden]- replySOrg
+replySOrg-[hidden]-replyPRO
+replyPRO-[hidden]-newPRO
 
 
 @enduml
-
-
-
-
-
-

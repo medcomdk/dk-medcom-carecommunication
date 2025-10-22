@@ -1,7 +1,6 @@
 [Return](../../index.md)
 
-# Non-Technical Guidelines
-<hr/>
+<h1>Clinical guidelines for application</h1>
 
 **Table of content**
 * [1 Introduction](#1-introduction)
@@ -15,7 +14,6 @@
 * [9 Mode of transfer](#9-mode-of-transfer)
 * [10 Use Cases](#10-use-cases)
 * [11 Transition period with simultaneous operation of CareCommunication DIS91/XDIS91 and FHIR-CareCommunication](#11-transition-period-with-simultaneous-operation-of-carecommunication-dis91xdis91-og-fhir-carecommunication)
-<hr/>
 
 
 ## 1 Introduction
@@ -153,5 +151,5 @@ FHIR-CC will eventually replace the MedCom standard CareCommunication <a href="h
 (Presentations will be processed in MedCom's steering committee)
 
 It will be the parties who need the new functions, such as attachments and structured use of category, that drive the implementation and distribution of FHIR-CC.
-Health and collaboration agreements must be entered into using FHIR-CC. Likewise, this new type of communication must also be updated in the Organisation Registry of Danish Healthcare (SOR) for the indi-vidual actor, thus there is valid data on who has implemented and is using FHIR-CC - and thereby who can receive and send FHIR-CC. The prerequisite for the use of the SOR data to function in practice as an auxil-iary tool for correct addressing is shared agreements for updating and use.
+Health and collaboration agreements must be entered into using FHIR-CC. Likewise, this new type of communication must also be updated in the organization Registry of Danish Healthcare (SOR) for the indi-vidual actor, thus there is valid data on who has implemented and is using FHIR-CC - and thereby who can receive and send FHIR-CC. The prerequisite for the use of the SOR data to function in practice as an auxil-iary tool for correct addressing is shared agreements for updating and use.
 

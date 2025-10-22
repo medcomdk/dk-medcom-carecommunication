@@ -1,0 +1,124 @@
+@startuml CCmodifyMessage
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Modified message
+
+'Message 1: modify message
+package "CareCommunication message: Modified message" as modify <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as modifyB {
+        id = "df9019c6-690d-11ed-9022-0242ac120002"
+        type = "message"
+        timestamp = "2024-05-01T12:30:00+01:00"
+    }
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as modifyMH{
+        id = "f8aa0bf0-690d-11ed-9022-0242ac120002"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus.reference = "Communication/d63178cc-690f-11ed-9022-0242ac120002"
+    }
+    class "Patient (MedComCorePatient)" as modifyPT{
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "d63178cc-690f-11ed-9022-0242ac120002"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code = "training"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[1].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[1].extension:date = "2024-05-01T12:00:00+01:00"
+        payload[1].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[1].extension:authorContact.value = "38683868"
+        payload[1].extension:identifier.valueIdentifier.value = "urn:uuid:c118e2d7-9292-4ef4-b7f7-b783c9b1b5de"
+        payload[1].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        payload[0].contentString = "Corrected the category to 'Traning'. Selected a wrong category."
+        payload[0].extension:date = "2024-05-01T12:30:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+    class "PractitionerRole (MedComCorePractitionerRole)" as modifyPracR{
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
+    }
+    class "Practitioner (MedComCorePractitioner)" as modifyPrac{
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        name.family = "Michael"
+        name.given = "Burns"
+    }
+    class "Receiver (MedComMessagingOrganization)" as modifyROrg{
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+    }
+    class "Sender (MedComMessagingOrganization)" as modifySOrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
+    class "Provenance (MedComMessagingProvenance)" as modifyPRO{
+        id = "f18213f8-2e2c-458d-86ff-4e48ac5d7162"
+        target = "MessageHeader/f8aa0bf0-690d-11ed-9022-0242ac120002"
+        occuredDateTime = "2024-05-01T12:30:00+01:00"
+        recorded = "2024-05-01T12:30:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "modify-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "revision"
+        entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+    }
+    class "Provenance (MedComMessagingProvenance)" as newPRO{
+        id = "4c284936-5454-4116-95fc-3c8eeeed2400"
+        target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        occuredDateTime = "2024-05-01T12:00:00+01:00"
+        recorded = "2024-05-01T12:00:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+
+modifyB -[hidden]- modifyMH
+modifyMH -[hidden]-modifyPT
+modifyPT-[hidden]-newCom
+newCom-[hidden]-modifyPracR
+modifyPracR-[hidden]-modifyPrac
+modifyPrac-[hidden]-modifyROrg
+modifyROrg-[hidden]- modifySOrg
+modifySOrg-[hidden]-modifyPRO
+modifyPRO-[hidden]-newPRO
+
+
+@enduml

@@ -1,0 +1,133 @@
+@startuml CCcancelMessage
+
+'layout
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+  }
+hide circle
+hide empty members
+skinparam SameClassWidth true
+skinparam Ranksep 10
+
+
+'title
+title Simplified example: Cancelled message
+
+'Message 1: error message
+package "CareCommunication message: Cancelled message" as error <<Frame>>{
+    class "Bundle (MedComCareCommunicationMessage)" as errorB {
+        id = "ed3e05b2-551d-11ed-bdc3-0242ac120002"
+        type = "message"
+        timestamp = "2024-05-01T12:11:00+01:00"
+    }
+    class "MessageHeader (MedComCareCommunicationMessageHeader)" as errorMH{
+        id = "b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+        event.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes"
+        event.code = "care-communication-message"
+        destination.use.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse"
+        destination.use.code = "primary"
+        destination.endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+        destination.receiver.reference = "Organization/o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        sender.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+        focus[0].reference = "Communication/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+        focus[1].reference = "Communication/1636f3f8-551e-11ed-bdc3-0242ac120002"
+    }
+    class "Patient (MedComCorePatient)" as errorPT{
+        id = "733cef33-3626-422b-955d-d506aaa65fe1"
+        identifier.system = "urn:oid:1.2.208.176.1.2"
+        identifier.value = "2509479989"
+        name.use = "official"
+        name.family = "Elmer"
+        name.given[0] = "Bruno"
+        name.given[1] = "Test"
+    }
+    class "Communication (MedComCareCommunication)" as newCom{
+        id = "94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+        status.system = "http://hl7.org/fhir/event-status" 
+        status.code = "unknown"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
+        payload[0].extension:date = "2024-05-01T12:00:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+    class "Communication (MedComCareCommunication)" as errorCom{
+        id = "1636f3f8-551e-11ed-bdc3-0242ac120002"
+        status = "entered-in-error"
+        category.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+        category.code= "carecoordination"
+        subject.reference = "Patient/733cef33-3626-422b-955d-d506aaa65fe1"
+        payload[0].contentString = "Cancellation due to incorrect CPR-number"
+        payload[0].extension:date = "2024-05-01T12:11:00+01:00"
+        payload[0].extension:author.reference = "PractitionerRole/eda90bde-54f9-11ed-bdc3-0242ac120002"
+        payload[0].extension:authorContact.value = "38683868"
+        payload[0].extension:identifier.valueIdentifier.value = "urn:uuid:9c6aa7db-71ae-4263-a1df-8876ac44359e"
+        payload[0].extension:identifier.valueIdentifier.assigner = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+    class "PractitionerRole (MedComCorePractitionerRole)" as errorPracR{
+        id = "eda90bde-54f9-11ed-bdc3-0242ac120002"
+        practitioner.reference = "Practitioner/58c811a5-4082-44eb-9d66-ccbb112d4973"
+        code.system = "https://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ"
+        code.value = "sygeplejerske"
+    }
+    class "Practitioner (MedComCorePractitioner)" as errorPrac{
+        id = "58c811a5-4082-44eb-9d66-ccbb112d4973"
+        name.family = "Michael"
+        name.given = "Burns"
+    }
+    class "Receiver (MedComMessagingOrganization)" as errorROrg{
+        id = "o4cdf292-abf3-4f5f-80ea-60a48013ff6d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790001348120"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "953741000016009"
+    }
+    class "Sender (MedComMessagingOrganization)" as errorSOrg{
+        id = "o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        identifier[0].system = "https://www.gs1.org/gln"
+        identifier[0].value = "5790000209354"
+        identifier[1].system = "urn:oid:1.2.208.176.1.1"
+        identifier[1].value = "265161000016000"
+    }
+    class "Provenance (MedComMessagingProvenance)" as errorPRO{
+        id = "16fac3d8-551d-11ed-bdc3-0242ac120002"
+        target = "MessageHeader/b0d424f8-33a9-4cc2-a528-a6cc1c58727b"
+        occuredDateTime = "2024-05-01T12:11:00+01:00"
+        recorded = "2024-05-01T12:11:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "retract-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+        entity.role.system = "http://hl7.org/fhir/ValueSet/provenance-entity-role"
+        entity.role.value = "removal"
+        entity.what.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+    }
+    class "Provenance (MedComMessagingProvenance)" as newPRO{
+        id = "4c284936-5454-4116-95fc-3c8eeeed2400"
+        target.reference = "MessageHeader/42cb9200-f421-4d08-8391-7d51a2503cb4"
+        occuredDateTime = "2024-05-01T12:00:00+01:00"
+        recorded = "2024-05-01T12:00:00+01:00"
+        activity.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes"
+        activity.code = "new-message"
+        agent.who.reference = "Organization/o7056980-a8b2-42aa-8a0e-c1fc85d1f40d"
+    }
+
+errorB -[hidden]- errorMH
+errorMH -[hidden]-errorPT
+errorPT-[hidden]-newCom
+newCom -[hidden]-errorCom
+errorCom -[hidden]-errorPracR
+errorPracR-[hidden]-errorPrac
+errorPrac-[hidden]-errorROrg
+errorROrg-[hidden]- errorSOrg
+errorSOrg-[hidden]-errorPRO
+errorPRO-[hidden]-newPRO
+
+
+@enduml

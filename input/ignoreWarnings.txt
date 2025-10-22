@@ -1,6 +1,33 @@
 == Suppressed Messages ==
 
 # Allowed MimeTypes are checked manually 
-Unable to check if http://medcomfhir.dk/fhir/core/1.0/ValueSet/medcom-carecommunication-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
+Unable to check if http://medcomfhir.dk/ig/core/1.0/ValueSet/medcom-carecommunication-attachmentMimeTypes is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
 
+# HL7 dk Core error
+%No definition could be found for URL value 'urn:oid:1.2.208.176.1.6.1.1'%
+%No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'%
+%No definition could be found for URL value 'https://www.gs1.org/gln'%
 
+# This is expected behavior
+%Can't find 'MessageHeader/%
+%Reference is external which isn't supported by the specified aggregation mode(s) for the reference (bundled)%
+
+# We are aware of this and will make an improvement in the future
+%No definition could be found for URL value 'https://sor2.sum.dsdn.dk/#id='
+
+# Slicing noise
+%This element does not match any known slice defined in the profile%
+
+# Accepted
+%Reference to draft CodeSystem http://hl7.org/fhir/request-priority|4.0.1%
+%The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated%
+
+# FHIRPath noise
+%medcom-careCommunication-5: The left side is inherently a collection, and so the expression 'category.coding.code%
+%medcom-careCommunication-6: The left side is inherently a collection, and so the expression 'category.coding.code%
+%medcom-careCommunication-11: The left side is inherently a collection, and so the expression%
+
+# Irrelevant
+%The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide%
+%An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide%
+%Pinned the version of%
