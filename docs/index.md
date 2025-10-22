@@ -52,9 +52,9 @@ Use cases describe the different scenarios in which a standard support. For a ce
 ### 1.3 Technical specification
 
 The technical specifications for the MedCom CareCommunication standard is composed by profiles from two basis IG's, from one terminology IG and from MessageDefinitions IG. Links to the IG’s are listed below:
-* <a href="https://medcomfhir.dk/ig/carecommunication/5.0.0-trial-use/" target="_blank">MedCom CareCommunication IG (Version 5.0.0: Currently trial-use)</a>
+* <a href="https://medcomfhir.dk/ig/carecommunication/" target="_blank">MedCom CareCommunication IG</a>
   *	<a href="https://medcomfhir.dk/ig/core/index.html" target="_blank">MedCom Core IG</a>
-  *	<a href="https://medcomfhir.dk/ig/messaging/4.0.0-trial-use/" target="_blank">MedCom Messaging IG (Version 4.0.0: Currently trial-use)</a>
+  *	<a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a>
   *	<a href="https://medcomfhir.dk/ig/terminology/" target="_blank">MedCom Terminology IG</a>
   *	<a href="https://medcomfhir.dk/ig/messagedefinitions/" target="_blank">MedCom MessageDefinitions IG</a>
 
@@ -70,34 +70,34 @@ Furthermore, the structure of the standard is described and supported with examp
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 ### 1.4 Governance for CareCommunication
-Governance describes the general rules which FHIR messages must obey to. The [general governance for FHIR messaging can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication), whereas [governance for the use of CareCommunication can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html). 
+Governance describes the general rules which FHIR messages must obey to. 
+The general governance for FHIR messaging [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication)
+The general governance for the use of CareCommunication [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
+The governance for use of Carecommunication [can be found here.](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html)
 
 Further, some recommendations for implementing the CareCommunication standard has been developed. The page recommends how to run a household on the send and received CareCommunications. These are not required to follow, only for recommendation and inspiration.  
 [Click here to read an introduction to the technical specifications.](assets/documents/Intro-Technical-Spec-ENG.md)
 
 
 ## 2 Test and certification
-Certification of a system implies both an approved test protocol and a run trough of TouchStone test scripts. TouchStone describes an infrastructure that allows automated test and validation against the IG's developed by MedCom. 
+Certification of a system implies both an **approved test protocol** and a **successful run-through of Touchstone test scripts**.  
+Touchstone provides an infrastructure that enables automated testing and validation against MedCom’s FHIR Implementation Guides.
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
 
 
-**Test examples for sending and receiving a CareCommunication**
-The test material will be available on this page from November 1, 2025.
-<!--* [Test examples for CareCommunication](assets/4.1.0_TestExamples.zip).-->
+### Test examples for sending and receiving a CareCommunication
+The test material consists of both a **test protocol** (Word document) and a set of **Touchstone TestScripts** described in the dedicated TestScript IG.
 
- **Sending a CareCommunication**
-The test material will be available on this page from November 1, 2025.
- <!-- * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
-  *  <a href="https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client">TouchStone test suite for test of sending CareCommuncations</a>
+#### Sending a CareCommunication
+  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
+  * [IG including test examples for use in test protocol](https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html)
+  * [IG including test scripts](https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html)
+  * [Touchstone test suite – Sending CareCommunications](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client)
 
-  * <a href="https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html">IG including test scripts and a description of the purpose. The test script IG inlcudes obsolete test examples for an old test protocol. Do not use these. </a>
--->
-
-**Receiving a CareCommunication**
-The test material will be available on this page from November 1, 2025.
-<!--  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
--->
+#### Receiving a CareCommunication
+  * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
+  * [IG including test examples for use in test protocol](https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html)
 
 
 ## 3 Conversion service 
@@ -113,9 +113,10 @@ The service concerns only conversion between OIOXML and FHIR. For this reason, m
 The service is intended to be available from spring 2025 to the end of 2026. The requirements for the service are made in collaboration the national working group, it-vendors and VANS vendors.
 
 ### 3.1 Use cases and rules
-The following document outlines the preconditions for the conversion service, use cases describing the flow of events, and mapping rules.
+The following document outlines the preconditions for the conversion service, the use cases describing the flow of events, and the corresponding mapping rules. Furthermore, flowcharts illustrating the events described in the use case document can be found in *Illustrations of Concersion Scenarios*.
 
-[Use cases and rules in Danish (pdf)](assets/UseCases-ConversionService_August2025.pdf).
+[Use cases and rules in Danish (pdf)](\assets\UseCases-ConversionService_Oktober2025.pdf).
+[Illustrations of Conversion Scenarios (pdf)](docs\assets\Illustrations-of-Conversion-Scenarios.pdf)
 
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
