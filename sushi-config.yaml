@@ -1,33 +1,38 @@
-id: dk.fhir.ig.dk-medcom-carecommunication
-canonical: http://medcomfhir.dk/fhir/carecommunication
+id: medcom.fhir.dk.carecommunication
+canonical: http://medcomfhir.dk/ig/carecommunication
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
-status: draft
-version: "4.0.0"
+status: draft # draft | active | retired | unknown
+version: 5.0.0-trial-use
 fhirVersion: 4.0.1
 copyrightYear: 2021+
-releaseLabel: Build CI
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: MedCom
   url: http://www.medcom.dk
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
-  hl7.fhir.dk.core: 
-    uri: https://hl7.dk/fhir/core/1.1.0/
-    version: 1.1.0
-  dk.fhir.ig.dk-medcom-core: current
-  dk.fhir.ig.dk-medcom-messaging: current
-
+  hl7.fhir.dk.core: 3.4.0
+  medcom.fhir.dk.core: 3.0.0
+  medcom.fhir.dk.messaging: 4.0.0-trial-use
+  medcom.fhir.dk.terminology: 2.0.0
+  medcom.fhir.dk.messagedefinitions: 1.0.0
+  
 menu:
   Table of Contents: toc.html
   Home: index.html
   Profiles: profiles.html
-  Extensions: extensions.html
+  Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  Dependencies: dependencies.html
 
 parameters:
+  apply-version: false
+  default-version: true
   apply-contact: true
-  apply-juristiction: true
+  apply-jurisdiction: true
   apply-publisher: true
+  pin-canonicals: pin-multiples
+  excludettl: true

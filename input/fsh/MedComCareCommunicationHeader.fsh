@@ -1,72 +1,114 @@
 Profile: MedComCareCommunicationMessageHeader
 Parent: MedComMessagingMessageHeader
 Id: medcom-careCommunication-messageHeader
-Description: "Message header for care communication message"
-* eventCoding = $MessageEvents#care-communication-message
+Description: "Message header for CareCommunication message"
+* eventCoding.code = #care-communication-message
+* eventCoding.system = $MessageEvents
+* destination[cc] ..0
 * focus 1..1 MS
 * focus only Reference(MedComCareCommunication)
 * focus ^type.aggregation = #bundled
+* definition 1..1
+* definition obeys medcom-carecommunication-definition-url
+* insert ProducerShallPutInNarrative(focus)
 
+Invariant: medcom-carecommunication-definition-url
+Description: "SHALL reference a MedCom CareCommunication MessageDefinition whose canonical URL starts with
+http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5. — that is, any version 5.x of the message definition. The current minor version the sender uses must be added in the end of the definition."
+Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5[.][0-9]{1,2}$')"
+Severity: #error
 
-Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-InstanceOf: MedComMessagingDestinationUseExtension
-Usage: #inline
-* valueCoding.code = $Use#primary
-
-// CareCommunication new example
-Instance: 42cb9200-f421-4d08-8391-7d51a2503cb4
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "MessageHeader for CareCommunication new message. Valid only if used in a bundle (message)."
-Description: "MessageHeader for CareCommunication new message. Valid only if used in a bundle (message)."
-Usage: #example
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "http://medcomfhir.dk/unknown"
-* destination[primary].receiver = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* sender = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* source.endpoint = "http://medcomfhir.dk/unknown"
-* focus = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)
-
-// CareCommunication Cancel example
+/* // CareCommunication Cancel example
 Instance: b0d424f8-33a9-4cc2-a528-a6cc1c58727b
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "MessageHeader for CareCommunication cancel message. Valid only if used in a bundle (message)."
+Title: "Instance of a MessageHeader resource used in a retract message."
 Description: "MessageHeader for CareCommunication cancel message. Valid only if used in a bundle (message)."
-Usage: #inline
-* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
-* eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
-
-// CareCommunication forward example
-Instance: d5bd2111-2576-48d3-84d4-8be0297a038d
-InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Message header for care communication reply message. Valid only if used in a bundle (message)."
-Description: "Message header for care communication reply message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(4c712bdc-1558-4125-a854-fa8b3a11f6ed)
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus[0] = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
+* focus[1] = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)  */
 
-// CareCommunication reply to hospital notification example
-Instance: aac67161-d0de-4933-a78c-060beafb4814
+/* // CareCommunication modify example
+Instance: f8aa0bf0-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCareCommunicationMessageHeader
-Title: "Message header for care communication forward message. Valid only if used in a bundle (message)."
-Description: "Message header for care communication forward message. Valid only if used in a bundle (message)."
+Title: "Instance of a MessageHeader resource used in a modify message."
+Description: "MessageHeader for CareCommunication modify message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
-* destination[primary].endpoint = "http://medcom.dk/unknown"
-* destination[primary].receiver = Reference(d7056980-a8b2-42aa-8a0e-c1fc85d1f40d)
-* sender = Reference(74cdf292-abf3-4f5f-80ea-60a48013ff6d)
-* source.endpoint = "http://medcom.dk/unknown"
-* focus = Reference(0f8cde6a-d369-4d94-a2ce-c2cc45fd75fb)
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+//* focus[0] = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
+* focus = Reference(d63178cc-690f-11ed-9022-0242ac120002)  */
+
+
+
+
+
+
+/* // CareCommunication new example - with attachemnt
+Instance: dc04b8c2-5519-11ed-bdc3-0242ac120002
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message with attachment."
+Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(bf24f51c-a99b-47db-a785-8c5ef22ebc27)
+* sender = Reference(85669d18-2bb3-4c6e-80d2-e039a63a521c)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(487e2238-527b-11ec-bf63-0242ac130002)
+ */
+/* // CareCommunication new example - with sender and recipient
+Instance: bfe2d85f-5551-4a01-94f5-5d4b66000ad0
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message with sender and recipient."
+Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(b75abdfa-5519-11ed-bdc3-0242ac120002)
+* sender = Reference(c5c393ee-5519-11ed-bdc3-0242ac120002)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(e15be831-0454-47fd-a954-c9578a2474cb) */
+
+/* // CareCommunication new example - with priority
+Instance: 4f3bc2ea-2214-44d7-ba02-e286ddf2b51e
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message with priority."
+Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(4e03a9cd-4d75-4e01-9420-7f0b4ecff305)
+* sender = Reference(fae4c8cf-e5d6-404d-867d-97ffa49a1c58)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(4ec35384-527b-11ec-bf63-0242ac130002)
+ */
+
+
+/* // CareCommunication new example - with formatted messagetext
+Instance: 2f0db363-234c-4096-82f7-3fd63057fd94
+InstanceOf: MedComCareCommunicationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message with formatted message text."
+Description: "Example of a MessageHeader in a new CareCommunication message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#care-communication-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
+* destination[primary].receiver = Reference(1680e847-abee-48ad-8704-65eb8225a3cb)
+* sender = Reference(9b876149-842d-4b09-8d3d-27468210d343)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(3131b349-5162-48a9-9135-9ba730601faa) */
 
 

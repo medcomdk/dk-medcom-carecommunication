@@ -4,18 +4,25 @@ hide empty members
 
 class "MedComCareCommunication" as communication
 class "MedComCorePatient" as patient
-class "MedComCoreEncounter" as encounter
-class "Organization" as recipientOrganization
-class "MedComCorePractitionerRole" as recipientRole
+class "MedComCorePractitionerRole" as pracRole
+class "MedComCoreCareTeam" as careteam
 class "MedComCorePractitioner" as author
+class "MedComCoreEncounter" as encounter
+class "MedComCoreOrganization" as organization
+class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 
-communication -- encounter : "encounter"
-communication -- patient : "subject"
-communication -- recipientOrganization : "sender"
-communication -- recipientRole : "sender"
-communication -- recipientOrganization : "recipient"
-communication -- recipientRole : "recipient"
-communication -- author : "author"
 
-encounter -patient :"subject"
+
+communication --> encounter : "encounter"
+communication --> patient : "subject"
+communication --> pracRole : "author"
+communication --> careteam : "sender"
+communication --> careteam : "recipient"
+communication --> pracRole : "sender"
+communication --> pracRole : "recipient"
+communication --> messagingOrganization : "assigner"
+pracRole --> author : "practitioner"
+pracRole --> organization : "organization"
+careteam --> organization : "managingOrganization"
+
 @enduml
