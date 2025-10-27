@@ -51,7 +51,7 @@ Description: "Care related communication between two or more parties in Danish h
     attachment 0.. MS
 * payload[string].content[x] only string
 * payload[string].content[x] MS 
-* payload[string].content[x] ^short = "Line breaks must be represented as \n in FHIR JSON and as &#xA; in FHIR XML."
+* payload[string].content[x] ^short = "Line breaks must be represented as '\n' in FHIR JSON and as '&#xA;' in FHIR XML."
 * payload[string].extension[date] 1..1 MS
 * payload[string].extension[identifier] 1..1 MS
 * payload[string].extension[author] 1..1 MS
@@ -119,7 +119,6 @@ Invariant: medcom-careCommunication-7
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a message segment."
 Severity: #error
 Expression: "payload.extension('http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension').value.resolve().all(code.coding.code.exists() xor code.text.exists())"
-
 
 Invariant: medcom-careCommunication-8
 Description: "There shall exist a practitioner name when using a Practitioner as author in a message segment."
