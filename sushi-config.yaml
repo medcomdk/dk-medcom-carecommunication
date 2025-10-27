@@ -3,11 +3,11 @@ canonical: http://medcomfhir.dk/ig/carecommunication
 name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
-status: draft # draft | active | retired | unknown
-version: 5.0.0-trial-use
+status: active # draft | active | retired | unknown
+version: 5.0.0
 fhirVersion: 4.0.1
-copyrightYear: 2021+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+copyrightYear: 2025+
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: MedCom
   url: http://www.medcom.dk
@@ -15,7 +15,7 @@ jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 3.4.0
   medcom.fhir.dk.core: 3.0.0
-  medcom.fhir.dk.messaging: 4.0.0-trial-use
+  medcom.fhir.dk.messaging: 4.0.0
   medcom.fhir.dk.terminology: 2.0.0
   medcom.fhir.dk.messagedefinitions: 1.0.0
   

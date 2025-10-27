@@ -1,10 +1,10 @@
 {
     "package-id": "medcom.fhir.dk.carecommunication",
-    "version": "5.0.0-trial-use",
-    "path": "http://medcomfhir.dk/ig/carecommunication/5.0.0-trial-use",
-    "status": "trial-use",
+    "version": "5.0.0",
+    "path": "http://medcomfhir.dk/ig/carecommunication/5.0.0",
+    "status": "release",
     "sequence": "Release 5.x.x",
     "mode" : "working",
     "descmd": "@release-notes.md",
-    "desc": "Trial use of version 5.x.x. See release notes for details. You should not use this in production as it is a trial version."
+    "desc": "See release notes for details"
 }
