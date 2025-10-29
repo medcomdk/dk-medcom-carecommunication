@@ -4,7 +4,7 @@ name: MedComCarecommunication
 title: "DK MedCom Carecommunication"
 description: The DK MedCom Carecommunication IG
 status: active # draft | active | retired | unknown
-version: 5.0.0
+version: 5.0.1
 fhirVersion: 4.0.1
 copyrightYear: 2025+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -14,9 +14,9 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 3.4.0
-  medcom.fhir.dk.core: 3.0.0
-  medcom.fhir.dk.messaging: 4.0.0
-  medcom.fhir.dk.terminology: 2.0.0
+  medcom.fhir.dk.core: 3.0.1
+  medcom.fhir.dk.messaging: 4.0.1
+  medcom.fhir.dk.terminology: 2.0.1
   medcom.fhir.dk.messagedefinitions: 1.0.0
   
 menu:

@@ -1,10 +1,10 @@
 {
     "package-id": "medcom.fhir.dk.carecommunication",
-    "version": "5.0.0",
-    "path": "http://medcomfhir.dk/ig/carecommunication/5.0.0",
+    "version": "5.0.1",
+    "path": "http://medcomfhir.dk/ig/carecommunication/5.0.1",
     "status": "release",
     "sequence": "Release 5.x.x",
     "mode" : "milestone",
     "descmd": "@release-notes.md",
-    "desc": "See release notes for details"
+    "desc": "5.0.1 release - See release notes for details"
 }
