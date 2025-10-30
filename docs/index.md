@@ -114,8 +114,8 @@ The requirements for the service are made in collaboration the national working 
 ### 3.1 Use cases and rules
 The following document outlines the preconditions for the conversion service, the use cases describing the flow of events, and the corresponding mapping rules. Furthermore, flowcharts illustrating the events described in the use case document can be found in *Illustrations of Concersion Scenarios*.
 
-[Use cases and rules in Danish (pdf)](docs/assets/UseCases-ConversionService_Oktober2025.pdf).
-[Illustrations of Conversion Scenarios (pdf)](docs/assets/Illustrations-of-Conversion-Scenarios.pdf).
+[Use cases and rules in Danish (pdf)](assets/UseCases-ConversionService_Oktober2025.pdf).
+[Illustrations of Conversion Scenarios (pdf)](assets/Illustrations-of-Conversion-Scenarios.pdf).
 
 ### 3.2 Mapping of messages
 The follow documents describe mapping of the communication messages and receipts. For the communication messages mapping to/from XDIS91 and XBIN01 and to/from CareCommunication is described. For the receipts mapping to/from XCTL (01, 02, 03) to/from Acknowledgement is described. Both mandatory and optional elements in the standards are included and if relevant, a comment is added. 
