@@ -90,13 +90,12 @@ The test material consists of both a **test protocol** (Word document) and a set
 
 #### Sending a CareCommunication
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
-  * [IG including test examples for use in test protocol](https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html)
-  * [IG including test scripts](https://medcomfhir.dk/ig/carecommunicationtestscripts/testscripts.html)
+  * [Test examples for send test protocol](assets/SendExamples.zip)
   * [Touchstone test suite – Sending CareCommunications](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client)
 
 #### Receiving a CareCommunication
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
-  * [IG including test examples for use in test protocol](https://medcomfhir.dk/ig/carecommunicationtestscripts/testexamples.html)
+  * [Test examples for receive test protocol](assets/ReceiveExamples.zip)
 
 
 ## 3 Conversion service 
