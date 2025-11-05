@@ -239,14 +239,21 @@ MedCom has published detailed rules for managing and linking message threads via
 <p>&nbsp;</p>
 
 #### 4.5.1 Håndtering af historiske data ved SOR-koder | Handling of historical data with SOR-codes
-En given SOR-kode kan, over tid, have forskellige data knyttet til sig (fx navn og lokationsnummer). Når en meddelelse sendes, skal de oplysninger, der er knyttet til den pågældende SOR-kode, fastholdes og forblive uændrede. Det betyder, at data ikke må opdateres til de aktuelle oplysninger i SOR, da det ville ændre den oprindelige kontekst for meddelelsen. 
-I praksis vil et skift af både SOR-kode og lokationsnummer medføre, at der startes en ny meddelelsestråd. I det scenarie, hvor det kun er SOR-koden, som ændres, vil en ny meddelelsestråd ligeledes blive oprettet.
+En given SOR-kode kan over tid have forskellige oplysninger knyttet til sig, f.eks. navn og lokationsnummer. Når en meddelelse indgår i en eksisterende tråd, må SOR-koden ikke ændres, da den anvendes til at identificere den organisation, tråden tilhører.
+
+Det er dog tilladt at opdatere tilhørende oplysninger som navn og lokationsnummer, hvis disse ændres i SOR. Oplysningerne skal fortsat afspejle den samme SOR-enhed.
+
+Hvis SOR-koden ændres, skal der startes en ny meddelelsestråd, da en ændring af SOR-koden betragtes som en ny organisatorisk enhed.
 
 
-<span style="color:#6a737d">A given SOR-code may, over time, have different data associated with it (e.g., name and EAN/GLN-number). When a message is sent, the information linked to the specific SOR-code must be preserved and remain unchanged. This means that historical data must not be updated to reflect the current information in SOR, as that would change the message’s original context. 
-In practice, a change of both the SOR-code and the EAN/GLN-number will result in the initiation of a new message thread.  In cases where it is only the SOR-code that changes, a new message thread will be created.  </span>
+<span style="color:#6a737d"> A given SOR-code may, over time, have different data associated with it, such as name and EAN/GLN number. When a message is part of an existing thread, the SOR-code must not be changed, as it identifies the organization to which the thread belongs.
+
+However, it is allowed to update related information such as name or EAN/GLN number if these are changed in SOR, as long as they still refer to the same SOR entity.
+
+If the SOR-code itself changes, a new message thread must be started, since a change of SOR-code represents a new organizational unit.
+</span>
+
 <p>&nbsp;</p>
-
 ### 4.6 Forsendelsesmuligheder | Sending Options
 Afsender skal kunne sende en ny Korrespondancemeddelelse samt besvare en Korrespondancemeddelelse. Afsender bør (funktionaliteten er ikke påkrævet) kunne videresende en modtaget Korrespondancemeddelelse. MedCom anbefaler, at systemet understøtter funktionaliteten videresendelse. Det er et krav, at alle modtagersystemer skal kunne modtage og vise, om meddelelsen er en ny, besvaret eller videresendt Korrespondancemeddelelse. 
 Både ved besvarelse og videresendelse af en Korrespondancemeddelelse indsættes den samme kategori og det samme emne automatisk af systemet. Brugeren skal kunne vælge at ændre det til en anden kategori og et andet emne. Referencer til det/de forudgående, eller videresendte, meddelelsessegment(er) skal indgå.
