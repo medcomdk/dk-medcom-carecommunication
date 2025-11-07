@@ -26,7 +26,7 @@ This page provides an overview of where you, as a vendor, can find information, 
 ## General Introduction and Governance
 
 ### New to FHIR?
-If you are new to FHIR, this page gives you a short introduction to the basic principles and structure of the FHIR standard.  
+If you are new to FHIR, [this page]( https://medcomdk.github.io/MedComLandingPage/assets/documents/NewToFHIR.html) gives you a short introduction to the basic principles and structure of the FHIR standard.  
 In addition, MedCom offers two introductory webinars that provide a good starting point for understanding FHIR:
 - [FHIR Introduction Webinar (May 17, 2022)](https://www.youtube.com/watch?v=8doBKskz3J8)  
 - [FHIR Demo Webinar with MedCom, Mjølner, and Trifork (February 10, 2022)](https://www.youtube.com/watch?v=bfzx7U2Suug)  
