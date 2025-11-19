@@ -120,7 +120,6 @@ This is MedCom’s FHIR-based acknowledgement standard, which must be implemente
 
 ---
 
-## Governance for FHIR Validation
+## Governance for MedCom FHIR Validation
 
-This governance will be published soon. MedCom will notify vendors as soon as it becomes available.  
-MedCom also provides a FHIR server that can be used to test your implementation with sample data.
+The [governance for MedCom FHIR Validation can be found here](https://medcomdk.github.io/MedComLandingPage/assets/documents/FHIRValidationGovernance.html), and contains both governance and guidance.
