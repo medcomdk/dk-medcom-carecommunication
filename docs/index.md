@@ -17,7 +17,7 @@
 This page presents MedCom's CareCommunication standard (Danish: Korrespondancemeddelelse). In time, this standard will replace the existing standards <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/EDI/Dokumentation/" target="_blank">DIS91</a> and <a href="https://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/" target="_blank">XDIS91</a>. The purpose of the standard is to support secure digital communication between social care, the psychiatric area and the somatic sector. CareCommunication standard enable communication of personally identifiable information and is typically used for ad hoc communication. However, the CareCommunication must only be used in areas where no other MedCom standard is available, and it must not be used for cases with an acute nature.
 
 > **New to the CareCommunication standard?**  
-> Start here: [**Getting Started – CareCommunication**](assets/documents/GettingStartedWithCareCommunication.md)  
+> Start here: [Getting Started – CareCommunication](assets/documents/GettingStartedWithCareCommunication.md)  
 > It gives you a quick overview of the documentation, tools, and helpful resources to get you started.
 
 <!-- In a CareCommunication it is possible to attach a file, to include a category code which enables automatic sorting of the messages, and it is further possible to include a topic that supports the category.  -->
