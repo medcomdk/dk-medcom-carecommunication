@@ -1,17 +1,19 @@
 /* 
 Instanser anvendt til new message
 */
-Instance: 733cef33-3626-422b-955d-d506aaa65fe1
+Instance: 0a50a2fc-916e-45eb-bc8e-4c32750fbb02
 InstanceOf: MedComCorePatient
-Title: "1st message - Bruno Test Elmer"
+Title: "1st message - Sille June Test Mosebrygersen"
 Description: "1st message - Patient described with minimal information. Valid only if used in a Bundle."
 * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
+* identifier[cpr].value = "0506889996"
 * name[official].use = #official
-* name[official].family = "Elmer"
-* name[official].given = "Bruno"
+* name[official].family = "Mosebrygersen"
+* name[official].given[0] = "Sille"
+* name[official].given[1] = "June"
+* name[official].given[2] = "Test"
 
-Instance: b581c63c-181f-46f6-990d-b9942c576724
+Instance: 2148b58b-0088-4884-bc11-a927af7c682e
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a sender organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
@@ -19,7 +21,7 @@ Description: "1st message - Example of an organization with a SOR and an EAN ide
 * identifier[EAN-ID].value = "5790000209354" 
 * name = "Hjerteafdelingen på Herlev og Gentofte hospital"
 
-Instance: 487ac745-fd11-4879-9b59-c08c7d47260e
+Instance: 1e6d8768-eddf-4b7c-bf50-4d9ea32ab8cf
 InstanceOf: MedComMessagingOrganization // 
 Title: "1st message - Example of a reciever organization with a SOR and an EAN identifier."
 Description: "1st message - Example of an organization with a SOR and an EAN identifier."
@@ -32,8 +34,8 @@ Instance: 58c811a5-4082-44eb-9d66-ccbb112d4973
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
 Description: "Simple practitioner with a name"
-* name.given = "Michael"
-* name.family = "Burns"
+* name.given = "Hans"
+* name.family = "Hansen"
 
 Instance: eda90bde-54f9-11ed-bdc3-0242ac120002
 InstanceOf: MedComCorePractitionerRole

@@ -69,9 +69,9 @@ Usage: #inline
 * occurredDateTime = 2024-05-01T12:30:00+02:00
 * recorded = 2024-05-01T12:30:00+02:00
 * activity.coding = $ActivityCode#modified-message
-* agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
+* agent.who = Reference(2148b58b-0088-4884-bc11-a927af7c682e) 
 * entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* entity[preceedingMessage].what = Reference(83b49043-e3d5-4fc5-86a3-efd9e612e0cf)
 * entity[payload].role = #source
 * entity[payload].what.identifier.value = "hej"
 
@@ -85,9 +85,9 @@ Usage: #inline
 * occurredDateTime = 2024-05-01T12:05:10Z
 * recorded = 2024-05-01T12:05:11Z
 * activity.coding = $ActivityCode#retract-message
-* agent.who = Reference(b581c63c-181f-46f6-990d-b9942c576724) 
+* agent.who = Reference(2148b58b-0088-4884-bc11-a927af7c682e) 
 * entity.role = #removal
-* entity.what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4) 
+* entity.what = Reference(83b49043-e3d5-4fc5-86a3-efd9e612e0cf) 
 
 
 Instance: 7466d9f6-d3ae-4be5-8ed7-b333dad30205
@@ -99,9 +99,9 @@ Usage: #example
 * occurredDateTime = 2024-05-02T09:00:00+02:00
 * recorded = 2024-05-02T09:00:00+02:00
 * activity.coding = $ActivityCode#forward-message
-* agent.who = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* agent.who = Reference(1e6d8768-eddf-4b7c-bf50-4d9ea32ab8cf)
 * entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* entity[preceedingMessage].what = Reference(83b49043-e3d5-4fc5-86a3-efd9e612e0cf)
 * entity[payload].role = #source
 * entity[payload].what.identifier.value = "hjk"
 

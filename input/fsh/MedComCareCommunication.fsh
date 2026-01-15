@@ -164,18 +164,18 @@ Description: "Content of care communication message. Valid only if used in a bun
 * status = $EventStatus#unknown
 * identifier.value = "f2473ce7-8375-4d06-aa17-20091e4b0280"
 * category = $CategoryCodes#carecoordination
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* subject = Reference(0a50a2fc-916e-45eb-bc8e-4c32750fbb02)
 * payload[1].contentString = "Forwarded message from Herlev og Gentofte Hospital: Can you please help me clarifying something about the rehabilitation plan?..."
 * payload[1].extension[date].valueDateTime = 2024-05-02T09:00:00+01:00
 * payload[1].extension[identifier].valueIdentifier.value = "urn:uuid:5b8b4329-1d55-4a78-bf27-79c690a8dace"
-* payload[1].extension[identifier].valueIdentifier.assigner = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
+* payload[1].extension[identifier].valueIdentifier.assigner = Reference(1e6d8768-eddf-4b7c-bf50-4d9ea32ab8cf)
 * payload[1].extension[author].valueReference = Reference(7cae09e0-5501-11ed-bdc3-0242ac120002)
 * payload[1].extension[authorContact].valueContactPoint.system = #phone 
 * payload[1].extension[authorContact].valueContactPoint.value = "44527000"
 * payload[0].contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload[0].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload[0].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload[0].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* payload[0].extension[identifier].valueIdentifier.assigner = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * payload[0].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[0].extension[authorContact].valueContactPoint.system = #phone 
 * payload[0].extension[authorContact].valueContactPoint.value = "38683868"
@@ -191,18 +191,18 @@ Title: "Instance of Communication resource used in a modify message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - modify message"
 * status = $EventStatus#unknown
 * category = $CategoryCodes#training
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* subject = Reference(0a50a2fc-916e-45eb-bc8e-4c32750fbb02)
 * payload[+].contentString = "Corrected the <b>category</b> to 'Traning'. Selected a wrong category."
 * payload[=].extension[date].valueDateTime = 2024-05-01T12:30:00+01:00
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:c118e2d7-9292-4ef4-b7f7-b783c9b1b5de"
-* payload[=].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* payload[=].extension[identifier].valueIdentifier.assigner = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * payload[=].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "38683868"
 * payload[+].contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload[=].extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload[=].extension[identifier].valueIdentifier.value = "urn:uuid:24d01288-ad36-4af2-96a8-fd1432dadee1"
-* payload[=].extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* payload[=].extension[identifier].valueIdentifier.assigner = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * payload[=].extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload[=].extension[authorContact].valueContactPoint.system = #phone 
 * payload[=].extension[authorContact].valueContactPoint.value = "38683868"
@@ -214,11 +214,11 @@ Title: "Instance of Communication resource used in a cancel message."
 Description: "Content of care communication message. Valid only if used in a bundle (message) - cancel message"
 * status = $EventStatus#entered-in-error // skal udgå!
 * category = $CategoryCodes#carecoordination
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* subject = Reference(0a50a2fc-916e-45eb-bc8e-4c32750fbb02)
 * payload.contentString = "Cancellation due to incorrect CPR-number"
 * payload.extension[date].valueDateTime = 2024-05-01T12:11:00Z
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:9c6aa7db-71ae-4263-a1df-8876ac44359e"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* payload.extension[identifier].valueIdentifier.assigner = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * payload.extension[author].valueReference = Reference(eda90bde-54f9-11ed-bdc3-0242ac120002)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868" */
@@ -234,7 +234,7 @@ Description: "Content of care communication message. Valid only if used in a bun
 * payload.contentString = "Regarding the rehabilitation plan, please notice that..."
 * payload.extension[date].valueDateTime = 2024-05-01T12:00:00+01:00
 * payload.extension[identifier].valueIdentifier.value = "urn:uuid:4916a915-6f81-472d-ae87-ee6f6df5eee5"
-* payload.extension[identifier].valueIdentifier.assigner = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* payload.extension[identifier].valueIdentifier.assigner = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * payload.extension[author].valueReference = Reference(39d3af60-551c-11ed-bdc3-0242ac120002)
 * payload.extension[authorContact].valueContactPoint.system = #phone 
 * payload.extension[authorContact].valueContactPoint.value = "38683868" */

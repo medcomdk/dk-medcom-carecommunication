@@ -73,7 +73,7 @@ Description: "2nd message - The Provenance instance is only valid if used in a b
 * activity.coding = $ActivityCode#reply-message
 * agent.who = Reference(f20f31cd-5dd2-4a80-ab00-97f7109864a7)
 * entity[preceedingMessage].role = #revision
-* entity[preceedingMessage].what = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* entity[preceedingMessage].what = Reference(83b49043-e3d5-4fc5-86a3-efd9e612e0cf)
 * entity[payload][+].role = #source
 * entity[payload][=].what.identifier.value = "urn:uuid:cd422e42-5bad-11ed-9b6a-0242ac120002"
 * entity[payload][+].role = #source
@@ -84,7 +84,7 @@ Instance: af9b0255-1bdd-49c7-9d39-d652a587e4b2
 InstanceOf: MedComCareCommunicationProvenance
 Title: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "1st message - The Provenance instance is only valid if used in a bundle (message) - new message"
-* target = Reference(42cb9200-f421-4d08-8391-7d51a2503cb4)
+* target = Reference(83b49043-e3d5-4fc5-86a3-efd9e612e0cf)
 * occurredDateTime = 2024-05-01T12:00:00+02:00
 * recorded = 2024-05-01T12:00:00+02:00
 * activity.coding = $ActivityCode#new-message

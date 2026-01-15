@@ -27,8 +27,8 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
-* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* destination[primary].receiver = Reference(1e6d8768-eddf-4b7c-bf50-4d9ea32ab8cf)
+* sender = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus[0] = Reference(1636f3f8-551e-11ed-bdc3-0242ac120002) 
 * focus[1] = Reference(94e65db8-2f0c-4a2c-a7c9-06a160d59a12)  */
@@ -42,8 +42,8 @@ Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#care-communication-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=953741000016009"
-* destination[primary].receiver = Reference(487ac745-fd11-4879-9b59-c08c7d47260e)
-* sender = Reference(b581c63c-181f-46f6-990d-b9942c576724)
+* destination[primary].receiver = Reference(1e6d8768-eddf-4b7c-bf50-4d9ea32ab8cf)
+* sender = Reference(2148b58b-0088-4884-bc11-a927af7c682e)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 //* focus[0] = Reference(273bc02c-9000-11ec-b909-0242ac120002) 
 * focus = Reference(d63178cc-690f-11ed-9022-0242ac120002)  */
