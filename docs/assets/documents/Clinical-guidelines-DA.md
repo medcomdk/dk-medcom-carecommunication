@@ -3,7 +3,7 @@
 # Sundhedsfaglige retningslinjer for anvendelse | Clinical guidelines for application
 
 **Indholdsfortegnelse | Table of Contents**
-* [1 Introduktion / Introduction](#1-introduktion)
+* [1 Introduktion / Introduction](#1-Introduktion | Introduction)
 * [2 Formål / Purpose](#-formaal)
 * [3 Illustration af Korrespondancemeddelelsen / Illustration of CareCommunication](#3-illustration-af-korrespondancemeddelelsen)
 * [4 Krav og anbefalinger til Korrespondancemeddelelsen / Requirements and Recommendations for CareCommunication](#4-krav-og-anbefalinger-til-korrespondancemeddelelsen)
@@ -39,7 +39,7 @@ De tekniske specifikationer for Korrespondancemeddelelsen findes via forsiden fo
 <span style="color:#6a737d">>Note: Should any discrepancies arise between the Danish and English versions of the clinical guidelines, the Danish version shall be considered authoritative.</span>
 <p>&nbsp;</p>
 
-## 2 Formål | Purpose {#formaal}
+## 2 Formål | Purpose {#-formaal}
 Formålet med Korrespondancemeddelelsen er at understøtte den digitale kommunikation mellem sundhedsvæsenets parter, herunder bl.a. også psykiatri- og socialområdet, hvor initiativ til ny version af Korrespondancemeddelelsen er forankret. Korrespondancemeddelelsen anvendes til sikker digital kommunikation af personhenførbare oplysninger og anvendes typisk til ad hoc kommunikation. Korrespondancemeddelelsen skal dog kun bruges på de områder, hvor der i forvejen ikke findes tilgængelige strukturerede MedCom standarder. Korrespondancemeddelelsen skal ikke anvendes ved sager af akut karakter. Formålet med Korrespondancemeddelelsen er bl.a. at: 
 * Give mulighed for at vedhæfte og udveksle digitale filer.
 * Understøtte automatisk fordeling ved modtagelse via brug af fælles nationale kategorier (=overordnede overskrifter).
@@ -203,6 +203,8 @@ Det er muligt at vedhæfte filer, som indlejres i Korrespondancemeddelelsen. Nå
 Det er besluttet, at der ikke må medsendes video i en Korrespondancemeddelelse grundet størrelsen. Det anbefales, at videoer deles via en forventet kommende national delingsservice. Der vil ikke være begrænsning på, hvor mange vedhæftede filer der kan medsendes i en Korrespondancemeddelelse, men i stedet begrænses størrelsen på hele meddelelsen, dvs. inklusiv vedhæftede filer og VANS-kuverten. Den maksimale størrelse på hele meddelelsen, inklusive vedhæftede filer og VANS-kuverten, som sendes over VANS, er 100 MB. Alle vedhæftede filer tildeles en unik identifier
 <br> 
 Afsender, som vælger at afsende, besvare eller videresende en Korrespondancemeddelelse, er ansvarlig for meddelelsens indhold, herunder vedhæftede filer. Forfatter på den vedhæftede fil er den fagperson, som oprindeligt har udarbejdet filen, og derfor er ansvarlig for det faglige indhold. MedCom anbefaler, at navn, samt tidspunkt for oprettelse, af den vedhæftede fil påskrives og medsendes. Systemfunktionalitet, der understøtter automatisk påsat navn på forfatter, samt tidspunkt for oprettelse, er optionel, og hvis denne funktionalitet ikke findes, anbefales det, at systemet understøtter, at afsender manuelt kan påskrive disse informationer enten i den vedhæftede fil, eller som struktureret information i meddelelsessegmentet med den vedhæftede fil. Når man, som afsender, vælger at medsende en fil, er man også ansvarlig for, at filens indhold er relevant for det aktuelle behandlingsforløb. Som en del af test og certificering tjekker MedCom, at identifier på vedhæftede filer indlæses og gemmes. Dette med henblik på at systemet ved modtagelse af en besvarelse kan genfinde og vise tidligere vedhæftede filer for brugeren. Krav til understøttelse af arbejdsgange samt brugervenlighed skal varetages lokalt i et samarbejde mellem kunde og it-leverandør.
+
+>OBS: I den periode, hvor VANS’ konverteringsløsning er i drift, er det kun tilladt at vedhæfte op til 10 bilag i en CareCommunication. Dette skyldes, at der ved konvertering af en CareCommunication til (X)DIS91 og (X)BIN0 maksimalt er plads til 10 bilag.
 <p>&nbsp;</p>
 <div style="color:#6a737d">It is possible to attach files that are embedded within the CareCommunication. When a file is attached to a CareCommunication, it must be clearly displayed in the user interface. An attachment can either be a file of a specific type, such as a PDF, or a link. The allowed file types that may be attached to a CareCommunication are described in the Implementation Guide for terminology and are available on the terminology server. <br>
 <a href="https://medcomfhir.dk/ig/terminology/ValueSet-medcom-core-attachmentMimeTypes.html" target="_blank"> Click here to find the allowed file types that can be attached to a CareCommunication. </a> <br>
@@ -210,7 +212,9 @@ Video files must not be sent in a CareCommunication due to their size. It is rec
 
 The sender, who chooses to send, reply, or forward a CareCommunication, is responsible for the content, including attachments. The author of the attachment is the healthcare professional who originally created the file and is therefore accountable for its clinical content. MedCom recommends that the author’s name and the creation timestamp are included with the attachment. System functionality that supports the automatic inclusion of the author’s name and creation timestamp is optional. If this functionality is not available, the system should allow the sender to manually add this information either within the attached file itself or as structured information in the message segment containing the attachment. 
 
-By attaching a file, the sender is also responsible for ensuring that its content is relevant to the current course of treatment.  During testing and certification, MedCom verifies that the identifiers of attached files are imported and stored to ensure that, upon receiving a reply, the system can retrieve and display previously attached files for the user. The requirements for workflow support and user-friendliness must be managed locally in collaboration between the customer and the IT vendor. </div>
+By attaching a file, the sender is also responsible for ensuring that its content is relevant to the current course of treatment.  During testing and certification, MedCom verifies that the identifiers of attached files are imported and stored to ensure that, upon receiving a reply, the system can retrieve and display previously attached files for the user. The requirements for workflow support and user-friendliness must be managed locally in collaboration between the customer and the IT vendor. 
+
+>Note: During the period in which the VANS conversion service is in operation, a maximum of 10 attachments may be included in a CareCommunication. This limitation exists because, when a CareCommunication is converted to (X)DIS91 and (X)BIN0, there is capacity for no more than 10 attachments.</div>
 <p>&nbsp;</p>
 
 ### 4.5 Historisk overblik i brugergrænsefladen | Historical Overview in the User Interface
