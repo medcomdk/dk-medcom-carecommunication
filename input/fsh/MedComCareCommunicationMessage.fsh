@@ -15,7 +15,7 @@ Description: "The CareCommunication is used to ensure secure electronic communic
 Invariant: medcom-careCommunication-1
 Description: "The MessageHeader shall conform to medcom-careCommunication-messageHeader profile"
 Severity: #error
-Expression: "entry[0].resource.conformsTo('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader')"
+Expression: "entry[0].resource.ofType(MessageHeader).meta.profile.where(startsWith('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader'))"
 
 Invariant: medcom-careCommunication-2
 Description: "Entry shall contain exactly one Patient resource"
@@ -25,7 +25,7 @@ Expression: "entry.where(resource.is(Patient)).count() = 1"
 Invariant: medcom-careCommunication-3
 Description: "All Provenance resources shall be of the type medcom-careCommunication-provenance profile"
 Severity: #error
-Expression: "entry.resource.ofType(Provenance).all(conformsTo('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance'))"
+Expression: "entry.resource.ofType(Provenance).all(meta.profile.where(startsWith('http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance')).exists())"
 
 Invariant: medcom-careCommunication-4
 Description: "There shall exist a practitioner given and family name when using a PractitionerRole."
