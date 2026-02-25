@@ -1,1 +1,1 @@
-- Changed the FHIRPath constraint 'conformsTo' to an alternative check. This is due to various FHIR SDK's not supporting the function 'conformsTo'
+- Fixed the invariant 'medcom-carecommunication-definition-url' regex so that it properly testes that the messageheader is major version 5 of carecommunication

@@ -15,7 +15,7 @@ Description: "Message header for CareCommunication message"
 Invariant: medcom-carecommunication-definition-url
 Description: "SHALL reference a MedCom CareCommunication MessageDefinition whose canonical URL starts with
 http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5. — that is, any version 5.x of the message definition. The current minor version the sender uses must be added in the end of the definition."
-Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5[.][0-9]{1,2}$')"
+Expression: "matches('^http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition\\|5[.][0-9]{1,2}$')"
 Severity: #error
 
 /* // CareCommunication Cancel example
