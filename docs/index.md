@@ -83,19 +83,20 @@ General governance for FHIR messaging [can be found here](https://medcomdk.githu
 Governance for the use of CareCommunication [can be found here](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/governance-for-careCommunication.html).
 
 ## 2 Test and certification
-Certification of a system implies both an **approved test protocol** and a **successful run-through of Touchstone test scripts**.  
-Touchstone provides an infrastructure that enables automated testing and validation against MedCom’s FHIR Implementation Guides.
+Certification of a system implies both an **approved test protocol** and a **successful run-through of Interoperability Test Bed (ITB) test scripts**.  
+ITB provides an infrastructure that enables automated testing and validation against MedCom’s FHIR Implementation Guides.
 
 <a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification" target="_blank">Click here to read the general description of MedCom's test and certification process.</a> <br>
 
 
-### Test examples for sending and receiving a CareCommunication
-The test material consists of both a **test protocol** (Word document) and a set of **Touchstone TestScripts**.
+### Test material for sending and receiving a CareCommunication
+The test material consists of both a **test protocol** (Word document) and a set of **ITB Test scripts**.
 
+  * Guide to MedCom's [Interoperability Test Bed (ITB)](https://medcomdk.github.io/MedComLandingPage/assets/documents/ITBGettingStarted.html)
+  
 #### Sending a CareCommunication
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Send.docx)
   * [Test examples for send test protocol](assets/SendExamples.zip)
-  * [Touchstone test suite – Sending CareCommunications](https://touchstone.aegis.net/touchstone/conformance/current?suite=FHIR4-0-1-CareCommunication-send-Client)
 
 #### Receiving a CareCommunication
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)

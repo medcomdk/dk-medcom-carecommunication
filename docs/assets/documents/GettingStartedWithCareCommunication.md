@@ -16,7 +16,7 @@ This page provides an overview of where you, as a vendor, can find information, 
    - [Additional Documentation](#additional-documentation)  
    - [Governance for CareCommunication](#governance-for-carecommunication)  
 4. [Governance for MedCom FHIR Messaging](#governance-for-medcom-fhir-messaging)  
-5. [Automated Testing in TouchStone](#automated-testing-in-touchstone)  
+5. [Automated Testing in ITB](#automated-testing-in-itb)  
 6. [Acknowledgement (FHIR Receipt)](#acknowledgement-fhir-receipt)  
 7. [Additional Useful Resources](#additional-useful-resources)  
 8. [Governance for FHIR Validation](#governance-for-fhir-validation)  
@@ -88,15 +88,16 @@ Contains general guidelines for MedCom’s FHIR-based message communication (Mes
 
 ---
 
-## Automated Testing in TouchStone
+## Automated Testing in ITB
 
-TouchStone is MedCom’s testing tool for automated validation of FHIR standards.  
-The guide describes how to:
+The [Interoperability Test Bed (ITB)](https://test.itb.medcom.dk/) is MedCom’s testing tool for automated validation of FHIR standards.  
+
+The guide below describes how to:
 - Create a user account  
 - Find test scenarios  
-- Run tests and interpret results  
+- Run tests and interpret results
 
-[Getting Started with TouchStone](https://medcomdk.github.io/MedComLandingPage/assets/documents/TouchStoneGettingStarted.html)
+[Getting Started with ITB](https://medcomdk.github.io/MedComLandingPage/assets/documents/ITBGettingStarted.html)
 
 ---
 
