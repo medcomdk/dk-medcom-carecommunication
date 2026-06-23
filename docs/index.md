@@ -102,6 +102,11 @@ The test material consists of both a **test protocol** (Word document) and a set
   * [Test protocol in English (docx)](assets/CareCommunication_Testprotocol_Receive.docx)
   * [Test examples for receive test protocol](assets/ReceiveExamples.zip)
 
+#### Repository for certified CareCommunications 
+We have created a repository containing a selection of files from the certified CareCommunication implementations.
+
+In this repository, you can find examples of the message variants that may be sent to your system. This allows you to test whether your system can successfully load and process the messages, or whether minor adjustments are required.
+* [Repository](assets/VerifiedCareCommunications/)
 
 ## 3 Conversion service 
 In the period of transition from EDIFACT and OIOXML (DIS91/XDIS91) to FHIR (CareCommunication), a conversion service (Danish: Konverteringsløsning) will be made available by the VANS vendors. Documentation about the service and the preconditions can be found in this section. Figure 1 illustrates the flow of the communication messages when a XDIS91 is sent by the sender. The service will support conversion of a CareCommunication message including attachments, where the attachment is sent in an XBIN01. 
