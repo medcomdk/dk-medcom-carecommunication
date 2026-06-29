@@ -1,0 +1,485 @@
+{
+    "resourceType": "Bundle",
+    "id": "bce74da4-64a5-4c50-8ff9-3306bc9f013e",
+    "meta": {
+        "profile": [
+            "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message"
+        ]
+    },
+    "language": "da",
+    "type": "message",
+    "timestamp": "2026-06-17T09:16:18.767+02:00",
+    "entry": [
+        {
+            "fullUrl": "http://columna.cura.systematic.com/MessageHeader/826a4243-4e74-447c-b003-0563bd4f7670",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "826a4243-4e74-447c-b003-0563bd4f7670",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 826a4243-4e74-447c-b003-0563bd4f7670</p><p><b>Eventcoding</b>: System: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes Code: care-communication-message</p><p><b>Destination:primary.use</b>: System: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse Code: primary</p><p><b>Destination:primary.endpoint</b>: https://sor2.sum.dsdn.dk/#id=554771000016008</p><p><b>Destination:primary.receiver</b>: 64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5</p><p><b>Sender</b>: 53be0758-ba87-4109-8199-af558bf18bff</p><p><b>Source</b>: https://sor2.sum.dsdn.dk/#id=937961000016000</p><p><b>Focus</b>: 629e906b-c4ac-42ec-86c2-bdd5abf74247</p></div>"
+                },
+                "eventCoding": {
+                    "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes",
+                    "code": "care-communication-message"
+                },
+                "destination": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension",
+                                "valueCoding": {
+                                    "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse",
+                                    "code": "primary"
+                                }
+                            }
+                        ],
+                        "endpoint": "https://sor2.sum.dsdn.dk/#id=554771000016008",
+                        "receiver": {
+                            "reference": "Organization/64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5"
+                        }
+                    }
+                ],
+                "sender": {
+                    "reference": "Organization/53be0758-ba87-4109-8199-af558bf18bff"
+                },
+                "source": {
+                    "endpoint": "https://sor2.sum.dsdn.dk/#id=937961000016000"
+                },
+                "focus": [
+                    {
+                        "reference": "Communication/629e906b-c4ac-42ec-86c2-bdd5abf74247"
+                    }
+                ],
+                "definition": "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Organization/53be0758-ba87-4109-8199-af558bf18bff",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "53be0758-ba87-4109-8199-af558bf18bff",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 53be0758-ba87-4109-8199-af558bf18bff</p><p><b>Name</b>: Systematic Care</p><p><b>Sor code</b>: 937961000016000</p><p><b>EAN</b>: 5790000123117</p></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://www.gs1.org/gln",
+                        "value": "5790000123117"
+                    },
+                    {
+                        "system": "urn:oid:1.2.208.176.1.1",
+                        "value": "937961000016000"
+                    }
+                ],
+                "name": "Systematic Care"
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Organization/64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5</p><p><b>Name</b>: Afdeling for Bioinformatik, Statens Serum Institut</p><p><b>Sor code</b>: 554771000016008</p><p><b>EAN</b>: 5790002015748</p></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://www.gs1.org/gln",
+                        "value": "5790002015748"
+                    },
+                    {
+                        "system": "urn:oid:1.2.208.176.1.1",
+                        "value": "554771000016008"
+                    }
+                ],
+                "name": "Afdeling for Bioinformatik, Statens Serum Institut"
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Organization/854351e6-8067-4415-bd3d-f4836a6bd33a",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "854351e6-8067-4415-bd3d-f4836a6bd33a",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-organization"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 854351e6-8067-4415-bd3d-f4836a6bd33a</p><p><b>Name</b>: Systematic Care</p><p><b>Sor code</b>: 937961000016000</p></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.208.176.1.1",
+                        "value": "937961000016000"
+                    }
+                ],
+                "name": "Systematic Care"
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Patient/7e7df818-1167-4955-9863-7525d1e17fdd",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "7e7df818-1167-4955-9863-7525d1e17fdd",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 7e7df818-1167-4955-9863-7525d1e17fdd</p><p><b>CPR</b>: System: urn:oid:1.2.208.176.1.2 Code: 2509479989</p><p><b>Name</b>: Bruno Elmer</p><p><b>Address</b>: City: Aarhus, Postal code: 8000, Line: Testvej 3</p></div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.208.176.1.2",
+                        "value": "2509479989"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1947-09-25",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "Testvej 3"
+                        ],
+                        "city": "Aarhus",
+                        "postalCode": "8000"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Elmer",
+                        "given": [
+                            "Bruno"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Practitioner/15e339dc-4af2-45dd-92db-5ad0a70ba921",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "15e339dc-4af2-45dd-92db-5ad0a70ba921",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 15e339dc-4af2-45dd-92db-5ad0a70ba921</p><p><b>Name</b>: Amin Aminson</p></div>"
+                },
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Aminson",
+                        "given": [
+                            "Amin"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "87654321"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "87654322",
+                        "use": "work"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "87654323",
+                        "use": "home"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "87654324",
+                        "use": "work"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "87654325",
+                        "use": "work"
+                    },
+                    {
+                        "system": "phone",
+                        "value": "Amin@tester.dk"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/PractitionerRole/db425e90-f059-4cc0-98dc-7b6c09e99f78",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "db425e90-f059-4cc0-98dc-7b6c09e99f78",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: db425e90-f059-4cc0-98dc-7b6c09e99f78</p><p><b>Practitioner</b>: 15e339dc-4af2-45dd-92db-5ad0a70ba921</p><p><b>Code</b>: System: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ Code: bioanalytiker</p><p><b>Organization</b>: 854351e6-8067-4415-bd3d-f4836a6bd33a</p></div>"
+                },
+                "practitioner": {
+                    "reference": "Practitioner/15e339dc-4af2-45dd-92db-5ad0a70ba921"
+                },
+                "organization": {
+                    "reference": "Organization/854351e6-8067-4415-bd3d-f4836a6bd33a"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ",
+                                "code": "bioanalytiker",
+                                "display": "Bioanalytiker"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Communication/629e906b-c4ac-42ec-86c2-bdd5abf74247",
+            "resource": {
+                "resourceType": "Communication",
+                "id": "629e906b-c4ac-42ec-86c2-bdd5abf74247",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-communication"
+                    ]
+                },
+                "language": "da",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xml:lang=\"da\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"da\"><p><b>Id</b>: 629e906b-c4ac-42ec-86c2-bdd5abf74247</p><p><b>Identifier</b>: urn:uuid:c8ce6e82-7bab-4f40-acff-3db4a9be620e</p><p><b>Status</b>: unknown</p><p><b>Category</b>: other</p><p><b>Subject</b>: 7e7df818-1167-4955-9863-7525d1e17fdd</p><p><b>Topic</b>: Test</p><p><b>Recipient</b>: ae7c5503-1481-4316-a360-49290834ff19</p><p><b>Sender</b>: 61bdd1ca-93e0-418e-a334-16a9a8b2ef56</p><p><b>Payload.contentString</b>: test</p><p><b>Payload.author</b>: db425e90-f059-4cc0-98dc-7b6c09e99f78</p><p><b>Payload.authorContact</b>: 00000000</p><p><b>Payload.date</b>: 2026-06-17T09:16:01+02:00</p><p><b>Payload.identifer</b>: urn:uuid:9e3e5f8a-b850-4dc7-81d5-d9967d383a9b</p></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-sender-extension",
+                        "valueReference": {
+                            "reference": "CareTeam/61bdd1ca-93e0-418e-a334-16a9a8b2ef56"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "urn:uuid:c8ce6e82-7bab-4f40-acff-3db4a9be620e"
+                    }
+                ],
+                "status": "unknown",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes",
+                                "code": "other",
+                                "display": "Andet"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/7e7df818-1167-4955-9863-7525d1e17fdd"
+                },
+                "topic": {
+                    "text": "Test"
+                },
+                "recipient": [
+                    {
+                        "reference": "PractitionerRole/ae7c5503-1481-4316-a360-49290834ff19"
+                    }
+                ],
+                "payload": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension",
+                                "valueDateTime": "2026-06-17T09:16:01+02:00"
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/db425e90-f059-4cc0-98dc-7b6c09e99f78"
+                                }
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension",
+                                "valueContactPoint": {
+                                    "system": "phone",
+                                    "value": "00000000"
+                                }
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension",
+                                "valueIdentifier": {
+                                    "value": "urn:uuid:9e3e5f8a-b850-4dc7-81d5-d9967d383a9b",
+                                    "assigner": {
+                                        "reference": "Organization/854351e6-8067-4415-bd3d-f4836a6bd33a"
+                                    }
+                                }
+                            }
+                        ],
+                        "contentString": "test"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Provenance/d74e5924-37d6-42f9-889e-b91b3cbc2f74",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "d74e5924-37d6-42f9-889e-b91b3cbc2f74",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: d74e5924-37d6-42f9-889e-b91b3cbc2f74</p><p><b>Target</b>: 826a4243-4e74-447c-b003-0563bd4f7670</p><p><b>OccurredDateTime</b>: 2026-06-17T09:16:24+02:00</p><p><b>Timestamp</b>: 2026-06-17T09:16:24.704+02:00</p><p><b>Activity</b>: System: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes Code: new-message</p><p><b>Agent</b>: 53be0758-ba87-4109-8199-af558bf18bff</p><p><b>Entity role</b>: source</p><p><b>Entity what identifier</b>: urn:uuid:9e3e5f8a-b850-4dc7-81d5-d9967d383a9b</p></div>"
+                },
+                "target": [
+                    {
+                        "reference": "MessageHeader/826a4243-4e74-447c-b003-0563bd4f7670"
+                    }
+                ],
+                "occurredDateTime": "2026-06-17T09:16:24+02:00",
+                "recorded": "2026-06-17T09:16:24.704+02:00",
+                "activity": {
+                    "coding": [
+                        {
+                            "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes",
+                            "code": "new-message"
+                        }
+                    ]
+                },
+                "agent": [
+                    {
+                        "who": {
+                            "reference": "Organization/53be0758-ba87-4109-8199-af558bf18bff"
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "role": "source",
+                        "what": {
+                            "identifier": {
+                                "value": "urn:uuid:9e3e5f8a-b850-4dc7-81d5-d9967d383a9b"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/CareTeam/61bdd1ca-93e0-418e-a334-16a9a8b2ef56",
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "61bdd1ca-93e0-418e-a334-16a9a8b2ef56",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-careteam"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 61bdd1ca-93e0-418e-a334-16a9a8b2ef56</p><p><b>Name</b>: Systematic</p><p><b>Managing organization</b>: 53be0758-ba87-4109-8199-af558bf18bff</p></div>"
+                },
+                "name": "Systematic",
+                "managingOrganization": [
+                    {
+                        "reference": "Organization/53be0758-ba87-4109-8199-af558bf18bff"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/Practitioner/55af7433-8430-418f-bf90-48992fdad544",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "55af7433-8430-418f-bf90-48992fdad544",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: 55af7433-8430-418f-bf90-48992fdad544</p><p><b>Name</b>: Jens Jensen</p></div>"
+                },
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Jensen",
+                        "given": [
+                            "Jens"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "http://columna.cura.systematic.com/PractitionerRole/ae7c5503-1481-4316-a360-49290834ff19",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "ae7c5503-1481-4316-a360-49290834ff19",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Id</b>: ae7c5503-1481-4316-a360-49290834ff19</p><p><b>Practitioner</b>: 55af7433-8430-418f-bf90-48992fdad544</p><p><b>Code</b>: System: http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ Code: afdelingslaege</p><p><b>Organization</b>: 64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5</p></div>"
+                },
+                "practitioner": {
+                    "reference": "Practitioner/55af7433-8430-418f-bf90-48992fdad544"
+                },
+                "organization": {
+                    "reference": "Organization/64dc15b3-1959-4f1a-b2e0-04cf7f8d2ca5"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ",
+                                "code": "afdelingslaege",
+                                "display": "Afdelingslæge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
