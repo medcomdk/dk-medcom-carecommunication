@@ -1,0 +1,663 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="6f8785c6-adf1-407e-9bfd-0d8355ba9d56" />
+    <meta>
+        <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message" />
+    </meta>
+    <type value="message" />
+    <timestamp value="2026-06-11T15:17:16.8222907+02:00" />
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/MessageHeader/221ae874-805b-491d-98e1-2db4c060f34c" />
+        <resource>
+            <MessageHeader>
+                <id value="221ae874-805b-491d-98e1-2db4c060f34c" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>MessageHeader</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>221ae874-805b-491d-98e1-2db4c060f34c</td>
+                            </tr>
+                            <tr>
+                                <td>Event</td>
+                                <td>care-communication-message (http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes)</td>
+                            </tr>
+                            <tr>
+                                <td>Sender</td>
+                                <td>Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb</td>
+                            </tr>
+                            <tr>
+                                <td>Destination</td>
+                                <td>
+                                    <b>primary</b>:Organization/a9f69ce2-2926-40df-bc95-a45efdaead48, https://sor2.sum.dsdn.dk/#id=1494071000016007
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Focus</td>
+                                <td>Communication/53688b86-78c4-4214-8028-eadd0a429b98</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <eventCoding>
+                    <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes" />
+                    <code value="care-communication-message" />
+                </eventCoding>
+                <destination>
+                    <extension url="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension">
+                        <valueCoding>
+                            <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse" />
+                            <code value="primary" />
+                        </valueCoding>
+                    </extension>
+                    <endpoint value="https://sor2.sum.dsdn.dk/#id=1494071000016007" />
+                    <receiver>
+                        <reference value="Organization/a9f69ce2-2926-40df-bc95-a45efdaead48" />
+                    </receiver>
+                </destination>
+                <sender>
+                    <reference value="Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+                </sender>
+                <source>
+                    <endpoint value="https://sor2.sum.dsdn.dk/#id=1494071000016007" />
+                </source>
+                <focus>
+                    <reference value="Communication/53688b86-78c4-4214-8028-eadd0a429b98" />
+                </focus>
+                <definition value="http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0" />
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Patient/bfa598b2-74da-480d-ab76-0cc46bf9367d" />
+        <resource>
+            <Patient>
+                <id value="bfa598b2-74da-480d-ab76-0cc46bf9367d" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Patient</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>bfa598b2-74da-480d-ab76-0cc46bf9367d</td>
+                            </tr>
+                            <tr>
+                                <td>Identifier</td>
+                                <td>urn:oid:1.2.208.176.1.6.1.1: 0703921VJ5
+                                    <br />urn:oid:1.2.208.176.1.6.1.3.179: 1206550VK9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Official: Peter Hansen</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="urn:oid:1.2.208.176.1.6.1.1" />
+                    <value value="0703921VJ5" />
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:1.2.208.176.1.6.1.3.179" />
+                    <value value="1206550VK9" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Hansen" />
+                    <given value="Peter" />
+                </name>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Communication/53688b86-78c4-4214-8028-eadd0a429b98" />
+        <resource>
+            <Communication>
+                <id value="53688b86-78c4-4214-8028-eadd0a429b98" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-communication" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Communication</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>53688b86-78c4-4214-8028-eadd0a429b98</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>Unknown</td>
+                            </tr>
+                            <tr>
+                                <td>Category</td>
+                                <td>examination-results</td>
+                            </tr>
+                            <tr>
+                                <td>Subject</td>
+                                <td>Patient/bfa598b2-74da-480d-ab76-0cc46bf9367d</td>
+                            </tr>
+                            <tr>
+                                <td>Topic</td>
+                                <td>Intet emne</td>
+                            </tr>
+                            <tr>
+                                <td>Sent</td>
+                                <td>2026-06-11T15:17:10.9008062+02:00</td>
+                            </tr>
+                            <tr>
+                                <td>Payload</td>
+                                <td>
+                                    <ul>
+                                        <li>Date: 2026-06-11T15:17:06.453606+02:00</li>
+                                        <li>Author: PractitionerRole/467a85fa-a60c-4613-b428-22e0241f4281</li>
+                                        <li>Author contact: 88888888</li>
+                                        <li>Text: Svar
+
+Med venlig hilsen:
+Netcompany Kommune-Brugeradministrator_PPR1
+11-06-2026 15:16</li>
+                                        <li>Date: 2025-09-29T09:00:00+02:00</li>
+                                        <li>Author: PractitionerRole/f4283a31-e430-4179-8863-575418f35d2d</li>
+                                        <li>Author contact: +4512345789</li>
+                                        <li>Text: Dette er en korrespondancemeddelelse med to erstatnings-CPR numre, af hver sin type.
+Hilsen Michael, sygeplejerske.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <identifier>
+                    <value value="urn:uuid:eca85df4-e6c9-41d7-88c0-7e6fb79029bf" />
+                </identifier>
+                <status value="unknown" />
+                <category>
+                    <coding>
+                        <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes" />
+                        <code value="examination-results" />
+                    </coding>
+                </category>
+                <subject>
+                    <reference value="Patient/bfa598b2-74da-480d-ab76-0cc46bf9367d" />
+                </subject>
+                <topic>
+                    <text value="Intet emne" />
+                </topic>
+                <sent value="2026-06-11T15:17:10.9008062+02:00" />
+                <payload>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension">
+                        <valueDateTime value="2026-06-11T15:17:06.453606+02:00" />
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension">
+                        <valueReference>
+                            <reference value="PractitionerRole/467a85fa-a60c-4613-b428-22e0241f4281" />
+                        </valueReference>
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension">
+                        <valueIdentifier>
+                            <value value="urn:uuid:5b516f29-fb50-47fa-8c24-0af9c7284268" />
+                            <assigner>
+                                <reference value="Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+                            </assigner>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
+                        <valueContactPoint>
+                            <system value="phone" />
+                            <value value="88888888" />
+                        </valueContactPoint>
+                    </extension>
+                    <contentString value="Svar&#xA;&#xA;Med venlig hilsen:&#xA;Netcompany Kommune-Brugeradministrator_PPR1&#xA;11-06-2026 15:16" />
+                </payload>
+                <payload>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension">
+                        <valueDateTime value="2025-09-29T09:00:00+02:00" />
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension">
+                        <valueReference>
+                            <reference value="PractitionerRole/f4283a31-e430-4179-8863-575418f35d2d" />
+                        </valueReference>
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension">
+                        <valueIdentifier>
+                            <value value="urn:uuid:1d881c60-609f-4dac-9b17-cac3959cd01d" />
+                            <assigner>
+                                <reference value="Organization/a9f69ce2-2926-40df-bc95-a45efdaead48" />
+                            </assigner>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension">
+                        <valueContactPoint>
+                            <system value="phone" />
+                            <value value="+4512345789" />
+                        </valueContactPoint>
+                    </extension>
+                    <contentString value="Dette er en korrespondancemeddelelse med to erstatnings-CPR numre, af hver sin type.&#xA;Hilsen Michael, sygeplejerske." />
+                </payload>
+            </Communication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Provenance/7ffa728b-92ae-4a56-8341-d2bfb71a31c7" />
+        <resource>
+            <Provenance>
+                <id value="7ffa728b-92ae-4a56-8341-d2bfb71a31c7" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Provenance</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>7ffa728b-92ae-4a56-8341-d2bfb71a31c7</td>
+                            </tr>
+                            <tr>
+                                <td>Target</td>
+                                <td>MessageHeader/73893146-ff6f-4455-99c3-9126c74d16a7</td>
+                            </tr>
+                            <tr>
+                                <td>Occurred</td>
+                                <td>2025-09-29T09:00:00+02:00</td>
+                            </tr>
+                            <tr>
+                                <td>Recorded</td>
+                                <td>29-09-2025 09:00:00 +02:00</td>
+                            </tr>
+                            <tr>
+                                <td>Agent</td>
+                                <td>Organization/a9f69ce2-2926-40df-bc95-a45efdaead48</td>
+                            </tr>
+                            <tr>
+                                <td>Entity</td>
+                                <td>
+                                    <ul>
+                                        <li>Role: Source, What: Unknown (urn:uuid:1d881c60-609f-4dac-9b17-cac3959cd01d)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <target>
+                    <reference value="MessageHeader/73893146-ff6f-4455-99c3-9126c74d16a7" />
+                </target>
+                <occurredDateTime value="2025-09-29T09:00:00+02:00" />
+                <recorded value="2025-09-29T09:00:00+02:00" />
+                <activity>
+                    <coding>
+                        <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes" />
+                        <code value="new-message" />
+                    </coding>
+                </activity>
+                <agent>
+                    <who>
+                        <reference value="Organization/a9f69ce2-2926-40df-bc95-a45efdaead48" />
+                    </who>
+                </agent>
+                <entity>
+                    <role value="source" />
+                    <what>
+                        <identifier>
+                            <value value="urn:uuid:1d881c60-609f-4dac-9b17-cac3959cd01d" />
+                        </identifier>
+                    </what>
+                </entity>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Provenance/5ff8d352-7c3b-41f8-9487-af66541d10cb" />
+        <resource>
+            <Provenance>
+                <id value="5ff8d352-7c3b-41f8-9487-af66541d10cb" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Provenance</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>5ff8d352-7c3b-41f8-9487-af66541d10cb</td>
+                            </tr>
+                            <tr>
+                                <td>Target</td>
+                                <td>MessageHeader/221ae874-805b-491d-98e1-2db4c060f34c</td>
+                            </tr>
+                            <tr>
+                                <td>Occurred</td>
+                                <td>2026-06-11T15:17:16.8222907+02:00</td>
+                            </tr>
+                            <tr>
+                                <td>Recorded</td>
+                                <td>11-06-2026 15:17:16 +02:00</td>
+                            </tr>
+                            <tr>
+                                <td>Agent</td>
+                                <td>Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb</td>
+                            </tr>
+                            <tr>
+                                <td>Entity</td>
+                                <td>
+                                    <ul>
+                                        <li>Role: Source, What: Unknown (urn:uuid:5b516f29-fb50-47fa-8c24-0af9c7284268)</li>
+                                        <li>Role: Revision, What: MessageHeader/73893146-ff6f-4455-99c3-9126c74d16a7 (Unknown)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <target>
+                    <reference value="MessageHeader/221ae874-805b-491d-98e1-2db4c060f34c" />
+                </target>
+                <occurredDateTime value="2026-06-11T15:17:16.8222907+02:00" />
+                <recorded value="2026-06-11T15:17:16.8222907+02:00" />
+                <activity>
+                    <coding>
+                        <system value="http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes" />
+                        <code value="reply-message" />
+                    </coding>
+                </activity>
+                <agent>
+                    <who>
+                        <reference value="Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+                    </who>
+                </agent>
+                <entity>
+                    <role value="source" />
+                    <what>
+                        <identifier>
+                            <value value="urn:uuid:5b516f29-fb50-47fa-8c24-0af9c7284268" />
+                        </identifier>
+                    </what>
+                </entity>
+                <entity>
+                    <role value="revision" />
+                    <what>
+                        <reference value="MessageHeader/73893146-ff6f-4455-99c3-9126c74d16a7" />
+                    </what>
+                </entity>
+            </Provenance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+        <resource>
+            <Organization>
+                <id value="ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Organization</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>ec5790e1-af27-4cf8-95c2-d36d92767eeb</td>
+                            </tr>
+                            <tr>
+                                <td>Identifier</td>
+                                <td>https://www.gs1.org/gln: 5790002760891
+                                    <br />urn:oid:1.2.208.176.1.1: 1494071000016007
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Test Top OrgEnhed</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="https://www.gs1.org/gln" />
+                    <value value="5790002760891" />
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:1.2.208.176.1.1" />
+                    <value value="1494071000016007" />
+                </identifier>
+                <name value="Test Top OrgEnhed" />
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Organization/a9f69ce2-2926-40df-bc95-a45efdaead48" />
+        <resource>
+            <Organization>
+                <id value="a9f69ce2-2926-40df-bc95-a45efdaead48" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Organization</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>a9f69ce2-2926-40df-bc95-a45efdaead48</td>
+                            </tr>
+                            <tr>
+                                <td>Identifier</td>
+                                <td>https://www.gs1.org/gln: 5790000120314
+                                    <br />urn:oid:1.2.208.176.1.1: 325371000016006
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>MedCom FDIS91</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="https://www.gs1.org/gln" />
+                    <value value="5790000120314" />
+                </identifier>
+                <identifier>
+                    <system value="urn:oid:1.2.208.176.1.1" />
+                    <value value="325371000016006" />
+                </identifier>
+                <name value="MedCom FDIS91" />
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/PractitionerRole/467a85fa-a60c-4613-b428-22e0241f4281" />
+        <resource>
+            <PractitionerRole>
+                <id value="467a85fa-a60c-4613-b428-22e0241f4281" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>PractitionerRole</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>467a85fa-a60c-4613-b428-22e0241f4281</td>
+                            </tr>
+                            <tr>
+                                <td>Practitioner</td>
+                                <td>Practitioner/7a721539-5ff8-485b-a0e4-0bc7fb20d54e</td>
+                            </tr>
+                            <tr>
+                                <td>Organization</td>
+                                <td>Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb</td>
+                            </tr>
+                            <tr>
+                                <td>Code</td>
+                                <td>
+                                    <b>Psykolog</b>
+                                    <br />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <practitioner>
+                    <reference value="Practitioner/7a721539-5ff8-485b-a0e4-0bc7fb20d54e" />
+                </practitioner>
+                <organization>
+                    <reference value="Organization/ec5790e1-af27-4cf8-95c2-d36d92767eeb" />
+                </organization>
+                <code>
+                    <text value="Psykolog" />
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/PractitionerRole/f4283a31-e430-4179-8863-575418f35d2d" />
+        <resource>
+            <PractitionerRole>
+                <id value="f4283a31-e430-4179-8863-575418f35d2d" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>PractitionerRole</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>f4283a31-e430-4179-8863-575418f35d2d</td>
+                            </tr>
+                            <tr>
+                                <td>Practitioner</td>
+                                <td>Practitioner/d79c1697-f2a9-44bb-a732-6e55acc9d6d5</td>
+                            </tr>
+                            <tr>
+                                <td>Organization</td>
+                                <td>Organization/a9f69ce2-2926-40df-bc95-a45efdaead48</td>
+                            </tr>
+                            <tr>
+                                <td>Code</td>
+                                <td>
+                                    <b>Sygeplejerske</b>
+                                    <br />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <practitioner>
+                    <reference value="Practitioner/d79c1697-f2a9-44bb-a732-6e55acc9d6d5" />
+                </practitioner>
+                <organization>
+                    <reference value="Organization/a9f69ce2-2926-40df-bc95-a45efdaead48" />
+                </organization>
+                <code>
+                    <text value="Sygeplejerske" />
+                </code>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Practitioner/7a721539-5ff8-485b-a0e4-0bc7fb20d54e" />
+        <resource>
+            <Practitioner>
+                <id value="7a721539-5ff8-485b-a0e4-0bc7fb20d54e" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Practitioner</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>7a721539-5ff8-485b-a0e4-0bc7fb20d54e</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td> PprAllAccess</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <name>
+                    <use value="official" />
+                    <family value="PprAllAccess" />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://medcomfhir.dk/ig/carecommunication/Practitioner/d79c1697-f2a9-44bb-a732-6e55acc9d6d5" />
+        <resource>
+            <Practitioner>
+                <id value="d79c1697-f2a9-44bb-a732-6e55acc9d6d5" />
+                <meta>
+                    <profile value="http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner" />
+                </meta>
+                <text>
+                    <status value="generated" />
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <p>
+                            <b>Practitioner</b>
+                        </p>
+                        <table>
+                            <tr>
+                                <td>ID</td>
+                                <td>d79c1697-f2a9-44bb-a732-6e55acc9d6d5</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Michael Burns</td>
+                            </tr>
+                        </table>
+                    </div>
+                </text>
+                <name>
+                    <use value="official" />
+                    <family value="Burns" />
+                    <given value="Michael" />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+</Bundle>
