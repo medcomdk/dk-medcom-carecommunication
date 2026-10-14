@@ -18,7 +18,7 @@ dependencies:
   medcom.fhir.dk.messaging: 4.0.2
   medcom.fhir.dk.terminology: 2.0.1
   medcom.fhir.dk.messagedefinitions: 1.0.0
-  
+
 menu:
   Table of Contents: toc.html
   Home: index.html
