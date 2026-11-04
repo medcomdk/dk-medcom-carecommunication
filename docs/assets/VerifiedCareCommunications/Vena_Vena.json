@@ -1,0 +1,391 @@
+{
+    "resourceType": "Bundle",
+    "id": "c95a7560-cb43-4937-8951-621c3c4f6aec",
+    "meta": {
+        "profile": [
+            "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message"
+        ]
+    },
+    "type": "message",
+    "timestamp": "2026-01-26T09:14:15.286243785Z",
+    "entry": [
+        {
+            "fullUrl": "https://fhir.vena.dk/MessageHeader/0476cc08-580e-45b7-93d4-5defde35a5c0",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "0476cc08-580e-45b7-93d4-5defde35a5c0",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader|5.0.1"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"MessageHeader_0476cc08-580e-45b7-93d4-5defde35a5c0\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: MessageHeader 0476cc08-580e-45b7-93d4-5defde35a5c0</b></p>\n    <a name=\"0476cc08-580e-45b7-93d4-5defde35a5c0\"> </a>\n    <a name=\"hc0476cc08-580e-45b7-93d4-5defde35a5c0\"> </a>\n    <a name=\"0476cc08-580e-45b7-93d4-5defde35a5c0-da-DK\"> </a>\n    <p><b>event</b>: <a href=\"http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes.html#http%3a%2f%2fmedcomfhir.dk%2fig%2fterminology%2fCodeSystem%2fmedcom-messaging-eventCodes-care-communication-message\">MedComMessagingEventCodes care-communication-message</a>: Care Communication Message</p>\n    \n    <h3>Destinations</h3>\n    <table class=\"grid\">\n        <tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr>\n        \n        <tr>\n            <td style=\"display: none\">*</td>\n            <td></td>\n            <td><a href=\"https://sor2.sum.dsdn.dk/#id=1069151000016006\">https://sor2.sum.dsdn.dk/#id=1069151000016006</a></td>\n            <td><a href=\"5d3eaaff-946d-4df4-9c0b-7ec4859d1640.html\">Vesterhavslægerne</a></td>\n        </tr>\n        \n    </table>\n    \n    <p><b>sender</b>: <a href=\"07040fa4-f441-4469-9679-ba06513ff478.html\">Vena - til testbrug</a></p>\n    \n    <h3>Sources</h3>\n    <table class=\"grid\">\n        <tr><td style=\"display: none\">-</td><td><b>Endpoint</b></td></tr>\n        <tr>\n            <td style=\"display: none\">*</td>\n            <td><a href=\"https://sor2.sum.dsdn.dk/#id=1419231000016003\">https://sor2.sum.dsdn.dk/#id=1419231000016003</a></td>\n        </tr>\n    </table>\n    \n    <p><b>focus</b>: <a href=\"28d22141-2514-4896-8ed7-d57941862240.html\">Communication: identifier = urn:uuid:69106d07-5197-409e-baf7-0f788103208a; status = unknown; category = [Sygepleje]; topic = {testemne}</a></p>\n    <p><b>definition</b>: <code>http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0</code></p>\n</div>"
+                },
+                "eventCoding": {
+                    "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes",
+                    "code": "care-communication-message"
+                },
+                "destination": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension",
+                                "valueCoding": {
+                                    "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse",
+                                    "code": "primary"
+                                }
+                            }
+                        ],
+                        "endpoint": "https://sor2.sum.dsdn.dk/#id=1069151000016006",
+                        "receiver": {
+                            "reference": "Organization/5d3eaaff-946d-4df4-9c0b-7ec4859d1640"
+                        }
+                    }
+                ],
+                "sender": {
+                    "reference": "Organization/07040fa4-f441-4469-9679-ba06513ff478"
+                },
+                "source": {
+                    "endpoint": "https://sor2.sum.dsdn.dk/#id=1419231000016003"
+                },
+                "focus": [
+                    {
+                        "reference": "Communication/28d22141-2514-4896-8ed7-d57941862240"
+                    }
+                ],
+                "definition": "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Patient/019a6307-2ee3-7a46-878a-47ab020598d9",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "019a6307-2ee3-7a46-878a-47ab020598d9",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Patient_019a6307-2ee3-7a46-878a-47ab020598d9\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Patient 019a6307-2ee3-7a46-878a-47ab020598d9</b></p>\n    <a name=\"019a6307-2ee3-7a46-878a-47ab020598d9\"> </a>\n    <a name=\"hc019a6307-2ee3-7a46-878a-47ab020598d9\"> </a>\n    <a name=\"019a6307-2ee3-7a46-878a-47ab020598d9-da-DK\"> </a>\n    <p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">\n        Sørensen Andreas (official)\n        (no stated gender), DoB Unknown\n         (urn:oid:1.2.208.176.1.2#2605574419)\n    </p>\n    <hr/>\n</div>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.208.176.1.2",
+                        "value": "2605574419"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Sørensen",
+                        "given": [
+                            "Andreas"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Communication/28d22141-2514-4896-8ed7-d57941862240",
+            "resource": {
+                "resourceType": "Communication",
+                "id": "28d22141-2514-4896-8ed7-d57941862240",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-communication"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Communication_28d22141-2514-4896-8ed7-d57941862240\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Communication 28d22141-2514-4896-8ed7-d57941862240</b></p>\n    <a name=\"28d22141-2514-4896-8ed7-d57941862240\"> </a>\n    <a name=\"hc28d22141-2514-4896-8ed7-d57941862240\"> </a>\n    <a name=\"28d22141-2514-4896-8ed7-d57941862240-da-DK\"> </a>\n    <p><b>identifier</b>: urn:uuid:69106d07-5197-409e-baf7-0f788103208a</p>\n    <p><b>status</b>: Unknown</p>\n    <p><b>category</b>: <span title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodesnursing }\">Sygepleje</span></p>\n    <p><b>subject</b>: <a href=\"019a6307-2ee3-7a46-878a-47ab020598d9.html\">Andreas Sørensen</a></p>\n    <p><b>topic</b>: <span title=\"Codes:\">testemne</span></p>\n    \n    <blockquote>\n        <p><b>payload</b></p>\n        <p><b>DateTimeExtension</b>: 2026-01-26T09:14:15Z</p>\n        <p><b>IdentifierExtension</b>: urn:uuid:9abf3425-2fcd-4eeb-baec-670172b53d8b</p>\n        <p><b>PractitionerExtension</b>: <a href=\"4cf80026-4520-46b5-b2fc-8730b6b698c2.html\">not implemented: text for https://fhir.vena.dk/PractitionerRole/4cf80026-4520-46b5-b2fc-8730b6b698c2</a></p>\n        <p><b>ContactExtension</b>: phone: 11223344</p>\n        <p><b>content</b>: testbesked\n\nThomassine Hansen, Læge\nMain Test Practice\nTlf: 11223344\n26.01.2026 10:14</p>\n    </blockquote>\n    \n</div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-sender-extension",
+                        "valueReference": {
+                            "reference": "PractitionerRole/4cf80026-4520-46b5-b2fc-8730b6b698c2"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "urn:uuid:69106d07-5197-409e-baf7-0f788103208a"
+                    }
+                ],
+                "status": "unknown",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes",
+                                "code": "nursing"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/019a6307-2ee3-7a46-878a-47ab020598d9"
+                },
+                "topic": {
+                    "text": "testemne"
+                },
+                "recipient": [
+                    {
+                        "reference": "PractitionerRole/c5a702a1-c4c5-47ee-89f5-4832b67cb958"
+                    }
+                ],
+                "payload": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension",
+                                "valueDateTime": "2026-01-26T09:14:15.286243785Z"
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension",
+                                "valueIdentifier": {
+                                    "value": "urn:uuid:9abf3425-2fcd-4eeb-baec-670172b53d8b",
+                                    "assigner": {
+                                        "reference": "Organization/07040fa4-f441-4469-9679-ba06513ff478"
+                                    }
+                                }
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension",
+                                "valueReference": {
+                                    "reference": "PractitionerRole/4cf80026-4520-46b5-b2fc-8730b6b698c2"
+                                }
+                            },
+                            {
+                                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension",
+                                "valueContactPoint": {
+                                    "system": "phone",
+                                    "value": "11223344"
+                                }
+                            }
+                        ],
+                        "contentString": "testbesked\n\nThomassine Hansen, Læge\nMain Test Practice\nTlf: 11223344\n26.01.2026 10:14"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/PractitionerRole/4cf80026-4520-46b5-b2fc-8730b6b698c2",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "4cf80026-4520-46b5-b2fc-8730b6b698c2",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"PractitionerRole_4cf80026-4520-46b5-b2fc-8730b6b698c2\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 4cf80026-4520-46b5-b2fc-8730b6b698c2</b></p>\n    <a name=\"4cf80026-4520-46b5-b2fc-8730b6b698c2\"> </a>\n    <a name=\"hc4cf80026-4520-46b5-b2fc-8730b6b698c2\"> </a>\n    <a name=\"4cf80026-4520-46b5-b2fc-8730b6b698c2-da-DK\"> </a>\n    <p><b>practitioner</b>: <a href=\"0196a572-4233-759f-a5b3-ad82d6fee818.html\">Practitioner Thomassine Hansen</a></p>\n    <p><b>organization</b>: <a href=\"07040fa4-f441-4469-9679-ba06513ff478.html\">Organization Vena - til testbrug</a></p>\n    <p><b>code</b>: <span title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesAutorisationsregistretlaege }\">Læge</span></p>\n</div>"
+                },
+                "practitioner": {
+                    "reference": "Practitioner/0196a572-4233-759f-a5b3-ad82d6fee818"
+                },
+                "organization": {
+                    "reference": "Organization/07040fa4-f441-4469-9679-ba06513ff478"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesAutorisationsregistret",
+                                "code": "laege"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/PractitionerRole/c5a702a1-c4c5-47ee-89f5-4832b67cb958",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "c5a702a1-c4c5-47ee-89f5-4832b67cb958",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"PractitionerRole_c5a702a1-c4c5-47ee-89f5-4832b67cb958\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole c5a702a1-c4c5-47ee-89f5-4832b67cb958</b></p>\n    <a name=\"c5a702a1-c4c5-47ee-89f5-4832b67cb958\"> </a>\n    <a name=\"hcc5a702a1-c4c5-47ee-89f5-4832b67cb958\"> </a>\n    <a name=\"c5a702a1-c4c5-47ee-89f5-4832b67cb958-da-DK\"> </a>\n    <p><b>practitioner</b>: <a href=\"9c570054-35bc-4122-ab53-3ea7c4f80ba7.html\">Practitioner Ida Hansen</a></p>\n    <p><b>organization</b>: <a href=\"5d3eaaff-946d-4df4-9c0b-7ec4859d1640.html\">Organization Vesterhavslægerne</a></p>\n    <p><b>code</b>: <span title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativsygeplejesekretaer }\">Sygeplejesekretær</span></p>\n</div>"
+                },
+                "practitioner": {
+                    "reference": "Practitioner/9c570054-35bc-4122-ab53-3ea7c4f80ba7"
+                },
+                "organization": {
+                    "reference": "Organization/5d3eaaff-946d-4df4-9c0b-7ec4859d1640"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ",
+                                "code": "sygeplejesekretaer"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Practitioner/0196a572-4233-759f-a5b3-ad82d6fee818",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "0196a572-4233-759f-a5b3-ad82d6fee818",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner|3.0.1"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Practitioner_0196a572-4233-759f-a5b3-ad82d6fee818\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Practitioner 0196a572-4233-759f-a5b3-ad82d6fee818</b></p>\n    <a name=\"0196a572-4233-759f-a5b3-ad82d6fee818\"> </a>\n    <a name=\"hc0196a572-4233-759f-a5b3-ad82d6fee818\"> </a>\n    <a name=\"0196a572-4233-759f-a5b3-ad82d6fee818-da-DK\"> </a>\n    <p><b>name</b>: Hansen Thomassine</p>\n</div>"
+                },
+                "name": [
+                    {
+                        "family": "Hansen",
+                        "given": [
+                            "Thomassine"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Practitioner/9c570054-35bc-4122-ab53-3ea7c4f80ba7",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "9c570054-35bc-4122-ab53-3ea7c4f80ba7",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Practitioner_9c570054-35bc-4122-ab53-3ea7c4f80ba7\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Practitioner 9c570054-35bc-4122-ab53-3ea7c4f80ba7</b></p>\n    <a name=\"9c570054-35bc-4122-ab53-3ea7c4f80ba7\"> </a>\n    <a name=\"hc9c570054-35bc-4122-ab53-3ea7c4f80ba7\"> </a>\n    <a name=\"9c570054-35bc-4122-ab53-3ea7c4f80ba7-da-DK\"> </a>\n    <p><b>name</b>: Hansen Ida</p>\n</div>"
+                },
+                "name": [
+                    {
+                        "family": "Hansen",
+                        "given": [
+                            "Ida"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Organization/07040fa4-f441-4469-9679-ba06513ff478",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "07040fa4-f441-4469-9679-ba06513ff478",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization|4.0.1"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Organization_07040fa4-f441-4469-9679-ba06513ff478\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Organization 07040fa4-f441-4469-9679-ba06513ff478</b></p>\n    <a name=\"07040fa4-f441-4469-9679-ba06513ff478\"> </a>\n    <a name=\"hc07040fa4-f441-4469-9679-ba06513ff478\"> </a>\n    <a name=\"07040fa4-f441-4469-9679-ba06513ff478-da-DK\"> </a>\n    \n    <p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790002759994, <code>urn:oid:1.2.208.176.1.1</code>/1419231000016003</p>\n    \n    \n    <p><b>name</b>: Vena - til testbrug</p>\n    \n</div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://www.gs1.org/gln",
+                        "value": "5790002759994"
+                    },
+                    {
+                        "system": "urn:oid:1.2.208.176.1.1",
+                        "value": "1419231000016003"
+                    }
+                ],
+                "name": "Vena - til testbrug"
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Organization/5d3eaaff-946d-4df4-9c0b-7ec4859d1640",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "5d3eaaff-946d-4df4-9c0b-7ec4859d1640",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization|4.0.1"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Organization_5d3eaaff-946d-4df4-9c0b-7ec4859d1640\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Organization 5d3eaaff-946d-4df4-9c0b-7ec4859d1640</b></p>\n    <a name=\"5d3eaaff-946d-4df4-9c0b-7ec4859d1640\"> </a>\n    <a name=\"hc5d3eaaff-946d-4df4-9c0b-7ec4859d1640\"> </a>\n    <a name=\"5d3eaaff-946d-4df4-9c0b-7ec4859d1640-da-DK\"> </a>\n    \n    <p><b>identifier</b>: <code>https://www.gs1.org/gln</code>/5790002510946, <code>urn:oid:1.2.208.176.1.1</code>/1069151000016006</p>\n    \n    \n    <p><b>name</b>: Vesterhavslægerne</p>\n    \n</div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://www.gs1.org/gln",
+                        "value": "5790002510946"
+                    },
+                    {
+                        "system": "urn:oid:1.2.208.176.1.1",
+                        "value": "1069151000016006"
+                    }
+                ],
+                "name": "Vesterhavslægerne"
+            }
+        },
+        {
+            "fullUrl": "https://fhir.vena.dk/Provenance/019bf995-1376-7d7c-afe0-08fbbb62a262",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "019bf995-1376-7d7c-afe0-08fbbb62a262",
+                "meta": {
+                    "profile": [
+                        "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n    <a name=\"Provenance_019bf995-1376-7d7c-afe0-08fbbb62a262\"> </a>\n    <p class=\"res-header-id\"><b>Generated Narrative: Provenance 019bf995-1376-7d7c-afe0-08fbbb62a262</b></p>\n    <a name=\"019bf995-1376-7d7c-afe0-08fbbb62a262\"> </a>\n    <a name=\"hc019bf995-1376-7d7c-afe0-08fbbb62a262\"> </a>\n    <a name=\"019bf995-1376-7d7c-afe0-08fbbb62a262-da-DK\"> </a>\n    <p>Provenance for <a href=\"0476cc08-580e-45b7-93d4-5defde35a5c0.html\">MessageHeader: event=care-communication-message, definition=http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0</a></p>\n    <p>Summary</p>\n    <table class=\"grid\">\n        <tr><td>Occurrence</td><td>2026-01-26T09:14:15Z</td></tr>\n        <tr><td>Recorded</td><td>2026-01-26T09:14:15Z</td></tr>\n        \n\t\t\t<tr>\n\t\t\t\t<td>Activity</td>\n\t\t\t\t<td>\n\t\t\t\t\t<span title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes#new-message }\">\n\t\t\t\t\t\tA new message has been sent\n\t\t\t\t\t</span>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\n    </table>\n    \n    <p><b>Agents</b></p>\n    <table class=\"grid\">\n        <tr><td><b>who</b></td></tr>\n        <tr><td><a href=\"07040fa4-f441-4469-9679-ba06513ff478.html\">Vena - til testbrug</a></td></tr>\n    </table>\n    \n</div>"
+                },
+                "target": [
+                    {
+                        "reference": "MessageHeader/0476cc08-580e-45b7-93d4-5defde35a5c0"
+                    }
+                ],
+                "occurredDateTime": "2026-01-26T09:14:15.286243785Z",
+                "recorded": "2026-01-26T09:14:15.286243785Z",
+                "activity": {
+                    "coding": [
+                        {
+                            "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes",
+                            "code": "new-message"
+                        }
+                    ]
+                },
+                "agent": [
+                    {
+                        "who": {
+                            "reference": "Organization/07040fa4-f441-4469-9679-ba06513ff478"
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "role": "source",
+                        "what": {
+                            "identifier": {
+                                "value": "urn:uuid:9abf3425-2fcd-4eeb-baec-670172b53d8b"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
