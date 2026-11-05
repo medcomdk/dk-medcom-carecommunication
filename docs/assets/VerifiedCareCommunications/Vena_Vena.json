@@ -1,0 +1,304 @@
+{
+  "resourceType": "Bundle",
+  "id": "1164960b-f0c4-48b6-b089-26d7845b2595",
+  "meta": {
+    "profile": [
+      "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-message"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2026-11-05T07:34:03.170978282Z",
+  "entry": [
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/MessageHeader/e552682b-6bff-4fa2-9d2f-82336d908dbf",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "e552682b-6bff-4fa2-9d2f-82336d908dbf",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-messageHeader"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"MessageHeader_e552682b-6bff-4fa2-9d2f-82336d908dbf\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: MessageHeader e552682b-6bff-4fa2-9d2f-82336d908dbf\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"e552682b-6bff-4fa2-9d2f-82336d908dbf\"\u003e \u003c/a\u003e\n    \u003ca name=\"hce552682b-6bff-4fa2-9d2f-82336d908dbf\"\u003e \u003c/a\u003e\n    \u003ca name=\"e552682b-6bff-4fa2-9d2f-82336d908dbf-da-DK\"\u003e \u003c/a\u003e\n    \u003cp\u003e\u003cb\u003eevent\u003c/b\u003e: \u003ca href=\"http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes.html#http%3a%2f%2fmedcomfhir.dk%2fig%2fterminology%2fCodeSystem%2fmedcom-messaging-eventCodes-care-communication-message\"\u003eMedComMessagingEventCodes care-communication-message\u003c/a\u003e: Care Communication Message\u003c/p\u003e\n    \n    \u003ch3\u003eDestinations\u003c/h3\u003e\n    \u003ctable class=\"grid\"\u003e\n        \u003ctr\u003e\u003ctd style=\"display: none\"\u003e-\u003c/td\u003e\u003ctd\u003e\u003cb\u003eExtension\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eEndpoint\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eReceiver\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\n        \n        \u003ctr\u003e\n            \u003ctd style=\"display: none\"\u003e*\u003c/td\u003e\n            \u003ctd\u003eprimary\u003c/td\u003e\n            \u003ctd\u003e\u003ca href=\"https://sor2.sum.dsdn.dk/#id=1419231000016003\"\u003ehttps://sor2.sum.dsdn.dk/#id=1419231000016003\u003c/a\u003e\u003c/td\u003e\n            \u003ctd\u003e\u003ca href=\"5555f561-d5e0-40a3-b1bf-278811484019.html\"\u003eVena - til testbrug\u003c/a\u003e\u003c/td\u003e\n        \u003c/tr\u003e\n        \n    \u003c/table\u003e\n    \n    \u003cp\u003e\u003cb\u003esender\u003c/b\u003e: \u003ca href=\"5555f561-d5e0-40a3-b1bf-278811484019.html\"\u003eVena - til testbrug\u003c/a\u003e\u003c/p\u003e\n    \n    \u003ch3\u003eSources\u003c/h3\u003e\n    \u003ctable class=\"grid\"\u003e\n        \u003ctr\u003e\u003ctd style=\"display: none\"\u003e-\u003c/td\u003e\u003ctd\u003e\u003cb\u003eEndpoint\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\n        \u003ctr\u003e\n            \u003ctd style=\"display: none\"\u003e*\u003c/td\u003e\n            \u003ctd\u003e\u003ca href=\"https://sor2.sum.dsdn.dk/#id=1419231000016003\"\u003ehttps://sor2.sum.dsdn.dk/#id=1419231000016003\u003c/a\u003e\u003c/td\u003e\n        \u003c/tr\u003e\n    \u003c/table\u003e\n    \n    \u003cp\u003e\u003cb\u003efocus\u003c/b\u003e: \u003ca href=\"9df8546d-1b9b-4a2f-b34d-52fee1ef35ff.html\"\u003eCommunication: identifier = urn:uuid:e765ff61-f86d-49ff-8976-f1e3dff002fb; status = unknown; category = [Andet]; topic = {Dette er en test}\u003c/a\u003e\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003edefinition\u003c/b\u003e: \u003ccode\u003ehttp://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0\u003c/code\u003e\u003c/p\u003e\n\u003c/div\u003e"
+        },
+        "eventCoding": {
+          "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes",
+          "code": "care-communication-message"
+        },
+        "destination": [
+          {
+            "extension": [
+              {
+                "url": "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-destinationUseExtension",
+                "valueCoding": {
+                  "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse",
+                  "code": "primary"
+                }
+              }
+            ],
+            "endpoint": "https://sor2.sum.dsdn.dk/#id=1419231000016003",
+            "receiver": {
+              "reference": "Organization/5555f561-d5e0-40a3-b1bf-278811484019"
+            }
+          }
+        ],
+        "sender": {
+          "reference": "Organization/5555f561-d5e0-40a3-b1bf-278811484019"
+        },
+        "source": {
+          "endpoint": "https://sor2.sum.dsdn.dk/#id=1419231000016003"
+        },
+        "focus": [
+          {
+            "reference": "Communication/9df8546d-1b9b-4a2f-b34d-52fee1ef35ff"
+          }
+        ],
+        "definition": "http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0"
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/Patient/0196aff6-511a-7677-8482-fd83f6a101c6",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0196aff6-511a-7677-8482-fd83f6a101c6",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"Patient_0196aff6-511a-7677-8482-fd83f6a101c6\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: Patient 0196aff6-511a-7677-8482-fd83f6a101c6\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"0196aff6-511a-7677-8482-fd83f6a101c6\"\u003e \u003c/a\u003e\n    \u003ca name=\"hc0196aff6-511a-7677-8482-fd83f6a101c6\"\u003e \u003c/a\u003e\n    \u003ca name=\"0196aff6-511a-7677-8482-fd83f6a101c6-da-DK\"\u003e \u003c/a\u003e\n    \u003cp style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"\u003e\n        Berggren Nancy Ann Test (official)\n        (no stated gender), DoB Unknown\n         (urn:oid:1.2.208.176.1.2#2512489996)\n    \u003c/p\u003e\n    \u003chr/\u003e\n\u003c/div\u003e"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.208.176.1.2",
+            "value": "2512489996"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Berggren",
+            "given": [
+              "Nancy Ann Test"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/Communication/9df8546d-1b9b-4a2f-b34d-52fee1ef35ff",
+      "resource": {
+        "resourceType": "Communication",
+        "id": "9df8546d-1b9b-4a2f-b34d-52fee1ef35ff",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-communication"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"Communication_9df8546d-1b9b-4a2f-b34d-52fee1ef35ff\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: Communication 9df8546d-1b9b-4a2f-b34d-52fee1ef35ff\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"9df8546d-1b9b-4a2f-b34d-52fee1ef35ff\"\u003e \u003c/a\u003e\n    \u003ca name=\"hc9df8546d-1b9b-4a2f-b34d-52fee1ef35ff\"\u003e \u003c/a\u003e\n    \u003ca name=\"9df8546d-1b9b-4a2f-b34d-52fee1ef35ff-da-DK\"\u003e \u003c/a\u003e\n    \u003cp\u003e\u003cb\u003eidentifier\u003c/b\u003e: urn:uuid:e765ff61-f86d-49ff-8976-f1e3dff002fb\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003estatus\u003c/b\u003e: Unknown\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003ecategory\u003c/b\u003e: \u003cspan title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodesother }\"\u003eAndet\u003c/span\u003e\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003esubject\u003c/b\u003e: \u003ca href=\"0196aff6-511a-7677-8482-fd83f6a101c6.html\"\u003eNancy Ann Test Berggren\u003c/a\u003e\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003etopic\u003c/b\u003e: \u003cspan title=\"Codes:\"\u003eDette er en test\u003c/span\u003e\u003c/p\u003e\n    \n    \u003cblockquote\u003e\n        \u003cp\u003e\u003cb\u003epayload\u003c/b\u003e\u003c/p\u003e\n        \u003cp\u003e\u003cb\u003eDateTimeExtension\u003c/b\u003e: 2026-11-05T08:34:03\u0026#43;01:00\u003c/p\u003e\n        \u003cp\u003e\u003cb\u003eIdentifierExtension\u003c/b\u003e: urn:uuid:5f2a7b6a-6931-4705-91f8-603ae99646e1\u003c/p\u003e\n        \u003cp\u003e\u003cb\u003ePractitionerExtension\u003c/b\u003e: \u003ca href=\"cfd173dd-75dd-4889-9a76-be2a7a986855.html\"\u003enot implemented: text for https://medcomfhir.dk/ig/PractitionerRole/cfd173dd-75dd-4889-9a76-be2a7a986855\u003c/a\u003e\u003c/p\u003e\n        \u003cp\u003e\u003cb\u003eContactExtension\u003c/b\u003e: phone: 00000000\u003c/p\u003e\n        \u003cp\u003e\u003cb\u003econtent\u003c/b\u003e: Dette er en testbesked\u003c/p\u003e\n    \u003c/blockquote\u003e\n    \n\u003c/div\u003e"
+        },
+        "extension": [
+          {
+            "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-sender-extension",
+            "valueReference": {
+              "reference": "PractitionerRole/cfd173dd-75dd-4889-9a76-be2a7a986855"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "urn:uuid:e765ff61-f86d-49ff-8976-f1e3dff002fb"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes",
+                "code": "other"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/0196aff6-511a-7677-8482-fd83f6a101c6"
+        },
+        "topic": {
+          "text": "Dette er en test"
+        },
+        "payload": [
+          {
+            "extension": [
+              {
+                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-datetime-extension",
+                "valueDateTime": "2026-11-05T07:34:03.170978282Z"
+              },
+              {
+                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-identifier-extension",
+                "valueIdentifier": {
+                  "value": "urn:uuid:5f2a7b6a-6931-4705-91f8-603ae99646e1",
+                  "assigner": {
+                    "reference": "Organization/5555f561-d5e0-40a3-b1bf-278811484019"
+                  }
+                }
+              },
+              {
+                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner-extension",
+                "valueReference": {
+                  "reference": "PractitionerRole/cfd173dd-75dd-4889-9a76-be2a7a986855"
+                }
+              },
+              {
+                "url": "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-contact-extension",
+                "valueContactPoint": {
+                  "system": "phone",
+                  "value": "00000000"
+                }
+              }
+            ],
+            "contentString": "Dette er en testbesked"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/PractitionerRole/cfd173dd-75dd-4889-9a76-be2a7a986855",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "cfd173dd-75dd-4889-9a76-be2a7a986855",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitionerrole"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"PractitionerRole_cfd173dd-75dd-4889-9a76-be2a7a986855\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: PractitionerRole cfd173dd-75dd-4889-9a76-be2a7a986855\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"cfd173dd-75dd-4889-9a76-be2a7a986855\"\u003e \u003c/a\u003e\n    \u003ca name=\"hccfd173dd-75dd-4889-9a76-be2a7a986855\"\u003e \u003c/a\u003e\n    \u003ca name=\"cfd173dd-75dd-4889-9a76-be2a7a986855-da-DK\"\u003e \u003c/a\u003e\n    \u003cp\u003e\u003cb\u003epractitioner\u003c/b\u003e: \u003ca href=\"0196619d-38a2-7385-b9b1-335072b53468.html\"\u003ePractitioner Kean Kasper Pedersen\u003c/a\u003e\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003eorganization\u003c/b\u003e: \u003ca href=\"5555f561-d5e0-40a3-b1bf-278811484019.html\"\u003eOrganization Vena - til testbrug\u003c/a\u003e\u003c/p\u003e\n    \u003cp\u003e\u003cb\u003ecode\u003c/b\u003e: \u003cspan title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesAutorisationsregistretlaege }\"\u003eLæge\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e"
+        },
+        "practitioner": {
+          "reference": "Practitioner/0196619d-38a2-7385-b9b1-335072b53468"
+        },
+        "organization": {
+          "reference": "Organization/5555f561-d5e0-40a3-b1bf-278811484019"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesAutorisationsregistret",
+                "code": "laege"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/Practitioner/0196619d-38a2-7385-b9b1-335072b53468",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "0196619d-38a2-7385-b9b1-335072b53468",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/core/StructureDefinition/medcom-core-practitioner"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"Practitioner_0196619d-38a2-7385-b9b1-335072b53468\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: Practitioner 0196619d-38a2-7385-b9b1-335072b53468\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"0196619d-38a2-7385-b9b1-335072b53468\"\u003e \u003c/a\u003e\n    \u003ca name=\"hc0196619d-38a2-7385-b9b1-335072b53468\"\u003e \u003c/a\u003e\n    \u003ca name=\"0196619d-38a2-7385-b9b1-335072b53468-da-DK\"\u003e \u003c/a\u003e\n    \u003cp\u003e\u003cb\u003ename\u003c/b\u003e: Pedersen Kean Kasper\u003c/p\u003e\n\u003c/div\u003e"
+        },
+        "name": [
+          {
+            "family": "Pedersen",
+            "given": [
+              "Kean",
+              "Kasper"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/Organization/5555f561-d5e0-40a3-b1bf-278811484019",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "5555f561-d5e0-40a3-b1bf-278811484019",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"Organization_5555f561-d5e0-40a3-b1bf-278811484019\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: Organization 5555f561-d5e0-40a3-b1bf-278811484019\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"5555f561-d5e0-40a3-b1bf-278811484019\"\u003e \u003c/a\u003e\n    \u003ca name=\"hc5555f561-d5e0-40a3-b1bf-278811484019\"\u003e \u003c/a\u003e\n    \u003ca name=\"5555f561-d5e0-40a3-b1bf-278811484019-da-DK\"\u003e \u003c/a\u003e\n    \n    \u003cp\u003e\u003cb\u003eidentifier\u003c/b\u003e: \u003ccode\u003ehttps://www.gs1.org/gln\u003c/code\u003e/5790002759994, \u003ccode\u003eurn:oid:1.2.208.176.1.1\u003c/code\u003e/1419231000016003\u003c/p\u003e\n    \n    \n    \u003cp\u003e\u003cb\u003ename\u003c/b\u003e: Vena - til testbrug\u003c/p\u003e\n    \n\u003c/div\u003e"
+        },
+        "identifier": [
+          {
+            "system": "https://www.gs1.org/gln",
+            "value": "5790002759994"
+          },
+          {
+            "system": "urn:oid:1.2.208.176.1.1",
+            "value": "1419231000016003"
+          }
+        ],
+        "name": "Vena - til testbrug"
+      }
+    },
+    {
+      "fullUrl": "https://medcomfhir.dk/ig/Provenance/01a1aaa1-0aa6-78cf-9295-0c541e42c561",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "01a1aaa1-0aa6-78cf-9295-0c541e42c561",
+        "meta": {
+          "profile": [
+            "http://medcomfhir.dk/ig/carecommunication/StructureDefinition/medcom-careCommunication-provenance"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "\u003cdiv xmlns=\"http://www.w3.org/1999/xhtml\"\u003e\n    \u003ca name=\"Provenance_01a1aaa1-0aa6-78cf-9295-0c541e42c561\"\u003e \u003c/a\u003e\n    \u003cp class=\"res-header-id\"\u003e\u003cb\u003eGenerated Narrative: Provenance 01a1aaa1-0aa6-78cf-9295-0c541e42c561\u003c/b\u003e\u003c/p\u003e\n    \u003ca name=\"01a1aaa1-0aa6-78cf-9295-0c541e42c561\"\u003e \u003c/a\u003e\n    \u003ca name=\"hc01a1aaa1-0aa6-78cf-9295-0c541e42c561\"\u003e \u003c/a\u003e\n    \u003ca name=\"01a1aaa1-0aa6-78cf-9295-0c541e42c561-da-DK\"\u003e \u003c/a\u003e\n    \u003cp\u003eProvenance for \u003ca href=\"e552682b-6bff-4fa2-9d2f-82336d908dbf.html\"\u003eMessageHeader: event=care-communication-message, definition=http://medcomfhir.dk/ig/messagedefinitions/MessageDefinition/MedComCareCommunicationMessageDefinition|5.0\u003c/a\u003e\u003c/p\u003e\n    \u003cp\u003eSummary\u003c/p\u003e\n    \u003ctable class=\"grid\"\u003e\n        \u003ctr\u003e\u003ctd\u003eOccurrence\u003c/td\u003e\u003ctd\u003e2026-11-05T08:34:03\u0026#43;01:00\u003c/td\u003e\u003c/tr\u003e\n        \u003ctr\u003e\u003ctd\u003eRecorded\u003c/td\u003e\u003ctd\u003e2026-11-05T08:34:03\u0026#43;01:00\u003c/td\u003e\u003c/tr\u003e\n        \n\t\t\t\u003ctr\u003e\n\t\t\t\t\u003ctd\u003eActivity\u003c/td\u003e\n\t\t\t\t\u003ctd\u003e\n\t\t\t\t\t\u003cspan title=\"Codes:{ http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes#new-message }\"\u003e\n\t\t\t\t\t\tA new message has been sent\n\t\t\t\t\t\u003c/span\u003e\n\t\t\t\t\u003c/td\u003e\n\t\t\t\u003c/tr\u003e\n\t\t\n    \u003c/table\u003e\n    \n    \u003cp\u003e\u003cb\u003eAgents\u003c/b\u003e\u003c/p\u003e\n    \u003ctable class=\"grid\"\u003e\n        \u003ctr\u003e\u003ctd\u003e\u003cb\u003ewho\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\n        \u003ctr\u003e\u003ctd\u003e\u003ca href=\"5555f561-d5e0-40a3-b1bf-278811484019.html\"\u003eVena - til testbrug\u003c/a\u003e\u003c/td\u003e\u003c/tr\u003e\n    \u003c/table\u003e\n    \n    \n    \u003ch3\u003eEntities\u003c/h3\u003e\n    \u003ctable class=\"grid\"\u003e\n        \u003ctr\u003e\u003ctd style=\"display: none\"\u003e-\u003c/td\u003e\u003ctd\u003e\u003cb\u003eRole\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eWhat\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\n        \n        \u003ctr\u003e\n            \u003ctd style=\"display: none\"\u003e*\u003c/td\u003e\n            \u003ctd\u003esource\u003c/td\u003e\n            \u003ctd\u003eurn:uuid:5f2a7b6a-6931-4705-91f8-603ae99646e1\u003c/td\u003e\n        \u003c/tr\u003e\n        \n    \u003c/table\u003e\n    \n\u003c/div\u003e"
+        },
+        "target": [
+          {
+            "reference": "MessageHeader/e552682b-6bff-4fa2-9d2f-82336d908dbf"
+          }
+        ],
+        "occurredDateTime": "2026-11-05T07:34:03.170978282Z",
+        "recorded": "2026-11-05T07:34:03.170978282Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes",
+              "code": "new-message"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "who": {
+              "reference": "Organization/5555f561-d5e0-40a3-b1bf-278811484019"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "value": "urn:uuid:5f2a7b6a-6931-4705-91f8-603ae99646e1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
