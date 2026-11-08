@@ -2,7 +2,7 @@
 
 Проєкт: medcomdk/dk-medcom-carecommunication
 Базова гał diff гałку для аналізу: master
-Гał diff гałку для публікації: https://github.com/admeduardovieira/dk-medcom-carecommunication
+Галузкова гілка для публікації: https://github.com/admeduardovieira/dk-medcom-carecommunication
 
 ## Propіковані виправлення
 
