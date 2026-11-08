@@ -139,6 +139,10 @@ It is up to the users when they consider it relevant to forward a received FHIR-
 It is possible to add a reason for the forwarding. The reason can (optionally) be stated in a separate space when one chooses to forward a FHIR-CC.
 If one chooses to answer a forwarded FHIR-CC, one chooses who to answer, e.g., the original sender or other prior parties in the communication thread.
 
+**Sender-only systems**
+
+Systems that only send CareCommunication messages (and do not receive them) are not required to implement reply functionality. The ability to reply to a CareCommunication applies only to systems that can receive messages. A system that is solely capable of sending messages therefore has no obligation to implement reply functionality.
+
 
 ## 10 Use Cases
 For use in the technical implementation of FHIR-CC, there are use case descriptions of selected use cas-es, which focus on the digital communication between municipality, region, and GP, as well as across re-gions. Use cases are available via <a href="https://simplifier.net/medcom-fhir-messaging " target="_blank">Simplifier</a>.

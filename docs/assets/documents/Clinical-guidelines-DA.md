@@ -133,9 +133,13 @@ Det er op til brugerne at vurderer, hvornår det er relevant at videresende en m
 Det er muligt at tilføje en årsag til videresendelsen. Årsagen kan (optionelt) angives i et særskilt felt, når man vælger at videresende en FHIR-KM.
 Hvis man vælger at besvare en videresendt FHIR-KM, vælger man selv, hvem man vil besvare tilbage til, fx den oprindelige afsender eller anden forudgående part i korrespondancetråden.
 
+**Kun-afsender systemer**
+
+Systemer, der kun kan afsende Korrespondancemeddelelser (og ikke modtage dem), er ikke forpligtet til at implementere funktionalitet til at besvare. Evnen til at besvare en Korrespondancemeddelelse gælder kun for systemer, der kan modtage beskeder. Et system, der udelukkende er i stand til at afsende, har derfor ikke pligt til at implementere besvarelsesfunktionalitet.
+
+
 ## 10 Use Cases
 Til brug for den tekniske implementering af FHIR-KM findes use case-beskrivelser på udvalgte use cases, som fokuserer på den digitale kommunikation mellem kommune, region og praktiserende læge, samt på tværs af regioner. Use cases findes via <a href="https://simplifier.net/medcom-fhir-messaging " target="_blank">Simplifier</a> 
-
 Korrespondancemeddelelsen bruges af mange forskellige parter og faggrupper i sundhedsvæsenet, og med forskellige formål som ad hoc-kommunikation. Derfor er det ikke muligt at lave use cases, som belyser samtlige scenarier. De udvalgte use cases er valgt med henblik på at demonstrere indhold og funktionalitet i FHIR-KM.
 
 ## 11	Overgangsperiode med samtidig drift af korrespondancemeddelelse DIS91/XDIS91 og FHIR-Korrespondancemeddelelse
