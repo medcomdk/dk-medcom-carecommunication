@@ -35,7 +35,7 @@ Implementation Guide (IG) FHIR на основі SUSHI для Care Communication
 | ID | Назва | Середність | Статус | Місцезнаходження |
 |----|-------|------------|--------|------------------|
 | REA-dkmedcom-002 | Немає автоматизованих тестів для FSH/StructureDefinitions | P3 | CONFIRMED | корінь репозиторію |
-| REA-dkmedcom-003 | Issue #185: валідація UUID v4 не реалізована | P2 | PROVÁBLE | issue #185, PR #189 відкрито |
+| REA-dkmedcom-003 | Issue #185: валідація UUID v4 не реалізована | P2 | ПРОБЛЕМА | issue #185, PR #189 відкрито |
 
 ### Деталі підтверджених проблем
 
@@ -46,7 +46,7 @@ Implementation Guide (IG) FHIR на основі SUSHI для Care Communication
 **REA-dkmedcom-003 (P2, PROVÁBLE):** Issue #185 повідомляє про потребу в валідації UUID v4. PR #189 відкрито для корегування regex в `input/fsh/MedComCareCommunicationAttachmentID.fsh` для правильного обмеження версії 4 та варіанту 8/9/a/b UUID.
 
 ## C. Повторні проблеми
-Issue #184 (klinічні рекомендації) повідомлено 02/11, все ще відкрите. PR #186 (Vena_Vena.json) вже закрито та злито.
+Issue #184 (клінічні рекомендації) повідомлено 02/11, все ще відкрите. PR #186 (Vena_Vena.json) вже закрито та злито.
 
 ## D. Невідомі помилки
 Усі пункти розділу B — це недокументовані раніше проблеми.
@@ -66,4 +66,4 @@ IG з автоматизованими тестами та інваріанто�
 
 **Інструменти, що використано:** git, gh, PowerShell, статичний огляд.  
 **Обмеження:** SUSHI не встановлено. Issue #185/PR #189 вимагає перевірки компіляції FSH.  
-**Середовище:** Windows, PowerShell 5.1, `C:\Users\User\audit-repos\dk-medcom-carecommunication` (клон upstream, гał diff гałку master).
+**Середовище:** Windows, PowerShell 5.1, `C:\Users\User\audit-repos\dk-medcom-carecommunication` (клон upstream, галузкова гілка master).

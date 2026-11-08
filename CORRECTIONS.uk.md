@@ -1,15 +1,15 @@
 # CORRECTIONS.md — dk-medcom-carecommunication
 
 Проєкт: medcomdk/dk-medcom-carecommunication
-Базова гał diff гałку для аналізу: master
+Базова галузова гілка для аналізу: master
 Галузкова гілка для публікації: https://github.com/admeduardovieira/dk-medcom-carecommunication
 
-## Propіковані виправлення
+## Пропоновані виправлення
 
 | ID | Назва | Середність | Статус | Різик | Задіяні файли |
 |----|-------|------------|--------|-------|---------------|
-| REA-dkmedcom-002 | Немає автоматизованих тестів для FSH/StructureDefinitions | P3 | PROPOSING | Середній | `test/` (новий) |
-| REA-dkmedcom-003 | Issue #185: валідація UUID v4 не реалізована | P2 | PROPOSING | Низький | `input/fsh/MedComCareCommunicationAttachmentID.fsh` |
+| REA-dkmedcom-002 | Немає автоматизованих тестів для FSH/StructureDefinitions | P3 | ПРОПОНУВАНО | Середній | `test/` (новий) |
+| REA-dkmedcom-003 | Issue #185: валідація UUID v4 не реалізована | P2 | ПРОПОНУВАНО | Низький | `input/fsh/MedComCareCommunicationAttachmentID.fsh` |
 
 ## Деталі пропонованих виправлень
 
@@ -30,4 +30,4 @@
 - Fork: `admeduardovieira/dk-medcom-carecommunication` (вже існує).
 - Жодних змін коду (тільки звіти аудиту).
 - Ідентичність коміту: `admeduardovieira <admeduardovieira@users.noreply.github.com>`.
-- PR до `medcomdk/dk-medcom-carecommunication` гał diff гałку `master`.
+- PR до `medcomdk/dk-medcom-carecommunication` галузова гілка `master`.
