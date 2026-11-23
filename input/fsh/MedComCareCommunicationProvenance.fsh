@@ -5,6 +5,7 @@ Description: "Provenance information about the current and preceeding message."
 * target only Reference(MedComCareCommunicationMessageHeader)
 * activity from $CareCommunicationActivities
 * activity ^short = "If the previous message is an EDIFACT or OIOXML message, the activity code must be reply-message"
+* obeys medcom-careCommunication-16
 * entity 1..* 
 * entity ^slicing.discriminator.type = #value
 * entity ^slicing.discriminator.path = "role"
@@ -37,3 +38,8 @@ Invariant: medcom-careCommunication-14
 Description: "A reference or an identifier to a previous message must exists"
 Severity: #error
 Expression: "reference.exists() or identifier.exists()"
+
+Invariant: medcom-careCommunication-16
+Description: "When the activity is reply-message, an entity with role 'revision' must refer to the message being replied to, by reference or identifier"
+Severity: #error
+Expression: "activity.coding.where(code = 'reply-message').exists() implies entity.where(role = 'revision' and (what.reference.exists() or what.identifier.exists())).exists()"
